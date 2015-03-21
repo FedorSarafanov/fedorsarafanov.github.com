@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.3" />
+		<meta name="keywords" content="Обработчик или источник выхода курсора из элемента,Вызов события,Обработчик или источник появления курсора на элементе,Обработчик или источник события mouseout,Обработчик или источник события mouseover,Объект event,Объект jQuery,События,Удаление обработчика событий,Установка обработчика событий" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php5" title="JQuery (ru)" />
+		<link rel="alternate" type="application/rss+xml" title="JQuery — RSS-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="JQuery — Atom-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=atom" />
+		<title>Обработчик или источник выхода курсора из элемента — JQuery</title>
+		<link rel="stylesheet" href="../tags/tags.css" type="text/css" />
+		<link rel="stylesheet" href="../skins/common/shared.css@207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../skins/common/commonPrint.css@207" type="text/css" media="print" />
+		<link rel="stylesheet" href="../skins/monobook/main.css@207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/skins";
+		var wgArticlePath = "/index.php5/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php5";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://jquery.page2page.ru";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Обработчик_или_источник_выхода_курсора_из_элемента";
+		var wgTitle = "Обработчик или источник выхода курсора из элемента";
+		var wgAction = "view";
+		var wgArticleId = "209";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "ru";
+		var wgContentLanguage = "ru";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 925;
+		var wgVersion = "1.15.3";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", " 	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = ["sysop"];
+		var wgRestrictionMove = ["sysop"];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="../skins/common/wikibits.js@207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="../skins/common/ajax.js@207"></script>
+		<script type="text/javascript" src="../tags/jquery.js"></script>		<script type="text/javascript" src="../tags/tag.js"></script><style type="text/css">/*<![CDATA[*/
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for javascript
+ * CSS class: source-javascript, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.javascript.source-javascript .de1, .javascript.source-javascript .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.javascript.source-javascript  {font-family:monospace;}
+.javascript.source-javascript .imp {font-weight: bold; color: red;}
+.javascript.source-javascript li, .javascript.source-javascript .li1 {font-weight: normal; vertical-align:top;}
+.javascript.source-javascript .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.javascript.source-javascript .li2 {font-weight: bold; vertical-align:top;}
+.javascript.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.javascript.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.javascript.source-javascript .kw3 {color: #000066;}
+.javascript.source-javascript .co1 {color: #006600; font-style: italic;}
+.javascript.source-javascript .co2 {color: #009966; font-style: italic;}
+.javascript.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.javascript.source-javascript .es0 {color: #000099; font-weight: bold;}
+.javascript.source-javascript .br0 {color: #009900;}
+.javascript.source-javascript .sy0 {color: #339933;}
+.javascript.source-javascript .st0 {color: #3366CC;}
+.javascript.source-javascript .nu0 {color: #CC0000;}
+.javascript.source-javascript .me1 {color: #660066;}
+.javascript.source-javascript .ln-xtra, .javascript.source-javascript li.ln-xtra, .javascript.source-javascript div.ln-xtra {background-color: #ffc;}
+.javascript.source-javascript span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/index.php5?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-html4strict {line-height: normal;}
+.source-html4strict li, .source-html4strict pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for html4strict
+ * CSS class: source-html4strict, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.html4strict.source-html4strict .de1, .html4strict.source-html4strict .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.html4strict.source-html4strict  {font-family:monospace;}
+.html4strict.source-html4strict .imp {font-weight: bold; color: red;}
+.html4strict.source-html4strict li, .html4strict.source-html4strict .li1 {font-weight: normal; vertical-align:top;}
+.html4strict.source-html4strict .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.html4strict.source-html4strict .li2 {font-weight: bold; vertical-align:top;}
+.html4strict.source-html4strict .kw2 {color: #000000; font-weight: bold;}
+.html4strict.source-html4strict .kw3 {color: #000066;}
+.html4strict.source-html4strict .es0 {color: #000099; font-weight: bold;}
+.html4strict.source-html4strict .br0 {color: #66cc66;}
+.html4strict.source-html4strict .sy0 {color: #66cc66;}
+.html4strict.source-html4strict .st0 {color: #ff0000;}
+.html4strict.source-html4strict .nu0 {color: #cc66cc;}
+.html4strict.source-html4strict .sc-1 {color: #808080; font-style: italic;}
+.html4strict.source-html4strict .sc0 {color: #00bbdd;}
+.html4strict.source-html4strict .sc1 {color: #ddbb00;}
+.html4strict.source-html4strict .sc2 {color: #009900;}
+.html4strict.source-html4strict .ln-xtra, .html4strict.source-html4strict li.ln-xtra, .html4strict.source-html4strict div.ln-xtra {background-color: #ffc;}
+.html4strict.source-html4strict span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/index.php5?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="../index.php5@title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Обработчик_или_источник_выхода_курсора_из_элемента skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Обработчик или источник выхода курсора из элемента</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">Материал из JQuery</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Перейти к: <a href="Обработчик_или_источник_выхода_курсора_из_элемента.html#column-one">навигация</a>, <a href="Обработчик_или_источник_выхода_курсора_из_элемента.html#searchInput">поиск</a></div>			<!-- start content -->
+			<div class="bradCrampLink"><a href="События.html" title="События">&lt;&lt; События</a></div>
+<div class="titleOfArt">.mouseleave()</div>
+<p>Устанавливает обработчик выхода курсора из области элемента, либо, запускает это событие. Метод имеет три варианта использования:
+</p>
+<div class="descrList">
+  <div class="tit"><span class="wrap">.mouseleave(handler(eventObject))<a href="Объект_jQuery.html" title="Объект jQuery">:jQuery</a></span><span class="nVers">1.0</span></div>
+  <div class="cont descrCont">
+<p>Устанавливает функцию <i>handler</i> в качестве обработчика события mouseleave, на <a href="Объект_jQuery.html" title="Объект jQuery">выбранные элементы</a>. <br />Метод является аналогом <tt><a href="Установка_обработчика_событий.html" title="Установка обработчика событий">bind("mouseleave", handler(eventObject))</a></tt>.
+</p>
+  </div>
+  <div class="cont">
+<p><tt><b>handler(eventObject)</b></tt> &mdash; функция, которая будет установлена в качестве обработчика. При вызове она будет получать <a href="Объект_event.html" title="Объект event">объект события <i>eventObject</i></a>.
+</p>
+  </div>
+  <div class="tit"><span class="wrap">.mouseleave(eventData, handler(eventObject))<a href="Объект_jQuery.html" title="Объект jQuery">:jQuery</a></span><span class="nVers">1.4.3</span></div>
+  <div class="cont descrCont">
+<p>Метод отличается от предыдущего возможностью передавать в обработчик <a href="Установка_обработчика_событий.html#.D0.94.D0.BE.D0.BF.D0.BE.D0.BB.D0.BD.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D0.B5_.D0.BA.D0.BE.D1.82.D0.BE.D1.80.D1.8B.D0.B5_.D0.BF.D0.BE.D0.BB.D1.83.D1.87.D0.B8.D1.82_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA" title="Установка обработчика событий">дополнительные данные</a>. <br />Является аналогом <tt><a href="Установка_обработчика_событий.html" title="Установка обработчика событий">bind("mouseleave", eventData, handler(eventObject))</a></tt>.
+</p>
+  </div>
+  <div class="cont">
+<p><tt><b>handler(eventObject)</b></tt> &mdash; см. выше.<br />
+<tt><b>eventData</b></tt> &mdash; дополнительные данные, передаваемые в обработчик. Они должны быть представлены объектом в формате: <tt>{fName1:value1, fName2:value2, ...}</tt>.
+</p>
+  </div>
+  <div class="tit"><span class="wrap">.mouseleave()<a href="Объект_jQuery.html" title="Объект jQuery">:jQuery</a></span><span class="nVers">1.0</span></div>
+  <div class="cont descrCont">
+<p>Вызывает событие mouseenter, у выбранных элементов страницы. Метод является аналогом <tt><a href="Вызов_события.html" title="Вызов события">trigger("mouseleave")</a></tt>.
+</p>
+  </div>
+</div>
+<div class="attent">
+<p>Убрать установленный обработчик можно с помощью метода <a href="Удаление_обработчика_событий.html" title="Удаление обработчика событий">unbind()</a>.
+</p>
+  <div>
+<p>Все три варианта использования метода, являются аналогами других методов (см. выше), поэтому все подробности использования <tt>mouseleave()</tt>, можно найти в описании этих методов.
+</p>
+  </div>
+  <div>
+<p>Метод хорошо совместим с <tt><a href="Обработчик_или_источник_появления_курсора_на_элементе.html" title="Обработчик или источник появления курсора на элементе">mouseenter()</a></tt>, и плохо с <tt><a href="Обработчик_или_источник_события_mouseover.html" title="Обработчик или источник события mouseover">mouseover()</a></tt>.
+</p>
+  </div>
+</div>
+<p class="textAnderSource">
+Простой пример:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// установим обработчик события mouseleave, элементу с идентификатором foo</span>
+$<span class="br0">&#40;</span><span class="st0">'#foo'</span><span class="br0">&#41;</span>.<span class="me1">mouseleave</span><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  <span class="kw3">alert</span><span class="br0">&#40;</span><span class="st0">'Курсор мыши вышел из границ элемента &quot;foo&quot;'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="co1">// вызовем событие mouseleave на элементе foo</span>
+$<span class="br0">&#40;</span><span class="st0">'#foo'</span><span class="br0">&#41;</span>.<span class="me1">mouseleave</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="co1">// установим еще один обработчик события mouseleave, на этот раз элементам </span>
+<span class="co1">// с классом block. В обработчик передадим дополнительные данные</span>
+$<span class="br0">&#40;</span><span class="st0">'.block'</span><span class="br0">&#41;</span>.<span class="me1">mouseleave</span><span class="br0">&#40;</span><span class="br0">&#123;</span>a<span class="sy0">:</span><span class="nu0">12</span><span class="sy0">,</span> b<span class="sy0">:</span><span class="st0">&quot;abc&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="kw2">function</span><span class="br0">&#40;</span>eventObject<span class="br0">&#41;</span><span class="br0">&#123;</span>
+  <span class="kw2">var</span> externalData <span class="sy0">=</span> <span class="st0">&quot;a=&quot;</span> <span class="sy0">+</span> eventObject.<span class="me1">data</span>.<span class="me1">a</span> <span class="sy0">+</span> <span class="st0">&quot;, b=&quot;</span> <span class="sy0">+</span> eventObject.<span class="me1">data</span>.<span class="me1">b</span><span class="sy0">;</span>
+  <span class="kw3">alert</span><span class="br0">&#40;</span><span class="st0">'Курсор вышел из границ элемента с классом block. '</span><span class="sy0">+</span>
+        <span class="st0">'В обработчик этого события переданы данные: '</span> <span class="sy0">+</span> externalData <span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<a name=".D0.9E.D1.81.D0.BE.D0.B1.D0.B5.D0.BD.D0.BD.D0.BE.D1.81.D1.82.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.B0" id=".D0.9E.D1.81.D0.BE.D0.B1.D0.B5.D0.BD.D0.BD.D0.BE.D1.81.D1.82.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.B0"></a><h2> <span class="mw-headline">Особенности метода</span></h2>
+<p>По своему назначению, <tt>mouseleave</tt> совпадает с событием <tt><a href="Обработчик_или_источник_события_mouseout.html" title="Обработчик или источник события mouseout">mouseout</a></tt>. Однако у них имеются заметные отличия. Дело в том, что <tt>mouseout</tt>, как и многие другие стандартные события javascript, обладает свойством "всплытия" вверх по иерархии. То есть, после выполнения на элементе, событие передается родительскому элементу, потом прародительскому, и так далее, вплоть до начала дерева DOM. Эта особенность может приводить к различным проблемам. Событие <tt>mouseleave</tt> таким свойством не обладает, и выполняется только один раз, на самом элементе. Поэтому, в некоторых случаях, оно может быть гораздо удобнее. Покажем различия в поведении этих событий на примере:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="html4strict source-html4strict"><pre class="de1"><span class="sc0">&lt;!DOCTYPE html&gt;</span>
+<span class="sc2">&lt;<span class="kw2">html</span>&gt;</span>
+<span class="sc2">&lt;<span class="kw2">head</span>&gt;</span>
+  <span class="sc2">&lt;<span class="kw2">script</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">&quot;http://code.jquery.com/jquery-latest.min.js&quot;</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+  <span class="sc2">&lt;<span class="kw2">style</span>&gt;</span>
+    div{padding:10px; margin:5px; border:1px solid red}
+  <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">style</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">head</span>&gt;</span>
+<span class="sc2">&lt;<span class="kw2">body</span>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;outer&quot;</span>&gt;</span>
+  Outer
+  <span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;inner&quot;</span>&gt;</span>
+    Inner
+  <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span>
+<span class="sc2">&lt;<span class="kw2">div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;log&quot;</span>&gt;&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<span class="kw2">script</span>&gt;</span>
+  // какой-то javascript
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">script</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></pre></div></div>
+<p>Страница будет выглядеть следующим образом:<br /><a href="Файл:Pict34.png.html" class="image" title="Image:Pict34.png"><img alt="Image:Pict34.png" src="../images/7/7c/Pict34.png" width="432" height="238" border="0" /></a>
+</p><p><br />
+Теперь, установим на элементы Outer и Inner по одному обработчику событий <tt>mouseleave</tt> и <tt>mouseout</tt>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// при возникновении события mouseleave, добавим новую запись в элемент с идентификатором log</span>
+$<span class="br0">&#40;</span><span class="st0">'#outer'</span><span class="br0">&#41;</span>.<span class="me1">mouseleave</span><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  $<span class="br0">&#40;</span><span class="st0">'#log'</span><span class="br0">&#41;</span>.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">'&lt;div style=&quot;color:blue&quot;&gt;Был вызван обработчик события mouseleave на элементе outer&lt;/div&gt;'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+$<span class="br0">&#40;</span><span class="st0">'#inner'</span><span class="br0">&#41;</span>.<span class="me1">mouseleave</span><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  $<span class="br0">&#40;</span><span class="st0">'#log'</span><span class="br0">&#41;</span>.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">'&lt;div style=&quot;color:blue&quot;&gt;Был вызван обработчик события mouseleave на элементе inner&lt;/div&gt;'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="co1">// при возникновении события mouseout, добавим новую запись в элемент с идентификатором log</span>
+$<span class="br0">&#40;</span><span class="st0">'#outer'</span><span class="br0">&#41;</span>.<span class="me1">mouseout</span><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  $<span class="br0">&#40;</span><span class="st0">'#log'</span><span class="br0">&#41;</span>.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">'&lt;div style=&quot;color:green&quot;&gt;Был вызван обработчик события mouseout на элементе outer&lt;/div&gt;'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+$<span class="br0">&#40;</span><span class="st0">'#inner'</span><span class="br0">&#41;</span>.<span class="me1">mouseout</span><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  $<span class="br0">&#40;</span><span class="st0">'#log'</span><span class="br0">&#41;</span>.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">'&lt;div style=&quot;color:green&quot;&gt;Был вызван обработчик события mouseout на элементе inner&lt;/div&gt;'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<p><br />
+Теперь, если мы проведем курсором снизу вверх по странице, события будут происходить следующим образом:<br /><a href="Файл:Pict36.png.html" class="image" title="Image:Pict36.png"><img alt="Image:Pict36.png" src="../images/e/e3/Pict36.png" width="888" height="402" border="0" /></a>
+</p>
+<a name=".D0.92_.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D0.B8" id=".D0.92_.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D0.B8"></a><h2> <span class="mw-headline">В действии</span></h2>
+<p>Следующий пример позволяет вам увидеть различия mouseleave и mouseout "в живую":
+</p>
+<pre class='rendAdvCode prf_1_1_250px_450px' >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+  &lt;style&gt;
+    div{padding:10px; margin:5px;}
+    #outer{background-color:#D6EDFC}
+    #inner{background-color:#FFCC00}
+    #out-mouseout, #in-mouseout{float:right}
+    #out-leave, #in-leave{float:left}
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;div id="outer"&gt;
+  &lt;p id="out-leave"&gt;mouseleave - 0&lt;/p&gt;&lt;p id="out-mouseout"&gt;mouseout - 0&lt;/p&gt;
+  &lt;div style="clear:both" /&gt;
+  &lt;div id="inner"&gt;
+    &lt;p id="in-leave"&gt;mouseleave -0&lt;/p&gt;&lt;p id="in-mouseout"&gt;mouseout - 0&lt;/p&gt;
+    &lt;div style="clear:both" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;script&gt;
+  var out_i = 0;
+  var in_i = 0;
+  $('#outer').mouseleave(function(){
+    out_i++;
+    $("#out-leave").text("mouseleave - " + out_i);
+  });
+  $('#inner').mouseleave(function(){
+    in_i++;
+    $("#in-leave").text("mouseleave - " + in_i);
+  });
+ 
+  var out_j = 0;
+  var in_j = 0;
+  $('#outer').mouseout(function(){
+    out_j++;
+    $("#out-mouseout").text("mouseout- " + out_j);
+  });
+  $('#inner').mouseout(function(){
+    in_j++;
+    $("#in-mouseout").text("mouseout- " + in_j);
+  });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+<a name=".D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B8" id=".D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B8"></a><h2> <span class="mw-headline">Ссылки</span></h2>
+<ul><li><a href="События.html" title="События">Список функций, помогающих обрабатывать события</a>
+</li></ul>
+<div class='stags'><span class='stagText'> Ключи:  обработка события mouseleave, обработчик события mouseleave, выход курсора за пределы элемента, обработка выхода курсора за пределы элемента, курсор вышел за пределы элемента, .mouseleave(), mouseleave() </span></div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 40/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key page2pagru:pcache:idhash:209-0!1!0!!ru!2!edit=0 and timestamp 20101210145908 -->
+<div class="printfooter">
+Источник — «<a href="Обработчик_или_источник_выхода_курсора_из_элемента.html">http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA_%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B0_%D0%BA%D1%83%D1%80%D1%81%D0%BE%D1%80%D0%B0_%D0%B8%D0%B7_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0</a>»</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Просмотры</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Обработчик_или_источник_выхода_курсора_из_элемента.html" title="Содержание статьи [c]" accesskey="c">Статья</a></li>
+				 <li id="ca-talk" class="new"><a href="../index.php5@title=@D0@9E@D0@B1@D1@81@D1@83@D0@B6@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5:@D0@9E@D0@B1@D1@80@D0@B0@D0@B1@D0@BE@D1@82@D1@87@D0@B8@D0@BA_@D0@B8@D0@BB@D0@B8_@D0@B8@D1@81@D1@82@D0@BE@D1@87@D0@BD@D0@B8@D0@BA_@D0@B2@D1@8B@D1@85@D0@BE@D0@B4@D0@B0_@D0@BA@D1@83@D1@80@D1@81@D0@BE@D1@80@D0@B0_@D0@B8@D0@B7_@D1@8D@D0@BB@D0@B5@D0@BC@D0@B5@D0@BD@D1@82@D0@B0&amp;action=edit&amp;redlink=1.html" title="Обсуждение содержания страницы [t]" accesskey="t">Обсуждение</a></li>
+				 <li id="ca-viewsource"><a href="../index.php5@title=@D0@9E@D0@B1@D1@80@D0@B0@D0@B1@D0@BE@D1@82@D1@87@D0@B8@D0@BA_@D0@B8@D0@BB@D0@B8_@D0@B8@D1@81@D1@82@D0@BE@D1@87@D0@BD@D0@B8@D0@BA_@D0@B2@D1@8B@D1@85@D0@BE@D0@B4@D0@B0_@D0@BA@D1@83@D1@80@D1@81@D0@BE@D1@80@D0@B0_@D0@B8@D0@B7_@D1@8D@D0@BB@D0@B5@D0@BC@D0@B5@D0@BD@D1@82@D0@B0&amp;action=edit.html" title="Эта страница защищена от изменений, но вы можете посмотреть и скопировать её исходный текст [e]" accesskey="e">Просмотр</a></li>
+				 <li id="ca-history"><a href="../index.php5@title=@D0@9E@D0@B1@D1@80@D0@B0@D0@B1@D0@BE@D1@82@D1@87@D0@B8@D0@BA_@D0@B8@D0@BB@D0@B8_@D0@B8@D1@81@D1@82@D0@BE@D1@87@D0@BD@D0@B8@D0@BA_@D0@B2@D1@8B@D1@85@D0@BE@D0@B4@D0@B0_@D0@BA@D1@83@D1@80@D1@81@D0@BE@D1@80@D0@B0_@D0@B8@D0@B7_@D1@8D@D0@BB@D0@B5@D0@BC@D0@B5@D0@BD@D1@82@D0@B0&amp;action=history.html" title="Журнал изменений страницы [h]" accesskey="h">История</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Личные инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="http://jquery.page2page.ru/index.php5/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:94.181.32.12" title="Страница участника для моего IP [.]" accesskey="." class="new">94.181.32.12</a></li>
+				<li id="pt-anontalk"><a href="http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:94.181.32.12" title="Страница обсуждений для моего IP [n]" accesskey="n" class="new">Обсуждение для этого IP-адреса</a></li>
+				<li id="pt-anonlogin"><a href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:UserLogin&amp;returnto=@D0@9E@D0@B1@D1@80@D0@B0@D0@B1@D0@BE@D1@82@D1@87@D0@B8@D0@BA_@D0@B8@D0@BB@D0@B8_@D0@B8@D1@81@D1@82@D0@BE@D1@87@D0@BD@D0@B8@D0@BA_@D0@B2@D1@8B@D1@85@D0@BE@D0@B4@D0@B0_@D0@BA@D1@83@D1@80@D1@81@D0@BE@D1@80@D0@B0_@D0@B8@D0@B7_@D1@8D@D0@BB@D0@B5@D0@BC@D0@B5@D0@BD@D1@82@D0@B0.html" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o">Представиться / зарегистрироваться</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/skins/common/images/wiki.png);" href="Заглавная_страница.html" title="Заглавная страница [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.BE_.D0.BA.D0.B0.D1.82.D0.B5.D0.B3.D0.BE.D1.80.D0.B8.D1.8F.D0.BC'>
+		<h5>Функции по категориям</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Ajax"><a href="Ajax.html">Ajax</a></li>
+				<li id="n-.D0.90.D1.82.D1.80.D0.B8.D0.B1.D1.83.D1.82.D1.8B"><a href="Атрибуты.html">Атрибуты</a></li>
+				<li id="n-CSS"><a href="CSS.html">CSS</a></li>
+				<li id="n-.D0.A1.D0.B5.D0.BB.D0.B5.D0.BA.D1.82.D0.BE.D1.80.D1.8B"><a href="Селекторы.html">Селекторы</a></li>
+				<li id="n-.D0.9C.D0.B0.D0.BD.D0.B8.D0.BF.D1.83.D0.BB.D1.8F.D1.86.D0.B8.D0.B8"><a href="Манипуляции.html">Манипуляции</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0-.D1.81-.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC"><a href="Работа_с_набором_элементов.html">Работа с набором</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B7.D0.BD.D0.BE.D0.B5"><a href="Разное.html">Разное</a></li>
+				<li id="n-.D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"><a href="Свойства.html">Свойства</a></li>
+				<li id="n-.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><a href="События.html">События</a></li>
+				<li id="n-.D0.A4.D0.BE.D1.80.D0.BC.D1.8B"><a href="Формы.html">Формы</a></li>
+				<li id="n-.D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"><a href="Эффекты.html">Эффекты</a></li>
+				<li id="n-.D0.AF.D0.B4.D1.80.D0.BE"><a href="http://jquery.page2page.ru/index.php5/%D0%AF%D0%B4%D1%80%D0%BE">Ядро</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Поиск</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/index.php5" id="searchform"><div>
+				<input type='hidden' name="title" value="Служебная:Search"/>
+				<input id="searchInput" name="search" type="text" title="Искать это слово [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Перейти" title="Перейти к странице, имеющей в точности такое название" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Найти" title="Найти страницы, содержащие указанный текст" />
+			</div></form>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Навигация</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Заглавная_страница.html">Заглавная страница</a></li>
+				<li id="n-portal"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" title="О проекте, о том, что вы можете сделать, где что находится">Сообщество</a></li>
+				<li id="n-currentevents"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Список текущих событий">Текущие события</a></li>
+				<li id="n-recentchanges"><a href="Служебная:RecentChanges.html" title="Список последних изменений [r]" accesskey="r">Свежие правки</a></li>
+				<li id="n-randompage"><a href="Запуск_следующей_функции_в_очереди.html" title="Посмотреть случайную страницу [x]" accesskey="x">Случайная статья</a></li>
+				<li id="n-help"><a href="http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Справочник по проекту «JQuery»">Справка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:WhatLinksHere/Обработчик_или_источник_выхода_курсора_из_элемента.html" title="Список всех страниц, которые ссылаются на эту страницу [j]" accesskey="j">Ссылки сюда</a></li>
+				<li id="t-recentchangeslinked"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChangesLinked/Обработчик_или_источник_выхода_курсора_из_элемента.html" title="Последние изменения в страницах, на которые ссылается эта страница [k]" accesskey="k">Связанные правки</a></li>
+<li id="t-specialpages"><a href="Служебная:SpecialPages.html" title="Список служебных страниц [q]" accesskey="q">Спецстраницы</a></li>
+				<li id="t-print"><a href="../index.php5@title=@D0@9E@D0@B1@D1@80@D0@B0@D0@B1@D0@BE@D1@82@D1@87@D0@B8@D0@BA_@D0@B8@D0@BB@D0@B8_@D0@B8@D1@81@D1@82@D0@BE@D1@87@D0@BD@D0@B8@D0@BA_@D0@B2@D1@8B@D1@85@D0@BE@D0@B4@D0@B0_@D0@BA@D1@83@D1@80@D1@81@D0@BE@D1@80@D0@B0_@D0@B8@D0@B7_@D1@8D@D0@BB@D0@B5@D0@BC@D0@B5@D0@BD@D1@82@D0@B0&amp;printable=yes.html" rel="alternate" title="Версия этой страницы для печати [p]" accesskey="p">Версия для печати</a></li>				<li id="t-permalink"><a href="../index.php5@title=@D0@9E@D0@B1@D1@80@D0@B0@D0@B1@D0@BE@D1@82@D1@87@D0@B8@D0@BA_@D0@B8@D0@BB@D0@B8_@D0@B8@D1@81@D1@82@D0@BE@D1@87@D0@BD@D0@B8@D0@BA_@D0@B2@D1@8B@D1@85@D0@BE@D0@B4@D0@B0_@D0@BA@D1@83@D1@80@D1@81@D0@BE@D1@80@D0@B0_@D0@B8@D0@B7_@D1@8D@D0@BB@D0@B5@D0@BC@D0@B5@D0@BD@D1@82@D0@B0&amp;oldid=925.html" title="Постоянная ссылка на эту версию страницы">Постоянная ссылка</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> Последнее изменение этой страницы: 15:37, 2 декабря 2010.</li>
+					<li id="viewcount">К этой странице обращались 65 раз.</li>
+					<li id="privacy"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Политика конфиденциальности">Политика конфиденциальности</a></li>
+					<li id="about"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" title="JQuery:Описание">Описание JQuery</a></li>
+					<li id="disclaimer"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Отказ от ответственности">Отказ от ответственности</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.177 secs. --></body></html>

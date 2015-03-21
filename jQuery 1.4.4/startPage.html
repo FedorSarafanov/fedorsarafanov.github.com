@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<style>
+	    a{color:#78c9dd;}
+	    #text{font:11pt/16.5pt sans-serif; height:210px; width:460px; color:#dfddc2; overflow:hidden}
+  </style> 
+</head> 
+<body style="background-color:#757575;"> 
+	<div id="main" style="position:absolute; width:900px; height:500px;"> 
+		<img src="all/images/m_title.png" style="position:absolute; top:0px; left:0px"> 
+		<a href="all/index.php5/Заглавная_страница.html" style="position:absolute; top:110px; left:520px; display:block; text-decoration:none; width:359px; height:205px; background:url('all/images/m_button.png') no-repeat"> </a>
+		<div style="position:absolute; top:370px; left:-3px; display:block; text-decoration:none; width:320px; height:53px; background:url('all/images/m_footer.png') no-repeat"> </div>
+		<div id="text" style="position:absolute; top:112px; left:4px;">
+			Данный справочник, является копией сайта <a href="http://jquery.page2page.ru">jquery.page2page.ru</a>, 
+			сделанной в середине декабря 2010 года. Это уже вторая версия данного
+			справочника, в нем присутствует описание практически всего функционала 
+			библиотеки jQuery, c подробными объяснениями и примерами.<br><br>
+
+			<a href="http://jquery.page2page.ru">Онлайн версия этого справочника</a> довольно часто дополняется и 
+			исправляется, поэтому для получения наиболее актуальной информации 
+			лучше работать с ней.
+		</div> 
+	</div> 
+	
+	<script> 
+		var x = ($(document).width()-$("#main").width())/2;
+		var y = ($(document).height()-$("#main").height())/2;
+	    $("#main").offset({top:y, left:x});
+	</script> 
+</body> 
+</html>

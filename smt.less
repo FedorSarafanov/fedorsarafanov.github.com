@@ -1,0 +1,202 @@
+@base-color: #fff;
+@base-dark-color: #000;
+@body-color: darken(@base-color, 15%);
+@floater-color: darken(@base-color, 10%);
+@floater-shadow-color: darken(@base-color, 20%);
+@header-color: darken(@base-color, 25%);
+@footer-bg: darken(@base-color, 22%);
+@face-size: 80px;
+@header-height: 100px;
+@timecolor: ~"rgb(170, 190, 170)";
+//#aaa;
+//rgb(97, 178, 213);
+
+body, html{
+	// width: 100% !important;
+	height: 100% !important;
+	margin: 0;
+	padding: 0;	
+	background-color: @body-color;
+}
+
+body{
+	padding-left: calc(~"(100% - 960px) / 2");
+	overflow-x: hidden;
+}
+
+.floater{
+	display: block;
+	float: left;
+	// min-height: 100%;
+	// width: 960px;
+	// margin: 0 auto;
+	background-color: @floater-color;
+	box-shadow: 0 0 20px @floater-shadow-color;
+	header{
+		display: block;
+		float: left;
+		width: 100%;
+		height: @header-height;
+		background-color: @header-color;
+		.face{
+			display: block;
+			margin: (@header-height - @face-size)/2 0 0 (@header-height - @face-size)/2;
+			float: left;
+			width: @face-size;
+			height: @face-size;
+			// background-image: url(img/people.png);
+			// background-image: url(img/people.png);
+			background-size: cover;
+			border-radius: @face-size/2;
+			-webkit-filter: contrast(120%);
+			box-shadow: inset 0px 0px 30px @base-dark-color;	
+			opacity: 0.8;	
+			&:after{
+				// content: "Самотохин Егор Алексеевич";
+				content: "Loremov Dolor Ipsumuvich";
+				display: block;
+				float: left;
+				position: relative;
+				left: @face-size + (@header-height - @face-size)/2;
+				width: 400px;
+				height: 30px;
+				line-height: 30px;
+				font-size: @header-height/4;
+				margin-top: (@face-size - 30px)/2;
+
+			}	
+		}
+	}
+	nav{
+
+	}
+	article{
+		float: left;
+		text-align: justify;
+		padding: 1em;
+		font-size: 1.25em;
+		text-indent: 20px;
+		line-height: 1.33333333em;
+		letter-spacing: 0.01em;
+		color: #111;		
+	}
+	footer{
+
+	}
+}
+
+.timeline{
+	margin-left: -0.6em;
+	margin-top: -1em;
+	margin-bottom: -1em;
+	float: left;
+	width: calc(~"960px - 2em ");
+}
+.time{
+	padding: 0;
+	margin: 0;
+	border-left: 5px solid @timecolor;
+	padding-left: 1em;
+	margin-left: 140px;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	min-height: 30px;
+	position: relative;
+	float: left;
+	img{
+		// margin-left: -20px;
+		max-width: calc(~"960px - 140px - 3em");
+		min-height: 50px;
+		float: right;
+		// padding-left: 1em;
+		// text-indent: 0px;
+		// padding-top: 2em;
+	}
+	.floatimg{
+		display: block;
+		float: right;
+		margin-left: 1em;
+	}
+	&::before{
+		content: attr(time);
+		text-indent: 0px;
+		padding-left: 10px;
+		color: lighten(@base-dark-color, 20%);
+		font-family: Monospace;
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="@{timecolor}" version="1.1" class="svg-triangle" width="140" height="20"> <polygon points="140,0 140,20 130,10"></polygon></svg>');
+		color: #80888B;
+		background-repeat: no-repeat;
+		text-align: left;
+		display: block;
+		position: absolute;
+		width: 140px;
+		min-height: 20px;
+		max-height: 99999px;
+		left: -145px;
+		top: calc(~"50% - 1.5em");
+		line-height: 19px;
+	}
+}
+
+footer{
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	width: 100%;
+	background: @footer-bg;
+	height: 150px;
+	padding: 1em;
+}
+
+.one-april:hover{
+	visibility: hidden;
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px){
+	body, .floater{
+		padding-left: 0px !important;
+		width: calc(~"100% + 3px") !important;
+	}
+	article{
+		width: 100%;
+	}
+	img{
+		max-width: calc(~"100% ") !important;
+	}
+	.time{
+		width: calc(~"100% - 1em ") !important;
+		padding-left: 0;
+		margin-left: 1em;
+
+		border-left: none;
+		border-top: 5px solid @timecolor;	
+		padding-top: 1.5em;	
+		&::before{
+			content: attr(time);
+			text-indent: 0px;
+			// color: lighten(@base-dark-color, 20%);
+			background-image: none;
+			font-family: Monospace;
+			text-align: left;
+			// text-align-last: left;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			// float: left;
+			width: calc(~"100% - 10px");
+			height: 16px;
+			line-height: 19px;
+			padding: 0.5em;
+			// background: #000;
+		}
+	}
+	.timeline{
+		width: calc(~"100% - 2em ") !important;
+	}	
+	.floatimg{
+		// display: block;
+		// float: right;
+		margin-left: 0em;
+	}	
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.3" />
+		<meta name="keywords" content="Ajax-запрос,Ajax,Ajax-события,XMLHttpRequest,Контекст,Параметры ajax-запроса,Преобразование объектов для использования в url" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php5" title="JQuery (ru)" />
+		<link rel="alternate" type="application/rss+xml" title="JQuery — RSS-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="JQuery — Atom-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=atom" />
+		<title>Ajax-запрос — JQuery</title>
+		<link rel="stylesheet" href="../tags/tags.css" type="text/css" />
+		<link rel="stylesheet" href="../skins/common/shared.css@207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../skins/common/commonPrint.css@207" type="text/css" media="print" />
+		<link rel="stylesheet" href="../skins/monobook/main.css@207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/skins";
+		var wgArticlePath = "/index.php5/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php5";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://jquery.page2page.ru";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Ajax-запрос";
+		var wgTitle = "Ajax-запрос";
+		var wgAction = "view";
+		var wgArticleId = "243";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "ru";
+		var wgContentLanguage = "ru";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1042;
+		var wgVersion = "1.15.3";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", " 	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = ["sysop"];
+		var wgRestrictionMove = ["sysop"];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="../skins/common/wikibits.js@207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="../skins/common/ajax.js@207"></script>
+		<script type="text/javascript" src="../tags/jquery.js"></script>		<script type="text/javascript" src="../tags/tag.js"></script><style type="text/css">/*<![CDATA[*/
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for javascript
+ * CSS class: source-javascript, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.javascript.source-javascript .de1, .javascript.source-javascript .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.javascript.source-javascript  {font-family:monospace;}
+.javascript.source-javascript .imp {font-weight: bold; color: red;}
+.javascript.source-javascript li, .javascript.source-javascript .li1 {font-weight: normal; vertical-align:top;}
+.javascript.source-javascript .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.javascript.source-javascript .li2 {font-weight: bold; vertical-align:top;}
+.javascript.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.javascript.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.javascript.source-javascript .kw3 {color: #000066;}
+.javascript.source-javascript .co1 {color: #006600; font-style: italic;}
+.javascript.source-javascript .co2 {color: #009966; font-style: italic;}
+.javascript.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.javascript.source-javascript .es0 {color: #000099; font-weight: bold;}
+.javascript.source-javascript .br0 {color: #009900;}
+.javascript.source-javascript .sy0 {color: #339933;}
+.javascript.source-javascript .st0 {color: #3366CC;}
+.javascript.source-javascript .nu0 {color: #CC0000;}
+.javascript.source-javascript .me1 {color: #660066;}
+.javascript.source-javascript .ln-xtra, .javascript.source-javascript li.ln-xtra, .javascript.source-javascript div.ln-xtra {background-color: #ffc;}
+.javascript.source-javascript span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/index.php5?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="../index.php5@title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Ajax-запрос skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Ajax-запрос</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">Материал из JQuery</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Перейти к: <a href="Ajax-запрос.html#column-one">навигация</a>, <a href="Ajax-запрос.html#searchInput">поиск</a></div>			<!-- start content -->
+			<div class="bradCrampLink"><a href="Ajax.html" title="Ajax">&lt;&lt; Ajax</a></div>
+<div class="titleOfArt">jQuery.ajax()</div>
+<p>Осуществляет запрос к серверу без перезагрузки страницы. Метод имеет один вариант использования:
+</p>
+<div class="descrList">
+  <div class="tit"><span class="wrap">jQuery.ajax(settings)<a href="XMLHttpRequest.html" title="XMLHttpRequest">:XMLHttpRequest</a></span><span class="nVers">1.0</span></div>
+  <div class="cont">
+Это низкоуровневый метод, который используют все остальные методы, для осуществления ajax-запросов. Он имеет большое количество настроек, которые можно указать в необязательном параметре <i>settings</i> (он должен представлять из себя объект с настройками в формате <tt>{имя:значение, имя:значение...}</tt>). Изменить настройки по умолчанию можно с помощью метода <tt><a href="Параметры_ajax-запроса.html" title="Параметры ajax-запроса">$.ajaxSetup()</a></tt>.   </div>
+</div>
+<table id="toc" class="toc" summary="Содержание"><tr><td><div id="toctitle"><h2>Содержание</h2></div>
+<ul>
+<li class="toclevel-1"><a href="Ajax-запрос.html#.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B5.D0.BA"><span class="tocnumber">1</span> <span class="toctext">Список настроек</span></a></li>
+<li class="toclevel-1"><a href="Ajax-запрос.html#.D0.9E.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9"><span class="tocnumber">2</span> <span class="toctext">Обработчики событий</span></a></li>
+<li class="toclevel-1"><a href="Ajax-запрос.html#.D0.9F.D0.B0.D1.80.D0.B0.D0.BC.D0.B5.D1.82.D1.80_dataType"><span class="tocnumber">3</span> <span class="toctext">Параметр dataType</span></a></li>
+<li class="toclevel-1"><a href="Ajax-запрос.html#.D0.9E.D1.82.D0.BF.D1.80.D0.B0.D0.B2.D0.BA.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.BD.D0.B0_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80"><span class="tocnumber">4</span> <span class="toctext">Отправка данных на сервер</span></a></li>
+<li class="toclevel-1"><a href="Ajax-запрос.html#.D0.9F.D1.80.D0.BE.D0.B4.D0.B2.D0.B8.D0.BD.D1.83.D1.82.D1.8B.D0.B5_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8"><span class="tocnumber">5</span> <span class="toctext">Продвинутые настройки</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "показать"; var tocHideText = "убрать"; showTocToggle(); } </script>
+<a name=".D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B5.D0.BA" id=".D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B5.D0.BA"></a><h2> <span class="mw-headline">Список настроек</span></h2>
+<div class="descrList">
+  <div class="tit"><span class="wrap">async</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Boolean</b></tt><br />
+<tt>По умолчанию:<b>true</b></tt><br />
+<tt>Описание:</tt> по умолчанию, все запросы без перезагрузки страницы происходят асинхронно (то есть после отправки запроса на сервер, страница не останавливает свою работу в ожидании ответа). Если вам понадобиться синхронное выполнение запроса, то установите параметр в <tt>false</tt>. В синхронном режиме запросы не могут быть кроссдоменными и не могут быть типа "jsonp". Имейте ввиду, что в синхронном режиме страницы могут "виснуть", пока будет выполняться запрос.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">beforeSend(XMLHttpRequest)</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Function</b></tt><br />
+<tt>Описание:</tt> функция, которая будет вызвана сразу перед отправкой запроса. Она может быть использована для изменения объекта XMLHttpRequest непосредственно перед отправкой. Например, можно установить нужные значения header. Если функция возвратит значение <tt>false</tt>, то запрос не будет выполняться. 
+</p>
+ </div>
+  <div class="tit"><span class="wrap">cache</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Boolean</b></tt><br />
+<tt>По умолчанию:<b>true для всех типов данных кроме:'script' и 'jsonp'</b></tt><br />
+<tt>Описание:</tt> в случае значения <tt>false</tt> браузер не будет кешировать производимый запрос.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">complete(XMLHttpRequest, textStatus)</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Function</b></tt><br />
+<tt>Описание:</tt> функция, которая будет вызвана после завершения ajax-запроса (а так же после функций-обработчиков успешного (success) или аварийного (error) завершения запроса). В функцию передаются два параметра: объект XMLHttpRequest и значение статуса выполнения запроса (строковое значение).
+</p>
+ </div>
+  <div class="tit"><span class="wrap">contentType</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>По умолчанию:<b>'application/x-www-form-urlencoded'</b></tt><br />
+<tt>Описание:</tt> When sending data to the server, use this content-type. Default is "application/x-www-form-urlencoded", which is fine for most cases. If you explicitly pass in a content-type to $.ajax() then it'll always be sent to the server (even if no data is sent). Data will always be transmitted to the server using UTF-8 charset; you must decode this appropriately on the server side.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">context</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Object</b></tt><br />
+<tt>Описание:</tt> позволяет указать <a href="Контекст.html" title="Контекст">контекст</a> выполнения запроса. Например, можно указать в качестве контекста DOM-элемент и тогда различные обработчики ajax-запроса тоже будут выполняться в контексте данного DOM-элемента:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$.<span class="me1">ajax</span><span class="br0">&#40;</span><span class="br0">&#123;</span> url<span class="sy0">:</span> <span class="st0">&quot;test.html&quot;</span><span class="sy0">,</span> context<span class="sy0">:</span> document.<span class="me1">body</span><span class="sy0">,</span> success<span class="sy0">:</span> <span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+  <span class="co1">// в данном случае this будет равен document.body</span>
+  $<span class="br0">&#40;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">addClass</span><span class="br0">&#40;</span><span class="st0">&quot;done&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+ </div>
+  <div class="tit"><span class="wrap">data</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Object, String</b></tt><br />
+<tt>Описание:</tt> данные, которые будут отправлены на сервер. Если они заданны в виде объекта, то он будет предварительно преобразован в строку, формата передачи url-параметров:<tt>fName1=value1&amp;fName2=value2&amp;...</tt>. В случае запроса методом GET, эта строка будет добавлена в конец url. Чтобы этого избежать, нужно изменить параметр <tt>processData</tt> (описание ниже). Заданные с помощью объекта данные, должны соответствовать формату: <tt>{fName1:value1, fName2:value2, ...}</tt>.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">dataFilter(data, type)</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Function</b></tt><br />
+<tt>Описание:</tt> функция, с помощью которой можно обработать "сырые" данные, присланные сервером. В функцию передаются два параметра: присланные сервером, необработанные данные, а так же параметр <tt>dataType</tt>. Функция должна возвращать обработанные данные.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">dataType</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>По умолчанию:<b>выбирается автоматически, в зависимости от ситуации (xml, json, script, или html)</b></tt><br />
+<tt>Описание:</tt> ожидаемый тип данных, которые должны прийти от сервера. Если он не задан, jQuery попытается определить его автоматически с помощью <a href="http://ru.wikipedia.org/wiki/Mime" class="external text" title="http://ru.wikipedia.org/wiki/Mime" rel="nofollow">MIME</a>. Опишем все доступные типы:
+</p>
+<dl><dd><i><b>"xml"</b></i> &mdash; будет возвращен сформированный XML-документ, который можно обрабатывать с помощью стандартных средств jQuery.
+</dd><dd><i><b>"html"</b></i> &mdash; будет возвращен html, в виде обычного текста. Если он содержит скрипты в тегах &lt;script&gt;, то они будут исполнены, только когда html-текст будет помещен в DOM.
+</dd><dd><i><b>"script"</b></i> &mdash; полученные данные будут автоматически исполнены как javascript, а потом, возвращены в виде обычного текста.
+</dd><dd><i><b>"json"</b></i> &mdash; полученные данные будут автоматически исполнены как JSON, а потом, возвращены в виде объекта javascript. Начиная с jQuery 1.4, JSON проходит парсинг с более жесткими требованиями к форматированию (см. <a href="http://json.org" class="external text" title="http://json.org" rel="nofollow">правила форматирования JSON</a>)
+</dd><dd><i><b>"jsonp"</b></i> &mdash; loads in a JSON block using <a href="http://bob.pythonmac.org/archives/2005/12/05/remote-json-jsonp/" class="external text" title="http://bob.pythonmac.org/archives/2005/12/05/remote-json-jsonp/" rel="nofollow">JSONP</a>. Will add an extra "?callback=?" to the end of your URL to specify the callback.
+</dd><dd><i><b>"text"</b></i> &mdash; будет возвращена обычная строка текста.
+</dd></dl>
+ </div>
+  <div class="tit"><span class="wrap">error(XMLHttpRequest, textStatus, errorThrown)</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Function</b></tt><br />
+<tt>Описание:</tt> функция, которая будет вызвана в случае неудачного завершения запроса к серверу. Ей предоставляются три параметра: объект XMLHttpRequest, строка с описанием произошедшей ошибки, а так же объект случившегося исключения, если оно имело место. Возможные значения второго аргумента: "timeout", "error", "notmodified" и "parsererror" (в непредвиденных случаях, может быть возвращено значение null).
+</p>
+ </div>
+  <div class="tit"><span class="wrap">global</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Boolean</b></tt><br />
+<tt>По умолчанию:<b>true</b></tt><br />
+<tt>Описание:</tt> Отвечает за работу глобальных событий ajax-запроса (подробнее в <a href="Ajax-события.html" title="Ajax-события">соответствующем разделе</a>). В случае значения <tt>false</tt>, глобальные события будут отключены для данного запроса.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">ifModified</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Boolean</b></tt><br />
+<tt>По умолчанию:<b>false</b></tt><br />
+<tt>Описание:</tt> Allow the request to be successful only if the response has changed since the last request. This is done by checking the Last-Modified header. Default value is false, ignoring the header. In jQuery 1.4 this technique also checks the 'etag' specified by the server to catch unmodified data.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">jsonp</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>Описание:</tt> Override the callback function name in a jsonp request. This value will be used instead of 'callback' in the 'callback=?' part of the query string in the url. So {jsonp:'onJsonPLoad'} would result in 'onJsonPLoad=?' passed to the server.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">jsonpCallback</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>Описание:</tt> Specify the callback function name for a jsonp request. This value will be used instead of the random name automatically generated by jQuery. It is preferable to let jQuery generate a unique name as it'll make it easier to manage the requests and provide callbacks and error handling. You may want to specify the callback when you want to enable better browser caching of GET requests.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">password</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>Описание:</tt> Пароль, если это требуется для выполнения запроса к серверу.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">processData</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Boolean</b></tt><br />
+<tt>По умолчанию:<b>true</b></tt><br />
+<tt>Описание:</tt> По умолчанию, все передаваемые на сервер данные, предварительно преобразуются в строку (url-формата:<tt>fName1=value1&amp;fName2=value2&amp;...</tt>) и отправляются как "application/x-www-form-urlencoded". Если вам необходимо отправить данные, которые нельзя подвергать конвертированию в строку (например документ-DOM), необходимо отключить опцию processData.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">scriptCharset</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Strin</b></tt><br />
+<tt>Описание:</tt> Only for requests with "jsonp" or "script" dataType and "GET" type. Forces the request to be interpreted as a certain charset. Only needed for charset differences between the remote and local content.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">success(data, textStatus, XMLHttpRequest)</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Function</b></tt><br />
+<tt>Описание:</tt> Функция, которая будет вызвана после удачного завершения запроса. В функцию передаются 3 параметра: данные присланные сервером, статус выполнения запроса и объект XMLHttpRequest.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">timeout(data, textStatus, XMLHttpRequest)</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Число</b></tt><br />
+<tt>Описание:</tt> Время ожидания ответа от сервера. Задается в в миллисекундах. Если это время будет превышено, запрос будет завершен с ошибкой и произойдет событие error (см. описание выше), которое будет иметь статус "timeout".
+</p>
+ </div>
+  <div class="tit"><span class="wrap">traditional</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Boolean</b></tt><br />
+<tt>По умолчанию:<b>false</b></tt><br />
+<tt>Описание:</tt> Установите значение этого параметра в <tt>true</tt>, для того, чтобы использовать традиционные <a href="Преобразование_объектов_для_использования_в_url.html" title="Преобразование объектов для использования в url">параметры преобразования</a> (сериализации).
+</p>
+ </div>
+  <div class="tit"><span class="wrap">type</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>По умолчанию:<b>GET</b></tt><br />
+<tt>Описание:</tt> Определяет тип выполняемого запроса (GET или POST). В качестве значения параметра могут использоваться PUT и DELETE, но нужно помнить, что их поддерживают не все браузеры.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">url</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>По умолчанию:<b>Адрес текущей страницы</b></tt><br />
+<tt>Описание:</tt> Определяет адрес, на который будет отправлен запрос.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">username</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>String</b></tt><br />
+<tt>Описание:</tt> Имя пользователя, если это требуется для выполнения запроса к серверу.
+</p>
+ </div>
+  <div class="tit"><span class="wrap">xhr</span></div>
+  <div class="cont">
+<p><tt>Тип:<b>Function</b></tt><br />
+<tt>Описание:</tt> Функция, которая предоставит объект XMLHttpRequest. По умолчанию, для браузеров IE этим объектом является ActiveXObject, а в остальных случаях это XMLHttpRequest. С помощью этой функции вы можете внедрить собственную версию этого объекта.
+</p>
+ </div>
+</div>
+<a name=".D0.9E.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9" id=".D0.9E.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9"></a><h2> <span class="mw-headline">Обработчики событий</span></h2>
+<p>Настройки <tt>beforeSend, error, dataFilter, success и complete</tt> (их описание есть в предыдущем разделе) позволяют установить обработчики событий, которые происходят в определенные моменты выполнения каждого ajax-запроса.
+</p>
+<dl><dd><i><b>beforeSend</b></i> происходит непосредственно перед отправкой запроса на сервер.
+</dd><dd><i><b>error</b></i> происходит в случае неудачного выполнения запроса.
+</dd><dd><i><b>dataFilter</b></i> происходит в момент прибытия данных с сервера. Позволяет обработать "сырые" данные, присланные сервером.
+</dd><dd><i><b>success</b></i> происходит в случае удачного завершения запроса.
+</dd><dd><i><b>complete</b></i> происходит в случае любого завершения запроса.
+</dd></dl>
+<p>Пример простого использования. Выведем сообщение при удачном выполнении запроса:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$.<span class="me1">ajax</span><span class="br0">&#40;</span><span class="br0">&#123;</span>
+  url<span class="sy0">:</span> <span class="st0">'ajax/test.html'</span><span class="sy0">,</span>
+  success<span class="sy0">:</span> <span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+    <span class="kw3">alert</span><span class="br0">&#40;</span><span class="st0">'Load was performed.'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+  <span class="br0">&#125;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<a name=".D0.9F.D0.B0.D1.80.D0.B0.D0.BC.D0.B5.D1.82.D1.80_dataType" id=".D0.9F.D0.B0.D1.80.D0.B0.D0.BC.D0.B5.D1.82.D1.80_dataType"></a><h2> <span class="mw-headline">Параметр dataType</span></h2>
+<a name=".D0.9E.D1.82.D0.BF.D1.80.D0.B0.D0.B2.D0.BA.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.BD.D0.B0_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80" id=".D0.9E.D1.82.D0.BF.D1.80.D0.B0.D0.B2.D0.BA.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.BD.D0.B0_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80"></a><h2> <span class="mw-headline">Отправка данных на сервер</span></h2>
+<a name=".D0.9F.D1.80.D0.BE.D0.B4.D0.B2.D0.B8.D0.BD.D1.83.D1.82.D1.8B.D0.B5_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8" id=".D0.9F.D1.80.D0.BE.D0.B4.D0.B2.D0.B8.D0.BD.D1.83.D1.82.D1.8B.D0.B5_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8"></a><h2> <span class="mw-headline">Продвинутые настройки</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 92/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key page2pagru:pcache:idhash:243-0!1!0!!ru!2!edit=0 and timestamp 20101210141718 -->
+<div class="printfooter">
+Источник — «<a href="Ajax-запрос.html">http://jquery.page2page.ru/index.php5/Ajax-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81</a>»</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Просмотры</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Ajax-запрос.html" title="Содержание статьи [c]" accesskey="c">Статья</a></li>
+				 <li id="ca-talk" class="new"><a href="../index.php5@title=@D0@9E@D0@B1@D1@81@D1@83@D0@B6@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5:Ajax-@D0@B7@D0@B0@D0@BF@D1@80@D0@BE@D1@81&amp;action=edit&amp;redlink=1.html" title="Обсуждение содержания страницы [t]" accesskey="t">Обсуждение</a></li>
+				 <li id="ca-viewsource"><a href="../index.php5@title=Ajax-@D0@B7@D0@B0@D0@BF@D1@80@D0@BE@D1@81&amp;action=edit.html" title="Эта страница защищена от изменений, но вы можете посмотреть и скопировать её исходный текст [e]" accesskey="e">Просмотр</a></li>
+				 <li id="ca-history"><a href="../index.php5@title=Ajax-@D0@B7@D0@B0@D0@BF@D1@80@D0@BE@D1@81&amp;action=history.html" title="Журнал изменений страницы [h]" accesskey="h">История</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Личные инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:UserLogin&amp;returnto=Ajax-@D0@B7@D0@B0@D0@BF@D1@80@D0@BE@D1@81.html" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o">Представиться / зарегистрироваться</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/skins/common/images/wiki.png);" href="Заглавная_страница.html" title="Заглавная страница [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.BE_.D0.BA.D0.B0.D1.82.D0.B5.D0.B3.D0.BE.D1.80.D0.B8.D1.8F.D0.BC'>
+		<h5>Функции по категориям</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Ajax"><a href="Ajax.html">Ajax</a></li>
+				<li id="n-.D0.90.D1.82.D1.80.D0.B8.D0.B1.D1.83.D1.82.D1.8B"><a href="Атрибуты.html">Атрибуты</a></li>
+				<li id="n-CSS"><a href="CSS.html">CSS</a></li>
+				<li id="n-.D0.A1.D0.B5.D0.BB.D0.B5.D0.BA.D1.82.D0.BE.D1.80.D1.8B"><a href="Селекторы.html">Селекторы</a></li>
+				<li id="n-.D0.9C.D0.B0.D0.BD.D0.B8.D0.BF.D1.83.D0.BB.D1.8F.D1.86.D0.B8.D0.B8"><a href="Манипуляции.html">Манипуляции</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0-.D1.81-.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC"><a href="Работа_с_набором_элементов.html">Работа с набором</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B7.D0.BD.D0.BE.D0.B5"><a href="Разное.html">Разное</a></li>
+				<li id="n-.D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"><a href="Свойства.html">Свойства</a></li>
+				<li id="n-.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><a href="События.html">События</a></li>
+				<li id="n-.D0.A4.D0.BE.D1.80.D0.BC.D1.8B"><a href="Формы.html">Формы</a></li>
+				<li id="n-.D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"><a href="Эффекты.html">Эффекты</a></li>
+				<li id="n-.D0.AF.D0.B4.D1.80.D0.BE"><a href="http://jquery.page2page.ru/index.php5/%D0%AF%D0%B4%D1%80%D0%BE">Ядро</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Поиск</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/index.php5" id="searchform"><div>
+				<input type='hidden' name="title" value="Служебная:Search"/>
+				<input id="searchInput" name="search" type="text" title="Искать это слово [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Перейти" title="Перейти к странице, имеющей в точности такое название" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Найти" title="Найти страницы, содержащие указанный текст" />
+			</div></form>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Навигация</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Заглавная_страница.html">Заглавная страница</a></li>
+				<li id="n-portal"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" title="О проекте, о том, что вы можете сделать, где что находится">Сообщество</a></li>
+				<li id="n-currentevents"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Список текущих событий">Текущие события</a></li>
+				<li id="n-recentchanges"><a href="Служебная:RecentChanges.html" title="Список последних изменений [r]" accesskey="r">Свежие правки</a></li>
+				<li id="n-randompage"><a href="Запуск_следующей_функции_в_очереди.html" title="Посмотреть случайную страницу [x]" accesskey="x">Случайная статья</a></li>
+				<li id="n-help"><a href="http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Справочник по проекту «JQuery»">Справка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:WhatLinksHere/Ajax-запрос.html" title="Список всех страниц, которые ссылаются на эту страницу [j]" accesskey="j">Ссылки сюда</a></li>
+				<li id="t-recentchangeslinked"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChangesLinked/Ajax-запрос.html" title="Последние изменения в страницах, на которые ссылается эта страница [k]" accesskey="k">Связанные правки</a></li>
+<li id="t-specialpages"><a href="Служебная:SpecialPages.html" title="Список служебных страниц [q]" accesskey="q">Спецстраницы</a></li>
+				<li id="t-print"><a href="../index.php5@title=Ajax-@D0@B7@D0@B0@D0@BF@D1@80@D0@BE@D1@81&amp;printable=yes.html" rel="alternate" title="Версия этой страницы для печати [p]" accesskey="p">Версия для печати</a></li>				<li id="t-permalink"><a href="../index.php5@title=Ajax-@D0@B7@D0@B0@D0@BF@D1@80@D0@BE@D1@81&amp;oldid=1042.html" title="Постоянная ссылка на эту версию страницы">Постоянная ссылка</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> Последнее изменение этой страницы: 19:12, 6 декабря 2010.</li>
+					<li id="viewcount">К этой странице обращались 220 раз.</li>
+					<li id="privacy"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Политика конфиденциальности">Политика конфиденциальности</a></li>
+					<li id="about"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" title="JQuery:Описание">Описание JQuery</a></li>
+					<li id="disclaimer"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Отказ от ответственности">Отказ от ответственности</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.185 secs. --></body></html>
