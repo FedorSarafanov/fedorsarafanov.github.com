@@ -59,8 +59,15 @@ header h2 {
           flex: 1;
   color: #2B8AB3;
 }
+header h2 .nick {
+  color: #444;
+}
+header h2 .nick .name {
+  color: #000;
+}
 header a {
   background: none;
+  display: none;
   border: 0px;
   font-size: 125%;
 }
@@ -128,6 +135,13 @@ nav {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
+nav a,
+nav span {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
 nav .breadcrumbs {
   font-size: 70%;
   -webkit-box-flex: 1;
@@ -150,6 +164,10 @@ nav .breadcrumbs {
           align-items: center;
   margin: 0;
   padding: 0;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 nav .button {
   background: #e1e1e1;
@@ -271,4 +289,61 @@ a:hover {
 .comments > .comment:last-of-type:before,
 .comments > .comment:last-of-type:after {
   display: none !important;
+}
+@media (max-width: 961px) {
+  body * {
+    display: block !important;
+  }
+  section,
+  header,
+  footer,
+  .copyright,
+  nav,
+  h1,
+  time,
+  .comments-title {
+    padding: 12pt;
+    width: 100% !important;
+    box-sizing: border-box;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  }
+  nav {
+    padding: 0;
+  }
+  nav a.button {
+    display: none !important;
+  }
+  nav .breadcrumbs a,
+  nav .breadcrumbs span {
+    float: left !important;
+    padding-right: 1em;
+  }
+  nav .breadcrumbs {
+    display: block !important;
+    width: 100%;
+    float: left;
+    padding: 0.5em;
+    background: #fff;
+  }
+  header * {
+    font-size: 100% !important;
+  }
+  header h2 .io {
+    display: none !important;
+  }
+  header h2 .family::before {
+    display: block;
+    float: left;
+    content: 'Ф.Г.';
+  }
+  header h2 .nick {
+    padding-left: 0.5em;
+  }
+  header h2 * {
+    float: left;
+  }
+  header a {
+    float: right !important;
+  }
 }
