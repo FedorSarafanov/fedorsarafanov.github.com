@@ -1,3 +1,5 @@
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300&subset=latin,cyrillic-ext);
+
 @block-width: 960px;
 @block-width-mobile: 100%;
 @footer-link-color: #070000;
@@ -28,14 +30,33 @@ section, header,footer, .copyright, nav, h1, time, .comments-title{
 header{
 	background: #eee;
 	color: #807E7E;
-	// -webkit-order: -1;
-	//     -ms-flex-order: -1;
-	//         order: -1; 
+	padding: 1rem;
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: row wrap;
 	h2{
-		font-size: 18pt;
+		font-size: 125%;
 		font-weight: 100;
 		margin: 0;
-		text-transform: uppercase;
+		flex: 1;
+		color: #2B8AB3;
+		// font-weight: bold;
+		// text-transform: uppercase;
+		.nick{
+			color: #444;
+			.name{
+				color: #000;
+			}
+		}
+	}
+	a{		
+		background: none;
+		display: none;
+		border: 0px;
+		font-size: 125%;
+		&:focus{
+			border: 0px !important;
+		}
 	}
 }
 section{
@@ -53,8 +74,9 @@ footer{
 	background: #eee;
 	display: flex;
 	flex-direction: row; // В строчку
-	font-size: 80%;
 	ul{
+		word-wrap: break-word;
+		font-size: 80%;
 		padding-left: 0px;
 		.column-title{
 			font-weight: 600;
@@ -62,14 +84,14 @@ footer{
 		}
 		li{		
 			margin-bottom: 0.5em;
-			list-style: none;		
+			list-style: none;				
 		}
 	}
 }
 .copyright{
 	// color: #7E7E7E;
 	color: #625858;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	font-family: monospace;
 	text-align: center;
 	font-size: 80%;
@@ -99,6 +121,7 @@ nav{
   		background: darken(#eee, 5%);  		
 		text-decoration: none;	
 		padding: 0.5em;
+		font-size: 80%;
 		display: block;
 		&:hover{
 			background: darken(#eee, 20%);		
@@ -111,6 +134,7 @@ nav{
 h1{
 	background: #fff;
 	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 150%;
 	padding: 1rem;
 }
