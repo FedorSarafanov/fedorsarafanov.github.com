@@ -4,10 +4,17 @@
 @nav-link-color: #070000 + #222;
 @link-hover-color: #070000 + #666;
 
+.display-flex{display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;}
+.flex-direction(@arg){	-moz-flex-direction: @arg;-webkit-flex-direction: @arg;	-ms-flex-direction: @arg;	flex-direction: @arg;}
+.flex-flow(@arg){	-moz-flex-flow: @arg;	-webkit-flex-flow: @arg;	-ms-flex-flow:@arg;	flex-flow: @arg;	}
+.flex(@arg){	-moz-flex: @arg;	-webkit-flex: @arg;	-ms-flex:@arg;	flex: @arg;	}
+.align-items(@arg){	-moz-align-items: @arg;	-webkit-align-items: @arg;	-ms-align-items:@arg;	align-items: @arg;	}
+.justify-content(@arg){	-moz-justify-content: @arg;	-webkit-justify-content: @arg;	-ms-justify-content:@arg;	justify-content: @arg;}
+
 body,html{
-	display: flex;
-	flex-direction: column; //Вертикально
-	align-items: center; //По центру
+	.display-flex;
+	.flex-direction(column); //Вертикально
+	.align-items(center); //По центру
 	padding: 0;margin: 0; // Сброс
 	min-height: 100vh; //100% высоты окна браузера
 	background: #ddd;	
@@ -37,7 +44,7 @@ header{
 }
 section{
 	background: #fff;
-	flex: 1;
+	// .flex(1);
 	text-align: justify;
 	p{
 		text-indent: 1rem;
@@ -48,8 +55,8 @@ section{
 }
 footer{
 	background: #eee;
-	display: flex;
-	flex-direction: row; // В строчку
+	.display-flex;
+	.flex-direction(row); // В строчку
 	font-size: 80%;
 	ul{
 		padding-left: 0px;
@@ -74,21 +81,21 @@ footer{
 	padding: 0.5em 1em 0.5em 1em;
 }
 nav{
-  display: flex;
-  flex-flow: row wrap;
+  .display-flex;
+  .flex-flow(row wrap);
   padding: 0;
   margin: 0;
-  justify-content: flex-end;
+  .justify-content(flex-end);
   background: #eee + #101010;  
   border-top: 1px solid #eee-#111;
   border-bottom: 1px solid #eee-#111;
 	.breadcrumbs{
 		font-size: 70%;
-		flex:1;
-	  	display: flex;
-	  	flex-flow: row wrap;
-	  	justify-content: space-around;
-	  	align-items: center;
+		.flex(1);
+	  	.display-flex;
+	  	.flex-flow(row wrap);
+	  	.justify-content(space-around);
+	  	.align-items(center);
 		margin: 0;
 		padding: 0;	
 	}  
@@ -148,8 +155,8 @@ a{
 }
 
 .comments{
-	display: flex;
-	flex-direction: column;
+	.display-flex;
+	.flex-direction(column);
 	position: relative;
 	padding-left: 0em;
 	.comment{
