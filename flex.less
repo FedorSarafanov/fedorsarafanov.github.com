@@ -6,7 +6,6 @@
 @nav-link-color: #070000 + #222;
 @link-hover-color: #070000 + #666;
 
-
 body,html{
 	display: flex;
 	flex-direction: column; //Вертикально
@@ -107,6 +106,9 @@ nav{
   background: #eee + #101010;  
   border-top: 1px solid #eee-#111;
   border-bottom: 1px solid #eee-#111;
+  a, span{
+  	order: 3;
+  }
 	.breadcrumbs{
 		font-size: 70%;
 		flex: 1;
@@ -116,6 +118,7 @@ nav{
 	  	align-items: center;
 		margin: 0;
 		padding: 0;	
+		order:2;
 	}  
   .button{  		
   		background: darken(#eee, 5%);  		
@@ -252,4 +255,58 @@ a{
 	&:before, &:after{
 		display: none !important;
 	}
+}
+
+@media (max-width: 961px){
+	body *{
+		display: block !important;
+	}
+	section, header,footer, .copyright, nav, h1, time, .comments-title{
+		padding: 12pt;
+		width: @block-width-mobile !important;
+		// margin: 0 auto;
+		box-sizing: border-box;	
+		@border-color-main: #ccc;
+		border-left: 1px solid @border-color-main;
+		border-right: 1px solid @border-color-main;
+	}
+	nav{
+		padding: 0;
+		.breadcrumbs a , .breadcrumbs span{
+			float: left !important;
+			padding-right: 1em;
+		}
+		.breadcrumbs{
+			display: block !important;
+			width: 100%;
+			float: left;
+			padding: 0.5em;
+			background: #fff;
+		}
+	}
+	header{
+		& *{
+			font-size: 100% !important;
+		}
+		h2{
+			.io{
+				display: none !important;
+			}
+			.family::before{
+				display: block;
+				float: left;
+				content: 'Ф.Г.';
+			}
+			.nick{
+				padding-left: 0.5em;
+			}
+			& *{
+				float: left;
+			}
+		}
+		a{
+			float: right !important;
+		}		
+	}
+
 }
