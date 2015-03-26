@@ -290,9 +290,12 @@ a:hover {
 .comments > .comment:last-of-type:after {
   display: none !important;
 }
-@media (max-width: 961px) {
+@media screen and (max-width: 1000px) and (min-width: 0px) {
   body * {
     display: block !important;
+  }
+  body {
+    width: 100% !important;
   }
   section,
   header,
@@ -305,8 +308,8 @@ a:hover {
     padding: 12pt;
     width: 100% !important;
     box-sizing: border-box;
-    border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+    border-left: 0px solid #cccccc !important;
+    border-right: 0px solid #cccccc !important;
   }
   nav {
     padding: 0;

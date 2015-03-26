@@ -1,0 +1,9 @@
+{
+  "name": "visisite",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-less": "^1.0.0"
+  }
+}
