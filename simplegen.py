@@ -10,12 +10,12 @@ for elem in files:
 	f = open(rootdir+'project.html', 'r')
 	html = f.read()
 	proc = Popen(
-    "markdown "+rootdir+elem,
-    shell=True,
-    stdout=PIPE, stderr=PIPE
+	    "markdown "+rootdir+elem,
+	    shell=True,
+	    stdout=PIPE, stderr=PIPE
 	)
-	proc.wait()    # дождаться выполнения
-	res = proc.communicate()  # получить tuple('stdout res', 'stderr res')
+	proc.wait()
+	res = proc.communicate()
 	rawhtml = res[0].decode('utf-8', 'ignore')	
 	title = re.search(r'<h1>(.*?)</h1>', rawhtml).group(1)
 	rawhtml = rawhtml.replace('<h1>'+title+'</h1>','')
