@@ -4,6 +4,7 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "^2.2.0",
-    "grunt-contrib-less": "^1.0.0"
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-reload": "^0.2.0"
   }
 }

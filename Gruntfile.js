@@ -8,7 +8,7 @@ module.exports = function(grunt){grunt.initConfig({
                   options: {
                         compress: true,
                         cleancss: false,
-                        sourceMap: false,
+                        sourceMap: true,
                         sourceMapFilename: 'css/main.css.map',
                         sourceMapRootpath: '/assets/',
                   }
