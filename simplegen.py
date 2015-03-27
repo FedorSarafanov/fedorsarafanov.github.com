@@ -1,15 +1,16 @@
 
-files = ['/home/osabio/www/article.md']
+rootdir = '/home/osabio/www/';
+files = ['article.md']
 
 from subprocess import Popen, PIPE
 from datetime import datetime
 import re
 
 for elem in files:
-	f = open('project.html', 'r')
+	f = open(rootdir+'project.html', 'r')
 	html = f.read()
 	proc = Popen(
-    "markdown "+elem,
+    "markdown "+rootdir+elem,
     shell=True,
     stdout=PIPE, stderr=PIPE
 	)
@@ -23,7 +24,9 @@ for elem in files:
 	html = html.replace('[[rawhtml]]', rawhtml);
 	html = html.replace('[[now]]', now);
 	f.close()
-	f = open(elem.replace('.md','')+'.html', 'w+')
+	f = open(rootdir+elem.replace('.md','')+'.html', 'w+')
 	f.write(html)
 	f.close()
+
+print('Success!')
 
