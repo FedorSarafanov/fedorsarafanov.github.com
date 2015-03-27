@@ -1,12 +1,14 @@
-#/usr/bin/python
+#!/usr/bin/python
 
 from subprocess import Popen, PIPE
 from datetime import datetime
 import re, json
+import os 
+
 
 rootdir = '/home/osabio/www/';
-# rootdir = ''
-files = ['article.md']
+filelist = os.listdir(os.path.abspath(os.curdir)) 
+files = filter(lambda x: x.endswith('.md'), filelist)
 jsonfile = 'articles.json'
 
 with open(rootdir+jsonfile) as data_file:    
@@ -19,7 +21,7 @@ for elem in files:
 		tags = tags.split()
 		md.close()
 
-		project = open(rootdir+'project.xml', 'r')
+		project = open(rootdir+'project.html', 'r')
 		html = project.read()
 		project.close()
 		proc = Popen(
@@ -39,7 +41,7 @@ for elem in files:
 		html = html.replace('[[rawhtml]]', rawhtml);
 		html = html.replace('[[now]]', now);
 
-		result = open(elem.replace('.md','')+'.html', 'w+')
+		result = open('../articles/'+elem.replace('.md','')+'.html', 'w+')
 		result.write(html)
 		result.close()
 		data[elem] = {"title": title, "data": now, "tags": tags}

@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Личный блог @osabio</title>
 	 <script src="js/jquery.min.js"></script>
-	<link rel="icon" type="image/png" href="../img/logo.png">
-	<link rel="stylesheet" href="../css/main.css" class="css">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" href="css/main.css" class="css">
 	<!-- <link rel="stylesheet" href="css/base.css" class="css"> -->
 	<!-- <link rel="stylesheet/less" type="text/css" href="flex.less">				 -->
 	<!-- <script type="text/javascript" src="js/less.min.js"></script>						 -->
