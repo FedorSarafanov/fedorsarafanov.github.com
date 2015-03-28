@@ -1,0 +1,82 @@
+#!/usr/bin/python
+
+from subprocess import Popen, PIPE
+from datetime import datetime
+import re, json
+import os 
+
+filelist = os.listdir(os.path.abspath(os.curdir)) 
+files = filter(lambda x: x.endswith('.md'), filelist)
+configjson = 'config.json'
+
+with open(configjson) as data__file:    
+    config = json.load(data__file)
+
+domain = config['domain']
+sitepath = config['sitepath']
+makehtml = config['makehtml']
+output = config['output']
+rootjson = config['rootjson']
+breadcrumb_title = config['breadcrumb-title']
+
+with open(rootjson) as data_file:    
+    data = json.load(data_file)
+
+for elem in files:
+	# if not (elem in data):
+		md = open(elem, 'r')
+		tages = md.readlines()[2]
+		tags = tages.split()
+		# print(tags)
+		md.close()
+
+		project = open(makehtml, 'r')
+		html = project.read()
+		project.close()
+		proc = Popen(
+		    "markdown "+elem,
+		    shell=True,
+		    stdout=PIPE, stderr=PIPE
+		)
+		proc.wait()
+		res = proc.communicate()
+
+		rawhtml = res[0].decode('utf-8', 'ignore')	
+		title = re.search(r'<h1>(.*?)</h1>', rawhtml).group(1)
+		if tags[0]=='<p':
+			tages = re.search(r'<p class="tages">(.*?)</p>', rawhtml).group(1)
+			tags = tages.split()
+
+		rawhtml = rawhtml.replace('<h1 class="article-title">'+title+'</h1>','')
+		rawhtml = rawhtml.replace('<h1>'+title+'</h1>','')
+		rawhtml = rawhtml.replace(tages,'')
+		rawhtml = rawhtml.replace('<p class="tages"></p>','')
+		cathtml = rawhtml[0:1000]
+		now = datetime.now().strftime("%d.%m.%Y %H:%M")	
+
+		html = html.replace('[[title]]', title);
+		html = html.replace('[[rawhtml]]', rawhtml);
+		html = html.replace('[[now]]', now);
+
+		breadcrumbs = '<a href="http://'+domain+'">Блог</a><span>&#62;</span>'+'<a href="http://'+domain+sitepath+'">'+breadcrumb_title+'</a><span>&#62;</span>'+'<a href="http://'+domain+sitepath+elem.replace('.md','')+'.html">'+title+'</a>'
+
+		html = html.replace('[[breadcrumbs]]', breadcrumbs);
+
+		result = open(output+elem.replace('.md','')+'.html', 'w+')
+		result.write(html)
+		result.close()
+
+		catresult = open(output+elem.replace('.md','')+'-cat.load', 'w+')
+		catresult.write(cathtml)
+		catresult.close()
+
+		data[elem] = {"title": title, "data": now, "tags": tags}
+	# else:		
+	# 	print(data[elem])
+	# 	pass
+
+with open(rootjson, 'w') as jsons_file:
+    json.dump(data, jsons_file, ensure_ascii=False)		
+
+print('Success!')
+

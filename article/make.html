@@ -13,7 +13,8 @@
 <body>
 	<header>
 		<h2><span class="io">Фёдор Георгиевич</span> <span class="family">Сарафанов</span> <span class="nick"><span class="name">@osabio</span></span></h2>
-		<a href="#" class="menu icon-menu"></a>
+		<!-- <a href="#" class="menu icon-menu"></a> -->
+		<input id="finder" class="find" type="text">
 	</header>
 	<nav>
 		<!-- <a class="button" href="">Блог</a> -->
@@ -29,7 +30,7 @@
 
 	<h1 class="article-title">[[title]]</h1>
 	<time>[[now]]</time>
-	<section>
+	<section class="rawhtml">
 		[[rawhtml]]
 	</section>	
 
@@ -56,15 +57,32 @@
 			        for (var i in data) {
 			            var row = data[i];
 			            j++;
-			            $('footer ul').append('<li><a href="' + Object.keys(data)[j].replace('.md','.html') + '">' + row.title + '</a></li>');
+			            for ( var a in row.tags) {
+			            	if (row.tags[a]=='html'){
+			            		$('.t_html').append('<li><a href="' + Object.keys(data)[j].replace('.md','.html') + '">' + row.title + '</a></li>');			            		
+			            	}
+			            	if (row.tags[a]=='книги'){
+			            		$('.t_books').append('<li><a href="' + Object.keys(data)[j].replace('.md','.html') + '">' + row.title + '</a></li>');			            		
+			            	}				            			            	
+			            	// else{
+			            	// 	$('.t_other').append('<li><a href="' + Object.keys(data)[j].replace('.md','.html') + '">' + row.title + '</a></li>');			            		
+			            	// }					            		
+			            }
 			        }
+
 			    }
 			);			
 		</script>
 		<!-- [[footer-nav]]			 -->
-		<ul>
-			<li class="column-title">Новое</li>
+		<ul class="t_html">
+			<li class="column-title">HTML</li>
 		</ul>
+		<ul class="t_books">
+			<li class="column-title">Литература</li>
+		</ul>	
+		<ul class="t_other">
+			<li class="column-title">Прочее</li>
+		</ul>		
 	</footer>	
 	<div class="copyright">
 		Фёдор Георгиевич Сарафанов aka @osabio &copy; 2015

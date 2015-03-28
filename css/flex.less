@@ -16,7 +16,7 @@ body,html{
 	font-size: 16pt;
 }
 
-section, header,footer, .copyright, nav, h1, time, .comments-title{
+section, header,footer, .copyright, nav, .article-title, time, .comments-title{
 	padding: 16pt;
 	width: @block-width;
 	// margin: 0 auto;
@@ -58,6 +58,11 @@ header{
 			border: 0px !important;
 		}
 	}
+	.find{
+		width: 170px;
+		border-radius: 10px;
+		border: 1px solid #bbb;
+	}
 }
 section{
 	background: #fff;
@@ -67,7 +72,6 @@ section{
 		text-indent: 1rem;
 		&:first-of-type{
 			margin-top: 0;
-			display: none;
 		}
 	}
 }
@@ -77,8 +81,10 @@ footer{
 	flex-direction: row; // В строчку
 	ul{
 		word-wrap: break-word;
-		font-size: 80%;
-		padding-left: 0px;
+		font-size: 80%;		
+		&:first-of-type{
+			padding-left: 0px;
+		}
 		.column-title{
 			font-weight: 600;
 			color: #5C5457;
@@ -136,7 +142,7 @@ nav{
   }
 }
 
-h1{
+.article-title{
 	background: #fff;
 	margin: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -266,7 +272,7 @@ a{
 	body{
 		width: 100% !important;
 	}
-	section, header,footer, .copyright, nav, h1, time, .comments-title{
+	section, header,footer, .copyright, nav, .article-title, time, .comments-title{
 		padding: 12pt;
 		width: 100% !important;
 		// margin: 0 auto;
