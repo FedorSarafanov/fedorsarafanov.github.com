@@ -80,7 +80,9 @@ for elem in files:
 		result = open(output+elem.replace('.md','')+'.html', 'w+')
 		result.write(html)
 		result.close()
-
+		import re
+		p = re.compile(r'<.*?>')
+		cathtml = p.sub('', cathtml)
 		rss_topic="""
 			<item>
 			 <title>"""+title+"""</title>

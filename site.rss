@@ -3,27 +3,13 @@
 
 <channel>
 	<title>Заголовок ленты</title>
-	<link>Ссылка на сайт</link>
+	<link>sfg180.tk</link>
 	<description>Краткое описание RSS-канала</description>
 	<language>ru-ru</language>
-	<pubDate>Дата последнего генерирования RSS-канала </pubDate>
-	<lastBuildDate>Дата последнего обновления содержимого RSS-канала</lastBuildDate>
+	<pubDate>15.0.2015</pubDate>
+	<lastBuildDate>15.0.2015</lastBuildDate>
 	<copyright>Сарафанов Ф.Г. (С) 2015</copyright>
 	<webMaster>matclass180@yandex.ru</webMaster>
-<!-- 
-	<image>
-	 <url>Cсылка на картинку (логотип) GIF, JPEG или PNG </url>
-	 <title>Описание картинки</title>
-	 <link>Ссылка на веб-ресурс, загружающийся при клике на картинку</link>
-	</image>
- -->
-	<item>
-	 <title>Название статьи </title>
-	 <link>Ссылка на полную версию статьи</link>
-	 <description>Краткое описание статьи</description>
-	 <author>Адрес электронной почты автора статьи</author>
-	 <pubDate>Дата публикации статьи</pubDate>
-	</item>
 
 			<item>
 			 <title>Генератор static сайтов "simplegen"</title>
@@ -32,11 +18,11 @@
 
 
 
-<h2>Конфигурация</h2>
+Конфигурация
 
-<p>Simplegen - простой генератор static сайтов из шаблонов. Базовые шаблоны *.html содержат верстку: в *.md (Markdown) файлах хранится содержимое статей/заметок. Генератор можно запустить в любой директории сайта, сконфигурировав config.json:</p>
+Simplegen - простой генератор static сайтов из шаблонов. Базовые шаблоны *.html содержат верстку: в *.md (Markdown) файлах хранится содержимое статей/заметок. Генератор можно запустить в любой директории сайта, сконфигурировав config.json:
 
-<pre><code>{
+{
     "domain": "127.0.0.1/tool/",
     "sitepath": "articles/",
     "makehtml": "make.html",
@@ -44,17 +30,17 @@
     "rootjson": "../articles.json",
     "breadcrumb-title": "Статьи"    
 }
-</code></pre>
 
-<p>Все ключи являются обязательными. </p>
 
-<ul>
-<li>Ключи <code>domain</code> и <code>sitepath</code> отвечают за правильную генерацию структуры ссылок;</li>
-<li>Ключ <code>makehtml</code> указывает расположение шаблона с версткой относительно текущей директории генератора;</li>
-<li>В директорию <code>"../articles/"</code> (параметр <code>output</code>) перенаправляются сгенерированные файлы;</li>
-<li>Параметр <code>rootjson</code> дает расположение "базы" сайта, в которой в формате <code</description>
+Все ключи являются обязательными. 
+
+
+Ключи domain и sitepath отвечают за правильную генерацию структуры ссылок;
+Ключ makehtml указывает расположение шаблона с версткой относительно текущей директории генератора;
+В директорию "../articles/" (параметр output) перенаправляются сгенерированные файлы;
+Параметр rootjson дает расположение "базы" сайта, в которой в формате <code</description>
 			 <author>sfg180@yandex.ru</author>
-			 <pubDate>29.03.2015 17:12</pubDate>
+			 <pubDate>29.03.2015 17:16</pubDate>
 			</item>
 		
 			<item>
@@ -64,24 +50,24 @@
 
 
 
-<p>Настоящий документ предназначен для ознакомления пользователя с функциональными возможностями языка разметки Markdown. 
+Настоящий документ предназначен для ознакомления пользователя с функциональными возможностями языка разметки Markdown. 
 Markdown – это облегченный язык разметки, который является инструментом преобразования кода в HTML.
 Главной особенностью данного языка является максимально простой синтаксис, который служит для упрощения написания и чтения кода разметки, что, в свою очередь, позволяет легко его корректировать.
-Теперь рассмотрим более подробно функции языка разметки Markdown.   </p>
+Теперь рассмотрим более подробно функции языка разметки Markdown.   
 
-<p>Markdown не является заменой HTML. Синтаксис Markdown достаточно ограничен, и соответствует лишь небольшому подмножеству элементов HTML. Он включает в себя следующие элементы:</p>
+Markdown не является заменой HTML. Синтаксис Markdown достаточно ограничен, и соответствует лишь небольшому подмножеству элементов HTML. Он включает в себя следующие элементы:
 
-<ol>
-<li>Блочные элементы
-<ul>
-<li><a href="#Parag">Параграфы и разрывы строк</a>;</li>
-<li><a href="#Headers">Заголовки</a>;</li>
-<li><a href="#Blockquotes">Цитаты</a>;</li>
-<li><a href="#Lists">Списки</a></li>
-<li><a href="#CodeBlocks">Блоки кода</a>;</li>
-<li><a href="#Lines">Горизонтальные (разделительные) линии</a</description>
+
+Блочные элементы
+
+Параграфы и разрывы строк;
+Заголовки;
+Цитаты;
+Списки
+Блоки кода;
+Горизонтальные (разделительные) линии</a</description>
 			 <author>sfg180@yandex.ru</author>
-			 <pubDate>29.03.2015 17:12</pubDate>
+			 <pubDate>29.03.2015 17:16</pubDate>
 			</item>
 		
 			<item>
@@ -91,15 +77,15 @@ Markdown – это облегченный язык разметки, котор
 
 
 
-<p>Все кончилось!</p>
+Все кончилось!
 
-<p>Но Врангель все не уходил с палубы крейсера «Генерал Корнилов», словно еще не верил, что все это уже случилось, мосты сожжены и возврата к прошлому нет.</p>
+Но Врангель все не уходил с палубы крейсера «Генерал Корнилов», словно еще не верил, что все это уже случилось, мосты сожжены и возврата к прошлому нет.
 
-<p>Все последние месяцы непрерывных изнуряющих боев в Северной Таврии он понимал, что проигрывает и проиграет эту битву. И его неотступно преследовала одна и та же мысль: как достойно, не потеряв лица, сохранить при этом дееспособную армию, пригодную для будущих сражений. Веры в то, что удастся закрыть на железный запор Крымский перешеек и отсидеться в Крыму до будущей весны, у него уже давно не было. Не то время, не та война! Но и не обращать внимания на пессимистические, деморализующие умозаключения своих подчиненных он не мог, не имел права, хотя тоже уже думал так же, как и многие из них.</p>
+Все последние месяцы непрерывных изнуряющих боев в Северной Таврии он понимал, что проигрывает и проиграет эту битву. И его неотступно преследовала одна и та же мысль: как достойно, не потеряв лица, сохранить при этом дееспособную армию, пригодную для будущих сражений. Веры в то, что удастся закрыть на железный запор Крымский перешеек и отсидеться в Крыму до будущей весны, у него уже давно не было. Не то время, не та война! Но и не обращать внимания на пессимистические, деморализующие умозаключения своих подчиненных он не мог, не имел права, хотя тоже уже думал так же, как и многие из них.
 
-<p>Каждодневно, а точнее, каждую ночь, он раскладывал в уме, как некий карточный пасьянс, самые несбыточные варианты спасения армии. Голова все время была забита безумными расчетами различных военных хитрост</description>
+Каждодневно, а точнее, каждую ночь, он раскладывал в уме, как некий карточный пасьянс, самые несбыточные варианты спасения армии. Голова все время была забита безумными расчетами различных военных хитрост</description>
 			 <author>sfg180@yandex.ru</author>
-			 <pubDate>29.03.2015 17:12</pubDate>
+			 <pubDate>29.03.2015 17:16</pubDate>
 			</item>
 		
 			<item>
@@ -107,17 +93,17 @@ Markdown – это облегченный язык разметки, котор
 			 <link>http://127.0.0.1/tool/articles/article.html</link>
 			 <description>
 
-<p>html css github</p>
+html css github
 
-<p>This library is the first step of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:</p>
+This library is the first step of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:
 
-<ol>
-<li>This library converts the raw markup to HTML. See the list of <a href="#markups">supported markup formats</a> below.</li>
-<li>The HTML is sanitized, aggressively removing things that could harm you and your kin—such as <code>script</code> tags, inline-styles, and <code>class</code> or <code>id</code> attributes. See the <a href="https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/sanitization_filter.rb">sanitization filter</a> for the full whitelist.</li>
-<li>Syntax highlighting is performed on code blocks. See <a href="https://github.com/github/linguist#syntax-highlighting">github/linguist</a> for more information about syntax highlighting.</li>
-<li>The HTML is passed through other filters in the <a href="https://github.com/jch/html-pipeline">html-pipeline</a> that add special sauce, such as <a href="h</description>
+
+This library converts the raw markup to HTML. See the list of supported markup formats below.
+The HTML is sanitized, aggressively removing things that could harm you and your kin—such as script tags, inline-styles, and class or id attributes. See the sanitization filter for the full whitelist.
+Syntax highlighting is performed on code blocks. See github/linguist for more information about syntax highlighting.
+The HTML is passed through other filters in the html-pipeline that add special sauce, such as </description>
 			 <author>sfg180@yandex.ru</author>
-			 <pubDate>29.03.2015 17:12</pubDate>
+			 <pubDate>29.03.2015 17:16</pubDate>
 			</item>
 		
 			<item>
@@ -127,8 +113,8 @@ Markdown – это облегченный язык разметки, котор
 
 
 
-<script>
-$('.rawhtml').append('<ul class="tages"></ul>');
+
+$('.rawhtml').append('');
     $.getJSON(
         '../articles.json',
         function(data) {
@@ -136,15 +122,15 @@ $('.rawhtml').append('<ul class="tages"></ul>');
             for (var i in data) {
                 var row = data[i];
                 j++;                
-                $('.tages').append('<li><a href="' + Object.keys(data)[j].replace('.md','.html') + '">' + row.title + '</a></li>');                                
+                $('.tages').append('' + row.title + '');                                
             }
 
         }
     );    
-</script>
+
 </description>
 			 <author>sfg180@yandex.ru</author>
-			 <pubDate>29.03.2015 17:12</pubDate>
+			 <pubDate>29.03.2015 17:16</pubDate>
 			</item>
 		<!-- DO NOT EDIT THIS, STUPID! -->
 </channel>
