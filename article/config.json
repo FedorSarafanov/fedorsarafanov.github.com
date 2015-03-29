@@ -4,5 +4,6 @@
 	"output": "../articles/",
 	"sitepath": "articles/",
 	"rootjson": "../articles.json",
+	"rootrss": "../site.rss",
 	"breadcrumb-title": "Статьи"	
 }

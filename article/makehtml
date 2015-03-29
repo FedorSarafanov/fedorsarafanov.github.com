@@ -5,6 +5,17 @@ from datetime import datetime
 import re, json
 import os 
 
+rssitem="""
+	<item>
+	 <title>Название статьи </title>
+	 <link>Ссылка на полную версию статьи</link>
+	 <description>Краткое описание статьи</description>
+	 <author>Адрес электронной почты автора статьи</author>
+	 <pubDate>Дата публикации статьи</pubDate>
+	</item>
+<!-- DO NOT EDIT THIS, STUPID! -->
+"""
+
 filelist = os.listdir(os.path.abspath(os.curdir)) 
 files = filter(lambda x: x.endswith('.md'), filelist)
 configjson = 'config.json'
@@ -17,10 +28,14 @@ sitepath = config['sitepath']
 makehtml = config['makehtml']
 output = config['output']
 rootjson = config['rootjson']
+rootrss = config['rootrss']
 breadcrumb_title = config['breadcrumb-title']
 
 with open(rootjson) as data_file:    
     data = json.load(data_file)
+
+rss_o = open(rootrss, 'r')
+really_rss = rss_o.read()
 
 for elem in files:
 	# if not (elem in data):
@@ -57,8 +72,8 @@ for elem in files:
 		html = html.replace('[[title]]', title);
 		html = html.replace('[[rawhtml]]', rawhtml);
 		html = html.replace('[[now]]', now);
-
-		breadcrumbs = '<a href="http://'+domain+'">Блог</a><span>&#62;</span>'+'<a href="http://'+domain+sitepath+'">'+breadcrumb_title+'</a><span>&#62;</span>'+'<a href="http://'+domain+sitepath+elem.replace('.md','')+'.html">'+title+'</a>'
+		uri = 'http://'+domain+sitepath+elem.replace('.md','')+'.html'
+		breadcrumbs = '<a href="http://'+domain+'">Блог</a><span>&#62;</span>'+'<a href="http://'+domain+sitepath+'">'+breadcrumb_title+'</a><span>&#62;</span>'+'<a href="'+uri+'">'+title+'</a>'
 
 		html = html.replace('[[breadcrumbs]]', breadcrumbs);
 
@@ -66,10 +81,22 @@ for elem in files:
 		result.write(html)
 		result.close()
 
-		catresult = open(output+elem.replace('.md','')+'-cat.load', 'w+')
-		catresult.write(cathtml)
-		catresult.close()
+		rss_topic="""
+			<item>
+			 <title>"""+title+"""</title>
+			 <link>"""+uri+"""</link>
+			 <description>"""+cathtml+"""</description>
+			 <author>sfg180@yandex.ru</author>
+			 <pubDate>"""+now+"""</pubDate>
+			</item>
+		<!-- DO NOT EDIT THIS, STUPID! -->"""
+		really_rss=really_rss.replace('<!-- DO NOT EDIT THIS, STUPID! -->',rss_topic)
+		rss = open(rootrss, 'w+')	
+		rss.write(really_rss)
+		rss.close()	
+		# print(really_rss)
 
+		# rss.write(really_rss)
 		data[elem] = {"title": title, "data": now, "tags": tags}
 	# else:		
 	# 	print(data[elem])
