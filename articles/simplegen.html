@@ -24,32 +24,40 @@
 		<a class="button" href="">Задачи</a>
 		<a class="button" href="">Биография</a>
 		<span class="breadcrumbs">		
-			<a href="http://127.0.0.1/tool/">Блог</a><span>&#62;</span><a href="http://127.0.0.1/tool/articles/">Статьи</a><span>&#62;</span><a href="http://127.0.0.1/tool/articles/index.html">Лента</a>
+			<a href="http://127.0.0.1/tool/">Блог</a><span>&#62;</span><a href="http://127.0.0.1/tool/articles/">Статьи</a><span>&#62;</span><a href="http://127.0.0.1/tool/articles/simplegen.html">Генератор static сайтов "simplegen"</a>
 		</span>		
 	</nav>
 
-	<h1 class="article-title">Лента</h1>
+	<h1 class="article-title">Генератор static сайтов "simplegen"</h1>
 	<time>28.03.2015 21:31</time>
 	<section class="rawhtml">
 		
 
 
 
-<script>
-$('.rawhtml').append('<ul class="tages"></ul>');
-    $.getJSON(
-        '../articles.json',
-        function(data) {
-            j=-1
-            for (var i in data) {
-                var row = data[i];
-                j++;                
-                $('.tages').append('<li><a href="' + Object.keys(data)[j].replace('.md','.html') + '">' + row.title + '</a></li>');                                
-            }
+<h2>Конфигурация</h2>
 
-        }
-    );    
-</script>
+<p>Simplegen - простой генератор static сайтов из шаблонов. Базовые шаблоны *.html содержат верстку: в *.md (Markdown) файлах хранится содержимое статей/заметок. Генератор можно запустить в любой директории сайта, сконфигурировав config.json:</p>
+
+<pre><code>{
+    "domain": "127.0.0.1/tool/",
+    "sitepath": "articles/",
+    "makehtml": "make.html",
+    "output": "../articles/",        
+    "rootjson": "../articles.json",
+    "breadcrumb-title": "Статьи"    
+}
+</code></pre>
+
+<p>Все ключи являются обязательными. </p>
+
+<ul>
+<li>Ключи <code>domain</code> и <code>sitepath</code> отвечают за правильную генерацию структуры ссылок;</li>
+<li>Ключ <code>makehtml</code> указывает расположение шаблона с версткой относительно текущей директории генератора;</li>
+<li>В директорию <code>"../articles/"</code> (параметр <code>output</code>) перенаправляются сгенерированные файлы;</li>
+<li>Параметр <code>rootjson</code> дает расположение "базы" сайта, в которой в формате <code>json</code> хранится информация о сгенерированных страницах и их структуре;</li>
+<li>Ключ <code>breadcrumb-title</code> задает родительское название всем файлам, генерируемым в данной директории, а также используется при генерации карты сайта и "хлебных крошек"</li>
+</ul>
 
 	</section>	
 
