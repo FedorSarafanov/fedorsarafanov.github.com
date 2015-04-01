@@ -15,6 +15,7 @@ body:before{
 	background: #E8E8E8;
 	z-index: -1;
 	box-shadow: 0px 0px 100px 10px #f0f0f0;
+	margin: 0 auto;
 }
 
 body{
@@ -22,6 +23,9 @@ body{
   	min-height: 100vh;
   	flex-direction: column;
 	align-items: center; //По центру  	
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
 }
 
 body,html{
@@ -38,6 +42,7 @@ section, header,footer, .copyright, nav, .article-title, time, .comments-title{
 	@border-color-main: #ccc;
 	border-left: 1px solid @border-color-main;
 	border-right: 1px solid @border-color-main;
+	z-index: 200;
 }
 
 header{
@@ -340,4 +345,25 @@ a{
 		}		
 	}
 
+}
+
+#visualisation > div {
+width: 2.5%;
+margin: 1px;
+background-color: #26A9AE;
+display: inline-block;
+position: absolute;
+bottom: 0px;
+}
+
+#visualisation {
+height: 50vh;
+width: ~"calc((100% - 960px) / 2)";
+position: fixed;
+left: 0;
+top: 0;
+padding: 0;
+z-index: 0;
+// margin: 10px;
+-webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.2)));
 }

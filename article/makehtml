@@ -16,96 +16,14 @@ rssitem="""
 <!-- DO NOT EDIT THIS, STUPID! -->
 """
 
-filelist = os.listdir(os.path.abspath(os.curdir)) 
-files = filter(lambda x: x.endswith('.md'), filelist)
-configjson = 'config.json'
+def timeAsrfc822 ( theTime ) :
 
-with open(configjson) as data__file:    
-    config = json.load(data__file)
+    import rfc822
+    return rfc822 . formatdate ( rfc822 . mktime_tz ( rfc822 . parsedate_tz ( theTime . strftime ( "%a, %d %b %Y %H:%M:%S" ) ) ) )
 
-domain = config['domain']
-sitepath = config['sitepath']
-makehtml = config['makehtml']
-output = config['output']
-rootjson = config['rootjson']
-rootrss = config['rootrss']
-breadcrumb_title = config['breadcrumb-title']
+import datetime
+print(timeAsrfc822(datetime.datetime.now()))
+    
 
-with open(rootjson) as data_file:    
-    data = json.load(data_file)
 
-rss_o = open(rootrss, 'r')
-really_rss = rss_o.read()
-
-for elem in files:
-	# if not (elem in data):
-		md = open(elem, 'r')
-		tages = md.readlines()[2]
-		tags = tages.split()
-		# print(tags)
-		md.close()
-
-		project = open(makehtml, 'r')
-		html = project.read()
-		project.close()
-		proc = Popen(
-		    "markdown "+elem,
-		    shell=True,
-		    stdout=PIPE, stderr=PIPE
-		)
-		proc.wait()
-		res = proc.communicate()
-
-		rawhtml = res[0].decode('utf-8', 'ignore')	
-		title = re.search(r'<h1>(.*?)</h1>', rawhtml).group(1)
-		if tags[0]=='<p':
-			tages = re.search(r'<p class="tages">(.*?)</p>', rawhtml).group(1)
-			tags = tages.split()
-
-		rawhtml = rawhtml.replace('<h1 class="article-title">'+title+'</h1>','')
-		rawhtml = rawhtml.replace('<h1>'+title+'</h1>','')
-		rawhtml = rawhtml.replace(tages,'')
-		rawhtml = rawhtml.replace('<p class="tages"></p>','')
-		cathtml = rawhtml[0:1000]
-		now = datetime.now().strftime("%d.%m.%Y %H:%M")	
-
-		html = html.replace('[[title]]', title);
-		html = html.replace('[[rawhtml]]', rawhtml);
-		html = html.replace('[[now]]', now);
-		uri = 'http://'+domain+sitepath+elem.replace('.md','')+'.html'
-		breadcrumbs = '<a href="http://'+domain+'">Блог</a><span>&#62;</span>'+'<a href="http://'+domain+sitepath+'">'+breadcrumb_title+'</a><span>&#62;</span>'+'<a href="'+uri+'">'+title+'</a>'
-
-		html = html.replace('[[breadcrumbs]]', breadcrumbs);
-
-		result = open(output+elem.replace('.md','')+'.html', 'w+')
-		result.write(html)
-		result.close()
-		import re
-		p = re.compile(r'<.*?>')
-		cathtml = p.sub('', cathtml)
-		rss_topic="""
-			<item>
-			 <title>"""+title+"""</title>
-			 <link>"""+uri+"""</link>
-			 <description>"""+cathtml+"""</description>
-			 <author>sfg180@yandex.ru</author>
-			 <pubDate>"""+now+"""</pubDate>
-			</item>
-		<!-- DO NOT EDIT THIS, STUPID! -->"""
-		really_rss=really_rss.replace('<!-- DO NOT EDIT THIS, STUPID! -->',rss_topic)
-		rss = open(rootrss, 'w+')	
-		rss.write(really_rss)
-		rss.close()	
-		# print(really_rss)
-
-		# rss.write(really_rss)
-		data[elem] = {"title": title, "data": now, "tags": tags}
-	# else:		
-	# 	print(data[elem])
-	# 	pass
-
-with open(rootjson, 'w') as jsons_file:
-    json.dump(data, jsons_file, ensure_ascii=False)		
-
-print('Success!')
 
