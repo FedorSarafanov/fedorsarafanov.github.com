@@ -46,12 +46,16 @@ $(function () {
 
     // Set up the visualisation elements
     var visualisation = $("#visualisation");
+    var visualisation2 = $("#visualisation2");
 	var barSpacingPercent = 100 / analyser.frequencyBinCount;
     for (var i = 0; i < analyser.frequencyBinCount; i++) {
     	$("<div/>").css("left", i * barSpacingPercent + "%")
 			.appendTo(visualisation);
+        $("<div/>").css("right", i * barSpacingPercent + "%")
+                    .appendTo(visualisation2);            
     }
     var bars = $("#visualisation > div");
+    var bars2 = $("#visualisation2 > div");
 
     // Get the frequency data and update the visualisation
     function update() {
@@ -62,6 +66,9 @@ $(function () {
         bars.each(function (index, bar) {
             bar.style.height = frequencyData[index] + 'px';
         });
+        bars2.each(function (index, bar) {
+            bar.style.height = frequencyData[index] + 'px';
+        });        
     };
 
     // Hook up the audio routing...
