@@ -378,14 +378,18 @@ position: absolute;
 bottom: 0px;
 }
 
-#visualisation2 {
-height: 50vh;
+.zerkalo {
+height: 100vh;
 width: ~"calc((100% - 960px) / 2)";
 position: fixed;
-right: 0;
+left: 0;
 top: 0;
 padding: 0;
 z-index: 0;
 // margin: 10px;
 -webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.5)));
+}
+
+#equ{
+-webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
 }

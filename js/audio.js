@@ -51,24 +51,51 @@ $(function () {
     for (var i = 0; i < analyser.frequencyBinCount; i++) {
     	$("<div/>").css("left", i * barSpacingPercent + "%")
 			.appendTo(visualisation);
-        $("<div/>").css("right", i * barSpacingPercent + "%")
-                    .appendTo(visualisation2);            
+            // alert()
+        // $("<div/>").css("right", i * barSpacingPercent + "%")
+        //             .appendTo(visualisation2);            
     }
     var bars = $("#visualisation > div");
     var bars2 = $("#visualisation2 > div");
+    var example = document.getElementById("equ"),
+    ww= example.width;
+    hh= example.height;
+    ctx         = example.getContext('2d');     
+    ctx.fillStyle = "#26A9AE";
+    ctx.strokeStyle = "orange";
+
+    function randcolor(){
+        var r=Math.floor(Math.random() * (256));
+        var g=Math.floor(Math.random() * (256));
+        var b=Math.floor(Math.random() * (256));
+        var c='#' + r.toString(16) + g.toString(16) + b.toString(16);
+        return c;
+    }
 
     // Get the frequency data and update the visualisation
     function update() {
         requestAnimationFrame(update);
-
         analyser.getByteFrequencyData(frequencyData);
+        for (var i = 0; i < analyser.frequencyBinCount; i++) {
+            var left = i * barSpacingPercent;
+            var height = frequencyData[i];
+            // if (i>20) {
+            //     ctx.fillStyle = randcolor();
+            // };
+            ctx.clearRect(7*i, 0, 5, hh); 
+            ctx.fillRect(7*i, hh-height, 5, height);
+            // ctx.fillRect(2*i, 10, 5, height);
 
-        bars.each(function (index, bar) {
-            bar.style.height = frequencyData[index] + 'px';
-        });
-        bars2.each(function (index, bar) {
-            bar.style.height = frequencyData[index] + 'px';
-        });        
+        }     
+
+        // bars.each(function (index, bar) {
+        //     // $('.article-title').html(bars.length)
+        //     bar.style.height = frequencyData[index] + 'px';
+        //     // console.log(frequencyData[index] + 'px')
+        // });
+        // bars2.each(function (index, bar) {
+        //     // bar.style.height = frequencyData[index] + 'px';
+        // });        
     };
 
     // Hook up the audio routing...
