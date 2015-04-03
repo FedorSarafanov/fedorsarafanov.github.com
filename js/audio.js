@@ -1,6 +1,7 @@
 $(function () {
     // Future-proofing...
     var context;
+
     if (typeof AudioContext !== "undefined") {
         context = new AudioContext();
     } else if (typeof webkitAudioContext !== "undefined") {
@@ -57,12 +58,19 @@ $(function () {
     }
     var bars = $("#visualisation > div");
     var bars2 = $("#visualisation2 > div");
+
     var example = document.getElementById("equ"),
+
+
     ww= example.width;
     hh= example.height;
+    hh = $(window).height()/3;
     ctx         = example.getContext('2d');     
     ctx.fillStyle = "#26A9AE";
     ctx.strokeStyle = "orange";
+    var fulltime =  $("#player")[0].duration;
+    var player = $("#player")[0];
+// 
 
     function randcolor(){
         var r=Math.floor(Math.random() * (256));
@@ -80,10 +88,11 @@ $(function () {
             var left = i * barSpacingPercent;
             var height = frequencyData[i];
             // if (i>20) {
-            //     ctx.fillStyle = randcolor();
+                // ctx.fillStyle = randcolor();
             // };
-            ctx.clearRect(7*i, 0, 5, hh); 
-            ctx.fillRect(7*i, hh-height, 5, height);
+            ctx.clearRect(9*i, 0, 7, hh); 
+            ctx.fillRect(9*i, hh-height, 7, height);
+            $('.slider').css('border-bottom-width',(100/$("#player")[0].duration*$("#player")[0].currentTime)+'vh');
             // ctx.fillRect(2*i, 10, 5, height);
 
         }     
@@ -106,6 +115,10 @@ $(function () {
 		source.connect(analyser);
 		analyser.connect(context.destination);
 	});
+    $("#player").bind('ended', function() {
+        alert('(');
+    });
+
 
     // Kick it off...
     update();
