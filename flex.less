@@ -23,9 +23,7 @@ body{
   	min-height: 100vh;
   	flex-direction: column;
 	align-items: center; //По центру  	
-	background-repeat: no-repeat !important;
-	background-attachment: fixed !important;
-	background-size: cover !important;
+	overflow-x: hidden;
 }
 
 body,html{
@@ -42,7 +40,7 @@ section, header,footer, .copyright, nav, .article-title, time, .comments-title{
 	@border-color-main: #ccc;
 	border-left: 1px solid @border-color-main;
 	border-right: 1px solid @border-color-main;
-	z-index: 200;
+	z-index: 88;
 }
 
 header{
@@ -382,6 +380,7 @@ bottom: 0px;
 height: 50vh;
 position: fixed;
 left: 0px;
+z-index: 999;
 top: 0px;
 width: ~"calc((100% - 960px) / 2)";
 -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
@@ -400,4 +399,47 @@ width: ~"calc((100% - 960px) / 2)";
 	border-bottom-width: 0px;
 	border-bottom-color: #26A9AE;
 	// z-index: -1;
+}
+
+.bg-audio{
+	display: block;
+	position: fixed;
+	top: 0;
+	// background: #000;
+	width: 100%;
+	height: 100%;
+	left: 100%;	
+    -webkit-transition:all 0.3s linear;
+	-moz-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+	-ms-transition:all 0.3s linear;
+	transition:all 0.3s linear;	
+	overflow: hidden;
+	z-index: 100;
+
+  	background-position: center center;
+    -o-background-size: 100% 100%; /* opera ≥ 9.5 */
+    -webkit-background-size: 100% 100%; /* Safari ≥ 5.0, Chrome ≥ 4.0 */
+    -khtml-background-size: 100% 100%; /* Konqueror ≥ 3.5.4 */
+    -moz-background-size: 100% 100%; /* Firefox ≥ 3.6 */
+    background-size: 100% 100%;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	// background-size: cover !important;
+	// background-position: center center !important;
+	//   -webkit-background-size: cover !important;
+	//   -moz-background-size: cover !important;
+	//   -o-background-size: cover !important;
+	//   background-size: cover !important;	
+	background-image: url(img/bg.jpg);
+}
+
+.show{
+	@tr: translateX(-100%);
+	-webkit-transform: @tr;
+	-moz-transform: @tr;
+	transform: @tr;
+}
+.oh{
+	overflow: hidden !important;
 }

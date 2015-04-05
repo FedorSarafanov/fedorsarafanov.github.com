@@ -33,13 +33,17 @@
 		    var activePoints = myLineChart.getPointsAtEvent(evt);
 		    if (activePoints[0].value==50) {
 		    	$('#player').attr('src','audio/sbl.mp3')
-		    	document.getElementById('player').play();
-		    	$('body').css('background','url(img/bg.jpg)')
+		    	document.getElementById('player').play();		    	
+		    	$('.bg-audio').css('background','url(img/bg.jpg)');
+				$('.bg-audio').toggleClass('show');	
 		    };
 		    if (activePoints[0].value==95) {
 		    	$('#player').attr('src','audio/yas.mp3')
-		    	document.getElementById('player').play();
-		    	$('body').css('background','url(img/yas.jpg)')		    	
+		    	document.getElementById('player').play();    	
+		    	$('.bg-audio').css('background','url(img/yas.jpg)');
+				// $('.bg-audio').toggleClass('show');	
+				// $('body').toggleClass('oh');	
+
 		    };
 
 		    // if (activePoints[0].value==77) {
@@ -50,8 +54,9 @@
 
 		    if (activePoints[0].value==96) {
 		    	$('#player').attr('src','audio/180.mp3')
-		    	document.getElementById('player').play();
-		    	$('body').css('background','url(img/180.jpg)')		    	
+		    	document.getElementById('player').play();    	
+		    	$('.bg-audio').css('background','url(img/180.jpg)');
+				$('.bg-audio').toggleClass('show');			    		    	
 		    };		    
 		    
 		    // => activePoints is an array of points on the canvas that are at the same position as the click event.
