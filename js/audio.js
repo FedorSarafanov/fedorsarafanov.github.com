@@ -70,14 +70,11 @@ $(function () {
     // Hook up the audio routing...
     // player -> analyser -> speakers
 	// (Do this after the player is ready to play - https://code.google.com/p/chromium/issues/detail?id=112368#c4)
-	$("#player").bind('canplay', function() {
+	$("#player").on('canplay', function() {
         var source = context.createMediaElementSource(this);	
 		source.connect(analyser);
 		analyser.connect(context.destination);
 	});
-    $("#player").bind('ended', function() {
-        alert('(');
-    });
     update();
 });
 
