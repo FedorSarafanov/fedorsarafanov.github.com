@@ -5,51 +5,25 @@
             <title>
                 Задачи - "АнтиИродов"
             </title>
-            <link href="styles/main.min.css" rel="stylesheet">
-                <link href="css/social.css" rel="stylesheet">
-                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
-                        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
-                            <link href="css/jquery.dataTables.css" rel="stylesheet">
-                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-                                </script>
-                                <link href="/img/favicon.png" rel="shortcut icon" type="image/png">
-                                </link>
-                            </link>
-                        </link>
-                    </link>
-                </link>
-            </link>
+			<link href="styles/main.min.css" rel="stylesheet">
+			<link href="css/social.css" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+			<link href="css/jquery.dataTables.css" rel="stylesheet">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+			</script>
+			<link href="/img/favicon.png" rel="shortcut icon" type="image/png">
         </meta>
     </head>
     <body>
         <header>
-            <ul class="navigation">
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="problems.html">
-                        Problems
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        LaTeX
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Linux
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Lab
-                    </a>
-                </li>
-            </ul>
+		<ul class="navigation">
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/problems.html">Problems</a></li>
+		  <li><a href="/latex.html">LaTeX</a></li>
+		  <li><a href="/linux.html">Linux</a></li>
+		  <li><a href="/lab.html">Lab</a></li>
+		</ul>
         </header>
         <section>
             <table id="table">
@@ -154,37 +128,7 @@
         </footer>
         <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" type="text/javascript">
         </script>
-        <!-- <script type="text/javascript" src="dataTables.fnGetHiddenNodes.js"></script> -->
         <script type="text/javascript">
-			// function format(string, object) {
-			//     return string.replace(/{([^{}]*)}/g,
-			//        function(match, group_match)
-			//        {
-			//            var data = object[group_match];
-			//            return typeof data === 'string' ? data : match;
-			//        }
-			//     );
-// 			// }
-// function LinkCheck(url)
-// {
-//     var http = new XMLHttpRequest();
-//     http.open('HEAD', url, false);
-//     http.send();
-//     return http.status!=404;
-// }
-// 		if (!String.prototype.format) {
-// 		    String.prototype.format = function () {
-// 		        var args = arguments;
-// 		        return this.replace(/{(\d+)}/g, function (match, number) {
-// 		            return typeof args[number] != 'undefined'
-// 		              ? args[number]
-// 		              : match
-// 		            ;
-// 		        });
-// 		    };
-// 		}
-
-
         $(document).ready(function() {
 	        var table = $('#table').dataTable({
 				"language": {
@@ -193,46 +137,6 @@
 	        });
 	          
 	    } );
-		// $.getJSON("list.json", function(json) {
-		//     json.files.forEach(function(name) {
-		//     	var number='';
-		//     	var author='';
-		//     	if (/\d-\d{0,4}/g.test(name)) {
-		//     		// console.log(name)
-		//     		number=/\d-\d{0,4}/g.exec(name)[0];
-		//     		author='Иродов';
-		//     		// console.log();
-		//     		// console.log('Иродов');
-		//     	}else if (/\d{2,}/g.test(name)) {
-		//     		// console.log(name)
-		//     		number=name.match(/\d{1,}/g)[0];
-		//     		author='Яковлев';
-		//     		// console.log(name.match(/\d{1,}/g)[0]);
-		//     		// console.log('Яковлев');
-		//     	}else{
-		//     		re=new RegExp("\/pdf\/(.*)\.pdf", "g");
-		//     		number=re.exec(name)[1];
-		//     		author='Под запись';
-		//     		// console.log(re.exec(name)[1]);
-		//     		// console.log('Под запись');
-		//     	}
-		//     	file=name.replace('/pdf/','').replace('.pdf','');
-		//     	// console.log(file)
-		//     	var str = ''
-		//     	if (LinkCheck('/problems/'+file+'-0.jpg')){
-		//     		str=str+'<a href="/problems/'+file+'-0.jpg">1</a>';
-		//     	}
-		//     	if (LinkCheck('/problems/'+file+'-1.jpg')){
-		//     		str=str+'<a href="/problems/'+file+'-1.jpg">2</a>';
-		//     	}
-		//     	if (LinkCheck('/problems/'+file+'-2.jpg')){
-		//     		str=str+'<a href="/problems/'+file+'-2.jpg">3</a>';
-		//     	}
-		//     	// console.log(title);
-		//     	$('tbody').append('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td></tr>'.format(author, number, '',str));
-    			
-		// 	});
-		// });
         </script>
     </body>
 </html>

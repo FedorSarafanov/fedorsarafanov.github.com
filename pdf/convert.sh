@@ -35,7 +35,7 @@ for file in *.pdf;
 
 		fi;
 		# echo $name $author;
-		convert -density 300 -alpha remove $name.pdf $name.jpg
+		# convert -density 300 -alpha remove $name.pdf $name.jpg
 		row=`sed "s/{1}/$name/g; s/{0}/$author/g; s/{2}//g; s/{3}//g;" <<<"<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}"`;
 		row+=$href;
 		row+="</td></tr>";

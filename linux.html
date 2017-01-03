@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Блог @osabio</title>
+	<link rel="stylesheet" href="styles/main.min.css">
+	<link rel="stylesheet" href="css/social.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="http://latex.codecogs.com/css/equation-embed.css" />
+	<script type="text/javascript" src="http://latex.codecogs.com/js/eq_config.js" ></script>
+	<script type="text/javascript" src="http://latex.codecogs.com/js/eq_editor-lite-18.js" ></script>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<header>
+		<ul class="navigation">
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/problems.html">Problems</a></li>
+		  <li><a href="/latex.html">LaTeX</a></li>
+		  <li><a href="/linux.html">Linux</a></li>
+		  <li><a href="/lab.html">Lab</a></li>
+		</ul>
+	</header>
+<section>
+<header>
+	<time datetime="2017-01-03" class="datetime">JANUARY 3, 2017</time>
+	<h1>Как работает генерация картинок к задачам на этом сайте</h1>
+</header>
+<article>
+	<!-- <h1>text</h1> -->
+</article>
+</section>
+<pre>
+<code class="bash hljs">
+#!/usr/bin/bash
+rm files.html
+touch files.html;
+for file in *.pdf;  
+	# do echo $file ; 
+	do {
+		name=`basename -s .pdf &quot;$file&quot;`;
+		if [[ &quot;$name&quot; =~ ^[0-9][0-9][0-9] || &quot;$name&quot; =~ ^[0-9][0-9] ]] ;then
+			author=&quot;Яковлев&quot;;
+		elif [[ &quot;$name&quot; =~ ^[0-9]-[0-9][0-9] || &quot;$name&quot; =~ ^[0-9]-[0-9][0-9][0-9] ]]; then
+			author=&quot;Иродов&quot;;
+		else 
+			author=&quot;Под запись&quot;;
+		fi	;
+
+		href=&quot;&quot;;
+
+		if [ -f $name&quot;.jpg&quot; ]; then
+    		href+=&quot;&lt;a href='/problems/$name.jpg'&gt;1&lt;/a&gt;&quot;;
+		else {
+
+			if [ -f $name&quot;-0.jpg&quot; ]; then
+	    		href+=&quot;&lt;a href='/problems/$name-0.jpg'&gt;1&lt;/a&gt;&quot;;
+			fi;
+
+			if [ -f $name&quot;-1.jpg&quot; ]; then
+	    		href+=&quot;&lt;a href='/problems/$name-1.jpg'&gt;2&lt;/a&gt;&quot;;
+			fi;
+
+			if [ -f $name&quot;-2.jpg&quot; ]; then
+	    		href+=&quot;&lt;a href='/problems/$name-2.jpg'&gt;3&lt;/a&gt;&quot;;
+			fi;
+
+		}
+
+		fi;
+		convert -density 300 -alpha remove $name.pdf $name.jpg
+		row=`sed &quot;s/{1}/$name/g; s/{0}/$author/g; s/{2}//g; s/{3}//g;&quot; &lt;&lt;&lt;&quot;&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;td&gt;{3}&quot;`;
+		row+=$href;
+		row+=&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+		echo $row &gt;&gt;files.html;
+	} 
+done;
+
+rm -rf ../problems/*.jpg;
+cp *.jpg ../problems/;
+</code>
+</pre>
+	<footer>
+		<ul class="pagination">
+		  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+		  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+		  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+		  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+		  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+		</ul>
+		<p>This page is protected: all rights reserved
+		&copy; Saraganov F. G. (aka @osabio)</p>
+	</footer>
+</body>
+</html>
