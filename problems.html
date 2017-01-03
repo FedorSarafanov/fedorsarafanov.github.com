@@ -1,87 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Задачи - "АнтиИродов"</title>
-	<link rel="stylesheet" href="styles/main.min.css">
-	<link rel="stylesheet" href="css/social.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
-	<link rel="stylesheet" href="css/jquery.dataTables.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	 <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-</head>
-<body>
-	<header>
-		<ul class="navigation">
-		  <li><a href="index.html">Home</a></li>
-		  <li><a href="problems.html">Problems</a></li>
-		  <li><a href="#">LaTeX</a></li>
-		  <li><a href="#">Linux</a></li>
-		  <li><a href="#">Lab</a></li>
-		</ul>
-	</header>
-	<section>
-	<table id="table">
-	  <thead>
-	    <tr>
-	      <th>Задачник</th>
-	      <th>Номер</th>
-	      <th>Описание</th> 
-	      <!-- <th>pdf</th> -->
-	      <th>png</th>
-	    </tr>
-	  </thead>
-	  <tbody>
-	    <tr>
-	      <td>Иродов</td>
-	      <td>1.314</td>
-	      <td>Скрещенные поля</td>
-	      <!-- <td><a href="yandex.ru">ss</a></td> -->
-	      <td><a href="yandex.ru">ss</a></td>
-	    </tr>
-	    <tr>
-	      <td>Яковлев</td>
-	      <td>91</td>
-	      <td>Тележка (5 случаев)</td>
-	      <!-- <td><a href="./pdf/91.pdf">91.pdf</a></td> -->
-	      <td>
-	      	<a href="problems/91-0.jpg">1</a>
-	      	<a href="problems/91-1.jpg">2</a>
-	      </td>
-	    </tr>
-	    <tr>
-	      <td>Иродов</td>
-	      <td>1.312</td>
-	      <td>Скрещенные </td>
-	      <!-- <td><a href="yandex.ru">ss</a></td> -->
-	      <td><a href="yandex.ru">ss</a></td>
-	    </tr>
-	    <tr>
-	      <td>Савельев</td>
-	      <td>1.313</td>
-	      <td>Скрещенные </td>
-	      <!-- <td><a href="yandex.ru">1</a></td> -->
-	      <td><a href="yandex.ru">1</a><a href="yandex.ru">2</a></td>
-	    </tr>
-	  </tbody>
-	</table>
-	</section>
-	<footer>
-		<ul class="pagination">
-		  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
-		  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
-		  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
-		  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
-		  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
-		</ul>
-		<p>This page is protected: all rights reserved
-		&copy; Saraganov F. G. (aka @osabio)</p>
-	</footer>
-	<script type="text/javascript" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-	<!-- <script type="text/javascript" src="dataTables.fnGetHiddenNodes.js"></script> -->
-	<script type="text/javascript">
-	    $(document).ready(function() {
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Задачи - "АнтиИродов"
+            </title>
+            <link href="styles/main.min.css" rel="stylesheet">
+                <link href="css/social.css" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+                        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+                            <link href="css/jquery.dataTables.css" rel="stylesheet">
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+                                </script>
+                                <link href="/img/favicon.png" rel="shortcut icon" type="image/png">
+                                </link>
+                            </link>
+                        </link>
+                    </link>
+                </link>
+            </link>
+        </meta>
+    </head>
+    <body>
+        <header>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="problems.html">
+                        Problems
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        LaTeX
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Linux
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Lab
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Задачник
+                        </th>
+                        <th>
+                            Номер
+                        </th>
+                        <th>
+                            Описание
+                        </th>
+                        <!-- <th>pdf</th> -->
+                        <th>
+                            png
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+					<tr><td>Яковлев</td><td>109</td><td></td><td><a href='/problems/109.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-104</td><td></td><td><a href='/problems/1-104.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-108</td><td></td><td><a href='/problems/1-108.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>114</td><td></td><td><a href='/problems/114-0.jpg'>1</a><a href='/problems/114-1.jpg'>2</a></td></tr>
+					<tr><td>Иродов</td><td>1-160</td><td></td><td><a href='/problems/1-160.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-163</td><td></td><td><a href='/problems/1-163.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-19</td><td></td><td><a href='/problems/1-19.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-205</td><td></td><td><a href='/problems/1-205.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-206</td><td></td><td><a href='/problems/1-206.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-242</td><td></td><td><a href='/problems/1-242.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-24</td><td></td><td><a href='/problems/1-24.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-314</td><td></td><td><a href='/problems/1-314.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-368</td><td></td><td><a href='/problems/1-368.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-370</td><td></td><td><a href='/problems/1-370.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-372</td><td></td><td><a href='/problems/1-372.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-380</td><td></td><td><a href='/problems/1-380.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-382</td><td></td><td><a href='/problems/1-382.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-383</td><td></td><td><a href='/problems/1-383.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-399</td><td></td><td><a href='/problems/1-399.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-47</td><td></td><td><a href='/problems/1-47.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-65</td><td></td><td><a href='/problems/1-65.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-67</td><td></td><td><a href='/problems/1-67.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-74</td><td></td><td><a href='/problems/1-74.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-75</td><td></td><td><a href='/problems/1-75.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-76</td><td></td><td><a href='/problems/1-76.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>178</td><td></td><td><a href='/problems/178.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-84</td><td></td><td><a href='/problems/1-84.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-85</td><td></td><td><a href='/problems/1-85.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>1-88</td><td></td><td><a href='/problems/1-88.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>20</td><td></td><td><a href='/problems/20-0.jpg'>1</a><a href='/problems/20-1.jpg'>2</a></td></tr>
+					<tr><td>Яковлев</td><td>262</td><td></td><td><a href='/problems/262.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>269</td><td></td><td><a href='/problems/269.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>293</td><td></td><td><a href='/problems/293.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>304</td><td></td><td><a href='/problems/304-0.jpg'>1</a><a href='/problems/304-1.jpg'>2</a></td></tr>
+					<tr><td>Яковлев</td><td>310</td><td></td><td><a href='/problems/310.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>41</td><td></td><td><a href='/problems/41.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>4-37</td><td></td><td><a href='/problems/4-37.jpg'>1</a></td></tr>
+					<tr><td>Иродов</td><td>4-39</td><td></td><td><a href='/problems/4-39.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>578</td><td></td><td><a href='/problems/578.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>645</td><td></td><td><a href='/problems/645.jpg'>1</a></td></tr>
+					<tr><td>Яковлев</td><td>91</td><td></td><td><a href='/problems/91-0.jpg'>1</a><a href='/problems/91-1.jpg'>2</a></td></tr>
+					<tr><td>Под запись</td><td>доска</td><td></td><td><a href='/problems/доска-0.jpg'>1</a><a href='/problems/доска-1.jpg'>2</a></td></tr>
+					<tr><td>Под запись</td><td>катушка</td><td></td><td><a href='/problems/катушка.jpg'>1</a></td></tr>
+					<tr><td>Под запись</td><td>клин</td><td></td><td><a href='/problems/клин.jpg'>1</a></td></tr>
+					<tr><td>Под запись</td><td>поле</td><td></td><td><a href='/problems/поле.jpg'>1</a></td></tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <ul class="pagination">
+                <li>
+                    <a class="social" href="http://github.com/fedorsarafanov">
+                        g
+                    </a>
+                </li>
+                <li>
+                    <a class="social" href="http://www.linux.org.ru/people/osabio/profile">
+                        l
+                    </a>
+                </li>
+                <li>
+                    <a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">
+                        w
+                    </a>
+                </li>
+                <li>
+                    <a class="social" href="https://vk.com/krasnuyi">
+                        v
+                    </a>
+                </li>
+                <li>
+                    <a class="social" href="mailto:sfg180@yandex.ru">
+                        y
+                    </a>
+                </li>
+            </ul>
+            <p>
+                This page is protected: all rights reserved
+		© Saraganov F. G. (aka @osabio)
+            </p>
+        </footer>
+        <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" type="text/javascript">
+        </script>
+        <!-- <script type="text/javascript" src="dataTables.fnGetHiddenNodes.js"></script> -->
+        <script type="text/javascript">
+			// function format(string, object) {
+			//     return string.replace(/{([^{}]*)}/g,
+			//        function(match, group_match)
+			//        {
+			//            var data = object[group_match];
+			//            return typeof data === 'string' ? data : match;
+			//        }
+			//     );
+// 			// }
+// function LinkCheck(url)
+// {
+//     var http = new XMLHttpRequest();
+//     http.open('HEAD', url, false);
+//     http.send();
+//     return http.status!=404;
+// }
+// 		if (!String.prototype.format) {
+// 		    String.prototype.format = function () {
+// 		        var args = arguments;
+// 		        return this.replace(/{(\d+)}/g, function (match, number) {
+// 		            return typeof args[number] != 'undefined'
+// 		              ? args[number]
+// 		              : match
+// 		            ;
+// 		        });
+// 		    };
+// 		}
+
+
+        $(document).ready(function() {
 	        var table = $('#table').dataTable({
 				"language": {
 					"url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
@@ -89,6 +193,46 @@
 	        });
 	          
 	    } );
-	</script>
-</body>
+		// $.getJSON("list.json", function(json) {
+		//     json.files.forEach(function(name) {
+		//     	var number='';
+		//     	var author='';
+		//     	if (/\d-\d{0,4}/g.test(name)) {
+		//     		// console.log(name)
+		//     		number=/\d-\d{0,4}/g.exec(name)[0];
+		//     		author='Иродов';
+		//     		// console.log();
+		//     		// console.log('Иродов');
+		//     	}else if (/\d{2,}/g.test(name)) {
+		//     		// console.log(name)
+		//     		number=name.match(/\d{1,}/g)[0];
+		//     		author='Яковлев';
+		//     		// console.log(name.match(/\d{1,}/g)[0]);
+		//     		// console.log('Яковлев');
+		//     	}else{
+		//     		re=new RegExp("\/pdf\/(.*)\.pdf", "g");
+		//     		number=re.exec(name)[1];
+		//     		author='Под запись';
+		//     		// console.log(re.exec(name)[1]);
+		//     		// console.log('Под запись');
+		//     	}
+		//     	file=name.replace('/pdf/','').replace('.pdf','');
+		//     	// console.log(file)
+		//     	var str = ''
+		//     	if (LinkCheck('/problems/'+file+'-0.jpg')){
+		//     		str=str+'<a href="/problems/'+file+'-0.jpg">1</a>';
+		//     	}
+		//     	if (LinkCheck('/problems/'+file+'-1.jpg')){
+		//     		str=str+'<a href="/problems/'+file+'-1.jpg">2</a>';
+		//     	}
+		//     	if (LinkCheck('/problems/'+file+'-2.jpg')){
+		//     		str=str+'<a href="/problems/'+file+'-2.jpg">3</a>';
+		//     	}
+		//     	// console.log(title);
+		//     	$('tbody').append('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td></tr>'.format(author, number, '',str));
+    			
+		// 	});
+		// });
+        </script>
+    </body>
 </html>
