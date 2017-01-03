@@ -1,10 +1,24 @@
 {
-  "name": "visisite",
-  "version": "0.0.0",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-autoprefixer": "^2.2.0",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-reload": "^0.2.0"
-  }
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-webserver": "^0.9.1",
+    "gulp-concat": "^2.6.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "tiny-lr": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
