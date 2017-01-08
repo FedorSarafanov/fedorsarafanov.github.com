@@ -15,7 +15,10 @@
     "less-plugin-autoprefix": "^1.5.1",
     "tiny-lr": "^1.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-dir-sync": "^0.1.2",
+    "gulp-rigger": "^0.5.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

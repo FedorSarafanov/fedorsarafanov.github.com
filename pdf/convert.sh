@@ -43,5 +43,7 @@ for file in *.pdf;
 	} 
 done;
 
-rm -rf ../problems/*.jpg;
-cp *.jpg ../problems/;
+rm -rf ../src/problems/*.jpg;
+cp *.jpg ../src/problems/;
+rm -rf ../src/template/files.html;
+cp files.html ../src/template/;
