@@ -3,8 +3,10 @@
 <head>
 	//= template/head.html
 	<title>Блог @osabio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/audio.js"></script>
 </head>
-<body>
+<body> 
 	<header>
 		//= template/header.html
 	</header>
@@ -36,11 +38,12 @@
 			<li>Ключ <code>breadcrumb-title</code> задает родительское название всем файлам, генерируемым в данной директории, а также используется при генерации карты сайта и "хлебных крошек"</li>
 			</ul>
 		</article>
-		<!-- <footer>about article</footer> -->
 		//= template/articles.html
 	</section>
 	<footer>
 		//= template/footer.html
 	</footer>
+
+	<canvas id="equ"></canvas><audio id="player" src="audio/yas.mp3"></audio><canvas id="equ2"></canvas>
 </body>
 </html>
