@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/social.css">
+	<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<title>Создание загрузочной флешки с Windows из под (Arch)Linux</title>
+</head>
+<body> 
+	<header>
+		<ul class="navigation">
+		  <li><a href="/">Home</a></li>
+		  <li><a data-step="1" data-intro="Здесь опубликованы решения задач. Можно искать задачи по номеру или по автору." href="/problems.html">Problems</a></li> 
+		  <li><a href="/latex.html">LaTeX</a></li>
+		  <li><a href="/linux.html">Linux</a></li> 
+		  <li><a href="/article/about.html">About</a></li>
+		  <!-- <li><a href="javascript:void(0);" onclick="javascript:introJs().start();">Help</a></li> -->
+		</ul>
+	</header>
+	<section>
+<header><time class='datetime'>January 10, 2017</time><h1><a href='windows-flash.html'>Создание загрузочной флешки с Windows из под (Arch)Linux</a></h1></header><article><!--d--><br>Может понадобиться записать флешку с Windows, когда в наличии только Linux? </p>
+<p>Это вполне реально. </p>
+<p>Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть <code>ms-sys</code>. 
+<!--ed-->  </p>
+<p>Для начала, установим необходимые утилиты (если они отсутствуют):</p>
+<bash title="~/"><!--
+--><span class="ps">~</span>yaourt -S util-linux ntfs-3g ms-sys
+</bash>  
+
+<p>Для дальнейших действий необходимо определить флешку. Сделать это можно либо через программу <code>GParted</code>, либо в консоли с помощью программы <code>df</code> в консоли. </p>
+<bash title="~/"><!--
+--><span class="ps">~</span>df
+Файловая система Размер Использовано  Дост Использовано% Cмонтировано в
+dev                1,9G            0  1,9G            0% /dev
+run                1,9G         1,2M  1,9G            1% /run
+/dev/sda4          188G          21G  158G           12% /
+tmpfs              1,9G         162M  1,8G            9% /dev/shm
+tmpfs              1,9G            0  1,9G            0% /sys/fs/cgroup
+tmpfs              1,9G          24K  1,9G            1% /tmp
+/dev/sda6          321M         256K  321M            1% /boot/efi
+tmpfs              386M          12K  386M            1% /run/user/1000
+/dev/sdb1           15G         3,7G   11G           26% /run/media/lab/USB DISK
+</bash>  
+
+<p>В данном случае раздел на флешке имеет адрес <code>/dev/sdb1</code>, а сама флешка - <code>/dev/sdb</code>.</p>
+<p>На всякий случай отмонтируем флешку, если она уже примонтирована:</p>
+<bash title="~/"><!--
+--><span class="ps">~</span>sudo umount /dev/sdb1
+[sudo] пароль для lab: 
+</bash><br>Затем отформатируем флешку: 
+<bash title="~/"><!--
+--><span class="ps">~</span>sudo mkfs.ntfs -n &#39;Windows&#39; /dev/sdb1
+</bash><br>И примонтируем все что нужно:
+<bash title="~/"><span class="comment">#Создадим папки, куда будут подключаться iso-образ и флешка:</span>
+<span class="ps">~</span>sudo mkdir -p /mnt/{usb,iso}
+<span class="ps">~</span>sudo chmod 777 /mnt/{usb,iso}
+<span class="comment">#Монтируем iso-образ и флешку:</span>
+<span class="ps">~</span>sudo mount -o loop ~/Загрузки/win7.iso /mnt/iso
+<span class="ps">~</span>sudo mount /dev/sdb1 /mnt/usb
+</bash><br>Теперь копируем все установочные файлы Windows:
+<bash title="~/"><!--
+--><span class="ps">~</span>cp -r /mnt/iso/* /mnt/usb/
+</bash>
+
+<p>И устанавливаем загрузчик Windows 7 на флешку:</p>
+<bash title="~/"><!--
+--><span class="ps">~</span>ms-sys -7 /dev/sdb
+</bash> 
+</article>
+	</section>
+	<footer>
+		<ul class="pagination">
+		  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+		  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+		  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+		  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+		  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+		</ul>
+		<p>This page is protected: all rights reserved
+		&copy; Saraganov F. G. (aka @osabio)</p>
+		<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->
+	</footer>
+</body>
+</html>
