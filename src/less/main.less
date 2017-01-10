@@ -36,6 +36,7 @@ section
     flex-grow: 1;
     // margin: 0 auto;
     // display: flex;
+    margin-bottom: 1em;
     flex-direction: column;
     align-self: center;
 }
@@ -79,24 +80,3 @@ body > footer
 @import 'problem.less';
 @import 'latex.less';
 @import 'linux.less';
-
-#equ, #equ2{  
-    position: fixed;
-    opacity: 0.2;
-    top: 0;
-    // left: 0;
-    width: calc(~"( 100vw - 625px ) / 2");
-    height: 30vh;
-    margin-top: 20vh;
-    z-index: -1;
-    // background: @body;
-    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,1)));
-
-}
-#equ1{
-    left: 0;    
-}
-#equ2{
-    right: 0;
-    transform: rotate(180deg) scaleY(-1);
-}

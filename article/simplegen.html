@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/social.css">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<style type="text/css">
+		.hljs{
+			white-space: pre-wrap !important;
+			overflow-x: hidden !important;
+			height: auto !important;
+			/*width: 100% !important;*/
+		}
+	</style>
+	<title>Генератор SimpleGen</title>
+</head>
+<body>
+	<header>
+		<ul class="navigation">
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/problems.html">Problems</a></li>
+		  <li><a href="/latex.html">LaTeX</a></li>
+		  <li><a href="/linux.html">Linux</a></li>
+		  <li><a href="/lab.html">Lab</a></li>
+		</ul>
+	</header>
+	<section>
+		<header><time class='datetime'>January 9, 2017</time><h1><a href='article/simplegen.html'>Генератор SimpleGen</a></h1></header><article><!--d-->      </p>
+<p><p>Simplegen - разработанный мною простой генератор static сайтов из шаблонов. Базовые шаблоны <em>.html содержат верстку: в </em>.md (Markdown) файлах хранится содержимое статей/заметок. Генератор можно запустить в любой директории сайта, сконфигурировав config.json.</p>
+<!--ed-->      </p>
+<p><h2>Конфигурация</h2></p>
+<pre><code>{
+"domain": "127.0.0.1/tool/",
+"sitepath": "articles/",
+"makehtml": "make.html",
+"output": "../articles/",        
+"rootjson": "../articles.json",
+"breadcrumb-title": "Статьи"    
+}
+</code></pre>
+
+<p><p>Все ключи являются обязательными. </p></p>
+<p><h3>Назначение ключей</h3></p>
+<ul>
+<li>Ключи <code>domain</code> и <code>sitepath</code> отвечают за правильную генерацию структуры ссылок;</li>
+<li>Ключ <code>makehtml</code> указывает расположение шаблона с версткой относительно текущей директории генератора;</li>
+<li>В директорию <code>&quot;../articles/&quot;</code> (параметр <code>output</code>) перенаправляются сгенерированные файлы;</li>
+<li>Параметр <code>rootjson</code> дает расположение &quot;базы&quot; сайта, в которой в формате <code>json</code> хранится информация о сгенерированных страницах и их структуре;</li>
+<li>Ключ <code>breadcrumb-title</code> задает родительское название всем файлам, генерируемым в данной директории, а также используется при генерации карты сайта и &quot;хлебных крошек&quot;</li>
+</ul>
+</article>
+	</section>
+	<footer>
+		<ul class="pagination">
+		  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+		  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+		  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+		  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+		  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+		</ul>
+		<p>This page is protected: all rights reserved
+		&copy; Saraganov F. G. (aka @osabio)</p>
+	</footer>
+</body>
+</html>

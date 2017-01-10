@@ -5,39 +5,12 @@
 	<title>Блог @osabio</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/audio.js"></script>
-</head>
-<body> 
-	<header>
+</head> 
+<body>  
+	<header> 
 		//= template/header.html
 	</header>
 	<section>
-		<header> 
-			<time datetime="2017-01-02" class="datetime">JANUARY 2, 2017</time>
-			<h1>Генератор SimpleGen</h1>
-		</header>
-		<article>
-			<p>Simplegen - разработанный мною простой генератор static сайтов из шаблонов. Базовые шаблоны *.html содержат верстку: в *.md (Markdown) файлах хранится содержимое статей/заметок. Генератор можно запустить в любой директории сайта, сконфигурировав config.json.</p>
-			<h2>Конфигурация</h2>
-<pre><code>{
-"domain": "127.0.0.1/tool/",
-"sitepath": "articles/",
-"makehtml": "make.html",
-"output": "../articles/",        
-"rootjson": "../articles.json",
-"breadcrumb-title": "Статьи"    
-}
-</code></pre>
-
-			<p>Все ключи являются обязательными. </p>
-			<h3>Назначение ключей</h3>
-			<ul>
-			<li>Ключи <code>domain</code> и <code>sitepath</code> отвечают за правильную генерацию структуры ссылок;</li>
-			<li>Ключ <code>makehtml</code> указывает расположение шаблона с версткой относительно текущей директории генератора;</li>
-			<li>В директорию <code>"../articles/"</code> (параметр <code>output</code>) перенаправляются сгенерированные файлы;</li>
-			<li>Параметр <code>rootjson</code> дает расположение "базы" сайта, в которой в формате <code>json</code> хранится информация о сгенерированных страницах и их структуре;</li>
-			<li>Ключ <code>breadcrumb-title</code> задает родительское название всем файлам, генерируемым в данной директории, а также используется при генерации карты сайта и "хлебных крошек"</li>
-			</ul>
-		</article>
 		//= template/articles.html
 	</section>
 	<footer>

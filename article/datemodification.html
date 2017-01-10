@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/social.css">
+	<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<title>Смена времени модификации / создания файла в Linux</title>
+</head>
+<body> 
+	<header>
+		<ul class="navigation">
+		  <li><a href="/">Home</a></li>
+		  <li><a data-step="1" data-intro="Здесь опубликованы решения задач. Можно искать задачи по номеру или по автору." href="/problems.html">Problems</a></li> 
+		  <li><a href="/latex.html">LaTeX</a></li>
+		  <li><a href="/linux.html">Linux</a></li> 
+		  <li><a href="/article/about.html">About</a></li>
+		  <!-- <li><a href="javascript:void(0);" onclick="javascript:introJs().start();">Help</a></li> -->
+		</ul>
+	</header>
+	<section>
+		<header><time class='datetime'>January 3, 2017</time><h1><a href='datemodification.html'>Смена времени модификации / создания файла в Linux</a></h1></header><article><!--d--><br><code>touch -a -m -t 201701011212.00 fileName.ext</code></p>
+<p>где параметры:</p>
+<p><code>-a = accessed</code> (доступ)</p>
+<p><code>-m = modified</code> (модификация)</p>
+<p><code>-t = timestamp</code> (форматированное время: <code>[[CC]YY]MMDDhhmm[.ss]</code>)</p>
+<!--ed-->  </article>
+	</section>
+	<footer>
+		<ul class="pagination">
+		  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+		  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+		  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+		  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+		  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+		</ul>
+		<p>This page is protected: all rights reserved
+		&copy; Saraganov F. G. (aka @osabio)</p>
+		<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->
+	</footer>
+</body>
+</html>

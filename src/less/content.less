@@ -23,20 +23,20 @@ h2,h3,h4,h5,h6{
 
 h2{
 	font-size: 1.45rem; 
-	&:before{
-		content: '×';
-		padding: 0 0.5rem 0 0;
-		color: fade(black, 10%);
-	}
+	// &:before{
+	// 	content: '×';
+	// 	padding: 0 0.5rem 0 0;
+	// 	color: fade(black, 10%);
+	// }
 }
 
 h3{
 	font-size: 1.35rem;
-	&:before{
-		content: '××';
-		padding: 0 0.5rem 0 0;
-		color: fade(black, 10%);
-	}
+	// &:before{
+	// 	content: '××';
+	// 	padding: 0 0.5rem 0 0;
+	// 	color: fade(black, 10%);
+	// }
 }
 
 section>article{
@@ -75,3 +75,59 @@ img{
 // 	margin-left: auto;
 // 	margin-right: auto;
 // }
+
+#equ, #equ2{  
+    position: fixed;
+    opacity: 0.2;
+    top: 0;
+    // left: 0;
+    width: calc(~"( 100vw - 625px ) / 2");
+    height: 30vh;
+    margin-top: 20vh;
+    z-index: -1;
+    // background: @body;
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,1)));
+
+}
+#equ1{
+    left: 0;    
+}
+#equ2{
+    right: 0;
+    transform: rotate(180deg) scaleY(-1);
+}
+
+.hljs{
+    white-space: pre-wrap !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+    /*width: 100% !important;*/
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border: 1px solid grey;
+    border-collapse: collapse;
+	th { 
+		text-align: left; /* Выравнивание по левому краю */
+		background: darken(@body, 5%);; /* Цвет фона ячеек */
+		padding: 5px; /* Поля вокруг содержимого ячеек */
+		border: 1px solid darken(@body, 15%);; /* Граница вокруг ячеек */
+	}
+	td { 
+		padding: 5px; /* Поля вокруг содержимого ячеек */
+		border: 1px solid darken(@body, 15%);; /* Граница вокруг ячеек */
+	}
+}
+
+table.dataTable{
+	border: none !important;
+}
+
+code{
+	color: #007;
+}

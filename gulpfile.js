@@ -15,8 +15,8 @@ var gulp = require('gulp'),
     paths           = require('path'),              // Получение basename         
     util            = require('util'),              // .inspect (для получения даты)
     fs              = require('fs'),                // Работа с файловой системой
+    markdown        = require('gulp-markdown'),
     jsonfile        = require('jsonfile');          // Работа c json
-
 
 var config = {
     path: {
@@ -44,12 +44,12 @@ var config = {
             js: 'src/js/main.js',
             style: 'src/less/*.less',
             fonts: 'src/font/**/*.*',
-            article: 'src/article/**/*.html',
+            article: ['src/article/**/*.html','src/article/**/*.md'],
             template: 'src/template/'
         },
         watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
             html: 'src/*.html',
-            article: 'src/article/**/*.html',
+            article: ['src/article/**/*.html','src/article/**/*.md'],
             js: 'src/js/**/*.js',
             style: 'src/less/**/*.less',
             fonts: 'src/fonts/**/*.*'
@@ -65,7 +65,8 @@ var config = {
     files: {
         index: 'src/index.html',
         cache: 'cache.json',
-        articles: 'articles.html'
+        articles: 'articles.html',
+        linux: 'linux.html'
     },
     server: {
       livereload: true,
@@ -74,18 +75,13 @@ var config = {
       open: false
     },
     templates: {
-        article: "<header><time class='datetime'>{date}</time>{title}</header><article>{text}</article>"
+        article: "<header><time class='datetime'>{date}</time><h1>{href}</h1></header><article>{text}</article>"
     }
 }
 
 jsonfile.readFile(config.files.cache, function(err, obj) {
   cache.caches=obj;
 })
-
-var temp = {
-    // file: "",
-    // date: ""
-}
 
 gulp.task('article:rebase', function() {
     return gulp.src(config.path.src.article)
@@ -98,49 +94,30 @@ gulp.task('article:rebase', function() {
                     if (time1<time2) {
                         return 1;
                     }
-                    if (time1>time2) {
+                    if (time1>time2) { 
                         return -1;
                     }
                     return 0;
                 }
         }))
+        .pipe(markdown())
         .on('data', function(file) {
-
-            var filePath = paths.basename(file.path);
-
-            var stats   =   fs.statSync(file.path);
-
-            var date    =   new Date(util.inspect(stats.mtime)).toLocaleString('en-US',config.date.options);
-
+            var filePath    =   paths.basename(file.path);
+            // console.log(file.path)
+            var stats       =   fs.statSync(file.path);
+            var date        =   new Date(util.inspect(stats.mtime)).toLocaleString('en-US',config.date.options);
             var contents    =   String(file.contents);
-
             var title       =   /<h1>(.|\n)*<\/h1>/igm.exec(contents)[0];
+                title       =   title.replace('<h1>','').replace('</h1>','');
             var desc        =   /<!--d-->(.|\n)*<!--ed-->/igm.exec(contents)[0];
-
             var href        =   "<a href='{0}'>{1}</a>"
                                 .replace('{0}',config.path.build.article+filePath)
                                 .replace('{1}',title);
-
             contents        =   config.templates.article;
-            contents        =   contents.replace('{date}',date).replace('{title}',title).replace('{text}',desc);
-
+            contents        =   contents.replace('{date}',date).replace('{href}',href).replace('{text}',desc);
             file.contents = new Buffer(contents);
             return file;
-        })
-        // .pipe(dom(function(){
-        //     var title   =   this.querySelector('h1').innerHTML,
-        //         text    =   this.documentElement.innerHTML;
-        //     var desc    =   /<!--d-->(.|\n)*<!--ed-->/igm.exec(text)[0];
-        //     var href    =   "<a href='{0}'>{1}</a>"
-        //                     .replace('{0}',config.path.build.article+temp.file)
-        //                     .replace('{1}',title);
-
-        //     var pre="<header> <time class='datetime'>{dt}</time><h1>",
-        //         sred="</h1></header><article>",
-        //         post="</article>";
-        //     pre=pre.replace('{dt}',temp.date);
-        //     return pre+href+sred+desc+post;
-        // }, false))
+        }) 
         .pipe(concat(config.files.articles))
         .pipe(gulp.dest(config.path.src.template))
 });
@@ -149,43 +126,37 @@ gulp.task('article:rebase', function() {
 gulp.task('article:compile', function() {
     return gulp.src(config.path.src.article)
         .pipe(cache('article'))
+        .pipe(markdown())
         .on('data', function(file) {
-            temp.file  =   (paths.basename(file.path));
-            var stats = fs.statSync(file.path);
-            console.log('compile-',temp.file,new Date(util.inspect(stats.mtime)));
-            temp.date=new Date(util.inspect(stats.mtime)).toLocaleString('en-US',config.date.options);
             jsonfile.writeFile(config.files.cache, cache.caches, function (err) {})
+
+            var filePath    =   paths.basename(file.path);
+            // console.log(file.path)
+            var stats       =   fs.statSync(file.path);
+            var date        =   new Date(util.inspect(stats.mtime)).toLocaleString('en-US',config.date.options);
+            var contents    =   String(file.contents);
+            var title       =   /<h1>(.|\n)*<\/h1>/igm.exec(contents)[0];
+                title       =   title.replace('<h1>','').replace('</h1>','');
+
+            var tag         =   /<!--tags:(.*)-->/igm.exec(contents)[1];
+            var text        =   /<!--d-->(.|\n)*/igm.exec(contents)[0];
+            var href        =   "<a href='{0}'>{1}</a>"
+                                .replace('{0}',filePath)
+                                .replace('{1}',title);
+            contents        =   config.templates.article;
+            contents        =   contents.replace('{date}',date).replace('{href}',href).replace('{text}',text);
+            var html        =   fs.readFileSync(config.path.src.template+'article.html', 'utf8');
+            html            =   html.replace('{title}',title).replace('{text}',contents);
+            file.contents   =   new Buffer(html);
+            return file;
         })
-        .pipe(dom(function(){
-            var title        =   this.querySelector('h1').innerHTML,
-                innerHTML    =   this.documentElement.innerHTML;
-
-            var desc    =   /<!--d-->(.|\n)*<!--ed-->/igm.exec(innerHTML)[0];
-            var text    =   /<!--d-->(.|\n)*/igm.exec(innerHTML)[0];
-            var href    =   "<a href='{0}'>{1}</a>"
-                            .replace('{0}',config.path.build.article+temp.file)
-                            .replace('{1}',title);
-
-            var html = fs.readFileSync(config.path.src.template+'article.html', 'utf8');
-
-            var pre="<header> <time class='datetime'>{dt}</time><h1>",
-                sred="</h1></header><article>",
-                post="</article>";
-            pre=pre.replace('{dt}',temp.date);
-            txt=pre+href+sred+text;
-            html=html.replace('{title}',title).replace('{text}',txt);
-            return html;
-        }, false))
         .pipe(rigger())
-        .pipe(gulp.dest(config.path.build.article))
+        // .pipe(rename(function (path) {
+        //     path.extname = ".html"
+        // }))
+        .pipe(gulp.dest(config.path.build.article));
 });
 
-gulp.task('test', function() {
-    gulp.src(config.path.src.article)
-        .on('data', function(file) {
-            console.log(file.path)
-        })
-})
 
 gulp.task('article:build', function() {
     runSequence(['article:compile','article:rebase'],'html:build');
@@ -207,6 +178,7 @@ gulp.task('reload-server', ['html:build','less:build','article:build'], function
 
 gulp.task('html:build', function () {
     gulp.src(config.path.src.html) 
+        .on('data', function(file) {console.log(file.path)})
         .pipe(rigger())
         .pipe(gulp.dest(config.path.build.html));
 })
@@ -240,4 +212,4 @@ gulp.task('default', ['server'], function() {
 		['html:build']);	
 })
 
-gulp.task('production',['html:build','article:build','less:build']);
+// gulp.task('production',['html:build','article:build','less:build']);
