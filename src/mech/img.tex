@@ -1,4 +1,4 @@
-\documentclass[tikz]{standalone}
+\documentclass[tikz, 10pt]{standalone}
 
 % \usepackage[usenames,dvipsnames]{color}
 % \usepackage{extsizes,cmap,graphicx,misccorr,indentfirst,makecell,multirow,ulem,geometry,amssymb,amsfonts,amsmath,amsthm,titlesec,float,fancyhdr,wrapfig,tikz}
@@ -22,7 +22,7 @@
 \begin{tikzpicture}[
     force/.style={>=latex,draw=blue,fill=blue},
     % axis/.style={densely dashed,gray,font=\small},
-    axis/.style={densely dashed,black!60,font=\small},
+    axis/.style={dashed,black!60,font=\small},
     M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
     m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},
     m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},
@@ -58,20 +58,47 @@
         inner sep=2.5mm,
     }
 ]
-	\draw [axis, ->] (0,-3) -- (0,5) node[left] {$E$};
+	\draw [axis, ->] (0,-3) -- (0,5) node[left] {$W_{eff}$};
 
 	\draw [axis, ->] (0,0) -- (6,0) node[anchor=north west] {$r$};
 
-	\draw[domain=0.3:5, samples=200,smooth,variable=\x,black] plot ({\x/1},{((-2/\x+1/(\x*\x))/1});% node[anchor=north west] {$\beta>0$};
+
 	\draw[domain=0.64:5, samples=200,smooth,variable=\x,magenta, opacity=0.3] plot ({\x/1},{-2/\x});% node[anchor=north west] {$\beta>0$};
 	\draw[domain=0.47:5, samples=200,smooth,variable=\x,blue, opacity=0.3] plot ({\x/1},{1/(\x*\x)});
 
-	\draw[black, dashed] (0,-0.6) -- ++ (6,0);
-	\draw[black, thick] (0.1,-0.6) node [left, xshift=-0.5em] {\small$W$} -- ++ (-.2,0);
+	\draw[black, dash pattern={on 1.4pt off 2pt}] (0,-0.6) -- ++ (6,0);
+
+	\draw[black] (0.1,-0.6) node [left, xshift=-0.5em] {\small$W<0$} -- ++ (-.2,0);
+
+	\draw[black, dash pattern={on 1.4pt off 2pt}] (0,2) -- ++ (6,0);
+
+	\draw[black] (0.1,2) node [left, xshift=-0.5em] {\small$W\geq0$} -- ++ (-.2,0);
+
 	% \draw[dashed, thick, domain=-1.4:1.4, samples=200,smooth,variable=\x,black] plot ({\x},{-\x*\x}) node[anchor=north west] {$\beta<0$};
 
-	\draw [fill=magenta] (0.61,-0.6) circle (1.5pt);
-	\draw [fill=magenta] (2.72,-0.6) circle (1.5pt);
+	\coordinate (A) at (0.61,-0.6);
+	\coordinate (B) at (2.72,-0.6);
+	\coordinate (C) at (0.366,2);
+
+	\draw[domain=0.3:0.61, samples=200,smooth,variable=\x,black] plot ({\x/1},{((-2/\x+1/(\x*\x))/1});% node[anchor=north west] {$\beta>0$};
+
+	\draw[domain=0.61:2.72, samples=200,smooth,variable=\x,magenta, thick] plot ({\x/1},{((-2/\x+1/(\x*\x))/1});% node[anchor=north west] {$\beta>0$};
+
+	\draw[domain=2.72:5, samples=200,smooth,variable=\x,black] plot ({\x/1},{((-2/\x+1/(\x*\x))/1});% node[anchor=north west] {$\beta>0$};
+
+	\draw[dash pattern={on 1.4pt off 2pt}] (A) -- ++ (0,0.6);
+	\draw[dash pattern={on 1.4pt off 2pt}] (B) -- ++ (0,0.6);
+
+	\draw[black] (0.61,0.1) node [above, xshift=0em] {\small$r_{min}$} -- ++ (0, -0.2);	
+
+	\draw[black] (2.72,0.1) node [above, xshift=0em] {\small$r_{max}$} -- ++ (0, -0.2);	
+
+	\draw [fill=magenta] (A) circle (1.5pt);
+	\draw [fill=magenta] (B) circle (1.5pt);
+	\draw [fill=magenta] (C) circle (1.5pt);
+
+	\node[below] at (4,-0.6) {\tiny финитное движение};
+	\node[above] at (4,2) {\tiny инфинитное движение};
 
 \end{tikzpicture}
 \end{document}

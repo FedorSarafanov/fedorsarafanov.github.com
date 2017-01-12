@@ -80,30 +80,34 @@ $$\dot\phi=\frac{N}{mr^2}\Rightarrow
 
 Тогда
 
-$$\mathrm{d}\phi=\frac{N\mathrm{d}r}{\pm{}mr^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$
+$$\mathrm{d}\phi=\pm\frac{N\mathrm{d}r}{mr^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$
+
+Два знака говорят о том, что траектория симметрична относительно полярной оси.
+
+В качестве полярной оси возьмем апсиду -- прямую, проходящую через апоцентр и перицентр траектории.
+
+Пусть при $$\varphi=0$$ будет $$r=r_{min}$$. 
 
 Выберем один знак и запишем интеграл:
 
-$$\varphi(r)=\frac{N}{m}\int\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}+C$$
-
-Выберем начало отсчета угла так, чтобы $$C=0$$.
+$$\varphi(r)=\frac{N}{m}\int_{r_{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$
 
 $$W-W_\text{эфф}=W-(\frac{N^2}{2mr^2}-\frac{k}{r})$$
 
 
-$$\varphi(r)=\int\frac
+$$\varphi(r)=-\int_{r_{min}}^r\frac
 {d\left(\frac{N}{r}\right)}
 {\sqrt{2m(W-W_\text{эфф})}}$$
 
 
-$$\varphi(r)=\int\frac
+$$\varphi(r)=-\int_{r_{min}}^r\frac
 {d\left(\frac{N}{r}\right)}
 {\sqrt{2mW-\left(\frac{N^2}{r^2}-\frac{2mk}{r}\right)}}$$
 
 
 $$\frac{N^2}{r^2}-\frac{2mk}{r}=\left(\frac{N}{r}-\frac{mk}{N}\right)^2-\left(\frac{mk}{N}\right)^2$$
 
-$$\varphi(r)=\int\frac
+$$\varphi(r)=-\int_{r_{min}}^r\frac
 {d\left(\frac{N}{r}-\frac{mk}{N}\right)}
 {\sqrt{\left(2mW+\left(\frac{mk}{N}\right)^2\right)-\left(\frac{N}{r}-\frac{mk}{N}\right)^2}}$$
 
@@ -112,9 +116,15 @@ $$\beta^2=2mW+\left(\frac{mk}{N}\right)^2$$
 $$\alpha^2=\left(\frac{N}{r}-\frac{mk}{N}\right)^2$$
 
 $$
-\varphi(r)=\int\frac
+\varphi(r)=-\int_{r_{min}}^r\frac
 {d\alpha}
 {\sqrt{\beta^2-\alpha^2}}$$
+
+Так как согласно выбору полярной оси $$\varphi=0$$ при $$r=r_{min},$$ то 
+
+$$
+\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|_{r_{min}}^r=\arccos\frac\alpha\beta$$
+
 
 $$
 \varphi(r)=\arccos\frac

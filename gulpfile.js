@@ -16,8 +16,13 @@ var gulp = require('gulp'),
     util            = require('util'),              // .inspect (для получения даты)
     fs              = require('fs'),                // Работа с файловой системой
     markdown        = require('gulp-markdown'),
-    jsonfile        = require('jsonfile');          // Работа c json
-
+    jsonfile        = require('jsonfile')          // Работа c json
+    , mdEqs         = require('gulp-markdown-equations')
+    , tap           = require('gulp-tap')
+    , filter        = require('gulp-filter')
+    , latex         = require('gulp-latex')
+    , pdftocairo    = require('gulp-pdftocairo'),
+    fileinclude = require('gulp-file-include')
 var config = {
     path: {
         build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -27,6 +32,7 @@ var config = {
             img: {
                 sprites: 'img/sprites/',
                 problems: 'img/problems/',
+                images: 'img/',
                 screenshots: 'img/screenshots/'
             },
             fonts: 'font/',
@@ -45,11 +51,13 @@ var config = {
             style: 'src/less/*.less',
             fonts: 'src/font/**/*.*',
             article: ['src/article/**/*.html','src/article/**/*.md'],
+            // article: 'src/article/**/*.mdtex', //['src/article/**/*.html','src/article/**/*.md'],
             template: 'src/template/'
         },
         watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
             html: 'src/*.html',
             article: ['src/article/**/*.html','src/article/**/*.md'],
+            // article: 'src/article/**/*.mdtex',//['src/article/**/*.html','src/article/**/*.md'],
             js: 'src/js/**/*.js',
             style: 'src/less/**/*.less',
             fonts: 'src/fonts/**/*.*'
@@ -124,6 +132,15 @@ gulp.task('article:rebase', function() {
 
 
 gulp.task('article:compile', function() {
+  var texFilter = filter('*.tex', {restore: true});
+  var mdFilter = filter('*.md', {restore: true});
+  // Instantiate the transform and set some defaults:
+  var transform = mdEqs({
+    defaults: {
+      display: { margin: '1pt' },
+      inline: {margin: '1pt'}
+    }
+  })
     return gulp.src(config.path.src.article)
         .pipe(cache('article'))
         .pipe(markdown())
@@ -149,13 +166,49 @@ gulp.task('article:compile', function() {
             var html        =   fs.readFileSync(config.path.src.template+'article.html', 'utf8');
             html            =   html.replace('{title}',title).replace('{text}',contents);
             file.contents   =   new Buffer(html);
-            console.log(html);
+            // console.log(html);
             return file;
         })
         .pipe(rigger())
+        // .pipe(fileinclude({
+        //   prefix: '@@',
+        //   basepath: '@file'
+        // }))
         // .pipe(rename(function (path) {
         //     path.extname = ".html"
         // }))
+        // .pipe(transform)
+        // // Filter to operate on *.tex documents:
+        // .pipe(texFilter)
+        // // Render the equations to pdf:
+        // .pipe(latex())
+        // // Convert the pdf equations to png:
+        // .pipe(pdftocairo({format: 'png'}))
+        // // Send them to the images folder:
+        // .pipe(gulp.dest('./img'))
+        // // Match the output images up with the closures that are still waiting
+        // // on their callbacks from the `.pipe(transform)` step above. That means
+        // // we can use metadata from the image output all the way back  up in
+        // // the original transform. Sweet!
+        // .pipe(tap(function(file) {
+        //   transform.completeSync(file,function() {
+        //     var img = '<img alt="'+this.alt+'" valign="middle" src="/'+this.path+
+        //               '" width="'+this.width/2+'" height="'+this.height/2+'">'
+        //     return this.display ? '<p align="center">'+img+'</p>' : img
+        //   })
+        // }))
+        // // Restore and then change filters to operate on the *.md document:
+        // .pipe(texFilter.restore).pipe(mdFilter)
+        // // Output in the current directory:
+        // // .pipe(texFilter.restore())
+        // .pipe(mdFilter)
+        // .pipe(gulp.dest(config.path.build.img.images))
+        // // .pipe(gulp.dest(config.path.build.article))
+        // .pipe(mdFilter.restore)
+        // .pipe(rename(function (path) {
+        //     path.extname = ".html"
+        // }))
+        // .pipe(gulp.dest(config.path.build.article));
         .pipe(gulp.dest(config.path.build.article));
 });
 

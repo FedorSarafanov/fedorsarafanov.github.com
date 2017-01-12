@@ -46,6 +46,17 @@ section>article{
 	
 }
 
+img[src^="https://tex.s2cms.ru"]{
+	transform: scale(1.3);
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+img[src^="https://tex.s2cms.ru"][align=center]{
+	padding: 0.5em;
+	transform: scale(1.3);
+}
+
 header>.datetime{
 
 	// font-family: 'Roboto', sans-serif;
@@ -173,4 +184,11 @@ bash{
 }
 .comment{
 	color: darken(white, 30%);
+}
+
+@media print {
+	body>header,body>footer, .pagination{
+		display: none;
+		visibility: hidden;
+	}
 }

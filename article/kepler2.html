@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/social.css">
+	<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<!-- <script src="//tex.s2cms.ru/latex.js"></script> -->
+	<script src="/js/latex.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- <script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+	  });
+	</script>
+	<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+	<title>Задача Кеплера</title>
+</head>
+<body> 
+	<header>
+		<ul class="navigation">
+		  <li><a href="/">Home</a></li>
+		  <li><a data-step="1" data-intro="Здесь опубликованы решения задач. Можно искать задачи по номеру или по автору." href="/problems.html">Problems</a></li> 
+		  <li><a href="/latex.html">LaTeX</a></li>
+		  <li><a href="/linux.html">Linux</a></li> 
+		  <li><a href="/article/about.html">About</a></li>
+		  <!-- <li><a href="javascript:void(0);" onclick="javascript:introJs().start();">Help</a></li> -->
+		</ul>
+	</header> 
+	<section>
+<header><time class='datetime'>January 12, 2017</time><h1><a href='kepler2.html'>Задача Кеплера</a></h1></header><article><!--d--><br>Задача Кеплера - фундаментальная задача механики, наряду с задачей о простом гармоническом осцилляторе.</p>
+<p>В классической механике, задача Кеплера — это частный случай задачи двух тел, в которой два тела взаимодействуют посредством центральной силы F, изменяющейся по величине обратно пропорционально квадрату расстояния r между ними:</p>
+<p>^^ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\hat{r}} ^^
+<!--ed--><br>В поле центральной силы постоянны механическая энергия ^^W=W<em>k+W</em>\text{п}^^.</p>
+<p>А так как ^^\vec{F}\parallel\vec{r}^^, то момент силы равен нулю, и по теореме о изменении момента импульса </p>
+<p>^^\frac{\mathrm{d}\vec{N}}{\mathrm{d}t}=\vec{M},^^</p>
+<p>отсюда момент импульса ^^\vec{N}=const^^. 
+Так как ^^\vec{N}=[\vec{r}\times\vec{p}]^^, то траектория лежит в плоскости векторов ^^(\vec{r},\vec{v})^^.</p>
+<p>Запишем скорость как сумму двух векторов:</p>
+<p>^^\vec{v}=\vec{v}<em>r+\vec{v}</em>\phi,^^</p>
+<p>где </p>
+<p>^^v<em>r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v</em>\phi=r\frac{\mathrm{d}\phi}{\mathrm{d}t}^^</p>
+<p>тогда квадрат вектора полной скорости ^^v^^</p>
+<p>^^v^2=v<em>r^2+v</em>\phi^2^^</p>
+<p>а полная механическая энергия запишется как</p>
+<p>^^W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{mr^2\dot{\phi}^2}{2}^^</p>
+<p>Распишем момент импульса по определению:</p>
+<p>^^\vec{N}=[\vec{r}\times m(\vec{v}<em>r+\vec{v}</em>\phi)]=
+[\vec{r}\times m\vec{v}<em>r]+[\vec{r}\times m\vec{v}</em>\phi]=
+m[\vec{r}\times\vec{v}_\phi]
+^^</p>
+<p>Тогда модуль момента импульса</p>
+<p>^^N=mr^2\dot\phi \Rightarrow \dot\phi=\frac{N}{mr^2}^^</p>
+<p>Можем переписать механическую энергию:</p>
+<p>^^W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{N^2}{2mr^2},^^</p>
+<p>где ^^\frac{N^2}{2mr^2}^^  — центробежная энергия.</p>
+<p>Найдем потенциальную энергию:</p>
+<p>^^W<em>\text{п}(r)-W</em>\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r=^^</p>
+<p>^^=-\int_r^\infty \frac{GMm}{r&#39;^2} \textrm{d}r&#39;=-\frac{Gmm}{r}=\frac{-k}{r}^^</p>
+<p>А так как ^^W_\text{п}(\infty)=0^^ при ^^r\to\infty^^, то</p>
+<p>^^W_\text{п}=-\frac{k}{r}^^</p>
+<p>^^W_\text{цб}=\frac{N^2}{2mr^2}^^</p>
+<p>Введем эффективную потенциальную энергию:</p>
+<p>^^W<em>\text{эфф}=W</em>\text{цб}+W_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}^^</p>
+<p>С одной стороны, можем выразить ^^\mathrm{d}t^^ через эффективную энергию:</p>
+<p>^^W=W<em>\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
+\dot{r}^2=\frac{2}{m}(W-W</em>\text{эфф})^^</p>
+<p>Тогда </p>
+<p>^^\mathrm{d}t=\pm\frac{\mathrm{d}r}{\sqrt{\frac{2}{m}(W-W_\text{эфф})}}^^</p>
+<p>С другой стороны, можем выразить ^^\mathrm{d}t^^ через момент импульса:</p>
+<p>^^\dot\phi=\frac{N}{mr^2}\Rightarrow
+\mathrm{d}t=\frac{mr^2}{N}\mathrm{d}\phi^^</p>
+<p>Тогда</p>
+<p>^^\mathrm{d}\phi=\pm\frac{N\mathrm{d}r}{mr^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}^^</p>
+<p>Два знака говорят о том, что траектория симметрична относительно полярной оси.</p>
+<p>В качестве полярной оси возьмем апсиду -- прямую, проходящую через апоцентр и перицентр траектории.</p>
+<p>Пусть при ^^\varphi=0^^ будет ^^r=r_{min}^^. </p>
+<p>Выберем один знак и запишем интеграл:</p>
+<p>^^\varphi(r)=\frac{N}{m}\int<em>{r</em>{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}^^</p>
+<p>^^W-W_\text{эфф}=W-(\frac{N^2}{2mr^2}-\frac{k}{r})^^</p>
+<p>^^\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+{d\left(\frac{N}{r}\right)}
+{\sqrt{2m(W-W_\text{эфф})}}^^</p>
+<p>^^\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+{d\left(\frac{N}{r}\right)}
+{\sqrt{2mW-\left(\frac{N^2}{r^2}-\frac{2mk}{r}\right)}}^^</p>
+<p>^^\frac{N^2}{r^2}-\frac{2mk}{r}=\left(\frac{N}{r}-\frac{mk}{N}\right)^2-\left(\frac{mk}{N}\right)^2^^</p>
+<p>^^\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+{d\left(\frac{N}{r}-\frac{mk}{N}\right)}
+{\sqrt{\left(2mW+\left(\frac{mk}{N}\right)^2\right)-\left(\frac{N}{r}-\frac{mk}{N}\right)^2}}^^</p>
+<p>^^\beta^2=2mW+\left(\frac{mk}{N}\right)^2^^</p>
+<p>^^\alpha^2=\left(\frac{N}{r}-\frac{mk}{N}\right)^2^^</p>
+<p>^^
+\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+{d\alpha}
+{\sqrt{\beta^2-\alpha^2}}^^</p>
+<p>Так как согласно выбору полярной оси ^^\varphi=0^^ при ^^r=r_{min},^^ то </p>
+<p>^^
+\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|<em>{r</em>{min}}^r=\arccos\frac\alpha\beta^^</p>
+<p>^^
+\varphi(r)=\arccos\frac
+{\frac{N}{r}-\frac{mk}{N}}
+{\sqrt{2mW+\frac{m^2k^2}{N^2}}}=
+\arccos\frac
+{\frac{N^2}{mkr}-1}
+{\sqrt{1+\frac{2WN^2}{mk^2}}}^^</p>
+<p>Сделаем замены переменной. </p>
+<p>^^p^^ -- параметр:</p>
+<p>^^p=\frac{N^2}{mk}^^</p>
+<p>^^e^^ -- эксцентриситет:</p>
+<p>^^e=\sqrt{1+\frac{2WN^2}{mk^2}}^^</p>
+<p>^^\cos\varphi=\frac{\frac{p}{r}-1}{e}^^</p>
+<p>^^\frac{p}{r}=1+e\cos\varphi^^</p>
+<p>^^r=\frac{p}{1+e\cos\varphi}^^</p>
+<p>Полученное уравнение известно как уравнение конических сечений.</p></article>
+	</section>
+	<footer>
+		<ul class="pagination">
+		  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+		  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+		  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+		  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+		  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+		</ul>
+		<p>This page is protected: all rights reserved
+		&copy; Saraganov F. G. (aka @osabio)</p>
+		<!-- <script src="/js/latex.js"></script> -->
+		<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->
+	</footer>
+</body>
+</html>
