@@ -127,6 +127,7 @@ gulp.task('article:compile', function() {
     return gulp.src(config.path.src.article)
         .pipe(cache('article'))
         .pipe(markdown())
+        .pipe(rigger())
         .on('data', function(file) {
             jsonfile.writeFile(config.files.cache, cache.caches, function (err) {})
 
@@ -148,6 +149,7 @@ gulp.task('article:compile', function() {
             var html        =   fs.readFileSync(config.path.src.template+'article.html', 'utf8');
             html            =   html.replace('{title}',title).replace('{text}',contents);
             file.contents   =   new Buffer(html);
+            console.log(html);
             return file;
         })
         .pipe(rigger())

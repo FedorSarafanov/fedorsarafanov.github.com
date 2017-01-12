@@ -1,0 +1,77 @@
+\documentclass[tikz]{standalone}
+
+% \usepackage[usenames,dvipsnames]{color}
+% \usepackage{extsizes,cmap,graphicx,misccorr,indentfirst,makecell,multirow,ulem,geometry,amssymb,amsfonts,amsmath,amsthm,titlesec,float,fancyhdr,wrapfig,tikz}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}\usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing,patterns,calc,scopes,arrows,through}
+\usetikzlibrary{scopes}
+\usetikzlibrary{%
+     decorations.pathreplacing,%
+     decorations.pathmorphing,%
+    patterns,%
+    calc,%
+    scopes,%
+    arrows,%
+    through,%
+    % arrows.spaced,%
+}
+
+\begin{document}
+\begin{tikzpicture}[
+    force/.style={>=latex,draw=blue,fill=blue},
+    % axis/.style={densely dashed,gray,font=\small},
+    axis/.style={densely dashed,black!60,font=\small},
+    M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
+    m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},
+    m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},
+    plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt},
+    % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},
+    string/.style={draw=black, thick},
+    pulley/.style={thick},
+    interface1/.style={draw=gray!60,
+        % The border decoration is a path replacing decorator. 
+        % For the interface style we want to draw the original path.
+        % The postaction option is therefore used to ensure that the
+        % border decoration is drawn *after* the original path.
+        postaction={draw=gray!60,decorate,decoration={border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm}}},
+    interface/.style={
+        pattern = north east lines,
+        draw    = none,
+        pattern color=gray!60,          
+    },
+    plank/.style={
+        fill=black!60, 
+        draw=black,
+        minimum width=3cm,
+        inner ysep=0.1cm,
+        outer sep=0pt,
+        yshift=0.75cm,
+        pattern = north east lines,
+        pattern color=gray!60, 
+    },
+    cargo/.style={
+        rectangle,
+        fill=black!70,              
+        inner sep=2.5mm,
+    }
+]
+	\draw [axis, ->] (0,-3) -- (0,5) node[left] {$E$};
+
+	\draw [axis, ->] (0,0) -- (6,0) node[anchor=north west] {$r$};
+
+	\draw[domain=0.3:5, samples=200,smooth,variable=\x,black] plot ({\x/1},{((-2/\x+1/(\x*\x))/1});% node[anchor=north west] {$\beta>0$};
+	\draw[domain=0.64:5, samples=200,smooth,variable=\x,magenta, opacity=0.3] plot ({\x/1},{-2/\x});% node[anchor=north west] {$\beta>0$};
+	\draw[domain=0.47:5, samples=200,smooth,variable=\x,blue, opacity=0.3] plot ({\x/1},{1/(\x*\x)});
+
+	\draw[black, dashed] (0,-0.6) -- ++ (6,0);
+	\draw[black, thick] (0.1,-0.6) node [left, xshift=-0.5em] {\small$W$} -- ++ (-.2,0);
+	% \draw[dashed, thick, domain=-1.4:1.4, samples=200,smooth,variable=\x,black] plot ({\x},{-\x*\x}) node[anchor=north west] {$\beta<0$};
+
+	\draw [fill=magenta] (0.61,-0.6) circle (1.5pt);
+	\draw [fill=magenta] (2.72,-0.6) circle (1.5pt);
+
+\end{tikzpicture}
+\end{document}

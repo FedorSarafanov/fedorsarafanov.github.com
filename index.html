@@ -11,6 +11,15 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	<script type="text/javascript">
+	  window.MathJax = {
+	    tex2jax: { 
+	      inlineMath: [ ['<eq>','</eq>'], ["\\(","\\)"] ],
+	      processEscapes: true
+	    }
+	  };
+	</script>
+	<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 	<title>Блог @osabio</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/audio.js"></script>
@@ -27,6 +36,10 @@
 		</ul>
 	</header>
 	<section>
+<header><time class='datetime'>January 12, 2017</time><h1><a href='article/kepler.html'>Задача Кеплера</a></h1></header><article><!--d--><br>Задача Кеплера - фундаментальная задача механики, наряду с задачей о простом гармоническом осцилляторе.</p>
+<p>В классической механике, задача Кеплера — это частный случай задачи двух тел, в которой два тела взаимодействуют посредством центральной силы F, изменяющейся по величине обратно пропорционально квадрату расстояния r между ними:</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%20%5Cmathbf%7BF%7D%20%3D%20%5Cfrac%7Bk%7D%7Br%5E%7B2%7D%7D%20%5Cmathbf%7B%5Chat%7Br%7D%7D%20" alt=" \mathbf{F} = \frac{k}{r^{2}} \mathbf{\hat{r}} " /></p>
+<!--ed--></article>
 <header><time class='datetime'>January 10, 2017</time><h1><a href='article/windows-flash.html'>Создание загрузочной флешки с Windows из под (Arch)Linux</a></h1></header><article><!--d--><br>Может понадобиться записать флешку с Windows, когда в наличии только Linux? </p>
 <p>Это вполне реально. </p>
 <p>Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть <code>ms-sys</code>. 
