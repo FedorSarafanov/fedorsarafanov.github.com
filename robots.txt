@@ -3,3 +3,4 @@ Disallow: /node_modules
 Disallow: /old-site
 Disallow: /src
 Disallow: /*.json
+Disallow: /audio
