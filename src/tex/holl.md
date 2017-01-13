@@ -4,8 +4,7 @@
 При помещении проводника с постоянным током в магнитное поле в проводнике возникает поперечная разность потенциалов, называемая "холловским напряжением".
 
 $$\usetikzlibrary{scopes}
-\usetikzlibrary{%
-     decorations.pathreplacing,%
+\usetikzlibrary{decorations.pathreplacing,%
      decorations.pathmorphing,%
     patterns,%
     calc,%
