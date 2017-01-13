@@ -28,6 +28,7 @@ $$v_r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v_\phi=r\frac{\mathrm{d}\phi}{\math
 
 $$v^2=v_r^2+v_\phi^2$$
 
+
 а полная механическая энергия запишется как
 
 $$W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{mr^2\dot{\phi}^2}{2}$$
@@ -51,8 +52,9 @@ $$W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{N^2}{2mr^2},$$
 
 Найдем потенциальную энергию:
 
-$$W_\text{п}(r)-W_\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r
-=-\int_r^\infty \frac{GMm}{r'^2} \textrm{d}r'=-\frac{Gmm}{r}=\frac{-k}{r}$$
+$$W_\text{п}(r)-W_\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r=$$
+
+$$=-\int_r^\infty \frac{GMm}{r'^2} \textrm{d}r'=-\frac{Gmm}{r}=\frac{-k}{r}$$
 
 А так как $$W_\text{п}(\infty)=0$$ при $$r\to\infty$$, то
 
@@ -60,14 +62,19 @@ $$W_\text{п}=-\frac{k}{r}$$
 
 $$W_\text{цб}=\frac{N^2}{2mr^2}$$
 
+
 Введем эффективную потенциальную энергию:
 
 $$W_\text{эфф}=W_\text{цб}+W_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}$$
+
+<img width="100%" src="/img/kepler-energy.svg" alt="">
 
 С одной стороны, можем выразить $$\mathrm{d}t$$ через эффективную энергию:
 
 $$W=W_\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
 \dot{r}^2=\frac{2}{m}(W-W_\text{эфф})$$
+
+
 
 Тогда 
 
