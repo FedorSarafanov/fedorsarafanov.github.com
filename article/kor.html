@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- <img src="http://x1.fap.to/images/full/50/678/678528452.jpg"/>-->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="stylesheet" href="/css/social.css">
+<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+<!-- <script src="//tex.s2cms.ru/latex.js"></script> -->
+<script src="/js/latex.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+ 
+	<!-- @@include('../template/head.html') -->
+	<title>Вывод ускорения Кориолиса</title>
+</head>
+<body> 
+	<header>
+<ul class="navigation">
+  <li><a href="/">Home</a></li>
+  <li><a data-step="1" data-intro="Здесь опубликованы решения задач. Можно искать задачи по номеру или по автору." href="/problems.html">Problems</a></li> 
+  <li><a href="/latex.html">LaTeX</a></li>
+  <li><a href="/linux.html">Linux</a></li> 
+  <li><a href="/article/about.html">About</a></li>
+  <!-- <li><a href="javascript:void(0);" onclick="javascript:introJs().start();">Help</a></li> -->
+</ul>
+
+		<!-- @@include('../template/header.html') -->
+	</header> 
+	<section>
+<header><time class='datetime'>January 14, 2017</time><h1><a href='kor.html'>Вывод ускорения Кориолиса</a></h1></header><article><!--d-->    </p>
+<p><strong>Лемма</strong>:</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bd%5Cvec%7BR%7D%7D%7Bdt%7D%3D%5B%5Comega%5Ctimes%5Cvec%7BR%7D%5D" alt="\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]" /></p>
+<p>Примем, что</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Br%7D%3Dx%5Cvec%7Bi%7D%2By%5Cvec%7Bj%7D%2Bz%5Cvec%7Bk%7D" alt="\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Br%5C%2C%7D'%3Dx'%5Cvec%7Bi'%7D%2By'%5Cvec%7Bj'%7D%2Bz'%5Cvec%7Bk'%7D" alt="\vec{r\,}'=x'\vec{i'}+y'\vec{j'}+z'\vec{k'}" /></p>
+<!--ed--> 
+<p>Далее</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Bv'%7D%3D%5Cfrac%7Bd%5Cvec%7Br'%7D%7D%7Bdt%7D%3D%0A%5Cfrac%7Bdx'%7D%7Bdt%7D%5Cvec%7Bi'%7D%2B%5Cfrac%7Bdy'%7D%7Bdt%7D%5Cvec%7Bj'%7D%2B%5Cfrac%7Bdz'%7D%7Bdt%7D%5Cvec%7Bk'%7D%20%5Ctext%7B%20(%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F)%7D" alt="\vec{v'}=\frac{d\vec{r'}}{dt}=
+\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'} \text{ (относительная)}" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Ba'%7D%3D%5Cfrac%7Bd%5E2%5Cvec%7Br'%7D%7D%7Bdt%5E2%7D%3D%0A%5Cfrac%7Bd%5E2x'%7D%7Bdt%5E2%7D%5Cvec%7Bi'%7D%2B%5Cfrac%7Bd%5E2y'%7D%7Bdt%5E2%7D%5Cvec%7Bj'%7D%2B%5Cfrac%7Bd%5E2z'%7D%7Bdt%5E2%7D%5Cvec%7Bk'%7D%20%5Ctext%7B%20(%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5)%7D" alt="\vec{a'}=\frac{d^2\vec{r'}}{dt^2}=
+\frac{d^2x'}{dt^2}\vec{i'}+\frac{d^2y'}{dt^2}\vec{j'}+\frac{d^2z'}{dt^2}\vec{k'} \text{ (относительное)}" /></p>
+<p>Так как <img src="https://tex.s2cms.ru/svg/%5Cvec%7Bi'%7D%2C%20%5Cvec%7Bj'%7D%2C%5Cvec%7Bk'%7D" alt="\vec{i'}, \vec{j'},\vec{k'}" /> – не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Bv%7D%3D%5Cfrac%7Bd%5Cvec%7Br'%7D%7D%7Bdt%7D%3D%25%5Cfrac%7Bd%5Cvec%7Br%7D%7D%7Bdt%7D%3D" alt="\vec{v}=\frac{d\vec{r'}}{dt}=%\frac{d\vec{r}}{dt}=" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%3D%5Cleft%5B%5Cfrac%7Bdx'%7D%7Bdt%7D%5Cvec%7Bi'%7D%2B%5Cfrac%7Bdy'%7D%7Bdt%7D%5Cvec%7Bj'%7D%2B%5Cfrac%7Bdz'%7D%7Bdt%7D%5Cvec%7Bk'%7D%5Cright%5D%2B%0A%5Cleft%5Bx'%5Cfrac%7Bd%5Cvec%7Bi'%7D%7D%7Bdt%7D%2By'%5Cfrac%7Bd%5Cvec%7Bj'%7D%7D%7Bdt%7D%2Bz'%5Cfrac%7Bd%5Cvec%7Bk'%7D%7D%7Bdt%7D%5Cright%5D%3D" alt="=\left[\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'}\right]+
+\left[x'\frac{d\vec{i'}}{dt}+y'\frac{d\vec{j'}}{dt}+z'\frac{d\vec{k'}}{dt}\right]=" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%3D%5Cvec%7Bv'%7D%2B%0A%5Cleft%5Bx'%5B%5Comega%5Ctimes%5Cvec%7Bi'%7D%5D%2By'%5B%5Comega%5Ctimes%5Cvec%7Bj'%7D%5D%2Bz'%5B%5Comega%5Ctimes%5Cvec%7Bk'%7D%5D%5Cright%5D%5CRightarrow" alt="=\vec{v'}+
+\left[x'[\omega\times\vec{i'}]+y'[\omega\times\vec{j'}]+z'[\omega\times\vec{k'}]\right]\Rightarrow" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Bv%7D%3D%5Cvec%7Bv'%7D%2B%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Br'%7D%5Cright%5D" alt="\vec{v}=\vec{v'}+\left[\omega\times\vec{r'}\right]" /></p>
+<p>Аналогично</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cfrac%7Bd%5Cvec%7Bv'%7D%7D%7Bdt%7D%3D%25%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5D%3D%0A%5Cleft%5B%0A%5Cfrac%7Bd%5E2x'%7D%7Bdt%5E2%7D%5Cvec%7Bi'%7D%2B%0A%5Cfrac%7Bd%5E2y'%7D%7Bdt%5E2%7D%5Cvec%7Bj'%7D%2B%0A%5Cfrac%7Bd%5E2z'%7D%7Bdt%5E2%7D%5Cvec%7Bk'%7D%20%0A%5Cright%5D%2B%0A%5Cleft%5B%0Av'_x%5Cfrac%7Bd%5Cvec%7Bi'%7D%7D%7Bdt%7D%2B%0Av'_y%5Cfrac%7Bd%5Cvec%7Bj'%7D%7D%7Bdt%7D%2B%0Av'_z%5Cfrac%7Bd%5Cvec%7Bk'%7D%7D%7Bdt%7D%20%0A%5Cright%5D%3D" alt="\frac{d\vec{v'}}{dt}=%[\omega\times\vec{v'}]=
+\left[
+\frac{d^2x'}{dt^2}\vec{i'}+
+\frac{d^2y'}{dt^2}\vec{j'}+
+\frac{d^2z'}{dt^2}\vec{k'} 
+\right]+
+\left[
+v'_x\frac{d\vec{i'}}{dt}+
+v'_y\frac{d\vec{j'}}{dt}+
+v'_z\frac{d\vec{k'}}{dt} 
+\right]=" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%3D%5Cvec%7Ba'%7D%2B%0A%5Cleft%5Bv_x'%5B%5Comega%5Ctimes%5Cvec%7Bi'%7D%5D%2Bv_y'%5B%5Comega%5Ctimes%5Cvec%7Bj'%7D%5D%2Bv_z'%5B%5Comega%5Ctimes%5Cvec%7Bk'%7D%5D%5Cright%5D%5CRightarrow" alt="=\vec{a'}+
+\left[v_x'[\omega\times\vec{i'}]+v_y'[\omega\times\vec{j'}]+v_z'[\omega\times\vec{k'}]\right]\Rightarrow" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Ba%7D%3D%5Cvec%7Ba'%7D%2B%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5Cright%5D%2B%0A%5Cfrac%7Bd%5B%5Comega%5Ctimes%5Cvec%7Br'%7D%5D%7D%7Bdt%7D%3D" alt="\vec{a}=\vec{a'}+\left[\omega\times\vec{v'}\right]+
+\frac{d[\omega\times\vec{r'}]}{dt}=" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%3D%5Cvec%7Ba'%7D%2B%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5Cright%5D%2B%0A%5Cleft%5B%5Cvec%7B%5Cbeta%7D%5Ctimes%5Cvec%7Br'%7D%5Cright%5D%2B%0A%5Cleft%5B%5Comega%5Ctimes%5Cfrac%7Bd%5Cvec%7Br'%7D%7D%7Bdt%7D%5Cright%5D%0A" alt="=\vec{a'}+\left[\omega\times\vec{v'}\right]+
+\left[\vec{\beta}\times\vec{r'}\right]+
+\left[\omega\times\frac{d\vec{r'}}{dt}\right]
+" /></p>
+<p>Причем</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cleft%5B%5Comega%5Ctimes%5Cfrac%7Bd%5Cvec%7Br'%7D%7D%7Bdt%7D%5Cright%5D%3D%0A%5Cleft%5B%5Comega%5Ctimes%5Cleft(%5Cvec%7Bv'%7D%2B%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Br'%7D%5Cright%5D%5Cright)%5Cright%5D%3D" alt="\left[\omega\times\frac{d\vec{r'}}{dt}\right]=
+\left[\omega\times\left(\vec{v'}+\left[\omega\times\vec{r'}\right]\right)\right]=" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%3D%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5Cright%5D%2B%0A%5Cleft%5B%5Comega%5Ctimes%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Br'%7D%5Cright%5D%5Cright%5D" alt="=\left[\omega\times\vec{v'}\right]+
+\left[\omega\times\left[\omega\times\vec{r'}\right]\right]" /></p>
+<p>Заметим, что</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Br'%7D%5Cright%5D%3D%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Br'%7D_%7B%5Cperp%5Comega%7D%5Cright%5D%2C" alt="\left[\omega\times\vec{r'}\right]=\left[\omega\times\vec{r'}_{\perp\omega}\right]," /></p>
+<p>где</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Bv'%7D%3D%5Cvec%7Bv'%7D_%7B%5Cperp%5Comega%7D%2B%5Cvec%7Bv'%7D_%7B%5Cparallel%5Comega%7D" alt="\vec{v'}=\vec{v'}_{\perp\omega}+\vec{v'}_{\parallel\omega}" /></p>
+<p>Тогда по формуле <img src="https://tex.s2cms.ru/svg/%5Ba%5Bbc%5D%5D%3Db(ac)-c(ab)%3A" alt="[a[bc]]=b(ac)-c(ab):" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cleft%5B%5Comega%5Ctimes%5Cfrac%7Bd%5Cvec%7Br'%7D%7D%7Bdt%7D%5Cright%5D%3D%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5Cright%5D%2B%0A%5Comega(%5Comega%2C%5Cvec%7Br'%7D_%7B%5Cperp%5Comega%7D)-%0A%5Comega%5E2%5Cvec%7Br'%7D_%5Cperp%3D" alt="\left[\omega\times\frac{d\vec{r'}}{dt}\right]=\left[\omega\times\vec{v'}\right]+
+\omega(\omega,\vec{r'}_{\perp\omega})-
+\omega^2\vec{r'}_\perp=" /></p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%3D%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5Cright%5D-%0A%5Comega%5E2%5Cvec%7Br'%7D_%5Cperp." alt="=\left[\omega\times\vec{v'}\right]-
+\omega^2\vec{r'}_\perp." /></p>
+<p>Тогда</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/%5Cvec%7Ba%7D%3D%5Cvec%7Ba'%7D%2B2%5Cleft%5B%5Comega%5Ctimes%5Cvec%7Bv'%7D%5Cright%5D%2B%0A%5Cleft%5B%5Cvec%7B%5Cbeta%7D%5Ctimes%5Cvec%7Br'%7D%5Cright%5D-%0A%5Comega%5E2%5Cvec%7Br'%7D_%5Cperp%0A" alt="\vec{a}=\vec{a'}+2\left[\omega\times\vec{v'}\right]+
+\left[\vec{\beta}\times\vec{r'}\right]-
+\omega^2\vec{r'}_\perp
+" /></p>
+<p>Перепишем в виде</p>
+<p align="center"><img align="center" src="https://tex.s2cms.ru/svg/m%5Cvec%7Ba'%7D%3D-m%5Cvec%7Ba_0%7D%2B%0A2m%5Cleft%5B%5Cvec%7Bv'%7D%5Ctimes%5Comega%5Cright%5D-%0A%5Cleft%5B%5Cvec%7B%5Cbeta%7D%5Ctimes%5Cvec%7Br'%7D%5Cright%5D%2B%0A%5Comega%5E2%5Cvec%7Br'%7D_%5Cperp%0A" alt="m\vec{a'}=-m\vec{a_0}+
+2m\left[\vec{v'}\times\omega\right]-
+\left[\vec{\beta}\times\vec{r'}\right]+
+\omega^2\vec{r'}_\perp
+" /></p>
+<p>Где можно выделить поступательную, центробежную и переносную силы инерции.</p></article>
+	</section>
+	<footer>
+<ul class="pagination">
+  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+</ul>
+<p>This page is protected: all rights reserved
+&copy; Saraganov F. G. (aka @osabio)</p>
+<!-- <script src="/js/latex.js"></script> -->
+<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->
+
+		<!-- @@include('../template/footer.html') -->
+	</footer>
+</body>
+</html>
