@@ -133,15 +133,15 @@ gulp.task('article:rebase', function() {
 
 
 gulp.task('article:compile', function() {
-  var texFilter = filter('*.tex', {restore: true});
-  var mdFilter = filter('*.md', {restore: true});
-  // Instantiate the transform and set some defaults:
-  var transform = mdEqs({
-    defaults: {
-      display: { margin: '1pt' },
-      inline: {margin: '1pt'}
-    }
-  })
+  // var texFilter = filter('*.tex', {restore: true});
+  // var mdFilter = filter('*.md', {restore: true});
+  // // Instantiate the transform and set some defaults:
+  // var transform = mdEqs({
+  //   defaults: {
+  //     display: { margin: '1pt' },
+  //     inline: {margin: '1pt'}
+  //   }
+  // })
     return gulp.src(config.path.src.article)
         .pipe(cache('article'))
         .pipe(markdown())

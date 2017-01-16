@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<!-- <img src="http://x1.fap.to/images/full/50/678/678528452.jpg"/>-->
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
+	<!-- //= ../template/head.html -->
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/main.min.css">
 <link rel="stylesheet" href="/css/social.css">
 <!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
@@ -10,31 +13,25 @@
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-<!-- <script src="//tex.s2cms.ru/latex.js"></script> -->
-<script src="/js/latex.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!-- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-  });
+<script>
+  function ready() {
+    hljs.initHighlightingOnLoad();
+  }
+  document.addEventListener("DOMContentLoaded", ready);
 </script>
-<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
- 
-	<!-- @@include('../template/head.html') -->
 	<title>Продольные и поперечные деформации. Закон Гука</title>
 </head>
 <body> 
 	<header>
+<!-- //= ../template/header.html -->
 <ul class="navigation">
   <li><a href="/">Home</a></li>
   <li><a data-step="1" data-intro="Здесь опубликованы решения задач. Можно искать задачи по номеру или по автору." href="/problems.html">Problems</a></li> 
   <li><a href="/latex.html">LaTeX</a></li>
-  <li><a href="/linux.html">Linux</a></li> 
+  <li><a href="/linux.html">Linux</a></li>  
   <li><a href="/article/about.html">About</a></li>
   <!-- <li><a href="javascript:void(0);" onclick="javascript:introJs().start();">Help</a></li> -->
 </ul>
-
-		<!-- @@include('../template/header.html') -->
 	</header> 
 	<section>
 <header><time class='datetime'>January 13, 2017</time><h1><a href='guk.html'>Продольные и поперечные деформации. Закон Гука</a></h1></header><article><!--d--><br>По определению, нормальное напряжение</p>
@@ -73,7 +70,8 @@ V_0\cdot\varepsilon(1-2\mu)" /></p>
 <p>где <img src="https://tex.s2cms.ru/svg/%5Cmu%3D-%5Cfrac%7B%5Cvarepsilon_%5Cperp%7D%7B%5Cvarepsilon%7D" alt="\mu=-\frac{\varepsilon_\perp}{\varepsilon}" /> – коэффициент Пуассона. Из формулы видно, что коэффициент имеет смысл при <img src="https://tex.s2cms.ru/svg/0%5Cleq%5Cmu%5Cleq%5Cfrac%7B1%7D2." alt="0\leq\mu\leq\frac{1}2." /></p></article>
 	</section>
 	<footer>
-<ul class="pagination">
+		<!-- //= ../template/footer.html -->
+		<ul class="pagination">
   <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
   <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
   <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
@@ -84,8 +82,6 @@ V_0\cdot\varepsilon(1-2\mu)" /></p>
 &copy; Saraganov F. G. (aka @osabio)</p>
 <!-- <script src="/js/latex.js"></script> -->
 <!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->
-
-		<!-- @@include('../template/footer.html') -->
 	</footer>
 </body>
 </html>
