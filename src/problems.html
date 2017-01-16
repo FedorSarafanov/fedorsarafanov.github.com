@@ -1,55 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        //= template/head.html
+        @@include('./template/head.html')
+
         <title>
             Задачи - "АнтиИродов"
-        </title>
-		<link href="css/jquery.dataTables.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-		</script>
-        <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" type="text/javascript">
-        </script>
-        <script type="text/javascript">
-        $(document).ready(function() {
-            var table = $('#table').dataTable({
-                "language": {
-                    "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
-                },
-            });
-        }); 
-        </script>        
+        </title>  
     </head>
+
     <body>
         <header>
-            //= template/header.html
+            @@include('./template/header.html')
         </header>
+
         <section>
-            <table id="table">
-                <thead>
-                    <tr>
-                        <th>
-                            Задачник
-                        </th>
-                        <th>
-                            Номер
-                        </th>
-                        <th>
-                            Описание
-                        </th>
-                        <!-- <th>pdf</th> -->
-                        <th>
-                            png
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    //= template/files.html
-                </tbody>
-            </table>
+            <header><time class='datetime'>зимняя сессия</time><h1>Иродов</h1></header>
+            <article>
+                @@include('./template/irodov.html')
+            </article> 
+
+            <header><time class='datetime'>зимняя сессия</time><h1>Яковлев</h1></header>
+            <article>
+                @@include('./template/yakovlev.html')
+            </article> 
+            <header><time class='datetime'>зимняя сессия</time><h1>Под запись</h1></header>
+            <article>
+                @@include('./template/wrote.html')
+            </article>           
         </section>
+
         <footer>
-            //= template/footer.html
+            @@include('./template/footer.html')
         </footer>
+
     </body>
 </html>

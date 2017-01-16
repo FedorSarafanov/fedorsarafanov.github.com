@@ -6,13 +6,10 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-<!-- <script src="//tex.s2cms.ru/latex.js"></script> -->
-<script src="/js/latex.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!-- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-  });
+<script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+<script>
+  function ready() {
+    hljs.initHighlightingOnLoad();
+  }
+  document.addEventListener("DOMContentLoaded", ready);
 </script>
-<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->

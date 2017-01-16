@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	concat          = require('gulp-concat'),       // Объединяет файлы в один
 	minifyCSS       = require('gulp-minify-css'),   // Сжимает, оптимизирует
 	less            = require('gulp-less'),         // Less
-	rigger          = require('gulp-rigger'),       // Замена в файлах    
+	// rigger          = require('gulp-rigger'),       // Замена в файлах    
 	rename          = require("gulp-rename");       // Переименование
 	autoprefixer    = require('less-plugin-autoprefix'), // Автопрефиксер свойств для старых браузеров
     autoprefix      = new autoprefixer({browsers: ["last 3 versions"]}), //Свойства для браузеров от 2010 года	
@@ -60,7 +60,8 @@ var config = {
             // article: 'src/article/**/*.mdtex',//['src/article/**/*.html','src/article/**/*.md'],
             js: 'src/js/**/*.js',
             style: 'src/less/**/*.less',
-            fonts: 'src/fonts/**/*.*'
+            fonts: 'src/fonts/**/*.*',
+            template: 'src/template/*.html'
         }
     },
     date: {
@@ -144,7 +145,11 @@ gulp.task('article:compile', function() {
     return gulp.src(config.path.src.article)
         .pipe(cache('article'))
         .pipe(markdown())
-        .pipe(rigger())
+        // .pipe(rigger())
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
         .on('data', function(file) {
             jsonfile.writeFile(config.files.cache, cache.caches, function (err) {})
 
@@ -169,11 +174,11 @@ gulp.task('article:compile', function() {
             // console.log(html);
             return file;
         })
-        .pipe(rigger())
-        // .pipe(fileinclude({
-        //   prefix: '@@',
-        //   basepath: '@file'
-        // }))
+        // .pipe(rigger())
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
         // .pipe(rename(function (path) {
         //     path.extname = ".html"
         // }))
@@ -216,7 +221,11 @@ gulp.task('article:compile', function() {
 gulp.task('article:build', function() {
     runSequence(['article:compile','article:rebase'],'html:build');
     gulp.src(config.files.index)
-        .pipe(rigger())
+        // .pipe(rigger())
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
         .pipe(gulp.dest(config.path.build.html));      
 })
 
@@ -234,7 +243,11 @@ gulp.task('reload-server', ['html:build','less:build','article:build'], function
 gulp.task('html:build', function () {
     gulp.src(config.path.src.html) 
         .on('data', function(file) {console.log(file.path)})
-        .pipe(rigger())
+        // .pipe(rigger())
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
         .pipe(gulp.dest(config.path.build.html));
 })
 
@@ -259,6 +272,11 @@ gulp.task('default', ['server'], function() {
 	gulp.watch(
 		[config.path.watch.style],
 		['less:build']);
+
+    gulp.watch(
+        [config.path.watch.template],
+        ['html:build']);
+
 	gulp.watch(
 		[config.path.watch.article],
 		['article:build']);	

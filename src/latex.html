@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	//= template/head.html
+	@@include('./template/head.html')
 	<title>Блог @osabio</title>
 	<link rel="stylesheet" type="text/css" href="http://latex.codecogs.com/css/equation-embed.css" />
 	<script type="text/javascript" src="http://latex.codecogs.com/js/eq_config.js" ></script>
@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		//= template/header.html
+		@@include('./template/header.html')
 	</header>
 	<section>
 		<header>
@@ -28,7 +28,7 @@
 		</article>
 	</section>
 	<footer>
-		//= template/footer.html
+		@@include('./template/footer.html')
 	</footer>
 </body>
 </html>

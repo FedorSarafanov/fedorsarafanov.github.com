@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	//= template/head.html
-	<title>Блог @osabio</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/audio.js"></script>
-</head> 
-<body>  
-	<header> 
-		//= template/header.html
-	</header>
-	<section>
-//= template/articles.html
-	</section>
-	<footer>
-		//= template/footer.html
-	</footer>
 
-	<canvas id="equ"></canvas><audio id="player" src="audio/yas.mp3"></audio><canvas id="equ2"></canvas>
+<head>
+	@@include('./template/head.html') 
+	<title>Блог @osabio</title>
+</head> 
+
+<body>   
+	<header>  
+		@@include('./template/header.html')
+	</header>
+
+	<section>
+@@include('./template/articles.html')
+	</section>
+
+	<footer>
+		@@include('./template/footer.html')
+	</footer>
 </body>
 </html>
