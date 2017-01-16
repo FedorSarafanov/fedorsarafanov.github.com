@@ -4,3 +4,4 @@ Disallow: /old-site
 Disallow: /src
 Disallow: /*.json
 Disallow: /audio
+Disallow: /sog
