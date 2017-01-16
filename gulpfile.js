@@ -92,7 +92,7 @@ jsonfile.readFile(config.files.cache, function(err, obj) {
   cache.caches=obj;
 })
 
-gulp.task('article:rebase', function() {
+gulp.task('article:rebase', ['article:compile','article:compile-bc'], function() {
     return gulp.src(config.path.src.article)
         .pipe(sort({// Сортировка: сначала новые
                 comparator: function(file1, file2) {
@@ -138,19 +138,9 @@ gulp.task('article:rebase', function() {
 
 
 gulp.task('article:compile', function() {
-  // var texFilter = filter('*.tex', {restore: true});
-  // var mdFilter = filter('*.md', {restore: true});
-  // // Instantiate the transform and set some defaults:
-  // var transform = mdEqs({
-  //   defaults: {
-  //     display: { margin: '1pt' },
-  //     inline: {margin: '1pt'}
-  //   }
-  // })
     return gulp.src(config.path.src.article)
         .pipe(cache('article'))
         .pipe(markdown())
-        // .pipe(rigger())
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'
@@ -176,51 +166,54 @@ gulp.task('article:compile', function() {
             var html        =   fs.readFileSync(config.path.src.template+'article.html', 'utf8');
             html            =   html.replace('{title}',title).replace('{text}',contents);
             file.contents   =   new Buffer(html);
-            // console.log(html);
             return file;
         })
-        // .pipe(rigger())
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'
         }))
-        // .pipe(rename(function (path) {
-        //     path.extname = ".html"
-        // }))
-        // .pipe(transform)
-        // // Filter to operate on *.tex documents:
-        // .pipe(texFilter)
-        // // Render the equations to pdf:
-        // .pipe(latex())
-        // // Convert the pdf equations to png:
-        // .pipe(pdftocairo({format: 'png'}))
-        // // Send them to the images folder:
-        // .pipe(gulp.dest('./img'))
-        // // Match the output images up with the closures that are still waiting
-        // // on their callbacks from the `.pipe(transform)` step above. That means
-        // // we can use metadata from the image output all the way back  up in
-        // // the original transform. Sweet!
-        // .pipe(tap(function(file) {
-        //   transform.completeSync(file,function() {
-        //     var img = '<img alt="'+this.alt+'" valign="middle" src="/'+this.path+
-        //               '" width="'+this.width/2+'" height="'+this.height/2+'">'
-        //     return this.display ? '<p align="center">'+img+'</p>' : img
-        //   })
-        // }))
-        // // Restore and then change filters to operate on the *.md document:
-        // .pipe(texFilter.restore).pipe(mdFilter)
-        // // Output in the current directory:
-        // // .pipe(texFilter.restore())
-        // .pipe(mdFilter)
-        // .pipe(gulp.dest(config.path.build.img.images))
-        // // .pipe(gulp.dest(config.path.build.article))
-        // .pipe(mdFilter.restore)
-        // .pipe(rename(function (path) {
-        //     path.extname = ".html"
-        // }))
-        // .pipe(gulp.dest(config.path.build.article));
         .pipe(gulp.dest(config.path.build.article));
 });
+
+
+gulp.task('article:compile-bc', function() {
+    return gulp.src(config.path.src.article)
+        // .pipe(cache('article'))
+        .pipe(markdown())
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
+        .on('data', function(file) {
+            // jsonfile.writeFile(config.files.cache, cache.caches, function (err) {})
+
+            var filePath    =   paths.basename(file.path);
+            // console.log(file.path)
+            var stats       =   fs.statSync(file.path);
+            var date        =   new Date(util.inspect(stats.mtime)).toLocaleString('en-US',config.date.options);
+            var contents    =   String(file.contents);
+            var title       =   /<h1>(.|\n)*<\/h1>/igm.exec(contents)[0];
+                title       =   title.replace('<h1>','').replace('</h1>','');
+
+            var tag         =   /<!--tags:(.*)-->/igm.exec(contents)[1];
+            var text        =   /<!--d-->(.|\n)*/igm.exec(contents)[0];
+            var href        =   "<a href='{0}'>{1}</a>"
+                                .replace('{0}',filePath)
+                                .replace('{1}',title);
+            contents        =   config.templates.article;
+            contents        =   contents.replace('{date}',date).replace('{href}',href).replace('{text}',text);
+            var html        =   fs.readFileSync(config.path.src.template+'article.html', 'utf8');
+            html            =   html.replace('{title}',title).replace('{text}',contents);
+            file.contents   =   new Buffer(html);
+            return file;
+        })
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
+        .pipe(gulp.dest(config.path.build.article));
+});
+
 
 
 gulp.task('article:build', function() {

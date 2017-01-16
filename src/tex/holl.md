@@ -19,8 +19,8 @@ $$\usetikzlibrary{scopes}
 \draw[fill=white] (0,0) -- ++(3,0) -- ++(0,3) -- ++ (-3,0) --cycle;
 \draw[fill=white] (0,3) -- ++(0.2,0.2) -- ++(3,0) -- ++ (-0.2,-0.2) --cycle;
 \draw[fill=white] (3,0) -- ++(0.2,0.2) -- ++(0,3) -- ++ (-0.2,-0.2) --cycle;
-\draw[force, ->] (1.5,1.5) node[black,scale=1.5] {$\oplus$} -- ++(0,0.7) node[above] {$\vec{F}_\text{л}$};
-\draw[force, ->] (1.5,1.5) node[black,scale=1.5] {$\oplus$} -- ++(0.7,0) node[right] {$\vec{v}$};
+\draw[force, ->] (1.5,1.5)  -- ++(0,0.7) node[above] {$\vec{F}_\text{л}$};
+\draw[force, ->] (1.5,1.5) node[black,scale=1.5, fill=white] {$\circleddash$} -- ++(0.7,0) node[right] {$\vec{v}$};
 \foreach \i in {0.2,0.5,...,3.4} {
 \node[above, yshift=3pt] at (\i,3) {$+$};
 }
@@ -28,7 +28,7 @@ $$\usetikzlibrary{scopes}
 \node[below, yshift=-0pt] at (\i,0) {$-$};
 }
 %
-\draw[angular, ->] (3.5,1) -- node[right,magenta] {$\vec{E}_2$} ++ (0,1);
+\draw[angular, <-] (3.5,1) -- node[right,magenta] {$\vec{E}_2$} ++ (0,1);
 \draw[angular, ->] (0,4) -- node[above,magenta] {$\vec{E}_1$} ++ (3.2,0);
 %
 \draw[axis, <->] (-0.4,0) -- node[left,black] {$d$} ++ (0,3);
