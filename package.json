@@ -16,6 +16,8 @@
     "tiny-lr": "^1.0.3"
   },
   "devDependencies": {
+    "gulp-color": "0.0.1",
+    "gulp-connect": "^5.0.0",
     "gulp-dir-sync": "^0.1.2",
     "gulp-rigger": "^0.5.8"
   },

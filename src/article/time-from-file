@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+for file in `find * -type f -iname "*.html"`
+	do {
+		mtime=`cat $file".mtime"`;
+		# echo $file $mtime;
+		touch -a -m -t $mtime $file;
+	} 
+done;
+
+# touch -a -m -t 201701011214.00 about.html
+# touch -a -m -t 201701031212.00 datemodification.html
+# touch -a -m -t 201701141212.00 kor.html
+# touch -a -m -t 201701131212.00 guk.html
+# touch -a -m -t 201701121212.00 holl.html
+# touch -a -m -t 201701111212.00 kepler.html
+# touch -a -m -t 201701101212.00 windows-flash.html
+# touch -a -m -t 201701091212.00 bashhistory.html
