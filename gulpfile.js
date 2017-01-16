@@ -84,7 +84,7 @@ var config = {
       open: false
     },
     templates: {
-        article: "<header><time class='datetime'>{date}</time><h1>{href}</h1></header><article>{text}</article>"
+        article: "<header><time class='datetime'>{date}</time><h1>{href}</h1></header><article>{text}{readmore}</article>"
     }
 }
 
@@ -122,7 +122,12 @@ gulp.task('article:rebase', function() {
             var href        =   "<a href='{0}'>{1}</a>"
                                 .replace('{0}',config.path.build.article+filePath)
                                 .replace('{1}',title);
+            var href2        =   "<a class='readmore' href='{0}'>{1}</a>"
+                                .replace('{0}',config.path.build.article+filePath)
+                                .replace('{1}','Читать далее...');
             contents        =   config.templates.article;
+
+            contents        =   contents.replace('{readmore}',href2);
             contents        =   contents.replace('{date}',date).replace('{href}',href).replace('{text}',desc);
             file.contents = new Buffer(contents);
             return file;
