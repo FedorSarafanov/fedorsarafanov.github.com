@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta name="yandex-verification" content="09e309df3b8ffe74" />
+    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} Блог Федора Сарафанова</title>
+    {% include head.html %}
+  </head>
+  <body>
+
+    <header>  
+        {% include header.html %}
+    </header>
+
+    <section>
+{{ content }}
+    </section>
+
+    <footer>
+        {% unless page.no_footer %}
+            {% include footer.html %}       
+        {% endunless %}
+    </footer>
+
+  </body>
+</html>
