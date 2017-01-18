@@ -38,3 +38,8 @@ exclude:
   - old-site
   - .git
   - package.json
+
+collections:
+  lab:
+    output: true
+    permalink: /lab/:path/

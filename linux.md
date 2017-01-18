@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Заметки про Linux
+permalink: /linux/
 ---
 
 {% for post in site.posts %}
