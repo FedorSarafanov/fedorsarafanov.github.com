@@ -1,10 +1,17 @@
 ---
 layout: page
 title: "Лабораторная №2"
+theme: "Машина Атвуда"
+number: "27"
 ---
+
+1. Скачать отчет: [otchet.pdf](https://github.com/FedorSarafanov/lab/raw/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_2/otchet_2.pdf)
+1. Посмотреть на github: [ссылка](https://github.com/FedorSarafanov/lab/blob/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_2/otchet_2.pdf)
+1. Репозиторий на github: [ссылка](https://github.com/FedorSarafanov/lab/tree/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_2)
 
 В лабораторной работе исследуется равноускоренное движение на установке <<машина Атвуда>>.
 
+<!--ed-->
 В результате проделанной работы были выполнены следующие пункты.
 
 - Опровергнута гипотеза о зависимости ускорения груза от мгновенной скорости.
@@ -18,6 +25,3 @@ title: "Лабораторная №2"
 
 - Найдена их абсолютная погрешность через t-критерий Стьюдента (при коэффициенте доверия $$99.5\%$$).
 
-1. Скачать отчет: [otchet.pdf](https://github.com/FedorSarafanov/lab/raw/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_2/otchet_2.pdf)
-1. Посмотреть на github: [ссылка](https://github.com/FedorSarafanov/lab/blob/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_2/otchet_2.pdf)
-1. Репозиторий на github: [ссылка](https://github.com/FedorSarafanov/lab/tree/master/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_2)

@@ -20,9 +20,9 @@ permalink: /lab/
         <a style="color: #222" href="{{ lab.url }}">{{ lab.title }}</a>
     </h1>
 </header> -->
-
+<div markdown="1">
 ## [{{ lab.title }}]({{ lab.url }})
-
+</div>
 <!-- <h2><a href="{{ lab.url }}">{{ lab.title }}</a></h2> -->
-{{ lab.content }}
+{{ lab.content | split:'<!--ed-->' | first }}
 {% endfor %}
