@@ -43,3 +43,6 @@ collections:
   lab:
     output: true
     permalink: /lab/:path/
+  politic:
+    output: true
+    permalink: /politic/:path/
