@@ -5,3 +5,4 @@ Disallow: /src
 Disallow: /*.json
 Disallow: /audio
 Disallow: /sog
+sitemap: http://fedorsarafanov.github.io/sitemap.xml
