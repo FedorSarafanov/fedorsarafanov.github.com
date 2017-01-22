@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Лабораторные"
-date: "Всегда актуально"
+date: 2017-01-22T22:16:12+03:00
 permalink: /lab/
 ---
 

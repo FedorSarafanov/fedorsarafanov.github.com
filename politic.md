@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Политика"
-date: "Для интересующихся"
+date: 2017-01-22T22:15:25+03:00
 permalink: /politic/
 ---
 
