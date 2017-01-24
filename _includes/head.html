@@ -36,3 +36,13 @@ MathJax.Hub.Config({
   }
   document.addEventListener("DOMContentLoaded", ready);
 </script>
+
+{% if page.desc %}
+<meta name="description" content="{{ page.desc }}" />
+{% endif %}
+
+{% if page.tags %}
+<meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />
+{% endif %}
+
+ 
