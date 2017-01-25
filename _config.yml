@@ -45,3 +45,5 @@ collections:
   politic:
     output: true
     permalink: /politic/:path/
+
+include: ['.nojekyll']
