@@ -1,60 +1,249 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    {% unless post.published == false %} 
+  
+     
     <url>
-      <loc>{{ site.github-url }}{{ post.url }}</loc>
-      {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif post.date %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% else %}
+      <loc>http://fedorsarafanov.github.io/geometry/2017/01/25/geom.html</loc>
+      
+        <lastmod>2017-01-25T10:38:02+03:00</lastmod>
+      
+      
         <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if post.sitemap.priority %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% else %}
+      
+      
         <priority>0.7</priority> 
-      {% endif %}
+      
     </url>
-    {% endunless %}
-  {% endfor %}
-  {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
+    
+  
+     
     <url>
-      <loc>{{ site.github-url }}{{ page.url | remove: "index.html" }}</loc>
-      {% if page.sitemap.lastmod %}
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>daily</changefreq>
-      {% endif %}
-      {% if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
-      {% else %}
-        <priority>1</priority>
-      {% endif %}
+      <loc>http://fedorsarafanov.github.io/phy/2017/01/14/kor.html</loc>
+      
+        <lastmod>2017-01-14T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
     </url>
-    {% endif %}
-    {% endif %}
-    {% endunless %}
-  {% endfor %}
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/phy/2017/01/13/holl.html</loc>
+      
+        <lastmod>2017-01-13T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/phy/2017/01/13/guk.html</loc>
+      
+        <lastmod>2017-01-13T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/phy/2017/01/08/kepler.html</loc>
+      
+        <lastmod>2017-01-08T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/linux/2017/01/05/windows-flash.html</loc>
+      
+        <lastmod>2017-01-05T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/linux/2017/01/04/bash-history.html</loc>
+      
+        <lastmod>2017-01-04T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/linux/2017/01/02/date-modification.html</loc>
+      
+        <lastmod>2017-01-02T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+     
+    <url>
+      <loc>http://fedorsarafanov.github.io/2017/01/01/about.html</loc>
+      
+        <lastmod>2017-01-01T14:35:05+03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority> 
+      
+    </url>
+    
+  
+  
+    
+    
+    
+    <url>
+      <loc>http://fedorsarafanov.github.io/problems/</loc>
+      
+        <lastmod>2017-01-01T22:16:31+03:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>1</priority>
+      
+    </url>
+    
+    
+    
+  
+    
+    
+    
+    <url>
+      <loc>http://fedorsarafanov.github.io/</loc>
+      
+        <lastmod>2017-01-25T19:23:28+03:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>1</priority>
+      
+    </url>
+    
+    
+    
+  
+    
+    
+    
+    <url>
+      <loc>http://fedorsarafanov.github.io/lab/</loc>
+      
+        <lastmod>2017-01-22T22:16:12+03:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>1</priority>
+      
+    </url>
+    
+    
+    
+  
+    
+    
+    
+    <url>
+      <loc>http://fedorsarafanov.github.io/linux/</loc>
+      
+        <lastmod>2017-01-25T19:23:28+03:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>1</priority>
+      
+    </url>
+    
+    
+    
+  
+    
+    
+    
+    <url>
+      <loc>http://fedorsarafanov.github.io/politic/</loc>
+      
+        <lastmod>2017-01-22T22:15:25+03:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>1</priority>
+      
+    </url>
+    
+    
+    
+  
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
 </urlset>
