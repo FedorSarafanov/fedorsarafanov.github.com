@@ -1,0 +1,46 @@
+\documentclass[tikz, 10pt]{standalone}
+
+% \usepackage[usenames,dvipsnames]{color}
+% \usepackage{extsizes,cmap,graphicx,misccorr,indentfirst,makecell,multirow,ulem,geometry,amssymb,amsfonts,amsmath,amsthm,titlesec,float,fancyhdr,wrapfig,tikz}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}\usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing,patterns,calc,scopes,arrows,through}
+\usetikzlibrary{scopes}
+\usetikzlibrary{%
+     decorations.pathreplacing,%
+     decorations.pathmorphing,%
+    patterns,%
+    calc,%
+    scopes,%
+    arrows,%
+    through,%
+    % arrows.spaced,%
+}
+
+\begin{document}
+\begin{tikzpicture}[
+    axis/.style={dashed,black!60,font=\small},
+    vec/.style={>=latex, ->, draw=blue,fill=blue},
+    % acceleration/.style={>=open triangle 60,draw=blue,fill=blue}, 
+    % inforce/.style={force,double equal sign distance=2pt}
+]
+	\draw [axis, ->] (0,-0.5) -- (0,5) node[left] {$x$};
+
+	\draw [axis, ->] (-0.5,0) -- (6,0) node[anchor=north west] {$y$};
+
+    \draw [vec] (0,0) -- node [left] {$\vec{r}_0$} (1,2) coordinate (A);
+    \draw [vec] (0,0) -- node [right, xshift=0.5em] {$\vec{r}$} (3,2) coordinate (B);
+
+    \draw [black!20] (0,2) -- (4,2);
+    \draw [vec, magenta] (A) -- node [above] {$\vec{M_0M}$} (B);
+
+    \node [above] at (A) {$M_0$};
+    \node [above] at (B) {$M$};
+
+    \draw [vec, magenta] (4,2) -- ++(0,1)  node [above] {$\vec{n}$};
+
+
+\end{tikzpicture}
+
+\end{document}
