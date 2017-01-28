@@ -9,5 +9,8 @@ layout: default
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 </header>
 
-<article>{{ post.excerpt }}</article> 
+<article>
+{{ post.excerpt }}
+<div class="readmore"><a href="{{ post.url }}">Читать далее</a></div>
+</article> 
 {% endfor %}

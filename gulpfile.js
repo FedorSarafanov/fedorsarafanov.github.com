@@ -23,7 +23,8 @@ gulp.task('default',['watch', 'server']);
 
 gulp.task('watch',function () {
     gulp.watch(['_less/*.less'],['less:build']);
-    gulp.watch(['_site/**/*.*'],['reload']);
+    // gulp.watch(['_site/**/*.*'],['reload']);
+    gulp.watch(['_site/css/main.min.css'],['reload']);
     // gulp.watch([config.path.watch.template, config.path.watch.html],['html:build']);    
 })
 

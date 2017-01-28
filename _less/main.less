@@ -1,149 +1,194 @@
-@body: #fff;
-@light2: #fa8072;
-@light: #ffedeb;
-@baselight: #eee8aa;
-@basedark: #20b2aa;
-@dark: #008080;
-@deepskyblue: #00bfff;
-html, 
-body 
-{
+@import 'media.less';
+
+/* Модули */
+@import 'highlight.less';
+@import 'table.less';
+@import 'toc.less';
+
+/* Цвета */
+@tomat: #ff604d;
+@chirok: #008080; 
+
+html, body {
     width: 100%;
     height: 100%;
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
-body 
+body
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Tahoma, sans-serif;
     font-size: 16pt;
-    // background: #000; 
+
     display: flex; 
     flex-direction: column;
-}
-
-body > header 
-{
-    background: #eee;
-}
-
-section
-{
-    width: 625px;
-
-    // font-family: "" !important; 
-    text-shadow: 0 0.05px 0.05px fade(#000, 20%);
-    // width: 100%;
-    // height: 100%;
-    background: #fff;
-    // padding: 2em;
-    flex-grow: 1;
-    // margin: 0 auto;
-    // display: flex;
-    margin-bottom: 1em;
-    flex-direction: column;
-    align-self: center;
-}
-
-// section{
-//     @border: 80px;
-//     @color:  #fff;
-//     position: relative;
-//     &:before{
-//         content: '';
-//         left: -@border;
-//         top: 0px;
-//         width: @border;
-//         height: 100%;
-//         display: block;
-//         background: @color;
-//         position: absolute;
-//         // border-left: 1px solid fade(#000, 15%);
-//         border-left: 2px dashed @light;
-//     }
-//     &:after{
-//         content: '';
-//         position: absolute;
-//         right: -@border;
-//         top: 0px;
-//         width: @border;
-//         height: 100%;
-//         display: block;
-//         // border-right: 1px solid fade(#000, 15%);
-//         background: @color;
-//         border-right: 2px dashed @light;
-
-
-//     }
-// }
-
-@media screen and (max-width: 600px) {
-     section{
-        width: 100%;
-        padding: 1em 1em 1em 1em !important;
-        box-sizing: border-box;
-     }
-    img[src^="https://tex.s2cms.ru"][align=center]{
-        padding-left: 0 !important;
-        padding-right: 0 !important; 
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        box-sizing: border-box !important;
-        max-width: 90% !important;
-        border: 1em solid white;
+    a{
+        text-decoration: none;
+        color: blue;
+        &:hover{
+            color: @tomat !important;
+        }
     }
 }
 
+.header, .pagination { 
+    display: flex;  
+ 
+    flex: 0 0 auto;
 
-body > footer 
-{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    border-bottom: 1px solid darken(white, 6%);
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: darken(white, 3%);
+
+    a {
+        display: block;
+        padding: 1em 1em;
+        box-sizing: border-box;
+        height: 100%;
+        transition: background-color,color .15s ease;
+        text-decoration: none;
+        color: @tomat;
+
+        &:before {
+            margin-right: .5em;
+            content: '[';
+            color: fade(@chirok, 50%);
+        }
+
+        &:after {
+            margin-left: .5em;
+            content: ']';
+            color: fade(@chirok, 50%);
+        }
+
+        &:hover {
+            background-color: #ecf0f1;
+        }
+
+    }
+}
+
+section {
+    width: 625px;
+    padding: 0 0 1em 0;
+
+    background-color: white;
+
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        padding: 0rem 0 1rem 0;
+        margin: 0;
+        color: fade(black, 80%);
+        a{
+            text-decoration: none;
+            color: fade(black, 70%) !important;
+        }   
+    }
+
+    h1{ font-size: 1.55rem }
+    h2{ font-size: 1.45rem }
+    h3{ font-size: 1.35rem }
+
+    header{
+        .datetime{
+            display: block;
+            
+            font-family: 'Source Code Pro', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.15rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin: 0;
+            padding: 1.5rem 0 0rem 0;
+            color: fade(black, 30%);
+            &:before{
+                content: '#';
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    article{
+        line-height: 1.4em;
+        color: fade(black, 90%);
+
+        .problem{
+            display: inline-block;
+            padding: 0.26rem;
+            .href{
+                &:before{
+                    content: '(';
+                }
+                &:after{
+                    content: ')';
+                }
+                a{
+                    &:after{
+                        content: ',';
+                    }
+                    &:last-of-type:after{
+                        content: ''; 
+                    }
+                }
+            }
+        }
+        .readmore{
+            width: 100%;
+            padding: 0em;
+            a{
+                display: block;
+                // float: right;
+                font-size: 0.85em;
+                color: fade(black, 30%);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    flex: 0 0 auto;
+
     min-height: 6rem;
 
-    // background: none;
-    // background: darken(@body, 5%);
-
+    border-top: 1px solid darken(white, 6%);
+    background-color: darken(white, 3%);
     speak: none;
 
-    border-top: 1px solid darken(white, 6%);
-    background: darken(@body, 3%);
-
-    // justify-content: center;
+    li {
+        list-style: none;
+    }
     a.social
     {
         font-family: 'social';
         font-weight: normal;
         font-style: normal;
     }
-    p
-    {
-        font-size: 0.7em;
-
-        margin: 0;
-        padding: 1em; 
-        padding-top: 0;
-        font-family: 'Roboto'; 
+    p {
+        font-family: 'Roboto';
+        font-size: .7em;
         font-weight: 100;
 
-        align-self: center; 
+        margin: 0;
+        padding: 1em;
+        padding-top: 0;
+
         color: fade(black, 55%);
 
+        align-self: center;
     }
-}
-
-@import 'navigation.less';
-@import 'content.less';
-@import 'problem.less';
-@import 'latex.less';
-@import 'linux.less';
-@import 'journal.less';
-
-.readmore{
-    text-align: right;
-    width: 100%;
-    display: block;
-    color: fade(blue, 20%);
-    margin-bottom: 1em;
 }
