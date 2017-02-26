@@ -15,6 +15,21 @@ date:   2017-01-01T22:16:31+03:00
 </article> 
 <header><time class='datetime'>зимняя сессия</time><h1>Под запись</h1></header>
 <article>
-    {% include wrote.html %}
-</article>            
+    {% include wrote.html %} 
+</article>     
 
+<!-- {% for post in site.posts %} 
+{% if post.ex %}
+<header>
+	<time class="datetime">{{ post.date | date: "%b %e, %Y" }}</time>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+</header>
+
+<article>
+{{ post.excerpt }}
+<div class="readmore"><a href="{{ post.url }}">Читать далее</a></div>
+</article> 
+{% endif %}
+{% endfor %}      -->  
+
+ 

@@ -46,5 +46,8 @@ collections:
   politic:
     output: true
     permalink: /politic/:path/
+  problems:
+    output: true
+    permalink: /problems/:path
 
 include: ['.nojekyll']
