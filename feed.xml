@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-01T21:58:06+03:00</updated><id>http://localhost:4000//</id><title type="html">Блог @osabio</title><subtitle></subtitle><entry><title type="html">Лекции по механике. Часть первая</title><link href="http://localhost:4000/2017/02/26/lection-mech-1.html" rel="alternate" type="text/html" title="Лекции по механике. Часть первая" /><published>2017-02-26T18:18:42+03:00</published><updated>2017-02-26T18:18:42+03:00</updated><id>http://localhost:4000/2017/02/26/lection-mech-1</id><content type="html" xml:base="http://localhost:4000/2017/02/26/lection-mech-1.html">&lt;p&gt;В данном материале изложены 1–4 лекции по механике первого курса радиофизического факультета ННГУ. Авторское переложение лекций отличается урезанными (по сравнению с оригиналом) примерами и более подходит для подготовки к экзамену.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-04T12:34:08+03:00</updated><id>http://localhost:4000//</id><title type="html">Блог @osabio</title><subtitle></subtitle><entry><title type="html">Лекции по механике. Динамика системы материальных точек</title><link href="http://localhost:4000/lection/2017/02/26/lection-mech-1.html" rel="alternate" type="text/html" title="Лекции по механике. Динамика системы материальных точек" /><published>2017-02-26T18:18:42+03:00</published><updated>2017-02-26T18:18:42+03:00</updated><id>http://localhost:4000/lection/2017/02/26/lection-mech-1</id><content type="html" xml:base="http://localhost:4000/lection/2017/02/26/lection-mech-1.html">&lt;p&gt;В данном материале изложены лекции по динамике системы материальных точек первого курса радиофизического факультета ННГУ. Авторское переложение лекций отличается урезанными (по сравнению с оригиналом) примерами и более подходит для подготовки к экзамену.&lt;/p&gt;
 &lt;style&gt;
     .lect-img{
         width: 100%;
@@ -7,18 +7,27 @@
 
 &lt;p&gt;Материал практичнее читать в &lt;code&gt;.pdf&lt;/code&gt; формате (&lt;a href=&quot;/img/lection_part1/lection1.pdf&quot;&gt;ссылка&lt;/a&gt;), но можно и прямо здесь.
 &lt;!--ed--&gt;&lt;br /&gt;
-&lt;a href=&quot;/img/lection_part1/lect-0.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-0.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-1.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-1.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-2.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-2.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-3.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-3.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-4.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-4.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-5.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-5.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-6.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-6.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-7.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-7.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-8.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-8.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-9.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-9.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-10.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-10.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/img/lection_part1/lect-11.png&quot;&gt;&lt;img src=&quot;/img/lection_part1/lect-11.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><summary type="html">В данном материале изложены 1–4 лекции по механике первого курса радиофизического факультета ННГУ. Авторское переложение лекций отличается урезанными (по сравнению с оригиналом) примерами и более подходит для подготовки к экзамену.
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-001.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-002.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-003.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-004.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-005.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-006.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-007.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-008.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-009.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-010.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-011.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-012.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-013.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-014.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-015.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-016.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-017.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-018.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-019.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-020.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;lect-img&quot; src=&quot;/img/lection_part1/lect-021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><summary type="html">В данном материале изложены лекции по динамике системы материальных точек первого курса радиофизического факультета ННГУ. Авторское переложение лекций отличается урезанными (по сравнению с оригиналом) примерами и более подходит для подготовки к экзамену.
 
 
 Материал практичнее читать в .pdf формате (ссылка), но можно и прямо здесь.</summary></entry><entry><title type="html">Иродов - решение задачи №1.19</title><link href="http://localhost:4000/2017/02/23/irodov-1-19.html" rel="alternate" type="text/html" title="Иродов - решение задачи №1.19" /><published>2017-02-23T20:46:56+03:00</published><updated>2017-02-23T20:46:56+03:00</updated><id>http://localhost:4000/2017/02/23/irodov-1-19</id><content type="html" xml:base="http://localhost:4000/2017/02/23/irodov-1-19.html">&lt;h3 id=&quot;условие-задачи&quot;&gt;Условие задачи&lt;/h3&gt;
