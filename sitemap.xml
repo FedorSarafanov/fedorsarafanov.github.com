@@ -280,9 +280,28 @@
     
     
     <url>
+      <loc>http://fedorsarafanov.github.io/problems/.bak</loc>
+      
+        <lastmod>2017-01-01T22:16:31+03:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>1</priority>
+      
+    </url>
+    
+    
+    
+  
+    
+    
+    
+    <url>
       <loc>http://fedorsarafanov.github.io/</loc>
       
-        <lastmod>2017-09-10T19:40:46+03:00</lastmod>
+        <lastmod>2017-09-12T16:45:10+03:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -320,7 +339,7 @@
     <url>
       <loc>http://fedorsarafanov.github.io/lections/</loc>
       
-        <lastmod>2017-09-10T19:40:46+03:00</lastmod>
+        <lastmod>2017-09-12T16:45:10+03:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -339,7 +358,7 @@
     <url>
       <loc>http://fedorsarafanov.github.io/linux/</loc>
       
-        <lastmod>2017-09-10T19:40:46+03:00</lastmod>
+        <lastmod>2017-09-12T16:45:10+03:00</lastmod>
       
       
         <changefreq>daily</changefreq>
