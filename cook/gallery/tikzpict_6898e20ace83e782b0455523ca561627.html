@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookBook</title>
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+<body>
+<header>Cooks&or;Tips</header>
+<main>
+<a class="imag2" href="tikzpict_6898e20ace83e782b0455523ca561627.tex"><img src="tikzpict_6898e20ace83e782b0455523ca561627.pdf.jpg" alt=""></a>
+<a href="pre.html">pre.tex</a>
+<pre>
+<code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+	\clip (-6,-1) rectangle (6,4.25);
+
+	\draw (0,0) circle (2cm);
+	\fill[magenta] (0,0) circle (2pt) coordinate (c);
+	\fill[magenta] (0,3) circle (2pt) coordinate (o);
+	\draw (0,3) circle (1cm);
+
+	\draw[axis] (0,0) circle (3cm);
+	\draw[axis] (0,0) -- (0,5);
+
+	\draw (0,0)  ++(150:3) coordinate (oo) circle(1cm);
+	\draw[axis,-<] (0,0) -- ++(150:5)node[left] {$-n$};
+	\draw[axis] (0,0) -- (0,5);
+	\draw[axis] (oo) -- ++(0,3.5);
+	\draw[axis] (oo) -- ++(0,-3.5) coordinate (phi);
+	\draw[force,->] (0,0) ++(150:2) -- ++ (150:1.5)node[above] {$\vec{N}$};
+
+	\draw[force,->] (0,0) ++(150:3) -- ++ (240:1.5)node[below] {$\vec{v}$};
+
+	\draw[force,->] (oo) -- ++ (0,-1.5) node[below] {$m\vec{g}$};
+	\fill[magenta] (oo) circle (2pt);
+
+
+	\draw pic["$\phi$",draw=magenta,<-,angle eccentricity=1.5,angle radius=.5cm] {angle=phi--oo--c};   
+	
+	\draw pic["$\phi$",draw=magenta,<-,angle 
+	eccentricity=1.5,angle radius=0.5cm] {angle=o--c--oo};   
+
+	\lineann[6]{90}{1.5}{$h^*=h_0\cdot\cos\phi$}
+	\lineann[-5]{90}{3}{$h_0=r+R$}
+
+	\contourlength{2mm}
+	\draw (2,0) node[] {\contour{white}{$W_\text{п}=0$}};
+
+\end{tikzpicture}\end{document}</code>
+</main>
+<footer>Сарафанов Ф.Г. &copy; 2018</footer>
+<script src="../js/prism.js"></script>
+</body>
+</html> 
