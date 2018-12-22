@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+     @@include('./template/head.html')
+	<title>Блог @osabio</title>
+</head>
+<body> 
+	<header>
+        @@include('./template/header.html')
+	</header> 
+<section>
+<header>
+	<time datetime="2017-01-03" class="datetime">JANUARY 3, 2017</time>
+	<h1>Как работает генерация картинок к задачам на этом сайте</h1>
+</header>
+<article>
+	<!-- <h1>text</h1> --> 
+</article>
+</section>
+<pre>
+<code class="bash hljs">
+#!/usr/bin/bash
+rm files.html
+touch files.html;
+for file in *.pdf;  
+	# do echo $file ; 
+	do {
+		name=`basename -s .pdf &quot;$file&quot;`;
+		if [[ &quot;$name&quot; =~ ^[0-9][0-9][0-9] || &quot;$name&quot; =~ ^[0-9][0-9] ]] ;then
+			author=&quot;Яковлев&quot;;
+		elif [[ &quot;$name&quot; =~ ^[0-9]-[0-9][0-9] || &quot;$name&quot; =~ ^[0-9]-[0-9][0-9][0-9] ]]; then
+			author=&quot;Иродов&quot;;
+		else 
+			author=&quot;Под запись&quot;;
+		fi	;
+
+		href=&quot;&quot;;
+
+		if [ -f $name&quot;.jpg&quot; ]; then
+    		href+=&quot;&lt;a href='/problems/$name.jpg'&gt;1&lt;/a&gt;&quot;;
+		else {
+
+			if [ -f $name&quot;-0.jpg&quot; ]; then
+	    		href+=&quot;&lt;a href='/problems/$name-0.jpg'&gt;1&lt;/a&gt;&quot;;
+			fi;
+
+			if [ -f $name&quot;-1.jpg&quot; ]; then
+	    		href+=&quot;&lt;a href='/problems/$name-1.jpg'&gt;2&lt;/a&gt;&quot;;
+			fi;
+
+			if [ -f $name&quot;-2.jpg&quot; ]; then
+	    		href+=&quot;&lt;a href='/problems/$name-2.jpg'&gt;3&lt;/a&gt;&quot;;
+			fi;
+
+		} 
+
+		fi;
+		convert -density 300 -alpha remove $name.pdf $name.jpg
+		row=`sed &quot;s/{1}/$name/g; s/{0}/$author/g; s/{2}//g; s/{3}//g;&quot; &lt;&lt;&lt;&quot;&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;td&gt;{3}&quot;`;
+		row+=$href;
+		row+=&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+		echo $row &gt;&gt;files.html;
+	} 
+done;
+
+rm -rf ../problems/*.jpg;
+cp *.jpg ../problems/;
+</code>
+</pre>
+	<footer>
+        @@include('./template/footer.html')
+	</footer>
+</body>
+</html>

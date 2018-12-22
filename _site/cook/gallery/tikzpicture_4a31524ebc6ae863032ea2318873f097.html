@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookBook</title>
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+<body>
+<header>Cooks&or;Tips</header>
+<main>
+<a class="imag2" href="tikzpicture_4a31524ebc6ae863032ea2318873f097.tex"><img src="tikzpicture_4a31524ebc6ae863032ea2318873f097.pdf.jpg" alt=""></a>
+<a href="pre.html">pre.tex</a>
+<pre>
+<code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+    \xdef\darkness{0}
+	\xdef\opa{0.2}
+
+    \xdef\SIZE{6}
+	\xdef\setka{0}
+
+    \input{setka}
+
+    \draw[
+        domain=0:5*pi,
+        smooth,thick,
+        variable=\x,
+        samples=100,
+        black, 
+        dashed,
+    ] plot ({\x/pi},{sin(\x r)/2}); 
+
+    % \draw[
+    %     domain=0:5*pi,
+    %     smooth,thick,
+    %     variable=\x,
+    %     samples=100,
+    %     magenta, 
+    %     % yshift=3cm
+    % ] plot ({\x/pi},{sin((\x) r)}); 
+
+    \draw[
+        domain=pi:5*pi,
+        smooth,thick,
+        variable=\x,
+        samples=100,
+        black, 
+        dashed,
+        % yshift=3cm
+    ] plot ({\x/pi},{-sin((\x) r)/2});  
+
+    \draw[magenta,very thick] (1,0)-- (5,0);   
+
+    \begin{scope}[xshift=0cm, yshift=0.5cm]
+        \lineann[0.5]{0}{1}{сдвиг\\ фазы}{white}
+    \end{scope}        
+
+\end{tikzpicture}\end{document}</code>
+</main>
+<footer>Сарафанов Ф.Г. &copy; 2018</footer>
+<script src="../js/prism.js"></script>
+</body>
+</html> 

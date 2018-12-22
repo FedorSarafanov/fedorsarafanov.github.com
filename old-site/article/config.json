@@ -1,0 +1,9 @@
+{
+	"domain": "127.0.0.1/tool/",
+	"makehtml": "make.html",
+	"output": "../articles/",
+	"sitepath": "articles/",
+	"rootjson": "../articles.json",
+	"rootrss": "../site.rss",
+	"breadcrumb-title": "Статьи"	
+}

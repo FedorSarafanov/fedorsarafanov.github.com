@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tools</title>
+		<style>
+			html,body{
+				padding: 0;
+				margin: 0;
+				height: 100%;
+			}
+			article{
+				float: left;
+				display: block;
+				width: 100%;	
+				height: 95%;			
+			}
+			body{
+				background: #EAEAE0;
+			}
+			header{
+				display: block;
+				background: #9CBCCA;
+			}
+
+			nav {
+				min-height: 1.4em;
+				max-height: 2.8em;
+				font-size: 1.6em;	
+				font-family: 'Liberation Serif'	!important;	
+			}		
+			nav li{
+				display: block;
+				float: left;				
+				list-style: none;
+				height: 1em;
+				padding: 0.1em;
+				padding-bottom: 0.3em;	
+				color: #7475B2;					
+			}
+			nav li:hover{
+				cursor: default;
+			}
+			nav li:first-of-type{
+				background: #21B1C3;
+				color: #fff;
+			}
+		
+			.active{
+				background: #6980C8 !important;	
+				color: #fff !important;
+			}
+			.downactive{
+				background: #556598 !important;	
+				color: #fff !important;
+			}
+		</style>
+		<script type='text/javascript' src='jss/$.js'></script>
+	</head>
+	<body>
+	 	<header>
+			<nav>
+				<li class="active" data="home.php">Инструменты #</li>
+				<li class="" data="latex.php">LaTeX</li>
+				<li class="" data="regexp.php">RegExp</li>
+				<li class="" data="phpinfo.php">PHP</li>	
+					
+				<script>
+					// $('body').keydown(function(eventObject){
+					//   alert('Клавиша клавиатуры приведена в нажатое состояние. Код вводимого символа - ' + eventObject.which);
+					// });
+
+					$('nav li').mousedown(function(){
+						$(this).toggleClass('downactive')
+					})
+
+					$('nav li').mouseup(function(){
+						$('nav li').removeClass('active')					
+						$(this).toggleClass('downactive').toggleClass('active')
+
+						if ($(this).attr('data')!=undefined){
+							$('article').load($(this).attr('data'))
+						}					
+
+					})
+
+				</script>
+
+			</nav>
+		</header>
+		<article>
+			<?php include('home.php') ?>
+		</article>
+	</body>
+</html>
