@@ -1,0 +1,38 @@
+@font-face {
+font-family: "PT Serif";
+  src: url("../fonts/ptserif-normal.eot");
+  src: local('☺'), 
+  url("../fonts/ptserif-normal.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/ptserif-normal.woff") format("woff"),
+  url("../fonts/ptserif-normal.ttf") format("truetype"), 
+  url("../fonts/ptserif-normal.svg#PT Serif") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/ptserif-bold.eot");
+  src: local('☺'), 
+  url("../fonts/ptserif-bold.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/ptserif-bold.woff") format("woff"), 
+  url("../fonts/ptserif-bold.ttf") format("truetype"), 
+  url("../fonts/ptserif-bold.svg#PT Serif") format("svg");
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/ptserif-italic.eot");
+  src: local('☺'), 
+  url("../fonts/ptserif-italic.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/ptserif-italic.woff") format("woff"), 
+  url("../fonts/ptserif-italic.ttf") format("truetype"), 
+  url("../fonts/ptserif-italic.svg#PT Serif") format("svg");
+
+  font-weight: normal;
+  font-style: italic;
+}

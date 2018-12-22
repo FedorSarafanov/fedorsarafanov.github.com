@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookBook</title>
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+<body>
+<header>Cooks&or;Tips</header>
+<main>
+<a class="imag2" href="tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.tex"><img src="tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.pdf.jpg" alt=""></a>
+<a href="pre.html">pre.tex</a>
+<pre>
+<code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+		x={(1cm*2,0cm)},
+		y={(0,1cm*2)},
+		z={(0,-0.2cm*2)},
+		rotate=90+180,
+	]
+	
+	%Ось координат
+	\draw[dashed] (0,-2, 0) -- (0,2,0); 
+	
+	%Луч
+	\draw[color=orange, thick] (0,0,0)
+	-- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*);
+	
+	\draw[color=black, thick,->] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$};
+	
+
+	\begin{scope}[
+			canvas is xz plane at y=0
+		]
+		\draw[axis] (0,0) circle (1);
+		\draw[vec line] (0,0) -- (180:1) coordinate (A);
+		\draw[vec] (*) -- ++(180:0.5) coordinate (np);
+	\end{scope}
+	
+	
+	\begin{scope}[ canvas is xy plane at z=0]
+		\draw (0,0) ellipse (1 and 1.5);
+	\end{scope}
+	
+	\begin{scope}[
+			canvas is xy plane at z=0,
+			rotate around y=-65,
+		]
+		\draw[axis] (0,0) ellipse (1 and 1.5);
+		\draw[light axis] (-1,0) -- (1,0);
+		\draw[vec line] (0,0) -- (45:1.18)  coordinate (B);
+		\draw[vec line] (90:1.5)  coordinate (o);
+		\draw[vec] (*) -- ++(45:0.5) coordinate (ne);
+	\end{scope}
+	
+	\draw[fill=magenta] (A) circle (2pt) node[above] {$n_0$};
+	\draw[fill=magenta] (B) circle (2pt) node[above] {$n_e$};
+	% \draw[fill=magenta] (o) circle (2pt) node[right, yshift=-0.6em] {$n_1$};
+	\draw[] (np) node[above] {$\vec{E}_\perp$};
+	\draw[] (ne) node[right] {$\vec{E}_\parallel$};
+	
+
+\end{tikzpicture}\end{document}</code>
+</main>
+<footer>Сарафанов Ф.Г. &copy; 2018</footer>
+<script src="../js/prism.js"></script>
+</body>
+</html> 

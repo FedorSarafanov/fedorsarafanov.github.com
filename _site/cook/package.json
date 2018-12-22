@@ -1,0 +1,32 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-webserver": "^0.9.1",
+    "gulp-concat": "^2.6.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "tiny-lr": "^1.0.3"
+  },
+  "devDependencies": {
+    "gulp-color": "0.0.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-dir-sync": "^0.1.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-kramdown": "^0.5.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-shell": "^0.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
