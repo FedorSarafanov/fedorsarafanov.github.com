@@ -1,0 +1,136 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+	<title>Заголовок ленты</title>
+	<!-- <link>sfg180.tk</link> -->
+	<description>Краткое описание RSS-канала</description>
+	<language>ru-ru</language>
+	<!-- <pubDate>15.0.2015</pubDate> -->
+	<!-- <lastBuildDate>15.0.2015</lastBuildDate> -->
+	<copyright>Сарафанов Ф.Г. (С) 2015</copyright>
+	<!-- <webMaster>matclass180@yandex.ru</webMaster> -->
+
+			<item>
+			 <title>Генератор static сайтов "simplegen"</title>
+			 <link>http://127.0.0.1/tool/articles/simplegen.html</link>
+			 <description>
+
+
+
+Конфигурация
+
+Simplegen - простой генератор static сайтов из шаблонов. Базовые шаблоны *.html содержат верстку: в *.md (Markdown) файлах хранится содержимое статей/заметок. Генератор можно запустить в любой директории сайта, сконфигурировав config.json:
+
+{
+    "domain": "127.0.0.1/tool/",
+    "sitepath": "articles/",
+    "makehtml": "make.html",
+    "output": "../articles/",        
+    "rootjson": "../articles.json",
+    "breadcrumb-title": "Статьи"    
+}
+
+
+Все ключи являются обязательными. 
+
+
+Ключи domain и sitepath отвечают за правильную генерацию структуры ссылок;
+Ключ makehtml указывает расположение шаблона с версткой относительно текущей директории генератора;
+В директорию "../articles/" (параметр output) перенаправляются сгенерированные файлы;
+Параметр rootjson дает расположение "базы" сайта, в которой в формате </description>
+			 <!--<author>sfg180@yandex.ru</author>-->
+			 <!--<pubDate>29.03.2015 17:16</pubDate>-->
+			</item>
+		
+			<item>
+			 <title>Язык разметки Markdown</title>
+			 <link>http://127.0.0.1/tool/articles/aboutmd.html</link>
+			 <description>
+
+
+
+Настоящий документ предназначен для ознакомления пользователя с функциональными возможностями языка разметки Markdown. 
+Markdown – это облегченный язык разметки, который является инструментом преобразования кода в HTML.
+Главной особенностью данного языка является максимально простой синтаксис, который служит для упрощения написания и чтения кода разметки, что, в свою очередь, позволяет легко его корректировать.
+Теперь рассмотрим более подробно функции языка разметки Markdown.   
+
+Markdown не является заменой HTML. Синтаксис Markdown достаточно ограничен, и соответствует лишь небольшому подмножеству элементов HTML. Он включает в себя следующие элементы:
+
+
+Блочные элементы
+
+Параграфы и разрывы строк;
+Заголовки;
+Цитаты;
+Списки
+Блоки кода;
+Горизонтальные (разделительные) линии</description>
+			 <!--<author>sfg180@yandex.ru</author>-->
+			 <!--<pubDate>29.03.2015 17:16</pubDate>-->
+			</item>
+		
+			<item>
+			 <title>Чужая луна </title>
+			 <link>http://127.0.0.1/tool/articles/github.html</link>
+			 <description>
+
+
+
+Все кончилось!
+
+Но Врангель все не уходил с палубы крейсера «Генерал Корнилов», словно еще не верил, что все это уже случилось, мосты сожжены и возврата к прошлому нет.
+
+Все последние месяцы непрерывных изнуряющих боев в Северной Таврии он понимал, что проигрывает и проиграет эту битву. И его неотступно преследовала одна и та же мысль: как достойно, не потеряв лица, сохранить при этом дееспособную армию, пригодную для будущих сражений. Веры в то, что удастся закрыть на железный запор Крымский перешеек и отсидеться в Крыму до будущей весны, у него уже давно не было. Не то время, не та война! Но и не обращать внимания на пессимистические, деморализующие умозаключения своих подчиненных он не мог, не имел права, хотя тоже уже думал так же, как и многие из них.
+
+Каждодневно, а точнее, каждую ночь, он раскладывал в уме, как некий карточный пасьянс, самые несбыточные варианты спасения армии. Голова все время была забита безумными расчетами различных военных хитрост</description>
+			 <!--<author>sfg180@yandex.ru</author>-->
+			 <!--<pubDate>29.03.2015 17:16</pubDate>-->
+			</item>
+		
+			<item>
+			 <title>Github</title>
+			 <link>http://127.0.0.1/tool/articles/article.html</link>
+			 <description>
+
+html css github
+
+This library is the first step of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:
+
+
+This library converts the raw markup to HTML. See the list of supported markup formats below.
+The HTML is sanitized, aggressively removing things that could harm you and your kin—such as script tags, inline-styles, and class or id attributes. See the sanitization filter for the full whitelist.
+Syntax highlighting is performed on code blocks. See github/linguist for more information about syntax highlighting.
+The HTML is passed through other filters in the html-pipeline that add special sauce, such as </description>
+			 <!--<author>sfg180@yandex.ru</author>-->
+			 <!--<pubDate>29.03.2015 17:16</pubDate>-->
+			</item>
+		
+			<item>
+			 <title>Лента</title>
+			 <link>http://127.0.0.1/tool/articles/index.html</link>
+			 <description>
+
+
+
+
+$('.rawhtml').append('');
+    $.getJSON(
+        '../articles.json',
+        function(data) {
+            j=-1
+            for (var i in data) {
+                var row = data[i];
+                j++;                
+                $('.tages').append('' + row.title + '');                                
+            }
+
+        }
+    );    
+
+</description>
+			 <!--<author>sfg180@yandex.ru</author>-->
+			 <!--<pubDate>29.03.2015 17:16</pubDate>-->
+			</item>
+		<!-- DO NOT EDIT THIS, STUPID! -->
+</channel>

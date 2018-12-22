@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.3" />
+		<meta name="keywords" content="События,Вызов обработчика,Вызов события,Изменение контекста функции,Обработчик готовности дерева DOM,Обработчик или источник выхода курсора из элемента,Обработчик или источник появления курсора на элементе,Обработчик или источник события blur,Обработчик или источник события change,Обработчик или источник события click,Обработчик или источник события dblclick" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php5" title="JQuery (ru)" />
+		<link rel="alternate" type="application/rss+xml" title="JQuery — RSS-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="JQuery — Atom-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=atom" />
+		<title>События — JQuery</title>
+		<link rel="stylesheet" href="../tags/tags.css" type="text/css" />
+		<link rel="stylesheet" href="../skins/common/shared.css@207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../skins/common/commonPrint.css@207" type="text/css" media="print" />
+		<link rel="stylesheet" href="../skins/monobook/main.css@207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/skins";
+		var wgArticlePath = "/index.php5/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php5";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://jquery.page2page.ru";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "События";
+		var wgTitle = "События";
+		var wgAction = "view";
+		var wgArticleId = "188";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "ru";
+		var wgContentLanguage = "ru";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1128;
+		var wgVersion = "1.15.3";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", " 	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = ["sysop"];
+		var wgRestrictionMove = ["sysop"];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="../skins/common/wikibits.js@207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="../skins/common/ajax.js@207"></script>
+		<script type="text/javascript" src="../tags/jquery.js"></script>		<script type="text/javascript" src="../tags/tag.js"></script>		<script type="text/javascript" src="../index.php5@title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-События skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">События</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">Материал из JQuery</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Перейти к: <a href="События.html#column-one">навигация</a>, <a href="События.html#searchInput">поиск</a></div>			<!-- start content -->
+			<p>С помощью методов из этого раздела, вы сможете обрабатывать различные события, происходящие на странице. Речь идет, как о стандартных событиях javascript, так новых, организованных самой библиотекой jQuery.
+</p>
+<table id="toc" class="toc" summary="Содержание"><tr><td><div id="toctitle"><h2>Содержание</h2></div>
+<ul>
+<li class="toclevel-1"><a href="События.html#.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B9"><span class="tocnumber">1</span> <span class="toctext">Список функций</span></a>
+<ul>
+<li class="toclevel-2"><a href="События.html#.D0.91.D0.B0.D0.B7.D0.BE.D0.B2.D1.8B.D0.B5"><span class="tocnumber">1.1</span> <span class="toctext">Базовые</span></a></li>
+<li class="toclevel-2"><a href="События.html#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.BC.D1.8B.D1.88.D0.B8"><span class="tocnumber">1.2</span> <span class="toctext">События мыши</span></a></li>
+<li class="toclevel-2"><a href="События.html#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.BA.D0.BB.D0.B0.D0.B2.D0.B8.D0.B0.D1.82.D1.83.D1.80.D1.8B"><span class="tocnumber">1.3</span> <span class="toctext">События клавиатуры</span></a></li>
+<li class="toclevel-2"><a href="События.html#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D1.84.D0.BE.D1.80.D0.BC.D1.8B"><span class="tocnumber">1.4</span> <span class="toctext">События формы</span></a></li>
+<li class="toclevel-2"><a href="События.html#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.BA.D0.B8_.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B8.D1.86.D1.8B"><span class="tocnumber">1.5</span> <span class="toctext">События загрузки страницы</span></a></li>
+<li class="toclevel-2"><a href="События.html#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B1.D1.80.D0.B0.D1.83.D0.B7.D0.B5.D1.80.D0.B0"><span class="tocnumber">1.6</span> <span class="toctext">События браузера</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "показать"; var tocHideText = "убрать"; showTocToggle(); } </script>
+<a name=".D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B9" id=".D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B9"></a><h2> <span class="mw-headline">Список функций</span></h2>
+<a name=".D0.91.D0.B0.D0.B7.D0.BE.D0.B2.D1.8B.D0.B5" id=".D0.91.D0.B0.D0.B7.D0.BE.D0.B2.D1.8B.D0.B5"></a><h3> <span class="mw-headline">Базовые</span></h3>
+<table class="functList" cellspacing="0" cellpadding="0">
+
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Установка_обработчика_событий.html" title="Установка обработчика событий">.bind()</a></span>
+</td><td class="discr">Устанавливает обработчик события на выбранные элементы страницы. Обработчик не сработает на элементах, появившихся после его установки.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Установка_умного_обработчика_событий.html" title="Установка умного обработчика событий">.live()</a></span>
+</td><td class="discr">Устанавливает обработчик события на выбранные элементы страницы. Обработчик сработает и на элементах, появившихся после его установки.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Установка_обработчика_с_заданным_контекстом.html" title="Установка обработчика с заданным контекстом">.delegate()</a></span>
+</td><td class="discr">Устанавливает обработчик события на выбранные элементы страницы. Элементы выбираются с помощью уточняющего селектора. Обработчик будет действовать и на элементах, появившихся после его установки.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Установка_разового_обработчика_событий.html" title="Установка разового обработчика событий">.one()</a></span>
+</td><td class="discr">Устанавливает обработчик события на выбранные элементы страницы, который сработает только по одному разу, на каждом из элементов.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Удаление_обработчика_событий.html" title="Удаление обработчика событий">.unbind()</a></span>
+</td><td class="discr">Удаляет обработчик событий у выбранных элементов.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Удаление_умного_обработчика_событий.html" title="Удаление умного обработчика событий">.die()</a></span>
+</td><td class="discr">Удаляет обработчик событий, который был установлен с помощью live().
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Удаление_обработчика_с_заданным_контекстом.html" title="Удаление обработчика с заданным контекстом">.undelegate()</a></span>
+</td><td class="discr">Удаляет обработчик событий, который был установлен с помощью delegate().
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Вызов_события.html" title="Вызов события">.trigger()</a></span>
+</td><td class="discr">Выполняет указанное событие и запускает его обработчик.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Вызов_обработчика.html" title="Вызов обработчика">.triggerHandler()</a></span>
+</td><td class="discr">Запускает обработчик указанного события, без его выполнения.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Изменение_контекста_функции.html" title="Изменение контекста функции">jQuery.proxy()</a></span>
+</td><td class="discr">По заданной функции, создает другую, внутри которой переменная <tt>this</tt> будет равна заданному значению.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Объект_event.html" title="Объект event">event</a></span>
+</td><td class="discr">Объект, содержащий данные о текущем событии. Передается всем обработчикам событий.
+</td></tr></table>
+<a name=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.BC.D1.8B.D1.88.D0.B8" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.BC.D1.8B.D1.88.D0.B8"></a><h3> <span class="mw-headline">События мыши</span></h3>
+<table class="functList" cellspacing="0" cellpadding="0">
+
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_click.html" title="Обработчик или источник события click">.click()</a></span>
+</td><td class="discr">Устанавливает обработчик "клика" мышью по элементу, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_dblclick.html" title="Обработчик или источник события dblclick">.dblclick()</a></span>
+</td><td class="discr">Устанавливает обработчик двойного "клика" мышью по элементу, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_hover.html" title="Обработчик события hover">.hover()</a></span>
+</td><td class="discr">Устанавливает обработчик двух событий: появления/исчезновения курсора над элементом.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_mousedown.html" title="Обработчик или источник события mousedown">.mousedown()</a></span>
+</td><td class="discr">Устанавливает обработчик нажатия кнопки мыши, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_mouseup.html" title="Обработчик или источник события mouseup">.mouseup()</a></span>
+</td><td class="discr">Устанавливает обработчик поднятия кнопки мыши, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_появления_курсора_на_элементе.html" title="Обработчик или источник появления курсора на элементе">.mouseenter()</a></span>
+</td><td class="discr">Устанавливает обработчик появления курсора в области элемента, либо, запускает это событие. Появление этого события, отработано лучше, чем стандартного mouseover.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_выхода_курсора_из_элемента.html" title="Обработчик или источник выхода курсора из элемента">.mouseleave()</a></span>
+</td><td class="discr">Устанавливает обработчик выхода курсора из области элемента, либо, запускает это событие. Появление этого события, отработано лучше, чем стандартного mouseout.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_mousemove.html" title="Обработчик или источник события mousemove">.mousemove()</a></span>
+</td><td class="discr">Устанавливает обработчик движения курсора в области элемента, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_mouseout.html" title="Обработчик или источник события mouseout">.mouseout()</a></span>
+</td><td class="discr">Устанавливает обработчик выхода курсора из области элемента, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_mouseover.html" title="Обработчик или источник события mouseover">.mouseover()</a></span>
+</td><td class="discr">Устанавливает обработчик появления курсора в области элемента, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Поочередное_выполнение_функций.html" title="Поочередное выполнение функций">.toggle()</a></span>
+</td><td class="discr">Поочередно выполняет одну из двух или более заданных функций, в ответ на "клик" по элементу.
+</td></tr></table>
+<a name=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.BA.D0.BB.D0.B0.D0.B2.D0.B8.D0.B0.D1.82.D1.83.D1.80.D1.8B" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.BA.D0.BB.D0.B0.D0.B2.D0.B8.D0.B0.D1.82.D1.83.D1.80.D1.8B"></a><h3> <span class="mw-headline">События клавиатуры</span></h3>
+<table class="functList" cellspacing="0" cellpadding="0">
+
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_keydown.html" title="Обработчик или источник события keydown">.keydown()</a></span>
+</td><td class="discr">Устанавливает обработчик перехода клавиши клавиатуры в нажатое состояние, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_keyup.html" title="Обработчик или источник события keyup">.keyup()</a></span>
+</td><td class="discr">Устанавливает обработчик возвращение клавиши клавиатуры в ненажатое состояние, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_keypress.html" title="Обработчик события keypress">.keypress()</a></span>
+</td><td class="discr">Устанавливает обработчик ввода символа с клавиатуры, либо, запускает это событие.
+</td></tr></table>
+<a name=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D1.84.D0.BE.D1.80.D0.BC.D1.8B" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D1.84.D0.BE.D1.80.D0.BC.D1.8B"></a><h3> <span class="mw-headline">События формы</span></h3>
+<table class="functList" cellspacing="0" cellpadding="0">
+
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_focus.html" title="Обработчик или источник события focus">.focus()</a></span>
+</td><td class="discr">Устанавливает обработчик получения фокуса, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_blur.html" title="Обработчик или источник события blur">.blur()</a></span>
+</td><td class="discr">Устанавливает обработчик потери фокуса, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_focusin.html" title="Обработчик события focusin">.focusin()</a></span>
+</td><td class="discr">Устанавливает обработчик получения фокуса самим элементом или одним из его дочерних.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_focusout.html" title="Обработчик события focusout">.focusout()</a></span>
+</td><td class="discr">Устанавливает обработчик получения фокуса самим элементом или одним из его дочерних.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_select.html" title="Обработчик или источник события select">.select()</a></span>
+</td><td class="discr">Устанавливает обработчик выделения текста, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_submit.html" title="Обработчик или источник события submit">.submit()</a></span>
+</td><td class="discr">Устанавливает обработчик отправки формы, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_change.html" title="Обработчик или источник события change">.change()</a></span>
+</td><td class="discr">Устанавливает обработчик изменения элемента формы, либо, запускает это событие.
+</td></tr></table>
+<a name=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.BA.D0.B8_.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B8.D1.86.D1.8B" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.BA.D0.B8_.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B8.D1.86.D1.8B"></a><h3> <span class="mw-headline">События загрузки страницы</span></h3>
+<table class="functList" cellspacing="0" cellpadding="0">
+
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_готовности_дерева_DOM.html" title="Обработчик готовности дерева DOM">.ready()</a></span>
+</td><td class="discr">Устанавливает обработчик готовности дерева DOM.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_load.html" title="Обработчик события load">.load()</a></span>
+</td><td class="discr">Устанавливает обработчик завершения загрузки элемента.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_unload.html" title="Обработчик события unload">.unload()</a></span>
+</td><td class="discr">Устанавливает обработчик ухода со страницы (при переходе по ссылке, закрытии браузера и.т.д.).
+</td></tr></table>
+<a name=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B1.D1.80.D0.B0.D1.83.D0.B7.D0.B5.D1.80.D0.B0" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B1.D1.80.D0.B0.D1.83.D0.B7.D0.B5.D1.80.D0.B0"></a><h3> <span class="mw-headline">События браузера</span></h3>
+<table class="functList" cellspacing="0" cellpadding="0">
+
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_события_error.html" title="Обработчик события error">.error()</a></span>
+</td><td class="discr">Устанавливает обработчик ошибки при загрузке элементов (например отсутствие необходимой картинки на сервере).
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_resize.html" title="Обработчик или источник события resize">.resize()</a></span>
+</td><td class="discr">Устанавливает обработчик изменения размеров окна браузера, либо, запускает это событие.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine"><a href="Обработчик_или_источник_события_scroll.html" title="Обработчик или источник события scroll">.scroll()</a></span>
+</td><td class="discr">Устанавливает обработчик "прокрутки" элементов документа, либо, запускает это событие.
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 46/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key page2pagru:pcache:idhash:188-0!1!0!!ru!2!edit=0 and timestamp 20101210060922 -->
+<div class="printfooter">
+Источник — «<a href="События.html">http://jquery.page2page.ru/index.php5/%D0%A1%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F</a>»</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Просмотры</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="События.html" title="Содержание статьи [c]" accesskey="c">Статья</a></li>
+				 <li id="ca-talk" class="new"><a href="../index.php5@title=@D0@9E@D0@B1@D1@81@D1@83@D0@B6@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5:@D0@A1@D0@BE@D0@B1@D1@8B@D1@82@D0@B8@D1@8F&amp;action=edit&amp;redlink=1.html" title="Обсуждение содержания страницы [t]" accesskey="t">Обсуждение</a></li>
+				 <li id="ca-viewsource"><a href="../index.php5@title=@D0@A1@D0@BE@D0@B1@D1@8B@D1@82@D0@B8@D1@8F&amp;action=edit.html" title="Эта страница защищена от изменений, но вы можете посмотреть и скопировать её исходный текст [e]" accesskey="e">Просмотр</a></li>
+				 <li id="ca-history"><a href="../index.php5@title=@D0@A1@D0@BE@D0@B1@D1@8B@D1@82@D0@B8@D1@8F&amp;action=history.html" title="Журнал изменений страницы [h]" accesskey="h">История</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Личные инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="http://jquery.page2page.ru/index.php5/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:94.181.32.12" title="Страница участника для моего IP [.]" accesskey="." class="new">94.181.32.12</a></li>
+				<li id="pt-anontalk"><a href="http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:94.181.32.12" title="Страница обсуждений для моего IP [n]" accesskey="n" class="new">Обсуждение для этого IP-адреса</a></li>
+				<li id="pt-anonlogin"><a href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:UserLogin&amp;returnto=@D0@A1@D0@BE@D0@B1@D1@8B@D1@82@D0@B8@D1@8F.html" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o">Представиться / зарегистрироваться</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/skins/common/images/wiki.png);" href="Заглавная_страница.html" title="Заглавная страница [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.BE_.D0.BA.D0.B0.D1.82.D0.B5.D0.B3.D0.BE.D1.80.D0.B8.D1.8F.D0.BC'>
+		<h5>Функции по категориям</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Ajax"><a href="Ajax.html">Ajax</a></li>
+				<li id="n-.D0.90.D1.82.D1.80.D0.B8.D0.B1.D1.83.D1.82.D1.8B"><a href="Атрибуты.html">Атрибуты</a></li>
+				<li id="n-CSS"><a href="CSS.html">CSS</a></li>
+				<li id="n-.D0.A1.D0.B5.D0.BB.D0.B5.D0.BA.D1.82.D0.BE.D1.80.D1.8B"><a href="Селекторы.html">Селекторы</a></li>
+				<li id="n-.D0.9C.D0.B0.D0.BD.D0.B8.D0.BF.D1.83.D0.BB.D1.8F.D1.86.D0.B8.D0.B8"><a href="Манипуляции.html">Манипуляции</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0-.D1.81-.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC"><a href="Работа_с_набором_элементов.html">Работа с набором</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B7.D0.BD.D0.BE.D0.B5"><a href="Разное.html">Разное</a></li>
+				<li id="n-.D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"><a href="Свойства.html">Свойства</a></li>
+				<li id="n-.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><a href="События.html">События</a></li>
+				<li id="n-.D0.A4.D0.BE.D1.80.D0.BC.D1.8B"><a href="Формы.html">Формы</a></li>
+				<li id="n-.D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"><a href="Эффекты.html">Эффекты</a></li>
+				<li id="n-.D0.AF.D0.B4.D1.80.D0.BE"><a href="http://jquery.page2page.ru/index.php5/%D0%AF%D0%B4%D1%80%D0%BE">Ядро</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Поиск</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/index.php5" id="searchform"><div>
+				<input type='hidden' name="title" value="Служебная:Search"/>
+				<input id="searchInput" name="search" type="text" title="Искать это слово [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Перейти" title="Перейти к странице, имеющей в точности такое название" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Найти" title="Найти страницы, содержащие указанный текст" />
+			</div></form>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Навигация</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Заглавная_страница.html">Заглавная страница</a></li>
+				<li id="n-portal"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" title="О проекте, о том, что вы можете сделать, где что находится">Сообщество</a></li>
+				<li id="n-currentevents"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Список текущих событий">Текущие события</a></li>
+				<li id="n-recentchanges"><a href="Служебная:RecentChanges.html" title="Список последних изменений [r]" accesskey="r">Свежие правки</a></li>
+				<li id="n-randompage"><a href="Запуск_следующей_функции_в_очереди.html" title="Посмотреть случайную страницу [x]" accesskey="x">Случайная статья</a></li>
+				<li id="n-help"><a href="http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Справочник по проекту «JQuery»">Справка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:WhatLinksHere/События.html" title="Список всех страниц, которые ссылаются на эту страницу [j]" accesskey="j">Ссылки сюда</a></li>
+				<li id="t-recentchangeslinked"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChangesLinked/События.html" title="Последние изменения в страницах, на которые ссылается эта страница [k]" accesskey="k">Связанные правки</a></li>
+<li id="t-specialpages"><a href="Служебная:SpecialPages.html" title="Список служебных страниц [q]" accesskey="q">Спецстраницы</a></li>
+				<li id="t-print"><a href="../index.php5@title=@D0@A1@D0@BE@D0@B1@D1@8B@D1@82@D0@B8@D1@8F&amp;printable=yes.html" rel="alternate" title="Версия этой страницы для печати [p]" accesskey="p">Версия для печати</a></li>				<li id="t-permalink"><a href="../index.php5@title=@D0@A1@D0@BE@D0@B1@D1@8B@D1@82@D0@B8@D1@8F&amp;oldid=1128.html" title="Постоянная ссылка на эту версию страницы">Постоянная ссылка</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> Последнее изменение этой страницы: 13:54, 7 декабря 2010.</li>
+					<li id="viewcount">К этой странице обращались 451 раз.</li>
+					<li id="privacy"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Политика конфиденциальности">Политика конфиденциальности</a></li>
+					<li id="about"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" title="JQuery:Описание">Описание JQuery</a></li>
+					<li id="disclaimer"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Отказ от ответственности">Отказ от ответственности</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.197 secs. --></body></html>

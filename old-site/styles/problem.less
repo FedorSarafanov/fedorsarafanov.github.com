@@ -1,0 +1,171 @@
+.head
+{
+    &:hover
+    {
+        cursor: default !important;
+
+        background: inherit !important;
+    }
+    div
+    {
+        &:hover
+        {
+            background: fade(@light2, 20%);
+        }
+    }
+}
+
+.problem
+{
+    font-weight: 400 !important;
+
+    display: flex;
+    flex-direction: row;
+    // background: #eee;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    white-space: pre-line;
+    text-overflow: ellipsis;
+
+    color: lighten(#000, 20%) !important;
+    border-bottom: 2px dashed fade(@light2, 20%);
+    *
+    {
+        font-weight: 400 !important;
+
+        color: lighten(#000, 20%) !important;
+    }
+    &:hover
+    {
+        cursor: pointer;
+
+        background: fade(@light2, 20%);
+    }
+    div
+    {
+        overflow: hidden;
+
+        box-sizing: border-box;
+        // border: 1px solid red;
+        padding: .5em;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        border-right: none;
+        &:last-of-type
+        {
+            // border-right: 1px solid red;
+        }
+    }
+    .number-problem
+    {
+        flex: 1.5;
+    }
+    .author-problem
+    {
+        flex: 2;
+    }
+    .title-problem
+    {
+        flex: 8 ;
+    }
+}
+
+#table_wrapper
+{
+    // padding: 1em;
+    margin-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+#table
+{
+    padding-top: 1em !important;
+}
+
+#table_length,
+#table_filter,
+#table_info,
+#table_paginate
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+
+    color: fade(black, 70%) !important;
+    // color: fade(black, 50%);
+    &:before
+    {
+        margin-right: .5em;
+
+        content: '[';
+
+        color: fade(@dark, 50%);
+    }
+    &:after
+    {
+        margin-left: .5em;
+
+        content: ']';
+
+        color: fade(@dark, 50%);
+    }
+}
+
+#table_filter
+{
+    input
+    {
+        position: relative;
+        top: -2.5px;
+    }
+}
+
+#table_length
+{
+    select
+    {
+        // position: relative;
+        // top: -2.5px;
+        font-family: 'Roboto';
+        font-size: 1rem;
+        font-weight: 300;
+        color: fade(black, 70%) !important;
+
+        background: inherit;
+    }
+}
+
+#table_info,
+#table_paginate
+{
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 300;
+    a
+    {
+        color: fade(black, 70%) !important;
+        border: none;
+        background: inherit;
+        padding-right: 0.25em;
+        padding-left: 0.25em;
+        &:hover
+        {
+            color: @light2 !important;
+        }
+    }
+}
+
+th{
+	text-align: left !important;
+	padding-left: 0.5rem !important;
+	margin-right: 1em !important;
+}
+
+a{
+	text-decoration: none;
+	color: blue;
+	padding-right: 0.5rem;
+}

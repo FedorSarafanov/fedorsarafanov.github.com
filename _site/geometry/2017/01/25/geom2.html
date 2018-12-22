@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta name="yandex-verification" content="09e309df3b8ffe74" />
+    <title>Аналитическая геометрия. Прямая и плоскость &mdash;  Блог Федора Сарафанова</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="stylesheet" href="/css/social.css">
+<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+<!--   CommonHTML: { linebreaks: {width: "container"} },
+  "HTML-CSS": { linebreaks: {width: "container"} },
+         SVG: { linebreaks: {width: "container"} } -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML: { linebreaks: {automatic: true} },
+  "HTML-CSS": { linebreaks: {automatic: true} },
+         SVG: { linebreaks: {automatic: true} },
+  tex2jax : {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        },
+    showProcessingMessages: false,
+    messageStyle: 'none'
+});
+</script>
+
+<script>
+  function ready() {
+    hljs.initHighlightingOnLoad();
+  }
+  document.addEventListener("DOMContentLoaded", ready);
+</script>
+
+
+<meta name="description" content="Необходимые определения для прямых и плоскостей" />
+
+
+
+<meta name="keywords" content="аналитическая геометрия, прямая на плоскости, перпендикулярная прямая, and вектора" />
+
+
+
+  </head>
+  <body>
+
+    <nav class="header">  
+  <a href="/">Главная</a>
+  <a href="/problems">Задачи</a> 
+  <a href="/lections">Лекции</a>
+  <a href="/lab">Лабы</a>
+  <a href="/2017/01/01/about.html">О блоге</a>
+ 
+<!--   <a href="/">Home</a>
+  <a href="/problems">Problems</a>
+  <a href="/lab">Lab</a>
+  <a href="/linux">Linux</a>
+  <a href="/2017/01/01/about.html">About</a>   -->
+    </nav>
+
+    <section>
+<header>
+  <time class="datetime">Jan 25, 2017</time>
+  <h1>Аналитическая геометрия. Прямая и плоскость</h1>
+</header>
+
+<article>
+<p>Прямая и плоскость. Краткий обзор определений, формул. 
+<!--ed--></p>
+
+<ul id="markdown-toc">
+  <li><a href="#уравнение-прямой-на-плоскости-проходящей-через-данную-точку-перпендикулярно-данному-вектору-в-векторной-и-координатной-форме" id="markdown-toc-уравнение-прямой-на-плоскости-проходящей-через-данную-точку-перпендикулярно-данному-вектору-в-векторной-и-координатной-форме">Уравнение прямой на плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме</a></li>
+  <li><a href="#уравнение-прямой-на-плоскости-проходящей-через-данную-точку-параллельно-данному-вектору-в-векторной-и-координатной-форме" id="markdown-toc-уравнение-прямой-на-плоскости-проходящей-через-данную-точку-параллельно-данному-вектору-в-векторной-и-координатной-форме">Уравнение прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме</a></li>
+  <li><a href="#уравнение-прямой-на-плоскости-проходящей-через-две-данные-точки" id="markdown-toc-уравнение-прямой-на-плоскости-проходящей-через-две-данные-точки">Уравнение прямой на плоскости, проходящей через две данные точки</a></li>
+  <li><a href="#параметрические-уравнения-прямой-на-плоскости-проходящей-через-данную-точку-параллельно-данному-вектору-в-векторной-и-координатной-форме" id="markdown-toc-параметрические-уравнения-прямой-на-плоскости-проходящей-через-данную-точку-параллельно-данному-вектору-в-векторной-и-координатной-форме">Параметрические уравнения прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме</a></li>
+  <li><a href="#нормальное-уравнение-прямой-на-плоскости" id="markdown-toc-нормальное-уравнение-прямой-на-плоскости">Нормальное уравнение прямой на плоскости</a></li>
+  <li><a href="#параметрические-уравнения-прямой-в-пространстве" id="markdown-toc-параметрические-уравнения-прямой-в-пространстве">Параметрические уравнения прямой в пространстве</a></li>
+  <li><a href="#уравнение-плоскости-проходящей-через-данную-точку-перпендикулярно-данному-вектору-в-векторной-и-координатной-форме" id="markdown-toc-уравнение-плоскости-проходящей-через-данную-точку-перпендикулярно-данному-вектору-в-векторной-и-координатной-форме">Уравнение плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме</a></li>
+  <li><a href="#уравнение-плоскости-проходящей-через-данную-точку-параллельно-двум-данным-векторам-в-векторной-и-координатной-форме" id="markdown-toc-уравнение-плоскости-проходящей-через-данную-точку-параллельно-двум-данным-векторам-в-векторной-и-координатной-форме">Уравнение плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме</a></li>
+  <li><a href="#уравнение-плоскости-проходящей-через-три-данные-точки" id="markdown-toc-уравнение-плоскости-проходящей-через-три-данные-точки">Уравнение плоскости, проходящей через три данные точки</a></li>
+  <li><a href="#параметрические-уравнения-плоскости-проходящей-через-данную-точку-параллельно-двум-данным-векторам-в-векторной-и-координатной-форме" id="markdown-toc-параметрические-уравнения-плоскости-проходящей-через-данную-точку-параллельно-двум-данным-векторам-в-векторной-и-координатной-форме">Параметрические уравнения плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме</a></li>
+  <li><a href="#нормальное-уравнение-плоскости" id="markdown-toc-нормальное-уравнение-плоскости">Нормальное уравнение плоскости</a></li>
+  <li><a href="#каноническое-уравнение-прямой-в-пространстве" id="markdown-toc-каноническое-уравнение-прямой-в-пространстве">Каноническое уравнение прямой в пространстве</a></li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="уравнение-прямой-на-плоскости-проходящей-через-данную-точку-перпендикулярно-данному-вектору-в-векторной-и-координатной-форме">Уравнение прямой на плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме</h2>
+
+<p>В прямоугольных декартовых системах координат нормальное уравнение прямой записывается как <script type="math/tex">(\vec{r},\vec{n})=D</script> или <script type="math/tex">A(x-x_0)+B(y-y_0)=0</script>. Соответственно данный вектор – вектор нормали $\vec{n}$.</p>
+
+<h2 id="уравнение-прямой-на-плоскости-проходящей-через-данную-точку-параллельно-данному-вектору-в-векторной-и-координатной-форме">Уравнение прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме</h2>
+
+<p><img src="/img/cd240610de05c6e081251da8293a9a9d.png" alt="cd240610de05c6e081251da8293a9a9d" width="100%" /></p>
+
+<p>Векторно:</p>
+
+<p><script type="math/tex">\vec{r}=\vec{r}_0+\alpha\vec{a}</script>, где $\vec{a}$ – направляющий вектор прямой.</p>
+
+<p>Легко перейти к координатному виду. Пусть $\vec{r}(x,y)$, $\vec{r_0}(x_0,y_0)$, $\vec{a}(a_1,a_2)$.</p>
+
+<p>Тогда</p>
+
+<script type="math/tex; mode=display">\left\{
+\begin{aligned} 
+  x-x_0=\alpha a_1 \\
+  y-y_0=\alpha a_2
+\end{aligned} 
+\right.</script>
+
+<p>Избавившись от параметра, получим каноническое уравнение прямой на плоскости:</p>
+
+<script type="math/tex; mode=display">\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}</script>
+
+<p>Перемножив крест-накрест, можем переписать в виде</p>
+
+<script type="math/tex; mode=display">a_2x-a_1y+(a_1y_0-a_2x_0) \\
+Ax+By+C=0</script>
+
+<p>где $A=a_2$, $B=-a_1$, $C=a_1y_0-a_2x_0$.</p>
+
+<p>Данный вектор $\vec{a} (-B, A)$</p>
+
+<h2 id="уравнение-прямой-на-плоскости-проходящей-через-две-данные-точки">Уравнение прямой на плоскости, проходящей через две данные точки</h2>
+
+<p><img src="/img/8a8288942ee5dde069025c737e1e84d4.png" alt="8a8288942ee5dde069025c737e1e84d4" width="100%" /></p>
+
+<p>Легко вывести из предыдущего, взяв в качестве направляющего вектора вектор между двумя известными точками примой.</p>
+
+<script type="math/tex; mode=display">\frac{x-x_0}{x_1-x_0}=\frac{y-y_0}{y_1-y_0}</script>
+
+<h2 id="параметрические-уравнения-прямой-на-плоскости-проходящей-через-данную-точку-параллельно-данному-вектору-в-векторной-и-координатной-форме">Параметрические уравнения прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме</h2>
+
+<p>Векторно:</p>
+
+<p><script type="math/tex">\vec{r}=\vec{r}_0+\alpha\vec{a}</script>, где $\vec{a}$ – направляющий вектор прямой.</p>
+
+<p>Координатно:</p>
+
+<script type="math/tex; mode=display">\left\{
+\begin{aligned} 
+  x-x_0=\alpha a_1 \\
+  y-y_0=\alpha a_2
+\end{aligned} 
+\right.</script>
+
+<h2 id="нормальное-уравнение-прямой-на-плоскости">Нормальное уравнение прямой на плоскости</h2>
+
+<p>Уравнение вида <script type="math/tex">\cos\alpha\cdot x + \cos\beta\cdot y = p</script> называется нормальным уравнением прямой.</p>
+<ul>
+  <li>$\alpha$ – угол между $\vec{n}$ и положительным направлением оси $x$,</li>
+  <li>$\beta$ – угол между $\vec{n}$ и положительным направлением оси $y$,</li>
+  <li>$p$ – расстояние от начала координат до прямой.</li>
+</ul>
+
+<h2 id="параметрические-уравнения-прямой-в-пространстве">Параметрические уравнения прямой в пространстве</h2>
+
+<p>Аналогично прямой в плоскости прямую можно описать уравнением</p>
+
+<script type="math/tex; mode=display">\vec{r}=\vec{r}_0+\alpha\vec{a}</script>
+
+<p>и записать его в параметрическом виде:</p>
+
+<script type="math/tex; mode=display">\left\{
+\begin{aligned}  
+  x=x_0+\alpha a_1 \\
+  y=y_0+\alpha a_2 \\
+  z=z_0+\alpha a_3 
+\end{aligned} 
+\right.</script>
+
+<h2 id="уравнение-плоскости-проходящей-через-данную-точку-перпендикулярно-данному-вектору-в-векторной-и-координатной-форме">Уравнение плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме</h2>
+
+<script type="math/tex; mode=display">A(x-x_0)+B(y-y_0)+C(z-z_0)=0</script>
+
+<p>где данный вектор - вектор нормали $\vec{n}(A,B,C)$, данная точка $M$ – $(x_0,y_0,z_0)$</p>
+
+<p>Иначе говоря,</p>
+
+<script type="math/tex; mode=display">(\vec{r}-\vec{r}_0,\vec{n})=0 \Longrightarrow (\vec{r},\vec{n})=D</script>
+
+<h1 id="уравнение-плоскости-проходящей-через-данную-точку-параллельно-двум-данным-векторам-в-векторной-и-координатной-форме">Уравнение плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме</h1>
+
+<p>Вектора $\vec{M_0M}=\vec{r}-\vec{r}_0$, $\vec{a}$ и $\vec{b}$ должны быть компланарны, т.е. их смешанное произведение равно нулю:</p>
+
+<script type="math/tex; mode=display">(\vec{r}-\vec{r}_0,\vec{a},\vec{b})=0</script>
+
+<p>или координатно</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{vmatrix}x-x_0 & y-y_0 & z-z_0\\a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3\end{vmatrix}=0 %]]></script>
+
+<h1 id="уравнение-плоскости-проходящей-через-три-данные-точки">Уравнение плоскости, проходящей через три данные точки</h1>
+
+<p>Пусть точки $A(a_1,a_2,a_3)$, $B(b_1,b_2,b_3)$, $C(c_1,c_2,c_3)$. Тогда можно свести к предыдущему случаю, взяв два вектора $\vec{AB}$ и $\vec{AC}$, и точку $A$:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{vmatrix}
+x-a_1 & y-a_2 & z-a_3 \\
+b_1-a_1 & b_2-a_2 & b_3-a_3 \\
+c_1-a_1 & c_2-a_2 & c_3-a_3 \\
+\end{vmatrix}=0 %]]></script>
+
+<h1 id="параметрические-уравнения-плоскости-проходящей-через-данную-точку-параллельно-двум-данным-векторам-в-векторной-и-координатной-форме">Параметрические уравнения плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме</h1>
+
+<script type="math/tex; mode=display">\vec{r}=\vec{r}_0+\alpha_1\vec{a}+\alpha_2\vec{b}</script>
+
+<p>и</p>
+
+<script type="math/tex; mode=display">\left\{
+\begin{aligned}  
+  x=x_0+\alpha_1 a_1 +\alpha_2 b_1 \\
+  y=y_0+\alpha_1 a_2 +\alpha_2 b_2 \\
+  z=z_0+\alpha_1 a_3 +\alpha_2 b_3 
+\end{aligned} 
+\right.</script>
+
+<h1 id="нормальное-уравнение-плоскости">Нормальное уравнение плоскости</h1>
+
+<p>Уравнение вида <script type="math/tex">\cos\alpha\cdot x + \cos\beta\cdot y + \cos\gamma\cdot z = p</script> называется нормальным уравнением плоскости.</p>
+
+<ul>
+  <li>$\alpha$ – угол между $\vec{n}$ и положительным направлением оси $x$,</li>
+  <li>$\beta$ – угол между $\vec{n}$ и положительным направлением оси $y$,</li>
+  <li>$\gamma$ – угол между $\vec{n}$ и положительным направлением оси $z$,</li>
+  <li>$p$ – расстояние от начала координат до плоскости.</li>
+</ul>
+
+<h1 id="каноническое-уравнение-прямой-в-пространстве">Каноническое уравнение прямой в пространстве</h1>
+
+<p>Записывается как</p>
+
+<script type="math/tex; mode=display">\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}=\frac{z-z_0}{a_3}</script>
+
+<p>где $\vec{a}(a_1,a_2,a_3)$ – направляющий вектор этой прямой.</p>
+
+</article>
+
+
+    </section>
+
+    <footer>
+        
+<ul class="pagination">
+  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+</ul> 
+<p>This page is protected: all rights reserved   
+&copy; Saraganov F. G. (aka @osabio)</p>  
+ 
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- <script src="/js/latex.js"></script> -->
+<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->     
+        
+    </footer>
+
+  </body>
+</html>

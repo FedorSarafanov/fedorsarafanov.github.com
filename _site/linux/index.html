@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta name="yandex-verification" content="09e309df3b8ffe74" />
+    <title>Заметки про Linux &mdash;  Блог Федора Сарафанова</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="stylesheet" href="/css/social.css">
+<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+<!--   CommonHTML: { linebreaks: {width: "container"} },
+  "HTML-CSS": { linebreaks: {width: "container"} },
+         SVG: { linebreaks: {width: "container"} } -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML: { linebreaks: {automatic: true} },
+  "HTML-CSS": { linebreaks: {automatic: true} },
+         SVG: { linebreaks: {automatic: true} },
+  tex2jax : {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        },
+    showProcessingMessages: false,
+    messageStyle: 'none'
+});
+</script>
+
+<script>
+  function ready() {
+    hljs.initHighlightingOnLoad();
+  }
+  document.addEventListener("DOMContentLoaded", ready);
+</script>
+
+
+
+
+
+
+  </head>
+  <body>
+
+    <nav class="header">  
+  <a href="/">Главная</a>
+  <a href="/problems">Задачи</a> 
+  <a href="/lections">Лекции</a>
+  <a href="/lab">Лабы</a>
+  <a href="/2017/01/01/about.html">О блоге</a>
+ 
+<!--   <a href="/">Home</a>
+  <a href="/problems">Problems</a>
+  <a href="/lab">Lab</a>
+  <a href="/linux">Linux</a>
+  <a href="/2017/01/01/about.html">About</a>   -->
+    </nav>
+
+    <section>
+
+<header>
+	<time class="datetime">Jan  5, 2017</time>
+    <h1><a href="/linux/2017/01/05/windows-flash.html">Создание загрузочной флешки с Windows из под (Arch)Linux</a></h1>
+</header>
+
+<article><p>Может понадобиться записать флешку с Windows, когда в наличии только Linux.</p>
+
+<p>Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть <code class="highlighter-rouge">ms-sys</code>.</p>
+
+</article>
+
+<header>
+	<time class="datetime">Jan  4, 2017</time>
+    <h1><a href="/linux/2017/01/04/bash-history.html">Настройка истории bash</a></h1>
+</header>
+
+<article>
+<p>Можно облегчить себе пользование терминалом, нехитрым образом настроив bash и используя некоторые удобные команды.</p>
+
+</article>
+
+<header>
+	<time class="datetime">Jan  2, 2017</time>
+    <h1><a href="/linux/2017/01/02/date-modification.html">Смена времени модификации / создания файла в Linux</a></h1>
+</header>
+
+<article><p><code class="highlighter-rouge">touch -a -m -t 201701011212.00 fileName.ext</code></p>
+
+<p>где параметры:</p>
+
+<p><code class="highlighter-rouge">-a = accessed</code> (доступ)</p>
+
+<p><code class="highlighter-rouge">-m = modified</code> (модификация)</p>
+
+<p><code class="highlighter-rouge">-t = timestamp</code> (форматированное время: <code class="highlighter-rouge">[[CC]YY]MMDDhhmm[.ss]</code>)</p>
+
+</article>
+
+
+    </section>
+
+    <footer>
+        
+<ul class="pagination">
+  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+</ul> 
+<p>This page is protected: all rights reserved   
+&copy; Saraganov F. G. (aka @osabio)</p>  
+ 
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- <script src="/js/latex.js"></script> -->
+<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->     
+        
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.3" />
+		<meta name="keywords" content="Введение в jQuery,Ajax,Ajax-запрос,Ajax запрос HTML-данных,Ajax запрос js файла,Ajax запрос методом GET,Ajax запрос методом POST,Вызов функции для элементов набора,Выполнение пользовательской анимации,Манипуляции,Объект jQuery" />
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php5" title="JQuery (ru)" />
+		<link rel="alternate" type="application/rss+xml" title="JQuery — RSS-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="JQuery — Atom-лента" href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChanges&amp;feed=atom" />
+		<title>Введение в jQuery — JQuery</title>
+		<link rel="stylesheet" href="../tags/tags.css" type="text/css" />
+		<link rel="stylesheet" href="../skins/common/shared.css@207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../skins/common/commonPrint.css@207" type="text/css" media="print" />
+		<link rel="stylesheet" href="../skins/monobook/main.css@207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="../index.php5@title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text@2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="../index.php5@title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/skins";
+		var wgArticlePath = "/index.php5/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php5";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://jquery.page2page.ru";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Введение_в_jQuery";
+		var wgTitle = "Введение в jQuery";
+		var wgAction = "view";
+		var wgArticleId = "5";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "ru";
+		var wgContentLanguage = "ru";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 814;
+		var wgVersion = "1.15.3";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", " 	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = ["sysop"];
+		var wgRestrictionMove = ["sysop"];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="../skins/common/wikibits.js@207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="../skins/common/ajax.js@207"></script>
+		<script type="text/javascript" src="../tags/jquery.js"></script>		<script type="text/javascript" src="../tags/tag.js"></script><style type="text/css">/*<![CDATA[*/
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for javascript
+ * CSS class: source-javascript, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.javascript.source-javascript .de1, .javascript.source-javascript .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.javascript.source-javascript  {font-family:monospace;}
+.javascript.source-javascript .imp {font-weight: bold; color: red;}
+.javascript.source-javascript li, .javascript.source-javascript .li1 {font-weight: normal; vertical-align:top;}
+.javascript.source-javascript .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.javascript.source-javascript .li2 {font-weight: bold; vertical-align:top;}
+.javascript.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.javascript.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.javascript.source-javascript .kw3 {color: #000066;}
+.javascript.source-javascript .co1 {color: #006600; font-style: italic;}
+.javascript.source-javascript .co2 {color: #009966; font-style: italic;}
+.javascript.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.javascript.source-javascript .es0 {color: #000099; font-weight: bold;}
+.javascript.source-javascript .br0 {color: #009900;}
+.javascript.source-javascript .sy0 {color: #339933;}
+.javascript.source-javascript .st0 {color: #3366CC;}
+.javascript.source-javascript .nu0 {color: #CC0000;}
+.javascript.source-javascript .me1 {color: #660066;}
+.javascript.source-javascript .ln-xtra, .javascript.source-javascript li.ln-xtra, .javascript.source-javascript div.ln-xtra {background-color: #ffc;}
+.javascript.source-javascript span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/index.php5?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-php {line-height: normal;}
+.source-php li, .source-php pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for php
+ * CSS class: source-php, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.php.source-php .de1, .php.source-php .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.php.source-php  {font-family:monospace;}
+.php.source-php .imp {font-weight: bold; color: red;}
+.php.source-php li, .php.source-php .li1 {font-weight: normal; vertical-align:top;}
+.php.source-php .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.php.source-php .li2 {font-weight: bold; vertical-align:top;}
+.php.source-php .kw1 {color: #b1b100;}
+.php.source-php .kw2 {color: #000000; font-weight: bold;}
+.php.source-php .kw3 {color: #990000;}
+.php.source-php .kw4 {color: #009900; font-weight: bold;}
+.php.source-php .co1 {color: #666666; font-style: italic;}
+.php.source-php .co2 {color: #666666; font-style: italic;}
+.php.source-php .co3 {color: #0000cc; font-style: italic;}
+.php.source-php .co4 {color: #009933; font-style: italic;}
+.php.source-php .coMULTI {color: #666666; font-style: italic;}
+.php.source-php .es0 {color: #000099; font-weight: bold;}
+.php.source-php .es1 {color: #000099; font-weight: bold;}
+.php.source-php .es2 {color: #660099; font-weight: bold;}
+.php.source-php .es3 {color: #660099; font-weight: bold;}
+.php.source-php .es4 {color: #006699; font-weight: bold;}
+.php.source-php .es5 {color: #006699; font-weight: bold; font-style: italic;}
+.php.source-php .es6 {color: #009933; font-weight: bold;}
+.php.source-php .es_h {color: #000099; font-weight: bold;}
+.php.source-php .br0 {color: #009900;}
+.php.source-php .sy0 {color: #339933;}
+.php.source-php .sy1 {color: #000000; font-weight: bold;}
+.php.source-php .st0 {color: #0000ff;}
+.php.source-php .st_h {color: #0000ff;}
+.php.source-php .nu0 {color: #cc66cc;}
+.php.source-php .nu8 {color: #208080;}
+.php.source-php .nu12 {color: #208080;}
+.php.source-php .nu19 {color:#800080;}
+.php.source-php .me1 {color: #004000;}
+.php.source-php .me2 {color: #004000;}
+.php.source-php .re0 {color: #000088;}
+.php.source-php .ln-xtra, .php.source-php li.ln-xtra, .php.source-php div.ln-xtra {background-color: #ffc;}
+.php.source-php span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/index.php5?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="../index.php5@title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Введение_в_jQuery skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Введение в jQuery</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">Материал из JQuery</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Перейти к: <a href="Введение_в_jQuery.html#column-one">навигация</a>, <a href="Введение_в_jQuery.html#searchInput">поиск</a></div>			<!-- start content -->
+			<p><i><b>jQuery</b></i> &mdash; javascript библиотека, использование которой может значительно упростить работу веб-программиста, практически во всех областях, где требуется использование javascript.
+</p>
+<table id="toc" class="toc" summary="Содержание"><tr><td><div id="toctitle"><h2>Содержание</h2></div>
+<ul>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.9D.D0.B5.D0.B1.D0.BE.D0.BB.D1.8C.D1.88.D0.B0.D1.8F_.D0.BF.D0.BE.D0.B4.D1.81.D0.BA.D0.B0.D0.B7.D0.BA.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Небольшая подсказка</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.9D.D0.B0.D1.87.D0.BD.D0.B5.D0.BC"><span class="tocnumber">2</span> <span class="toctext">Начнем</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D1.8F_.24.28.29"><span class="tocnumber">3</span> <span class="toctext">Функция $()</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.A6.D0.B5.D0.BF.D0.BE.D1.87.D0.BA.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.BE.D0.B2"><span class="tocnumber">4</span> <span class="toctext">Цепочки методов</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0_.D1.81_.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.BE.D0.B2"><span class="tocnumber">5</span> <span class="toctext">Работа с набором элементов</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.90.D0.BD.D0.B8.D0.BC.D0.B0.D1.86.D0.B8.D0.BE.D0.BD.D0.BD.D1.8B.D0.B5_.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"><span class="tocnumber">6</span> <span class="toctext">Анимационные эффекты</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#Ajax"><span class="tocnumber">7</span> <span class="toctext">Ajax</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.A0.D0.B0.D0.B7.D0.BD.D1.8B.D0.B5_.D0.BF.D0.BB.D1.8E.D1.88.D0.BA.D0.B8"><span class="tocnumber">8</span> <span class="toctext">Разные плюшки</span></a></li>
+<li class="toclevel-1"><a href="Введение_в_jQuery.html#.D0.A2.D0.B8.D1.82.D1.80.D1.8B"><span class="tocnumber">9</span> <span class="toctext">Титры</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "показать"; var tocHideText = "убрать"; showTocToggle(); } </script>
+<a name=".D0.9D.D0.B5.D0.B1.D0.BE.D0.BB.D1.8C.D1.88.D0.B0.D1.8F_.D0.BF.D0.BE.D0.B4.D1.81.D0.BA.D0.B0.D0.B7.D0.BA.D0.B0" id=".D0.9D.D0.B5.D0.B1.D0.BE.D0.BB.D1.8C.D1.88.D0.B0.D1.8F_.D0.BF.D0.BE.D0.B4.D1.81.D0.BA.D0.B0.D0.B7.D0.BA.D0.B0"></a><h2> <span class="mw-headline">Небольшая подсказка</span></h2>
+<p>На данном сайте есть описание практически всех функций библиотеки jQuery, поэтому, если вам будет непонятна одна из функций в примерах, можно быстренько посмотреть ее описание. А чтобы не тратить время на ее поиск, воспользуйтесь поиском по ключам: начните вводить название интересующей вас функции в поле "по ключам" (необходимо ввести не менее трех первых символов).
+</p>
+<a name=".D0.9D.D0.B0.D1.87.D0.BD.D0.B5.D0.BC" id=".D0.9D.D0.B0.D1.87.D0.BD.D0.B5.D0.BC"></a><h2> <span class="mw-headline">Начнем</span></h2>
+<p>Потратив некоторое время на попытки привнести динамическую функциональность на страницы вашего сайта, вы обнаружите, что постоянно следуете одному и тому же шаблону: сначала находите один или несколько элементов страницы, а затем выполняете над ними некоторые действия, такие как скрытие, изменение размеров, положения, прозрачности и.т.д. 
+</p><p>Используя обычный javascript для решения каждой из этих задач потребуется десятки строк программного кода (и много головной боли по поводу его правильной работы в разных браузерах). Автор jQuery разработал свою библиотеку таким образом, что наиболее общие задачи становятся тривиальными. Например, вот так, с помощью функции <tt><a href="Функция_jQuery.html" title="Функция jQuery">$()</a></tt> из библиотеки,  можно находить элементы на странице по различным параметрам:
+</p>
+<table class="exampleTab" cellspacing="0" cellpadding="3">
+
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div")</span>
+</td><td class="discr">вернет все div-элементы на странице.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$(".someBlock")</span>
+</td><td class="discr">вернет все элементы с классом someBlock.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#content")</span>
+</td><td class="discr">вернет элемент с идентификатором content.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#content2 div.someBlock")</span>
+</td><td class="discr">вернет div-элементы с классом someBlock, которые находятся внутри элемента с идентификатором content2.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div:odd")</span>
+</td><td class="discr">вернет элементы, находящиеся на странице под нечетными номерами.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#content2 div.someBlock")</span>
+</td><td class="discr">вернет div-элементы с классом someBlock, которые находятся внутри элемента с идентификатором content2.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("[value = 5]")</span>
+</td><td class="discr">вернет все элементы с атрибутом value, равным 5.
+</td></tr></table>
+<p>И это только малая часть всех возможностей для поиска элементов (полный список правил смотри в разделе <a href="Селекторы.html" title="Селекторы">селекторы</a>). После выбора элементов, можно сразу же приступить к манипуляциями над ними, jQuery предоставляет для этого широкий ассортимент методов (см разделы <a href="Манипуляции.html" title="Манипуляции">манипуляции</a> и <a href="Эффекты.html" title="Эффекты">эффекты</a>). Приведем несколько наиболее востребованных:
+</p>
+<table class="exampleTab" cellspacing="0" cellpadding="3">
+
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#bigIt").css("height")</span>
+</td><td class="discr">возвратит значение высоты у элемента с идентификатором bigIt.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").css("width", "20px")</span>
+</td><td class="discr">установит новое значение ширины всем div-элемента на странице.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#bigIt").attr("class")</span>
+</td><td class="discr">возвратит значение класса элемента с id = bigIt.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#bigIt").attr("class", "box")</span>
+</td><td class="discr">установит новое значение атрибута class у элемента с id = bigIt.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#bigIt").html(&lt;p&gt;Новье!&lt;/p&gt;)</span>
+</td><td class="discr">изменит все html-содержимое элемента с id = bigIt, на заданное в методе html.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#bigIt").text()</span>
+</td><td class="discr">возвратит текст, находящийся внутри элемента с id = bigIt.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$(".someBox").empty()</span>
+</td><td class="discr">удалит содержимое всех элементов с классом someBox.
+</td></tr></table>
+<p>Таким образом, всего одной строкой кода, мы можем узнать или изменить css-значения, атрибуты, html и текстовое содержимое любых элементов на странице. Наличие только этих возможностей уже сделало бы jQuery незаменимой вещью. Однако эта библиотека позволяет делать гораздо больше, гораздо.
+</p>
+<a name=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D1.8F_.24.28.29" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D1.8F_.24.28.29"></a><h2> <span class="mw-headline">Функция $()</span></h2>
+<p>Функция с лаконичным именем <tt><a href="Функция_jQuery.html" title="Функция jQuery">$()</a></tt> является, пожалуй самой главной во всей библиотеке. С ее помощью можно находить элементы на странице (в чем вы уже убедились), добавлять "на лету" новый html:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// создадим div-элемент и добавим его в конец элемента с идентификатором content</span>
+$<span class="br0">&#40;</span><span class="st0">&quot;&lt;div&gt;&lt;p&gt;Ба-бах!&lt;/p&gt;&lt;/div&gt;&quot;</span><span class="br0">&#41;</span>.<span class="me1">appendTo</span><span class="br0">&#40;</span><span class="st0">&quot;#content&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<p>Кроме этого, <tt><a href="Функция_jQuery.html" title="Функция jQuery">$()</a></tt> позволяет привязать всю функциональность jQuery к уже существующим объектам DOM-элементов:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// найдем элемент с идентификатором some_id, средствами обычного javascript</span>
+<span class="kw2">var</span> el <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">&#40;</span><span class="st0">&quot;some_id&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="co1">// установим у этого элемента новое значение css-свойства margin</span>
+$<span class="br0">&#40;</span>el<span class="br0">&#41;</span>.<span class="me1">css</span><span class="br0">&#40;</span><span class="st0">&quot;margin&quot;</span><span class="sy0">,</span> <span class="st0">&quot;5px&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<p>Более подробно о функции можно посмотреть в <a href="Функция_jQuery.html" title="Функция jQuery">специальной статье</a>.
+</p>
+<a name=".D0.A6.D0.B5.D0.BF.D0.BE.D1.87.D0.BA.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.BE.D0.B2" id=".D0.A6.D0.B5.D0.BF.D0.BE.D1.87.D0.BA.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.BE.D0.B2"></a><h2> <span class="mw-headline">Цепочки методов</span></h2>
+<p>Важной особенностью большинства методов jQuery, является возможность связывать их в цепочки. Методы, манипулирующие элементами документа, обычно возвращают эти объекты для дальнейшего использования, что позволяет писать примерно следующее:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$<span class="br0">&#40;</span><span class="st0">&quot;#bigIt&quot;</span><span class="br0">&#41;</span>.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">attr</span><span class="br0">&#40;</span><span class="st0">&quot;class&quot;</span><span class="sy0">,</span> <span class="st0">&quot;noContent&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co1">// в результате, у элемента с идентификатором bigIt будет удалено все содержимое, </span>
+<span class="co1">// после чего ему будет установлен класс noContent.</span></pre></div></div>
+<p>эти цепочки могут состоять из гораздо большего числа методов. Для удобочитаемости, цепочки часто пишут "в столбик":
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$<span class="br0">&#40;</span><span class="st0">&quot;div&quot;</span><span class="br0">&#41;</span>                <span class="co1">// найдем все div-элементы</span>
+.<span class="me1">parent</span><span class="br0">&#40;</span><span class="br0">&#41;</span>               <span class="co1">// найдем их родительские элементы</span>
+.<span class="me1">css</span><span class="br0">&#40;</span><span class="st0">&quot;heigth&quot;</span><span class="sy0">,</span> <span class="st0">&quot;10px&quot;</span><span class="br0">&#41;</span>  <span class="co1">// установим последним высоту в 10 пикселей</span>
+.<span class="me1">fadeTo</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="sy0">,</span> <span class="nu0">0.5</span><span class="br0">&#41;</span>         <span class="co1">// установим им (родителям div'ов) прозрачность в 50%</span>
+.<span class="me1">addClass</span><span class="br0">&#40;</span><span class="st0">&quot;divOwner&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>  <span class="co1">// добавим им же класс divOwner</span></pre></div></div>
+<p>Таким образом, можно легко описать все действия, происходящие с выбранными элементами, избежав использования большого числа временных переменных.
+</p>
+<a name=".D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0_.D1.81_.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.BE.D0.B2" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0_.D1.81_.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.BE.D0.B2"></a><h2> <span class="mw-headline">Работа с набором элементов</span></h2>
+<p>Помимо манипуляций с выбранными элементами, jQuery позволяет работать с самим набором: изменять его, а так же работать с элементами по отдельности. Продемонстрируем часть возможностей:
+</p>
+<table class="exampleTab" cellspacing="0" cellpadding="3">
+
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").parent()</span>
+</td><td class="discr">вернет родительские элементы всех div-ов.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").children()</span>
+</td><td class="discr">вернет дочерние элементы всех div-ов.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("#someId").next()</span>
+</td><td class="discr">вернет элемент, лежащий сразу после someId.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").prev()</span>
+</td><td class="discr">вернет элементы, лежащие перед div'ами.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").eq(i)</span>
+</td><td class="discr">вернет div-элемент, с индексом i в наборе.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").get(i)</span>
+</td><td class="discr">вернет DOM-объект div'а, с индексом i.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").get()</span>
+</td><td class="discr">вернет массив DOM-объеков всех div-ов.
+</td></tr>
+<tr class="row">
+<td class="funct"><span class="oneLine">$("div").size()</span>
+</td><td class="discr">вернет размер набора (количествово div-ов).
+</td></tr></table>
+<p>На самом деле, методов работающих с набором гораздо больше, их полный список можно найти в <a href="Работа_с_набором_элементов.html" title="Работа с набором элементов">соответствующем разделе</a>.
+</p>
+<div style="margin-top:15px">
+<p>Отметим различия методов <tt>get(i)</tt> и <tt>eq(i)</tt>. Первый возвращает непосредственно DOM-объект элемента, идущего под номером i в наборе (кстати, нумерация начинается с 0). К такому элементу вы не сможете применить методы jQuery, зато сможете применить стандартные javascript методы. Метод <tt>eq(i)</tt> наоборот, возвращает i-й элемент в таком виде, что к нему можно применять методы jQuery. Вообще, для того, чтобы к элементам можно было применять методы библиотеки jQuery, они должны находиться в так называемом <a href="Объект_jQuery.html" title="Объект jQuery">объекте jQuery</a>, именно его возвращает функция <tt>$()</tt>.
+</p>
+</div>
+<div style="margin-top:15px">
+<p>Рассмотрим отдельно метод <tt><a href="Вызов_функции_для_элементов_набора.html" title="Вызов функции для элементов набора">.each()</a></tt>, предназначенный для поэлементной обработки набора. В качестве параметра, этот метод принимает пользовательскую функцию, которая будет автоматически вызвана, для каждого элемента набора:
+</p>
+</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="kw2">var</span> heights <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">;</span>  <span class="co1">// переменная, которая будет хранить высоты элементов</span>
+&nbsp;
+$<span class="br0">&#40;</span><span class="st0">&quot;div&quot;</span><span class="br0">&#41;</span>.<span class="me1">each</span><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span>indx<span class="sy0">,</span> element<span class="br0">&#41;</span><span class="br0">&#123;</span> <span class="co1">// indx - номер элемента в наборе, element - сам элемент</span>
+  heights.<span class="me1">push</span><span class="br0">&#40;</span>$<span class="br0">&#40;</span>element<span class="br0">&#41;</span>.<span class="me1">height</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="co1">// в итоге, в переменную heights будут помещены значения высот всех div-элементов</span></pre></div></div>
+<a name=".D0.90.D0.BD.D0.B8.D0.BC.D0.B0.D1.86.D0.B8.D0.BE.D0.BD.D0.BD.D1.8B.D0.B5_.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B" id=".D0.90.D0.BD.D0.B8.D0.BC.D0.B0.D1.86.D0.B8.D0.BE.D0.BD.D0.BD.D1.8B.D0.B5_.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"></a><h2> <span class="mw-headline">Анимационные эффекты</span></h2>
+<p>Умело изменяя свойства элементов, можно заставить их делать различные эффекты, такие как перетаскивание, сворачивание и разворачивание, плавное изменение прозрачности и.т.д. Функционал jQuery позволяет делать это максимально просто (список всех методов в разделе <a href="Эффекты.html" title="Эффекты">эффекты</a>).
+</p>
+<div style="margin-top:15px">
+<p>Ключевым методом, на которой базируются все остальные, является метод <tt><a href="Выполнение_пользовательской_анимации.html" title="Выполнение пользовательской анимации">animate()</a></tt>, с помощью которого можно задавать плавное изменение различных CSS-свойств:
+</p>
+<pre> <tt>.animate(properties, [duration], [easing], [callback])</tt>
+</pre>
+<dl><dd> <b>properties</b> &mdash; список CSS-свойств, участвующих в анимации и их конечных значений. Задаются объектом, в формате <tt>{ключ:значение}</tt>, например:{opacity: 50, width: 100, height: 200}.<br />
+</dd><dd> <b>duration</b> &mdash; продолжительность выполнения анимации. Может быть задана в миллисекундах или строковым значением 'fast' или 'slow' (200 и 600 миллисекунд).
+</dd><dd> <b>easing</b> &mdash; изменение скорости анимации (будет ли она замедляется к концу выполнения или наоборот ускорится). Задается строковым значением: "linear" и "swing" (для равномерной анимации и анимации с ускорением). Другие варианты можно найти в плагинах.
+</dd><dd> <b>callback</b> &mdash; функция, которая будет вызвана после завершения анимации.
+</dd></dl>
+</div>
+<div style="margin-top:17px">
+<p><i>Пример.</i> Пусть у нас есть элемент div с каким-нибудь текстом. Мы хотим плавно скрыть этот элемент, заменить текст, и плавно сделать элемент видимым:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$<span class="br0">&#40;</span><span class="st0">&quot;#mydiv&quot;</span><span class="br0">&#41;</span>
+  .<span class="me1">animate</span><span class="br0">&#40;</span><span class="br0">&#123;</span>height<span class="sy0">:</span> <span class="st0">&quot;hide&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="nu0">300</span><span class="br0">&#41;</span>
+  .<span class="me1">text</span><span class="br0">&#40;</span><span class="st0">&quot;Новый текст&quot;</span><span class="br0">&#41;</span>
+  .<span class="me1">animate</span><span class="br0">&#40;</span><span class="br0">&#123;</span>height<span class="sy0">:</span> <span class="st0">&quot;show&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="nu0">300</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+</div>
+<p>значения "hide", "show" означают исчезновение и появление элемента, за счет параметра, к которому они применены.
+</p>
+<div style="margin-top:15px">
+<p>Существуют отдельные методы, позволяющие скрывать и показывать элементы, а так же, изменять их прозрачность. Все эти методы можно найти в разделе <a href="Эффекты.html" title="Эффекты">эффекты</a>. Необходимо также заметить, что при одновременном вызове нескольких эффектов, применительно к одному элементу, их выполнение будет происходить не одновременно, а поочередно. Например при выполнении следующих команд:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">  $<span class="br0">&#40;</span><span class="st0">&quot;#my-div&quot;</span><span class="br0">&#41;</span>.<span class="me1">animate</span><span class="br0">&#40;</span><span class="br0">&#123;</span>height<span class="sy0">:</span> <span class="st0">&quot;hide&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy0">;</span>
+  $<span class="br0">&#40;</span><span class="st0">&quot;#my-div&quot;</span><span class="br0">&#41;</span>.<span class="me1">animate</span><span class="br0">&#40;</span><span class="br0">&#123;</span>height<span class="sy0">:</span> <span class="st0">&quot;show&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<p>элемент с идентификатором <i>my-div</i>, в начале будет плавно исчезать с экрана, а затем начнет плавно появляться вновь. Однако, анимации, заданные на разных элементах, будут выполняться одновременно:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">  $<span class="br0">&#40;</span><span class="st0">&quot;#my-div-1&quot;</span><span class="br0">&#41;</span>.<span class="me1">animate</span><span class="br0">&#40;</span><span class="br0">&#123;</span>height<span class="sy0">:</span> <span class="st0">&quot;hide&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy0">;</span>
+  $<span class="br0">&#40;</span><span class="st0">&quot;#my-div-2&quot;</span><span class="br0">&#41;</span>.<span class="me1">animate</span><span class="br0">&#40;</span><span class="br0">&#123;</span>height<span class="sy0">:</span> <span class="st0">&quot;show&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+</div>
+<a name="Ajax" id="Ajax"></a><h2> <span class="mw-headline">Ajax</span></h2>
+<p>В jQuery реализована возможность выполнения запросов к серверу без перезагрузки страницы, так называемая технология ajax. Базовыми функциями для ее работы являются <tt><a href="Ajax_запрос_методом_POST.html" title="Ajax запрос методом POST">post()</a></tt> и <tt><a href="Ajax_запрос_методом_GET.html" title="Ajax запрос методом GET">get()</a></tt> (есть еще более низкоуровневая, <tt><a href="Ajax-запрос.html" title="Ajax-запрос">ajax()</a></tt>, но мы ее не будем рассматривать):
+</p>
+<pre>$.post(url, [params], [callback], [dataType])
+$.get(url, [params], [callback], [dataType])
+</pre>
+<dl><dd><b>url</b> — url-адрес, по которому будет отправлен запрос.
+</dd><dd><b>data</b> — данные, которые будут отправлены на сервер. Они должны быть представлены в объектом, в формате: {fName1:value1, fName2:value2, ...}.
+</dd><dd><b>callback()</b> — пользовательская функция, которая будет вызвана после ответа сервера. 
+</dd><dd><b>dataType</b> — ожидаемый тип данных, которые пришлет сервер в ответ на запрос (подробности <a href="Ajax-запрос.html" title="Ajax-запрос">тут</a>).
+</dd></dl>
+<p><br />
+Рассмотрим примеры с методом get, использование второго метода аналогично. Сделаем простейший ajax-запрос: отправим пустой запрос к серверу и не будем обрабатывать ответ. Это может быть использовано, например для подсчета количества наведений курсора на баннер (при каждом наведении серверу будет отправляться сигнал). 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$.<span class="me1">get</span><span class="br0">&#40;</span><span class="st0">&quot;/plusOne.php&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<p><br />
+Теперь, отправим данные на сервер и обработаем их. Javascript будет выглядеть следующим образом:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="co1">// На сервер будет отправлен запрос страницы http://hostname/ajaxtest.php и указаны два параметра.  </span>
+<span class="co1">// После получения ответа от сервера будет вызвана функция onAjaxSuccess, которая выведет </span>
+<span class="co1">// на экран сообщение с данными, присланными сервером.</span>
+$.<span class="me1">get</span><span class="br0">&#40;</span>
+  <span class="st0">&quot;/ajaxtest.php&quot;</span><span class="sy0">,</span>
+  <span class="br0">&#123;</span>
+    param1<span class="sy0">:</span> <span class="st0">&quot;param1&quot;</span><span class="sy0">,</span>
+    param2<span class="sy0">:</span> <span class="nu0">2</span>
+  <span class="br0">&#125;</span><span class="sy0">,</span>
+  onAjaxSuccess
+<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw2">function</span> onAjaxSuccess<span class="br0">&#40;</span>data<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  <span class="co1">// Здесь мы получаем данные, отправленные сервером и выводим их на экран.</span>
+  <span class="kw3">alert</span><span class="br0">&#40;</span>data<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>На сервере, обработка Ajax запроса ничем не отличается от обработки обычного запроса (как когда вызывается главная страница сайта):
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="php source-php"><pre class="de1"><span class="kw2">&lt;?php</span>
+  <span class="kw1">echo</span> <span class="st0">&quot;I get param1 = &quot;</span><span class="sy0">.</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st_h">'param1'</span><span class="br0">&#93;</span><span class="sy0">.</span><span class="st0">&quot; and param2 = &quot;</span><span class="sy0">.</span><span class="re0">$_GET</span><span class="br0">&#91;</span><span class="st_h">'param1'</span><span class="br0">&#93;</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span></pre></div></div>
+<p>В результате этого запроса, на странице появится табличка с текстом "I get param1 = param1 and param2 = 2"
+</p>
+<div style="margin-top:15px">
+<p>С помощью этих методов можно запрашивать XML, который потом без проблем можно будет обработать привычными методами jQuery. Допустим, что на сервере у нас есть следующая страница, генерирующая XML:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="php source-php"><pre class="de1"><span class="kw2">&lt;?php</span>
+  <span class="kw3">header</span><span class="br0">&#40;</span><span class="st0">&quot;Content-Type: text/xml; charset=utf-8&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span>
+&lt;list&gt;
+  &lt;item id=&quot;1&quot;&gt;
+    Item 1 
+  &lt;/item&gt;
+  &lt;item id=&quot;2&quot;&gt;
+    Item 2 
+  &lt;/item&gt;
+&lt;/list&gt;</pre></div></div>
+<p>Запросив эту страницу методом get или post, полученные данные можно будет легко обработать:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1">$.<span class="me1">get</span><span class="br0">&#40;</span>
+  <span class="st0">&quot;/ajaxtest.php&quot;</span><span class="sy0">,</span>
+  <span class="br0">&#123;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+  onAjaxSuccess
+<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw2">function</span> onAjaxSuccess<span class="br0">&#40;</span>xml<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  <span class="kw2">var</span> items <span class="sy0">=</span> $<span class="br0">&#40;</span><span class="st0">&quot;item&quot;</span><span class="sy0">,</span> xml<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// так можно получить коллекцию всех элементов item из полученного xml</span>
+  <span class="kw2">var</span> <span class="kw1">item</span> <span class="sy0">=</span> $<span class="br0">&#40;</span><span class="st0">&quot;#1&quot;</span><span class="sy0">,</span> xml<span class="br0">&#41;</span><span class="sy0">;</span>    <span class="co1">// а так, найти item с id=&quot;1&quot;</span>
+  <span class="kw3">alert</span><span class="br0">&#40;</span><span class="kw1">item</span>.<span class="me1">html</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>     <span class="co1">// и извлечь из него текст</span>
+<span class="br0">&#125;</span></pre></div></div>
+</div>
+<div style="margin-top:15px">
+<p>Помимо рассмотренных методов, существует и методы с более узкой направленностью: <tt><a href="Ajax_запрос_HTML-данных.html" title="Ajax запрос HTML-данных">load()</a></tt> запрашивает html-текст и автоматически вставляет его в выбранные элементы, <tt><a href="Ajax_запрос_js_файла.html" title="Ajax запрос js файла">$.getScript()</a></tt> делает запрос javascript-файла и автоматически его выполняет. Эти и другие функции можно найти в разде <a href="Ajax.html" title="Ajax">Ajax</a>.
+</p>
+</div>
+<a name=".D0.A0.D0.B0.D0.B7.D0.BD.D1.8B.D0.B5_.D0.BF.D0.BB.D1.8E.D1.88.D0.BA.D0.B8" id=".D0.A0.D0.B0.D0.B7.D0.BD.D1.8B.D0.B5_.D0.BF.D0.BB.D1.8E.D1.88.D0.BA.D0.B8"></a><h2> <span class="mw-headline">Разные плюшки</span></h2>
+<p>Помимо возможностей, о которых уже было сказано, существуют и другие, о которых охота упомянуть, но сложно отнести в какой то конкретный раздел.
+</p>
+<dl><dd> <a href="Тип_браузера.html" title="Тип браузера">$.browser</a> поможет узнать тип браузера.
+</dd><dd> <a href="Особенности_используемого_браузера.html" title="Особенности используемого браузера">$.support</a> поможет узнать конкретные особенности браузера.
+</dd><dd> <a href="Позиция_элемента.html" title="Позиция элемента">.offset() и .position()</a> позволят узнать или изменить позицию выбранного элемента.
+</dd><dd> <a href="Работа_с_шириной_элемента.html" title="Работа с шириной элемента">.width()</a> и <a href="Работа_с_высотой_элемента.html" title="Работа с высотой элемента">.height()</a> позволят узнать или изменить размеры выбранного элемента.
+</dd><dd> <a href="Работа_со_скроллингом_элементов.html" title="Работа со скроллингом элементов">.scrollTop() и .scrollLeft()</a> позволят работать с прокруткой.
+</dd><dd> Функции из раздела <a href="События.html" title="События">события</a> позволят обрабатывать различные события, происходящие на странице.
+</dd></dl>
+<a name=".D0.A2.D0.B8.D1.82.D1.80.D1.8B" id=".D0.A2.D0.B8.D1.82.D1.80.D1.8B"></a><h2> <span class="mw-headline">Титры</span></h2>
+<p>Часть текста в данной статье позаимствована из статьи <a href="http://www.rsdn.ru/article/inet/jQuery.xml#EAIAE" class="external text" title="http://www.rsdn.ru/article/inet/jQuery.xml#EAIAE" rel="nofollow">"Query – Javascript нового поколения"</a> журнала RSDN. Это одна из первых статей по jQuery, благодаря которой о библиотеке узнало, наверное, наибольшее число русскоязычных программистов. Однако, на данный момент, часть информации в ней уже не актуальна.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 78/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key page2pagru:pcache:idhash:5-0!1!0!!ru!2!edit=0 and timestamp 20101210102025 -->
+<div class="printfooter">
+Источник — «<a href="Введение_в_jQuery.html">http://jquery.page2page.ru/index.php5/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_jQuery</a>»</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Просмотры</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Введение_в_jQuery.html" title="Содержание статьи [c]" accesskey="c">Статья</a></li>
+				 <li id="ca-talk" class="new"><a href="../index.php5@title=@D0@9E@D0@B1@D1@81@D1@83@D0@B6@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5:@D0@92@D0@B2@D0@B5@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5_@D0@B2_jQuery&amp;action=edit&amp;redlink=1.html" title="Обсуждение содержания страницы [t]" accesskey="t">Обсуждение</a></li>
+				 <li id="ca-viewsource"><a href="../index.php5@title=@D0@92@D0@B2@D0@B5@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5_@D0@B2_jQuery&amp;action=edit.html" title="Эта страница защищена от изменений, но вы можете посмотреть и скопировать её исходный текст [e]" accesskey="e">Просмотр</a></li>
+				 <li id="ca-history"><a href="../index.php5@title=@D0@92@D0@B2@D0@B5@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5_@D0@B2_jQuery&amp;action=history.html" title="Журнал изменений страницы [h]" accesskey="h">История</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Личные инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="http://jquery.page2page.ru/index.php5/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:94.181.32.12" title="Страница участника для моего IP [.]" accesskey="." class="new">94.181.32.12</a></li>
+				<li id="pt-anontalk"><a href="http://jquery.page2page.ru/index.php5/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0:94.181.32.12" title="Страница обсуждений для моего IP [n]" accesskey="n" class="new">Обсуждение для этого IP-адреса</a></li>
+				<li id="pt-anonlogin"><a href="../index.php5@title=@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:UserLogin&amp;returnto=@D0@92@D0@B2@D0@B5@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5_@D0@B2_jQuery.html" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o">Представиться / зарегистрироваться</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/skins/common/images/wiki.png);" href="Заглавная_страница.html" title="Заглавная страница [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.BE_.D0.BA.D0.B0.D1.82.D0.B5.D0.B3.D0.BE.D1.80.D0.B8.D1.8F.D0.BC'>
+		<h5>Функции по категориям</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Ajax"><a href="Ajax.html">Ajax</a></li>
+				<li id="n-.D0.90.D1.82.D1.80.D0.B8.D0.B1.D1.83.D1.82.D1.8B"><a href="Атрибуты.html">Атрибуты</a></li>
+				<li id="n-CSS"><a href="CSS.html">CSS</a></li>
+				<li id="n-.D0.A1.D0.B5.D0.BB.D0.B5.D0.BA.D1.82.D0.BE.D1.80.D1.8B"><a href="Селекторы.html">Селекторы</a></li>
+				<li id="n-.D0.9C.D0.B0.D0.BD.D0.B8.D0.BF.D1.83.D0.BB.D1.8F.D1.86.D0.B8.D0.B8"><a href="Манипуляции.html">Манипуляции</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0-.D1.81-.D0.BD.D0.B0.D0.B1.D0.BE.D1.80.D0.BE.D0.BC"><a href="Работа_с_набором_элементов.html">Работа с набором</a></li>
+				<li id="n-.D0.A0.D0.B0.D0.B7.D0.BD.D0.BE.D0.B5"><a href="Разное.html">Разное</a></li>
+				<li id="n-.D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"><a href="Свойства.html">Свойства</a></li>
+				<li id="n-.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><a href="События.html">События</a></li>
+				<li id="n-.D0.A4.D0.BE.D1.80.D0.BC.D1.8B"><a href="Формы.html">Формы</a></li>
+				<li id="n-.D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"><a href="Эффекты.html">Эффекты</a></li>
+				<li id="n-.D0.AF.D0.B4.D1.80.D0.BE"><a href="http://jquery.page2page.ru/index.php5/%D0%AF%D0%B4%D1%80%D0%BE">Ядро</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Поиск</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/index.php5" id="searchform"><div>
+				<input type='hidden' name="title" value="Служебная:Search"/>
+				<input id="searchInput" name="search" type="text" title="Искать это слово [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Перейти" title="Перейти к странице, имеющей в точности такое название" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Найти" title="Найти страницы, содержащие указанный текст" />
+			</div></form>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Навигация</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Заглавная_страница.html">Заглавная страница</a></li>
+				<li id="n-portal"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" title="О проекте, о том, что вы можете сделать, где что находится">Сообщество</a></li>
+				<li id="n-currentevents"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Список текущих событий">Текущие события</a></li>
+				<li id="n-recentchanges"><a href="Служебная:RecentChanges.html" title="Список последних изменений [r]" accesskey="r">Свежие правки</a></li>
+				<li id="n-randompage"><a href="Запуск_следующей_функции_в_очереди.html" title="Посмотреть случайную страницу [x]" accesskey="x">Случайная статья</a></li>
+				<li id="n-help"><a href="http://jquery.page2page.ru/index.php5/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Справочник по проекту «JQuery»">Справка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Инструменты</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:WhatLinksHere/Введение_в_jQuery.html" title="Список всех страниц, которые ссылаются на эту страницу [j]" accesskey="j">Ссылки сюда</a></li>
+				<li id="t-recentchangeslinked"><a href="@D0@A1@D0@BB@D1@83@D0@B6@D0@B5@D0@B1@D0@BD@D0@B0@D1@8F:RecentChangesLinked/Введение_в_jQuery.html" title="Последние изменения в страницах, на которые ссылается эта страница [k]" accesskey="k">Связанные правки</a></li>
+<li id="t-specialpages"><a href="Служебная:SpecialPages.html" title="Список служебных страниц [q]" accesskey="q">Спецстраницы</a></li>
+				<li id="t-print"><a href="../index.php5@title=@D0@92@D0@B2@D0@B5@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5_@D0@B2_jQuery&amp;printable=yes.html" rel="alternate" title="Версия этой страницы для печати [p]" accesskey="p">Версия для печати</a></li>				<li id="t-permalink"><a href="../index.php5@title=@D0@92@D0@B2@D0@B5@D0@B4@D0@B5@D0@BD@D0@B8@D0@B5_@D0@B2_jQuery&amp;oldid=814.html" title="Постоянная ссылка на эту версию страницы">Постоянная ссылка</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> Последнее изменение этой страницы: 09:29, 16 ноября 2010.</li>
+					<li id="viewcount">К этой странице обращались 358 раз.</li>
+					<li id="privacy"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Политика конфиденциальности">Политика конфиденциальности</a></li>
+					<li id="about"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" title="JQuery:Описание">Описание JQuery</a></li>
+					<li id="disclaimer"><a href="http://jquery.page2page.ru/index.php5/JQuery:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="JQuery:Отказ от ответственности">Отказ от ответственности</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.184 secs. --></body></html>

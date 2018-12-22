@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <title>Нижний в фокусе</title> -->
+</head>
+<style>
+    @import url(css/base.css);
+    /*@import url(http://fonts.googleapis.com/css?family=Poiret+One|Roboto+Condensed:700,300,400|Play:400,700&subset=latin,cyrillic);*/
+	body,html{
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	@media (min-width: 321px){	
+		article{
+		text-align: justify;
+	    -webkit-hyphens: auto;
+	    -moz-hyphens: auto;
+	    hyphens: auto;
+		}
+	}	
+	@media (max-width: 320px){	
+		article{
+			text-align: none;
+		}
+	}
+	header,article{
+/*		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;*/
+		display: block;
+		float: left;
+		width: 100%;
+		/*line-height: 21px;*/
+	}
+	header{
+		background: #ccc;
+		height: 4em;
+		font-size: 11px;
+		overflow: hidden;
+	}
+	.logo-nn{
+		display: block;
+		float: left;
+		width: 2.56em;
+		height: 3em;
+    	margin: 0.5em;		
+    	background-image: url('img/nnwithout.png');		
+    	background-size: contain;
+	}
+	.logo-title{
+		display: block;
+		float: left;
+		height: 2em;
+		width: auto;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 1.4em;
+		margin-top: 0.15em;
+		text-transform: capitalize;
+	}	
+	.logo-title::after{
+		display: block;
+		position: relative;
+		content: 'в фокусе';
+		font-size: 0.7em;
+		text-transform: none;
+		/*border-top: 1px solid red;*/
+		/*margin-top: -1px;*/
+		margin-top: -0.3em;
+		padding: none;
+		width: 5.29em;
+		/*margin-left: 0.12em;*/
+	}
+	article{
+		/*padding: 1em;*/
+	}
+	img{
+		display: block;
+		float: right;
+		max-width: 50%;
+		padding: 10px;
+	}
+	p{
+		font-size: inherit;
+		padding: 0em;
+		margin: 1em;
+
+	}
+</style>
+<body>
+<div class="br"></div>
+	<header>
+	<div class="logo-nn"></div>
+	<div class="logo-title">Нижний Новгород</div>
+	</header>
+	<article>
+<!-- 		<img src="http://erotican.net/sites/default/files/erotican-devushka-s-bolshoy-grudiu.jpg" alt="">
+		<img src="http://nevseoboi.com.ua/uploads/posts/2011-07/1310305090_wallpapers-by-nevseoboi-224_www.nevseoboi.com.ua.jpg" alt="">
+		<img src="http://img2.vetton.ru/upl/8000/7186/vetton_ru_64img0026-1920x1440.jpg" alt="">
+		<img src="http://img2.vetton.ru/upl/8000/7186/vetton_ru_16img0058-1920x1440.jpg" alt=""> -->
+		<!-- <img src="" alt=""> -->
+		<!-- <img src="http://placehold.it/350x350" alt="">	-->
+		<img src="img/nn.jpg" alt="">	
+		<p>O di inmortales! ubinam gentium sumus? in qua urbe vivimus? quam rem publicam habemus? Hic, hic sunt in nostro numero, patres conscripti, in hoc orbis terrae sanctissimo gravissimoque consilio, qui de nostro omnium interitu, qui de huius urbis atque adeo de orbis terrarum exitio cogitent! Hos ego video consul et de re publica sententiam rogo et, quos ferro trucidari oportebat, eos nondum voce volnero!</p>
+		
+		<p>Quare secedant inprobi, secernant se a bonis, unum in locum congregentur, muro denique, quod saepe iam dixi, secernantur a nobis; desinant insidiari domi suae consuli, circumstare tribunal praetoris urbani, obsidere cum gladiis curiam, malleolos et faces ad inflammandam urbem comparare; sit denique inscriptum in fronte unius cuiusque, quid de re publica sentiat. Polliceor hoc vobis, patres conscripti, tantam in nobis consulibus fore diligentiam, tantam in vobis auctoritatem, tantam in equitibus Romanis virtutem, tantam in omnibus bonis consensionem, ut Catilinae profectione omnia patefacta, inlustrata, oppressa, vindicata esse videatis.</p>
+
+		<p>Quare secedant inprobi, secernant se a bonis, unum in locum congregentur, muro denique, quod saepe iam dixi, secernantur a nobis; desinant insidiari domi suae consuli, circumstare tribunal praetoris urbani, obsidere cum gladiis curiam, malleolos et faces ad inflammandam urbem comparare; sit denique inscriptum in fronte unius cuiusque, quid de re publica sentiat. Polliceor hoc vobis, patres conscripti, tantam in nobis consulibus fore diligentiam, tantam in vobis auctoritatem, tantam in equitibus Romanis virtutem, tantam in omnibus bonis consensionem, ut Catilinae profectione omnia patefacta, inlustrata, oppressa, vindicata esse videatis.</p>		
+	</article>
+</body>
+</html>

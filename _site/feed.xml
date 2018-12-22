@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-22T20:58:07+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Блог @osabio</title><subtitle></subtitle><entry><title type="html">Лекции по механике. Динамика системы материальных точек</title><link href="http://localhost:4000/lection/2017/02/26/lection-mech-1.html" rel="alternate" type="text/html" title="Лекции по механике. Динамика системы материальных точек" /><published>2017-02-26T18:18:42+03:00</published><updated>2017-02-26T18:18:42+03:00</updated><id>http://localhost:4000/lection/2017/02/26/lection-mech-1</id><content type="html" xml:base="http://localhost:4000/lection/2017/02/26/lection-mech-1.html">В данном документе мною собраны лекции по динамике системы материальных точек, прочитанные Евгенией Зиновьевной Грибовой на первом курсе радиофизического факультета ННГУ.
+
+Лекции набраны с частичным сокращением материала (убраны примеры в лекциях).
+
+Документ оптимизирован для подготовки к экзамену, оговорены важные моменты, определения, теоремы и проч.
+
+Разрешено копирование и распространение данного документа с обязательным указанием первоисточника.
+
+&lt;style&gt;
+    .lect-img{
+        width: 100%;
+    }
+&lt;/style&gt;
+
+Материал практичнее читать в &lt;code&gt;.pdf&lt;/code&gt; формате, но можно и прямо здесь (см. ниже)
+
+Документ в формате A5 (тетрадный лист) -- удобнее читать на смартфонах, планшетах, электронных книгах (&lt;a href=&quot;/img/lection_part1/lection1-a5.pdf&quot;&gt;ссылка&lt;/a&gt;)
+
+Документ в формате A4 -- удобнее для распечатывания (&lt;a href=&quot;/img/lection_part1/lection1-a4.pdf&quot;&gt;ссылка&lt;/a&gt;)
+&lt;!--ed--&gt;  
+&lt;!-- img.lect-img[src=/img/lection_part1/lect-$.png]*22 --&gt;
+&lt;img src=&quot;/img/lection_part1/lect-1.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-2.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-3.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-4.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-5.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-6.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-7.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-8.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-9.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-10.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-11.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-12.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-13.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-14.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-15.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-16.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-17.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-18.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-19.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-20.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-21.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-22.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-23.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-24.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-25.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-26.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/lection_part1/lect-27.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;!-- &lt;img src=&quot;/img/lection_part1/lect-28.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt; --&gt;</content><author><name></name></author><summary type="html">В данном документе мною собраны лекции по динамике системы материальных точек, прочитанные Евгенией Зиновьевной Грибовой на первом курсе радиофизического факультета ННГУ. Лекции набраны с частичным сокращением материала (убраны примеры в лекциях). Документ оптимизирован для подготовки к экзамену, оговорены важные моменты, определения, теоремы и проч. Разрешено копирование и распространение данного документа с обязательным указанием первоисточника. Материал практичнее читать в .pdf формате, но можно и прямо здесь (см. ниже) Документ в формате A5 (тетрадный лист) – удобнее читать на смартфонах, планшетах, электронных книгах (ссылка) Документ в формате A4 – удобнее для распечатывания (ссылка)</summary></entry><entry><title type="html">Иродов - решение задачи №1.104(1.111)</title><link href="http://localhost:4000/2017/02/23/1-104.html" rel="alternate" type="text/html" title="Иродов - решение задачи №1.104(1.111)" /><published>2017-02-23T20:46:56+03:00</published><updated>2017-02-23T20:46:56+03:00</updated><id>http://localhost:4000/2017/02/23/1-104</id><content type="html" xml:base="http://localhost:4000/2017/02/23/1-104.html">### Условие задачи 
+Винтовку навели на вертикальную черту мишени, находящейся точно в северном направлении, и выстрелили. Пренебрегая сопротивлением воздуха, найти, на сколько сантиметров и в какую сторону пуля, попав в мишень, отклонится от черты. Выстрел произведен в горизонтальном направлении на широте $$\phi=60^\circ$$, скорость пули $$v=900$$ м/с и расстояние до мишени $$ =1$$ км.
+
+### Решение
+&lt;!--ed--&gt;
+&lt;a href=&quot;/problems/1-104.jpg&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;/problems/1-104.jpg&quot; alt=&quot;Сарафанов Ф.Г. - Иродов 1.104(111)&quot;&gt;&lt;/a&gt;</content><author><name></name></author><summary type="html">Условие задачи Винтовку навели на вертикальную черту мишени, находящейся точно в северном направлении, и выстрелили. Пренебрегая сопротивлением воздуха, найти, на сколько сантиметров и в какую сторону пуля, попав в мишень, отклонится от черты. Выстрел произведен в горизонтальном направлении на широте , скорость пули м/с и расстояние до мишени км. Решение</summary></entry><entry><title type="html">Иродов - решение задачи №1.19</title><link href="http://localhost:4000/2017/02/23/irodov-1-19.html" rel="alternate" type="text/html" title="Иродов - решение задачи №1.19" /><published>2017-02-23T20:46:56+03:00</published><updated>2017-02-23T20:46:56+03:00</updated><id>http://localhost:4000/2017/02/23/irodov-1-19</id><content type="html" xml:base="http://localhost:4000/2017/02/23/irodov-1-19.html">### Условие задачи 
+За промежуток времени $\tau=10,0$ с точка прошла половину окружности радиуса $R=160$ см. Вычислить за это время: 
+а) среднюю скорость &lt;$v$&gt;; 
+б) модуль среднего вектора скорости |&lt;$v$&gt;|; 
+в) модуль среднего вектора полного ускорения |&lt;$w$&gt;|, если точка двигалась с постоянным тангенциальным ускорением.
+
+### Решение
+&lt;!--ed--&gt;
+&lt;a href=&quot;/problems/1-19.jpg&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;/problems/1-19.jpg&quot; alt=&quot;Сарафанов Ф.Г. - Иродов 1.19&quot;&gt;&lt;/a&gt;</content><author><name></name></author><summary type="html">Условие задачи За промежуток времени $\tau=10,0$ с точка прошла половину окружности радиуса $R=160$ см. Вычислить за это время: а) среднюю скорость &amp;lt;$v$&amp;gt;; б) модуль среднего вектора скорости |&amp;lt;$v$&amp;gt;|; в) модуль среднего вектора полного ускорения |&amp;lt;$w$&amp;gt;|, если точка двигалась с постоянным тангенциальным ускорением. Решение</summary></entry><entry><title type="html">Иродов - решение задачи №1.163(1.142)</title><link href="http://localhost:4000/2017/02/23/irodov-1-163.html" rel="alternate" type="text/html" title="Иродов - решение задачи №1.163(1.142)" /><published>2017-02-23T20:46:56+03:00</published><updated>2017-02-23T20:46:56+03:00</updated><id>http://localhost:4000/2017/02/23/irodov-1-163</id><content type="html" xml:base="http://localhost:4000/2017/02/23/irodov-1-163.html">### Условие задачи 
+Гладкий легкий горизонтальный стержень $АВ$ может вращаться вокруг вертикальной оси, проходящей через его конец $А$. На стержне находится небольшая муфточка массы $m$, соединенная невесомой пружинкой длины $l_0$ с концом $А$. Жесткость пружинки равна $k$. Какую работу надо совершить, чтобы эту систему медленно раскрутить до угловой скорости $\omega$?
+
+### Решение
+&lt;!--ed--&gt;
+&lt;a href=&quot;/problems/1-163.jpg&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;/problems/1-163.jpg&quot; alt=&quot;Сарафанов Ф.Г. - Иродов 1.163(142)&quot;&gt;&lt;/a&gt;</content><author><name></name></author><summary type="html">Условие задачи Гладкий легкий горизонтальный стержень $АВ$ может вращаться вокруг вертикальной оси, проходящей через его конец $А$. На стержне находится небольшая муфточка массы $m$, соединенная невесомой пружинкой длины $l_0$ с концом $А$. Жесткость пружинки равна $k$. Какую работу надо совершить, чтобы эту систему медленно раскрутить до угловой скорости $\omega$? Решение</summary></entry><entry><title type="html">Иродов - решение задачи №1.160(1.136)</title><link href="http://localhost:4000/2017/02/23/irodov-1-160.html" rel="alternate" type="text/html" title="Иродов - решение задачи №1.160(1.136)" /><published>2017-02-23T20:46:56+03:00</published><updated>2017-02-23T20:46:56+03:00</updated><id>http://localhost:4000/2017/02/23/irodov-1-160</id><content type="html" xml:base="http://localhost:4000/2017/02/23/irodov-1-160.html">### Условие задачи 
+Небольшое тело $$А$$ начинает скользить с высоты $$h$$ по наклонному желобу, переходящему в полуокружность радиуса $$h/2$$. Пренебрегая трением, найти скорость тела в наивысшей точке его траектории (после отрыва от желоба).
+
+### Решение
+&lt;!--ed--&gt;
+&lt;a href=&quot;/problems/1-160.jpg&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;/problems/1-160.jpg&quot; alt=&quot;Сарафанов Ф.Г. - Иродов 1.160(136)&quot;&gt;&lt;/a&gt;</content><author><name></name></author><summary type="html">Условие задачи Небольшое тело начинает скользить с высоты по наклонному желобу, переходящему в полуокружность радиуса . Пренебрегая трением, найти скорость тела в наивысшей точке его траектории (после отрыва от желоба). Решение</summary></entry><entry><title type="html">Иродов - решение задачи №1.108(1.112)</title><link href="http://localhost:4000/2017/02/23/irodov-1-108.html" rel="alternate" type="text/html" title="Иродов - решение задачи №1.108(1.112)" /><published>2017-02-23T20:46:56+03:00</published><updated>2017-02-23T20:46:56+03:00</updated><id>http://localhost:4000/2017/02/23/irodov-1-108</id><content type="html" xml:base="http://localhost:4000/2017/02/23/irodov-1-108.html">### Условие задачи 
+Горизонтальный диск вращают с постоянной угловой скоростью $$\omega=6$$ рад/с вокруг вертикальной оси, проходящей через его центр. По одному из диаметров диска движется небольшое тело массы m = $$0.5$$ кг с постоянной относительно диска скоростью $v'=50$ см/с. Найти силу, с которой диск действует на это тело в момент, когда оно находится на расстоянии $r=30$ см от оси вращения.
+
+### Решение
+&lt;!--ed--&gt;
+&lt;a href=&quot;/problems/1-108.jpg&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;/problems/1-108.jpg&quot; alt=&quot;Сарафанов Ф.Г. - Иродов 1.108(112)&quot;&gt;&lt;/a&gt;</content><author><name></name></author><summary type="html">Условие задачи Горизонтальный диск вращают с постоянной угловой скоростью рад/с вокруг вертикальной оси, проходящей через его центр. По одному из диаметров диска движется небольшое тело массы m = кг с постоянной относительно диска скоростью $v’=50$ см/с. Найти силу, с которой диск действует на это тело в момент, когда оно находится на расстоянии $r=30$ см от оси вращения. Решение</summary></entry><entry><title type="html">Аналитическая геометрия. Кривые второго порядка</title><link href="http://localhost:4000/geometry/2017/01/28/geom3.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Кривые второго порядка" /><published>2017-01-28T13:19:30+03:00</published><updated>2017-01-28T13:19:30+03:00</updated><id>http://localhost:4000/geometry/2017/01/28/geom3</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/28/geom3.html">Краткий обзор определений по теоретическому минимуму. Тема &lt;&lt;кривые и поверхности второго порядка&gt;&gt;.
+&lt;!--ed--&gt; 
+ 
+* 
+{:toc}
+
+&lt;br&gt;
+
+## Определение эллипса
+
+Эллипсом называется геометрическое место точек, таких, что сумма расстояний до каждой из них от двух фиксированных точек, называемых фокусами, постоянна (и численно равна длине большой полуоси эллипса $2a$.)
+
+## Каноническое уравнение эллипса в декартовых координатах
+
+$$
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1 \quad (a&gt;b)
+$$
+
+## Определение гиперболы
+
+Гиперболой называют множество всех точек плоскости, **абсолютное значение**   разности расстояний до каждой из которых от двух фиксированных точек, называемых фокусами, постоянна (и численно равна расстоянию между вершинами этой гиперболы $2a$.)
+
+## Каноническое уравнение гиперболы в декартовых координатах
+
+$$
+\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+$$
+
+## Определение параболы
+
+Параболой называется множество всех точек плоскости, равноудалённых от точки фокуса $F$  и данной прямой $d$, не проходящей через точку $F$.
+
+ - $F$ -- фокус параболы
+ - $d$ -- директриса параболы
+ - $p$ -- фокальный параметр, который равен расстоянию от фокуса до директрисы.
+ 
+## Каноническое уравнение параболы в декартовых координатах
+
+$$
+y^2=2px
+$$
+
+## Определение эксцентриситета эллипса (гиперболы)
+
+Эксцентриситетом эллипса (гиперболы) называют отношение $\varepsilon=\frac c a$, которое может принимать значения в пределах $0\leq\varepsilon&lt;1$ для эллипса и $1\leq\varepsilon$ для гиперболы. ($c$ -- расстояние от центра симметрии до точки фокуса)
+
+## Определение фокального параметра эллипса (гиперболы)
+
+Фокальным параметром эллипса (гиперболы) $${p={\frac {b^{2}}{a}}}$$ называется половина длины хорды, проходящей через фокус и перпендикулярной большой оси эллипса (гиперболы).
+
+*Выводится из канонических уравнений подстановкой $x=c$, $y=p$*</content><author><name></name></author><category term="аналитическая геометрия" /><summary type="html">Краткий обзор определений по теоретическому минимуму. Тема «кривые и поверхности второго порядка».</summary></entry><entry><title type="html">Аналитическая геометрия. Прямая и плоскость</title><link href="http://localhost:4000/geometry/2017/01/25/geom2.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Прямая и плоскость" /><published>2017-01-25T10:38:02+03:00</published><updated>2017-01-25T10:38:02+03:00</updated><id>http://localhost:4000/geometry/2017/01/25/geom2</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/25/geom2.html">Прямая и плоскость. Краткий обзор определений, формул. 
+&lt;!--ed--&gt; 
+ 
+* 
+{:toc}
+
+&lt;br&gt;
+
+## Уравнение прямой на плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме
+
+В прямоугольных декартовых системах координат нормальное уравнение прямой записывается как $$(\vec{r},\vec{n})=D$$ или $$A(x-x_0)+B(y-y_0)=0$$. Соответственно данный вектор -- вектор нормали $\vec{n}$.
+
+
+## Уравнение прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме
+
+![cd240610de05c6e081251da8293a9a9d](/img/cd240610de05c6e081251da8293a9a9d.png){:width='100%'}
+
+Векторно:
+
+$$\vec{r}=\vec{r}_0+\alpha\vec{a}$$, где $\vec{a}$ -- направляющий вектор прямой. 
+
+Легко перейти к координатному виду. Пусть $\vec{r}(x,y)$, $\vec{r_0}(x_0,y_0)$, $\vec{a}(a_1,a_2)$.
+
+Тогда
+
+$$
+\left\{
+\begin{aligned} 
+  x-x_0=\alpha a_1 \\
+  y-y_0=\alpha a_2
+\end{aligned} 
+\right.
+$$
+
+Избавившись от параметра, получим каноническое уравнение прямой на плоскости:
+
+$$
+\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}
+$$
+
+Перемножив крест-накрест, можем переписать в виде
+
+$$
+a_2x-a_1y+(a_1y_0-a_2x_0) \\
+Ax+By+C=0
+$$
+
+где $A=a_2$, $B=-a_1$, $C=a_1y_0-a_2x_0$.
+
+Данный вектор $\vec{a} (-B, A)$
+
+## Уравнение прямой на плоскости, проходящей через две данные точки
+
+![8a8288942ee5dde069025c737e1e84d4](/img/8a8288942ee5dde069025c737e1e84d4.png){:width=&quot;100%&quot;}
+
+Легко вывести из предыдущего, взяв в качестве направляющего вектора вектор между двумя известными точками примой.
+
+$$
+\frac{x-x_0}{x_1-x_0}=\frac{y-y_0}{y_1-y_0}
+$$
+
+## Параметрические уравнения прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме
+
+Векторно:
+
+$$\vec{r}=\vec{r}_0+\alpha\vec{a}$$, где $\vec{a}$ -- направляющий вектор прямой. 
+
+
+Координатно: 
+
+$$
+\left\{
+\begin{aligned} 
+  x-x_0=\alpha a_1 \\
+  y-y_0=\alpha a_2
+\end{aligned} 
+\right.
+$$
+
+
+
+## Нормальное уравнение прямой на плоскости
+
+Уравнение вида $$\cos\alpha\cdot x + \cos\beta\cdot y = p $$ называется нормальным уравнением прямой.
+ - $\alpha$ -- угол между $\vec{n}$ и положительным направлением оси $x$,
+ - $\beta$ -- угол между $\vec{n}$ и положительным направлением оси $y$,
+ - $p$ -- расстояние от начала координат до прямой.
+
+
+## Параметрические уравнения прямой в пространстве
+
+Аналогично прямой в плоскости прямую можно описать уравнением
+
+$$
+\vec{r}=\vec{r}_0+\alpha\vec{a}
+$$
+
+и записать его в параметрическом виде:
+
+$$
+\left\{
+\begin{aligned}  
+  x=x_0+\alpha a_1 \\
+  y=y_0+\alpha a_2 \\
+  z=z_0+\alpha a_3 
+\end{aligned} 
+\right.
+$$
+
+## Уравнение плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме
+
+$$
+A(x-x_0)+B(y-y_0)+C(z-z_0)=0
+$$
+
+где данный вектор - вектор нормали $\vec{n}(A,B,C)$, данная точка $M$ -- $(x_0,y_0,z_0)$
+
+Иначе говоря,
+
+$$
+(\vec{r}-\vec{r}_0,\vec{n})=0 \Longrightarrow (\vec{r},\vec{n})=D
+$$
+
+
+# Уравнение плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме
+
+Вектора $\vec{M_0M}=\vec{r}-\vec{r}_0$, $\vec{a}$ и $\vec{b}$ должны быть компланарны, т.е. их смешанное произведение равно нулю:
+
+$$
+(\vec{r}-\vec{r}_0,\vec{a},\vec{b})=0
+$$
+
+или координатно
+
+$$\begin{vmatrix}x-x_0 &amp; y-y_0 &amp; z-z_0\\a_1 &amp; a_2 &amp; a_3 \\ b_1 &amp; b_2 &amp; b_3\end{vmatrix}=0$$
+
+
+# Уравнение плоскости, проходящей через три данные точки
+
+Пусть точки $A(a_1,a_2,a_3)$, $B(b_1,b_2,b_3)$, $C(c_1,c_2,c_3)$. Тогда можно свести к предыдущему случаю, взяв два вектора $\vec{AB}$ и $\vec{AC}$, и точку $A$:
+
+$$
+\begin{vmatrix}
+x-a_1 &amp; y-a_2 &amp; z-a_3 \\
+b_1-a_1 &amp; b_2-a_2 &amp; b_3-a_3 \\
+c_1-a_1 &amp; c_2-a_2 &amp; c_3-a_3 \\
+\end{vmatrix}=0
+$$
+
+# Параметрические уравнения плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме
+
+$$
+\vec{r}=\vec{r}_0+\alpha_1\vec{a}+\alpha_2\vec{b}
+$$
+
+и
+
+$$
+\left\{
+\begin{aligned}  
+  x=x_0+\alpha_1 a_1 +\alpha_2 b_1 \\
+  y=y_0+\alpha_1 a_2 +\alpha_2 b_2 \\
+  z=z_0+\alpha_1 a_3 +\alpha_2 b_3 
+\end{aligned} 
+\right.
+$$
+
+# Нормальное уравнение плоскости
+
+Уравнение вида $$\cos\alpha\cdot x + \cos\beta\cdot y + \cos\gamma\cdot z = p $$ называется нормальным уравнением плоскости.
+
+ - $\alpha$ -- угол между $\vec{n}$ и положительным направлением оси $x$,
+ - $\beta$ -- угол между $\vec{n}$ и положительным направлением оси $y$,
+ - $\gamma$ -- угол между $\vec{n}$ и положительным направлением оси $z$,
+ - $p$ -- расстояние от начала координат до плоскости.
+
+# Каноническое уравнение прямой в пространстве
+
+Записывается как
+
+$$
+\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}=\frac{z-z_0}{a_3}
+$$
+
+где $\vec{a}(a_1,a_2,a_3)$ -- направляющий вектор этой прямой.</content><author><name></name></author><category term="аналитическая геометрия" /><category term="прямая на плоскости" /><category term="перпендикулярная прямая" /><category term="вектора" /><summary type="html">Прямая и плоскость. Краткий обзор определений, формул.</summary></entry><entry><title type="html">Аналитическая геометрия. Вектора</title><link href="http://localhost:4000/geometry/2017/01/25/geom.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Вектора" /><published>2017-01-25T10:38:02+03:00</published><updated>2017-01-25T10:38:02+03:00</updated><id>http://localhost:4000/geometry/2017/01/25/geom</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/25/geom.html">Краткий обзор определений по теоретическому минимуму. Тема &quot;вектора&quot;.
+&lt;!--ed--&gt; 
+ 
+* 
+{:toc}
+
+&lt;br&gt;
+
+## Определение вектора
+Вектор -- это направленный отрезок, у которого известны начальная и конечная точки.
+
+Линейная комбинация  $$x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_n\vec{a}_n$$ называется тривиальной, если все коэффициенты $$x_1,\ldots,x_n$$ равны нулю, и называется нетривиальной, если хотя бы один коэффициент не равен нулю.
+
+## Определение линейно зависимых векторов
+Вектора $$\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n$$ называют линейно зависимыми, если из них можно составить хотя бы одну нетривиальную линейную комбинацию, равную $$(0,0,0)$$.
+
+
+## Определение линейно независимых векторов
+Вектора $$\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n$$ называют линейно независимыми, если из них можно составить хотя бы одну тривиальную линейную комбинацию, равную $$(0,0,0)$$.
+
+## Критерий линейной зависимости
+Система векторов $$\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n$$ линейно зависима тогда и только тогда, когда хотя бы один вектор системы линейно выражается через остальные.
+* $$\Rightarrow (\text{необходимость})$$&lt;br&gt;&lt;br&gt;
+$$\exists\ x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_{n-1}\vec{a}_{n-1}+x_n\vec{a}_n=0,$$  такая, что $$|x_1|+|x_2|+\cdots+|x_n|\ne0.$$ Положим $$x_{n}\ne0$$. Тогда 
+
+$$\vec{a}_n=\left(-\frac{x_1}{x_n}\right)\vec{a}_1+\left(-\frac{x_2}{x_n}\right)\vec{a}_2+\cdots+\left(-\frac{x_{n-1}}{x_n}\right)\vec{a}_{n-1}$$   
+
+* $$\Leftarrow (\text{достаточность})$$&lt;br&gt;&lt;br&gt;
+$$\vec{a}_n=\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}. $$ Перенесем $$\vec{a}_n$$ вправо: 
+
+$$\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}+(-1)\vec{a}_n=0$$
+
+Т.к. есть хотя бы один коэффициент, не равный нулю $$(\lambda_n=-1\Rightarrow\ne0),$$ то эта линейная комбинация нетривиальная, а значит, система векторов линейно зависима.
+
+## Определение базиса
+Базисом в пространстве называют упорядоченный набор трех некомпланарных векторов, таких, что если $\vec{e}_1,\vec{e}_2,\vec{e}_3$ --- базис, то выполняется
+\begin{equation}
+    \forall\vec{x},\quad \vec{x}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3
+\end{equation}
+
+
+## Определение проекции вектора
+Проекция $\vec{a}$ на $\vec{b}$ -- это вектор $\vec{с}$, коллинеарный $\vec{b}$, конец которого есть ортогональная проекция конца вектора $\vec{a}$ на прямую, параллельную $\vec{b}$.
+
+## Определение скалярного произведения
+Скалярным произведением $\vec{a}\vec{b}$ векторов называют число $$\xi=ab\cos\phi,$$ где $\phi$ --- угол между векторами $\vec{a}$ и $\vec{b}$. 
+
+## Определение левой и правой тройки векторов
+Базис $$\{\vec{e}_1,\vec{e}_2,\vec{e}_3\}$$ в пространстве называется правым, если при наблюдении с конца вектора $\vec{e}_3$ за кратчайшим поворотом вектора $\vec{e}_1$ к вектору $\vec{e}_2$ поворот осуществляется против часовой стрелки, и левым, если поворот происходит по часовой стрелке.
+
+## Определение векторного произведения
+Векторным произведением $\vec{a}\vec{b}$ векторов называют вектор $\vec{N}$, такой, что:
+
+- $$N=ab\sin\phi,$$ где $\phi$ --- угол между векторами $\vec{a}$ и $\vec{b}$ 
+- $\vec{N}\perp\vec{a}, \vec{N}\perp\vec{b}$
+- $$\{\vec{a},\vec{b},\vec{c}\}$$ -- правая тройка
+
+При этом модуль вектора численно равен площади параллелограмма, построенного на векторах $\vec{a}$ и $\vec{b}$. 
+
+## Определение смешанного произведения
+Смешанным произведением $(\vec{a},\vec{b},\vec{c})$ векторов называют скалярное произведение $(\vec{a}[\vec{b}\times\vec{c}])$. 
+При этом модуль смешанного произведения численно равен объёму параллелепипеда, образованного векторами $\vec {a} ,\vec {b} ,\vec {c}$.
+
+## Формула вычисления скалярного произведения в декартовых координатах
+Запишем скалярное произведение в декартовых координатах. 
+
+$$\vec{a}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3$$
+$$\vec{b}=\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3$$
+
+Тогда $$(\vec{a},\vec{b})=(\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3)\cdot(\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3)$$
+
+Учтем, что для ортонормированного базиса из определения скалярного произведения $\vec{e}_1\cdot\vec{e}_2=0,$ $\vec{e}_2\cdot\vec{e}_3=0,$ $\vec{e}_1\cdot\vec{e}_3=0$, а $\vec{e}^2_1=\vec{e}^2_2=\vec{e}^2_3=1$.   
+
+Тогда
+
+$$(\vec{a},\vec{b})=(\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3)$$
+
+## Формула вычисления векторного произведения в декартовых координатах
+Векторное произведение в декартовых координатах можно представлять в виде определителя матрицы:
+
+$$[\vec{a}\times\vec{b}]=\begin{vmatrix}\vec{e}_1 &amp; \vec{e}_2 &amp; \vec{e}_3\\\lambda_1 &amp; \lambda_2 &amp; \lambda_3 \\ \xi_1 &amp; \xi_2 &amp; \xi_3\end{vmatrix}$$
+
+## Формула вычисления смешанного произведения в декартовых координатах
+Смешанное произведение в декартовых координатах также выражается в виде определителя матрицы:
+
+$$(\vec{a},\vec{b},\vec{c})=\pm\begin{vmatrix}a_1 &amp; a_2 &amp; a_3\\b_1 &amp; b_2 &amp; b_3 \\ c_1 &amp; c_2 &amp; c_3\end{vmatrix}$$
+
+Причем его знак зависит от того, правая тройка ($+$) или левая ($-$).</content><author><name></name></author><category term="аналитическая геометрия" /><category term="линейная зависимость" /><category term="линейная независимость" /><category term="вектора" /><summary type="html">Краткий обзор определений по теоретическому минимуму. Тема “вектора”.</summary></entry><entry><title type="html">Вывод ускорения Кориолиса</title><link href="http://localhost:4000/phy/2017/01/14/kor.html" rel="alternate" type="text/html" title="Вывод ускорения Кориолиса" /><published>2017-01-14T14:35:05+03:00</published><updated>2017-01-14T14:35:05+03:00</updated><id>http://localhost:4000/phy/2017/01/14/kor</id><content type="html" xml:base="http://localhost:4000/phy/2017/01/14/kor.html">**Лемма**:
+
+$$\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]$$
+
+Примем, что
+
+$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}$$
+
+$$\vec{r\,}'=x'\vec{i'}+y'\vec{j'}+z'\vec{k'}$$
+
+&lt;!--ed--&gt;
+
+Далее
+
+$$\vec{v'}=\frac{d\vec{r'}}{dt}=
+\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'} \text{ (относительная)}$$
+
+$$\vec{a'}=\frac{d^2\vec{r'}}{dt^2}=
+\frac{d^2x'}{dt^2}\vec{i'}+\frac{d^2y'}{dt^2}\vec{j'}+\frac{d^2z'}{dt^2}\vec{k'} \text{ (относительное)}$$
+
+Так как $$\vec{i'}, \vec{j'},\vec{k'}$$ -- не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:
+
+$$\vec{v}=\frac{d\vec{r'}}{dt}=%\frac{d\vec{r}}{dt}=$$
+
+$$=\left[\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'}\right]+
+\left[x'\frac{d\vec{i'}}{dt}+y'\frac{d\vec{j'}}{dt}+z'\frac{d\vec{k'}}{dt}\right]=$$
+
+$$=\vec{v'}+
+\left[x'[\omega\times\vec{i'}]+y'[\omega\times\vec{j'}]+z'[\omega\times\vec{k'}]\right]\Rightarrow$$
+
+$$\vec{v}=\vec{v'}+\left[\omega\times\vec{r'}\right]$$
+
+Аналогично
+
+$$\frac{d\vec{v'}}{dt}=%[\omega\times\vec{v'}]=
+\left[
+\frac{d^2x'}{dt^2}\vec{i'}+
+\frac{d^2y'}{dt^2}\vec{j'}+
+\frac{d^2z'}{dt^2}\vec{k'} 
+\right]+
+\left[
+v'_x\frac{d\vec{i'}}{dt}+
+v'_y\frac{d\vec{j'}}{dt}+
+v'_z\frac{d\vec{k'}}{dt} 
+\right]=$$
+
+$$=\vec{a'}+
+\left[v_x'[\omega\times\vec{i'}]+v_y'[\omega\times\vec{j'}]+v_z'[\omega\times\vec{k'}]\right]\Rightarrow$$
+
+$$\vec{a}=\vec{a'}+\left[\omega\times\vec{v'}\right]+
+\frac{d[\omega\times\vec{r'}]}{dt}=$$
+
+$$=\vec{a'}+\left[\omega\times\vec{v'}\right]+
+\left[\vec{\beta}\times\vec{r'}\right]+
+\left[\omega\times\frac{d\vec{r'}}{dt}\right]
+$$
+
+Причем 
+
+$$\left[\omega\times\frac{d\vec{r'}}{dt}\right]=
+\left[\omega\times\left(\vec{v'}+\left[\omega\times\vec{r'}\right]\right)\right]=$$
+
+$$=\left[\omega\times\vec{v'}\right]+
+\left[\omega\times\left[\omega\times\vec{r'}\right]\right]$$
+
+Заметим, что
+
+$$\left[\omega\times\vec{r'}\right]=\left[\omega\times\vec{r'}_{\perp\omega}\right],$$
+
+где 
+
+$$\vec{v'}=\vec{v'}_{\perp\omega}+\vec{v'}_{\parallel\omega}$$
+
+Тогда по формуле $$[a[bc]]=b(ac)-c(ab):$$
+
+$$\left[\omega\times\frac{d\vec{r'}}{dt}\right]=\left[\omega\times\vec{v'}\right]+
+\omega(\omega,\vec{r'}_{\perp\omega})-
+\omega^2\vec{r'}_\perp=$$
+
+$$=\left[\omega\times\vec{v'}\right]-
+\omega^2\vec{r'}_\perp.$$
+
+Тогда
+
+$$\vec{a}=\vec{a'}+2\left[\omega\times\vec{v'}\right]+
+\left[\vec{\beta}\times\vec{r'}\right]-
+\omega^2\vec{r'}_\perp
+$$
+
+Перепишем в виде
+
+$$m\vec{a'}=-m\vec{a_0}+
+2m\left[\vec{v'}\times\omega\right]-
+\left[\vec{\beta}\times\vec{r'}\right]+
+\omega^2\vec{r'}_\perp
+$$
+
+Где можно выделить поступательную, центробежную и переносную силы инерции.</content><author><name></name></author><category term="физика" /><category term="вывод кориолиса" /><category term="гироскопическая сила" /><category term="сила инерции" /><summary type="html">Лемма: Примем, что</summary></entry></feed>

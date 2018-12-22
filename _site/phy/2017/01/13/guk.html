@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta name="yandex-verification" content="09e309df3b8ffe74" />
+    <title>Продольные и поперечные деформации. Закон Гука &mdash;  Блог Федора Сарафанова</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/main.min.css">
+<link rel="stylesheet" href="/css/social.css">
+<!-- <link rel="stylesheet" href="/css/introjs.min.css">  -->
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+<!--   CommonHTML: { linebreaks: {width: "container"} },
+  "HTML-CSS": { linebreaks: {width: "container"} },
+         SVG: { linebreaks: {width: "container"} } -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML: { linebreaks: {automatic: true} },
+  "HTML-CSS": { linebreaks: {automatic: true} },
+         SVG: { linebreaks: {automatic: true} },
+  tex2jax : {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        },
+    showProcessingMessages: false,
+    messageStyle: 'none'
+});
+</script>
+
+<script>
+  function ready() {
+    hljs.initHighlightingOnLoad();
+  }
+  document.addEventListener("DOMContentLoaded", ready);
+</script>
+
+
+
+
+<meta name="keywords" content="" />
+
+
+
+  </head>
+  <body>
+
+    <nav class="header">  
+  <a href="/">Главная</a>
+  <a href="/problems">Задачи</a> 
+  <a href="/lections">Лекции</a>
+  <a href="/lab">Лабы</a>
+  <a href="/2017/01/01/about.html">О блоге</a>
+ 
+<!--   <a href="/">Home</a>
+  <a href="/problems">Problems</a>
+  <a href="/lab">Lab</a>
+  <a href="/linux">Linux</a>
+  <a href="/2017/01/01/about.html">About</a>   -->
+    </nav>
+
+    <section>
+<header>
+  <time class="datetime">Jan 13, 2017</time>
+  <h1>Продольные и поперечные деформации. Закон Гука</h1>
+</header>
+
+<article>
+<p>По определению, нормальное напряжение</p>
+
+<script type="math/tex; mode=display">\sigma_n=\frac{F_n}{S}</script>
+
+<p>При малых деформациях верен закон Гука:</p>
+
+<script type="math/tex; mode=display">\sigma_n=E\varepsilon</script>
+
+<!--ed-->
+<p>где <script type="math/tex">\varepsilon</script> – относительная деформация:</p>
+
+<script type="math/tex; mode=display">\varepsilon=\frac{\Delta l}{l}</script>
+
+<p>а <script type="math/tex">E</script> – модуль Юнга, имеющий размерность <script type="math/tex">[\sigma_n]</script>, характеризующий свойства материала.</p>
+
+<p>Выведем классическое “школьное” представление закона Гука:</p>
+
+<script type="math/tex; mode=display">\frac{F_n}{S}=E\frac{\Delta l}{l}</script>
+
+<script type="math/tex; mode=display">F_n=\frac{ES}{l}\Delta l</script>
+
+<p>Можно ввести обозначение <script type="math/tex">k=\frac{ES}{l}.</script> Тогда получаем известную формулу:</p>
+
+<script type="math/tex; mode=display">F_\text{упр}=-k\Delta l</script>
+
+<h2 id="поперечная-деформация">Поперечная деформация</h2>
+
+<p>Из жизненного опыта известно, что при растяжении и сжатии материала изменяется не только его продольные размеры, но и поперечные. Введем поперечную деформацию</p>
+
+<script type="math/tex; mode=display">\varepsilon_\perp=\frac{\Delta l_\perp}{l_\perp}</script>
+
+<p>Рассмотрим начальный и конечный объемы прямоугольного бруска.</p>
+
+<script type="math/tex; mode=display">V_0=S_0\cdot l_0=l_{\perp0}^2\cdot l</script>
+
+<script type="math/tex; mode=display">V=S\cdot l=l_\perp^2\cdot l</script>
+
+<p>Из определения относительной деформации можно вывести</p>
+
+<script type="math/tex; mode=display">l=l_0(1+\varepsilon)</script>
+
+<script type="math/tex; mode=display">l_\perp=l_{\perp0}(1+\varepsilon_\perp)</script>
+
+<p>Тогда</p>
+
+<script type="math/tex; mode=display">V=l_{\perp0}^2l_0(1+\varepsilon_\perp)^2(1+\varepsilon)</script>
+
+<script type="math/tex; mode=display">V=V_0(1+\varepsilon_\perp)^2(1+\varepsilon)</script>
+
+<p>Раскроем скобки:</p>
+
+<script type="math/tex; mode=display">V=V_0(1+2\varepsilon_\perp+\varepsilon^2_\perp
++\varepsilon+2\varepsilon_\perp\varepsilon+\varepsilon^2_\perp\varepsilon)</script>
+
+<p>Так как <script type="math/tex">% <![CDATA[
+\varepsilon_\perp,\varepsilon << 1, %]]></script></p>
+
+<script type="math/tex; mode=display">V=V_0(1+2\varepsilon_\perp
++\varepsilon)</script>
+
+<p>Тогда</p>
+
+<script type="math/tex; mode=display">\Delta V = V-V_0=V_0\cdot(\varepsilon+2\varepsilon_\perp)=
+V_0\cdot\varepsilon(1-2\mu)</script>
+
+<p>где <script type="math/tex">\mu=-\frac{\varepsilon_\perp}{\varepsilon}</script> – коэффициент Пуассона. Из формулы видно, что коэффициент имеет смысл при <script type="math/tex">0\leq\mu\leq\frac{1}2.</script></p>
+
+</article>
+
+
+    </section>
+
+    <footer>
+        
+<ul class="pagination">
+  <li><a class="social" href="http://github.com/fedorsarafanov">g</a></li>
+  <li><a class="social" href="http://www.linux.org.ru/people/osabio/profile">l</a></li>
+  <li><a class="social" href="https://wiki.archlinux.org/index.php/User_talk:Osabio">w</a></li>
+  <li><a class="social" href="https://vk.com/krasnuyi">v</a></li>
+  <li><a class="social" href="mailto:sfg180@yandex.ru">y</a></li>
+</ul> 
+<p>This page is protected: all rights reserved   
+&copy; Saraganov F. G. (aka @osabio)</p>  
+ 
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- <script src="/js/latex.js"></script> -->
+<!-- <script type="text/javascript" src="/js/intro.min.js"></script> -->     
+        
+    </footer>
+
+  </body>
+</html>
