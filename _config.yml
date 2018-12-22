@@ -28,7 +28,7 @@ github-url: "http://fedorsarafanov.github.io"
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   # - jekyll-autoprefixer
 exclude:
   - Gemfile
@@ -38,7 +38,12 @@ exclude:
   - old-site
   - .git
   - package.json
-
+keep_files:
+  - lab_pdf
+  - font
+  - javascripts
+  - stylesheers
+  - img
 collections:
   lab:
     output: true

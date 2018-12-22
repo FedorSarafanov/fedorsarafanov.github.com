@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %} Блог Федора Сарафанова</title>
+	<link rel=stylesheet href="/css/main2.min.css">
+</head>
+<body> 
+<div id="wrapper">
+	<!-- <div id="aside"> -->
+		<aside>
+			<div id="title">
+				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+			</div>
+			<ul id="nav">
+				<li><a href="">Главная</a></li>
+				<li><a href="">Задачи</a></li>
+				<li><a href="">Лекции</a></li>
+				<li><a href="">Лабораторные</a></li>
+				<li><a href="">LaTeX</a></li>
+				<li><a href="">Python</a></li>
+				<li><a href="">Matlab</a></li>
+				<li><a href="">TikZ</a></li>
+				<li><a href="">PGFPlots</a></li>
+				<li><a href="">Галерея графиков</a></li>
+				<li><a href="">Заказ графиков/иллюстраций</a></li>
+				<li><a href="">О блоге</a></li>
+			</ul>
+			<footer>
+				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+			</footer>
+		</aside>
+	<!-- </div> -->
+	<main>
+		<section>
+{{ content }}
+      </section>
+	</main>
+</div>
+</body>
+</html>
