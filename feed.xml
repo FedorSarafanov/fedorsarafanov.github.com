@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-24T18:45:42+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Блог @osabio</title><subtitle></subtitle><entry><title type="html">Лекции по механике. Динамика системы материальных точек</title><link href="http://localhost:4000/lection/2017/02/26/lection-mech-1.html" rel="alternate" type="text/html" title="Лекции по механике. Динамика системы материальных точек" /><published>2017-02-26T18:18:42+03:00</published><updated>2017-02-26T18:18:42+03:00</updated><id>http://localhost:4000/lection/2017/02/26/lection-mech-1</id><content type="html" xml:base="http://localhost:4000/lection/2017/02/26/lection-mech-1.html">&lt;p&gt;В данном документе мною собраны лекции по динамике системы материальных точек, прочитанные Евгенией Зиновьевной Грибовой на первом курсе радиофизического факультета ННГУ.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-27T00:33:55+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Блог @osabio</title><subtitle></subtitle><entry><title type="html">Билеты по квантовой механике. Зачет</title><link href="http://localhost:4000/tickets/2018/12/27/tickets-quantum-course3sem1.html" rel="alternate" type="text/html" title="Билеты по квантовой механике. Зачет" /><published>2018-12-27T00:04:28+03:00</published><updated>2018-12-27T00:04:28+03:00</updated><id>http://localhost:4000/tickets/2018/12/27/tickets-quantum-course3sem1</id><content type="html" xml:base="http://localhost:4000/tickets/2018/12/27/tickets-quantum-course3sem1.html">На 3-м курсе активными студентами радиофака к зачету по квантмеху ([содержание семестра](/img/quantum_1/source-4.doc), [билеты](/img/quantum_1/source-5.doc)) у Курина В.В. были набраны контрольные билеты. К сожалению, за точность всех приведенных билетов ручаться нельзя, о возможных ошибках можно написать в [issues к репозиторию на гитхабе](https://github.com/KirillPonur/quantum/issues). Оглавление [pdf-документа с билетами](https://github.com/KirillPonur/quantum/raw/master/quantum.pdf) кликабельное (щелкните чтобы перейти к нужному билету), красным цветом выделены вопросы, которые не были набраны.
+
+Прочитать документ можно и здесь, на сайте, но ссылки в содержании будут некликабельны.
+&lt;!--ed--&gt;  
+Разрешено копирование и распространение данного документа с обязательным указанием первоисточника.
+&lt;style&gt;
+    .lect-img{
+        width: 100%;
+    }
+&lt;/style&gt;
+&lt;img src=&quot;/img/quantum_1/01.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/02.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/03.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/04.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/05.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/06.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/07.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/08.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/09.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/10.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/11.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/12.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/13.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/14.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/15.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/16.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/17.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/18.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/19.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/20.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/21.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/22.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/23.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/24.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/25.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/26.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/27.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/28.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/29.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/30.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/31.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/32.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/33.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/34.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/35.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/36.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/37.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/38.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/39.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/40.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/41.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/42.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/43.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/44.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/45.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/46.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;
+&lt;img src=&quot;/img/quantum_1/47.png&quot; alt=&quot;&quot; class=&quot;lect-img&quot;&gt;</content><author><name></name></author><summary type="html">На 3-м курсе активными студентами радиофака к зачету по квантмеху (содержание семестра, билеты) у Курина В.В. были набраны контрольные билеты. К сожалению, за точность всех приведенных билетов ручаться нельзя, о возможных ошибках можно написать в issues к репозиторию на гитхабе. Оглавление pdf-документа с билетами кликабельное (щелкните чтобы перейти к нужному билету), красным цветом выделены вопросы, которые не были набраны. Прочитать документ можно и здесь, на сайте, но ссылки в содержании будут некликабельны.</summary></entry><entry><title type="html">Лекции по механике. Динамика системы материальных точек</title><link href="http://localhost:4000/lection/2017/02/26/lection-mech-1.html" rel="alternate" type="text/html" title="Лекции по механике. Динамика системы материальных точек" /><published>2017-02-26T18:18:42+03:00</published><updated>2017-02-26T18:18:42+03:00</updated><id>http://localhost:4000/lection/2017/02/26/lection-mech-1</id><content type="html" xml:base="http://localhost:4000/lection/2017/02/26/lection-mech-1.html">&lt;p&gt;В данном документе мною собраны лекции по динамике системы материальных точек, прочитанные Евгенией Зиновьевной Грибовой на первом курсе радиофизического факультета ННГУ.&lt;/p&gt;
 
 &lt;p&gt;Лекции набраны с частичным сокращением материала (убраны примеры в лекциях).&lt;/p&gt;
 
@@ -128,7 +184,113 @@
 
 &lt;p&gt;Фокальным параметром эллипса (гиперболы) &lt;script type=&quot;math/tex&quot;&gt;{p={\frac {b^{2}}{a}}}&lt;/script&gt; называется половина длины хорды, проходящей через фокус и перпендикулярной большой оси эллипса (гиперболы).&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Выводится из канонических уравнений подстановкой $x=c$, $y=p$&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="аналитическая геометрия" /><summary type="html">Краткий обзор определений по теоретическому минимуму. Тема «кривые и поверхности второго порядка».</summary></entry><entry><title type="html">Аналитическая геометрия. Прямая и плоскость</title><link href="http://localhost:4000/geometry/2017/01/25/geom2.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Прямая и плоскость" /><published>2017-01-25T10:38:02+03:00</published><updated>2017-01-25T10:38:02+03:00</updated><id>http://localhost:4000/geometry/2017/01/25/geom2</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/25/geom2.html">&lt;p&gt;Прямая и плоскость. Краткий обзор определений, формул. 
+&lt;p&gt;&lt;em&gt;Выводится из канонических уравнений подстановкой $x=c$, $y=p$&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="аналитическая геометрия" /><summary type="html">Краткий обзор определений по теоретическому минимуму. Тема «кривые и поверхности второго порядка».</summary></entry><entry><title type="html">Аналитическая геометрия. Вектора</title><link href="http://localhost:4000/geometry/2017/01/25/geom.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Вектора" /><published>2017-01-25T10:38:02+03:00</published><updated>2017-01-25T10:38:02+03:00</updated><id>http://localhost:4000/geometry/2017/01/25/geom</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/25/geom.html">&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема “вектора”.
+&lt;!--ed--&gt;&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-вектора&quot; id=&quot;markdown-toc-определение-вектора&quot;&gt;Определение вектора&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-линейно-зависимых-векторов&quot; id=&quot;markdown-toc-определение-линейно-зависимых-векторов&quot;&gt;Определение линейно зависимых векторов&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-линейно-независимых-векторов&quot; id=&quot;markdown-toc-определение-линейно-независимых-векторов&quot;&gt;Определение линейно независимых векторов&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#критерий-линейной-зависимости&quot; id=&quot;markdown-toc-критерий-линейной-зависимости&quot;&gt;Критерий линейной зависимости&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-базиса&quot; id=&quot;markdown-toc-определение-базиса&quot;&gt;Определение базиса&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-проекции-вектора&quot; id=&quot;markdown-toc-определение-проекции-вектора&quot;&gt;Определение проекции вектора&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-скалярного-произведения&quot; id=&quot;markdown-toc-определение-скалярного-произведения&quot;&gt;Определение скалярного произведения&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-левой-и-правой-тройки-векторов&quot; id=&quot;markdown-toc-определение-левой-и-правой-тройки-векторов&quot;&gt;Определение левой и правой тройки векторов&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-векторного-произведения&quot; id=&quot;markdown-toc-определение-векторного-произведения&quot;&gt;Определение векторного произведения&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#определение-смешанного-произведения&quot; id=&quot;markdown-toc-определение-смешанного-произведения&quot;&gt;Определение смешанного произведения&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#формула-вычисления-скалярного-произведения-в-декартовых-координатах&quot; id=&quot;markdown-toc-формула-вычисления-скалярного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления скалярного произведения в декартовых координатах&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#формула-вычисления-векторного-произведения-в-декартовых-координатах&quot; id=&quot;markdown-toc-формула-вычисления-векторного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления векторного произведения в декартовых координатах&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#формула-вычисления-смешанного-произведения-в-декартовых-координатах&quot; id=&quot;markdown-toc-формула-вычисления-смешанного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления смешанного произведения в декартовых координатах&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-вектора&quot;&gt;Определение вектора&lt;/h2&gt;
+&lt;p&gt;Вектор – это направленный отрезок, у которого известны начальная и конечная точки.&lt;/p&gt;
+
+&lt;p&gt;Линейная комбинация  &lt;script type=&quot;math/tex&quot;&gt;x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_n\vec{a}_n&lt;/script&gt; называется тривиальной, если все коэффициенты &lt;script type=&quot;math/tex&quot;&gt;x_1,\ldots,x_n&lt;/script&gt; равны нулю, и называется нетривиальной, если хотя бы один коэффициент не равен нулю.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-линейно-зависимых-векторов&quot;&gt;Определение линейно зависимых векторов&lt;/h2&gt;
+&lt;p&gt;Вектора &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n&lt;/script&gt; называют линейно зависимыми, если из них можно составить хотя бы одну нетривиальную линейную комбинацию, равную &lt;script type=&quot;math/tex&quot;&gt;(0,0,0)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-линейно-независимых-векторов&quot;&gt;Определение линейно независимых векторов&lt;/h2&gt;
+&lt;p&gt;Вектора &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n&lt;/script&gt; называют линейно независимыми, если из них можно составить хотя бы одну тривиальную линейную комбинацию, равную &lt;script type=&quot;math/tex&quot;&gt;(0,0,0)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;критерий-линейной-зависимости&quot;&gt;Критерий линейной зависимости&lt;/h2&gt;
+&lt;p&gt;Система векторов &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n&lt;/script&gt; линейно зависима тогда и только тогда, когда хотя бы один вектор системы линейно выражается через остальные.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\Rightarrow (\text{необходимость})&lt;/script&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\exists\ x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_{n-1}\vec{a}_{n-1}+x_n\vec{a}_n=0,&lt;/script&gt;  такая, что &lt;script type=&quot;math/tex&quot;&gt;|x_1|+|x_2|+\cdots+|x_n|\ne0.&lt;/script&gt; Положим &lt;script type=&quot;math/tex&quot;&gt;x_{n}\ne0&lt;/script&gt;. Тогда&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}_n=\left(-\frac{x_1}{x_n}\right)\vec{a}_1+\left(-\frac{x_2}{x_n}\right)\vec{a}_2+\cdots+\left(-\frac{x_{n-1}}{x_n}\right)\vec{a}_{n-1}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\Leftarrow (\text{достаточность})&lt;/script&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\vec{a}_n=\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}.&lt;/script&gt; Перенесем &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_n&lt;/script&gt; вправо:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}+(-1)\vec{a}_n=0&lt;/script&gt;
+
+&lt;p&gt;Т.к. есть хотя бы один коэффициент, не равный нулю &lt;script type=&quot;math/tex&quot;&gt;(\lambda_n=-1\Rightarrow\ne0),&lt;/script&gt; то эта линейная комбинация нетривиальная, а значит, система векторов линейно зависима.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-базиса&quot;&gt;Определение базиса&lt;/h2&gt;
+&lt;p&gt;Базисом в пространстве называют упорядоченный набор трех некомпланарных векторов, таких, что если $\vec{e}_1,\vec{e}_2,\vec{e}_3$ — базис, то выполняется
+\begin{equation}
+    \forall\vec{x},\quad \vec{x}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3
+\end{equation}&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-проекции-вектора&quot;&gt;Определение проекции вектора&lt;/h2&gt;
+&lt;p&gt;Проекция $\vec{a}$ на $\vec{b}$ – это вектор $\vec{с}$, коллинеарный $\vec{b}$, конец которого есть ортогональная проекция конца вектора $\vec{a}$ на прямую, параллельную $\vec{b}$.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-скалярного-произведения&quot;&gt;Определение скалярного произведения&lt;/h2&gt;
+&lt;p&gt;Скалярным произведением $\vec{a}\vec{b}$ векторов называют число &lt;script type=&quot;math/tex&quot;&gt;\xi=ab\cos\phi,&lt;/script&gt; где $\phi$ — угол между векторами $\vec{a}$ и $\vec{b}$.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-левой-и-правой-тройки-векторов&quot;&gt;Определение левой и правой тройки векторов&lt;/h2&gt;
+&lt;p&gt;Базис &lt;script type=&quot;math/tex&quot;&gt;\{\vec{e}_1,\vec{e}_2,\vec{e}_3\}&lt;/script&gt; в пространстве называется правым, если при наблюдении с конца вектора $\vec{e}_3$ за кратчайшим поворотом вектора $\vec{e}_1$ к вектору $\vec{e}_2$ поворот осуществляется против часовой стрелки, и левым, если поворот происходит по часовой стрелке.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-векторного-произведения&quot;&gt;Определение векторного произведения&lt;/h2&gt;
+&lt;p&gt;Векторным произведением $\vec{a}\vec{b}$ векторов называют вектор $\vec{N}$, такой, что:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;N=ab\sin\phi,&lt;/script&gt; где $\phi$ — угол между векторами $\vec{a}$ и $\vec{b}$&lt;/li&gt;
+  &lt;li&gt;$\vec{N}\perp\vec{a}, \vec{N}\perp\vec{b}$&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\{\vec{a},\vec{b},\vec{c}\}&lt;/script&gt; – правая тройка&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;При этом модуль вектора численно равен площади параллелограмма, построенного на векторах $\vec{a}$ и $\vec{b}$.&lt;/p&gt;
+
+&lt;h2 id=&quot;определение-смешанного-произведения&quot;&gt;Определение смешанного произведения&lt;/h2&gt;
+&lt;p&gt;Смешанным произведением $(\vec{a},\vec{b},\vec{c})$ векторов называют скалярное произведение $(\vec{a}[\vec{b}\times\vec{c}])$. 
+При этом модуль смешанного произведения численно равен объёму параллелепипеда, образованного векторами $\vec {a} ,\vec {b} ,\vec {c}$.&lt;/p&gt;
+
+&lt;h2 id=&quot;формула-вычисления-скалярного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления скалярного произведения в декартовых координатах&lt;/h2&gt;
+&lt;p&gt;Запишем скалярное произведение в декартовых координатах.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec{a}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\vec{b}=\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Тогда &lt;script type=&quot;math/tex&quot;&gt;(\vec{a},\vec{b})=(\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3)\cdot(\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Учтем, что для ортонормированного базиса из определения скалярного произведения $\vec{e}_1\cdot\vec{e}_2=0,$ $\vec{e}_2\cdot\vec{e}_3=0,$ $\vec{e}_1\cdot\vec{e}_3=0$, а $\vec{e}^2_1=\vec{e}^2_2=\vec{e}^2_3=1$.&lt;/p&gt;
+
+&lt;p&gt;Тогда&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\vec{a},\vec{b})=(\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3)&lt;/script&gt;
+
+&lt;h2 id=&quot;формула-вычисления-векторного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления векторного произведения в декартовых координатах&lt;/h2&gt;
+&lt;p&gt;Векторное произведение в декартовых координатах можно представлять в виде определителя матрицы:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+[\vec{a}\times\vec{b}]=\begin{vmatrix}\vec{e}_1 &amp; \vec{e}_2 &amp; \vec{e}_3\\\lambda_1 &amp; \lambda_2 &amp; \lambda_3 \\ \xi_1 &amp; \xi_2 &amp; \xi_3\end{vmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;формула-вычисления-смешанного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления смешанного произведения в декартовых координатах&lt;/h2&gt;
+&lt;p&gt;Смешанное произведение в декартовых координатах также выражается в виде определителя матрицы:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+(\vec{a},\vec{b},\vec{c})=\pm\begin{vmatrix}a_1 &amp; a_2 &amp; a_3\\b_1 &amp; b_2 &amp; b_3 \\ c_1 &amp; c_2 &amp; c_3\end{vmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Причем его знак зависит от того, правая тройка ($+$) или левая ($-$).&lt;/p&gt;</content><author><name></name></author><category term="аналитическая геометрия" /><category term="линейная зависимость" /><category term="линейная независимость" /><category term="вектора" /><summary type="html">Краткий обзор определений по теоретическому минимуму. Тема “вектора”.</summary></entry><entry><title type="html">Аналитическая геометрия. Прямая и плоскость</title><link href="http://localhost:4000/geometry/2017/01/25/geom2.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Прямая и плоскость" /><published>2017-01-25T10:38:02+03:00</published><updated>2017-01-25T10:38:02+03:00</updated><id>http://localhost:4000/geometry/2017/01/25/geom2</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/25/geom2.html">&lt;p&gt;Прямая и плоскость. Краткий обзор определений, формул. 
 &lt;!--ed--&gt;&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -295,204 +457,4 @@ c_1-a_1 &amp; c_2-a_2 &amp; c_3-a_3 \\
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}=\frac{z-z_0}{a_3}&lt;/script&gt;
 
-&lt;p&gt;где $\vec{a}(a_1,a_2,a_3)$ – направляющий вектор этой прямой.&lt;/p&gt;</content><author><name></name></author><category term="аналитическая геометрия" /><category term="прямая на плоскости" /><category term="перпендикулярная прямая" /><category term="вектора" /><summary type="html">Прямая и плоскость. Краткий обзор определений, формул.</summary></entry><entry><title type="html">Аналитическая геометрия. Вектора</title><link href="http://localhost:4000/geometry/2017/01/25/geom.html" rel="alternate" type="text/html" title="Аналитическая геометрия. Вектора" /><published>2017-01-25T10:38:02+03:00</published><updated>2017-01-25T10:38:02+03:00</updated><id>http://localhost:4000/geometry/2017/01/25/geom</id><content type="html" xml:base="http://localhost:4000/geometry/2017/01/25/geom.html">&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема “вектора”.
-&lt;!--ed--&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-вектора&quot; id=&quot;markdown-toc-определение-вектора&quot;&gt;Определение вектора&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-линейно-зависимых-векторов&quot; id=&quot;markdown-toc-определение-линейно-зависимых-векторов&quot;&gt;Определение линейно зависимых векторов&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-линейно-независимых-векторов&quot; id=&quot;markdown-toc-определение-линейно-независимых-векторов&quot;&gt;Определение линейно независимых векторов&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#критерий-линейной-зависимости&quot; id=&quot;markdown-toc-критерий-линейной-зависимости&quot;&gt;Критерий линейной зависимости&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-базиса&quot; id=&quot;markdown-toc-определение-базиса&quot;&gt;Определение базиса&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-проекции-вектора&quot; id=&quot;markdown-toc-определение-проекции-вектора&quot;&gt;Определение проекции вектора&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-скалярного-произведения&quot; id=&quot;markdown-toc-определение-скалярного-произведения&quot;&gt;Определение скалярного произведения&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-левой-и-правой-тройки-векторов&quot; id=&quot;markdown-toc-определение-левой-и-правой-тройки-векторов&quot;&gt;Определение левой и правой тройки векторов&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-векторного-произведения&quot; id=&quot;markdown-toc-определение-векторного-произведения&quot;&gt;Определение векторного произведения&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#определение-смешанного-произведения&quot; id=&quot;markdown-toc-определение-смешанного-произведения&quot;&gt;Определение смешанного произведения&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#формула-вычисления-скалярного-произведения-в-декартовых-координатах&quot; id=&quot;markdown-toc-формула-вычисления-скалярного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления скалярного произведения в декартовых координатах&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#формула-вычисления-векторного-произведения-в-декартовых-координатах&quot; id=&quot;markdown-toc-формула-вычисления-векторного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления векторного произведения в декартовых координатах&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#формула-вычисления-смешанного-произведения-в-декартовых-координатах&quot; id=&quot;markdown-toc-формула-вычисления-смешанного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления смешанного произведения в декартовых координатах&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-вектора&quot;&gt;Определение вектора&lt;/h2&gt;
-&lt;p&gt;Вектор – это направленный отрезок, у которого известны начальная и конечная точки.&lt;/p&gt;
-
-&lt;p&gt;Линейная комбинация  &lt;script type=&quot;math/tex&quot;&gt;x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_n\vec{a}_n&lt;/script&gt; называется тривиальной, если все коэффициенты &lt;script type=&quot;math/tex&quot;&gt;x_1,\ldots,x_n&lt;/script&gt; равны нулю, и называется нетривиальной, если хотя бы один коэффициент не равен нулю.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-линейно-зависимых-векторов&quot;&gt;Определение линейно зависимых векторов&lt;/h2&gt;
-&lt;p&gt;Вектора &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n&lt;/script&gt; называют линейно зависимыми, если из них можно составить хотя бы одну нетривиальную линейную комбинацию, равную &lt;script type=&quot;math/tex&quot;&gt;(0,0,0)&lt;/script&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-линейно-независимых-векторов&quot;&gt;Определение линейно независимых векторов&lt;/h2&gt;
-&lt;p&gt;Вектора &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n&lt;/script&gt; называют линейно независимыми, если из них можно составить хотя бы одну тривиальную линейную комбинацию, равную &lt;script type=&quot;math/tex&quot;&gt;(0,0,0)&lt;/script&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;критерий-линейной-зависимости&quot;&gt;Критерий линейной зависимости&lt;/h2&gt;
-&lt;p&gt;Система векторов &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n&lt;/script&gt; линейно зависима тогда и только тогда, когда хотя бы один вектор системы линейно выражается через остальные.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\Rightarrow (\text{необходимость})&lt;/script&gt;&lt;br /&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\exists\ x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_{n-1}\vec{a}_{n-1}+x_n\vec{a}_n=0,&lt;/script&gt;  такая, что &lt;script type=&quot;math/tex&quot;&gt;|x_1|+|x_2|+\cdots+|x_n|\ne0.&lt;/script&gt; Положим &lt;script type=&quot;math/tex&quot;&gt;x_{n}\ne0&lt;/script&gt;. Тогда&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}_n=\left(-\frac{x_1}{x_n}\right)\vec{a}_1+\left(-\frac{x_2}{x_n}\right)\vec{a}_2+\cdots+\left(-\frac{x_{n-1}}{x_n}\right)\vec{a}_{n-1}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\Leftarrow (\text{достаточность})&lt;/script&gt;&lt;br /&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\vec{a}_n=\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}.&lt;/script&gt; Перенесем &lt;script type=&quot;math/tex&quot;&gt;\vec{a}_n&lt;/script&gt; вправо:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}+(-1)\vec{a}_n=0&lt;/script&gt;
-
-&lt;p&gt;Т.к. есть хотя бы один коэффициент, не равный нулю &lt;script type=&quot;math/tex&quot;&gt;(\lambda_n=-1\Rightarrow\ne0),&lt;/script&gt; то эта линейная комбинация нетривиальная, а значит, система векторов линейно зависима.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-базиса&quot;&gt;Определение базиса&lt;/h2&gt;
-&lt;p&gt;Базисом в пространстве называют упорядоченный набор трех некомпланарных векторов, таких, что если $\vec{e}_1,\vec{e}_2,\vec{e}_3$ — базис, то выполняется
-\begin{equation}
-    \forall\vec{x},\quad \vec{x}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3
-\end{equation}&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-проекции-вектора&quot;&gt;Определение проекции вектора&lt;/h2&gt;
-&lt;p&gt;Проекция $\vec{a}$ на $\vec{b}$ – это вектор $\vec{с}$, коллинеарный $\vec{b}$, конец которого есть ортогональная проекция конца вектора $\vec{a}$ на прямую, параллельную $\vec{b}$.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-скалярного-произведения&quot;&gt;Определение скалярного произведения&lt;/h2&gt;
-&lt;p&gt;Скалярным произведением $\vec{a}\vec{b}$ векторов называют число &lt;script type=&quot;math/tex&quot;&gt;\xi=ab\cos\phi,&lt;/script&gt; где $\phi$ — угол между векторами $\vec{a}$ и $\vec{b}$.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-левой-и-правой-тройки-векторов&quot;&gt;Определение левой и правой тройки векторов&lt;/h2&gt;
-&lt;p&gt;Базис &lt;script type=&quot;math/tex&quot;&gt;\{\vec{e}_1,\vec{e}_2,\vec{e}_3\}&lt;/script&gt; в пространстве называется правым, если при наблюдении с конца вектора $\vec{e}_3$ за кратчайшим поворотом вектора $\vec{e}_1$ к вектору $\vec{e}_2$ поворот осуществляется против часовой стрелки, и левым, если поворот происходит по часовой стрелке.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-векторного-произведения&quot;&gt;Определение векторного произведения&lt;/h2&gt;
-&lt;p&gt;Векторным произведением $\vec{a}\vec{b}$ векторов называют вектор $\vec{N}$, такой, что:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;N=ab\sin\phi,&lt;/script&gt; где $\phi$ — угол между векторами $\vec{a}$ и $\vec{b}$&lt;/li&gt;
-  &lt;li&gt;$\vec{N}\perp\vec{a}, \vec{N}\perp\vec{b}$&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\{\vec{a},\vec{b},\vec{c}\}&lt;/script&gt; – правая тройка&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;При этом модуль вектора численно равен площади параллелограмма, построенного на векторах $\vec{a}$ и $\vec{b}$.&lt;/p&gt;
-
-&lt;h2 id=&quot;определение-смешанного-произведения&quot;&gt;Определение смешанного произведения&lt;/h2&gt;
-&lt;p&gt;Смешанным произведением $(\vec{a},\vec{b},\vec{c})$ векторов называют скалярное произведение $(\vec{a}[\vec{b}\times\vec{c}])$. 
-При этом модуль смешанного произведения численно равен объёму параллелепипеда, образованного векторами $\vec {a} ,\vec {b} ,\vec {c}$.&lt;/p&gt;
-
-&lt;h2 id=&quot;формула-вычисления-скалярного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления скалярного произведения в декартовых координатах&lt;/h2&gt;
-&lt;p&gt;Запишем скалярное произведение в декартовых координатах.&lt;/p&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec{a}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\vec{b}=\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Тогда &lt;script type=&quot;math/tex&quot;&gt;(\vec{a},\vec{b})=(\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3)\cdot(\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3)&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Учтем, что для ортонормированного базиса из определения скалярного произведения $\vec{e}_1\cdot\vec{e}_2=0,$ $\vec{e}_2\cdot\vec{e}_3=0,$ $\vec{e}_1\cdot\vec{e}_3=0$, а $\vec{e}^2_1=\vec{e}^2_2=\vec{e}^2_3=1$.&lt;/p&gt;
-
-&lt;p&gt;Тогда&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\vec{a},\vec{b})=(\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3)&lt;/script&gt;
-
-&lt;h2 id=&quot;формула-вычисления-векторного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления векторного произведения в декартовых координатах&lt;/h2&gt;
-&lt;p&gt;Векторное произведение в декартовых координатах можно представлять в виде определителя матрицы:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-[\vec{a}\times\vec{b}]=\begin{vmatrix}\vec{e}_1 &amp; \vec{e}_2 &amp; \vec{e}_3\\\lambda_1 &amp; \lambda_2 &amp; \lambda_3 \\ \xi_1 &amp; \xi_2 &amp; \xi_3\end{vmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;формула-вычисления-смешанного-произведения-в-декартовых-координатах&quot;&gt;Формула вычисления смешанного произведения в декартовых координатах&lt;/h2&gt;
-&lt;p&gt;Смешанное произведение в декартовых координатах также выражается в виде определителя матрицы:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-(\vec{a},\vec{b},\vec{c})=\pm\begin{vmatrix}a_1 &amp; a_2 &amp; a_3\\b_1 &amp; b_2 &amp; b_3 \\ c_1 &amp; c_2 &amp; c_3\end{vmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Причем его знак зависит от того, правая тройка ($+$) или левая ($-$).&lt;/p&gt;</content><author><name></name></author><category term="аналитическая геометрия" /><category term="линейная зависимость" /><category term="линейная независимость" /><category term="вектора" /><summary type="html">Краткий обзор определений по теоретическому минимуму. Тема “вектора”.</summary></entry><entry><title type="html">Вывод ускорения Кориолиса</title><link href="http://localhost:4000/phy/2017/01/14/kor.html" rel="alternate" type="text/html" title="Вывод ускорения Кориолиса" /><published>2017-01-14T14:35:05+03:00</published><updated>2017-01-14T14:35:05+03:00</updated><id>http://localhost:4000/phy/2017/01/14/kor</id><content type="html" xml:base="http://localhost:4000/phy/2017/01/14/kor.html">&lt;p&gt;&lt;strong&gt;Лемма&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]&lt;/script&gt;
-
-&lt;p&gt;Примем, что&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{r\,}'=x'\vec{i'}+y'\vec{j'}+z'\vec{k'}&lt;/script&gt;
-
-&lt;!--ed--&gt;
-
-&lt;p&gt;Далее&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{v'}=\frac{d\vec{r'}}{dt}=
-\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'} \text{ (относительная)}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a'}=\frac{d^2\vec{r'}}{dt^2}=
-\frac{d^2x'}{dt^2}\vec{i'}+\frac{d^2y'}{dt^2}\vec{j'}+\frac{d^2z'}{dt^2}\vec{k'} \text{ (относительное)}&lt;/script&gt;
-
-&lt;p&gt;Так как &lt;script type=&quot;math/tex&quot;&gt;\vec{i'}, \vec{j'},\vec{k'}&lt;/script&gt; – не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{v}=\frac{d\vec{r'}}{dt}=%\frac{d\vec{r}}{dt}=&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\left[\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'}\right]+
-\left[x'\frac{d\vec{i'}}{dt}+y'\frac{d\vec{j'}}{dt}+z'\frac{d\vec{k'}}{dt}\right]=&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\vec{v'}+
-\left[x'[\omega\times\vec{i'}]+y'[\omega\times\vec{j'}]+z'[\omega\times\vec{k'}]\right]\Rightarrow&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{v}=\vec{v'}+\left[\omega\times\vec{r'}\right]&lt;/script&gt;
-
-&lt;p&gt;Аналогично&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d\vec{v'}}{dt}=%[\omega\times\vec{v'}]=
-\left[
-\frac{d^2x'}{dt^2}\vec{i'}+
-\frac{d^2y'}{dt^2}\vec{j'}+
-\frac{d^2z'}{dt^2}\vec{k'} 
-\right]+
-\left[
-v'_x\frac{d\vec{i'}}{dt}+
-v'_y\frac{d\vec{j'}}{dt}+
-v'_z\frac{d\vec{k'}}{dt} 
-\right]=&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\vec{a'}+
-\left[v_x'[\omega\times\vec{i'}]+v_y'[\omega\times\vec{j'}]+v_z'[\omega\times\vec{k'}]\right]\Rightarrow&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}=\vec{a'}+\left[\omega\times\vec{v'}\right]+
-\frac{d[\omega\times\vec{r'}]}{dt}=&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\vec{a'}+\left[\omega\times\vec{v'}\right]+
-\left[\vec{\beta}\times\vec{r'}\right]+
-\left[\omega\times\frac{d\vec{r'}}{dt}\right]&lt;/script&gt;
-
-&lt;p&gt;Причем&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[\omega\times\frac{d\vec{r'}}{dt}\right]=
-\left[\omega\times\left(\vec{v'}+\left[\omega\times\vec{r'}\right]\right)\right]=&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\left[\omega\times\vec{v'}\right]+
-\left[\omega\times\left[\omega\times\vec{r'}\right]\right]&lt;/script&gt;
-
-&lt;p&gt;Заметим, что&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[\omega\times\vec{r'}\right]=\left[\omega\times\vec{r'}_{\perp\omega}\right],&lt;/script&gt;
-
-&lt;p&gt;где&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{v'}=\vec{v'}_{\perp\omega}+\vec{v'}_{\parallel\omega}&lt;/script&gt;
-
-&lt;p&gt;Тогда по формуле &lt;script type=&quot;math/tex&quot;&gt;[a[bc]]=b(ac)-c(ab):&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[\omega\times\frac{d\vec{r'}}{dt}\right]=\left[\omega\times\vec{v'}\right]+
-\omega(\omega,\vec{r'}_{\perp\omega})-
-\omega^2\vec{r'}_\perp=&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;=\left[\omega\times\vec{v'}\right]-
-\omega^2\vec{r'}_\perp.&lt;/script&gt;
-
-&lt;p&gt;Тогда&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}=\vec{a'}+2\left[\omega\times\vec{v'}\right]+
-\left[\vec{\beta}\times\vec{r'}\right]-
-\omega^2\vec{r'}_\perp&lt;/script&gt;
-
-&lt;p&gt;Перепишем в виде&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;m\vec{a'}=-m\vec{a_0}+
-2m\left[\vec{v'}\times\omega\right]-
-\left[\vec{\beta}\times\vec{r'}\right]+
-\omega^2\vec{r'}_\perp&lt;/script&gt;
-
-&lt;p&gt;Где можно выделить поступательную, центробежную и переносную силы инерции.&lt;/p&gt;</content><author><name></name></author><category term="физика" /><category term="вывод кориолиса" /><category term="гироскопическая сила" /><category term="сила инерции" /><summary type="html">Лемма: Примем, что</summary></entry></feed>
+&lt;p&gt;где $\vec{a}(a_1,a_2,a_3)$ – направляющий вектор этой прямой.&lt;/p&gt;</content><author><name></name></author><category term="аналитическая геометрия" /><category term="прямая на плоскости" /><category term="перпендикулярная прямая" /><category term="вектора" /><summary type="html">Прямая и плоскость. Краткий обзор определений, формул.</summary></entry></feed>
