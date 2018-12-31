@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="yandex-verification" content="09e309df3b8ffe74" />
-	<meta charset="UTF-8">
-    <title>Решения задач из Яковлева, Иродова и другие &mdash;  Блог Федора Сарафанова</title>
-	<link rel=stylesheet href="/css/main2.min.css">
-  <link rel="stylesheet" href="/css/prism.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+  Решения задач из Яковлева, Иродова и другие  &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
 	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+	
+	
 
-	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
-	<!--   CommonHTML: { linebreaks: {width: "container"} },
-	  "HTML-CSS": { linebreaks: {width: "container"} },
-	         SVG: { linebreaks: {width: "container"} } -->
-	<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	  CommonHTML: { linebreaks: {automatic: true} },
-	  "HTML-CSS": { linebreaks: {automatic: true} },
-	         SVG: { linebreaks: {automatic: true} },
-	  tex2jax : {
-	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-	          processEscapes: true
-	        },
-	    showProcessingMessages: false,
-	    messageStyle: 'none'
-	});
-	</script>
+	
 
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
 	<script>
-	  function ready() {
-	    hljs.initHighlightingOnLoad();
-	  }
-	  document.addEventListener("DOMContentLoaded", ready);
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$\n", right: "\n$$", display: true},
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
 	</script>
 
-	
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </head>
+
 <body> 
 <div id="wrapper">
 	<div id="aside"> 
 		<aside>
 			<div id="title">  
-				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
 			</div>
 			<ul id="nav">
 				<li><a href="/">Главная</a></li>
@@ -58,280 +88,264 @@
 				<li><a href="/lections">Лекции</a></li>
 				<li><a href="/lab">Лабораторные</a></li>
 				<li><a href="/cook">pdf в jpg</a></li>
+				<li><a href="/tickets">Билеты</a></li>
        			<li><a href="/python_lab">Численные методы</a></li>
 				<li><a href="/python">Python</a></li>
 				<li><a href="/matlab">Matlab</a></li>
 				<li><a href="/tikz">TikZ</a></li>
 				<li><a href="/pgfplots">PGFPlots</a></li>
-				<li><a href="/cook/gallery.html">Галерея графиков</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
 				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
 				<li><a href="/2017/01/01/about.html">О блоге</a></li>
 			</ul>
 			<footer>
-				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+				
 			</footer>
 		</aside>
 	</div>
 	<main>
 		<section>
-<header><time class='datetime'>В помощь студенту</time><h1>Иродов</h1></header>
+        
+
+
+  <h1> Решения задач из Яковлева, Иродова и другие </h1>
+  <header><time class='datetime'>В помощь студенту</time><h1>Иродов</h1></header>
 <article>
-   <div class='problem'><a href='/problems/1-19.jpg'>1-19</a></div>
-<div class='problem'><a href='/problems/1-24.jpg'>1-24</a></div>
-<div class='problem'><a href='/problems/1-47.jpg'>1-47</a></div>
-<div class='problem'><a href='/problems/1-65.jpg'>1-65</a></div>
-<div class='problem'><a href='/problems/1-67.jpg'>1-67</a></div>
-<div class='problem'><a href='/problems/1-74.jpg'>1-74</a></div>
-<div class='problem'><a href='/problems/1-75.jpg'>1-75</a></div>
-<div class='problem'><a href='/problems/1-76.jpg'>1-76</a></div>
-<div class='problem'><a href='/problems/1-84.jpg'>1-84</a></div>
-<div class='problem'><a href='/problems/1-85.jpg'>1-85</a></div>
-<div class='problem'><a href='/problems/1-88.jpg'>1-88</a></div>
+    <p>
+    <div class='problem'><a href='/problems/1-19.jpg'>1-19</a></div>
+    <div class='problem'><a href='/problems/1-24.jpg'>1-24</a></div>
+    <div class='problem'><a href='/problems/1-47.jpg'>1-47</a></div>
+    <div class='problem'><a href='/problems/1-65.jpg'>1-65</a></div>
+    <div class='problem'><a href='/problems/1-67.jpg'>1-67</a></div>
+    <div class='problem'><a href='/problems/1-74.jpg'>1-74</a></div>
+    <div class='problem'><a href='/problems/1-75.jpg'>1-75</a></div>
+    <div class='problem'><a href='/problems/1-76.jpg'>1-76</a></div>
+    <div class='problem'><a href='/problems/1-84.jpg'>1-84</a></div>
+    <div class='problem'><a href='/problems/1-85.jpg'>1-85</a></div>
+    <div class='problem'><a href='/problems/1-88.jpg'>1-88</a></div>
 
-<div class='problem'><a href='/problems/1-104.jpg'>1-104</a></div>
-<div class='problem'><a href='/problems/1-108.jpg'>1-108</a></div>
+    <div class='problem'><a href='/problems/1-104.jpg'>1-104</a></div>
+    <div class='problem'><a href='/problems/1-108.jpg'>1-108</a></div>
 
-<div class='problem'><a href='/problems/1-119.jpg'>1-119</a></div>
-<div class='problem'><a href='/problems/1-124.jpg'>1-124</a></div>
-<div class='problem'><a href='/problems/1-121.jpg'>1-121</a></div>
-<div class='problem'><a href='/problems/1-129.jpg'>1-129</a></div>
+    <div class='problem'><a href='/problems/1-119.jpg'>1-119</a></div>
+    <div class='problem'><a href='/problems/1-124.jpg'>1-124</a></div>
+    <div class='problem'><a href='/problems/1-121.jpg'>1-121</a></div>
+    <div class='problem'><a href='/problems/1-129.jpg'>1-129</a></div>
 
-<!-- 23 февраля 2017 -->
-<div class='problem'><a href='/problems/1-136.jpg'>1-136</a></div>
-<div class='problem'><a href='/problems/1-137.jpg'>1-137</a></div>
+    <!-- 23 февраля 2017 -->
+    <div class='problem'><a href='/problems/1-136.jpg'>1-136</a></div>
+    <div class='problem'><a href='/problems/1-137.jpg'>1-137</a></div>
 
-<!-- 1 марта 2017 -->
-<div class='problem'><a href='/problems/1-147.jpg'>1-147</a></div>
+    <!-- 1 марта 2017 -->
+    <div class='problem'><a href='/problems/1-147.jpg'>1-147</a></div>
 
-<div class='problem'><a href='/problems/1-160.jpg'>1-160</a></div>
-<div class='problem'><a href='/problems/1-163.jpg'>1-163</a></div>
+    <div class='problem'><a href='/problems/1-160.jpg'>1-160</a></div>
+    <div class='problem'><a href='/problems/1-163.jpg'>1-163</a></div>
 
-<div class='problem'><a href='/problems/1-173.jpg'>1-173</a></div>
-<div class='problem'><a href='/problems/1-177.jpg'>1-177</a></div>
-<div class='problem'><a href='/problems/1-178.jpg'>1-178</a></div>
+    <div class='problem'><a href='/problems/1-173.jpg'>1-173</a></div>
+    <div class='problem'><a href='/problems/1-177.jpg'>1-177</a></div>
+    <div class='problem'><a href='/problems/1-178.jpg'>1-178</a></div>
 
-<!-- 5 марта 2017 -->
-<div class='problem'><a href='/problems/1-182.jpg'>1-182</a></div>
-<div class='problem'><a href='/problems/1-185.jpg'>1-185</a></div>
+    <!-- 5 марта 2017 -->
+    <div class='problem'><a href='/problems/1-182.jpg'>1-182</a></div>
+    <div class='problem'><a href='/problems/1-185.jpg'>1-185</a></div>
 
-<div class='problem'><a href='/problems/1-205.jpg'>1-205</a></div>
-<div class='problem'><a href='/problems/1-206.jpg'>1-206</a></div>
-<div class='problem'><a href='/problems/1-242.jpg'>1-242</a></div>
-<div class='problem'><a href='/problems/1-257b.jpg'>1-257b</a></div>
-<div class='problem'><a href='/problems/1-260.jpg'>1-260</a></div>
-<div class='problem'><span>1-268</span><span class='href'><a href='/problems/1-268-0.jpg'>1</a><a href='/problems/1-268-1.jpg'>2</a></span></div>
-<div class='problem'><a href='/problems/1-273.jpg'>1-273</a></div>
-<div class='problem'><span>1-294</span><span class='href'><a href='/problems/1-294-0.jpg'>1</a><a href='/problems/1-294-1.jpg'>2</a></span></div>
+    <div class='problem'><a href='/problems/1-205.jpg'>1-205</a></div>
+    <div class='problem'><a href='/problems/1-206.jpg'>1-206</a></div>
+    <div class='problem'><a href='/problems/1-242.jpg'>1-242</a></div>
+    <div class='problem'><a href='/problems/1-257b.jpg'>1-257b</a></div>
+    <div class='problem'><a href='/problems/1-260.jpg'>1-260</a></div>
+    <div class='problem'><span>1-268</span><span class='href'><a href='/problems/1-268-0.jpg'>1</a><a href='/problems/1-268-1.jpg'>2</a></span></div>
+    <div class='problem'><a href='/problems/1-273.jpg'>1-273</a></div>
+    <div class='problem'><span>1-294</span><span class='href'><a href='/problems/1-294-0.jpg'>1</a><a href='/problems/1-294-1.jpg'>2</a></span></div>
 
-<div class='problem'><a href='/problems/1-298.jpg'>1-298</a></div>
+    <div class='problem'><a href='/problems/1-298.jpg'>1-298</a></div>
 
-<div class='problem'><a href='/problems/1-310.jpg'>1-310</a></div>
-<div class='problem'><a href='/problems/1-311.jpg'>1-311</a></div>
-<div class='problem'><a href='/problems/1-314.jpg'>1-314</a></div>
-<div class='problem'><a href='/problems/1-339.jpg'>1-339</a></div>
-<div class='problem'><a href='/problems/1-348.jpg'>1-348</a></div>
-<div class='problem'><a href='/problems/1-368.jpg'>1-368</a></div>
-<div class='problem'><a href='/problems/1-370.jpg'>1-370</a></div>
-<div class='problem'><a href='/problems/1-372.jpg'>1-372</a></div>
-<div class='problem'><a href='/problems/1-380.jpg'>1-380</a></div>
-<div class='problem'><a href='/problems/1-382.jpg'>1-382</a></div>
-<div class='problem'><a href='/problems/1-383.jpg'>1-383</a></div>
-<div class='problem'><a href='/problems/1-390.jpg'>1-390</a></div>
-<div class='problem'><a href='/problems/1-399.jpg'>1-399</a></div>
+    <div class='problem'><a href='/problems/1-310.jpg'>1-310</a></div>
+    <div class='problem'><a href='/problems/1-311.jpg'>1-311</a></div>
+    <div class='problem'><a href='/problems/1-314.jpg'>1-314</a></div>
+    <div class='problem'><a href='/problems/1-339.jpg'>1-339</a></div>
+    <div class='problem'><a href='/problems/1-348.jpg'>1-348</a></div>
+    <div class='problem'><a href='/problems/1-368.jpg'>1-368</a></div>
+    <div class='problem'><a href='/problems/1-370.jpg'>1-370</a></div>
+    <div class='problem'><a href='/problems/1-372.jpg'>1-372</a></div>
+    <div class='problem'><a href='/problems/1-380.jpg'>1-380</a></div>
+    <div class='problem'><a href='/problems/1-382.jpg'>1-382</a></div>
+    <div class='problem'><a href='/problems/1-383.jpg'>1-383</a></div>
+    <div class='problem'><a href='/problems/1-390.jpg'>1-390</a></div>
+    <div class='problem'><a href='/problems/1-399.jpg'>1-399</a></div>
 
-<div class='problem'><a href='/problems/4-37.jpg'>4-37</a></div>
-<div class='problem'><a href='/problems/4-39.jpg'>4-39</a></div>
-
-
-
-
-
-
-
-
-
+    <div class='problem'><a href='/problems/4-37.jpg'>4-37</a></div>
+    <div class='problem'><a href='/problems/4-39.jpg'>4-39</a></div>
+    </p>
 </article> 
 
 <header><time class='datetime'>В помощь студенту</time><h1>Яковлев</h1></header>
 <article>
-    <!-- <div class='problem'><a href='/problems/109.jpg'>109</a></div> -->
-<div class='problem'><span>20</span><span class='href'><a href='/problems/20-0.jpg'>1</a><a href='/problems/20-1.jpg'>2</a></span></div>
-<div class='problem'><a href='/problems/41.jpg'>41</a></div>
-<div class='problem'><span>91</span><span class='href'><a href='/problems/91-0.jpg'>1</a><a href='/problems/91-1.jpg'>2</a></span></div>
-<div class='problem'><span>114</span><span class='href'><a href='/problems/114-0.jpg'>1</a><a href='/problems/114-1.jpg'>2</a></span></div>
-<div class='problem'><a href='/problems/178.jpg'>178</a></div>
-<div class='problem'><a href='/problems/196.jpg'>196</a></div>
-<div class='problem'><a href='/problems/217.jpg'>217(контрольная)</a></div>
-<div class='problem'><a href='/problems/238.jpg'>238</a></div>
-<div class='problem'><a href='/problems/239.jpg'>239</a></div>
-<div class='problem'><span>247</span><span class='href'><a href='/problems/247-0.jpg'>1</a><a href='/problems/247-1.jpg'>2</a></span></div>
-<div class='problem'><a href='/problems/262.jpg'>262</a></div>
-<div class='problem'><a href='/problems/269.jpg'>269</a></div>
-<div class='problem'><a href='/problems/293.jpg'>293</a></div>
-<div class='problem'><span>304</span><span class='href'><a href='/problems/304-0.jpg'>1</a><a href='/problems/304-1.jpg'>2</a></span></div>
-<div class='problem'><a href='/problems/310.jpg'>310</a></div>
-<div class='problem'><a href='/problems/317.jpg'>317</a></div>
-<div class='problem'><a href='/problems/322.jpg'>322</a></div>
-<div class='problem'><a href='/problems/353.jpg'>353</a></div>
-<div class='problem'><span>360</span><span class='href'><a href='/problems/360-0.jpg'>1</a><a href='/problems/360-1.jpg'>2</a></span></div>
-
-<div class='problem'><a href='/problems/402.jpg'>402</a></div>
-<div class='problem'><a href='/problems/404.jpg'>404</a></div>
-
-<div class='problem'><a href='/problems/578.jpg'>578</a></div>
-<div class='problem'><a href='/problems/645.jpg'>645</a></div>
-<div class='problem'><span>660</span><span class='href'><a href='/problems/660-0.jpg'>1</a><a href='/problems/660-1.jpg'>2</a></span></div>
-
-
-
-<!-- 5 марта 2017 -->
-
-
-
-
-
+    <p>
+        <!-- <div class='problem'><a href='/problems/109.jpg'>109</a></div> -->
+        <div class='problem'><span>20</span><span class='href'><a href='/problems/20-0.jpg'>1</a><a href='/problems/20-1.jpg'>2</a></span></div>
+        <div class='problem'><a href='/problems/41.jpg'>41</a></div>
+        <div class='problem'><span>91</span><span class='href'><a href='/problems/91-0.jpg'>1</a><a href='/problems/91-1.jpg'>2</a></span></div>
+        <div class='problem'><span>114</span><span class='href'><a href='/problems/114-0.jpg'>1</a><a href='/problems/114-1.jpg'>2</a></span></div>
+        <div class='problem'><a href='/problems/178.jpg'>178</a></div>
+        <div class='problem'><a href='/problems/196.jpg'>196</a></div>
+        <div class='problem'><a href='/problems/217.jpg'>217(контрольная)</a></div>
+        <div class='problem'><a href='/problems/238.jpg'>238</a></div>
+        <div class='problem'><a href='/problems/239.jpg'>239</a></div>
+        <div class='problem'><span>247</span><span class='href'><a href='/problems/247-0.jpg'>1</a><a href='/problems/247-1.jpg'>2</a></span></div>
+        <div class='problem'><a href='/problems/262.jpg'>262</a></div>
+        <div class='problem'><a href='/problems/269.jpg'>269</a></div>
+        <div class='problem'><a href='/problems/293.jpg'>293</a></div>
+        <div class='problem'><span>304</span><span class='href'><a href='/problems/304-0.jpg'>1</a><a href='/problems/304-1.jpg'>2</a></span></div>
+        <div class='problem'><a href='/problems/310.jpg'>310</a></div>
+        <div class='problem'><a href='/problems/317.jpg'>317</a></div>
+        <div class='problem'><a href='/problems/322.jpg'>322</a></div>
+        <div class='problem'><a href='/problems/353.jpg'>353</a></div>
+        <div class='problem'><span>360</span><span class='href'><a href='/problems/360-0.jpg'>1</a><a href='/problems/360-1.jpg'>2</a></span></div>
+        <div class='problem'><a href='/problems/402.jpg'>402</a></div>
+        <div class='problem'><a href='/problems/404.jpg'>404</a></div>
+        <div class='problem'><a href='/problems/578.jpg'>578</a></div>
+        <div class='problem'><a href='/problems/645.jpg'>645</a></div>
+        <div class='problem'><span>660</span><span class='href'><a href='/problems/660-0.jpg'>1</a><a href='/problems/660-1.jpg'>2</a></span></div>
+    </p>
 </article> 
 <header><time class='datetime'>В помощь студенту</time><h1>Под запись</h1></header>
 <article>
+    <p>
     <div class='problem'><span>доска</span><span class='href'><a href='/problems/доска-0.jpg'>1</a><a href='/problems/доска-1.jpg'>2</a></span></div>
-<div class='problem'><a href='/problems/катушка.jpg'>катушка</a></div>
-<div class='problem'><a href='/problems/клин.jpg'>клин</a></div>
+    <div class='problem'><a href='/problems/катушка.jpg'>катушка</a></div>
+    <div class='problem'><a href='/problems/клин.jpg'>клин</a></div>
 
-<!-- 13 марта 2017 -->
-<div class='problem'><a href='/problems/ауу1.jpg'>АУУ-1</a></div>
-<!-- <div class='problem'><a href='/problems/ауу2.jpg'>АУУ-2</a></div> -->
-<!-- <div class='problem'><a href='/problems/ану.jpg'>АНУ</a></div> -->
+    <!-- 13 марта 2017 -->
+    <div class='problem'><a href='/problems/ауу1.jpg'>АУУ-1</a></div>
+    <!-- <div class='problem'><a href='/problems/ауу2.jpg'>АУУ-2</a></div> -->
+    <!-- <div class='problem'><a href='/problems/ану.jpg'>АНУ</a></div> -->
 
-<div class='problem'><span>АНУ</span><span class='href'><a href='/problems/ану-0.jpg'>1</a><a href='/problems/ану-1.jpg'>2</a></span></div>
+    <div class='problem'><span>АНУ</span><span class='href'><a href='/problems/ану-0.jpg'>1</a><a href='/problems/ану-1.jpg'>2</a></span></div>
 
-<div class='problem'><span>АУУ-2</span><span class='href'><a href='/problems/ауу2-0.jpg'>1</a><a href='/problems/ауу2-1.jpg'>2</a></span></div>
-<!-- <div class='problem'><a href='/problems/поле.jpg'>поле</a></div> -->
- 
+    <div class='problem'><span>АУУ-2</span><span class='href'><a href='/problems/ауу2-0.jpg'>1</a><a href='/problems/ауу2-1.jpg'>2</a></span></div>
+    <!-- <div class='problem'><a href='/problems/поле.jpg'>поле</a></div> -->
+    </p>
 </article>     
 
-<!--  
-
- 
-
- 
-
+<!-- {% for post in site.posts %} 
+{% if post.ex %}
 <header>
-	<time class="datetime">Feb 23, 2017</time>
-    <h1><a href="/2017/02/23/irodov-1-19.html">Иродов - решение задачи №1.19</a></h1>
+    <time class="datetime">{{ post.date | date: "%b %e, %Y" }}</time>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 </header>
 
-<article>
-<h3 id="условие-задачи">Условие задачи</h3>
-<p>За промежуток времени $\tau=10,0$ с точка прошла половину окружности радиуса $R=160$ см. Вычислить за это время: 
-а) среднюю скорость &lt;$v$&gt;; 
-б) модуль среднего вектора скорости |&lt;$v$&gt;|; 
-в) модуль среднего вектора полного ускорения |&lt;$w$&gt;|, если точка двигалась с постоянным тангенциальным ускорением.</p>
-
-<h3 id="решение">Решение</h3>
+<p><article>
+{{ post.excerpt }}
+<div class="readmore"><a href="{{ post.url }}">Читать далее</a></div>
+</article>
+{% endif %}
+{% endfor %}      --&gt;</p>
 
 
-<div class="readmore"><a href="/2017/02/23/irodov-1-19.html">Читать далее</a></div>
-</article> 
+  
 
- 
+  <header>
+    <time class="datetime">2017/01/01</time>
+      <h1><a href="/problems/2017-02-23-1-104/">Иродов - решение задачи №1.104(1.111)</a></h1>
+  </header>
+  <article>
+    
+<p><strong>Условие задачи.</strong>
+Винтовку навели на вертикальную черту мишени, находящейся точно в северном направлении, и выстрелили. Пренебрегая сопротивлением воздуха, найти, на сколько сантиметров и в какую сторону пуля, попав в мишень, отклонится от черты. Выстрел произведен в горизонтальном направлении на широте $\phi=60^\circ$, скорость пули $v=900$ м/с и расстояние до мишени $1$ км.</p>
 
-<header>
-	<time class="datetime">Feb 23, 2017</time>
-    <h1><a href="/2017/02/23/irodov-1-163.html">Иродов - решение задачи №1.163(1.142)</a></h1>
-</header>
+<p><strong>Решение</strong></p>
+  
+  <div class="readmore"><a href="/problems/2017-02-23-1-104/">Читать далее</a></div>
+  </article>
 
-<article>
-<h3 id="условие-задачи">Условие задачи</h3>
-<p>Гладкий легкий горизонтальный стержень $АВ$ может вращаться вокруг вертикальной оси, проходящей через его конец $А$. На стержне находится небольшая муфточка массы $m$, соединенная невесомой пружинкой длины $l_0$ с концом $А$. Жесткость пружинки равна $k$. Какую работу надо совершить, чтобы эту систему медленно раскрутить до угловой скорости $\omega$?</p>
+  
 
-<h3 id="решение">Решение</h3>
+  <header>
+    <time class="datetime">2017/01/01</time>
+      <h1><a href="/problems/2017-02-23-irodov-1-108/">Иродов - решение задачи №1.108(1.112)</a></h1>
+  </header>
+  <article>
+    
+<p><strong>Условие задачи.</strong>
+Горизонтальный диск вращают с постоянной угловой скоростью $\omega=6$ рад/с вокруг вертикальной оси, проходящей через его центр. По одному из диаметров диска движется небольшое тело массы m = $0.5$ кг с постоянной относительно диска скоростью $v'=50$ см/с. Найти силу, с которой диск действует на это тело в момент, когда оно находится на расстоянии $r=30$ см от оси вращения.</p>
+
+<p><strong>Решение</strong></p>
+  
+  <div class="readmore"><a href="/problems/2017-02-23-irodov-1-108/">Читать далее</a></div>
+  </article>
+
+  
+
+  <header>
+    <time class="datetime">2017/01/01</time>
+      <h1><a href="/problems/2017-02-23-irodov-1-160/">Иродов - решение задачи №1.160(1.136)</a></h1>
+  </header>
+  <article>
+    
+<p><strong>Условие задачи.</strong>
+Небольшое тело $A$ начинает скользить с высоты $h$ по наклонному желобу, переходящему в полуокружность радиуса $h/2$. Пренебрегая трением, найти скорость тела в наивысшей точке его траектории (после отрыва от желоба).</p>
+
+<p><strong>Решение</strong></p>
+  
+  <div class="readmore"><a href="/problems/2017-02-23-irodov-1-160/">Читать далее</a></div>
+  </article>
+
+  
+
+  <header>
+    <time class="datetime">2017/01/01</time>
+      <h1><a href="/problems/2017-02-23-irodov-1-163/">Иродов - решение задачи №1.163(1.142)</a></h1>
+  </header>
+  <article>
+    
+<p><strong>Условие задачи.</strong>
+Гладкий легкий горизонтальный стержень $AB$ может вращаться вокруг вертикальной оси, проходящей через его конец $A$. На стержне находится небольшая муфточка массы $m$, соединенная невесомой пружинкой длины $l_0$ с концом $A$. Жесткость пружинки равна $k$. Какую работу надо совершить, чтобы эту систему медленно раскрутить до угловой скорости $\omega$?</p>
+
+<p><strong>Решение</strong></p>
+  
+  <div class="readmore"><a href="/problems/2017-02-23-irodov-1-163/">Читать далее</a></div>
+  </article>
+
+  
+
+  <header>
+    <time class="datetime">2017/01/01</time>
+      <h1><a href="/problems/2017-02-23-irodov-1-19/">Иродов - решение задачи №1.19</a></h1>
+  </header>
+  <article>
+    
+<p><strong>Условие задачи.</strong>
+За промежуток времени $\tau=10$ с точка прошла половину окружности радиуса $R=160$ см. Вычислить за это время:
+а) среднюю скорость $\langle v \rangle$;
+б) модуль среднего вектора скорости $|\langle v\rangle|$;
+в) модуль среднего вектора полного ускорения $|\langle w\rangle|$, если точка двигалась с постоянным тангенциальным ускорением.</p>
+
+<p><strong>Решение</strong></p>
+  
+  <div class="readmore"><a href="/problems/2017-02-23-irodov-1-19/">Читать далее</a></div>
+  </article>
+
+  
+
+   
+  
 
 
-<div class="readmore"><a href="/2017/02/23/irodov-1-163.html">Читать далее</a></div>
-</article> 
-
- 
-
-<header>
-	<time class="datetime">Feb 23, 2017</time>
-    <h1><a href="/2017/02/23/irodov-1-160.html">Иродов - решение задачи №1.160(1.136)</a></h1>
-</header>
-
-<article>
-<h3 id="условие-задачи">Условие задачи</h3>
-<p>Небольшое тело <script type="math/tex">А</script> начинает скользить с высоты <script type="math/tex">h</script> по наклонному желобу, переходящему в полуокружность радиуса <script type="math/tex">h/2</script>. Пренебрегая трением, найти скорость тела в наивысшей точке его траектории (после отрыва от желоба).</p>
-
-<h3 id="решение">Решение</h3>
 
 
-<div class="readmore"><a href="/2017/02/23/irodov-1-160.html">Читать далее</a></div>
-</article> 
-
- 
-
-<header>
-	<time class="datetime">Feb 23, 2017</time>
-    <h1><a href="/2017/02/23/irodov-1-108.html">Иродов - решение задачи №1.108(1.112)</a></h1>
-</header>
-
-<article>
-<h3 id="условие-задачи">Условие задачи</h3>
-<p>Горизонтальный диск вращают с постоянной угловой скоростью <script type="math/tex">\omega=6</script> рад/с вокруг вертикальной оси, проходящей через его центр. По одному из диаметров диска движется небольшое тело массы m = <script type="math/tex">0.5</script> кг с постоянной относительно диска скоростью $v’=50$ см/с. Найти силу, с которой диск действует на это тело в момент, когда оно находится на расстоянии $r=30$ см от оси вращения.</p>
-
-<h3 id="решение">Решение</h3>
 
 
-<div class="readmore"><a href="/2017/02/23/irodov-1-108.html">Читать далее</a></div>
-</article> 
 
- 
-
-<header>
-	<time class="datetime">Feb 23, 2017</time>
-    <h1><a href="/2017/02/23/1-104.html">Иродов - решение задачи №1.104(1.111)</a></h1>
-</header>
-
-<article>
-<h3 id="условие-задачи">Условие задачи</h3>
-<p>Винтовку навели на вертикальную черту мишени, находящейся точно в северном направлении, и выстрелили. Пренебрегая сопротивлением воздуха, найти, на сколько сантиметров и в какую сторону пуля, попав в мишень, отклонится от черты. Выстрел произведен в горизонтальном направлении на широте <script type="math/tex">\phi=60^\circ</script>, скорость пули <script type="math/tex">v=900</script> м/с и расстояние до мишени <script type="math/tex">=1</script> км.</p>
-
-<h3 id="решение">Решение</h3>
-
-
-<div class="readmore"><a href="/2017/02/23/1-104.html">Читать далее</a></div>
-</article> 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-      -->  
-
- 
       </section>
 	</main>
 </div>
 
 
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-<script src="/js/prism.js"></script>
-</body>
+ 
+
+
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

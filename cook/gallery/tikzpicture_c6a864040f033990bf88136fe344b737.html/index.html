@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Исходники иллюстрации &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue, very thick}, axis/.style={densely dashed,black!60,font=\small}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, ] \def\w{40mm} \def\h{90mm} \drawinterface -- (\w&#43;10mm,0);
+\draw (0,\h) -- (0,0) -- (\w,0) -- (\w,\h); \foreach \c in {0,10,...,70}{ \draw (10 mm, 80 mm - \c mm) node[left, xshift=-10mm] {\c}; \draw (0.3,80 mm - \c mm) -- (0.7,80 mm - \c mm); } \foreach \d in {10,11,...,80}{ \draw (0.4,\d mm) -- (0.6,\d mm); } \draw [axis, -&amp;gt;] (\w&#43;10mm,\h-10mm) --(\w&#43;10mm,10mm) node [below] {$&#43;x$}; \coordinate (C) at (\w/2, 60mm); \draw [fill=black!|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$\n", right: "\n$$", display: true},
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+				<li><a href="/tickets">Билеты</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+				
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">0001/01/01</time>
+  <h1>Исходники иллюстрации</h1>
+</header>
+
+<article>
+  
+<p><a class="imag2" href="/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.tex"><img src="/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.pdf.jpg" alt=""></a>
+<a href="/cook/gallery/pre">pre.tex</a>
+<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+    force/.style={&gt;=latex,draw=blue,fill=blue, very thick},
+    axis/.style={densely dashed,black!60,font=\small},
+    interface/.style={draw=gray!60,
+        postaction={draw=gray!60,decorate,decoration={border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm}}},
+]
+    \def\w{40mm}
+    \def\h{90mm}
+    \draw<a href="-10mm,0">interface</a> -- (\w+10mm,0);</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">\draw  (0,\h) -- (0,0) -- (\w,0) -- (\w,\h);
+
+\foreach \c in {0,10,...,70}{
+    \draw (10 mm, 80 mm - \c mm) node[left, xshift=-10mm] {\c};
+    \draw (0.3,80 mm - \c mm) -- (0.7,80 mm - \c mm);
+}
+
+\foreach \d in {10,11,...,80}{
+    \draw (0.4,\d mm) -- (0.6,\d mm);
+}
+
+\draw [axis, -&gt;] (\w+10mm,\h-10mm) --(\w+10mm,10mm) node [below] {$+x$};
+
+\coordinate (C) at (\w/2, 60mm);
+\draw [fill=black!30] (C) circle (2.5mm);
+
+\draw[force, -&gt;] (C) -- ++ (0, 10mm) node [right] {$\vec{F}_\text{арх}$};
+\draw[force, -&gt;] (C) -- ++ (0, 20mm) node [right] {$\vec{F}_\text{тр}$};
+
+\draw[force, -&gt;] (C) -- ++ (0,  -20mm) node [right] {$m\vec{g}$};
+
+\draw [fill=black] (C) circle (0.5mm);
+
+\draw [&lt;-&gt;] (0,5mm) --(\w,5mm) node [above, pos=0.5] {$2R$};
+
+\draw[axis] ($(C)+(0,2.5mm)$) --($(C)+(10mm,2.5mm)$);
+\draw[axis] ($(C)+(0,-2.5mm)$) --($(C)+(10mm,-2.5mm)$);
+
+\draw[&lt;-&gt;] ($(C)+(10mm,2.5mm)$)--($(C)+(10mm,-2.5mm)$) node [right, pos=0.5] {$2r$};
+
+\draw [fill=black, opacity=0.1] (0,0) -- (0,\h-8mm) -- (\w,\h-8mm) -- (\w,0) -- cycle;</pre></div>
+<p>\end{tikzpicture}\end{document}</code></pre></p>
+
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ 
+
+
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>

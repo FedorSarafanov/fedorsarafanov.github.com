@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="yandex-verification" content="09e309df3b8ffe74" />
-	<meta charset="UTF-8">
-    <title>PDF->PNG и обратно &mdash;  Блог Федора Сарафанова</title>
-	<link rel=stylesheet href="/css/main2.min.css">
-  <link rel="stylesheet" href="/css/prism.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      PDF-&gt;PNG и обратно &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
 	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+	
+	
 
-	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
-	<!--   CommonHTML: { linebreaks: {width: "container"} },
-	  "HTML-CSS": { linebreaks: {width: "container"} },
-	         SVG: { linebreaks: {width: "container"} } -->
-	<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({
-	  CommonHTML: { linebreaks: {automatic: true} },
-	  "HTML-CSS": { linebreaks: {automatic: true} },
-	         SVG: { linebreaks: {automatic: true} },
-	  tex2jax : {
-	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-	          processEscapes: true
-	        },
-	    showProcessingMessages: false,
-	    messageStyle: 'none'
-	});
-	</script>
+	
 
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
 	<script>
-	  function ready() {
-	    hljs.initHighlightingOnLoad();
-	  }
-	  document.addEventListener("DOMContentLoaded", ready);
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$\n", right: "\n$$", display: true},
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
 	</script>
 
-	
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </head>
+
 <body> 
 <div id="wrapper">
 	<div id="aside"> 
 		<aside>
 			<div id="title">  
-				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
 			</div>
 			<ul id="nav">
 				<li><a href="/">Главная</a></li>
@@ -58,116 +88,109 @@
 				<li><a href="/lections">Лекции</a></li>
 				<li><a href="/lab">Лабораторные</a></li>
 				<li><a href="/cook">pdf в jpg</a></li>
+				<li><a href="/tickets">Билеты</a></li>
        			<li><a href="/python_lab">Численные методы</a></li>
 				<li><a href="/python">Python</a></li>
 				<li><a href="/matlab">Matlab</a></li>
 				<li><a href="/tikz">TikZ</a></li>
 				<li><a href="/pgfplots">PGFPlots</a></li>
-				<li><a href="/cook/gallery.html">Галерея графиков</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
 				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
 				<li><a href="/2017/01/01/about.html">О блоге</a></li>
 			</ul>
 			<footer>
-				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+				
 			</footer>
 		</aside>
 	</div>
 	<main>
 		<section>
+        
+
+
+
 <header>
-    <h1><a href="/cook">PDF-&gt;PNG и обратно</a></h1>
+  <time class="datetime">2018/12/12</time>
+  <h1>PDF-&gt;PNG и обратно</h1>
 </header>
 
-<ul id="markdown-toc">
-  <li><a href="#конвертирование-нескольких-jpgpngpdf-в-один-файл-onepdf" id="markdown-toc-конвертирование-нескольких-jpgpngpdf-в-один-файл-onepdf">Конвертирование нескольких jpg/png/pdf в один файл one.pdf</a></li>
-  <li><a href="#конвертирование-многостраничного-pdf-в-несколько-jpgpng-300dpi" id="markdown-toc-конвертирование-многостраничного-pdf-в-несколько-jpgpng-300dpi">Конвертирование многостраничного pdf в несколько jpg/png, 300dpi</a></li>
-  <li><a href="#конвертирование-tif-в-jpg" id="markdown-toc-конвертирование-tif-в-jpg">Конвертирование *.tif в *.jpg</a></li>
-  <li><a href="#пакетное-сканирование-в-png" id="markdown-toc-пакетное-сканирование-в-png">Пакетное сканирование в png</a></li>
-  <li><a href="#минимальный-рабочий-пример-mwe-tikz-standalone" id="markdown-toc-минимальный-рабочий-пример-mwe-tikz-standalone">Минимальный рабочий пример (MWE) tikz-standalone</a></li>
+<article>
+  
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#конвертирование-нескольких-jpg-png-pdf-в-один-файл-one-pdf">Конвертирование нескольких jpg/png/pdf в один файл one.pdf</a></li>
+<li><a href="#конвертирование-многостраничного-pdf-в-несколько-jpg-png-300dpi">Конвертирование многостраничного pdf в несколько jpg/png, 300dpi</a></li>
+<li><a href="#конвертирование-tif-в-jpg">Конвертирование *.tif в *.jpg</a></li>
+<li><a href="#пакетное-сканирование-в-png">Пакетное сканирование в png</a></li>
+</ul></li>
 </ul>
+</nav> 
+  
 
-<h2 id="конвертирование-нескольких-jpgpngpdf-в-один-файл-onepdf">Конвертирование нескольких jpg/png/pdf в один файл one.pdf</h2>
-<p>Конвертация набора изображений (или pdf файлов) в один многостраничный pdf файл</p>
+
+<!-- 
+<header>
+    <h1><a href="/cook">PDF->PNG и обратно</a></h1>
+</header> -->
+
+<!-- {{.TableOfContents}} -->
+
+<!-- * Will be replaced with the ToC, excluding the "Contents" header -->
+
+<!-- {:toc} -->
+
+<h2 id="конвертирование-нескольких-jpg-png-pdf-в-один-файл-one-pdf">Конвертирование нескольких jpg/png/pdf в один файл one.pdf</h2>
+
+<p>Конвертация набора изображений (или pdf файлов) в один многостраничный pdf файл
 <pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">convert *.pdf -compress jpeg "../out.pdf"
-convert *.png "../out.pdf"</code></pre>
+<code class="language-bash">convert *.pdf -compress jpeg &quot;../out.pdf&quot;
+convert *.png &quot;../out.pdf&quot;</code></pre></p>
 
-<h2 id="конвертирование-многостраничного-pdf-в-несколько-jpgpng-300dpi">Конвертирование многостраничного pdf в несколько jpg/png, 300dpi</h2>
+<h2 id="конвертирование-многостраничного-pdf-в-несколько-jpg-png-300dpi">Конвертирование многостраничного pdf в несколько jpg/png, 300dpi</h2>
+
 <pre class="command-line" data-user="sfg" data-host="host" data-output="">
 <code class="language-bash">convert -density 300 -alpha remove 304.pdf 304.jpg</code></pre>
-<p>Или более быстрый вариант</p>
+Или более быстрый вариант 
 <pre class="command-line" data-user="sfg" data-host="host" data-output="">
 <code class="language-bash">gs -o png/lect-%d.png -sDEVICE=png256 \
  -r300 -dPrinted -dUseCropBox -dTextAlphaBits=4\
  -dGraphicsAlphaBits=4lection-a5.pdf</code></pre>
 
 <h2 id="конвертирование-tif-в-jpg">Конвертирование *.tif в *.jpg</h2>
-<p>Конвертация набора tif в набор jpg</p>
+
+<p>Конвертация набора tif в набор jpg
 <pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">for name in ls *.tif; do \
-convert $name -compress jpeg $name.jpg;\
-done</code></pre>
+<code class="language-bash">for name in ls *.tif; do <br />
+convert $name -compress jpeg $name.jpg;<br />
+done</code></pre></p>
 
 <h2 id="пакетное-сканирование-в-png">Пакетное сканирование в png</h2>
 
-<p>Определение имени устройства</p>
+<p>Определение имени устройства
 <pre class="command-line" data-user="sfg" data-host="host" data-output="">
 <code class="language-bash">scanimage -L</code></pre>
-<p>Сканирование</p>
+Сканирование
 <pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">scanimage \
--d hpaio:/usb/Deskjet_F2100_series?serial=CN79Q4H5GG04TK \
---format=png --resolution 300 --mode Color\
---progress --batch-prompt --batch=out%d.png</code></pre>
+<code class="language-bash">scanimage <br />
+-d hpaio:/usb/Deskjet_F2100_series?serial=CN79Q4H5GG04TK <br />
+--format=png --resolution 300 --mode Color<br />
+--progress --batch-prompt --batch=out%d.png</code></pre></p>
 
-<h2 id="минимальный-рабочий-пример-mwe-tikz-standalone">Минимальный рабочий пример (MWE) tikz-standalone</h2>
+</article>
 
-<pre><code class="language-latex">\documentclass[tikz]{standalone}
 
-\usepackage[english,russian]{babel}
-\usepackage[T2A,T1]{fontenc}
-\usepackage[utf8]{inputenc}
 
-\usepackage
-{
-    tikz,
-    pgfplots,
-    verbatim,
-    amssymb,
-}
-\usepackage[europeanresistors,americaninductors]{circuitikz}
-\usetikzlibrary
-{
-    arrows,
-    patterns,
-    angles,
-    quotes,
-    calc, 
-    3d,
-    backgrounds, 
-    positioning
-}
-\begin{document}
-    \begin{tikzpicture}
-        \draw (0,0) -- (0,0);
-    \end{tikzpicture} 
-
-    \begin{circuitikz}[]
-        \draw (0,0) to [short,o-,R=$2R$] (8,0)
-            to (8,-2)
-            to [C=$2C$] (8,-4)
-            to [short,-o](0,-4);
-
-        \draw[thick] (0,-2) pic[red, -latex]{carc=-150:150:0.5cm} node {$J_1$};
-    \end{circuitikz}    
-\end{document}</code></pre>
 
       </section>
 	</main>
 </div>
 
 
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-<script src="/js/prism.js"></script>
-</body>
+ 
+
+
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

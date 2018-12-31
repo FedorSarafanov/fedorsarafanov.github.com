@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Создание загрузочной флешки с Windows из под (Arch)Linux &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="Может понадобиться записать флешку с Windows, когда в наличии только Linux.
+Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть ms-sys.
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$\n", right: "\n$$", display: true},
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+				<li><a href="/tickets">Билеты</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+				
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">2017/01/01</time>
+  <h1>Создание загрузочной флешки с Windows из под (Arch)Linux</h1>
+</header>
+
+<article>
+  
+<p>Может понадобиться записать флешку с Windows, когда в наличии только Linux.</p>
+
+<p>Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть <code>ms-sys</code>.</p>
+
+<p>Для начала, установим необходимые утилиты (если они отсутствуют):
+<bash title="~/"><!--
+--><span class="ps">~</span>yaourt -S util-linux ntfs-3g ms-sys
+</bash></p>
+
+<p>Для дальнейших действий необходимо определить флешку. Сделать это можно либо через программу <code>GParted</code>, либо в консоли с помощью программы <code>df</code> в консоли.
+<bash title="~/"><!--
+--><span class="ps">~</span>df
+Файловая система Размер Использовано  Дост Использовано% Cмонтировано в
+dev                1,9G            0  1,9G            0% /dev
+run                1,9G         1,2M  1,9G            1% /run
+/dev/sda4          188G          21G  158G           12% /
+tmpfs              1,9G         162M  1,8G            9% /dev/shm
+tmpfs              1,9G            0  1,9G            0% /sys/fs/cgroup
+tmpfs              1,9G          24K  1,9G            1% /tmp
+/dev/sda6          321M         256K  321M            1% /boot/efi
+tmpfs              386M          12K  386M            1% /run/user/1000
+/dev/sdb1           15G         3,7G   11G           26% /run/media/lab/USB DISK
+</bash></p>
+
+<p>В данном случае раздел на флешке имеет адрес <code>/dev/sdb1</code>, а сама флешка - <code>/dev/sdb</code>.</p>
+
+<p>На всякий случай отмонтируем флешку, если она уже примонтирована:
+<bash title="~/"><!--
+--><span class="ps">~</span>sudo umount /dev/sdb1
+[sudo] пароль для lab:
+</bash><br />
+Затем отформатируем флешку:
+<bash title="~/"><!--
+--><span class="ps">~</span>sudo mkfs.ntfs -n 'Windows' /dev/sdb1
+</bash><br />
+И примонтируем все что нужно:
+<bash title="~/"><span class="comment">#Создадим папки, куда будут подключаться iso-образ и флешка:</span>
+<span class="ps">~</span>sudo mkdir -p /mnt/{usb,iso}
+<span class="ps">~</span>sudo chmod 777 /mnt/{usb,iso}
+<span class="comment">#Монтируем iso-образ и флешку:</span>
+<span class="ps">~</span>sudo mount -o loop ~/Загрузки/win7.iso /mnt/iso
+<span class="ps">~</span>sudo mount /dev/sdb1 /mnt/usb
+</bash><br />
+Теперь копируем все установочные файлы Windows:
+<bash title="~/"><!--
+--><span class="ps">~</span>cp -r /mnt/iso/* /mnt/usb/
+</bash></p>
+
+<p>И устанавливаем загрузчик Windows 7 на флешку:
+<bash title="~/"><!--
+--><span class="ps">~</span>ms-sys -7 /dev/sdb
+</bash></p>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ 
+
+
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>

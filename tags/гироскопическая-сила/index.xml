@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Гироскопическая Сила on Блог Федора Сарафанова</title>
+    <link>http://localhost:1313/tags/%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%B8%D0%BB%D0%B0/</link>
+    <description>Recent content in Гироскопическая Сила on Блог Федора Сарафанова</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-Ru</language>
+    <lastBuildDate>Sat, 14 Jan 2017 14:35:05 +0300</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%B8%D0%BB%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Вывод ускорения Кориолиса</title>
+      <link>http://localhost:1313/tickets/2017/01/14/kor/</link>
+      <pubDate>Sat, 14 Jan 2017 14:35:05 +0300</pubDate>
+      
+      <guid>http://localhost:1313/tickets/2017/01/14/kor/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Лемма&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;$$\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]$$&lt;/p&gt;
+
+&lt;p&gt;Примем, что&lt;/p&gt;
+
+&lt;p&gt;$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}$$&lt;/p&gt;
+
+&lt;p&gt;$$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

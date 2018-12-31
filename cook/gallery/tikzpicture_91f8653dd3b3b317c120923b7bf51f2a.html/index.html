@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Исходники иллюстрации &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ x={(1cm*2,0cm)}, y={(0,1cm*2)}, z={(0,-0.2cm*2)}, rotate=90&#43;180, ]
+%Ось координат \draw[dashed] (0,-2, 0) -- (0,2,0); %Луч \draw[color=orange, thick] (0,0,0) -- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*); \draw[color=black, thick,-&amp;gt;] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$}; \begin{scope}[ canvas is xz plane at y=0 ] \draw[axis] (0,0) circle (1); \draw[vec line] (0,0) -- (180:1) coordinate (A); \draw[vec] (*) -- &#43;&#43;(180:0.5) coordinate (np); \end{scope} \begin{scope}[ canvas is xy plane at z=0] \draw (0,0) ellipse (1 and 1.|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$\n", right: "\n$$", display: true},
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+				<li><a href="/tickets">Билеты</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+				
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">0001/01/01</time>
+  <h1>Исходники иллюстрации</h1>
+</header>
+
+<article>
+  
+<p><a class="imag2" href="/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.tex"><img src="/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.pdf.jpg" alt=""></a>
+<a href="/cook/gallery/pre">pre.tex</a>
+<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+        x={(1cm*2,0cm)},
+        y={(0,1cm*2)},
+        z={(0,-0.2cm*2)},
+        rotate=90+180,
+    ]</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">%Ось координат
+\draw[dashed] (0,-2, 0) -- (0,2,0); 
+
+%Луч
+\draw[color=orange, thick] (0,0,0)
+-- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*);
+
+\draw[color=black, thick,-&gt;] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$};
+
+
+\begin{scope}[
+        canvas is xz plane at y=0
+    ]
+    \draw[axis] (0,0) circle (1);
+    \draw[vec line] (0,0) -- (180:1) coordinate (A);
+    \draw[vec] (*) -- ++(180:0.5) coordinate (np);
+\end{scope}
+
+
+\begin{scope}[ canvas is xy plane at z=0]
+    \draw (0,0) ellipse (1 and 1.5);
+\end{scope}
+
+\begin{scope}[
+        canvas is xy plane at z=0,
+        rotate around y=-65,
+    ]
+    \draw[axis] (0,0) ellipse (1 and 1.5);
+    \draw[light axis] (-1,0) -- (1,0);
+    \draw[vec line] (0,0) -- (45:1.18)  coordinate (B);
+    \draw[vec line] (90:1.5)  coordinate (o);
+    \draw[vec] (*) -- ++(45:0.5) coordinate (ne);
+\end{scope}
+
+\draw[fill=magenta] (A) circle (2pt) node[above] {$n_0$};
+\draw[fill=magenta] (B) circle (2pt) node[above] {$n_e$};
+% \draw[fill=magenta] (o) circle (2pt) node[right, yshift=-0.6em] {$n_1$};
+\draw[] (np) node[above] {$\vec{E}_\perp$};
+\draw[] (ne) node[right] {$\vec{E}_\parallel$};</pre></div>
+<p>\end{tikzpicture}\end{document}</code></pre></p>
+
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ 
+
+
+
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>
