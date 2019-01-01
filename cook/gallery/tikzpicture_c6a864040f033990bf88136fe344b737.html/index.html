@@ -13,8 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue, very thick}, axis/.style={densely dashed,black!60,font=\small}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, ] \def\w{40mm} \def\h{90mm} \drawinterface -- (\w&#43;10mm,0);
-\draw (0,\h) -- (0,0) -- (\w,0) -- (\w,\h); \foreach \c in {0,10,...,70}{ \draw (10 mm, 80 mm - \c mm) node[left, xshift=-10mm] {\c}; \draw (0.3,80 mm - \c mm) -- (0.7,80 mm - \c mm); } \foreach \d in {10,11,...,80}{ \draw (0.4,\d mm) -- (0.6,\d mm); } \draw [axis, -&amp;gt;] (\w&#43;10mm,\h-10mm) --(\w&#43;10mm,10mm) node [below] {$&#43;x$}; \coordinate (C) at (\w/2, 60mm); \draw [fill=black!|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue, very thick}, axis/.style={densely dashed,black!60,font=\small}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, ] \def\w{40mm} \def\h{90mm} \draw[interface] (-10mm,0) -- (\w&#43;10mm,0); \draw (0,\h) -- (0,0) -- (\w,0) -- (\w,\h); \foreach \c in {0,10,...,70}{ \draw (10 mm, 80 mm - \c mm) node[left, xshift=-10mm] {\c}; \draw (0.3,80 mm - \c mm) -- (0.7,80 mm - \c mm); } \foreach \d in {10,11,...,80}{ \draw (0.4,\d mm) -- (0.6,\d mm); } \draw [axis, -&amp;gt;] (\w&#43;10mm,\h-10mm) --(\w&#43;10mm,10mm) node [below] {$&#43;x$}; \coordinate (C) at (\w/2, 60mm); \draw [fill=black!|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -111,57 +111,59 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.tex"><img src="/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
-    force/.style={&gt;=latex,draw=blue,fill=blue, very thick},
-    axis/.style={densely dashed,black!60,font=\small},
-    interface/.style={draw=gray!60,
-        postaction={draw=gray!60,decorate,decoration={border,angle=-135,
-                    amplitude=0.3cm,segment length=2mm}}},
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+    force/.style=<span style="color:#658b00">{</span>&gt;=latex,draw=blue,fill=blue, very thick<span style="color:#658b00">}</span>,
+    axis/.style=<span style="color:#658b00">{</span>densely dashed,black!60,font=<span style="color:#8b008b;font-weight:bold">\small</span><span style="color:#658b00">}</span>,
+    interface/.style=<span style="color:#658b00">{</span>draw=gray!60,
+        postaction=<span style="color:#658b00">{</span>draw=gray!60,decorate,decoration=<span style="color:#658b00">{</span>border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm<span style="color:#658b00">}}}</span>,
 ]
-    \def\w{40mm}
-    \def\h{90mm}
-    \draw<a href="-10mm,0">interface</a> -- (\w+10mm,0);</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">\draw  (0,\h) -- (0,0) -- (\w,0) -- (\w,\h);
+    <span style="color:#8b008b;font-weight:bold">\def\w</span><span style="color:#658b00">{</span>40mm<span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\def\h</span><span style="color:#658b00">{</span>90mm<span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[interface]</span> (-10mm,0) -- (<span style="color:#8b008b;font-weight:bold">\w</span>+10mm,0);
 
-\foreach \c in {0,10,...,70}{
-    \draw (10 mm, 80 mm - \c mm) node[left, xshift=-10mm] {\c};
-    \draw (0.3,80 mm - \c mm) -- (0.7,80 mm - \c mm);
-}
+    <span style="color:#8b008b;font-weight:bold">\draw</span>  (0,<span style="color:#8b008b;font-weight:bold">\h</span>) -- (0,0) -- (<span style="color:#8b008b;font-weight:bold">\w</span>,0) -- (<span style="color:#8b008b;font-weight:bold">\w</span>,<span style="color:#8b008b;font-weight:bold">\h</span>);
 
-\foreach \d in {10,11,...,80}{
-    \draw (0.4,\d mm) -- (0.6,\d mm);
-}
+    <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\c</span> in <span style="color:#658b00">{</span>0,10,...,70<span style="color:#658b00">}{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (10 mm, 80 mm - <span style="color:#8b008b;font-weight:bold">\c</span> mm) node[left, xshift=-10mm] <span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\c</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0.3,80 mm - <span style="color:#8b008b;font-weight:bold">\c</span> mm) -- (0.7,80 mm - <span style="color:#8b008b;font-weight:bold">\c</span> mm);
+    <span style="color:#658b00">}</span>
 
-\draw [axis, -&gt;] (\w+10mm,\h-10mm) --(\w+10mm,10mm) node [below] {$+x$};
+    <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\d</span> in <span style="color:#658b00">{</span>10,11,...,80<span style="color:#658b00">}{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0.4,<span style="color:#8b008b;font-weight:bold">\d</span> mm) -- (0.6,<span style="color:#8b008b;font-weight:bold">\d</span> mm);
+    <span style="color:#658b00">}</span>
 
-\coordinate (C) at (\w/2, 60mm);
-\draw [fill=black!30] (C) circle (2.5mm);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;] (<span style="color:#8b008b;font-weight:bold">\w</span>+10mm,<span style="color:#8b008b;font-weight:bold">\h</span>-10mm) --(<span style="color:#8b008b;font-weight:bold">\w</span>+10mm,10mm) node [below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-\draw[force, -&gt;] (C) -- ++ (0, 10mm) node [right] {$\vec{F}_\text{арх}$};
-\draw[force, -&gt;] (C) -- ++ (0, 20mm) node [right] {$\vec{F}_\text{тр}$};
+    <span style="color:#8b008b;font-weight:bold">\coordinate</span> (C) at (<span style="color:#8b008b;font-weight:bold">\w</span>/2, 60mm);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [fill=black!30] (C) circle (2.5mm);
 
-\draw[force, -&gt;] (C) -- ++ (0,  -20mm) node [right] {$m\vec{g}$};
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (C) -- ++ (0, 10mm) node [right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{F}_</span><span style="color:#00688b">\text</span><span style="color:#658b00">{арх}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (C) -- ++ (0, 20mm) node [right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{F}_</span><span style="color:#00688b">\text</span><span style="color:#658b00">{тр}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-\draw [fill=black] (C) circle (0.5mm);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (C) -- ++ (0,  -20mm) node [right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{g}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-\draw [&lt;-&gt;] (0,5mm) --(\w,5mm) node [above, pos=0.5] {$2R$};
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [fill=black] (C) circle (0.5mm);
 
-\draw[axis] ($(C)+(0,2.5mm)$) --($(C)+(10mm,2.5mm)$);
-\draw[axis] ($(C)+(0,-2.5mm)$) --($(C)+(10mm,-2.5mm)$);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [&lt;-&gt;] (0,5mm) --(<span style="color:#8b008b;font-weight:bold">\w</span>,5mm) node [above, pos=0.5] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#b452cd">2</span><span style="color:#658b00">R</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-\draw[&lt;-&gt;] ($(C)+(10mm,2.5mm)$)--($(C)+(10mm,-2.5mm)$) node [right, pos=0.5] {$2r$};
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis]</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">C</span>)+(<span style="color:#b452cd">0</span><span style="color:#658b00">,</span><span style="color:#b452cd">2</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span><span style="color:#658b00">mm</span>)<span style="color:#cd5555">$</span>) --(<span style="color:#cd5555">$</span>(<span style="color:#658b00">C</span>)+(<span style="color:#b452cd">10</span><span style="color:#658b00">mm,</span><span style="color:#b452cd">2</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span><span style="color:#658b00">mm</span>)<span style="color:#cd5555">$</span>);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis]</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">C</span>)+(<span style="color:#b452cd">0</span><span style="color:#658b00">,</span>-<span style="color:#b452cd">2</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span><span style="color:#658b00">mm</span>)<span style="color:#cd5555">$</span>) --(<span style="color:#cd5555">$</span>(<span style="color:#658b00">C</span>)+(<span style="color:#b452cd">10</span><span style="color:#658b00">mm,</span>-<span style="color:#b452cd">2</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span><span style="color:#658b00">mm</span>)<span style="color:#cd5555">$</span>);
 
-\draw [fill=black, opacity=0.1] (0,0) -- (0,\h-8mm) -- (\w,\h-8mm) -- (\w,0) -- cycle;</pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[&lt;-&gt;]</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">C</span>)+(<span style="color:#b452cd">10</span><span style="color:#658b00">mm,</span><span style="color:#b452cd">2</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span><span style="color:#658b00">mm</span>)<span style="color:#cd5555">$</span>)--(<span style="color:#cd5555">$</span>(<span style="color:#658b00">C</span>)+(<span style="color:#b452cd">10</span><span style="color:#658b00">mm,</span>-<span style="color:#b452cd">2</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span><span style="color:#658b00">mm</span>)<span style="color:#cd5555">$</span>) node [right, pos=0.5] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#b452cd">2</span><span style="color:#658b00">r</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [fill=black, opacity=0.1] (0,0) -- (0,<span style="color:#8b008b;font-weight:bold">\h</span>-8mm) -- (<span style="color:#8b008b;font-weight:bold">\w</span>,<span style="color:#8b008b;font-weight:bold">\h</span>-8mm) -- (<span style="color:#8b008b;font-weight:bold">\w</span>,0) -- cycle;
+
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

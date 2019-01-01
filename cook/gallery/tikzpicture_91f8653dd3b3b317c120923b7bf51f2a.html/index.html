@@ -13,8 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ x={(1cm*2,0cm)}, y={(0,1cm*2)}, z={(0,-0.2cm*2)}, rotate=90&#43;180, ]
-%Ось координат \draw[dashed] (0,-2, 0) -- (0,2,0); %Луч \draw[color=orange, thick] (0,0,0) -- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*); \draw[color=black, thick,-&amp;gt;] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$}; \begin{scope}[ canvas is xz plane at y=0 ] \draw[axis] (0,0) circle (1); \draw[vec line] (0,0) -- (180:1) coordinate (A); \draw[vec] (*) -- &#43;&#43;(180:0.5) coordinate (np); \end{scope} \begin{scope}[ canvas is xy plane at z=0] \draw (0,0) ellipse (1 and 1.|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ x={(1cm*2,0cm)}, y={(0,1cm*2)}, z={(0,-0.2cm*2)}, rotate=90&#43;180, ] %Ось координат  \draw[dashed] (0,-2, 0) -- (0,2,0); %Луч  \draw[color=orange, thick] (0,0,0) -- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*); \draw[color=black, thick,-&amp;gt;] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$}; \begin{scope}[ canvas is xz plane at y=0 ] \draw[axis] (0,0) circle (1); \draw[vec line] (0,0) -- (180:1) coordinate (A); \draw[vec] (*) -- &#43;&#43;(180:0.5) coordinate (np); \end{scope} \begin{scope}[ canvas is xy plane at z=0] \draw (0,0) ellipse (1 and 1.|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -111,61 +111,63 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.tex"><img src="/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
-        x={(1cm*2,0cm)},
-        y={(0,1cm*2)},
-        z={(0,-0.2cm*2)},
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+        x=<span style="color:#658b00">{</span>(1cm*2,0cm)<span style="color:#658b00">}</span>,
+        y=<span style="color:#658b00">{</span>(0,1cm*2)<span style="color:#658b00">}</span>,
+        z=<span style="color:#658b00">{</span>(0,-0.2cm*2)<span style="color:#658b00">}</span>,
         rotate=90+180,
-    ]</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">%Ось координат
-\draw[dashed] (0,-2, 0) -- (0,2,0); 
-
-%Луч
-\draw[color=orange, thick] (0,0,0)
--- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*);
-
-\draw[color=black, thick,-&gt;] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$};
-
-
-\begin{scope}[
-        canvas is xz plane at y=0
     ]
-    \draw[axis] (0,0) circle (1);
-    \draw[vec line] (0,0) -- (180:1) coordinate (A);
-    \draw[vec] (*) -- ++(180:0.5) coordinate (np);
-\end{scope}
+    
+    <span style="color:#228b22">%Ось координат
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[dashed]</span> (0,-2, 0) -- (0,2,0); 
+    
+    <span style="color:#228b22">%Луч
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[color=orange, thick]</span> (0,0,0)
+    -- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*);
+    
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[color=black, thick,-&gt;]</span> (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{k}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    
 
+    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[
+            canvas is xz plane at y=0
+        ]
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis]</span> (0,0) circle (1);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[vec line]</span> (0,0) -- (180:1) coordinate (A);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[vec]</span> (*) -- ++(180:0.5) coordinate (np);
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+    
+    
+    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[ canvas is xy plane at z=0]
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) ellipse (1 and 1.5);
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+    
+    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[
+            canvas is xy plane at z=0,
+            rotate around y=-65,
+        ]
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis]</span> (0,0) ellipse (1 and 1.5);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[light axis]</span> (-1,0) -- (1,0);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[vec line]</span> (0,0) -- (45:1.18)  coordinate (B);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[vec line]</span> (90:1.5)  coordinate (o);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[vec]</span> (*) -- ++(45:0.5) coordinate (ne);
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+    
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=magenta]</span> (A) circle (2pt) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">n_</span><span style="color:#b452cd">0</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=magenta]</span> (B) circle (2pt) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">n_e</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#228b22">% \draw[fill=magenta] (o) circle (2pt) node[right, yshift=-0.6em] {$n_1$};
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (np) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{E}_</span><span style="color:#00688b">\perp</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (ne) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{E}_</span><span style="color:#00688b">\parallel</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    
 
-\begin{scope}[ canvas is xy plane at z=0]
-    \draw (0,0) ellipse (1 and 1.5);
-\end{scope}
-
-\begin{scope}[
-        canvas is xy plane at z=0,
-        rotate around y=-65,
-    ]
-    \draw[axis] (0,0) ellipse (1 and 1.5);
-    \draw[light axis] (-1,0) -- (1,0);
-    \draw[vec line] (0,0) -- (45:1.18)  coordinate (B);
-    \draw[vec line] (90:1.5)  coordinate (o);
-    \draw[vec] (*) -- ++(45:0.5) coordinate (ne);
-\end{scope}
-
-\draw[fill=magenta] (A) circle (2pt) node[above] {$n_0$};
-\draw[fill=magenta] (B) circle (2pt) node[above] {$n_e$};
-% \draw[fill=magenta] (o) circle (2pt) node[right, yshift=-0.6em] {$n_1$};
-\draw[] (np) node[above] {$\vec{E}_\perp$};
-\draw[] (ne) node[right] {$\vec{E}_\parallel$};</pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
-
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

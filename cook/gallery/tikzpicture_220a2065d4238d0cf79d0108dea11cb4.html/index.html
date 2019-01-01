@@ -13,9 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\op{0.1}
-\xdef\SIZE{10} % \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE); % \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE); % \foreach \i in {0,1,...,\SIZE} { % \drawopacity=\op node [left] {\i}; % \drawopacity=\op node [below] {\i}; % }
-% \begin{scope}[xshift=-3cm] % \draw thick node [left] {$E_1$} -- &#43;&#43;(2,0); % \draw thick node [left] {$E_2$} -- &#43;&#43;(2,0); % \drawfill=black circle (5pt); % \draw decorate, magenta, decoration={snake}, -&amp;gt; -- % node [below,sloped, align=center, scale=0.6, yshift=-4pt]{фотон\ спонтанного\ излучения} &#43;&#43;(1,0);|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\op{0.1} \xdef\SIZE{10} % \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \foreach \i in {0,1,...,\SIZE} {  % \draw[opacity=\op] (0,\i) node [left] {\i};  % \draw[opacity=\op] (\i,0) node [below] {\i};  % }  % \begin{scope}[xshift=-3cm] % \draw [thick] (0,0) node [left] {$E_1$} -- &#43;&#43;(2,0); % \draw [thick] (0,2.5) node [left] {$E_2$} -- &#43;&#43;(2,0); % \draw[fill=black] (1,2.5) circle (5pt); % \draw [decorate, magenta, decoration={snake}, -&amp;gt;] (0,1.|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -112,82 +111,86 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.tex"><img src="/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
-    \xdef\darkness{0}
-    \xdef\op{0.1}</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">\xdef\SIZE{10}
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\xdef\darkness</span><span style="color:#658b00">{</span>0<span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\xdef\op</span><span style="color:#658b00">{</span>0.1<span style="color:#658b00">}</span>
 
-% \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);
-% \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);
+    <span style="color:#8b008b;font-weight:bold">\xdef\SIZE</span><span style="color:#658b00">{</span>10<span style="color:#658b00">}</span>
 
-% \foreach \i in {0,1,...,\SIZE} {</pre></div>
-<p>%      \draw<a href="0,i">opacity=\op</a> node [left] {\i};
- %      \draw<a href="i,0">opacity=\op</a> node [below] {\i};
- %    }</p>
+    <span style="color:#228b22">% \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);
+</span><span style="color:#228b22"></span>
+    <span style="color:#228b22">% \foreach \i in {0,1,...,\SIZE} {
+</span><span style="color:#228b22"></span> <span style="color:#228b22">%      \draw[opacity=\op] (0,\i) node [left] {\i};
+</span><span style="color:#228b22"></span> <span style="color:#228b22">%      \draw[opacity=\op] (\i,0) node [below] {\i};
+</span><span style="color:#228b22"></span> <span style="color:#228b22">%    }
+</span><span style="color:#228b22"></span>
+<span style="color:#228b22">% \begin{scope}[xshift=-3cm]
+</span><span style="color:#228b22">%   \draw [thick] (0,0) node [left] {$E_1$} -- ++(2,0);
+</span><span style="color:#228b22">%     \draw [thick] (0,2.5) node [left] {$E_2$} -- ++(2,0);
+</span><span style="color:#228b22">%     \draw[fill=black] (1,2.5) circle (5pt);
+</span><span style="color:#228b22">%   \draw [decorate, magenta, decoration={snake}, -&gt;] (0,1.25) --
+</span><span style="color:#228b22">%     node [below,sloped, align=center, scale=0.6, yshift=-4pt]{фотон\\ спонтанного\\ излучения} ++(1,0);     
+</span><span style="color:#228b22">% \end{scope}
+</span><span style="color:#228b22"></span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[xshift=0cm]
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(3,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,2.5) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(3,0);
+    <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\i</span> in <span style="color:#658b00">{</span>0.5,1,...,2.5<span style="color:#658b00">}</span> <span style="color:#658b00">{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (<span style="color:#8b008b;font-weight:bold">\i</span>,0) circle (5pt);
+    <span style="color:#658b00">}</span>    
+    <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\i</span> in <span style="color:#658b00">{</span>0.5,1,...,2.5<span style="color:#658b00">}</span> <span style="color:#658b00">{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[dashed, fill=white]</span> (<span style="color:#8b008b;font-weight:bold">\i</span>,2.5) circle (5pt);
+    <span style="color:#658b00">}</span>        
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (0.5,2.5) circle (5pt);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (1,2.5) circle (5pt);
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
 
-<p>% \begin{scope}[xshift=-3cm]
-%   \draw <a href="0,0">thick</a> node [left] {$E_1$} -- ++(2,0);
-%     \draw <a href="0,2.5">thick</a> node [left] {$E_2$} -- ++(2,0);
-%     \draw<a href="1,2.5">fill=black</a> circle (5pt);
-%   \draw <a href="0,1.25">decorate, magenta, decoration={snake}, -&gt;</a> --
-%     node [below,sloped, align=center, scale=0.6, yshift=-4pt]{фотон\ спонтанного\ излучения} ++(1,0);<br />
-% \end{scope}</p>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[xshift=6cm]
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(3,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,2.5) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(3,0);
+    <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\i</span> in <span style="color:#658b00">{</span>0.5,1,...,2.5<span style="color:#658b00">}</span> <span style="color:#658b00">{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (<span style="color:#8b008b;font-weight:bold">\i</span>,2.5) circle (5pt);
+    <span style="color:#658b00">}</span>    
+    <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\i</span> in <span style="color:#658b00">{</span>0.5,1,...,2.5<span style="color:#658b00">}</span> <span style="color:#658b00">{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[dashed, fill=white]</span> (<span style="color:#8b008b;font-weight:bold">\i</span>,0) circle (5pt);
+    <span style="color:#658b00">}</span>        
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (0.5,0) circle (5pt);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (1,0) circle (5pt);
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
 
-<p>\begin{scope}[xshift=0cm]
-    \draw <a href="0,0">thick</a> node [left] {$E_1$} -- ++(3,0);
-    \draw <a href="0,2.5">thick</a> node [left] {$E_2$} -- ++(3,0);
-    \foreach \i in {0.5,1,...,2.5} {
-        \draw<a href="i,0">fill=black</a> circle (5pt);
-    }<br />
-    \foreach \i in {0.5,1,...,2.5} {
-        \draw<a href="i,2.5">dashed, fill=white</a> circle (5pt);
-    }<br />
-    \draw<a href="0.5,2.5">fill=black</a> circle (5pt);
-    \draw<a href="1,2.5">fill=black</a> circle (5pt);
-\end{scope}</p>
+<span style="color:#228b22">% \begin{scope}[xshift=3cm]
+</span><span style="color:#228b22">%     \draw [thick] (0,0) node [left] {$E_1$} -- ++(2,0);
+</span><span style="color:#228b22">%     \draw [thick] (0,2.5) node [left] {$E_2$} -- ++(2,0);
+</span><span style="color:#228b22">%     % \draw[thick,-&gt;] (1,2.5) -- (1,5pt);
+</span><span style="color:#228b22">%     % \draw[dashed, fill=white] (1,2.5) circle (5pt);
+</span><span style="color:#228b22"></span>
+<span style="color:#228b22">%     \draw[fill=black] (1,0) circle (5pt);
+</span><span style="color:#228b22">%   \draw [decorate, magenta, decoration={snake}, -&gt;] (1,1.5) --
+</span><span style="color:#228b22">%     node [above,sloped]{} ++(1,0); 
+</span><span style="color:#228b22"></span>
+<span style="color:#228b22">%   \draw [decorate, magenta, decoration={snake}, -&gt;] (1,1) --
+</span><span style="color:#228b22">%     node [below,sloped]{} ++(1,0); 
+</span><span style="color:#228b22">% \end{scope}
+</span><span style="color:#228b22"></span>
+    <span style="color:#228b22">% \node [align=center] () at (-3+1,-1) {Возбужденное \\ состояние атома};
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \node [align=center] () at (3+1,-1) {Основное \\ состояние атома};
+</span><span style="color:#228b22"></span>
+    <span style="color:#228b22">% \node [align=center] () at (-3+1,2.5+1) {До эмиссии};
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \node [align=center] () at (0+1,2.5+1) {Эмиссия};
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \node [align=center] () at (3+1,2.5+1) {После эмиссии};
+</span><span style="color:#228b22"></span>
 
-<p>\begin{scope}[xshift=6cm]
-    \draw <a href="0,0">thick</a> node [left] {$E_1$} -- ++(3,0);
-    \draw <a href="0,2.5">thick</a> node [left] {$E_2$} -- ++(3,0);
-    \foreach \i in {0.5,1,...,2.5} {
-        \draw<a href="i,2.5">fill=black</a> circle (5pt);
-    }<br />
-    \foreach \i in {0.5,1,...,2.5} {
-        \draw<a href="i,0">dashed, fill=white</a> circle (5pt);
-    }<br />
-    \draw<a href="0.5,0">fill=black</a> circle (5pt);
-    \draw<a href="1,0">fill=black</a> circle (5pt);
-\end{scope}</p>
 
-<p>% \begin{scope}[xshift=3cm]
-%     \draw <a href="0,0">thick</a> node [left] {$E_1$} -- ++(2,0);
-%     \draw <a href="0,2.5">thick</a> node [left] {$E_2$} -- ++(2,0);
-%     % \draw<a href="1,2.5">thick,-&gt;</a> -- (1,5pt);
-%     % \draw<a href="1,2.5">dashed, fill=white</a> circle (5pt);</p>
-
-<p>%     \draw<a href="1,0">fill=black</a> circle (5pt);
-%   \draw <a href="1,1.5">decorate, magenta, decoration={snake}, -&gt;</a> --
-%     node [above,sloped]{} ++(1,0);</p>
-
-<p>%   \draw <a href="1,1">decorate, magenta, decoration={snake}, -&gt;</a> --
-%     node [below,sloped]{} ++(1,0);
-% \end{scope}</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">% \node [align=center] () at (-3+1,-1) {Возбужденное \\ состояние атома};
-% \node [align=center] () at (3+1,-1) {Основное \\ состояние атома};
-
-% \node [align=center] () at (-3+1,2.5+1) {До эмиссии};
-% \node [align=center] () at (0+1,2.5+1) {Эмиссия};
-% \node [align=center] () at (3+1,2.5+1) {После эмиссии};</pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
-
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

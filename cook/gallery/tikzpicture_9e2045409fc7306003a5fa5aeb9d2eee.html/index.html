@@ -13,9 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small}, axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60,
-}, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!70 } ]
-\draw[force,-&amp;gt;] (0,0) coordinate (a) -- node[midway,fill=white!20, opacity=0.9] {$(m_1&#43;m_2)\vec{v}_c$} (4,0); \draw[force,-&amp;gt;] (0,0) -- node[midway,fill=white!20, opacity=0.9] {$\pIn$} (2,2) coordinate (b); \draw[force,-&amp;gt;] (b) -- node[midway,fill=white!20, opacity=0.9] {$\pIIn$} (4,0) coordinate (c); \draw pic[&amp;#34;$\Phi$&amp;#34;,draw=magenta,-&amp;gt;,angle eccentricity=1.5,angle radius=0.5cm] {angle=a--b--c};  \end{tikzpicture}\end{document}|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!70 } ] \draw[force,-&amp;gt;] (0,0) coordinate (a) -- node[midway,fill=white!20, opacity=0.9] {$(m_1&#43;m_2)\vec{v}_c$} (4,0); \draw[force,-&amp;gt;] (0,0) -- node[midway,fill=white!20, opacity=0.9] {$\pIn$} (2,2) coordinate (b); \draw[force,-&amp;gt;] (b) -- node[midway,fill=white!20, opacity=0.9] {$\pIIn$} (4,0) coordinate (c); \draw pic[&amp;#34;$\Phi$&amp;#34;,draw=magenta,-&amp;gt;,angle eccentricity=1.5,angle radius=0.|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -112,57 +111,59 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.tex"><img src="/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
-    force/.style={&gt;=latex,draw=blue,fill=blue},
-    % axis/.style={densely dashed,gray,font=\small},
-    axis/.style={densely dashed,black!60,font=\small},
-    interface/.style={
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+    force/.style=<span style="color:#658b00">{</span>&gt;=latex,draw=blue,fill=blue<span style="color:#658b00">}</span>,
+    <span style="color:#228b22">% axis/.style={densely dashed,gray,font=\small},
+</span><span style="color:#228b22"></span>    axis/.style=<span style="color:#658b00">{</span>densely dashed,black!60,font=<span style="color:#8b008b;font-weight:bold">\small</span><span style="color:#658b00">}</span>,
+    interface/.style=<span style="color:#658b00">{</span>
         pattern = north east lines,
         draw    = none,
-        pattern color=gray!60,<br />
-    },
-    cargo/.style={
+        pattern color=gray!60,          
+    <span style="color:#658b00">}</span>,
+    cargo/.style=<span style="color:#658b00">{</span>
         rectangle,
         fill=magenta!40,
         draw=black!50,
         inner sep=2.5mm,
-    },
-    spring/.style={
-        decoration={
-            aspect=0.3,
-            segment length=.8mm,
+    <span style="color:#658b00">}</span>,
+    spring/.style=<span style="color:#658b00">{</span>
+        decoration=<span style="color:#658b00">{</span>
+            aspect=0.3, 
+            segment length=.8mm, 
             amplitude=2mm,
-            coil},
+            coil<span style="color:#658b00">}</span>,
         decorate,
         draw=magenta!70
-    }
-]</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">    \draw[force,-&gt;] (0,0) coordinate (a) -- 
-        node[midway,fill=white!20, opacity=0.9]  
-            {$(m_1+m_2)\vec{v}_c$} 
-        (4,0);
+    <span style="color:#658b00">}</span>
+]
 
-    \draw[force,-&gt;] (0,0)  -- 
-        node[midway,fill=white!20, opacity=0.9]  
-            {$\pIn$} 
-        (2,2) coordinate (b);
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (0,0) coordinate (a) -- 
+            node[midway,fill=white!20, opacity=0.9]  
+                <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>(<span style="color:#658b00">m_</span><span style="color:#b452cd">1</span>+<span style="color:#658b00">m_</span><span style="color:#b452cd">2</span>)<span style="color:#00688b">\vec</span><span style="color:#658b00">{v}_c</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> 
+            (4,0);
 
-    \draw[force,-&gt;] (b)  -- 
-        node[midway,fill=white!20, opacity=0.9]  
-            {$\pIIn$} 
-        (4,0) coordinate (c);       
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (0,0)  -- 
+            node[midway,fill=white!20, opacity=0.9]  
+                <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\pIn</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> 
+            (2,2) coordinate (b);
 
-    \draw pic[&#34;$\Phi$&#34;,draw=magenta,-&gt;,angle eccentricity=1.5,angle radius=0.5cm] {angle=a--b--c};                 </pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (b)  -- 
+            node[midway,fill=white!20, opacity=0.9]  
+                <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\pIIn</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> 
+            (4,0) coordinate (c);       
 
+        <span style="color:#8b008b;font-weight:bold">\draw</span> pic[&#34;<span style="color:#cd5555">$</span><span style="color:#00688b">\Phi</span><span style="color:#cd5555">$</span>&#34;,draw=magenta,-&gt;,angle eccentricity=1.5,angle radius=0.5cm] <span style="color:#658b00">{</span>angle=a--b--c<span style="color:#658b00">}</span>;                 
+
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

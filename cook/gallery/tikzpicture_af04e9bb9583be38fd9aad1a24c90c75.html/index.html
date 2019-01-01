@@ -13,8 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \def\angle{50} % \draw (0,2) coordinate (o) circle (2); % \draw (o) circle (0.5); % \draw (0,0) -- (5,6); \drawinterface rectangle (6,6); \drawthick --(2.85,6) (3.15,6) --(6,6); \drawinterface rectangle (6,6); \draw interface, draw=black rectangle (3.15,4);
-\def\rr{0.8} % \draw[axis] (1.2,-3.15) --(1.20,4); \draw[axis, -&amp;gt;] (0,4) -- &#43;&#43;(0,-4) node[below] {$x$}; % \draw[axis] (3,4) &#43;&#43; (1.8,0) arc (0:180:1.8); \draw[fill=white] (3,4) circle (\rr); \path (3,4) -- &#43;(-\rr,0) coordinate (Cl) &#43; (\rr,0) coordinate (Cr); \draw[fill=black] (3,4) circle (3pt); \draw[black!|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \def\angle{50} % \draw (0,2) coordinate (o) circle (2);  % \draw (o) circle (0.5);  % \draw (0,0) -- (5,6);  \draw[interface] (0,6.25) rectangle (6,6); \draw[thick] (0,6) --(2.85,6) (3.15,6) --(6,6); \draw[interface] (0,6.25) rectangle (6,6); \draw [interface, draw=black] (2.85,6) rectangle (3.15,4); \def\rr{0.8} % \draw[axis] (1.2,-3.15) --(1.20,4);  \draw[axis, -&amp;gt;] (0,4) -- &#43;&#43;(0,-4) node[below] {$x$}; % \draw[axis] (3,4) &#43;&#43; (1.8,0) arc (0:180:1.8);  \draw[fill=white] (3,4) circle (\rr); \path (3,4) -- &#43;(-\rr,0) coordinate (Cl) &#43; (\rr,0) coordinate (Cr); \draw[fill=black] (3,4) circle (3pt); \draw[black!|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -111,73 +111,77 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.tex"><img src="/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
-    \def\angle{50}
-    % \draw (0,2) coordinate (o) circle (2);
-    % \draw (o) circle (0.5);
-    % \draw (0,0) -- (5,6);
-    \draw<a href="0,6.25">interface</a> rectangle (6,6);
-    \draw<a href="0,6">thick</a> --(2.85,6) (3.15,6) --(6,6);
-    \draw<a href="0,6.25">interface</a> rectangle (6,6);
-    \draw <a href="2.85,6">interface, draw=black</a> rectangle (3.15,4);</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">\def\rr{0.8}
-% \draw[axis] (1.2,-3.15) --(1.20,4);
-\draw[axis, -&gt;] (0,4)  -- ++(0,-4) node[below] {$x$};
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\def\angle</span><span style="color:#658b00">{</span>50<span style="color:#658b00">}</span>
+    <span style="color:#228b22">% \draw (0,2) coordinate (o) circle (2); 
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw (o) circle (0.5); 
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw (0,0) -- (5,6);
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[interface]</span> (0,6.25) rectangle (6,6);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[thick]</span> (0,6) --(2.85,6) (3.15,6) --(6,6);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[interface]</span> (0,6.25) rectangle (6,6);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [interface, draw=black]
+        (2.85,6) rectangle (3.15,4);
 
-% \draw[axis] (3,4) ++ (1.8,0) arc (0:180:1.8); 
+    <span style="color:#8b008b;font-weight:bold">\def\rr</span><span style="color:#658b00">{</span>0.8<span style="color:#658b00">}</span>
+    <span style="color:#228b22">% \draw[axis] (1.2,-3.15) --(1.20,4);
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis, -&gt;]</span> (0,4)  -- ++(0,-4) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-\draw[fill=white] (3,4) circle (\rr);
-\path (3,4) -- +(-\rr,0) coordinate (Cl) + (\rr,0) coordinate (Cr);
-\draw[fill=black] (3,4) circle (3pt);
-\draw[black!70] (Cr) -- ++ (0,-3) coordinate (B);
-\draw[black!70] (Cl) -- ++ (0,-3) coordinate (2m);
+    <span style="color:#228b22">% \draw[axis] (3,4) ++ (1.8,0) arc (0:180:1.8); 
+</span><span style="color:#228b22"></span>    
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=white]</span> (3,4) circle (<span style="color:#8b008b;font-weight:bold">\rr</span>);
+    <span style="color:#8b008b;font-weight:bold">\path</span> (3,4) -- +(-<span style="color:#8b008b;font-weight:bold">\rr</span>,0) coordinate (Cl) + (<span style="color:#8b008b;font-weight:bold">\rr</span>,0) coordinate (Cr);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (3,4) circle (3pt);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black!70]</span> (Cr) -- ++ (0,-3) coordinate (B);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black!70]</span> (Cl) -- ++ (0,-3) coordinate (2m);
 
-\draw[force, -&gt;] (2m) -- ++(0,1) node[left] {$\vec{T}_1$};
-\draw[force, -&gt;] (Cl) -- ++(0,-1) node[left] {$\vec{T}&#39;_1$};
-\draw[force, -&gt;] (Cr) -- ++(0,-1) node[right] {$\vec{T}&#39;_B$};
-\draw[force, -&gt;] (B) -- ++(0,1) node[right] {$\vec{T}_B$};
-
-
-
-\draw[force,-&gt;] (2m)-- node[left] {$\vec{u}$} ++(0,0.5);
-\draw[] (B) circle (\rr) node[right] {$B$};
-\path (B) -- +(-\rr,0) coordinate (Bl) + (\rr,0) coordinate (Br);
-\draw[fill=black] (B) circle (3pt);
-
-\draw[fill=black] (2m) rectangle ++(0.2,-0.6) rectangle ++(-0.4,0.6) node[left] {$2m$};
-
-\draw[force, -&gt;] (Br) -- ++(0,-0.7) node[right] {$\vec{T}&#39;_3$};
-\draw[force, -&gt;] (Bl) -- ++(0,-0.7) node[left] {$\vec{T}&#39;_2$};
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (2m) -- ++(0,1) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (Cl) -- ++(0,-1) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}&#39;_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (Cr) -- ++(0,-1) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}&#39;_B</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (B) -- ++(0,1) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}_B</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
 
 
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (2m)-- node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{u}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> ++(0,0.5);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (B) circle (<span style="color:#8b008b;font-weight:bold">\rr</span>) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">B</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\path</span> (B) -- +(-<span style="color:#8b008b;font-weight:bold">\rr</span>,0) coordinate (Bl) + (<span style="color:#8b008b;font-weight:bold">\rr</span>,0) coordinate (Br);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (B) circle (3pt);
 
-\draw[black!70] (Br) -- ++ (0,-3) coordinate (o);
-\draw[black!70] (Bl) -- ++ (0,-2) coordinate (m);
-\draw[force,-&gt;] (m)-- node[anchor=north east] {$\vec{u}$} ++(0,-1.5);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (2m) rectangle ++(0.2,-0.6) rectangle ++(-0.4,0.6) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#b452cd">2</span><span style="color:#658b00">m</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (Br) -- ++(0,-0.7) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}&#39;_</span><span style="color:#b452cd">3</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (Bl) -- ++(0,-0.7) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}&#39;_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
 
-\draw[force, -&gt;] (m) -- ++(0,0.5) node[left] {$\vec{T}_2$};
-\draw[force, -&gt;] (o)++(0,0.5) -- ++(0,0.5) node[right] {$\vec{T}_3$};
 
-\draw[fill=black] (m) rectangle ++(0.1,-0.6) rectangle ++(-0.2,0.6) node[left] {$m$};
 
-\draw[force,-&gt;] ($(o)-(0.2,0)$)--node[left] {$\vec{v}$} ($(o)-(0.2,-1.2)$);
-\node[inner sep=0pt, scale=0.2, xshift=-2em] (russell) at (o)
-{\includegraphics[width=.25\textwidth]{img/monkey.png}}; 
-\node[right, xshift=1em] at (o) {$m$};
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black!70]</span> (Br) -- ++ (0,-3) coordinate (o);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black!70]</span> (Bl) -- ++ (0,-2) coordinate (m);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (m)-- node[anchor=north east] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{u}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> ++(0,-1.5);
 
-% \draw[force,-&gt;] ($(o)-(0.7,1.2)$)--node[left] {$\vec{v}$} ($(o)-(0.7,-1.2)$);</pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
 
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (m) -- ++(0,0.5) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, -&gt;]</span> (o)++(0,0.5) -- ++(0,0.5) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}_</span><span style="color:#b452cd">3</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (m) rectangle ++(0.1,-0.6) rectangle ++(-0.2,0.6) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">o</span>)-(<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">2</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span>)<span style="color:#cd5555">$</span>)--node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{v}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">o</span>)-(<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">2</span><span style="color:#658b00">,</span>-<span style="color:#b452cd">1</span><span style="color:#658b00">.</span><span style="color:#b452cd">2</span>)<span style="color:#cd5555">$</span>);
+    <span style="color:#8b008b;font-weight:bold">\node</span><span style="color:#658b00">[inner sep=0pt, scale=0.2, xshift=-2em]</span> (russell) at (o)
+    <span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\includegraphics</span><span style="color:#658b00">[width=.25\textwidth]</span><span style="color:#658b00">{</span>img/monkey.png<span style="color:#658b00">}}</span>; 
+    <span style="color:#8b008b;font-weight:bold">\node</span><span style="color:#658b00">[right, xshift=1em]</span> at (o) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#228b22">% \draw[force,-&gt;] ($(o)-(0.7,1.2)$)--node[left] {$\vec{v}$} ($(o)-(0.7,-1.2)$);
+</span><span style="color:#228b22"></span>
+
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

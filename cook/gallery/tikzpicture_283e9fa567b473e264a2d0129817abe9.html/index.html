@@ -13,8 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small}, axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60,
-}, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 }, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator. % For the interface style we want to draw the original path. % The postaction option is therefore used to ensure that the % border decoration is drawn after the original path.|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 }, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -111,81 +111,85 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.tex"><img src="/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
-    force/.style={&gt;=latex,draw=blue,fill=blue},
-    % axis/.style={densely dashed,gray,font=\small},
-    axis/.style={densely dashed,black!60,font=\small},
-    interface/.style={
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+    force/.style=<span style="color:#658b00">{</span>&gt;=latex,draw=blue,fill=blue<span style="color:#658b00">}</span>,
+    <span style="color:#228b22">% axis/.style={densely dashed,gray,font=\small},
+</span><span style="color:#228b22"></span>    axis/.style=<span style="color:#658b00">{</span>densely dashed,black!60,font=<span style="color:#8b008b;font-weight:bold">\small</span><span style="color:#658b00">}</span>,
+    interface/.style=<span style="color:#658b00">{</span>
         pattern = north east lines,
         draw    = none,
-        pattern color=gray!60,<br />
-    },
-    cargo/.style={
+        pattern color=gray!60,          
+    <span style="color:#658b00">}</span>,
+    cargo/.style=<span style="color:#658b00">{</span>
         rectangle,
         fill=magenta!40,
         draw=black!50,
         inner sep=2.5mm,
-    },
-    spring/.style={
-        decoration={
-            aspect=0.3,
-            segment length=.8mm,
+    <span style="color:#658b00">}</span>,
+    spring/.style=<span style="color:#658b00">{</span>
+        decoration=<span style="color:#658b00">{</span>
+            aspect=0.3, 
+            segment length=.8mm, 
             amplitude=2mm,
-            coil},
+            coil<span style="color:#658b00">}</span>,
         decorate,
         draw=magenta!25
-    },
-    interface1/.style={draw=gray!60,
-        % The border decoration is a path replacing decorator.
-        % For the interface style we want to draw the original path.
-        % The postaction option is therefore used to ensure that the
-        % border decoration is drawn <em>after</em> the original path.
-        postaction={draw=gray!60,decorate,decoration={border,angle=-135,
-                    amplitude=0.3cm,segment length=2mm}}},<br />
+    <span style="color:#658b00">}</span>,
+    interface1/.style=<span style="color:#658b00">{</span>draw=gray!60,
+        <span style="color:#228b22">% The border decoration is a path replacing decorator. 
+</span><span style="color:#228b22"></span>        <span style="color:#228b22">% For the interface style we want to draw the original path.
+</span><span style="color:#228b22"></span>        <span style="color:#228b22">% The postaction option is therefore used to ensure that the
+</span><span style="color:#228b22"></span>        <span style="color:#228b22">% border decoration is drawn *after* the original path.
+</span><span style="color:#228b22"></span>        postaction=<span style="color:#658b00">{</span>draw=gray!60,decorate,decoration=<span style="color:#658b00">{</span>border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm<span style="color:#658b00">}}}</span>,    
 ]
-\def\angle{41}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \draw<a href="0,0">thick, interface</a> rectangle ++(4,-0.25);
-    \draw<a href="0,0">thick</a> -- ++(4,-0);</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">\draw[magenta!50,line join=round,line width=5pt,dash pattern={on 7pt off 2pt on 7pt off 2pt}] (1,2.85pt) -- ++(3,0) -- ++ (2.5pt,0) -- ++(0,-1.1);
+<span style="color:#8b008b;font-weight:bold">\def\angle</span><span style="color:#658b00">{</span>41<span style="color:#658b00">}</span>
+<span style="color:#228b22">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[thick, interface]</span> (0,0) rectangle ++(4,-0.25);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[thick]</span> (0,0) -- ++(4,-0);
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[magenta!50,line join=round,line width=5pt,dash pattern={on 7pt off 2pt on 7pt off 2pt}]</span> (1,2.85pt) -- ++(3,0) -- ++ (2.5pt,0) -- ++(0,-1.1);
+   
+
+  
+    <span style="color:#228b22">% \draw[black!10] (4,0) -- ++(0,1);
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[yshift=0.5cm]
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis,-&gt;]</span> (-1,1) -- (5,1) 
+                        node [right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;   
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black]</span> (1,0.9) -- ++(0,0.2) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#b452cd">0</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black]</span> (4,0.9) -- ++(0,0.2) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>(<span style="color:#b452cd">1</span>-<span style="color:#00688b">\eta</span>)<span style="color:#00688b">\cdot</span><span style="color:#658b00"> l</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;    
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis,-&gt;]</span> (6,1) -- ++(0,-2.2) 
+                    node [below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black]</span> (5.9,0) -- ++(0.2,0) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#b452cd">0</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[black]</span> (5.9,-1) -- ++(0.2,0) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\eta</span><span style="color:#658b00"> l</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (2.5,0) -- ++(-3,0) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{f}_R</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (2.5,0) -- ++(0,-0.8) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>(<span style="color:#b452cd">1</span>-<span style="color:#00688b">\eta</span>)<span style="color:#658b00">m</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{g}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (2.5,0) -- ++(0,0.8) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{N}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (4.1,-0.5) -- ++(0,1) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (4.1,-0.5) -- ++(0,-1) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\eta</span><span style="color:#658b00"> m </span><span style="color:#00688b">\vec</span><span style="color:#658b00">{g}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (2.5,0.1) -- (4.6,0.1) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{T}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#228b22">% \draw[axis] (4,0) -- ++(1,0);
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[axis] (4,-1) -- ++(1,0) ;
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[axis,&lt;-&gt;] (5,0) -- node[right,black] {$\eta l, m_2=\eta m$} (5,-1);
+</span><span style="color:#228b22"></span>
 
 
 
-% \draw[black!10] (4,0) -- ++(0,1);
-\begin{scope}[yshift=0.5cm]
-    \draw[axis,-&gt;] (-1,1) -- (5,1) 
-                    node [right] {$+x$};   
-    \draw[black] (1,0.9) -- ++(0,0.2) node[above] {$0$};
-    \draw[black] (4,0.9) -- ++(0,0.2) node[above] {$(1-\eta)\cdot l$};    
-\end{scope}
-
-\draw[axis,-&gt;] (6,1) -- ++(0,-2.2) 
-                node [below] {$+y$};
-
-\draw[black] (5.9,0) -- ++(0.2,0) node[right] {$0$};
-\draw[black] (5.9,-1) -- ++(0.2,0) node[right] {$\eta l$};
-
-\draw[force,-&gt;] (2.5,0) -- ++(-3,0) node[left] {$\vec{f}_R$};
-\draw[force,-&gt;] (2.5,0) -- ++(0,-0.8) node[below] {$(1-\eta)m\vec{g}$};
-\draw[force,-&gt;] (2.5,0) -- ++(0,0.8) node[above] {$\vec{N}$};
-
-\draw[force,-&gt;] (4.1,-0.5) -- ++(0,1) node[above] {$\vec{T}&#39;$};
-\draw[force,-&gt;] (4.1,-0.5) -- ++(0,-1) node[below] {$\eta m \vec{g}$};
-\draw[force,-&gt;] (2.5,0.1) -- (4.6,0.1) node[above] {$\vec{T}$};
-
-% \draw[axis] (4,0) -- ++(1,0);
-% \draw[axis] (4,-1) -- ++(1,0) ;
-% \draw[axis,&lt;-&gt;] (5,0) -- node[right,black] {$\eta l, m_2=\eta m$} (5,-1);</pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
-
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

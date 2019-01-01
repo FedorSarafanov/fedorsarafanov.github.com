@@ -13,9 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \begin{scope}[opacity=0.4] % \nodecargo at (2,0) {} node[above of=I, yshift=-1.3em] {}; % \drawdraw=black!80,decoration={aspect=0.3, segment length=1mm, amplitude=2mm,coil},decorate -- node[above, black, pos=0.5, yshift=1em] {} (I); % \draw[] (4,-1.1) -- &#43;&#43;(0,0.2) node[below, yshift=-5pt, black] {$l$};
-% \end{scope} \drawinterface,fill=white!40, draw=black rectangle &#43;&#43;(5,-0.2); \drawinterface,fill=magenta!30, draw=black rectangle &#43;&#43;(0.5,-0.2);
-% \node[cargo] (b) at (4,0) {} node[above of=b, yshift=-1.3em] {$m$}; % \draw[draw=black!80,decoration={aspect=0.3, segment length=1.5mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {$k$} (b); \draw[] (0,-1.1) -- &#43;&#43;(0,0.|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \begin{scope}[opacity=0.4]  % \node[cargo] (I) at (2,0) {} node[above of=I, yshift=-1.3em] {};  % \draw[draw=black!80,decoration={aspect=0.3, segment length=1mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {} (I);  % \draw[] (4,-1.1) -- &#43;&#43;(0,0.2) node[below, yshift=-5pt, black] {$l$};  % \end{scope}  \draw[interface,fill=white!40, draw=black] (0,0.1) rectangle &#43;&#43;(5,-0.2); \draw[interface,fill=magenta!30, draw=black] (3,0.1) rectangle &#43;&#43;(0.5,-0.2); % \node[cargo] (b) at (4,0) {} node[above of=b, yshift=-1.3em] {$m$};  % \draw[draw=black!80,decoration={aspect=0.3, segment length=1.5mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -112,40 +111,44 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.tex"><img src="/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
-    % \begin{scope}[opacity=0.4]
-    % \node<a href="I">cargo</a> at (2,0) {} node[above of=I, yshift=-1.3em] {};
-    % \draw<a href="0,0">draw=black!80,decoration={aspect=0.3, segment length=1mm, amplitude=2mm,coil},decorate</a> -- node[above, black, pos=0.5, yshift=1em] {} (I);
-    % \draw[] (4,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {$l$};</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">% \end{scope}</pre></div>
-<p>\draw<a href="0,0.1">interface,fill=white!40, draw=black</a> rectangle ++(5,-0.2);
-   \draw<a href="3,0.1">interface,fill=magenta!30, draw=black</a> rectangle ++(0.5,-0.2);</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">% \node[cargo] (b) at (4,0) {} node[above of=b, yshift=-1.3em] {$m$};
-% \draw[draw=black!80,decoration={aspect=0.3, segment length=1.5mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {$k$} (b); 
-\draw[] (0,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {$0$};
-\draw[] (3,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {$x$};
-\draw[] (3.5,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {\tiny$x+dx$};
-\draw[] (5,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {$\frac{l}2$};
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+    <span style="color:#228b22">% \begin{scope}[opacity=0.4]
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \node[cargo] (I) at (2,0) {} node[above of=I, yshift=-1.3em] {};
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[draw=black!80,decoration={aspect=0.3, segment length=1mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {} (I); 
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[] (4,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {$l$};
+</span><span style="color:#228b22"></span>        
+    <span style="color:#228b22">% \end{scope}
+</span><span style="color:#228b22"></span>   <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[interface,fill=white!40, draw=black]</span> (0,0.1) rectangle ++(5,-0.2);
+   <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[interface,fill=magenta!30, draw=black]</span> (3,0.1) rectangle ++(0.5,-0.2);
+
+    <span style="color:#228b22">% \node[cargo] (b) at (4,0) {} node[above of=b, yshift=-1.3em] {$m$};
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[draw=black!80,decoration={aspect=0.3, segment length=1.5mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {$k$} (b); 
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (0,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#b452cd">0</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (3,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (3.5,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] <span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\tiny</span><span style="color:#cd5555">$</span><span style="color:#658b00">x</span>+<span style="color:#658b00">dx</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[]</span> (5,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\frac</span><span style="color:#658b00">{l}</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
 
-\draw[axis,-&gt;] (0,-1) -- ++(6,0) node[right, black] {$x$};
-\draw[fill=black] (0,0) circle (0.1);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis,-&gt;]</span> (0,-1) -- ++(6,0) node[right, black] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (0,0) circle (0.1);
 
-% \draw[force,-&gt;] (3,0) -- ++(-0.5,0) node[above, yshift=0.5em, black] {$\vec{f}_e$};
-\draw[force,-&gt;] (3.5,0) -- ++(0.5,0) node[above, yshift=0.5em, xshift=1em, black] {$\vec{F}(x+dx)$};
-\draw[force,-&gt;] (3,0) -- ++(-0.5,0) node[above, yshift=0.5em, xshift=-1em, black] {$\vec{F}(x)$};
+    <span style="color:#228b22">% \draw[force,-&gt;] (3,0) -- ++(-0.5,0) node[above, yshift=0.5em, black] {$\vec{f}_e$};
+</span><span style="color:#228b22"></span>    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (3.5,0) -- ++(0.5,0) node[above, yshift=0.5em, xshift=1em, black] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{F}</span>(<span style="color:#658b00">x</span>+<span style="color:#658b00">dx</span>)<span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (3,0) -- ++(-0.5,0) node[above, yshift=0.5em, xshift=-1em, black] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{F}</span>(<span style="color:#658b00">x</span>)<span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-\node[left] at (-0.4,-0.4) {$\bigotimes\vec\omega$}; </pre></div>
-<p>\end{tikzpicture}\end{document}</code></pre></p>
+    <span style="color:#8b008b;font-weight:bold">\node</span><span style="color:#658b00">[left]</span> at (-0.4,-0.4) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\bigotimes\vec\omega</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>; 
 
+
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 

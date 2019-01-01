@@ -13,8 +13,8 @@
     
 
     
-    <meta name="description" property="og:description" content="pre.tex \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ axis/.style={densely dashed,black!60,font=\small}, force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, plane/.style={draw=black!30, very thick, fill=blue!5}, string/.style={draw=black, thick}, pulley/.style={thick}, ]
-\matrix[column sep=0.5cm] { \begin{scope}[] \xdef\r{3cm} \xdef\rp{5pt} \drawthick circle(\r); \foreach \i in {0,40,...,360}{ \drawthick -- (\i:\r); } \drawfill=black!40 circle (4pt) node [above right] {$m$}; \drawforce, very thick, -&amp;gt; -- (\r/2,0) node[above] {$\vec{v0}$}; \draw axis, -&amp;gt; -- (1.5*\r,0) node[anchor=south] {$&#43;x$}; {[force] \draw (0,0) circle (\rp) node[left, xshift=-1em] {$\vec{\omega}$}; \draw fill=blue,thick circle (\rp/2); } \end{scope} &amp;amp; \begin{scope}[rotate=0] \drawfill=black!|">
+    <meta name="description" property="og:description" content="pre.tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ axis/.style={densely dashed,black!60,font=\small}, force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},  m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, plane/.style={draw=black!30, very thick, fill=blue!5}, string/.style={draw=black, thick}, pulley/.style={thick}, ] \matrix[column sep=0.5cm] { \begin{scope}[] \xdef\r{3cm} \xdef\rp{5pt} \draw[thick] (0,0) circle(\r); \foreach \i in {0,40,...,360}{ \draw[thick] (0,0) -- (\i:\r); } \draw[fill=black!40] (\r,0) circle (4pt) node [above right] {$m$}; \draw[force, very thick, -&amp;gt;] (\r,0) -- (\r/2,0) node[above] {$\vec{v_0}$}; \draw [axis, -&amp;gt;] (0,0) -- (1.|">
      
 
     <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
@@ -111,61 +111,60 @@
 
 
 <header>
-  <time class="datetime">0001/01/01</time>
+  <time class="datetime">2019/01/01</time>
   <h1>Исходники иллюстрации</h1>
 </header>
 
 <article>
   
 <p><a class="imag2" href="/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.tex"><img src="/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.pdf.jpg" alt=""></a>
-<a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
-    axis/.style={densely dashed,black!60,font=\small},
-    force/.style={&gt;=latex,draw=blue,fill=blue},
-    % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
-    m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm},
-    m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm},
-    interface/.style={draw=gray!60,
-        postaction={draw=gray!60,decorate,decoration={border,angle=-135,
-                    amplitude=0.3cm,segment length=2mm}}},
-    plane/.style={draw=black!30, very thick, fill=blue!5},
-    string/.style={draw=black, thick},
-    pulley/.style={thick},
-]</p>
+<a href="/cook/gallery/pre">pre.tex</a></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+    axis/.style=<span style="color:#658b00">{</span>densely dashed,black!60,font=<span style="color:#8b008b;font-weight:bold">\small</span><span style="color:#658b00">}</span>,
+    force/.style=<span style="color:#658b00">{</span>&gt;=latex,draw=blue,fill=blue<span style="color:#658b00">}</span>,
+    <span style="color:#228b22">% m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
+</span><span style="color:#228b22"></span>    m/.style=<span style="color:#658b00">{</span>draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm<span style="color:#658b00">}</span>,
+    m/.style=<span style="color:#658b00">{</span>draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm<span style="color:#658b00">}</span>,
+    interface/.style=<span style="color:#658b00">{</span>draw=gray!60,
+        postaction=<span style="color:#658b00">{</span>draw=gray!60,decorate,decoration=<span style="color:#658b00">{</span>border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm<span style="color:#658b00">}}}</span>,
+    plane/.style=<span style="color:#658b00">{</span>draw=black!30, very thick, fill=blue!5<span style="color:#658b00">}</span>,
+    string/.style=<span style="color:#658b00">{</span>draw=black, thick<span style="color:#658b00">}</span>,
+    pulley/.style=<span style="color:#658b00">{</span>thick<span style="color:#658b00">}</span>,
+]
 
-<p>\matrix[column sep=0.5cm] {
-    \begin{scope}[]
-        \xdef\r{3cm}
-         \xdef\rp{5pt}
-        \draw<a href="0,0">thick</a> circle(\r);
-        \foreach \i in {0,40,...,360}{
-            \draw<a href="0,0">thick</a> -- (\i:\r);
-        }
-        \draw<a href="r,0">fill=black!40</a> circle (4pt) node [above right] {$m$};
-        \draw<a href="r,0">force, very thick, -&gt;</a> -- (\r/2,0) node[above] {$\vec{v<em>0}$};
-              \draw <a href="0,0">axis, -&gt;</a> -- (1.5*\r,0)  node[anchor=south] {$+x$};
-     {[force]
-          \draw (0,0)  circle (\rp) node[left, xshift=-1em] {$\vec{\omega}$};
-        \draw <a href="0,0">fill=blue,thick</a> circle (\rp/2);
-     }
-    \end{scope}
-&amp;
-\begin{scope}[rotate=0]
-    \draw<a href="r,0">fill=black!40</a> circle (4pt) node [above right] {$m$};
-        \draw<a href="r,0">force, very thick, -&gt;</a> -- (\r+\r/2,0) node[above] {$\vec{F</em>{in}^{post}}$};
-        \draw<a href="r,0">force, very thick, -&gt;</a> -- (\r,\r/2) node[above] {$\vec{F_{in}^{kor}}$};
-        \draw <a href="2,0">axis, -&gt;</a> -- (2*\r,0)  node[anchor=south] {$+x$};</p>
+<span style="color:#8b008b;font-weight:bold">\matrix</span><span style="color:#658b00">[column sep=0.5cm]</span> <span style="color:#658b00">{</span>
+    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[]
+        <span style="color:#8b008b;font-weight:bold">\xdef\r</span><span style="color:#658b00">{</span>3cm<span style="color:#658b00">}</span>
+         <span style="color:#8b008b;font-weight:bold">\xdef\rp</span><span style="color:#658b00">{</span>5pt<span style="color:#658b00">}</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[thick]</span> (0,0) circle(<span style="color:#8b008b;font-weight:bold">\r</span>);
+        <span style="color:#8b008b;font-weight:bold">\foreach</span> <span style="color:#8b008b;font-weight:bold">\i</span> in <span style="color:#658b00">{</span>0,40,...,360<span style="color:#658b00">}{</span>
+            <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[thick]</span> (0,0) -- (<span style="color:#8b008b;font-weight:bold">\i</span>:<span style="color:#8b008b;font-weight:bold">\r</span>);
+        <span style="color:#658b00">}</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black!40]</span> (<span style="color:#8b008b;font-weight:bold">\r</span>,0) circle (4pt) node [above right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, very thick, -&gt;]</span> (<span style="color:#8b008b;font-weight:bold">\r</span>,0) -- (<span style="color:#8b008b;font-weight:bold">\r</span>/2,0) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{v_</span><span style="color:#b452cd">0</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+              <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;]  (0,0) -- (1.5*<span style="color:#8b008b;font-weight:bold">\r</span>,0)  node[anchor=south] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+     <span style="color:#658b00">{</span>[force]
+          <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0)  circle (<span style="color:#8b008b;font-weight:bold">\rp</span>) node[left, xshift=-1em] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#00688b">\omega</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [fill=blue,thick] (0,0) circle (<span style="color:#8b008b;font-weight:bold">\rp</span>/2);
+     <span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+<span style="color:#658b00">&amp;</span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[rotate=0]
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black!40]</span> (<span style="color:#8b008b;font-weight:bold">\r</span>,0) circle (4pt) node [above right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, very thick, -&gt;]</span> (<span style="color:#8b008b;font-weight:bold">\r</span>,0) -- (<span style="color:#8b008b;font-weight:bold">\r</span>+<span style="color:#8b008b;font-weight:bold">\r</span>/2,0) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{F_{in}^{post}}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force, very thick, -&gt;]</span> (<span style="color:#8b008b;font-weight:bold">\r</span>,0) -- (<span style="color:#8b008b;font-weight:bold">\r</span>,<span style="color:#8b008b;font-weight:bold">\r</span>/2) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{F_{in}^{kor}}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;]  (2,0) -- (2*<span style="color:#8b008b;font-weight:bold">\r</span>,0)  node[anchor=south] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
 
-<p>\end{scope}
-&amp;
-\begin{scope}[]</p>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+<span style="color:#658b00">&amp;</span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[]   
+ 
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\\</span>
+<span style="color:#658b00">}</span>;
 
-<p>\end{scope}
-<br />
-};</p>
-
-<p>\end{tikzpicture}\end{document}</code></pre></p>
-
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
 </article>
 
 
