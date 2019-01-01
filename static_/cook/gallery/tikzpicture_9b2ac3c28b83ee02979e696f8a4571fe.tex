@@ -1,0 +1,78 @@
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+	force/.style={>=latex,draw=blue,fill=blue},
+	acceleration/.style={>=open triangle 60,draw=blue,fill=blue},
+	% axis/.style={densely dashed,gray,font=\small},
+	axis/.style={densely dashed,black!60,font=\small},
+	M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
+	m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},
+	m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},
+	plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt},
+	% base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},
+	string/.style={draw=black, thick},
+	pulley/.style={thick},
+	interface1/.style={draw=gray!60,
+		% The border decoration is a path replacing decorator. 
+		% For the interface style we want to draw the original path.
+		% The postaction option is therefore used to ensure that the
+		% border decoration is drawn *after* the original path.
+		postaction={draw=gray!60,decorate,decoration={border,angle=-135,
+					amplitude=0.3cm,segment length=2mm}}},
+	interface/.style={
+		pattern = north east lines,
+		draw    = none,
+		pattern color=gray!60,          
+	},
+	plank/.style={
+		fill=black!60, 
+		draw=black,
+		minimum width=3cm,
+		inner ysep=0.1cm,
+		outer sep=0pt,
+		yshift=0.75cm,
+		pattern = north east lines,
+		pattern color=gray!60, 
+	},
+	cargo/.style={
+		rectangle,
+		fill=black!70,              
+		inner sep=2.5mm,
+	}
+]
+	\draw (0,0) arc(-90:90:3cm);
+	\draw[dotted](0,0) arc(-90:-270:3cm);
+	\draw (0,0) -- +(-5,0);
+	\draw[dotted] (0,0) -- +(5,0);
+
+	\coordinate (0) at (0,0);
+	\coordinate (I) at (3,3);
+	\coordinate (II) at (0,6);
+	\coordinate (c) at (0,3);
+
+	\draw[fill=black] (c) circle (1.25pt) (I) circle (1.25pt) (II) circle (1.25pt) (0) circle (1.25pt);
+	\draw[axis] (c) -- (I) (c) -- (II) (c) -- (0);
+
+	\draw[force,->] (0) -- ++(1,0) node[below] {$\vec{v}$};
+	\draw[force,->] (I) -- ++(0,1) node[right] {$\vec{v}$};
+	\draw[force,->] (II) -- ++(-1,0) node[above] {$\vec{v}$};
+
+	\draw[force,->] (0) -- ++(0,-0.5) node[right] {$m\vec{g}$};
+	\draw[force,->] (I) -- ++(0,-0.5) node[left] {$m\vec{g}$};
+	\draw[force,->] (II) -- ++(0,-0.5) node[right] {$m\vec{g}$};
+
+	\draw[force,->] (0) -- ++(0,1) node[right] {$\vec{N}_1$};
+	\draw[force,axis,->] (I) -- ++(-1,0) node[below] {$\vec{N}_{2n}$};
+	\draw[force,axis,->] (I) -- ++(0,0.5) node[right] {$\vec{N}_{2\tau}$};
+	\draw[force,axis,->] (I) -- ++(-1,0.5) node[above] {$\vec{N}_{2}$};
+	\draw[force,->] (II) -- ++(0,-1) node[right] {$\vec{N}_3$};
+
+	% \draw[force, axis, ->] (0) -- ++(0,0.5) node[left] {$\vec{Q}_1$};
+	% \draw[force, axis, ->] (I) -- ++(-1,-0.5) node[below] {$\vec{Q}_2$};
+	% \draw[force, axis, ->] (II) -- ++(0,-1.5) node[right] {$\vec{Q}_3$};
+
+	\draw[force, axis, ->] (0) -- ++(0,-1.5) node[left] {$\vec{P}_1$};
+	\draw[force, axis, ->] (I) -- ++(1,-0.5) node[above] {$\vec{P}_2$};
+	\draw[force, axis, ->] (II) -- ++(0,0.5) node[right] {$\vec{P}_3$};
+
+
+
+\end{tikzpicture}\end{document}
