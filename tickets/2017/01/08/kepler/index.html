@@ -127,7 +127,9 @@ $$ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\hat{r}} $$
 
 <p>В поле центральной силы постоянна механическая энергия:</p>
 
-<p>$$W=W<em>k+W</em>\text{п}$$</p>
+<p>$$
+W=W_k+W_\text{a}
+$$</p>
 
 <p>А так как $$\vec{F}\parallel\vec{r}$$, то момент силы равен нулю, и по теореме о изменении момента импульса</p>
 
@@ -138,15 +140,15 @@ $$ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\hat{r}} $$
 
 <p>Запишем скорость как сумму двух векторов:</p>
 
-<p>$$\vec{v}=\vec{v}<em>r+\vec{v}</em>\phi,$$</p>
+<p>$$\vec{v}=\vec{v}_r+\vec{v}_\phi,$$</p>
 
 <p>где</p>
 
-<p>$$v<em>r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v</em>\phi=r\frac{\mathrm{d}\phi}{\mathrm{d}t}$$</p>
+<p>$$v_r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v_\phi=r\frac{\mathrm{d}\phi}{\mathrm{d}t}$$</p>
 
 <p>тогда квадрат вектора полной скорости $$v$$</p>
 
-<p>$$v^2=v<em>r^2+v</em>\phi^2$$</p>
+<p>$$v^2=v_r^2+v_\phi^2$$</p>
 
 <p>а полная механическая энергия запишется как</p>
 
@@ -154,8 +156,8 @@ $$ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\hat{r}} $$
 
 <p>Распишем момент импульса по определению:</p>
 
-<p>$$\vec{N}=[\vec{r}\times m(\vec{v}<em>r+\vec{v}</em>\phi)]=
-[\vec{r}\times m\vec{v}<em>r]+[\vec{r}\times m\vec{v}</em>\phi]=
+<p>$$\vec{N}=[\vec{r}\times m(\vec{v}_r+\vec{v}_\phi)]=
+[\vec{r}\times m\vec{v}_r]+[\vec{r}\times m\vec{v}_\phi]=
 m[\vec{r}\times\vec{v}_\phi]
 $$</p>
 
@@ -171,7 +173,7 @@ $$</p>
 
 <p>Найдем потенциальную энергию:</p>
 
-<p>$$W<em>\text{п}(r)-W</em>\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r=$$</p>
+<p>$$W_\text{п}(r)-W_\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r=$$</p>
 
 <p>$$=-\int_r^\infty \frac{GMm}{r'^2} \textrm{d}r'=-\frac{Gmm}{r}=\frac{-k}{r}$$</p>
 
@@ -183,14 +185,14 @@ $$</p>
 
 <p>Введем эффективную потенциальную энергию:</p>
 
-<p>$$W<em>\text{эфф}=W</em>\text{цб}+W_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}$$</p>
+<p>$$W_\text{эфф}=W_\text{цб}+W_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}$$</p>
 
 <p><img width="100%" src="/img/kepler-energy.svg" alt=""></p>
 
 <p>С одной стороны, можем выразить $$\mathrm{d}t$$ через эффективную энергию:</p>
 
-<p>$$W=W<em>\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
-\dot{r}^2=\frac{2}{m}(W-W</em>\text{эфф})$$</p>
+<p>$$W=W_\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
+\dot{r}^2=\frac{2}{m}(W-W_\text{эфф})$$</p>
 
 <p>Тогда</p>
 
@@ -213,21 +215,21 @@ $$</p>
 
 <p>Выберем один знак и запишем интеграл:</p>
 
-<p>$$\varphi(r)=\frac{N}{m}\int<em>{r</em>{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$</p>
+<p>$$\varphi(r)=\frac{N}{m}\int_{r_{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$</p>
 
 <p>$$W-W_\text{эфф}=W-(\frac{N^2}{2mr^2}-\frac{k}{r})$$</p>
 
-<p>$$\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+<p>$$\varphi(r)=-\int_{r_{min}}^r\frac
 {d\left(\frac{N}{r}\right)}
 {\sqrt{2m(W-W_\text{эфф})}}$$</p>
 
-<p>$$\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+<p>$$\varphi(r)=-\int_{r_{min}}^r\frac
 {d\left(\frac{N}{r}\right)}
 {\sqrt{2mW-\left(\frac{N^2}{r^2}-\frac{2mk}{r}\right)}}$$</p>
 
 <p>$$\frac{N^2}{r^2}-\frac{2mk}{r}=\left(\frac{N}{r}-\frac{mk}{N}\right)^2-\left(\frac{mk}{N}\right)^2$$</p>
 
-<p>$$\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+<p>$$\varphi(r)=-\int_{r_{min}}^r\frac
 {d\left(\frac{N}{r}-\frac{mk}{N}\right)}
 {\sqrt{\left(2mW+\left(\frac{mk}{N}\right)^2\right)-\left(\frac{N}{r}-\frac{mk}{N}\right)^2}}$$</p>
 
@@ -236,14 +238,14 @@ $$</p>
 <p>$$\alpha^2=\left(\frac{N}{r}-\frac{mk}{N}\right)^2$$</p>
 
 <p>$$
-\varphi(r)=-\int<em>{r</em>{min}}^r\frac
+\varphi(r)=-\int_{r_{min}}^r\frac
 {d\alpha}
 {\sqrt{\beta^2-\alpha^2}}$$</p>
 
 <p>Так как согласно выбору полярной оси $$\varphi=0$$ при $$r=r_{min},$$ то</p>
 
 <p>$$
-\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|<em>{r</em>{min}}^r=\arccos\frac\alpha\beta$$</p>
+\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|_{r_{min}}^r=\arccos\frac\alpha\beta$$</p>
 
 <p>$$
 \varphi(r)=\arccos\frac
