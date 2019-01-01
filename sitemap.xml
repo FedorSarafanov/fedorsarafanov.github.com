@@ -513,18 +513,8 @@
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/matlab/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://fedorsarafanov.github.io/matlab/2018-12-27-matlab-solvedu-in-simulink/</loc>
     <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tickets/</loc>
-    <lastmod>2018-12-27T00:04:28+03:00</lastmod>
   </url>
   
   <url>
@@ -543,18 +533,8 @@
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tikz/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://fedorsarafanov.github.io/tikz/2017-12-27-mwe-tikz/</loc>
     <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/lections/</loc>
-    <lastmod>2017-02-26T18:18:42+03:00</lastmod>
   </url>
   
   <url>
@@ -729,6 +709,11 @@
   </url>
   
   <url>
+    <loc>https://fedorsarafanov.github.io/tickets/</loc>
+    <lastmod>2018-12-27T00:04:28+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fedorsarafanov.github.io/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
     <priority>0</priority>
@@ -795,6 +780,11 @@
   </url>
   
   <url>
+    <loc>https://fedorsarafanov.github.io/lections/</loc>
+    <lastmod>2017-02-26T18:18:42+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fedorsarafanov.github.io/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</loc>
     <lastmod>2017-01-25T10:38:02+03:00</lastmod>
     <priority>0</priority>
@@ -804,6 +794,16 @@
     <loc>https://fedorsarafanov.github.io/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</loc>
     <lastmod>2017-01-25T10:38:02+03:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fedorsarafanov.github.io/matlab/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fedorsarafanov.github.io/tikz/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
   </url>
   
   <url>
