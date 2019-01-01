@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mwe on Блог Федора Сарафанова</title>
-    <link>http://localhost:1313/tags/mwe/</link>
+    <link>https://fedorsarafanov.github.io/tags/mwe/</link>
     <description>Recent content in Mwe on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     <lastBuildDate>Wed, 27 Dec 2017 15:28:53 +0300</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/mwe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fedorsarafanov.github.io/tags/mwe/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Минимальный рабочий пример (MWE) tikz-standalone</title>
-      <link>http://localhost:1313/tikz/2017-12-27-mwe-tikz/</link>
+      <link>https://fedorsarafanov.github.io/tikz/2017-12-27-mwe-tikz/</link>
       <pubDate>Wed, 27 Dec 2017 15:28:53 +0300</pubDate>
       
-      <guid>http://localhost:1313/tikz/2017-12-27-mwe-tikz/</guid>
+      <guid>https://fedorsarafanov.github.io/tikz/2017-12-27-mwe-tikz/</guid>
       <description>&lt;p&gt;Здесь приведен код электрической схемы (пакет latex-а circuitikz), созданный в стиле документа standalone (документ компилируется в своем собственном размере, и потом может быть подключен через includegraphics):&lt;/p&gt;</description>
     </item>
     

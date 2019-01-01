@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Решения задач из Яковлева, Иродова и другие on Блог Федора Сарафанова</title>
-    <link>http://localhost:1313/problems/</link>
+    <link>https://fedorsarafanov.github.io/problems/</link>
     <description>Recent content in Решения задач из Яковлева, Иродова и другие on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     <lastBuildDate>Sun, 01 Jan 2017 22:16:31 +0300</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/problems/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fedorsarafanov.github.io/problems/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Иродов - решение задачи №1.104(1.111)</title>
-      <link>http://localhost:1313/problems/2017-02-23-1-104/</link>
+      <link>https://fedorsarafanov.github.io/problems/2017-02-23-1-104/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>http://localhost:1313/problems/2017-02-23-1-104/</guid>
+      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-1-104/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Винтовку навели на вертикальную черту мишени, находящейся точно в северном направлении, и выстрелили. Пренебрегая сопротивлением воздуха, найти, на сколько сантиметров и в какую сторону пуля, попав в мишень, отклонится от черты. Выстрел произведен в горизонтальном направлении на широте $\phi=60^\circ$, скорость пули $v=900$ м/с и расстояние до мишени $1$ км.&lt;/p&gt;
 
@@ -25,10 +25,10 @@
     
     <item>
       <title>Иродов - решение задачи №1.108(1.112)</title>
-      <link>http://localhost:1313/problems/2017-02-23-irodov-1-108/</link>
+      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-108/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-108/</guid>
+      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-108/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Горизонтальный диск вращают с постоянной угловой скоростью $\omega=6$ рад/с вокруг вертикальной оси, проходящей через его центр. По одному из диаметров диска движется небольшое тело массы m = $0.5$ кг с постоянной относительно диска скоростью $v&#39;=50$ см/с. Найти силу, с которой диск действует на это тело в момент, когда оно находится на расстоянии $r=30$ см от оси вращения.&lt;/p&gt;
 
@@ -37,10 +37,10 @@
     
     <item>
       <title>Иродов - решение задачи №1.160(1.136)</title>
-      <link>http://localhost:1313/problems/2017-02-23-irodov-1-160/</link>
+      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-160/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-160/</guid>
+      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-160/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Небольшое тело $A$ начинает скользить с высоты $h$ по наклонному желобу, переходящему в полуокружность радиуса $h/2$. Пренебрегая трением, найти скорость тела в наивысшей точке его траектории (после отрыва от желоба).&lt;/p&gt;
 
@@ -49,10 +49,10 @@
     
     <item>
       <title>Иродов - решение задачи №1.163(1.142)</title>
-      <link>http://localhost:1313/problems/2017-02-23-irodov-1-163/</link>
+      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-163/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-163/</guid>
+      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-163/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Гладкий легкий горизонтальный стержень $AB$ может вращаться вокруг вертикальной оси, проходящей через его конец $A$. На стержне находится небольшая муфточка массы $m$, соединенная невесомой пружинкой длины $l_0$ с концом $A$. Жесткость пружинки равна $k$. Какую работу надо совершить, чтобы эту систему медленно раскрутить до угловой скорости $\omega$?&lt;/p&gt;
 
@@ -61,10 +61,10 @@
     
     <item>
       <title>Иродов - решение задачи №1.19</title>
-      <link>http://localhost:1313/problems/2017-02-23-irodov-1-19/</link>
+      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-19/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-19/</guid>
+      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-19/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 За промежуток времени $\tau=10$ с точка прошла половину окружности радиуса $R=160$ см. Вычислить за это время:
 а) среднюю скорость $\langle v \rangle$;
