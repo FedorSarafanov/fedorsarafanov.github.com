@@ -1,0 +1,36 @@
+// Adding 'Contents' headline to the TOC
+#TableOfContents::before { 
+    content: "Содержание";
+    position: relative;
+    top: -0.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 1.1rem;
+	padding: 0;
+	color: fade(black, 80%);	
+    // margin-left: -1.45rem;
+}
+
+
+// Using numbers instead of bullets for listing
+#TableOfContents ul {
+    list-style: decimal;
+}
+
+#TableOfContents {
+    li{
+	    position: relative;
+	    left: 1em;
+	    a{
+		    color:  fade(blue, 70%)
+	    }
+    }
+    color:  fade(black, 70%);
+    // border: 1px solid #aaa;
+    padding: 0;
+    padding-left: 1em;
+    margin: 0;
+    margin-top: 1rem;
+    list-style: decimal;
+    display: inline-block;
+}

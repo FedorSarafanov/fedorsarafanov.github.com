@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+	<meta charset="UTF-8">
+    <title>Аналитическая геометрия. Кривые второго порядка &mdash;  Блог Федора Сарафанова</title>
+	<link rel=stylesheet href="/css/main2.min.css">
+  <link rel="stylesheet" href="/css/prism.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+	<!--   CommonHTML: { linebreaks: {width: "container"} },
+	  "HTML-CSS": { linebreaks: {width: "container"} },
+	         SVG: { linebreaks: {width: "container"} } -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  CommonHTML: { linebreaks: {automatic: true} },
+	  "HTML-CSS": { linebreaks: {automatic: true} },
+	         SVG: { linebreaks: {automatic: true} },
+	  tex2jax : {
+	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	          processEscapes: true
+	        },
+	    showProcessingMessages: false,
+	    messageStyle: 'none'
+	});
+	</script>
+
+	<script>
+	  function ready() {
+	    hljs.initHighlightingOnLoad();
+	  }
+	  document.addEventListener("DOMContentLoaded", ready);
+	</script>
+
+	
+	<meta name="description" content="Кривые и поверхности второго порядка " />
+	
+
+	
+	<meta name="keywords" content="аналитическая геометрия" />
+	
+
+
+</head>
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/cook/gallery.html">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+<header>
+  <time class="datetime">Jan 28, 2017</time>
+  <h1>Аналитическая геометрия. Кривые второго порядка</h1>
+</header>
+
+<article>
+<p>Краткий обзор определений по теоретическому минимуму. Тема «кривые и поверхности второго порядка».
+<!--ed--></p>
+
+<ul id="markdown-toc">
+  <li><a href="#определение-эллипса" id="markdown-toc-определение-эллипса">Определение эллипса</a></li>
+  <li><a href="#каноническое-уравнение-эллипса-в-декартовых-координатах" id="markdown-toc-каноническое-уравнение-эллипса-в-декартовых-координатах">Каноническое уравнение эллипса в декартовых координатах</a></li>
+  <li><a href="#определение-гиперболы" id="markdown-toc-определение-гиперболы">Определение гиперболы</a></li>
+  <li><a href="#каноническое-уравнение-гиперболы-в-декартовых-координатах" id="markdown-toc-каноническое-уравнение-гиперболы-в-декартовых-координатах">Каноническое уравнение гиперболы в декартовых координатах</a></li>
+  <li><a href="#определение-параболы" id="markdown-toc-определение-параболы">Определение параболы</a></li>
+  <li><a href="#каноническое-уравнение-параболы-в-декартовых-координатах" id="markdown-toc-каноническое-уравнение-параболы-в-декартовых-координатах">Каноническое уравнение параболы в декартовых координатах</a></li>
+  <li><a href="#определение-эксцентриситета-эллипса-гиперболы" id="markdown-toc-определение-эксцентриситета-эллипса-гиперболы">Определение эксцентриситета эллипса (гиперболы)</a></li>
+  <li><a href="#определение-фокального-параметра-эллипса-гиперболы" id="markdown-toc-определение-фокального-параметра-эллипса-гиперболы">Определение фокального параметра эллипса (гиперболы)</a></li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="определение-эллипса">Определение эллипса</h2>
+
+<p>Эллипсом называется геометрическое место точек, таких, что сумма расстояний до каждой из них от двух фиксированных точек, называемых фокусами, постоянна (и численно равна длине большой полуоси эллипса $2a$.)</p>
+
+<h2 id="каноническое-уравнение-эллипса-в-декартовых-координатах">Каноническое уравнение эллипса в декартовых координатах</h2>
+
+<script type="math/tex; mode=display">\frac{x^2}{a^2}+\frac{y^2}{b^2}=1 \quad (a>b)</script>
+
+<h2 id="определение-гиперболы">Определение гиперболы</h2>
+
+<p>Гиперболой называют множество всех точек плоскости, <strong>абсолютное значение</strong>   разности расстояний до каждой из которых от двух фиксированных точек, называемых фокусами, постоянна (и численно равна расстоянию между вершинами этой гиперболы $2a$.)</p>
+
+<h2 id="каноническое-уравнение-гиперболы-в-декартовых-координатах">Каноническое уравнение гиперболы в декартовых координатах</h2>
+
+<script type="math/tex; mode=display">\frac{x^2}{a^2}-\frac{y^2}{b^2}=1</script>
+
+<h2 id="определение-параболы">Определение параболы</h2>
+
+<p>Параболой называется множество всех точек плоскости, равноудалённых от точки фокуса $F$  и данной прямой $d$, не проходящей через точку $F$.</p>
+
+<ul>
+  <li>$F$ – фокус параболы</li>
+  <li>$d$ – директриса параболы</li>
+  <li>$p$ – фокальный параметр, который равен расстоянию от фокуса до директрисы.</li>
+</ul>
+
+<h2 id="каноническое-уравнение-параболы-в-декартовых-координатах">Каноническое уравнение параболы в декартовых координатах</h2>
+
+<script type="math/tex; mode=display">y^2=2px</script>
+
+<h2 id="определение-эксцентриситета-эллипса-гиперболы">Определение эксцентриситета эллипса (гиперболы)</h2>
+
+<p>Эксцентриситетом эллипса (гиперболы) называют отношение $\varepsilon=\frac c a$, которое может принимать значения в пределах $0\leq\varepsilon&lt;1$ для эллипса и $1\leq\varepsilon$ для гиперболы. ($c$ – расстояние от центра симметрии до точки фокуса)</p>
+
+<h2 id="определение-фокального-параметра-эллипса-гиперболы">Определение фокального параметра эллипса (гиперболы)</h2>
+
+<p>Фокальным параметром эллипса (гиперболы) <script type="math/tex">{p={\frac {b^{2}}{a}}}</script> называется половина длины хорды, проходящей через фокус и перпендикулярной большой оси эллипса (гиперболы).</p>
+
+<p><em>Выводится из канонических уравнений подстановкой $x=c$, $y=p$</em></p>
+
+</article>
+
+
+      </section>
+	</main>
+</div>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="/js/prism.js"></script>
+</body>
+</html>

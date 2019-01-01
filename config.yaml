@@ -1,0 +1,20 @@
+baseURL: "https://fedorsarafanov.github.io/"
+languageCode: "ru-Ru"
+defaultContentLanguage: "ru"
+title: "Блог Федора Сарафанова"
+theme: sfg
+blackfriday:
+  # angledQuotes: false
+  # latexDashes: true 
+  # fractions: false
+  smartypants: false
+permalinks:
+  lections: /lection/:year/:month/:day/:filename/
+  about:  /:year/:month/:day/about.html
+  gallery_source:  /cook/gallery/{:filename}.html
+  tickets: /tickets/:year/:month/:day/:filename/
+pygmentsUseClassic : false
+pygmentsCodeFences : true
+pygmentsCodeFencesGuessSyntax: true
+pygmentsStyle: perldoc
+# pygmentsUseClasses : true

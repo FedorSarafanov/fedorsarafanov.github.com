@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+	<meta charset="UTF-8">
+    <title>Галерея картинок - блог Федора Сарафанова</title>
+	<link rel=stylesheet href="/css/main2.min.css">
+  <link rel="stylesheet" href="/css/prism.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+	<!--   CommonHTML: { linebreaks: {width: "container"} },
+	  "HTML-CSS": { linebreaks: {width: "container"} },
+	         SVG: { linebreaks: {width: "container"} } -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  CommonHTML: { linebreaks: {automatic: true} },
+	  "HTML-CSS": { linebreaks: {automatic: true} },
+	         SVG: { linebreaks: {automatic: true} },
+	  tex2jax : {
+	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	          processEscapes: true
+	        },
+	    showProcessingMessages: false,
+	    messageStyle: 'none'
+	});
+	</script>
+
+	<script>
+	  function ready() {
+	    hljs.initHighlightingOnLoad();
+	  }
+	  document.addEventListener("DOMContentLoaded", ready);
+	</script>
+
+<!-- 	{% if page.desc %}
+	<meta name="description" content="{{ page.desc }}" />
+	{% endif %}
+
+	{% if page.tags %}
+	<meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />
+	{% endif %} -->
+
+
+</head>
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/cook/gallery.html">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="{% post_url 2017-01-01-about %}">О блоге</a></li>
+			</ul>
+			<footer>
+				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<header><h2>Исходники картинки</h2></header>
+		<section style="padding-top: 20px !important;">
+<a class="imag2" href="tikzpicture_1a7e4c198761d25cdac23f57a9873178.tex"><img src="tikzpicture_1a7e4c198761d25cdac23f57a9873178.pdf.jpg" alt=""></a>
+<a href="pre.html">pre.tex</a>
+<pre>
+<code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+    force/.style={>=latex,draw=blue,fill=blue},
+    axis/.style={densely dashed,gray,font=\small},
+    M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
+    m/.style={rectangle,draw=black,fill=lightgray,minimum size=0.3cm,thin},
+    plane/.style={draw=black,fill=blue!10},
+    string/.style={draw=black, thick},
+    pulley/.style={thick},
+]
+
+\matrix[column sep=1cm] {
+    %% Sketch
+    \draw[plane] (0,-1) coordinate (base)
+                     -- coordinate[pos=0.5] (mid) ++(\iangle:3) coordinate (top)
+                     |- (base) -- cycle;
+    \path (mid) node[M,rotate=\iangle,yshift=0.25cm] (M) {};
+    \draw[pulley] (top) -- ++(\iangle:0.25) circle (0.25cm)
+                   ++ (90-\iangle:0.5) coordinate (pulley);
+    \draw[string] (M.east) -- ++(\iangle:1.5cm) arc (90+\iangle:0:0.25)
+                  -- ++(0,-1) node[m]  {};
+
+    \draw[->] (base)++(\arcr,0) arc (0:\iangle:\arcr);
+    \path (base)++(\iangle*0.5:\arcr+5pt) node {$\alpha$};
+    %%
+
+&
+    %% Free body diagram of M
+    \begin{scope}[rotate=\iangle]
+        \node[M,transform shape] (M) {};
+        % Draw axes and help lines
+
+        {[axis,->]
+            \draw (0,-1) -- (0,2) node[right] {$+y$};
+            \draw (M) -- ++(2,0) node[right] {$+x$};
+            % Indicate angle. The code is a bit awkward.
+
+            \draw[solid,shorten >=0.5pt] (\down-\iangle:\arcr)
+                arc(\down-\iangle:\down:\arcr);
+            \node at (\down-0.5*\iangle:1.3*\arcr) {$\alpha$};
+        }
+
+        % Forces
+        {[force,->]
+            % Assuming that Mg = 1. The normal force will therefore be cos(alpha)
+            \draw (M.center) -- ++(0,{cos(\iangle)}) node[above right] {$\vec{N}$};
+            \draw (M.west) -- ++(-1,0) node[left] {$\vec{f_R}$};
+            \draw (M.east) -- ++(1,0) node[above] {$\vec{T}$};
+        }
+
+    \end{scope}
+    % Draw gravity force. The code is put outside the rotated
+    % scope for simplicity. No need to do any angle calculations. 
+    \draw[force,->] (M.center) -- ++(0,-1) node[below] {$M\vec{g}$};
+    %%
+
+&
+    %%%
+    % Free body diagram of m
+    \node[m] (m) {};
+    \draw[axis,->] (m) -- ++(0,-2) node[left] {$+x$};
+    {[force,->]
+        \draw (m.north) -- ++(0,1) node[above] {$\vec{T'}$};
+        \draw (m.south) -- ++(0,-1) node[right] {$m\vec{g}$};
+    }
+
+\\
+};
+
+\end{tikzpicture}\end{document}</code>
+      </section>
+	</main>
+</div>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="/js/prism.js"></script>
+</body>
+</html>

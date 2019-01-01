@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    {{ with .Keywords }}
+    <meta content="{{ delimit . `, ` }}" name="keywords">
+    {{ end }}
+
+    {{ if .Description }}
+    <meta name="description" property="og:description" content="{{ .Description }}|{{ .Site.Params.Description }}">
+    {{ else if .IsPage }}
+    <meta name="description" property="og:description" content="{{ .Summary | plainify }}|{{ .Site.Params.Description }}">
+    {{ else }}
+    <meta name="description" property="og:description" content="{{ .Site.Params.Description }}">
+    {{ end }} 
+
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+
+    {{ $options := (dict "targetPath" "/css/star.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "sass/main.scss" | toCSS $options}}
+    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+
+  <!-- <link rel=stylesheet href="/css/main2.min.css"> -->
+  <!-- <link rel="stylesheet" href="/css/prism.css"> -->
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css"> -->
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+
+	<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script> -->
+
+
+
+
+
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML&locale=ru' async></script> -->
+	<!--   CommonHTML: { linebreaks: {width: "container"} },
+	  "HTML-CSS": { linebreaks: {width: "container"} },
+	         SVG: { linebreaks: {width: "container"} } -->
+<!-- 	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  CommonHTML: { linebreaks: {automatic: true} },
+	  "HTML-CSS": { linebreaks: {automatic: true} },
+	         SVG: { linebreaks: {automatic: true} },
+	  tex2jax : {
+	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	          processEscapes: true
+	        },
+	    showProcessingMessages: true,
+	    messageStyle: 'none'
+	});
+	</script> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$\n", right: "\n$$", display: true},
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  // {left: "+++", right: "+++", display: true}
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$'], ['\[','\]']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	});
+	</script>
+
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Queue(function() {
+	    // Fix <code> tags after MathJax finishes running. This is a
+	    // hack to overcome a shortcoming of Markdown. Discussion at
+	    // https://github.com/mojombo/jekyll/issues/199
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	});
+	</script> -->
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+				<li><a href="/tickets">Билеты</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        {{ block "main" . }}
+        {{ end }}
+      </section>
+	</main>
+</div>
+
+
+<!-- Yandex.Metrika counter --> 
+<!-- <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  -->
+<!-- /Yandex.Metrika counter -->
+<!-- <script src="/js/prism.js"></script> -->
+</body>
+</html>

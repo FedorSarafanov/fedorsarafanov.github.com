@@ -1,0 +1,59 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+<!-- list template -->
+<div>
+{{ $paginatorr := .Paginate (where .Data.Pages "Type" "ne" "notpost") }}
+  <!-- <h1>{{ .Title }}</h1> -->
+  {{ .Content }}
+<!-- )) -> .GroupByDate "2006 Jan"  -->
+   <!-- range $paginatorr.Pages  -->
+  {{ range where $paginatorr.Pages "Type" "ne" "notpost" }}
+  <header> 
+    <!-- <time class="datetime">{{ .Date.Format "2006/01/01" }}</time> -->
+    <time class="datetime">{{ dateFormat "Jan 2, 2006" .Date }}</time>
+      <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+      <!-- ыва -->
+  </header>
+  <article>
+    
+{{ .Summary }}
+  <!-- <div class="readmore"><a href="/tickets/2018/12/27/tickets-quantum-course3sem1.html">Читать далее</a></div> -->
+  <div class="readmore"><a href="{{ .URL }}">Читать далее</a></div>
+  </article>
+  {{ end }}
+
+{{ partial "paginator.html" . }}
+<!--   {{ if gt $paginatorr.TotalPages 1 }}
+  <nav class="paginate-container">
+    <div class="pagination">
+      <ul>
+        {{ if $paginatorr.HasPrev }}
+        <a href="{{ $paginatorr.Prev.URL }}" class="previous_page">{{ i18n "paginatorPrevious"}}</a>
+        {{ else }}
+        <span class="previous_page disabled">{{ i18n "paginatorPrevious"}}</span>
+        {{ end }}
+
+        {{ range $paginatorr.Pagers }}
+          <a class="{{ if eq . $paginatorr }}current_page{{ end }}" href="{{ .URL }}">
+            {{ .PageNumber }}
+          </a>
+        {{ end }}
+
+        {{ if $paginatorr.HasNext }}
+        <a href="{{ $paginatorr.Next.URL }}" class="next_page">{{ i18n "paginatorNext"}}</a>
+        {{ else }}
+        <span class="next_page disabled">{{ i18n "paginatorNext"}}</span>
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+  {{ end }} -->
+
+
+</div>
+
+{{ end }}

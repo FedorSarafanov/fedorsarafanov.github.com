@@ -1,0 +1,51 @@
+﻿---
+title: "Исходники иллюстрации"
+type: "notpost"
+---
+<a class="imag2" href="/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.tex"><img src="/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.pdf.jpg" alt=""></a>
+<a href="/cook/gallery/pre">pre.tex</a>
+<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+	\draw[interface, draw] (-2,-0.5) rectangle ++ (4,0.5);
+	\draw (-0.5,0) rectangle ++ (1,2);
+	\draw[->] (0,0) -- (0,1.5);
+	\foreach \i in {80,84,...,100}{
+		\draw (0,0) ++ (\i:1.6) -- ++ (\i:0.1);
+	}
+
+	\draw (2.8,0.6) circle (0.6);
+	\draw (2.8,0.6) circle (0.3);
+
+	\draw (3.1,0.6) coordinate (b) -- ++(0,-1.5) coordinate (1);
+
+	\fill[gray, draw=none] (1) rectangle ++ (-0.25,-0.5);
+	\fill[gray, draw=none] (1) rectangle ++ (0.25,-0.5);
+
+	\draw (-1.25,0) -- ++ (0,0.5);
+	\draw[fill=white] (-1.8,0.5) rectangle ++ (1.1,0.2);
+	\draw[fill=gray] (-1.4,0.7) rectangle ++ (0.5,0.7);
+	\draw (1.25,0) -- ++ (0,0.5);
+	\draw[fill=gray] (1.4,0.7) rectangle ++ (-0.5,0.5);	
+	\draw[fill=white] (2.8,0.5) rectangle ++ (-2.1,0.2);	
+	% \draw[line width=5pt, black!30] (0,0) -- (0,-1);
+
+	% \draw[thick] (0,-1) circle (2pt) node[left, xshift=-0.5em] {$O$} -- ++ (-60:4);
+
+	\draw[axis,->] (4,2) -- ++ (0,-2) node[below] {$+x$};	
+
+	% \draw[line width=5pt] (0,-1) ++ (-60:1.9) coordinate (1) ++ (-60:-0.1) -- ++ (-60:0.2);	
+	% \draw[axis,->] (0,-1) -- ++ (-90:4) node[below] {$+z$};
+
+	% \draw[axis,->] (0,-1)++(-60:4) -- ++ (30:2) node[right] {$+\tau$};
+
+	\draw[force,->] (1) -- ++(0,0.4) node [right] {$\vec{T}$};
+	\draw[force,->] (b) -- ++(0,-0.4) node [right] {$\vec{T}'$};
+	\draw[force,->] (1)++(0,-0.5) -- ++(0,-0.4) node [right] {$m\vec{g}$};
+
+	% \draw[inforce,->] (1) -- ++(1,0) node [right] {$d\vec{F}_{in}$};
+	% \draw[force,->] (1) -- ++(0,-1) node [below] {$dm\vec{g}$};
+
+
+
+% \draw[line width=5pt] (0,-1) ++ (-60:1.9) coordinate (1) ++ (-60:-0.1) -- ++ (-60:0.2);		
+
+\end{tikzpicture}\end{document}</code></pre>

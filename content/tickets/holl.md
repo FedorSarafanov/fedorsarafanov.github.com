@@ -1,0 +1,45 @@
+---
+<!-- layout: post -->
+title:  "Эффект Холла"
+date:   2017-01-13 14:35:05 +0300
+aliases:
+    - /phy/2017/01/13/holl.html
+<!-- categories: phy -->
+---
+
+При помещении проводника с постоянным током в магнитное поле в проводнике возникает поперечная разность потенциалов, называемая "холловским напряжением".
+
+<p align="center"><br><img align="center" src="https://tex.s2cms.ru/svg/%5Cusetikzlibrary%7Bscopes%7D%0A%5Cusetikzlibrary%7Bdecorations.pathreplacing%2C%25%0A%20%20%20%20%20decorations.pathmorphing%2C%25%0A%20%20%20%20patterns%2C%25%0A%20%20%20%20calc%2C%25%0A%20%20%20%20scopes%2C%25%0A%20%20%20%20arrows%2C%25%0A%20%20%20%20arrows.meta%2C%25%0A%20%20%20%20arrows.spaced%2C%25%0A%7D%0A%5Ctikzset%7Bforce%2F.style%3D%7B%3E%3Dlatex%2Cdraw%3Dblue%2Cfill%3Dblue%7D%2C%20axis%2F.style%3D%7Bdensely%20dashed%2Cgray%2Cfont%3D%5Csmall%7D%2C%20acceleration%2F.style%3D%7B%3E%3Dopen%20triangle%2060%2Cdraw%3Dblue%2Cfill%3Dblue%7D%2C%20inforce%2F.style%3D%7Bforce%2Cdouble%20equal%20sign%20distance%3D2pt%7D%2C%20interface%2F.style%3D%7Bpattern%20%3D%20north%20east%20lines%2C%20draw%20%20%20%20%3D%20none%2C%20pattern%20color%3Dgray!60%2C%20%7D%2C%20cross%2F.style%3D%7Bcross%20out%2C%20draw%3Dblack%2C%20minimum%20size%3D2*(%231-%5Cpgflinewidth)%2C%20inner%20sep%3D0pt%2C%20outer%20sep%3D0pt%7D%2C%20%20%20%20cargo%2F.style%3D%7Brectangle%2C%20fill%3Dblack!70%2C%20inner%20sep%3D2.5mm%2C%20%7D%2Cangular%2F.style%3D%7B-%7BLatex%5Blength%3D3mm%2C%20line%20width%3D0.4pt%2Copen%2Cmagenta%2C%20fill%3Dwhite%5D%7D%2C%20draw%3Dmagenta%7D%2C%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(0.2%2C0.2)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-3%2C0)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(0%2C0)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-3%2C0)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(0%2C3)%20--%20%2B%2B(0.2%2C0.2)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B%20(-0.2%2C-0.2)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(3%2C0)%20--%20%2B%2B(0.2%2C0.2)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-0.2%2C-0.2)%20--cycle%3B%0A%5Cdraw%5Bforce%2C%20-%3E%5D%20(1.5%2C1.5)%20%20--%20%2B%2B(0%2C0.7)%20node%5Babove%5D%20%7B%24%5Cvec%7BF%7D_%5Ctext%7B%D0%BB%7D%24%7D%3B%0A%5Cdraw%5Bforce%2C%20-%3E%5D%20(1.5%2C1.5)%20node%5Bblack%2Cscale%3D1.5%2C%20fill%3Dwhite%5D%20%7B%24%5Ccircleddash%24%7D%20--%20%2B%2B(0.7%2C0)%20node%5Bright%5D%20%7B%24%5Cvec%7Bv%7D%24%7D%3B%0A%5Cforeach%20%5Ci%20in%20%7B0.2%2C0.5%2C...%2C3.4%7D%20%7B%0A%5Cnode%5Babove%2C%20yshift%3D3pt%5D%20at%20(%5Ci%2C3)%20%7B%24%2B%24%7D%3B%0A%7D%0A%5Cforeach%20%5Ci%20in%20%7B0.2%2C0.5%2C...%2C3%7D%20%7B%0A%5Cnode%5Bbelow%2C%20yshift%3D-0pt%5D%20at%20(%5Ci%2C0)%20%7B%24-%24%7D%3B%0A%7D%0A%25%0A%5Cdraw%5Bangular%2C%20%3C-%5D%20(3.5%2C1)%20--%20node%5Bright%2Cmagenta%5D%20%7B%24%5Cvec%7BE%7D_2%24%7D%20%2B%2B%20(0%2C1)%3B%0A%5Cdraw%5Bangular%2C%20-%3E%5D%20(0%2C4)%20--%20node%5Babove%2Cmagenta%5D%20%7B%24%5Cvec%7BE%7D_1%24%7D%20%2B%2B%20(3.2%2C0)%3B%0A%25%0A%5Cdraw%5Baxis%2C%20%3C-%3E%5D%20(-0.4%2C0)%20--%20node%5Bleft%2Cblack%5D%20%7B%24d%24%7D%20%2B%2B%20(0%2C3)%3B%0A%25%0A%5Cdraw%5Bangular%2C%20-%3E%5D%20(0.2%2C1.5)%20--%20node%5Babove%2Cmagenta%5D%20%7B%24%5Cvec%7Bj%7D%24%7D%20%2B%2B(0.7%2C0)%20%3B%0A%25%0A%5Cdraw%20(0.5%2C0.5)%20node%20%7B%24%5Cbigotimes%24%7D%3B%0A%5Cdraw%20(0.6%2C0.55)%20node%5Bright%5D%20%7B%24%5Cvec%7BB%7D%24%7D%3B%0A%5Cend%7Btikzpicture%7D"/><br><br></p>
+<!--more-->  
+
+Обозначим плотность тока:
+
+$$j=\frac{I}{S}$$
+
+Распишем ток:
+
+$$I=\frac{dQ}{dt}=\frac{qnvS\,dt}{dt}=qnvS,$$
+
+где $$n$$ - концентрация заряда по объему.
+
+Отсюда
+
+$$v=\frac{I}{qnS}$$
+
+В случае магнитного поля, перпендикулярного проводнику,
+
+$$F_\text{л}=|q[\vec{v}\times\vec{B}]|=qvB$$
+
+Или
+
+$$F_\text{л}=\frac{BI}{qnS}=\frac{jB}{n}$$ 
+
+Отток зарядов прекратится, когда $$F_{E_2}=F_\text{л}$$:
+
+$$\frac{jB}{n}=qE_2=\frac{qU}{d}$$
+
+Отсюда создаваемая разность потенциалов будет
+
+$$U=jBd\frac{1}{qn}.$$
+
+Коэффициент $$R_h=\frac{1}{qn}$$ называют постоянной Холла.

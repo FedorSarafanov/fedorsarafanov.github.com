@@ -1,0 +1,39 @@
+
+{{ define "title" }}
+  {{ .Title }}  &ndash; {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+<!-- list template -->
+<!-- <div> -->
+  <h1> {{ .Title }} </h1>
+  {{ .Content }}
+
+  {{ range where .Paginator.Pages "Type" "ne" "notpost" }}
+
+  <header>
+    <time class="datetime">{{ .Date.Format "2006/01/01" }}</time>
+      <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+  </header>
+  <article>
+    
+{{ .Summary }}
+  <!-- <div class="readmore"><a href="/tickets/2018/12/27/tickets-quantum-course3sem1.html">Читать далее</a></div> -->
+  <div class="readmore"><a href="{{ .URL }}">Читать далее</a></div>
+  </article>
+
+  {{ end }}
+
+  <!-- paginator nav --> 
+  {{ partial "paginator.html" . }}
+
+
+<!-- </div> -->
+
+{{ end }}
+
+
+{{ define "side" }}
+  {{ partial "side.taxonomy.html" . }}
+{{ end }}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+	<meta charset="UTF-8">
+    <title>Вывод ускорения Кориолиса &mdash;  Блог Федора Сарафанова</title>
+	<link rel=stylesheet href="/css/main2.min.css">
+  <link rel="stylesheet" href="/css/prism.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+	<!--   CommonHTML: { linebreaks: {width: "container"} },
+	  "HTML-CSS": { linebreaks: {width: "container"} },
+	         SVG: { linebreaks: {width: "container"} } -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  CommonHTML: { linebreaks: {automatic: true} },
+	  "HTML-CSS": { linebreaks: {automatic: true} },
+	         SVG: { linebreaks: {automatic: true} },
+	  tex2jax : {
+	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	          processEscapes: true
+	        },
+	    showProcessingMessages: false,
+	    messageStyle: 'none'
+	});
+	</script>
+
+	<script>
+	  function ready() {
+	    hljs.initHighlightingOnLoad();
+	  }
+	  document.addEventListener("DOMContentLoaded", ready);
+	</script>
+
+	
+	<meta name="description" content="Рассмотрим вывод связи ускорений в покоящейся системе отсчета и движущейся. В частности, выведем силу Кориолиса." />
+	
+
+	
+	<meta name="keywords" content="физика, вывод кориолиса, гироскопическая сила, and сила инерции" />
+	
+
+
+</head>
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/cook/gallery.html">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+<header>
+  <time class="datetime">Jan 14, 2017</time>
+  <h1>Вывод ускорения Кориолиса</h1>
+</header>
+
+<article>
+<p><strong>Лемма</strong>:</p>
+
+<script type="math/tex; mode=display">\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]</script>
+
+<p>Примем, что</p>
+
+<script type="math/tex; mode=display">\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}</script>
+
+<script type="math/tex; mode=display">\vec{r\,}'=x'\vec{i'}+y'\vec{j'}+z'\vec{k'}</script>
+
+<!--ed-->
+
+<p>Далее</p>
+
+<script type="math/tex; mode=display">\vec{v'}=\frac{d\vec{r'}}{dt}=
+\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'} \text{ (относительная)}</script>
+
+<script type="math/tex; mode=display">\vec{a'}=\frac{d^2\vec{r'}}{dt^2}=
+\frac{d^2x'}{dt^2}\vec{i'}+\frac{d^2y'}{dt^2}\vec{j'}+\frac{d^2z'}{dt^2}\vec{k'} \text{ (относительное)}</script>
+
+<p>Так как <script type="math/tex">\vec{i'}, \vec{j'},\vec{k'}</script> – не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:</p>
+
+<script type="math/tex; mode=display">\vec{v}=\frac{d\vec{r'}}{dt}=%\frac{d\vec{r}}{dt}=</script>
+
+<script type="math/tex; mode=display">=\left[\frac{dx'}{dt}\vec{i'}+\frac{dy'}{dt}\vec{j'}+\frac{dz'}{dt}\vec{k'}\right]+
+\left[x'\frac{d\vec{i'}}{dt}+y'\frac{d\vec{j'}}{dt}+z'\frac{d\vec{k'}}{dt}\right]=</script>
+
+<script type="math/tex; mode=display">=\vec{v'}+
+\left[x'[\omega\times\vec{i'}]+y'[\omega\times\vec{j'}]+z'[\omega\times\vec{k'}]\right]\Rightarrow</script>
+
+<script type="math/tex; mode=display">\vec{v}=\vec{v'}+\left[\omega\times\vec{r'}\right]</script>
+
+<p>Аналогично</p>
+
+<script type="math/tex; mode=display">\frac{d\vec{v'}}{dt}=%[\omega\times\vec{v'}]=
+\left[
+\frac{d^2x'}{dt^2}\vec{i'}+
+\frac{d^2y'}{dt^2}\vec{j'}+
+\frac{d^2z'}{dt^2}\vec{k'} 
+\right]+
+\left[
+v'_x\frac{d\vec{i'}}{dt}+
+v'_y\frac{d\vec{j'}}{dt}+
+v'_z\frac{d\vec{k'}}{dt} 
+\right]=</script>
+
+<script type="math/tex; mode=display">=\vec{a'}+
+\left[v_x'[\omega\times\vec{i'}]+v_y'[\omega\times\vec{j'}]+v_z'[\omega\times\vec{k'}]\right]\Rightarrow</script>
+
+<script type="math/tex; mode=display">\vec{a}=\vec{a'}+\left[\omega\times\vec{v'}\right]+
+\frac{d[\omega\times\vec{r'}]}{dt}=</script>
+
+<script type="math/tex; mode=display">=\vec{a'}+\left[\omega\times\vec{v'}\right]+
+\left[\vec{\beta}\times\vec{r'}\right]+
+\left[\omega\times\frac{d\vec{r'}}{dt}\right]</script>
+
+<p>Причем</p>
+
+<script type="math/tex; mode=display">\left[\omega\times\frac{d\vec{r'}}{dt}\right]=
+\left[\omega\times\left(\vec{v'}+\left[\omega\times\vec{r'}\right]\right)\right]=</script>
+
+<script type="math/tex; mode=display">=\left[\omega\times\vec{v'}\right]+
+\left[\omega\times\left[\omega\times\vec{r'}\right]\right]</script>
+
+<p>Заметим, что</p>
+
+<script type="math/tex; mode=display">\left[\omega\times\vec{r'}\right]=\left[\omega\times\vec{r'}_{\perp\omega}\right],</script>
+
+<p>где</p>
+
+<script type="math/tex; mode=display">\vec{v'}=\vec{v'}_{\perp\omega}+\vec{v'}_{\parallel\omega}</script>
+
+<p>Тогда по формуле <script type="math/tex">[a[bc]]=b(ac)-c(ab):</script></p>
+
+<script type="math/tex; mode=display">\left[\omega\times\frac{d\vec{r'}}{dt}\right]=\left[\omega\times\vec{v'}\right]+
+\omega(\omega,\vec{r'}_{\perp\omega})-
+\omega^2\vec{r'}_\perp=</script>
+
+<script type="math/tex; mode=display">=\left[\omega\times\vec{v'}\right]-
+\omega^2\vec{r'}_\perp.</script>
+
+<p>Тогда</p>
+
+<script type="math/tex; mode=display">\vec{a}=\vec{a'}+2\left[\omega\times\vec{v'}\right]+
+\left[\vec{\beta}\times\vec{r'}\right]-
+\omega^2\vec{r'}_\perp</script>
+
+<p>Перепишем в виде</p>
+
+<script type="math/tex; mode=display">m\vec{a'}=-m\vec{a_0}+
+2m\left[\vec{v'}\times\omega\right]-
+\left[\vec{\beta}\times\vec{r'}\right]+
+\omega^2\vec{r'}_\perp</script>
+
+<p>Где можно выделить поступательную, центробежную и переносную силы инерции.</p>
+
+</article>
+
+
+      </section>
+	</main>
+</div>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="/js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+	<meta charset="UTF-8">
+    <title>Галерея картинок - блог Федора Сарафанова</title>
+	<link rel=stylesheet href="/css/main2.min.css">
+  <link rel="stylesheet" href="/css/prism.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script> -->
+
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=ru"></script>
+	<!--   CommonHTML: { linebreaks: {width: "container"} },
+	  "HTML-CSS": { linebreaks: {width: "container"} },
+	         SVG: { linebreaks: {width: "container"} } -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  CommonHTML: { linebreaks: {automatic: true} },
+	  "HTML-CSS": { linebreaks: {automatic: true} },
+	         SVG: { linebreaks: {automatic: true} },
+	  tex2jax : {
+	          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	          processEscapes: true
+	        },
+	    showProcessingMessages: false,
+	    messageStyle: 'none'
+	});
+	</script>
+
+	<script>
+	  function ready() {
+	    hljs.initHighlightingOnLoad();
+	  }
+	  document.addEventListener("DOMContentLoaded", ready);
+	</script>
+
+<!-- 	{% if page.desc %}
+	<meta name="description" content="{{ page.desc }}" />
+	{% endif %}
+
+	{% if page.tags %}
+	<meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />
+	{% endif %} -->
+
+
+</head>
+<body> 
+<div id="wrapper">
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><h1 id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></h1></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems">Задачи</a></li>
+				<li><a href="/lections">Лекции</a></li>
+				<li><a href="/lab">Лабораторные</a></li>
+				<li><a href="/cook">pdf в jpg</a></li>
+       			<li><a href="/python_lab">Численные методы</a></li>
+				<li><a href="/python">Python</a></li>
+				<li><a href="/matlab">Matlab</a></li>
+				<li><a href="/tikz">TikZ</a></li>
+				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/cook/gallery.html">Галерея графиков</a></li>
+				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="{% post_url 2017-01-01-about %}">О блоге</a></li>
+			</ul>
+			<footer>
+				<!-- Авторский сайт @ Ф.Г. Сарафанов, 2018 -->
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<header><h2>Исходники картинки</h2></header>
+		<section style="padding-top: 20px !important;">
+<a class="imag2" href="tikzpicture_2e554fdf03672826b0156a1b26d593c6.tex"><img src="tikzpicture_2e554fdf03672826b0156a1b26d593c6.pdf.jpg" alt=""></a>
+<a href="pre.html">pre.tex</a>
+<pre>
+<code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}%[rotate=15]
+		\draw[axis] (4,-2) -- (6,-2);
+		\draw[axis] (4,3) -- (6,3);
+		\draw[axis] (0,0) -- (6,0);
+		\draw[axis] (0,5) -- (6,5);
+		
+		\draw[pattern=north east lines, pattern color=magenta!60] (3,5) ellipse (1cm and 0.4cm);
+
+		\contourlength{1mm};
+		
+
+		\draw[pattern=north east lines, pattern color=magenta!60] (3,0) ellipse (1cm and 0.4cm);
+
+		\draw[pattern=north east lines, pattern color=magenta!20, draw=magenta!30] (3,3) ellipse (1cm and 0.4cm);
+
+		\draw[pattern=north east lines, pattern color=magenta!20, draw=magenta!30] (3,-2) ellipse (1cm and 0.4cm);
+
+		\draw[magenta] (2,5) -- (2,0);
+		\draw[magenta] (4,5) -- (4,0);
+
+		\draw[magenta!30] (2,0) -- (2,-2);
+		\draw[magenta!30] (4,0) -- (4,-2);
+
+
+
+		\draw[interface] (-1,-4) rectangle ++(7,-0.25);
+		\draw[thick] (-1,-4) -- (6,-4);
+
+		\draw[<->] (1,-4) -- node[left]{$h_2$} (1,0);
+		\draw[<->] (0,-4) -- node[left]{$h_2$} (0,5);
+
+		\draw[<->] (6,-2) -- node[right]{$\Delta l_2$} (6,0);
+		\draw[<->] (6,3) -- node[right]{$\Delta l_1$} (6,5);
+
+		\draw[acceleration,->] (-2,1) -- node[left]{$\vec{g}$} ++(0,-1);
+
+		\node at (7,5) [shape=circle,draw] {1};
+		\node at (7,0) [shape=circle,draw] {1};
+
+		\node at (7,3) [shape=circle,draw] {2};
+		\node at (7,-2) [shape=circle,draw] {2};
+
+		\node at (6,-4) [right] {$W_\text{п}=0$};
+
+
+		\node  at (3,0) {\contour{white}{$S_2$}};
+		\node  at (3,5) {\contour{white}{$S_1$}};
+
+		\draw[force,->] (3,6) node[above]{$\vec{F}_{g1}$} -- (3,5.25);
+		\draw[force,->] (3,-0.7) node[below]{$\vec{F}_{g2}$} -- (3,-.25);
+
+		\draw[->, axis] (-1,4) node[left,black] {$\Delta m_1$} -- ++(3.5,0);
+		\draw[->, axis] (-1,-1) node[left,black] {$\Delta m_2$} -- ++(3.5,0);
+	
+\end{tikzpicture}\end{document}</code>
+      </section>
+	</main>
+</div>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="/js/prism.js"></script>
+</body>
+</html>

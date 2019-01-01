@@ -2,3 +2,6 @@
 	path = _site
 	url = git@github.com:FedorSarafanov/fedorsarafanov.github.com.git
 	branch = master
+[submodule "master"]
+	path = master
+	url = git@github.com:FedorSarafanov/fedorsarafanov.github.com.git
