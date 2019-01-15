@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</loc>
+    <lastmod>2019-01-04T15:56:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fedorsarafanov.github.io/struct/</loc>
+    <lastmod>2019-01-02T21:56:31+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
@@ -710,12 +720,12 @@
   
   <url>
     <loc>https://fedorsarafanov.github.io/tickets/</loc>
-    <lastmod>2018-12-27T00:04:28+03:00</lastmod>
+    <lastmod>2019-01-04T15:56:12+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://fedorsarafanov.github.io/</loc>
-    <lastmod>2019-01-01T13:04:49+03:00</lastmod>
+    <lastmod>2019-01-04T15:56:12+03:00</lastmod>
     <priority>0</priority>
   </url>
   

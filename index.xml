@@ -6,10 +6,39 @@
     <description>Recent content on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
-    <lastBuildDate>Tue, 01 Jan 2019 13:04:49 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 15:56:12 +0300</lastBuildDate>
     
 	<atom:link href="https://fedorsarafanov.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Теоретический минимум по электродинамике</title>
+      <link>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</link>
+      <pubDate>Fri, 04 Jan 2019 15:56:12 +0300</pubDate>
+      
+      <guid>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</guid>
+      <description>&lt;!-- aliases:
+   - /tickets/2018/12/27/tickets-quantum-course3sem1.html --&gt;
+
+&lt;div style=&#39;display:none&#39;&gt;
+$\gdef\rot{\operatorname{rot}} \gdef\div{\operatorname{div}}$
+$\gdef\E{\vec{E}}$
+$\gdef\D{\vec{D}}$
+$\gdef\H{\vec{H}}$
+$\gdef\B{\vec{B}}$
+$\gdef\j{\vec{j}}$
+$\gdef\n{\vec{n}}$
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Экзаменационные и зачетные материалы</title>
+      <link>https://fedorsarafanov.github.io/struct/</link>
+      <pubDate>Wed, 02 Jan 2019 21:56:31 +0300</pubDate>
+      
+      <guid>https://fedorsarafanov.github.io/struct/</guid>
+      <description>&lt;p&gt;Здесь размещены полезные материалы для подготовки к экзаменам и зачетам: лекции, книги, расписанные экзаменационные задачи, экзаменационные билеты с различных дисциплин 1-3 курсов радиофизического факультета ННГУ.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Исходники иллюстрации</title>

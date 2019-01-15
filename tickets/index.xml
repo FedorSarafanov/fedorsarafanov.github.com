@@ -6,10 +6,30 @@
     <description>Recent content in Билеты к зачетам/экзаменам on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
-    <lastBuildDate>Thu, 27 Dec 2018 00:04:28 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 15:56:12 +0300</lastBuildDate>
     
 	<atom:link href="https://fedorsarafanov.github.io/tickets/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Теоретический минимум по электродинамике</title>
+      <link>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</link>
+      <pubDate>Fri, 04 Jan 2019 15:56:12 +0300</pubDate>
+      
+      <guid>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</guid>
+      <description>&lt;!-- aliases:
+   - /tickets/2018/12/27/tickets-quantum-course3sem1.html --&gt;
+
+&lt;div style=&#39;display:none&#39;&gt;
+$\gdef\rot{\operatorname{rot}} \gdef\div{\operatorname{div}}$
+$\gdef\E{\vec{E}}$
+$\gdef\D{\vec{D}}$
+$\gdef\H{\vec{H}}$
+$\gdef\B{\vec{B}}$
+$\gdef\j{\vec{j}}$
+$\gdef\n{\vec{n}}$
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Билеты по квантовой механике. Зачет</title>
