@@ -84,22 +84,25 @@
 			</div>
 			<ul id="nav">
 				<li><a href="/">Главная</a></li>
-				<li><a href="/problems">Задачи</a></li>
-				<li><a href="/lections">Лекции</a></li>
-				<li><a href="/lab">Лабораторные</a></li>
-				<li><a href="/cook">pdf в jpg</a></li>
-				<li><a href="/tickets">Билеты</a></li>
-       			<li><a href="/python_lab">Численные методы</a></li>
-				<li><a href="/python">Python</a></li>
-				<li><a href="/matlab">Matlab</a></li>
-				<li><a href="/tikz">TikZ</a></li>
-				<li><a href="/pgfplots">PGFPlots</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
 				<li><a href="/gallery/">Галерея графиков</a></li>
-				<li><a href="/buy">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
 				<li><a href="/2017/01/01/about.html">О блоге</a></li>
 			</ul>
 			<footer>
-				
+			Материалы сайта предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; Ф.Г. Сарафанов, 2019
 			</footer>
 		</aside>
 	</div>
@@ -110,7 +113,8 @@
 
 
 <header>
-  <time class="datetime">2018/12/12</time>
+  <time class="datetime">December 31, 2018</time>
+  
   <h1>PDF-&gt;PNG и обратно</h1>
 </header>
 
@@ -130,17 +134,6 @@
   
 
 
-<!-- 
-<header>
-    <h1><a href="/cook">PDF->PNG и обратно</a></h1>
-</header> -->
-
-<!-- {{.TableOfContents}} -->
-
-<!-- * Will be replaced with the ToC, excluding the "Contents" header -->
-
-<!-- {:toc} -->
-
 <h2 id="конвертирование-нескольких-jpg-png-pdf-в-один-файл-one-pdf">Конвертирование нескольких jpg/png/pdf в один файл one.pdf</h2>
 
 <p>Конвертация набора изображений (или pdf файлов) в один многостраничный pdf файл
@@ -149,35 +142,26 @@
 convert *.png &quot;../out.pdf&quot;</code></pre></p>
 
 <h2 id="конвертирование-многостраничного-pdf-в-несколько-jpg-png-300dpi">Конвертирование многостраничного pdf в несколько jpg/png, 300dpi</h2>
-
-<pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">convert -density 300 -alpha remove 304.pdf 304.jpg</code></pre>
-Или более быстрый вариант 
-<pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">gs -o png/lect-%d.png -sDEVICE=png256 \
- -r300 -dPrinted -dUseCropBox -dTextAlphaBits=4\
- -dGraphicsAlphaBits=4lection-a5.pdf</code></pre>
-
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">convert -density <span style="color:#b452cd">300</span> -alpha remove <span style="color:#b452cd">304</span>.pdf <span style="color:#b452cd">304</span>.jpg</code></pre></div>
+<p>Или более быстрый вариант</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gs -o png/lect-%d.png -sDEVICE=png256 <span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span> -r300 -dPrinted -dUseCropBox -dTextAlphaBits=<span style="color:#b452cd">4</span><span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span> -dGraphicsAlphaBits=4lection-a5.pdf</code></pre></div>
 <h2 id="конвертирование-tif-в-jpg">Конвертирование *.tif в *.jpg</h2>
 
-<p>Конвертация набора tif в набор jpg
-<pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">for name in ls *.tif; do <br />
-convert $name -compress jpeg $name.jpg;<br />
-done</code></pre></p>
-
+<p>Конвертация набора tif в набор jpg</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">for</span> name in ls *.tif; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span>convert <span style="color:#00688b">$name</span> -compress jpeg <span style="color:#00688b">$name</span>.jpg;<span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span><span style="color:#8b008b;font-weight:bold">done</span></code></pre></div>
 <h2 id="пакетное-сканирование-в-png">Пакетное сканирование в png</h2>
 
-<p>Определение имени устройства
-<pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">scanimage -L</code></pre>
-Сканирование
-<pre class="command-line" data-user="sfg" data-host="host" data-output="">
-<code class="language-bash">scanimage <br />
--d hpaio:/usb/Deskjet_F2100_series?serial=CN79Q4H5GG04TK <br />
---format=png --resolution 300 --mode Color<br />
---progress --batch-prompt --batch=out%d.png</code></pre></p>
-
+<p>Определение имени устройства</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">scanimage -L</code></pre></div>
+<p>Сканирование</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">scanimage <span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span> -d hpaio:/usb/Deskjet_F2100_series?serial=CN79Q4H5GG04TK <span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span> --format=png --resolution <span style="color:#b452cd">300</span> --mode Color<span style="color:#cd5555">\
+</span><span style="color:#cd5555"></span> --progress --batch-prompt --batch=out%d.png</code></pre></div>
 </article>
 
 
