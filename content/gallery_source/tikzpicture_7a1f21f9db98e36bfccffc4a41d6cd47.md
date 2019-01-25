@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.tex"><img src="/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
         media/.style={font={\footnotesize\sffamily}},
         wave/.style={
             decorate,decoration={snake,post length=1.4mm,amplitude=2mm,
@@ -94,4 +96,5 @@ type: "notpost"
 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

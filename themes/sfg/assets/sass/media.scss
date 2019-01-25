@@ -52,10 +52,16 @@
         order: 3 !important;
         width: 100% !important;
     }
+    footer{
+        display: none;
+    }
 }
 
 @media (max-width: 800px){
 	#title{
 		display: none;
 	}
+    footer{
+        display: none;
+    }
 }

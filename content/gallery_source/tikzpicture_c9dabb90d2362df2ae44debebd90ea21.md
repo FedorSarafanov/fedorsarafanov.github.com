@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.tex"><img src="/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 
     \draw[interface] (-1,0.7) rectangle (1,1);
     \draw[thick] (-1,0.7) -- (1,0.7);
@@ -25,4 +27,5 @@ type: "notpost"
 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

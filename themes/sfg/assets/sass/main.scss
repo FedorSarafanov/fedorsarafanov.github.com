@@ -6,6 +6,7 @@
 @import 'toc.scss';     
 @import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
  
+
 /* Цвета */
 $tomat: #ff604d;
 $chirok: #008080; 
@@ -16,6 +17,52 @@ $magenta: #E91E63;
 	padding: 1em;
 	margin: 0.5em 0;
 }
+
+
+.treeCSS a{
+    // color: $magenta;
+}
+// ыыыы
+.treeCSS, 
+.treeCSS ul,
+.treeCSS li {
+  padding: 0;
+  line-height: 1.2;
+  list-style: none;  
+}
+.treeCSS ul {
+  margin: 0 0 0 .5em; /* вести линию вниз где-то с полбуквы родителя */
+}
+
+$pad:0.2em;
+$line-color: #ccc;//lighten($magenta,20%);
+.treeCSS > li:not(:only-child),
+.treeCSS li li {
+  position: relative;
+  padding: $pad 0 0 1.2em; /* отступ до текста; для раскрывающегося списка в ряде случаев (в Хроме есть баг) padding-top (.2em) лучше указывать в px */
+}
+.treeCSS li:not(:last-child) {
+  border-left: 1px solid $line-color; /* толщина, цвет и стиль (вместо сплошной пунктирная или точечная) вертикальной линии */
+}
+.treeCSS li li:before,
+.treeCSS > li:not(:only-child):before { /* горизонтальная линия */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.1em; /* не более отступа до текста (1.2em) */
+  height: .75em; /* начинается приблизительно с половины высоты буквы (.5em + .2em) */
+  border-bottom: 1px solid $line-color;
+}
+.treeCSS li:last-child:before { /* вертикальная линия последнего пункта в каждом списке */
+  width: calc(1.1em - 1px); /* для перфекционистов */
+  border-left: 1px solid $line-color;
+}
+
+.treeCSS{
+    margin-top: 0.5em;
+}
+// ыыыы
 
 .paginate-container{
 	padding: 0.5em;
@@ -34,6 +81,12 @@ $magenta: #E91E63;
 
 p{
 	margin: 0.5em;
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 html, body {
@@ -133,11 +186,11 @@ section>h1{
         padding: 20px;
         footer{
               -webkit-font-smoothing:subpixel-antialiased;
-              font-size: 0.8em;
-              color: lighten(black, 50%);
+              font-size: 0.7em;
+              color: lighten(black, 60%);
         }
         #nav{
-            flex: 0.9;
+            // flex: 0.9;
             // a{
             //     text-decoration: none;
             //     color: black;

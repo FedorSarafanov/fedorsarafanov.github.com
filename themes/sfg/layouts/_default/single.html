@@ -28,7 +28,8 @@
 </div> -->
 
 <header>
-  <time class="datetime">{{ dateFormat "2006/01/01" .PublishDate }}</time>
+  <time class="datetime">{{ .PublishDate.Format "January 2, 2006" }}</time>
+  <!-- <time class="datetime">{{ .PublishDate.Format "2006/01/02" }}</time> -->
   <h1>{{ .Title }}</h1>
 </header>
 

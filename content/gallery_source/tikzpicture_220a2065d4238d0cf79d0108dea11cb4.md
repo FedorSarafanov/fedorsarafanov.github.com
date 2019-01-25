@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.tex"><img src="/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 	\xdef\darkness{0}
 	\xdef\op{0.1}
 
@@ -75,4 +77,5 @@ type: "notpost"
 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

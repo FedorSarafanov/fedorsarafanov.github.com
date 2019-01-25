@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.tex"><img src="/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=2]
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=2]
     \xdef\r{2}
     \draw (0,3) ellipse (2 and 0.4);
     \draw (0,0) -- ({\r},3) (0,0) -- (-\r,3);
@@ -44,4 +46,5 @@ type: "notpost"
     \draw[force,->] (II)  -- node[anchor=south west, yshift=-1.5em] {$\vec{F}_{N2}$} ++(0.6,0.1); 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

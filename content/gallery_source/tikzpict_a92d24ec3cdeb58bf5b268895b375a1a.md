@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.tex"><img src="/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 	\draw[interface] (-3,2) coordinate (lb) rectangle ++ (6,0.5);
 	\draw[thick] (lb) -- ++(6,0);
 	\draw[magenta, fill=magenta!10] (0,0) circle (2cm);
@@ -35,4 +37,5 @@ type: "notpost"
 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

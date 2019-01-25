@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.tex"><img src="/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
 		x={(1cm*2,0cm)},
 		y={(0,1cm*2)},
 		z={(0,-0.2cm*2)},
@@ -52,4 +54,5 @@ type: "notpost"
 	\draw[] (ne) node[right] {$\vec{E}_\parallel$};
 	
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

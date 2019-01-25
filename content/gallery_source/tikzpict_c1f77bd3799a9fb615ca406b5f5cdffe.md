@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.tex"><img src="/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 	\draw[interface] (-2,3) rectangle (2,3.5);
 	\draw[thick] (-2,3) -- ++(4,0);
 	% \clip (-6,-1) rectangle (6,4.25);
@@ -62,4 +64,5 @@ type: "notpost"
 	% \contourlength{2mm}
 	% \draw (2,0) node[] {\contour{white}{$W_\text{п}=0$}};
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

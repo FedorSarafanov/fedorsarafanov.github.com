@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.tex"><img src="/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
     \xdef\darkness{0}
 	\xdef\opa{0.2}
 
@@ -111,4 +113,5 @@ type: "notpost"
     \draw[] ({(3+4.5)/2},-.5) node [align=center] {$n_1d_1 \sim n_2d_2\sim \frac{\lambda_0}{2}$};
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

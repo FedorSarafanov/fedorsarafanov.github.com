@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.tex"><img src="/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
     force/.style={>=latex,draw=blue,fill=blue},
     % axis/.style={densely dashed,gray,font=\small},
     axis/.style={densely dashed,black!60,font=\small},
@@ -74,4 +76,5 @@ type: "notpost"
 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

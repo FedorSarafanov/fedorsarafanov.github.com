@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.tex"><img src="/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[
     force/.style={>=latex,draw=blue,fill=blue},
     % axis/.style={densely dashed,gray,font=\small},
     axis/.style={densely dashed,black!60,font=\small},
@@ -48,4 +50,5 @@ type: "notpost"
         \draw pic["$\Phi$",draw=magenta,->,angle eccentricity=1.5,angle radius=0.5cm] {angle=a--b--c};                 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

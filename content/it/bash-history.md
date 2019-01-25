@@ -5,6 +5,7 @@ date:   2017-01-04 14:35:05 +0300
 toc: true
 aliases:
     - /linux/2017/01/04/bash-history.html
+    - /article/bashhistory.html
 ---
 
 

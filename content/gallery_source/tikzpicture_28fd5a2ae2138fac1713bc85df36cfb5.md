@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.tex"><img src="/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[font=\large]
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[font=\large]
 \matrix[column sep=2cm] {
 		\draw[<->, axis] (1.5,2.5) -- node[above, black] { $L$} ++(3.5,0);
 		\draw[<->, axis] (0,2.5) --  node[above, black] { $l$} ++(1.5,0);
@@ -44,4 +46,5 @@ type: "notpost"
 \\
 };
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

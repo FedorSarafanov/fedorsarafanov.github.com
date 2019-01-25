@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.tex"><img src="/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 
 \draw (0.2,0.2) -- ++(3,0) -- ++(0,3) -- ++ (-3,0) --cycle;
 \draw[fill=white] (0,0) -- ++(3,0) -- ++(0,3) -- ++ (-3,0) --cycle;
@@ -56,4 +58,5 @@ type: "notpost"
 \draw (0.6,0.55) node[right] {$\vec{B}$};	
 \end{scope}
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.tex"><img src="/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 
 		\xdef\R{10cm}
 
@@ -151,4 +153,5 @@ type: "notpost"
 		\draw[xscale=-1] (-7.25,-15) rectangle ++(2,-2);
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

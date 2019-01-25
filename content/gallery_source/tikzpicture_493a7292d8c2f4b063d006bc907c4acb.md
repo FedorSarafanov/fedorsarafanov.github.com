@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.tex"><img src="/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.25]
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.25]
     \xdef\a{2}
     \xdef\b{1}
     \xdef\angle{45}
@@ -77,4 +79,5 @@ type: "notpost"
     % % \draw (c) pic["$\alpha$", draw=orange, <->, angle eccentricity=1.2, angle radius=1cm]
     % % {angle=a--b--c};
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

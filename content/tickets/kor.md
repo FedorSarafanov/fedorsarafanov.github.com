@@ -4,6 +4,7 @@ title:  "Вывод ускорения Кориолиса"
 date:   2017-01-14 14:35:05 +0300
 aliases:
     - /phy/2017/01/14/kor.html
+    - /article/kor.html
 <!-- categories: phy  -->
 tags: 
     - физика

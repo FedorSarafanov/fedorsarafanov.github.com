@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.tex"><img src="/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 
 	\fill[magenta!10, draw=none] (0,0) rectangle ++(2,3);
 	\fill[magenta!10, draw=none] (0.8,0) rectangle ++(0.4,-0.5);
@@ -29,4 +31,5 @@ type: "notpost"
 
 	\draw[axis,->] (-1,-0.5) -- ++(0,4) node[above] {$+h$};
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

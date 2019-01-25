@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.tex"><img src="/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
     % \begin{scope}[opacity=0.4]
     % \node[cargo] (I) at (2,0) {} node[above of=I, yshift=-1.3em] {};
     % \draw[draw=black!80,decoration={aspect=0.3, segment length=1mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {} (I); 
@@ -33,4 +35,5 @@ type: "notpost"
 
 
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

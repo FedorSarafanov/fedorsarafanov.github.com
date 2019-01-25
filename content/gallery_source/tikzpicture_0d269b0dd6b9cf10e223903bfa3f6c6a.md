@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.tex"><img src="/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
     \begin{scope}[scale=1]
         \draw (0.5,0) circle (0.28);
         \draw (2.5,0) circle (0.28);
@@ -24,4 +26,5 @@ type: "notpost"
 
     \end{scope}
     
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

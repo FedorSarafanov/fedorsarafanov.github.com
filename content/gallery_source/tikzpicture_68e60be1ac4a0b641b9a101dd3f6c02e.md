@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.tex"><img src="/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.25]
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.25]
 
 	\draw[black,->, thick] (0,0) -- (1,1) node[above, xshift=1em] {$\vec{E}$};
 	\draw[dashed, black!50] (1,0) -- (1,1);
@@ -44,4 +46,5 @@ type: "notpost"
 		\lineann[-1.5]{0}{3.14}{$\lambda$}
 	\end{scope}
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.tex"><img src="/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 		\draw[black!50] (0,0) circle (2cm);
 		\draw[black,fill=black] (0,0) circle (1pt);
 
@@ -20,4 +22,5 @@ type: "notpost"
 		\draw[magenta,->, >=latex] (A) -- ++(45:0.7) node[right, above] {$\vec{e}_r$};
 		\draw[magenta,->, >=latex] (A) -- ++(135:0.7) node[right, above] {$\vec{e}_\tau$};
 	
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

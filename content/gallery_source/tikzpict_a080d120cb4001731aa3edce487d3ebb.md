@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.tex"><img src="/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
     \contourlength{0.5mm};
 
 	% \draw[very thick] (0,-1.5) -- (0,1.5);
@@ -34,4 +36,5 @@ type: "notpost"
     \draw[axis] (3,-0.5) -- (-1,-0.5) node[left] {$+x$};
     % \draw (-2.5,0) node[blue] {$\bigotimes$} node[right, xshift=.5em] {$\vec{g}$};
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

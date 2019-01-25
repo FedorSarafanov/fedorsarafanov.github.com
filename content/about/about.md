@@ -2,6 +2,8 @@
 layout: post
 title:  "О блоге и авторе"
 date:   2017-01-01 14:35:05 +0300
+aliases:
+    - /article/about.html
 ---
 
 Добро пожаловать, дорогой читатель!

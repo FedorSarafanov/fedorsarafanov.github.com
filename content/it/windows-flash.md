@@ -4,6 +4,7 @@ title:  "Создание загрузочной флешки с Windows из п
 date:   2017-01-05 14:35:05 +0300
 aliases:
     - /linux/2017/01/05/windows-flash.html
+    - /article/windows-flash.html
 ---
 Может понадобиться записать флешку с Windows, когда в наличии только Linux.
 

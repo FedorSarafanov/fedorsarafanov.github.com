@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.tex"><img src="/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 	\draw[interface, draw] (-2,-0.5) rectangle ++ (4,0.5);
 	\draw (-0.5,0) rectangle ++ (1,2);
 	\draw[->] (0,0) -- (0,1.5);
@@ -48,4 +50,5 @@ type: "notpost"
 
 % \draw[line width=5pt] (0,-1) ++ (-60:1.9) coordinate (1) ++ (-60:-0.1) -- ++ (-60:0.2);		
 
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```

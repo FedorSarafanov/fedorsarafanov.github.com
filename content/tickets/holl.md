@@ -4,6 +4,7 @@ title:  "Эффект Холла"
 date:   2017-01-13 14:35:05 +0300
 aliases:
     - /phy/2017/01/13/holl.html
+    - /article/holl.html
 <!-- categories: phy -->
 ---
 
@@ -28,13 +29,13 @@ $$v=\frac{I}{qnS}$$
 
 В случае магнитного поля, перпендикулярного проводнику,
 
-$$F_\text{л}=|q[\vec{v}\times\vec{B}]|=qvB$$
+$$F\_\text{л}=|q[\vec{v}\times\vec{B}]|=qvB$$
 
 Или
 
-$$F_\text{л}=\frac{BI}{qnS}=\frac{jB}{n}$$ 
+$$F\_\text{л}=\frac{BI}{qnS}=\frac{jB}{n}$$ 
 
-Отток зарядов прекратится, когда $$F_{E_2}=F_\text{л}$$:
+Отток зарядов прекратится, когда $$F\_{E_2}=F\_\text{л}$$:
 
 $$\frac{jB}{n}=qE_2=\frac{qU}{d}$$
 

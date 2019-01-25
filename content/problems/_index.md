@@ -2,6 +2,8 @@
 layout: default
 title: "Решения задач из Яковлева, Иродова и другие"
 date:   2017-01-01T22:16:31+03:00
+aliases:
+    - /problems.html
 ---
 
 <header><time class='datetime'>В помощь студенту</time><h1>Иродов</h1></header>

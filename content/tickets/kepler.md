@@ -4,6 +4,7 @@ title:  "Задача Кеплера"
 date:   2017-01-08 14:35:05 +0300
 aliases:
     - /phy/2017/01/13/kepler.html
+    - /article/kepler.html
 <!-- categories: phy -->
 ---
 
@@ -16,7 +17,9 @@ $$ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\hat{r}} $$
 <!--more-->  
 В поле центральной силы постоянна механическая энергия:
 
-$$W=W_k+W_\text{п}$$
+$$
+W=W\_k+W\_\text{a}
+$$
 
 А так как $$\vec{F}\parallel\vec{r}$$, то момент силы равен нулю, и по теореме о изменении момента импульса 
 
@@ -27,26 +30,26 @@ $$\frac{\mathrm{d}\vec{N}}{\mathrm{d}t}=\vec{M},$$
 
 Запишем скорость как сумму двух векторов:
 
-$$\vec{v}=\vec{v}_r+\vec{v}_\phi,$$
+$$\vec{v}=\vec{v}\_r+\vec{v}\_\phi,$$
 
 где 
 
-$$v_r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v_\phi=r\frac{\mathrm{d}\phi}{\mathrm{d}t}$$
+$$v\_r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v\_\phi=r\frac{\mathrm{d}\phi}{\mathrm{d}t}$$
 
 тогда квадрат вектора полной скорости $$v$$
 
-$$v^2=v_r^2+v_\phi^2$$
+$$v^2=v\_r^2+v\_\phi^2$$
 
 
 а полная механическая энергия запишется как
 
-$$W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{mr^2\dot{\phi}^2}{2}$$
+$$W=W\_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{mr^2\dot{\phi}^2}{2}$$
 
 Распишем момент импульса по определению:
 
-$$\vec{N}=[\vec{r}\times m(\vec{v}_r+\vec{v}_\phi)]=
-[\vec{r}\times m\vec{v}_r]+[\vec{r}\times m\vec{v}_\phi]=
-m[\vec{r}\times\vec{v}_\phi]
+$$\vec{N}=[\vec{r}\times m(\vec{v}\_r+\vec{v}\_\phi)]=
+[\vec{r}\times m\vec{v}\_r]+[\vec{r}\times m\vec{v}\_\phi]=
+m[\vec{r}\times\vec{v}\_\phi]
 $$
 
 Тогда модуль момента импульса
@@ -55,39 +58,39 @@ $$N=mr^2\dot\phi \Rightarrow \dot\phi=\frac{N}{mr^2}$$
 
 Можем переписать механическую энергию:
 
-$$W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{N^2}{2mr^2},$$
+$$W=W\_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{N^2}{2mr^2},$$
 
 где $$\frac{N^2}{2mr^2}$$  — центробежная энергия.
 
 Найдем потенциальную энергию:
 
-$$W_\text{п}(r)-W_\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r=$$
+$$W\_\text{п}(r)-W\_\text{п}(\infty)=\int\_r^\infty F\_r\ \textrm{d}r=$$
 
-$$=-\int_r^\infty \frac{GMm}{r'^2} \textrm{d}r'=-\frac{Gmm}{r}=\frac{-k}{r}$$
+$$=-\int\_r^\infty \frac{GMm}{r'^2} \textrm{d}r'=-\frac{Gmm}{r}=\frac{-k}{r}$$
 
-А так как $$W_\text{п}(\infty)=0$$ при $$r\to\infty$$, то
+А так как $$W\_\text{п}(\infty)=0$$ при $$r\to\infty$$, то
 
-$$W_\text{п}=-\frac{k}{r}$$
+$$W\_\text{п}=-\frac{k}{r}$$
 
-$$W_\text{цб}=\frac{N^2}{2mr^2}$$
+$$W\_\text{цб}=\frac{N^2}{2mr^2}$$
 
 
 Введем эффективную потенциальную энергию:
 
-$$W_\text{эфф}=W_\text{цб}+W_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}$$
+$$W\_\text{эфф}=W\_\text{цб}+W\_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}$$
 
 <img width="100%" src="/img/kepler-energy.svg" alt="">
 
 С одной стороны, можем выразить $$\mathrm{d}t$$ через эффективную энергию:
 
-$$W=W_\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
-\dot{r}^2=\frac{2}{m}(W-W_\text{эфф})$$
+$$W=W\_\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
+\dot{r}^2=\frac{2}{m}(W-W\_\text{эфф})$$
 
 
 
 Тогда 
 
-$$\mathrm{d}t=\pm\frac{\mathrm{d}r}{\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$
+$$\mathrm{d}t=\pm\frac{\mathrm{d}r}{\sqrt{\frac{2}{m}(W-W\_\text{эфф})}}$$
 
 С другой стороны, можем выразить $$\mathrm{d}t$$ через момент импульса:
 
@@ -96,34 +99,34 @@ $$\dot\phi=\frac{N}{mr^2}\Rightarrow
 
 Тогда
 
-$$\mathrm{d}\phi=\pm\frac{N\mathrm{d}r}{mr^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$
+$$\mathrm{d}\phi=\pm\frac{N\mathrm{d}r}{mr^2\sqrt{\frac{2}{m}(W-W\_\text{эфф})}}$$
 
 Два знака говорят о том, что траектория симметрична относительно полярной оси.
 
 В качестве полярной оси возьмем апсиду -- прямую, проходящую через апоцентр и перицентр траектории.
 
-Пусть при $$\varphi=0$$ будет $$r=r_{min}$$. 
+Пусть при $$\varphi=0$$ будет $$r=r\_{min}$$. 
 
 Выберем один знак и запишем интеграл:
 
-$$\varphi(r)=\frac{N}{m}\int_{r_{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$
+$$\varphi(r)=\frac{N}{m}\int\_{r\_{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W\_\text{эфф})}}$$
 
-$$W-W_\text{эфф}=W-(\frac{N^2}{2mr^2}-\frac{k}{r})$$
+$$W-W\_\text{эфф}=W-(\frac{N^2}{2mr^2}-\frac{k}{r})$$
 
 
-$$\varphi(r)=-\int_{r_{min}}^r\frac
+$$\varphi(r)=-\int\_{r\_{min}}^r\frac
 {d\left(\frac{N}{r}\right)}
-{\sqrt{2m(W-W_\text{эфф})}}$$
+{\sqrt{2m(W-W\_\text{эфф})}}$$
 
 
-$$\varphi(r)=-\int_{r_{min}}^r\frac
+$$\varphi(r)=-\int\_{r\_{min}}^r\frac
 {d\left(\frac{N}{r}\right)}
 {\sqrt{2mW-\left(\frac{N^2}{r^2}-\frac{2mk}{r}\right)}}$$
 
 
 $$\frac{N^2}{r^2}-\frac{2mk}{r}=\left(\frac{N}{r}-\frac{mk}{N}\right)^2-\left(\frac{mk}{N}\right)^2$$
 
-$$\varphi(r)=-\int_{r_{min}}^r\frac
+$$\varphi(r)=-\int\_{r\_{min}}^r\frac
 {d\left(\frac{N}{r}-\frac{mk}{N}\right)}
 {\sqrt{\left(2mW+\left(\frac{mk}{N}\right)^2\right)-\left(\frac{N}{r}-\frac{mk}{N}\right)^2}}$$
 
@@ -132,14 +135,14 @@ $$\beta^2=2mW+\left(\frac{mk}{N}\right)^2$$
 $$\alpha^2=\left(\frac{N}{r}-\frac{mk}{N}\right)^2$$
 
 $$
-\varphi(r)=-\int_{r_{min}}^r\frac
+\varphi(r)=-\int\_{r\_{min}}^r\frac
 {d\alpha}
 {\sqrt{\beta^2-\alpha^2}}$$
 
-Так как согласно выбору полярной оси $$\varphi=0$$ при $$r=r_{min},$$ то 
+Так как согласно выбору полярной оси $$\varphi=0$$ при $$r=r\_{min},$$ то 
 
 $$
-\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|_{r_{min}}^r=\arccos\frac\alpha\beta$$
+\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|\_{r\_{min}}^r=\arccos\frac\alpha\beta$$
 
 
 $$

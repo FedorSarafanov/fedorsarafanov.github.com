@@ -1,10 +1,12 @@
 ﻿---
 title: "Исходники иллюстрации"
 type: "notpost"
+date:  2019-01-01T13:04:49+03:00
 ---
 <a class="imag2" href="/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.tex"><img src="/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.pdf.jpg" alt=""></a>
 <a href="/cook/gallery/pre">pre.tex</a>
-<pre><code class="language-latex">\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
+```tex
+\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}
 
         % \draw[thick] (0,0) ++ (0,-2) node[below, blue] {$+q$} rectangle ++(0.1,4) ;
         % \draw[thick] (8,0) ++ (0,-2) node[below, red] {$-q$} rectangle ++(-0.1,4);
@@ -26,4 +28,5 @@ type: "notpost"
         \lineann[2]{0}{-2}{$l-a$};
         \draw[magenta] (0,-2.5) -- (0,2.5);
     
-\end{tikzpicture}\end{document}</code></pre>
+\end{tikzpicture}\end{document}
+```
