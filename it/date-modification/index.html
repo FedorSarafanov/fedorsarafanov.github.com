@@ -52,7 +52,6 @@
 	    document.addEventListener("DOMContentLoaded", function() {
 	        renderMathInElement(document.body, 
 				{delimiters: [
-				  {left: "$$\n", right: "\n$$", display: true},
 				  {left: "$$", right: "$$", display: true},
 				  {left: "\\(", right: "\\)", display: false},
 				  {left: "$", right: "$", display: false}, 
@@ -78,10 +77,15 @@
 
 
 
+	 <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body> 
 <div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
 	<div id="aside"> 
 		<aside>
 			<div id="title">  

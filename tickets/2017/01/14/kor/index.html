@@ -13,11 +13,10 @@
     
 
     
-    <meta name="description" property="og:description" content="Лемма:
-$$\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]$$
-Примем, что
-$$\vec{r}=x\vec{i}&#43;y\vec{j}&#43;z\vec{k}$$
-$$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#43;z^{\prime}\vec{k^{\prime}}$$
+    <meta name="description" property="og:description" content="Сначала докажем лемму:
+$$ \frac{d\vec{R}}{dt}=[\omega\times\vec{R}] $$
+Для доказательства перейдем к покоординатному описанию:
+$$\vec{r}=x\vec{i}&#43;y\vec{j}&#43;z\vec{k}\newline \vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#43;z^{\prime}\vec{k^{\prime}}$$
 |">
      
 
@@ -52,7 +51,6 @@ $$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#
 	    document.addEventListener("DOMContentLoaded", function() {
 	        renderMathInElement(document.body, 
 				{delimiters: [
-				  {left: "$$\n", right: "\n$$", display: true},
 				  {left: "$$", right: "$$", display: true},
 				  {left: "\\(", right: "\\)", display: false},
 				  {left: "$", right: "$", display: false}, 
@@ -78,10 +76,15 @@ $$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#
 
 
 
+	 <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body> 
 <div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
 	<div id="aside"> 
 		<aside>
 			<div id="title">  
@@ -126,15 +129,16 @@ $$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#
 
 <article>
   
-<p><strong>Лемма</strong>:</p>
+<p>Сначала докажем <strong>лемму</strong>:</p>
 
-<p>$$\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]$$</p>
+<p>$$
+\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]
+$$</p>
 
-<p>Примем, что</p>
+<p>Для доказательства перейдем к покоординатному описанию:</p>
 
-<p>$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}$$</p>
-
-<p>$$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$</p>
+<p>$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\newline
+\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$</p>
 
 <p>Далее</p>
 
@@ -144,7 +148,7 @@ $$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#
 <p>$$\vec{a^{\prime}}=\frac{d^2\vec{r^{\prime}}}{dt^2}=
 \frac{d^2x^{\prime}}{dt^2}\vec{i^{\prime}}+\frac{d^2y^{\prime}}{dt^2}\vec{j^{\prime}}+\frac{d^2z^{\prime}}{dt^2}\vec{k^{\prime}} \text{ (относительное)}$$</p>
 
-<p>Так как $$\vec{i^{\prime}}, \vec{j^{\prime}},\vec{k^{\prime}}$$ -- не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:</p>
+<p>Так как $\vec{i^{\prime}}, \vec{j^{\prime}},\vec{k^{\prime}}$  не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:</p>
 
 <p>$$\vec{v}=\frac{d\vec{r^{\prime}}}{dt}=%\frac{d\vec{r}}{dt}=$$</p>
 
@@ -189,15 +193,11 @@ $$</p>
 <p>$$=\left[\omega\times\vec{v^{\prime}}\right]+
 \left[\omega\times\left[\omega\times\vec{r^{\prime}}\right]\right]$$</p>
 
-<p>Заметим, что</p>
+<p>Заметим, что $\left[\omega\times\vec{r^{\prime}}\right]=\left[\omega\times\vec{r^{\prime}}_{\perp\omega}\right],$
+где
+$\vec{r^{\prime}}=\vec{r^{\prime}}_{\perp\omega}+\vec{r^{\prime}}_{\parallel\omega}$.</p>
 
-<p>$$\left[\omega\times\vec{r^{\prime}}\right]=\left[\omega\times\vec{r^{\prime}}_{\perp\omega}\right],$$</p>
-
-<p>где</p>
-
-<p>$$\vec{v^{\prime}}=\vec{v^{\prime}}_{\perp\omega}+\vec{v^{\prime}}_{\parallel\omega}$$</p>
-
-<p>Тогда по формуле $$[a[bc]]=b(ac)-c(ab):$$</p>
+<p>Тогда по формуле $[a[bc]]=b(ac)-c(ab):$</p>
 
 <p>$$\left[\omega\times\frac{d\vec{r^{\prime}}}{dt}\right]=\left[\omega\times\vec{v^{\prime}}\right]+
 \omega(\omega,\vec{r^{\prime}}_{\perp\omega})-

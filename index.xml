@@ -1181,15 +1181,16 @@ $$&lt;/p&gt;
       <pubDate>Sat, 14 Jan 2017 14:35:05 +0300</pubDate>
       
       <guid>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Лемма&lt;/strong&gt;:&lt;/p&gt;
+      <description>&lt;p&gt;Сначала докажем &lt;strong&gt;лемму&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p&gt;$$\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]
+$$&lt;/p&gt;
 
-&lt;p&gt;Примем, что&lt;/p&gt;
+&lt;p&gt;Для доказательства перейдем к покоординатному описанию:&lt;/p&gt;
 
-&lt;p&gt;$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}$$&lt;/p&gt;
-
-&lt;p&gt;$$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$&lt;/p&gt;</description>
+&lt;p&gt;$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\newline
+\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$&lt;/p&gt;</description>
     </item>
     
     <item>

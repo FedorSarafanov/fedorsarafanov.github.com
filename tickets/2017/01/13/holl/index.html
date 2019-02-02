@@ -48,7 +48,6 @@
 	    document.addEventListener("DOMContentLoaded", function() {
 	        renderMathInElement(document.body, 
 				{delimiters: [
-				  {left: "$$\n", right: "\n$$", display: true},
 				  {left: "$$", right: "$$", display: true},
 				  {left: "\\(", right: "\\)", display: false},
 				  {left: "$", right: "$", display: false}, 
@@ -74,10 +73,15 @@
 
 
 
+	 <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body> 
 <div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
 	<div id="aside"> 
 		<aside>
 			<div id="title">  
@@ -134,7 +138,7 @@
 
 <p>$$I=\frac{dQ}{dt}=\frac{qnvS\,dt}{dt}=qnvS,$$</p>
 
-<p>где $$n$$ - концентрация заряда по объему.</p>
+<p>где $n$ - концентрация заряда по объему.</p>
 
 <p>Отсюда</p>
 
@@ -148,15 +152,13 @@
 
 <p>$$F_\text{л}=\frac{BI}{qnS}=\frac{jB}{n}$$</p>
 
-<p>Отток зарядов прекратится, когда $$F_{E_2}=F_\text{л}$$:</p>
+<p>Отток зарядов прекратится, когда $F_{E_2}=F_\text{л}$:</p>
 
 <p>$$\frac{jB}{n}=qE_2=\frac{qU}{d}$$</p>
 
-<p>Отсюда создаваемая разность потенциалов будет</p>
+<p>Отсюда создаваемая разность потенциалов будет $U=jBd\frac{1}{qn}.$</p>
 
-<p>$$U=jBd\frac{1}{qn}.$$</p>
-
-<p>Коэффициент $$R_h=\frac{1}{qn}$$ называют постоянной Холла.</p>
+<p>Коэффициент $R_h=\frac{1}{qn}$ называют постоянной Холла.</p>
 </article>
 
 
