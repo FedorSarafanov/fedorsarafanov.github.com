@@ -16,11 +16,11 @@ $$\sigma\_n=\frac{F\_n}{S}$$
 $$\sigma\_n=E\varepsilon$$
 
 <!--more-->  
-где $$\varepsilon$$ -- относительная деформация:
+где $\varepsilon$ - относительная деформация:
 
 $$\varepsilon=\frac{\Delta l}{l}$$
 
-а $$E$$ -- модуль Юнга, имеющий размерность $$[\sigma\_n]$$, характеризующий свойства материала.
+а $E$ - модуль Юнга, имеющий размерность $[\sigma\_n]$, характеризующий свойства материала.
 
 Выведем классическое "школьное" представление закона Гука:
 
@@ -28,7 +28,7 @@ $$\frac{F\_n}{S}=E\frac{\Delta l}{l}$$
 
 $$F\_n=\frac{ES}{l}\Delta l$$ 
 
-Можно ввести обозначение $$k=\frac{ES}{l}.$$ Тогда получаем известную формулу:
+Можно ввести обозначение $k=\frac{ES}{l}.$ Тогда получаем известную формулу:
 
 $$F\_\text{упр}=-k\Delta l$$ 
 
@@ -62,7 +62,7 @@ $$V=V\_0(1+\varepsilon\_\perp)^2(1+\varepsilon)$$
 $$V=V\_0(1+2\varepsilon\_\perp+\varepsilon^2\_\perp
 +\varepsilon+2\varepsilon\_\perp\varepsilon+\varepsilon^2\_\perp\varepsilon)$$
 
-Так как $$\varepsilon\_\perp,\varepsilon << 1,$$ 
+Так как $\varepsilon\_\perp,\varepsilon << 1,$ 
 
 $$V=V\_0(1+2\varepsilon\_\perp
 +\varepsilon)$$
@@ -72,4 +72,4 @@ $$V=V\_0(1+2\varepsilon\_\perp
 $$\Delta V = V-V\_0=V\_0\cdot(\varepsilon+2\varepsilon\_\perp)=
 V\_0\cdot\varepsilon(1-2\mu)$$
 
-где $$\mu=-\frac{\varepsilon\_\perp}{\varepsilon}$$ -- коэффициент Пуассона. Из формулы видно, что коэффициент имеет смысл при $$0\leq\mu\leq\frac{1}2.$$ 
+где $\mu=-\frac{\varepsilon\_\perp}{\varepsilon}$ - коэффициент Пуассона. Из формулы видно, что коэффициент имеет смысл при $0\leq\mu\leq\frac{1}2.$

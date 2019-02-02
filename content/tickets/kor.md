@@ -15,16 +15,17 @@ desc: >-
     Рассмотрим вывод связи ускорений в покоящейся системе отсчета и движущейся.
     В частности, выведем силу Кориолиса.
 ---
- 
-**Лемма**:
 
-$$\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]$$
+Сначала докажем **лемму**:
 
-Примем, что
+$$
+\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]
+$$
 
-$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}$$
+Для доказательства перейдем к покоординатному описанию:
 
-$$\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$
+$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\newline
+\vec{r\,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$
 
 <!--more-->
 
@@ -36,7 +37,7 @@ $$\vec{v^{\prime}}=\frac{d\vec{r^{\prime}}}{dt}=
 $$\vec{a^{\prime}}=\frac{d^2\vec{r^{\prime}}}{dt^2}=
 \frac{d^2x^{\prime}}{dt^2}\vec{i^{\prime}}+\frac{d^2y^{\prime}}{dt^2}\vec{j^{\prime}}+\frac{d^2z^{\prime}}{dt^2}\vec{k^{\prime}} \text{ (относительное)}$$
 
-Так как $$\vec{i^{\prime}}, \vec{j^{\prime}},\vec{k^{\prime}}$$ -- не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:
+Так как $\vec{i^{\prime}}, \vec{j^{\prime}},\vec{k^{\prime}}$  не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:
 
 $$\vec{v}=\frac{d\vec{r^{\prime}}}{dt}=%\frac{d\vec{r}}{dt}=$$
 
@@ -81,15 +82,11 @@ $$\left[\omega\times\frac{d\vec{r^{\prime}}}{dt}\right]=
 $$=\left[\omega\times\vec{v^{\prime}}\right]+
 \left[\omega\times\left[\omega\times\vec{r^{\prime}}\right]\right]$$
 
-Заметим, что
-
-$$\left[\omega\times\vec{r^{\prime}}\right]=\left[\omega\times\vec{r^{\prime}}\_{\perp\omega}\right],$$
-
+Заметим, что $\left[\omega\times\vec{r^{\prime}}\right]=\left[\omega\times\vec{r^{\prime}}\_{\perp\omega}\right],$
 где 
+$\vec{r^{\prime}}=\vec{r^{\prime}}\_{\perp\omega}+\vec{r^{\prime}}\_{\parallel\omega}$.
 
-$$\vec{v^{\prime}}=\vec{v^{\prime}}\_{\perp\omega}+\vec{v^{\prime}}\_{\parallel\omega}$$
-
-Тогда по формуле $$[a[bc]]=b(ac)-c(ab):$$
+Тогда по формуле $[a[bc]]=b(ac)-c(ab):$
 
 $$\left[\omega\times\frac{d\vec{r^{\prime}}}{dt}\right]=\left[\omega\times\vec{v^{\prime}}\right]+
 \omega(\omega,\vec{r^{\prime}}\_{\perp\omega})-
