@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Pgfplots: краткое руководство &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="Пакет pgfplots представляет собой мощный инструмент, предназначенный для создания научных графиков. Он создан на базе tikz, не менее прекрасного пакета, который позволяет создавать векторную графику прямо на латехе.
+Если вы сомневаетесь в необходимости использования pgfplots или tikz, посмотрите на простые графики, созданные с помощью этих пакетов:
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 9, 2019</time>
+  
+  <h1>Pgfplots: краткое руководство</h1>
+</header>
+
+<article>
+  
+<p>Пакет <code>pgfplots</code> представляет собой мощный инструмент, предназначенный для создания научных графиков. Он создан на базе <code>tikz</code>, не менее прекрасного пакета, который позволяет создавать векторную графику прямо на латехе.</p>
+
+<p>Если вы сомневаетесь в необходимости использования <code>pgfplots</code> или <code>tikz</code>, посмотрите на простые графики, созданные с помощью этих пакетов:</p>
+
+<p><img src="https://cdn.sharelatex.com/learn-scripts/images/3/3e/Pgfplots3.png" alt="Графики на PgfPlots" /></p>
+
+<p>Основная идея pgfplots - упрощение включения графиков в документ. Задача пользователя - задать формулу или данные, а остальным занимается pgfplots. Так, код графиков (<a href="https://www.overleaf.com/project/5c5ec5b5f7a1fe5bfc146e10">см. пример на overleaf</a>), приведенных выше (без преамбулы) выглядит так:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#228b22">% Код первого графика
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+		<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red]</span><span style="color:#658b00">{</span>exp(x)<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div><div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#228b22">% Код второго графика
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+		<span style="color:#8b008b;font-weight:bold">\addplot</span>3[surf] <span style="color:#658b00">{</span>exp(-x<span style="color:#658b00">^</span>2-y<span style="color:#658b00">^</span>2)*x<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p>Заметьте, от пользователя в простейшем случае не потребовалось практически ничего, кроме задания функции и вида её отображения. Разумеется,  можно и  вручную задать пределы построения функции и многое другое.</p>
+
+<h2 id="введение-в-pgfplots-окружение-осей">Введение в pgfplots. Окружение осей.</h2>
+
+<p>Поскольку pgfplots основан на tikz, график должен находиться в окружении tikzpicture. Сам график строится, как это всегда и положено, в каких-то осях (полотно графика с системой координат и заданным масштабом).</p>
+
+<p>Оси задаются окружением <code>\begin{axis} ... \end{axis}</code>. У осей могут быть свои параметры:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>[
+			<span style="color:#228b22">%axis,          % Обычные оси
+</span><span style="color:#228b22"></span>			<span style="color:#228b22">%semilogxaxis,	% По оси x логарифмический масштаб
+</span><span style="color:#228b22"></span>			<span style="color:#228b22">%semilogyaxis,  % По оси y логарифмический масштаб
+</span><span style="color:#228b22"></span>			<span style="color:#228b22">%loglogaxis,    % По обоим осям логарифмический масштаб
+</span><span style="color:#228b22"></span>		]
+		<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red]</span><span style="color:#658b00">{</span>ln(x)<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p>Здесь они закомментированы. Достаточно одного из параметров, причем параметр <code>axis</code> используется по умолчанию, и его можно не указывать.</p>
+
+<p>Чтобы добавить график, используется команда</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red]</span><span style="color:#658b00">{</span>ln(x)<span style="color:#658b00">}</span>;</code></pre></div>
+<p>Внутри квадратных скобок могут быть переданы некоторые параметры, например здесь указан цвет линии графика. Квадратные скобки обязательны, если не передано ни одного параметра, нужно оставить между ними пробел.</p>
+
+<p>Важно, что все команды (эта необходимость тянется из пакета tikz) должны заканчиваться точкой с запятой.</p>
+
+<p>Внутри фигурных скобок размещается функция, задающая график. Математический аппарат pgfplots-а принадлежит пакету более низкого уровня pgf. Математические возможности pgf достаточно велики, и мы рассмотрим только некоторые аспекты составления сложных функций для построения различных графиков.</p>
+
+<h2 id="1-математика-в-pgfplots">1. Математика в pgfplots</h2>
+
+<h3 id="1-1-стандартные-операторы">1.1. Стандартные операторы</h3>
+
+<ul>
+<li>Без пояснения: <code>+,-,*,/,^</code></li>
+<li>Сравнение: <code>&gt;,&gt;=,&lt;=,==,!=</code></li>
+<li>Оператор факториала: <code>x!</code> аналогичен вызову функции <code>factorial(x)</code></li>
+</ul>
+
+<p>Отдельно стоит сказать об условном операторе <code>x ? y : z</code>. Он вернет <code>y</code>, если <code>x</code> истина, и <code>z</code>, если ложь. Это можно использовать, например, для построения функций Хевисайда, о чем будет сказано ниже.</p>
+
+<h3 id="1-2-стандартные-функции">1.2. Стандартные функции</h3>
+
+<ul>
+<li><code>div(x,y)</code>  - целочисленное деление</li>
+<li><code>mod(x,y)</code>  - остаток от деления</li>
+<li><code>sign(x)</code> - знак числа</li>
+</ul>
+
+<p>Также ряд функций, не нуждающихся в объяснениях:
+<code>factorial(x)</code>,
+<code>sqrt(x)</code>,
+<code>exp(x)</code>,
+<code>ln(x)</code>,
+<code>log10(x)</code>,
+<code>log2(x)</code>,
+<code>abs(x)</code></p>
+
+<h3 id="1-3-функции-округления">1.3. Функции округления</h3>
+
+<ul>
+<li><code>round(x)</code> - округлит до ближайшего целого, большего по модулю чем округляемое, числа: 1.5-&gt;2, -1.5-&gt;-2</li>
+<li><code>floor(x)</code> - округлит х до ближайшего целого числа в большую сторону</li>
+<li><code>ceil(x)</code> - округлит х до ближайшего целого числа в меньшую сторону</li>
+<li><code>int(x)</code> - просто вернет целую часть <code>x</code></li>
+<li><code>frac(x)</code> - вернет дробную часть <code>x</code></li>
+</ul>
+
+<h3 id="1-4-целочисленные-функции">1.4. Целочисленные функции</h3>
+
+<ul>
+<li><code>iseven(x)</code>, <code>isodd(x)</code> - проверяет четность (нечетность) числа, в случае успеха вернет 1, в случае неудачи 1</li>
+<li><code>isprime(x)</code> - проверяет, простое ли число (аналогично вернет 1/0)</li>
+</ul>
+
+<h3 id="1-5-тригонометрические-функции">1.5. Тригонометрические функции</h3>
+
+<p><code>sin,cos,tan,sec,cosec,cot,asin,acos,atan</code></p>
+
+<p>Важно заметить, что все тригонометрические функции принимают на вход число в градусах, а для перевода из радиан в градусы служит функция <code>deg</code>, а обратно - <code>rad</code>. Это поведение по умолчанию, его можно поменять:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\pgfkeys</span><span style="color:#658b00">{</span>/pgf/trig format=rad|deg<span style="color:#658b00">}</span></code></pre></div>
+<p>Кроме того, можно использовать радианы и не изменяя поведение по умолчанию -  указать, что аргумент дан в радианах: <code>cos(pi/2 r) -&gt;0</code>.</p>
+
+<h3 id="1-6-гиперболические-функции">1.6. Гиперболические функции</h3>
+
+<p><code>sinh,cosh,tanh</code></p>
+
+<h3 id="1-7-генерация-случайных-чисел">1.7. Генерация случайных чисел</h3>
+
+<p>Присутствует и возможность генерации случайных чисел: вызов <code>rnd</code> вернет случайное число от 0 до 1, <code>rand</code> от -1 до 1.</p>
+
+<p>Более подробно о функциях и операторах можно почитать в <a href="http://mirrors.mi.ras.ru/CTAN/graphics/pgf/base/doc/pgfmanual.pdf">руководстве по pgf, 1000-1011 страницы</a>.</p>
+
+<h2 id="2-объявление-новых-функций">2. Объявление новых функций</h2>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+	  declare function=<span style="color:#658b00">{</span>
+	    myfun(<span style="color:#8b008b;font-weight:bold">\x</span>,<span style="color:#8b008b;font-weight:bold">\t</span>) = (<span style="color:#8b008b;font-weight:bold">\x*\t</span>);
+	  <span style="color:#658b00">}</span>
+  ]
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+		<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red, domain=0:4, samples=300]</span><span style="color:#658b00">{</span>myfun(x,2)<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p>Объявляется новая функция для всего рисунка. Все должно быть понятно из примера.</p>
+
+<h3 id="2-1-составление-функции-хевисайда-ступенька-произвольной-длины">2.1. Составление функции Хевисайда. Ступенька произвольной длины</h3>
+
+<p>Используя условный оператор, несложно составить функцию Хевисайда:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">1*(x&gt;0 ? 1 : 0)</code></pre></div>
+<p>Очевидно, она будет равна множителю перед скобкой при x&gt;0 и нулю в отрицательной области. Из двух функций Хевисайда можно составить и прямоугольный импульс:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">1*(x&gt;0 ? 1 : 0)-1*(x&gt;1 ? 1 : 0)</code></pre></div>
+<p>Это прямоугольный импульс, начинающийся от нуля. Однако, можно создать функцию с аргументами высоты, ширины и начала ступеньки:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+	  declare function=<span style="color:#658b00">{</span>
+	    impuls(<span style="color:#8b008b;font-weight:bold">\h</span>,<span style="color:#8b008b;font-weight:bold">\w</span>,<span style="color:#8b008b;font-weight:bold">\b</span>,<span style="color:#8b008b;font-weight:bold">\x</span>) = <span style="color:#8b008b;font-weight:bold">\h*</span>((<span style="color:#8b008b;font-weight:bold">\x</span>&gt;<span style="color:#8b008b;font-weight:bold">\b</span> ? 1 : 0)-(<span style="color:#8b008b;font-weight:bold">\x</span>&gt;(<span style="color:#8b008b;font-weight:bold">\b</span>+<span style="color:#8b008b;font-weight:bold">\w</span>) ? 1 : 0));
+	  <span style="color:#658b00">}</span>
+  ]
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+		<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red, domain=0:4, samples=300]</span><span style="color:#658b00">{</span>impuls(2,2,1,x)<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p>Заметим, что в общем случае, например для построения кусочно-гладких функций, необязательно создавать громоздкую функцию, которая будет включать в себя все остальные с помощью условного оператора.</p>
+
+<p>Если заранее известно, что функция будет без скачков (скачок сам по себе можно построить, но особого смысла нет), то можно воспользоваться тем, что команда <code>\addplot</code> имеет параметр области построения графика <code>domain=start:end</code> и использовать несколько плотов:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+		<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red, domain=0:1, samples=300]</span><span style="color:#658b00">{</span>x<span style="color:#658b00">^</span>2<span style="color:#658b00">}</span>;
+		<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red, domain=1:4, samples=300]</span><span style="color:#658b00">{</span>2*x<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p><code>samples</code> здесь - количество точек графика. График не может строиться абсолютно непрерывно и берется в некотором числе точек, которые соединяются отрезками: чем выше число точек, тем качественнее картинка, но и медленнее её компиляция и отрисовка. Разумно делать это число меньше для медленно меняющихся графиков и много больше для быстро меняющихся, особенно для таких, как в предыдущем примере - со скачком.</p>
+
+<p>По мере чтения руководства читатель может заметить появление новых параметров без объяснения. Предпологается, что они могут быть интуитивно понятны.</p>
+
+<!-- # Table of contents
+1. [Introduction](#introduction)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
+
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style -->
+
+<!-- ## 
+
+Оговоримся, что речь идет о векторной графике, которая задается кодом непосредственно в файлах `.tex`. Использование векторных редакторов, таких как Inkscape, может быть значительно проще, но не даёт возможности "на лету" изменять при компиляции картинки соответственно изменившися данным, например.
+
+Преимущество использования `pgfplots` по сравнению c известным пакетом векторной графики в латехе - `pstricks`  - возможность работы в pdflatex, в то время как pstricks принуждает использовать конвейер `.tex->.dvi->.ps->.pdf`. 
+
+Также возможно использование GNUPlot, который позволяет достичь хорошего результата. О GNUPlot когда-нибудь на этом сайте появится статья, так как неплохо знать несколько способов получить качественный результат, например, для оформления научных статей, отчетов и проч.
+
+
+
+```latex
+\begin{tikzpicture}
+\begin{axis}
+\addplot[color=red]{exp(x)};
+\end{axis}
+\end{tikzpicture}
+%Here ends the furst plot
+\hskip 5pt
+%Here begins the 3d plot
+\begin{tikzpicture}
+\begin{axis}
+\addplot3[
+    surf,
+]
+{exp(-x^2-y^2)*x};
+\end{axis}
+\end{tikzpicture}
+``` -->
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>
