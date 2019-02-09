@@ -1,6 +1,6 @@
 ﻿---
 title: "Экзаменационные и зачетные материалы"
-date:  2019-01-19T15:25:28+03:00
+date:  2019-02-09T12:46:56+03:00
 layout: single
 markup: mmark
 ---
@@ -17,6 +17,10 @@ markup: mmark
     	* Асимптотические методы теории волн (преп. Миловский Н.Д.)
 		  * [Конспекты лекций электронные (с содержанием)](/materials/asymptotic_methods_lect6sem_lectorMilovskyND_sfg180@yandex.ru.pdf)
 		  * [Задачи (условия)](/materials/asymptotic_methods_problems6sem_lectorMilovskyND_sfg180@yandex.ru.pdf) / [Список билетов](/materials/asymptotic_methods_tickets6sem_lectorMilovskyND_sfg180@yandex.ru.pdf)
+        * Квантовая механика  (преп. Курин Вл.В., практика - Рыжов Д.А.)
+          * [Расписанные билеты к зачету  (5 семестр)](/tickets/2018/12/27/tickets-quantum-course3sem1/)
+          * [Электронные лекции и практики (6 семестр, в процессе создания)](https://github.com/FedorSarafanov/quantum_mechanics/raw/master/lections.pdf)
+          * [Сухановские лекции по квантмеху (МФТИ)](/materials/suhanov_lections.pdf)
         * Атомная и ядерная физика (преп. Коржиманов А.В.)
           * [Конспекты лекций электронные, часть 1](/materials/Атомная_и_ядерная_физика_лекции2018_часть1_лекторКоржимановАВ_sfg180@yandexru.pdf) (оригинал [тут](http://korzhimanov.ru/teaching/atomic-physics.pdf))
           * [Конспекты лекций сканированные, часть 2](/materials/Атомная_и_ядерная_физика_лекции2018_часть2_лекторКоржимановАВ_sfg180@yandexru.pdf)
@@ -26,9 +30,6 @@ markup: mmark
           * [Орлов И.Я. и проч. Основы радиоэлектроники: учебное пособие](/materials/orlov.pdf)
           * [Прорешанные типовые задачи радиоэлектроники](https://github.com/FedorSarafanov/radioelectronics/raw/master/solved_problems/problems.pdf)
           * [Практика по радиоэлектронике (преп. Односевцев В.А.)](/materials/ПрактикаРЭ.pdf)
-        * Квантовая механика  (преп. Курин В.В.)
-          * [Билеты к зачету](/tickets/2018/12/27/tickets-quantum-course3sem1/)
-          * [Сухановские лекции по квантмеху (МФТИ)](/materials/suhanov_lections.pdf)
         * Электродинамика (преп. Кудрин А.В.)
           * [Лекции](/materials/Электродинамика_лекции2018_лекторКудринАВ_sfg180@yandexru.pdf)
           * [Список вопросов программы минимум (экзамен)](/materials/Электродинамика_список_теорминимум_экзамен2019_лекторКудринАВ_sfg180@yandexru.pdf)
