@@ -8,11 +8,15 @@ markup: mmark
 Здесь размещены полезные материалы для подготовки к экзаменам и зачетам: лекции, книги, расписанные экзаменационные задачи, экзаменационные билеты с различных дисциплин 1-3 курсов радиофизического факультета ННГУ. 
 
 
+
 <!--more-->
 
 {.treeCSS}
 * Структурная карта
     * 3 курс (2018-2019)
+    	* Асимптотические методы теории волн (преп. Миловский Н.Д.)
+		  * [Конспекты лекций электронные (с содержанием)](/materials/asymptotic_methods_lect6sem_lectorMilovskyND_sfg180@yandex.ru.pdf)
+		  * [Задачи (условия)](/materials/asymptotic_methods_problems6sem_lectorMilovskyND_sfg180@yandex.ru.pdf) / [Список билетов](/materials/asymptotic_methods_tickets6sem_lectorMilovskyND_sfg180@yandex.ru.pdf)
         * Атомная и ядерная физика (преп. Коржиманов А.В.)
           * [Конспекты лекций электронные, часть 1](/materials/Атомная_и_ядерная_физика_лекции2018_часть1_лекторКоржимановАВ_sfg180@yandexru.pdf) (оригинал [тут](http://korzhimanov.ru/teaching/atomic-physics.pdf))
           * [Конспекты лекций сканированные, часть 2](/materials/Атомная_и_ядерная_физика_лекции2018_часть2_лекторКоржимановАВ_sfg180@yandexru.pdf)
