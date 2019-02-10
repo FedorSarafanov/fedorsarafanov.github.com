@@ -26,11 +26,13 @@
       <pubDate>Wed, 09 Jan 2019 14:38:27 +0300</pubDate>
       
       <guid>https://fedorsarafanov.github.io/pgfplots/pgfplots_quick_guide/</guid>
-      <description>&lt;p&gt;Пакет &lt;code&gt;pgfplots&lt;/code&gt; представляет собой мощный инструмент, предназначенный для создания научных графиков. Он создан на базе &lt;code&gt;tikz&lt;/code&gt;, не менее прекрасного пакета, который позволяет создавать векторную графику прямо на латехе.&lt;/p&gt;
+      <description>&lt;h3 id=&#34;о-пакете&#34;&gt;О пакете&lt;/h3&gt;
+
+&lt;p&gt;Пакет &lt;code&gt;pgfplots&lt;/code&gt; представляет собой мощный инструмент, предназначенный для создания научных графиков. Он создан на базе &lt;code&gt;tikz&lt;/code&gt;, не менее прекрасного пакета, который позволяет создавать векторную графику прямо на латехе.&lt;/p&gt;
 
 &lt;p&gt;Если вы сомневаетесь в необходимости использования &lt;code&gt;pgfplots&lt;/code&gt; или &lt;code&gt;tikz&lt;/code&gt;, посмотрите на простые графики, созданные с помощью этих пакетов:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://cdn.sharelatex.com/learn-scripts/images/3/3e/Pgfplots3.png&#34; alt=&#34;Графики на PgfPlots&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://cdn.sharelatex.com/learn-scripts/images/3/3e/Pgfplots3.png&#34; alt=&#34;Графики на PgfPlots&#34;&gt;&lt;/figure&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
