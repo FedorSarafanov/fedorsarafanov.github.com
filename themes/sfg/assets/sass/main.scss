@@ -188,6 +188,50 @@ img {
   max-width: 100%;
 }
 
+.preview-latex{
+  position: relative;
+  // padding-left: 1em;
+  padding-top: 1.5em;
+  .preview-img{
+    display: none;
+    img{
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .highlight{
+    pre{
+      margin: 0 !important;
+    }
+  }
+  .button{
+    display: block;
+    // transform: rotate(90deg);
+    // text-orientation: upright;
+// writing-mode: vertical-lr;
+    position: absolute;
+    // left: 0;
+    right: 0;
+    top: 0;
+    // bottom: 0;
+    // width: 2.5em;
+    height: 1em;
+    padding: 0.25em;
+    // border: 1px solid darken(#eed, 30%);
+    // background: darken(#eed, 10%);
+      color: #548eaa;
+    // height: 100%;
+    &:hover{
+    // background: darken(#eed, 20%);
+    color: $magenta;
+      cursor: pointer;
+    }
+  }
+  p{
+    display: none;
+  }
+}
+
 figure{
   padding: 1em 0em;
   display: block;

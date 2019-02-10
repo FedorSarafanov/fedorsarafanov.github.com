@@ -17,6 +17,7 @@
     list-style: decimal;
 }
 
+
 #TableOfContents {
     li{
 	    position: relative;
@@ -33,4 +34,19 @@
     margin-top: 1rem;
     list-style: decimal;
     display: inline-block;
+}
+
+#mytoc{
+    // padding-top: 1em;
+    list-style: none;
+    & *{
+        list-style: none;
+    }
+    li{
+        position: relative;
+        left: 1em;
+        a{
+            color:  fade(blue, 70%)
+        }
+    }
 }
