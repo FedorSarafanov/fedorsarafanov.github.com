@@ -138,6 +138,8 @@
 
 <p><figure><img src="https://cdn.sharelatex.com/learn-scripts/images/3/3e/Pgfplots3.png" alt="Графики на PgfPlots"></figure></p>
 
+<p>Много небольших примеров применения можно посмотреть в галерее <code>pgfplots</code> <sup class="footnote-ref" id="fnref:gallery"><a class="footnote" href="#fn:gallery">1</a></sup>.</p>
+
 <p>Основная идея pgfplots - упрощение включения графиков в документ. Задача пользователя - задать формулу или данные, а остальным занимается pgfplots. Так, код графиков (<a href="https://www.overleaf.com/project/5c5ec5b5f7a1fe5bfc146e10">см. пример на overleaf</a>), приведенных выше (без преамбулы) выглядит так:</p>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#228b22">% Код первого графика
 </span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
@@ -156,7 +158,13 @@
 <h2 id="оглавление">Оглавление</h2>
 
 <ul id="mytoc">
-<li><a href="#input">Введение в pgfplots. Преамбула. Окружение осей.</a></li>
+<li>0. <a href="#input">Введение в pgfplots</a>
+
+<ul>
+<li>0.1. <a href="#preamb">Преамбула</a></li>
+<li>0.2. <a href="#osi">Окружение осей</a></li>
+<li>0.3. <a href="#standalone">Пакет standalone: графики в отдельных файлах</a></li>
+</ul></li>
 <li>1. <a href="#part1">Математика в pgfplots</a>
 
 <ul>
@@ -173,19 +181,65 @@
 <ul>
 <li>2.1. <a href="#part21">Составление функции Хевисайда. Ступенька произвольной длины</a></li>
 </ul></li>
+<li>3. <a href="#part3">Настройка осей и сетки</a>
+
+<ul>
+<li>3.1. <a href="#part31">Оси и их подписи. Настройка</a></li>
+<li>3.2. <a href="#part32">&quot;Тики&quot; (метки на осях) и их подписи</a>
+
+<ul>
+<li>3.2.1. <a href="#part321">Дополнительные тики</a></li>
+<li>3.2.2. <a href="#part322">Промежуточные тики (minor ticks)</a></li>
+</ul></li>
+<li>3.3. <a href="#part33">Максимальные и минимальные значения на графике. Масштаб осей</a></li>
+<li>3.4. <a href="#part34">Сетка. Единицы измерения в LaTeX</a>
+
+<ul>
+<li>3.4.1. <a href="#part341">Сетка через основные и промежуточные тики</a></li>
+<li>3.4.2. <a href="#part342">Сетка через дополнительные (extra) тики</a></li>
+</ul></li>
+</ul></li>
+<li>4. <a href="#part4">Легенда графика</a></li>
+<li>5. <a href="#part5">Построение графика</a>
+
+<ul>
+<li>5.1. <a href="#part51">Чтение данных из таблицы</a>
+
+<ul>
+<li>5.1.2. <a href="#part512">Создание новых стоблцов таблицы</a></li>
+</ul></li>
+<li>5.2. <a href="#part52">Отметки на линии графика (marks)</a></li>
+<li>5.3. <a href="#part53">Прямоугольники ошибок</a>
+
+<ul>
+<li><a href="#part531">5.3.1. Постоянная абсолютная или относитетельная погрешность</a></li>
+<li><a href="#part532">5.3.2. Абсолютная или относитетельная погрешность из файла</a></li>
+</ul></li>
+<li>5.4. <a href="#part54">Настройка линии графика </a>
+
+<ul>
+<li>5.4.1. <a href="#part541">Толщина и цвет линии графика </a></li>
+<li>5.4.2. <a href="#part542">Тип линии графика </a></li>
+</ul></li>
+</ul></li>
+<li>The End. <a href="#lit">Рекомендуемые источники</a></li>
 </ul>
 
-<p><a name="input"></a></p>
+<h2 id="0-введение-в-pgfplots-a-nameinputa">0. Введение в pgfplots <a name="input"></a></h2>
 
-<h2 id="введение-в-pgfplots-преамбула-окружение-осей">Введение в pgfplots. Преамбула. Окружение осей.</h2>
+<h3 id="01-преамбула-a-namepreamba">0.1. Преамбула <a name="preamb"></a></h3>
 
 <p>Подключается пакет стандартным образом. Вставьте этот код в преамбулу (до <code>\begin{document}</code>):</p>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\usepackage</span><span style="color:#658b00">{</span>pgfplots<span style="color:#658b00">}</span></code></pre></div>
 <p>Так же можно сразу в преамбуле сделать некоторые настройки. Во-первых, можно задать используемую версию pgfplots. Так как пакет динамично развивается, то некоторые вещи становятся несовместимыми от версии к версии. Наиболее разумным является использование текущей версии указанием параметра</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">\pgfplotsset{width=10cm,compat=newest}</pre></div>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\pgfplotsset</span><span style="color:#658b00">{</span>width=10cm,compat=newest<span style="color:#658b00">}</span></code></pre></div>
 <p>но после окончания работы неплохо бы указать текущую версию вручную, чтобы если вдруг у вас будет такая функциональность, что не будет работать в следующих версиях, это не помешало бы компилировать график спустя длительное время.</p>
 
 <p>Параметр <code>width</code> задает ширину графика. Также можно задать и высоту <code>height</code>. Надо заметить, что это нововведение по сравнению с <code>tikz</code>: в <code>tikz</code> картинки изменяют свой размер соответственно содержимому, <code>pgfplots</code> же может подогнать содержимое (масштабом осей) под график. Надо заметить, что возможно и обратное - задавать вручную масштаб осей, тогда высота и ширина будут определяться ими и содержимым, а параметры <code>width, height</code> будут игнорироваться.</p>
+
+<p><a name="osi"></a></p>
+
+<h3 id="02-окружение-осей">0.2. Окружение осей</h3>
 
 <p>Поскольку pgfplots основан на tikz, график должен находиться в окружении tikzpicture. Сам график строится в осях (полотно графика с системой координат и некоторым масштабом).</p>
 
@@ -218,11 +272,50 @@ $('.button').click( function(obj){
 
 <p>Важно, что все команды (эта необходимость тянется из пакета tikz) должны заканчиваться точкой с запятой.</p>
 
-<p>Внутри фигурных скобок размещается функция, задающая график. Математический аппарат pgfplots-а принадлежит пакету более низкого уровня pgf. Математические возможности pgf достаточно велики, и мы рассмотрим только некоторые аспекты составления сложных функций для построения различных графиков.</p>
+<p>Внутри фигурных скобок размещается функция, задающая график. О её составлении рассказано ниже.</p>
 
+<p>Так же более подробно о настройке осей и сетки см. раздел 3 &quot;Настройка осей и сетки&quot;</p>
+
+<p>Самое подробное описание (на английском) можно найти в мануале по pgfplots <sup class="footnote-ref" id="fnref:pgfplots"><a class="footnote" href="#fn:pgfplots">2</a></sup>.</p>
+
+<p><a name="standalone"></a></p>
+
+<h3 id="03-пакет-standalone-графики-в-отдельных-файлах">0.3. Пакет standalone: графики в отдельных файлах</h3>
+
+<p>Компиляция графиков pgfplots может быть долгой. Особенно это касается случаев, когда строится функция с большим числом точек, уходящая на бесконечность или обрабатываются большие экспериментальные данные из файла.</p>
+
+<p>В таком случае разумно, чтобы сократить время компиляции, создавать каждый рисунок как отдельный pdf-документ, а затем подключать его как картинку. С одной стороны, увеличивается скорость компиляции, с другой, документ становится проще за счет выноса длинного кода в отдельные файлы, а структура документа становится более гибкой: отдельный график можно использовать в других проектах.</p>
+
+<p>Настоятельно рекомендуется использовать именно этот способ. Для него достаточно указать классом документа <code>standalone</code>, и документ будет компилироваться в pdf файл, причем так, что поле документа будет обрезано до размеров графика.</p>
+
+<p>Стоит отметить, что этот пакет конфликтует с пакетом <code>geometry</code>, и последний использовать в документах класса <code>standalone</code> не нужно.</p>
+
+<p>Дочерний документ (например, это файл <code>img/ris1.tex</code>):</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span>`
+
+<span style="color:#8b008b;font-weight:bold">\usepackage</span><span style="color:#658b00">[utf8]</span><span style="color:#658b00">{</span>inputenc<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\usepackage</span><span style="color:#658b00">{</span>pgfplots<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\pgfplotsset</span><span style="color:#658b00">{</span>width=10cm,compat=1.9<span style="color:#658b00">}</span>
+
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+		<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+			<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[color=red]</span><span style="color:#658b00">{</span>exp(x)<span style="color:#658b00">}</span>;
+		<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span></code></pre></div>
+<p>Вставка картинки в основной документ:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>figure<span style="color:#658b00">}</span>[h!]
+	<span style="color:#8b008b;font-weight:bold">\centering</span>
+	<span style="color:#8b008b;font-weight:bold">\includegraphics</span><span style="color:#658b00">[scale=1]</span><span style="color:#658b00">{</span>img/ris1<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\caption</span><span style="color:#658b00">{</span>Наш отдельный график<span style="color:#658b00">}</span>
+	<span style="color:#8b008b;font-weight:bold">\label</span><span style="color:#658b00">{</span>fig:ris1<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>figure<span style="color:#658b00">}</span></code></pre></div>
 <p><a name="part1"></a></p>
 
 <h2 id="1-математика-в-pgfplots-a-namepart1a">1. Математика в pgfplots <a name="part1"></a></h2>
+
+<p>Математический аппарат pgfplots-а принадлежит пакету более низкого уровня pgf. Математические возможности pgf достаточно велики, и мы рассмотрим только некоторые аспекты составления сложных функций для построения различных графиков.</p>
 
 <p><a name="part11"></a></p>
 
@@ -298,7 +391,7 @@ $('.button').click( function(obj){
 
 <p>Присутствует и возможность генерации случайных чисел: вызов <code>rnd</code> вернет случайное число от 0 до 1, <code>rand</code> от -1 до 1.</p>
 
-<p>Более подробно о функциях и операторах можно почитать в <a href="http://mirrors.mi.ras.ru/CTAN/graphics/pgf/base/doc/pgfmanual.pdf">руководстве по pgf, 1000-1011 страницы</a>.</p>
+<p>Более подробно о функциях и операторах можно почитать <a href="http://mirrors.mi.ras.ru/CTAN/graphics/pgf/base/doc/pgfmanual.pdf">в руководстве по pgf, 1000-1011 страницы</a> <sup class="footnote-ref" id="fnref:pgf"><a class="footnote" href="#fn:pgf">3</a></sup>.</p>
 
 <p><a name="part2"></a></p>
 
@@ -351,43 +444,306 @@ $('.button').click( function(obj){
 
 <p>По мере чтения руководства читатель может заметить появление новых параметров без объяснения. Предпологается, что они могут быть интуитивно понятны.</p>
 
-<!-- # Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+<h2 id="3-настройка-осей-и-сетки-a-namepart3a">3. Настройка осей и сетки <a name="part3"></a></h2>
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style -->
+<h3 id="31-оси-и-их-подписи-загаловок-графика-a-namepart31a">3.1. Оси и их подписи. Загаловок графика. <a name="part31"></a></h3>
 
-<!-- ## 
-
-Оговоримся, что речь идет о векторной графике, которая задается кодом непосредственно в файлах `.tex`. Использование векторных редакторов, таких как Inkscape, может быть значительно проще, но не даёт возможности "на лету" изменять при компиляции картинки соответственно изменившися данным, например.
-
-Преимущество использования `pgfplots` по сравнению c известным пакетом векторной графики в латехе - `pstricks`  - возможность работы в pdflatex, в то время как pstricks принуждает использовать конвейер `.tex->.dvi->.ps->.pdf`. 
-
-Также возможно использование GNUPlot, который позволяет достичь хорошего результата. О GNUPlot когда-нибудь на этом сайте появится статья, так как неплохо знать несколько способов получить качественный результат, например, для оформления научных статей, отчетов и проч.
-
-
-
-```latex
-\begin{tikzpicture}
-\begin{axis}
-\addplot[color=red]{exp(x)};
-\end{axis}
-\end{tikzpicture}
-%Here ends the furst plot
-\hskip 5pt
-%Here begins the 3d plot
-\begin{tikzpicture}
-\begin{axis}
-\addplot3[
-    surf,
+<p>Рассмотрим базовый пример настройки осей. По умолчанию, вместо координатных осей рисуется прямоугольник координат (<code>axis lines = box</code>), как это часто принято в научных статьях. Однако никто не мешает использовать оси-стрелки, или вообще отключить оси:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>[
+    axis lines = middle, <span style="color:#228b22">% привычные оси со стрелочками с пересечением в нуле
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% возможные значения: box, left, middle, center, right, none
+</span><span style="color:#228b22"></span>    xlabel = <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>, <span style="color:#228b22">% подпись оси x
+</span><span style="color:#228b22"></span>    ylabel = <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">f</span>(<span style="color:#658b00">x</span>)<span style="color:#cd5555">$</span><span style="color:#658b00">}</span>, <span style="color:#228b22">% подпись оси y
+</span><span style="color:#228b22"></span>    title=<span style="color:#658b00">{</span>Мой первый график <span style="color:#cd5555">$</span><span style="color:#658b00">f</span>(<span style="color:#658b00">x</span>)=<span style="color:#658b00">x^</span><span style="color:#b452cd">2</span><span style="color:#658b00"> </span>-<span style="color:#658b00"> </span><span style="color:#b452cd">2</span><span style="color:#00688b">\cdot</span><span style="color:#658b00"> x </span>-<span style="color:#658b00"> </span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>, 
 ]
-{exp(-x^2-y^2)*x};
-\end{axis}
-\end{tikzpicture}
-``` -->
+	<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[domain=-10:10, samples=100, color=red]</span> <span style="color:#658b00">{</span>x<span style="color:#658b00">^</span>2 - 2*x - 1<span style="color:#658b00">}</span>;
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p>Обратите внимание на то, что у нас появился параметр <code>title</code>, задающий загаловок графику. Как правило, при использовании пакета standalone, это не нужно - загаловок графика задается командой caption в окружении figure.</p>
+
+<p>Вообще говоря, положение осей можно применять и по отдельности:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  axis x line=center,
+  axis y line=left,</code></pre></div>
+<p>Можно задать и определенные правила отрисовки осей, например цвет, или сделать их пунктиром (dashed):</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  x axis line style =<span style="color:#658b00">{</span>black!40, dashed<span style="color:#658b00">}</span>,
+  y axis line style =<span style="color:#658b00">{</span>red<span style="color:#658b00">}</span>,</code></pre></div>
+<p>Заметьте, как здесь указывается цвет. Это обозначение <code>black!40!red</code> означает смешение цветов, в соотношении 40% black 60% red, если цвет справа не указан, то он берется белым: значит, <code>black!40</code> даст нам серый цвет. Таким образом из базовых цветов можно составить любой цвет.</p>
+
+<p>Также можно перенести подписи осей к стрелкам на осях:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  xlabel style=<span style="color:#658b00">{</span>below right<span style="color:#658b00">}</span>,
+  ylabel style=<span style="color:#658b00">{</span>above left, red, scale=1.5<span style="color:#658b00">}</span>,</code></pre></div>
+<p>Здесь появился новый параметр <code>scale</code>, подпись к оси y будет в полтора раза больше, чем к оси x, очевидно.</p>
+
+<p>Подразумевается, что все приведенные выше параметры подставляются в параметры окружения <code>axis</code>.</p>
+
+<h3 id="32-тики-метки-на-осях-и-их-подписи-a-namepart32a">3.2. &quot;Тики&quot; (метки на осях) и их подписи <a name="part32"></a></h3>
+
+<p>Когда график не качественный, важно наиболее удобно показать подписи (числа) к осям. За них отвечают <code>ticks</code> (тики) - маленькие перпендикулярные черты к осям с численной подписью.</p>
+
+<p>Настройка расстояния между тиками:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">xtick distance=1,
+ytick distance=2</code></pre></div>
+<p>Также можно вручную указать список основных тиков:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">xtick=<span style="color:#658b00">{</span>0,20,40,60,80,100<span style="color:#658b00">}</span>, 
+ytick=<span style="color:#658b00">{</span>0,20,40,60,80,100,120<span style="color:#658b00">}</span></code></pre></div>
+<p>А при необходимости, можно задать и подписи к ним (по умолчанию подпись - это координата тика):</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">ytick=<span style="color:#658b00">{</span>1.5707,0.7853,1<span style="color:#658b00">}</span>, 
+yticklabels=<span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\frac</span><span style="color:#658b00">{</span><span style="color:#00688b">\pi</span><span style="color:#658b00">}{</span><span style="color:#b452cd">2</span><span style="color:#658b00">},</span><span style="color:#cd5555">$</span>, <span style="color:#cd5555">$</span><span style="color:#00688b">\frac</span><span style="color:#658b00">{</span><span style="color:#00688b">\pi</span><span style="color:#658b00">}{</span><span style="color:#b452cd">4</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span>, 1<span style="color:#658b00">}</span>,	</code></pre></div>
+<p>По умолчанию pgfplots пытается подобрать наиболее разумное расположение тиков.</p>
+
+<h4 id="321-дополнительные-тики-a-namepart321a">3.2.1. Дополнительные тики <a name="part321"></a></h4>
+
+<p>Иногда требуется специально показать положение чего-либо на осях. Для этого можно использовать дополнительные тики, задав им координаты и их подписи:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">extra y ticks=<span style="color:#658b00">{</span>-9/16,-6/16<span style="color:#658b00">}</span>,	<span style="color:#228b22">% положение дополнительных тиков
+</span><span style="color:#228b22"></span>extra y tick labels=<span style="color:#658b00">{</span>	<span style="color:#228b22">% их подписи
+</span><span style="color:#228b22"></span> 		<span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">U_{min}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>, <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">U_{min}</span>+<span style="color:#00688b">\Delta</span><span style="color:#658b00"> U</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>
+<span style="color:#658b00">}</span>, 		</code></pre></div>
+<p>Для x аналогично.</p>
+
+<h4 id="322-промежуточные-тики-minor-ticks-a-namepart322a">3.2.2. Промежуточные тики (minor ticks) <a name="part322"></a></h4>
+
+<p>Часто кроме основных меток на осях, ставят промежуточные: так, например, на линейке отмечены сантиметры рисками с подписями, а миллиметры просто рисками без подписей.</p>
+
+<p>Такое задается с помощью minor ticks:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"> minor tick num = 2,</code></pre></div>
+<p>Этот параметр задает количество таких тиков (эквидистантных) между основными (major) тиками для обоих осей одинаково. А можно задать и для каждой оси отдельно:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"> minor x tick num=3,
+ minor y tick num=8,</code></pre></div>
+<h3 id="33-максимальные-и-минимальные-значения-на-графике-масштаб-осей-a-namepart33a">3.3. Максимальные и минимальные значения на графике. Масштаб осей <a name="part33"></a></h3>
+
+<p>Масштаб осей задан в виде &lt;длина орта x&gt; &lt;длина орта y&gt;:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  unit vector ratio = 1 1,
+  xmax = 8,
+  xmin=-2,
+  ymax=1.5,
+  ymin=-0.2,</code></pre></div>
+<p>Максимальные и минимальные значения заданы очевидным образом.</p>
+
+<h3 id="34-сетка-единицы-измерения-в-latex--a-namepart34a">3.4. Сетка. Единицы измерения в LaTeX  <a name="part34"></a></h3>
+
+<h4 id="341-сетка-через-основные-и-промежуточные-тики--a-namepart341a">3.4.1. Сетка через основные и промежуточные тики  <a name="part341"></a></h4>
+
+<p>Сетка всегда проходит через тики на осях. Она может проходить как через основные (major) так и через промежуточные (minor) тики:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  grid=major, <span style="color:#228b22">% м.б. еще both - и там и там
+</span><span style="color:#228b22"></span>  grid style=<span style="color:#658b00">{</span>dotted, cyan<span style="color:#658b00">}</span>,</code></pre></div>
+<p>Причем стиль можно задать как всей сетке (и основной major и промежуточной minor), так и по отдельности:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  minor grid style=<span style="color:#658b00">{</span>dashed,red, line width=0.2pt<span style="color:#658b00">}</span>,
+  major grid style=<span style="color:#658b00">{</span>solid,black, line width=0.1pt<span style="color:#658b00">}</span>,</code></pre></div>
+<p>Обратите внимание на используемые единицы измерения. em - это высота одной буквы шрифта 10pt:
+<center>
+<figure><img src="https://i.stack.imgur.com/uDZPg.png" alt="units"></figure>
+</center></p>
+
+<p>pt называется типографским пунктом.</p>
+
+<h4 id="342-сетка-через-дополнительные-extra-тики--a-namepart342a">3.4.2. Сетка через дополнительные (extra) тики  <a name="part342"></a></h4>
+
+<!-- https://tex.stackexchange.com/questions/269386/how-to-add-an-extra-tick-without-adding-a-new-line-to-the-grid -->
+
+<p>По умолчанию, сетка автоматически проведет линии и через пользовательские (дополнительные) тики, но этот стиль можно модифицировать:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">  extra tick style=<span style="color:#658b00">{</span>grid=major, grid style=<span style="color:#658b00">{</span>dotted, cyan<span style="color:#658b00">}}</span>,</code></pre></div>
+<p>Здесь мы скопировали стиль основных линий сетки и модифицировали его, сделав в точечку (dotted) и голубым (cyan).</p>
+
+<p><a name="part4"></a></p>
+
+<h2 id="4-легенда-графика">4. Легенда графика</h2>
+
+<p>Для того, чтобы сопоставить какому-либо графику, который строится с помощью <code>\addplot</code>, элемент легенды, есть специальная команда <code>\addlegendentry</code>, которую нужно разместить после <code>\addplot</code>:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>[
+    axis lines = middle,
+    xlabel = <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>,
+    ylabel = <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">f</span>(<span style="color:#658b00">x</span>)<span style="color:#cd5555">$</span><span style="color:#658b00">}</span>,
+    title=<span style="color:#658b00">{</span>Мой первый график <span style="color:#cd5555">$</span><span style="color:#658b00">f</span>(<span style="color:#658b00">x</span>)=<span style="color:#658b00">x^</span><span style="color:#b452cd">2</span><span style="color:#658b00"> </span>-<span style="color:#658b00"> </span><span style="color:#b452cd">2</span><span style="color:#00688b">\cdot</span><span style="color:#658b00"> x </span>-<span style="color:#658b00"> </span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>, 
+    legend pos=<span style="color:#658b00">{</span>south west<span style="color:#658b00">}</span>,
+]
+	<span style="color:#8b008b;font-weight:bold">\addplot</span><span style="color:#658b00">[domain=-10:10, samples=100, color=red]</span> <span style="color:#658b00">{</span>x<span style="color:#658b00">^</span>2+2*x<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\addlegendentry</span><span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">x^</span>+<span style="color:#b452cd">2</span><span style="color:#00688b">\cdot</span><span style="color:#658b00"> x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>axis<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span></code></pre></div>
+<p>Здесь появился параметр <code>legend pos</code>, который задает положение легенды на графике:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">legend pos=south west|south east|north west|north east</code></pre></div>
+<h2 id="5-построение-графика-a-namepart5a">5. Построение графика <a name="part5"></a></h2>
+
+<p>В самом начале мы рассмотрели и далее неоднократно употребляли построение графика заданной функции <span  class="math">\(y=f(x)\)</span>. Однако, часто требуется построить не такой (или не только такой график), а покоординатный график (или, как это говорят математики, функция задана таблично, а не аналитически).</p>
+
+<p>Обычно такая задача возникает при обработке экспериментальных данных. Есть два способа: записать данные непосредественно в график, или записать их в текстовую таблицу (tsv или csv). Рассмотрим такие случаи.</p>
+
+<h2 id="51-чтение-данных-из-таблицы-a-namepart51a">5.1. Чтение данных из таблицы <a name="part51"></a></h2>
+
+<p>Важно: для чтения из таблицы нужно подключить пакет:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\usepackage</span><span style="color:#658b00">{</span>pgfplotstable<span style="color:#658b00">}</span></code></pre></div>
+<p>Рассмотрим такой пример: пусть у нас есть файл <code>data.tsv</code>, лежащий в той же папке, что и рисунок:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tsv" data-lang="tsv">Fr	Uin err
+15	7.446	0.1
+25	7.532	0.1
+40	7.512	0.1
+100	7.412	0.1
+200	7.41	0.1
+300	7.32	0.1
+400	7.27	0.1
+500	7.236	0.1
+1000	7.3	0.1
+2000	7.282	0.1
+3000	7.27	0.1</code></pre></div>
+<p>Тогда его можно построить командой:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[blue, dashed] 
+	plot table [		    	    	    	
+		x=Fr, 
+		y=Uin
+	]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<p>В этом примере все просто. В первых квадратных скобках пишутся параметры, управляющие отрисованным графиком, построением прямоугольников ошибок и т.п., а во вторых - параметры чтения из таблицы, создание новых столбцов таблицы путем математического выражения, составленного из существующих столбцов, о чем написано ниже.</p>
+
+<h2 id="512-создание-новых-стоблцов-таблицы-a-namepart512a">5.1.2. Создание новых стоблцов таблицы <a name="part512"></a></h2>
+
+<p>Рассмотрим простой пример, на основе приведенного выше файла данных. В нем в первой столбце стоит частота в герцах, но допустим, что мы хотим построить график от круговой частоты, т.е. домножить на <span  class="math">\(2\pi\)</span>:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[blue, dashed] 
+	plot table [		    	    	    	
+		create on use/omega/.style=<span style="color:#658b00">{</span>
+		    create col/expr=<span style="color:#658b00">{</span>
+		    <span style="color:#8b008b;font-weight:bold">\thisrow</span><span style="color:#658b00">{</span>Fr<span style="color:#658b00">}</span>*2*pi
+		    <span style="color:#658b00">}</span>
+		<span style="color:#658b00">}</span>,	
+		x=omega, 
+		y=Uin
+	]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<!--  -->
+
+<p>Здесь видно, как несложно оперировать созданием новых столбцов. При этом применима вся математика, рассмотренная в разделе выше.</p>
+
+<h2 id="52-маркеры-на-линии-графика-a-namepart52a">5.2. Маркеры на линии графика <a name="part52"></a></h2>
+
+<p>Часто требуется не просто соединить экспериментальные точки линией, а указать каждую конкретную точку маркером (mark), а то и вовсе составить график только из маркеров. Для этого предыдущий пример несложно модифицируется:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[blue, mark=*, mark size=1.5pt, only marks] 
+	plot table [		    	    	    	
+		create on use/omega/.style=<span style="color:#658b00">{</span>
+		    create col/expr=<span style="color:#658b00">{</span>
+		    <span style="color:#8b008b;font-weight:bold">\thisrow</span><span style="color:#658b00">{</span>Fr<span style="color:#658b00">}</span>*2*pi
+		    <span style="color:#658b00">}</span>
+		<span style="color:#658b00">}</span>,	
+		x=omega, 
+		y=Uin
+	]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<p>Параметр <code>only marks</code> принуждает рисовать только маркеры, без линии их соединяющих, <code>mark size</code> размер маркера, <code>mark</code> тип маркера.</p>
+
+<p>Существует достаточно много типов:</p>
+
+<p><figure><img src="/img/pgfplots/mark1.jpg" alt="markers"></figure></p>
+
+<p>Эта картинка взята из руководства по tikz в картинках <sup class="footnote-ref" id="fnref:visual"><a class="footnote" href="#fn:visual">4</a></sup>.</p>
+
+<!-- Более подробно о них можно прочесть -->
+
+<p>Для маркеров можно сразу задать несколько параметров: вместо размера задать масштаб (второй способ изменить размер маркера, иногда более удобный), основной цвет (draw) и цвет заливки (fill):</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[
+	mark=*, 
+	mark options=<span style="color:#658b00">{</span>
+		scale=2,
+		fill=blue,
+		draw=red,
+	<span style="color:#658b00">}</span>,
+	only marks
+] plot table [		    	    	    	
+		create on use/omega/.style=<span style="color:#658b00">{</span>
+		    create col/expr=<span style="color:#658b00">{</span>
+		    <span style="color:#8b008b;font-weight:bold">\thisrow</span><span style="color:#658b00">{</span>Fr<span style="color:#658b00">}</span>*2*pi
+		    <span style="color:#658b00">}</span>
+		<span style="color:#658b00">}</span>,	
+		x=omega, 
+		y=Uin
+	]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<h2 id="53-прямоугольники-ошибок-a-namepart53a">5.3. Прямоугольники ошибок <a name="part53"></a></h2>
+
+<p>Для начала рассмотрим простейший случай постоянной ошибки. Параметры прямоугольников ошибок пишутся в параметры команды plot. Рассматривать будем все на примере ошибки по y, по другим осям анологично с точностью до замены y-&gt;x,z.</p>
+
+<p>Для включения прямоугольников ошибки и возможности их настройки перед последующими рассмотренными параметрами нужно вставлять параметр <code>error bars/.cd</code>.</p>
+
+<h3 id="531-постоянная-абсолютная-или-относитетельная-погрешность-a-namepart531a">5.3.1. Постоянная абсолютная или относитетельная погрешность <a name="part531"></a></h3>
+
+<p>Сначала нужно определить, какая будет ошибка: строго положительная, отрицательная или в обе стороны. За это отвечает параметр <code>y dir=minus|plus|both</code>.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[
+	mark=*, 
+	only marks,
+] plot[
+	error bars/.cd,
+	y dir=both,
+	y fixed=0.1,
+<span style="color:#228b22">%	y fixed relative=0.1,
+</span><span style="color:#228b22"></span>] table [		    	    	    	
+	x=Fr, 
+	y=Uin
+]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<p>Здесь указана сразу абсолютная погрешность для всех значений. Аналогично можно задать сразу относительную параметром <code>y fixed relative</code>.</p>
+
+<h3 id="532-абсолютная-или-относитетельная-погрешность-из-файла-a-namepart532a">5.3.2. Абсолютная или относитетельная погрешность из файла <a name="part532"></a></h3>
+
+<p>Необходимо явно указать, что ожидается чтение данных ошибки из файла, указать в каком столбце (<code>y error=err</code>) записана ошибка и тип ошибки:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[
+	mark=*, 
+	only marks,
+] plot[
+	error bars/.cd,
+	y dir=both,
+	y explicit relative,
+] table [		    	    	    	
+	x=Fr, 
+	y=Uin,
+	y error=err,
+]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<p>Для абсолютной ошибки параметр <code>y explicit</code>, для относительной <code>y explicit relative</code>.</p>
+
+<h2 id="54-настройка-линии-графика-a-namepart54a">5.4. Настройка линии графика <a name="part54"></a></h2>
+
+<h3 id="541-толщина-и-цвет-линии-графика-a-namepart541a">5.4.1. Толщина и цвет линии графика <a name="part541"></a></h3>
+
+<p>Толщина линии управляется либо параметром <code>line width=</code>, либо словесными алиасами (рекомендуется использовать именно их):</p>
+
+<p><figure><img src="/img/pgfplots/lw.jpg" alt="markers"></figure></p>
+
+<p>Цвет линии сам является параметром:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[
+	thick,
+	blue!20!black
+] plot table [		    	    	    	
+	x=Fr, 
+	y=Uin,
+]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<p>О составлении цветов сказано ранее в разделе ().</p>
+
+<h3 id="542-тип-линии-графика-a-namepart542a">5.4.2. Тип линии графика <a name="part542"></a></h3>
+
+<p>Как и цвет, тип линии графика сам по себе параметр:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#8b008b;font-weight:bold">\addplot</span> +[
+	thick,
+	blue!20!black,
+	dashed
+] plot table [		    	    	    	
+	x=Fr, 
+	y=Uin,
+]<span style="color:#658b00">{</span>data.tsv<span style="color:#658b00">}</span>;</code></pre></div>
+<p>Существует несколько типов линий:</p>
+
+<p><figure><img src="/img/pgfplots/ls.jpg" alt="markers"></figure></p>
+
+<h2 id="the-end-рекомендуемые-источники-a-namelita">The End. Рекомендуемые источники <a name="lit"></a></h2>
+
+<p>Наконец, прочитав небольшое руководство по использованию pgfplots, вы почти готовы к тому, чтобы применить его для своих работ. В этом нелегком (поначалу) труде смогут помочь некоторые источники.</p>
+<div class="footnotes">
+
+<hr>
+
+<ol>
+<li id="fn:gallery"><a href="http://pgfplots.sourceforge.net/gallery.html">PGFPlots Gallery</a>. Галерея примеров прямо на сайте: оформление картинка-код, около сотни полезных примеров.
+ <a class="footnote-return" href="#fnref:gallery"><sup>[return]</sup></a></li>
+<li id="fn:pgfplots"><a href="http://mirrors.mi.ras.ru/CTAN/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf">Manual for Package PGFPLOTS</a>. Просто-таки необходимое для грамотного использования пакета, полное и подробное руководство, в котором есть все, что только может потребоваться для построения графиков. Информация хорошо структурирована и найти по содержанию информацию о каких-то параметрах и примеры использования совершенно не трудно.
+ <a class="footnote-return" href="#fnref:pgfplots"><sup>[return]</sup></a></li>
+<li id="fn:pgf"><a href="http://mirrors.mi.ras.ru/CTAN/graphics/pgf/base/doc/pgfmanual.pdf">The TikZ and PGF Packages Manual</a>. Это весьма полное руководство, в котором можно разобраться с низкоуровневым использованием математики в pgf, а также почерпнуть море информации о использовании tikz.
+ <a class="footnote-return" href="#fnref:pgf"><sup>[return]</sup></a></li>
+<li id="fn:visual"><a href="http://tug.ctan.org/info/visualtikz/VisualTikZ.pdf">Visual TikZ</a>. Не очень большое, компактное руководство &quot;в картинках&quot;. Вместо подробного расписывания на 1000+ страниц, как это сделано в руководстве PGF, здесь сделан упор на практическое применение, и каждый параметр обязательно сопровождается картинкой-результатом.
+ <a class="footnote-return" href="#fnref:visual"><sup>[return]</sup></a></li>
+</ol>
+</div>
 </article>
 
 
