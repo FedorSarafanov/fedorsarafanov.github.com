@@ -186,6 +186,47 @@ html, body {
 
 img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;  
+}
+
+.myimg{
+  margin: 0 auto;  
+}
+
+hr{
+  display: none;
+}
+
+sup {
+    vertical-align: baseline; 
+    font-size: 1em !important; 
+    &:after{
+      content: ']'
+    }
+    &:before{
+      content: '[' 
+    }
+}
+
+.footnote-return{
+   // text-indent: 100%;
+  // white-space: nowrap;
+  // overflow: hidden;
+  &>sup{
+  display: none;
+  }
+   // width: 1px;
+  // visibility: hidden;
+  // position: relative;
+  // display: none;
+  &:after{
+    content: '[вернуться]' !important; 
+  }
+}
+
+.footnotes li{
+  padding: 0.5em 0em;
 }
 
 .preview-latex{
@@ -306,6 +347,7 @@ section>h1{
               color: lighten(black, 60%);
         }
         #nav{
+            padding-left: 0 !important;
             // flex: 0.9;
             // a{
             //     text-decoration: none;
@@ -449,6 +491,15 @@ article{
 	h1,h2,h3,h4,h5{
 		padding: 1rem 0;
 	}
+  h2+h3{
+    padding-top: 0; 
+  }
+  h1+h2{
+    padding-top: 0; 
+  }
+  h3+h4{
+    padding-top: 0; 
+  }
 }
 
 
