@@ -50,8 +50,12 @@ date: 2017-01-22T22:16:12+03:00
 
 Электродинамика:
 
-1. [№3 - Исследование матриц рассеяния волноводных узлов](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
+1. [№1 - Исследование отражательного клистрона (Понур К.А.)](https://github.com/KirillPonur/klystron/raw/Kirill/klystron.pdf)
+1. [№3 - Исследование матриц рассеяния волноводных узлов (Шиков А.П.)](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
 1. [№4 - Электромагнитное экранирование](https://github.com/FedorSarafanov/em_shielding/raw/master/emshielding.pdf)
+1. [№7 - Определение коэффициента направленного действия рупорной антенны](https://github.com/BigBigGamer/antennas_directional_factor/raw/master/dir_factor_lab.pdf)
+
+
 
 ## Учебно-научный эксперимент (2-3 курсы)
 
