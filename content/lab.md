@@ -48,6 +48,11 @@ date: 2017-01-22T22:16:12+03:00
 1. [№5 - Апериодический усилитель](/lab_pdf/3/5-aperiodicheskiy_usilitelj.pdf)
 1. [№6 - Исследование нелинейных преобразований сигналов](/lab_pdf/3/6-issledovanie_nelineynyh_preobrazovaniy_signalov.pdf)
 
+Электродинамика:
+
+1. [№3 - Исследование матриц рассеяния волноводных узлов](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
+1. [№4 - Электромагнитное экранирование](https://github.com/FedorSarafanov/em_shielding/raw/master/emshielding.pdf)
+
 ## Учебно-научный эксперимент (2-3 курсы)
 
 1. [Исследование магнитооптических свойств теллуритных стекол](/lab_pdf/une/une_issledovanie_magnitoopticheskih_svoystv_telluritnyh_stekol.pdf)
@@ -56,12 +61,3 @@ date: 2017-01-22T22:16:12+03:00
 1. [Изучение резонатора земля-ионосфера (резонанс Шумана)](/lab_pdf/une/une_izuchenie_rezonatora_zemlya-ionosfera_(rezonans_shumana).pdf)
 1. [Исследование нелинейных свойств сверхпроводников](/lab_pdf/une/une_issledovanie_nelineynyh_svoystv_sverhprovodnikov.pdf)
 1. [Исследование диэлектриков в резонаторе Фабри-Перро](/lab_pdf/une/une_issledovanie_dielektrikov_v_rezonatore_fabri-perro.pdf)
-
-
-
-
-
-
-
-
-
