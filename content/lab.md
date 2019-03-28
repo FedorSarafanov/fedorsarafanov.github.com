@@ -47,6 +47,7 @@ date: 2017-01-22T22:16:12+03:00
 
 1. [№5 - Апериодический усилитель](/lab_pdf/3/5-aperiodicheskiy_usilitelj.pdf)
 1. [№6 - Исследование нелинейных преобразований сигналов](/lab_pdf/3/6-issledovanie_nelineynyh_preobrazovaniy_signalov.pdf)
+1. [№7 - Частотный модем (только модулятор)](/lab_pdf/3/fmodem.pdf)
 
 Электродинамика:
 
