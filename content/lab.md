@@ -17,7 +17,7 @@ date: 2017-01-22T22:16:12+03:00
 1. [№22 - Определение коэффициента внутреннего трения жидкости](/lab_pdf/1/22-opredelenie_koefficienta_vnutrennego_treniya_zhidkosti.pdf)
 1. [№27 - Определение отношения заряда электрона к его массе](/lab_pdf/1/27-opredelenie_otnosheniya_zaryada_elektrona_k_ego_masse.pdf)
 
-<!--more-->
+<!-- more -->
 
 ## 2 курс
 Общая физика:
@@ -55,6 +55,14 @@ date: 2017-01-22T22:16:12+03:00
 1. [№3 - Исследование матриц рассеяния волноводных узлов](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
 1. [№4 - Электромагнитное экранирование](https://github.com/FedorSarafanov/em_shielding/raw/master/emshielding.pdf)
 1. [№7 - Определение коэффициента направленного действия рупорной антенны (Шиков А.П.)](https://github.com/BigBigGamer/antennas_directional_factor/raw/master/dir_factor_lab.pdf)
+
+Квантовая механика:
+
+1. [Запрещенная зона](/lab_pdf/qm/bandgap.pdf) [[git1]](https://github.com/FedorSarafanov/BandGap) [[git2]](https://github.com/BigBigGamer/Band-Gap/) [[git3]](https://github.com/KirillPonur/Zone)
+1. [Время жизни и диффузионная длина](/lab_pdf/qm/lifetime.pdf) [[git]](https://github.com/FedorSarafanov/CarrierLifeTime) [[git2]](https://github.com/BigBigGamer/CarrierLifeTime) [[git3]](https://github.com/KirillPonur/CarrierLifeTime)
+1. [Эффект Холла](/lab_pdf/qm/hall.pdf) [[git1]](https://github.com/FedorSarafanov/quant-hall-effect)  [[git2]](https://github.com/BigBigGamer/quant-hall-effect)
+[[git3]](https://github.com/KirillPonur/quant-hall-effect)
+
 
 
 
