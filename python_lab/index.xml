@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Численные методы on Блог Федора Сарафанова</title>
-    <link>https://fedorsarafanov.github.io:1313/python_lab/</link>
+    <link>https://fedorsarafanov.github.io/python_lab/</link>
     <description>Recent content in Численные методы on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     <lastBuildDate>Sun, 22 Jan 2017 22:16:12 +0300</lastBuildDate>
     
-	<atom:link href="https://fedorsarafanov.github.io:1313/python_lab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fedorsarafanov.github.io/python_lab/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

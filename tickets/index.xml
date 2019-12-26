@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Билеты к зачетам/экзаменам on Блог Федора Сарафанова</title>
-    <link>https://fedorsarafanov.github.io:1313/tickets/</link>
+    <link>https://fedorsarafanov.github.io/tickets/</link>
     <description>Recent content in Билеты к зачетам/экзаменам on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     <lastBuildDate>Fri, 04 Jan 2019 15:56:12 +0300</lastBuildDate>
     
-	<atom:link href="https://fedorsarafanov.github.io:1313/tickets/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fedorsarafanov.github.io/tickets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Теоретический минимум по электродинамике</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2019/01/04/tickets-ed/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</link>
       <pubDate>Fri, 04 Jan 2019 15:56:12 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2019/01/04/tickets-ed/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</guid>
       <description>&lt;!-- aliases:
    - /tickets/2018/12/27/tickets-quantum-course3sem1.html --&gt;
 
@@ -33,48 +33,48 @@ $\gdef\n{\vec{n}}$
     
     <item>
       <title>Билеты по квантовой механике. Зачет</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2018/12/27/tickets-quantum-course3sem1/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2018/12/27/tickets-quantum-course3sem1/</link>
       <pubDate>Thu, 27 Dec 2018 00:04:28 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2018/12/27/tickets-quantum-course3sem1/</guid>
-      <description>&lt;p&gt;На 3-м курсе активными студентами радиофака к зачету по квантмеху (&lt;a href=&#34;https://fedorsarafanov.github.io:1313/img/quantum_1/source-4.doc&#34;&gt;содержание семестра&lt;/a&gt;, &lt;a href=&#34;https://fedorsarafanov.github.io:1313/img/quantum_1/source-5.doc&#34;&gt;билеты&lt;/a&gt;) у Курина В.В. были набраны контрольные билеты. К сожалению, за точность всех приведенных билетов ручаться нельзя, о возможных ошибках можно написать в &lt;a href=&#34;https://github.com/KirillPonur/quantum/issues&#34;&gt;issues к репозиторию на гитхабе&lt;/a&gt;. Оглавление &lt;a href=&#34;https://github.com/KirillPonur/quantum/raw/master/quantum.pdf&#34;&gt;pdf-документа с билетами&lt;/a&gt; кликабельное (щелкните чтобы перейти к нужному билету), красным цветом выделены вопросы, которые не были набраны.&lt;/p&gt;
+      <guid>https://fedorsarafanov.github.io/tickets/2018/12/27/tickets-quantum-course3sem1/</guid>
+      <description>&lt;p&gt;На 3-м курсе активными студентами радиофака к зачету по квантмеху (&lt;a href=&#34;https://fedorsarafanov.github.io/img/quantum_1/source-4.doc&#34;&gt;содержание семестра&lt;/a&gt;, &lt;a href=&#34;https://fedorsarafanov.github.io/img/quantum_1/source-5.doc&#34;&gt;билеты&lt;/a&gt;) у Курина В.В. были набраны контрольные билеты. К сожалению, за точность всех приведенных билетов ручаться нельзя, о возможных ошибках можно написать в &lt;a href=&#34;https://github.com/KirillPonur/quantum/issues&#34;&gt;issues к репозиторию на гитхабе&lt;/a&gt;. Оглавление &lt;a href=&#34;https://github.com/KirillPonur/quantum/raw/master/quantum.pdf&#34;&gt;pdf-документа с билетами&lt;/a&gt; кликабельное (щелкните чтобы перейти к нужному билету), красным цветом выделены вопросы, которые не были набраны.&lt;/p&gt;
 
 &lt;p&gt;Прочитать документ можно и здесь, на сайте, но ссылки в содержании будут некликабельны.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Аналитическая геометрия. Кривые второго порядка</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/28/geom3/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/28/geom3/</link>
       <pubDate>Sat, 28 Jan 2017 13:19:30 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/28/geom3/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/28/geom3/</guid>
       <description>&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема &amp;quot;кривые и поверхности второго порядка&amp;quot;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Аналитическая геометрия. Вектора</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/25/geom/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</link>
       <pubDate>Wed, 25 Jan 2017 10:38:02 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/25/geom/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</guid>
       <description>&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема &amp;quot;вектора&amp;quot;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Аналитическая геометрия. Прямая и плоскость</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/25/geom2/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/25/geom2/</link>
       <pubDate>Wed, 25 Jan 2017 10:38:02 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/25/geom2/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/25/geom2/</guid>
       <description>&lt;p&gt;Прямая и плоскость. Краткий обзор определений, формул.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Вывод ускорения Кориолиса</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/14/kor/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</link>
       <pubDate>Sat, 14 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/14/kor/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</guid>
       <description>&lt;p&gt;Сначала докажем &lt;strong&gt;лемму&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;p&gt;$$
@@ -89,10 +89,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Продольные и поперечные деформации. Закон Гука</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/13/guk/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/13/guk/</link>
       <pubDate>Fri, 13 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/13/guk/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/13/guk/</guid>
       <description>&lt;p&gt;По определению, нормальное напряжение&lt;/p&gt;
 
 &lt;p&gt;$$\sigma_n=\frac{F_n}{S}$$&lt;/p&gt;
@@ -104,10 +104,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Эффект Холла</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/13/holl/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/13/holl/</link>
       <pubDate>Fri, 13 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/13/holl/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/13/holl/</guid>
       <description>&lt;p&gt;При помещении проводника с постоянным током в магнитное поле в проводнике возникает поперечная разность потенциалов, называемая &amp;quot;холловским напряжением&amp;quot;.&lt;/p&gt;
 
 &lt;p align=&#34;center&#34;&gt;&lt;br&gt;&lt;img align=&#34;center&#34; src=&#34;https://tex.s2cms.ru/svg/%5Cusetikzlibrary%7Bscopes%7D%0A%5Cusetikzlibrary%7Bdecorations.pathreplacing%2C%25%0A%20%20%20%20%20decorations.pathmorphing%2C%25%0A%20%20%20%20patterns%2C%25%0A%20%20%20%20calc%2C%25%0A%20%20%20%20scopes%2C%25%0A%20%20%20%20arrows%2C%25%0A%20%20%20%20arrows.meta%2C%25%0A%20%20%20%20arrows.spaced%2C%25%0A%7D%0A%5Ctikzset%7Bforce%2F.style%3D%7B%3E%3Dlatex%2Cdraw%3Dblue%2Cfill%3Dblue%7D%2C%20axis%2F.style%3D%7Bdensely%20dashed%2Cgray%2Cfont%3D%5Csmall%7D%2C%20acceleration%2F.style%3D%7B%3E%3Dopen%20triangle%2060%2Cdraw%3Dblue%2Cfill%3Dblue%7D%2C%20inforce%2F.style%3D%7Bforce%2Cdouble%20equal%20sign%20distance%3D2pt%7D%2C%20interface%2F.style%3D%7Bpattern%20%3D%20north%20east%20lines%2C%20draw%20%20%20%20%3D%20none%2C%20pattern%20color%3Dgray!60%2C%20%7D%2C%20cross%2F.style%3D%7Bcross%20out%2C%20draw%3Dblack%2C%20minimum%20size%3D2*(%231-%5Cpgflinewidth)%2C%20inner%20sep%3D0pt%2C%20outer%20sep%3D0pt%7D%2C%20%20%20%20cargo%2F.style%3D%7Brectangle%2C%20fill%3Dblack!70%2C%20inner%20sep%3D2.5mm%2C%20%7D%2Cangular%2F.style%3D%7B-%7BLatex%5Blength%3D3mm%2C%20line%20width%3D0.4pt%2Copen%2Cmagenta%2C%20fill%3Dwhite%5D%7D%2C%20draw%3Dmagenta%7D%2C%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(0.2%2C0.2)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-3%2C0)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(0%2C0)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-3%2C0)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(0%2C3)%20--%20%2B%2B(0.2%2C0.2)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B%20(-0.2%2C-0.2)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(3%2C0)%20--%20%2B%2B(0.2%2C0.2)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-0.2%2C-0.2)%20--cycle%3B%0A%5Cdraw%5Bforce%2C%20-%3E%5D%20(1.5%2C1.5)%20%20--%20%2B%2B(0%2C0.7)%20node%5Babove%5D%20%7B%24%5Cvec%7BF%7D_%5Ctext%7B%D0%BB%7D%24%7D%3B%0A%5Cdraw%5Bforce%2C%20-%3E%5D%20(1.5%2C1.5)%20node%5Bblack%2Cscale%3D1.5%2C%20fill%3Dwhite%5D%20%7B%24%5Ccircleddash%24%7D%20--%20%2B%2B(0.7%2C0)%20node%5Bright%5D%20%7B%24%5Cvec%7Bv%7D%24%7D%3B%0A%5Cforeach%20%5Ci%20in%20%7B0.2%2C0.5%2C...%2C3.4%7D%20%7B%0A%5Cnode%5Babove%2C%20yshift%3D3pt%5D%20at%20(%5Ci%2C3)%20%7B%24%2B%24%7D%3B%0A%7D%0A%5Cforeach%20%5Ci%20in%20%7B0.2%2C0.5%2C...%2C3%7D%20%7B%0A%5Cnode%5Bbelow%2C%20yshift%3D-0pt%5D%20at%20(%5Ci%2C0)%20%7B%24-%24%7D%3B%0A%7D%0A%25%0A%5Cdraw%5Bangular%2C%20%3C-%5D%20(3.5%2C1)%20--%20node%5Bright%2Cmagenta%5D%20%7B%24%5Cvec%7BE%7D_2%24%7D%20%2B%2B%20(0%2C1)%3B%0A%5Cdraw%5Bangular%2C%20-%3E%5D%20(0%2C4)%20--%20node%5Babove%2Cmagenta%5D%20%7B%24%5Cvec%7BE%7D_1%24%7D%20%2B%2B%20(3.2%2C0)%3B%0A%25%0A%5Cdraw%5Baxis%2C%20%3C-%3E%5D%20(-0.4%2C0)%20--%20node%5Bleft%2Cblack%5D%20%7B%24d%24%7D%20%2B%2B%20(0%2C3)%3B%0A%25%0A%5Cdraw%5Bangular%2C%20-%3E%5D%20(0.2%2C1.5)%20--%20node%5Babove%2Cmagenta%5D%20%7B%24%5Cvec%7Bj%7D%24%7D%20%2B%2B(0.7%2C0)%20%3B%0A%25%0A%5Cdraw%20(0.5%2C0.5)%20node%20%7B%24%5Cbigotimes%24%7D%3B%0A%5Cdraw%20(0.6%2C0.55)%20node%5Bright%5D%20%7B%24%5Cvec%7BB%7D%24%7D%3B%0A%5Cend%7Btikzpicture%7D&#34;/&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
@@ -115,10 +115,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Задача Кеплера</title>
-      <link>https://fedorsarafanov.github.io:1313/tickets/2017/01/08/kepler/</link>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/08/kepler/</link>
       <pubDate>Sun, 08 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/tickets/2017/01/08/kepler/</guid>
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/08/kepler/</guid>
       <description>&lt;p&gt;Задача Кеплера - фундаментальная задача механики, наряду с задачей о простом гармоническом осцилляторе.&lt;/p&gt;
 
 &lt;p&gt;В классической механике, задача Кеплера — это частный случай задачи двух тел, в которой два тела взаимодействуют посредством центральной силы F, изменяющейся по величине обратно пропорционально квадрату расстояния r между ними:&lt;/p&gt;

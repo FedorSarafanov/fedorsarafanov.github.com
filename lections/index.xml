@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Лекции on Блог Федора Сарафанова</title>
-    <link>https://fedorsarafanov.github.io:1313/lections/</link>
+    <link>https://fedorsarafanov.github.io/lections/</link>
     <description>Recent content in Лекции on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     <lastBuildDate>Sun, 26 Feb 2017 18:18:42 +0300</lastBuildDate>
     
-	<atom:link href="https://fedorsarafanov.github.io:1313/lections/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fedorsarafanov.github.io/lections/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Лекции по механике. Динамика системы материальных точек</title>
-      <link>https://fedorsarafanov.github.io:1313/lection/2017/02/26/lection-mech-1/</link>
+      <link>https://fedorsarafanov.github.io/lection/2017/02/26/lection-mech-1/</link>
       <pubDate>Sun, 26 Feb 2017 18:18:42 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io:1313/lection/2017/02/26/lection-mech-1/</guid>
+      <guid>https://fedorsarafanov.github.io/lection/2017/02/26/lection-mech-1/</guid>
       <description>&lt;p&gt;В данном документе мною собраны лекции по динамике системы материальных точек, прочитанные Евгенией Зиновьевной Грибовой на первом курсе радиофизического факультета ННГУ.&lt;/p&gt;
 
 &lt;p&gt;Лекции набраны с частичным сокращением материала (убраны примеры в лекциях).&lt;/p&gt;
@@ -27,9 +27,9 @@
 
 &lt;p&gt;Материал практичнее читать в &lt;code&gt;.pdf&lt;/code&gt; формате, но можно и прямо здесь (см. ниже)&lt;/p&gt;
 
-&lt;p&gt;Документ в формате A5 (тетрадный лист) -- удобнее читать на смартфонах, планшетах, электронных книгах (&lt;a href=&#34;https://fedorsarafanov.github.io:1313/img/lection_part1/lection1-a5.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Документ в формате A5 (тетрадный лист) -- удобнее читать на смартфонах, планшетах, электронных книгах (&lt;a href=&#34;https://fedorsarafanov.github.io/img/lection_part1/lection1-a5.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;Документ в формате A4 -- удобнее для распечатывания (&lt;a href=&#34;https://fedorsarafanov.github.io:1313/img/lection_part1/lection1-a4.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;</description>
+&lt;p&gt;Документ в формате A4 -- удобнее для распечатывания (&lt;a href=&#34;https://fedorsarafanov.github.io/img/lection_part1/lection1-a4.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     
   </channel>
