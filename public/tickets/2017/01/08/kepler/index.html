@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Задача Кеплера &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="Задача Кеплера - фундаментальная задача механики, наряду с задачей о простом гармоническом осцилляторе.
+В классической механике, задача Кеплера — это частный случай задачи двух тел, в которой два тела взаимодействуют посредством центральной силы F, изменяющейся по величине обратно пропорционально квадрату расстояния r между ними:
+$$ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\mathbf{r}_0} $$
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 8, 2017</time>
+  
+  <h1>Задача Кеплера</h1>
+</header>
+
+<article>
+  
+<p>Задача Кеплера - фундаментальная задача механики, наряду с задачей о простом гармоническом осцилляторе.</p>
+<p>В классической механике, задача Кеплера — это частный случай задачи двух тел, в которой два тела взаимодействуют посредством центральной силы F, изменяющейся по величине обратно пропорционально квадрату расстояния r между ними:</p>
+<p>$$ \mathbf{F} = \frac{k}{r^{2}} \mathbf{\mathbf{r}_0} $$</p>
+<p>В поле центральной силы постоянна механическая энергия:</p>
+<p>$$
+W=W_k+W_\text{a}
+$$</p>
+<p>А так как $\vec{F}\parallel\vec{r}$, то момент силы равен нулю, и по теореме о изменении момента импульса</p>
+<p>$$\frac{\mathrm{d}\vec{N}}{\mathrm{d}t}=\vec{M},$$</p>
+<p>отсюда момент импульса $\vec{N}=const$.
+Так как $\vec{N}=[\vec{r}\times\vec{p}]$, то траектория лежит в плоскости векторов $(\vec{r},\vec{v})$.</p>
+<p>Запишем скорость как сумму двух векторов:</p>
+<p>$$\vec{v}=\vec{v}_r+\vec{v}_\phi,$$</p>
+<p>где</p>
+<p>$$v_r=\frac{\mathrm{d}r}{\mathrm{d}t}, \quad v_\phi=r\frac{\mathrm{d}\phi}{\mathrm{d}t}$$</p>
+<p>тогда квадрат вектора полной скорости $v$</p>
+<p>$$v^2=v_r^2+v_\phi^2$$</p>
+<p>а полная механическая энергия запишется как</p>
+<p>$$W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{mr^2\dot{\phi}^2}{2}$$</p>
+<p>Распишем момент импульса по определению:</p>
+<p>$$\vec{N}=[\vec{r}\times m(\vec{v}_r+\vec{v}_\phi)]=
+[\vec{r}\times m\vec{v}_r]+[\vec{r}\times m\vec{v}_\phi]=
+m[\vec{r}\times\vec{v}_\phi]
+$$</p>
+<p>Тогда модуль момента импульса</p>
+<p>$$N=mr^2\dot\phi \Rightarrow \dot\phi=\frac{N}{mr^2}$$</p>
+<p>Можем переписать механическую энергию:</p>
+<p>$$W=W_\text{п}(\vec{r})+\frac{m\dot{r}^2}{2}+\frac{N^2}{2mr^2},$$</p>
+<p>где $\frac{N^2}{2mr^2}$ — центробежная энергия.</p>
+<p>Найдем потенциальную энергию:</p>
+<p>$$W_\text{п}(r)-W_\text{п}(\infty)=\int_r^\infty F_r\ \textrm{d}r=$$</p>
+<p>$$=-\int_r^\infty \frac{GMm}{r'^2} \textrm{d}r'=-\frac{Gmm}{r}=\frac{-k}{r}$$</p>
+<p>А так как $W_\text{п}(\infty)=0$ при $r\to\infty$, то</p>
+<p>$$W_\text{п}=-\frac{k}{r}$$</p>
+<p>$$W_\text{цб}=\frac{N^2}{2mr^2}$$</p>
+<p>Введем эффективную потенциальную энергию:</p>
+<p>$$W_\text{эфф}=W_\text{цб}+W_\text{п}=\frac{N^2}{2mr^2}-\frac{k}{r}$$</p>
+<!-- raw HTML omitted -->
+<p>С одной стороны, можем выразить $\mathrm{d}t$ через эффективную энергию:</p>
+<p>$$W=W_\text{эфф}(\vec{r})+\frac{m\dot{r}^2}{2} \Rightarrow
+\dot{r}^2=\frac{2}{m}(W-W_\text{эфф})$$</p>
+<p>Тогда</p>
+<p>$$\mathrm{d}t=\pm\frac{\mathrm{d}r}{\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$</p>
+<p>С другой стороны, можем выразить $\mathrm{d}t$ через момент импульса:</p>
+<p>$$\dot\phi=\frac{N}{mr^2}\Rightarrow
+\mathrm{d}t=\frac{mr^2}{N}\mathrm{d}\phi$$</p>
+<p>Тогда</p>
+<p>$$\mathrm{d}\phi=\pm\frac{N\mathrm{d}r}{mr^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$</p>
+<p>Два знака говорят о том, что траектория симметрична относительно полярной оси.</p>
+<p>В качестве полярной оси возьмем апсиду &ndash; прямую, проходящую через апоцентр и перицентр траектории.</p>
+<p>Пусть при $\varphi=0$ будет $r=r_{min}$.</p>
+<p>Выберем один знак и запишем интеграл:</p>
+<p>$$\varphi(r)=\frac{N}{m}\int_{r_{min}}^r\frac{dr}{r^2\sqrt{\frac{2}{m}(W-W_\text{эфф})}}$$</p>
+<p>$$W-W_\text{эфф}=W-(\frac{N^2}{2mr^2}-\frac{k}{r})$$</p>
+<p>$$\varphi(r)=-\int_{r_{min}}^r\frac
+{d\left(\frac{N}{r}\right)}
+{\sqrt{2m(W-W_\text{эфф})}}$$</p>
+<p>$$\varphi(r)=-\int_{r_{min}}^r\frac
+{d\left(\frac{N}{r}\right)}
+{\sqrt{2mW-\left(\frac{N^2}{r^2}-\frac{2mk}{r}\right)}}$$</p>
+<p>$$\frac{N^2}{r^2}-\frac{2mk}{r}=\left(\frac{N}{r}-\frac{mk}{N}\right)^2-\left(\frac{mk}{N}\right)^2$$</p>
+<p>$$\varphi(r)=-\int_{r_{min}}^r\frac
+{d\left(\frac{N}{r}-\frac{mk}{N}\right)}
+{\sqrt{\left(2mW+\left(\frac{mk}{N}\right)^2\right)-\left(\frac{N}{r}-\frac{mk}{N}\right)^2}}$$</p>
+<p>$$\beta^2=2mW+\left(\frac{mk}{N}\right)^2$$</p>
+<p>$$\alpha^2=\left(\frac{N}{r}-\frac{mk}{N}\right)^2$$</p>
+<p>$$
+\varphi(r)=-\int_{r_{min}}^r\frac
+{d\alpha}
+{\sqrt{\beta^2-\alpha^2}}$$</p>
+<p>Так как согласно выбору полярной оси $\varphi=0$ при $r=r_{min},$ то</p>
+<p>$$
+\varphi(r)=-(-\arccos\frac\alpha\beta)\bigg|_{r_{min}}^r=\arccos\frac\alpha\beta$$</p>
+<p>$$
+\varphi(r)=\arccos\frac
+{\frac{N}{r}-\frac{mk}{N}}
+{\sqrt{2mW+\frac{m^2k^2}{N^2}}}=
+\arccos\frac
+{\frac{N^2}{mkr}-1}
+{\sqrt{1+\frac{2WN^2}{mk^2}}}$$</p>
+<p>Сделаем замены переменной.</p>
+<p>$p$ - параметр:</p>
+<p>$$p=\frac{N^2}{mk}$$</p>
+<p>$e$ - эксцентриситет:</p>
+<p>$$e=\sqrt{1+\frac{2WN^2}{mk^2}}$$</p>
+<p>$$\cos\varphi=\frac{\frac{p}{r}-1}{e}$$</p>
+<p>$$\frac{p}{r}=1+e\cos\varphi$$</p>
+<p>$$r=\frac{p}{1+e\cos\varphi}$$</p>
+<p>Полученное уравнение известно как уравнение конических сечений.</p>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Аналитическая геометрия. Вектора &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="Краткий обзор определений по теоретическому минимуму. Тема &amp;ldquo;вектора&amp;rdquo;.
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 25, 2017</time>
+  
+  <h1>Аналитическая геометрия. Вектора</h1>
+</header>
+
+<article>
+  
+<p>Краткий обзор определений по теоретическому минимуму. Тема &ldquo;вектора&rdquo;.</p>
+<!-- raw HTML omitted -->
+<h2 id="-">Определение вектора</h2>
+<p>Вектор &ndash; это направленный отрезок, у которого известны начальная и конечная точки.</p>
+<p>Линейная комбинация  $x_1\vec{a}_1+x_2\vec{a}_2+\cdots+x_n\vec{a}_n$ называется тривиальной, если все коэффициенты $x_1,\ldots,x_n$ равны нулю, и называется нетривиальной, если хотя бы один коэффициент не равен нулю.</p>
+<h2 id="---">Определение линейно зависимых векторов</h2>
+<p>Вектора $\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n$ называют линейно зависимыми, если из них можно составить хотя бы одну нетривиальную линейную комбинацию, равную $(0,0,0)$.</p>
+<h2 id="---1">Определение линейно независимых векторов</h2>
+<p>Вектора $\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n$ называют линейно независимыми, если из них можно составить хотя бы одну тривиальную линейную комбинацию, равную $(0,0,0)$.</p>
+<h2 id="--">Критерий линейной зависимости</h2>
+<p>Система векторов $\vec{a}_1,\vec{a}_2,\ldots,\vec{a}_n$ линейно зависима тогда и только тогда, когда хотя бы один вектор системы линейно выражается через остальные.</p>
+<h3 id="--rightarrow">Необходимое условие ($\Rightarrow$)</h3>
+<p>$$
+\exists\ x_1\vec{a}_1+x_2\vec{a}_2+\ldots+x_{n-1}\vec{a}_{n-1}+x_n\vec{a}_n=0,
+$$</p>
+<p>такая, что $|x_1|+|x_2|+\cdots+|x_n|\ne0.$ Положим $x_{n}\ne0$. Тогда</p>
+<p>$$
+\vec{a}_n=\left(-\frac{x_1}{x_n}\right)\vec{a}_1+\left(-\frac{x_2}{x_n}\right)\vec{a}_2+\cdots+\left(-\frac{x_{n-1}}{x_n}\right)\vec{a}_{n-1}
+$$</p>
+<h3 id="--leftarrow">Достаточное условие ($\Leftarrow$)</h3>
+<p>$\vec{a}_n=\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}. $ Перенесем $\vec{a}_n$ вправо:</p>
+<p>$$\lambda_1\vec{a}_1+\lambda_2\vec{a}_2+\cdots+\lambda_{n-1}\vec{a}_{n-1}+(-1)\vec{a}_n=0$$</p>
+<p>Т.к. есть хотя бы один коэффициент, не равный нулю $(\lambda_n=-1\Rightarrow\ne0),$ то эта линейная комбинация нетривиальная, а значит, система векторов линейно зависима.</p>
+<h2 id="-1">Определение базиса</h2>
+<p>Базисом в пространстве называют упорядоченный набор трех некомпланарных векторов, таких, что если $\vec{e}_1,\vec{e}_2,\vec{e}_3$ &mdash; базис, то выполняется</p>
+<p>$$
+\forall\vec{x},\quad \vec{x}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3
+$$</p>
+<h2 id="--1">Определение проекции вектора</h2>
+<p>Проекция $\vec{a}$ на $\vec{b}$ &ndash; это вектор $\vec{с}$, коллинеарный $\vec{b}$, конец которого есть ортогональная проекция конца вектора $\vec{a}$ на прямую, параллельную $\vec{b}$.</p>
+<h2 id="--2">Определение скалярного произведения</h2>
+<p>Скалярным произведением $\vec{a}\vec{b}$ векторов называют число $\xi=ab\cos\phi,$ где $\phi$ &mdash; угол между векторами $\vec{a}$ и $\vec{b}$.</p>
+<h2 id="-----">Определение левой и правой тройки векторов</h2>
+<p>Базис ${\vec{e}_1,\vec{e}_2,\vec{e}_3}$ в пространстве называется правым, если при наблюдении с конца вектора $\vec{e}_3$ за кратчайшим поворотом вектора $\vec{e}_1$ к вектору $\vec{e}_2$ поворот осуществляется против часовой стрелки, и левым, если поворот происходит по часовой стрелке.</p>
+<h2 id="--3">Определение векторного произведения</h2>
+<p>Векторным произведением $\vec{a}\vec{b}$ векторов называют вектор $\vec{N}$, такой, что:</p>
+<ul>
+<li>$N=ab\sin\phi,$ где $\phi$ &mdash; угол между векторами $\vec{a}$ и $\vec{b}$</li>
+<li>$\vec{N}\perp\vec{a}, \vec{N}\perp\vec{b}$</li>
+<li>${\vec{a},\vec{b},\vec{c}}$ &ndash; правая тройка</li>
+</ul>
+<p>При этом модуль вектора численно равен площади параллелограмма, построенного на векторах $\vec{a}$ и $\vec{b}$.</p>
+<h2 id="--4">Определение смешанного произведения</h2>
+<p>Смешанным произведением $(\vec{a},\vec{b},\vec{c})$ векторов называют скалярное произведение $(\vec{a}[\vec{b}\times\vec{c}])$.
+При этом модуль смешанного произведения численно равен объёму параллелепипеда, образованного векторами $\vec {a} ,\vec {b} ,\vec {c}$.</p>
+<h2 id="------">Формула вычисления скалярного произведения в декартовых координатах</h2>
+<p>Запишем скалярное произведение в декартовых координатах.</p>
+<p>$\vec{a}=\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3$
+$\vec{b}=\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3$</p>
+<p>Тогда $(\vec{a},\vec{b})=(\lambda_1\vec{e}_1+\lambda_2\vec{e}_2+\lambda_3\vec{e}_3)\cdot(\xi_1\vec{e}_1+\xi_2\vec{e}_2+\xi_3\vec{e}_3)$</p>
+<p>Учтем, что для ортонормированного базиса из определения скалярного произведения $\vec{e}_1\cdot\vec{e}_2=0,$ $\vec{e}_2\cdot\vec{e}_3=0,$ $\vec{e}_1\cdot\vec{e}_3=0$, а $\vec{e}^2_1=\vec{e}^2_2=\vec{e}^2_3=1$.</p>
+<p>Тогда</p>
+<p>$(\vec{a},\vec{b})=(\lambda_1\xi_1+\lambda_2\xi_2+\lambda_3\xi_3)$</p>
+<h2 id="------1">Формула вычисления векторного произведения в декартовых координатах</h2>
+<p>Векторное произведение в декартовых координатах можно представлять в виде определителя матрицы:</p>
+<p>$$[\vec{a}\times\vec{b}]=\begin{vmatrix}\vec{e}_1 &amp; \vec{e}_2 &amp; \vec{e}_3 \newline  \lambda_1 &amp; \lambda_2 &amp; \lambda_3 \newline  \xi_1 &amp; \xi_2 &amp; \xi_3\end{vmatrix}$$</p>
+<h2 id="------2">Формула вычисления смешанного произведения в декартовых координатах</h2>
+<p>Смешанное произведение в декартовых координатах также выражается в виде определителя матрицы:</p>
+<p>$$(\vec{a},\vec{b},\vec{c})=\pm\begin{vmatrix}a_1 &amp; a_2 &amp; a_3\newline b_1 &amp; b_2 &amp; b_3 \newline  c_1 &amp; c_2 &amp; c_3\end{vmatrix}$$</p>
+<p>Причем его знак зависит от того, правая тройка ($+$) или левая ($-$).</p>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

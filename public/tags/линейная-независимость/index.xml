@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>линейная независимость on Блог Федора Сарафанова</title>
+    <link>https://fedorsarafanov.github.io/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</link>
+    <description>Recent content in линейная независимость on Блог Федора Сарафанова</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-Ru</language>
+    <lastBuildDate>Wed, 25 Jan 2017 10:38:02 +0300</lastBuildDate>
+    
+	<atom:link href="https://fedorsarafanov.github.io/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Аналитическая геометрия. Вектора</title>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</link>
+      <pubDate>Wed, 25 Jan 2017 10:38:02 +0300</pubDate>
+      
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</guid>
+      <description>&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема &amp;ldquo;вектора&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

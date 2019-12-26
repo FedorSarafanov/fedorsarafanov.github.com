@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Вывод ускорения Кориолиса &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="Сначала докажем лемму:
+$$ \frac{d\vec{R}}{dt}=[\omega\times\vec{R}] $$
+Для доказательства перейдем к покоординатному описанию:
+$$\vec{r}=x\vec{i}&#43;y\vec{j}&#43;z\vec{k}\newline \vec{r,}^{\prime}=x^{\prime}\vec{i^{\prime}}&#43;y^{\prime}\vec{j^{\prime}}&#43;z^{\prime}\vec{k^{\prime}}$$
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 14, 2017</time>
+  
+  <h1>Вывод ускорения Кориолиса</h1>
+</header>
+
+<article>
+  
+<p>Сначала докажем <strong>лемму</strong>:</p>
+<p>$$
+\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]
+$$</p>
+<p>Для доказательства перейдем к покоординатному описанию:</p>
+<p>$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\newline
+\vec{r,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$</p>
+<p>Далее</p>
+<p>$$\vec{v^{\prime}}=\frac{d\vec{r^{\prime}}}{dt}=
+\frac{dx^{\prime}}{dt}\vec{i^{\prime}}+\frac{dy^{\prime}}{dt}\vec{j^{\prime}}+\frac{dz^{\prime}}{dt}\vec{k^{\prime}} \text{ (относительная)}$$</p>
+<p>$$\vec{a^{\prime}}=\frac{d^2\vec{r^{\prime}}}{dt^2}=
+\frac{d^2x^{\prime}}{dt^2}\vec{i^{\prime}}+\frac{d^2y^{\prime}}{dt^2}\vec{j^{\prime}}+\frac{d^2z^{\prime}}{dt^2}\vec{k^{\prime}} \text{ (относительное)}$$</p>
+<p>Так как $\vec{i^{\prime}}, \vec{j^{\prime}},\vec{k^{\prime}}$  не инвариантны относительно неподвижной системы, то дифференцируя и их, получим полную скорость:</p>
+<p>$$\vec{v}=\frac{d\vec{r^{\prime}}}{dt}=%\frac{d\vec{r}}{dt}=$$</p>
+<p>$$=\left[\frac{dx^{\prime}}{dt}\vec{i^{\prime}}+\frac{dy^{\prime}}{dt}\vec{j^{\prime}}+\frac{dz^{\prime}}{dt}\vec{k^{\prime}}\right]+
+\left[x^{\prime}\frac{d\vec{i^{\prime}}}{dt}+y^{\prime}\frac{d\vec{j^{\prime}}}{dt}+z^{\prime}\frac{d\vec{k^{\prime}}}{dt}\right]=$$</p>
+<p>$$=\vec{v^{\prime}}+
+\left[x^{\prime}[\omega\times\vec{i^{\prime}}]+y^{\prime}[\omega\times\vec{j^{\prime}}]+z^{\prime}[\omega\times\vec{k^{\prime}}]\right]\Rightarrow$$</p>
+<p>$$\vec{v}=\vec{v^{\prime}}+\left[\omega\times\vec{r^{\prime}}\right]$$</p>
+<p>Аналогично</p>
+<p>$$\frac{d\vec{v^{\prime}}}{dt}=%[\omega\times\vec{v^{\prime}}]=
+\left[
+\frac{d^2x^{\prime}}{dt^2}\vec{i^{\prime}}+
+\frac{d^2y^{\prime}}{dt^2}\vec{j^{\prime}}+
+\frac{d^2z^{\prime}}{dt^2}\vec{k^{\prime}}
+\right]+
+\left[
+v^{\prime}_x\frac{d\vec{i^{\prime}}}{dt}+
+v^{\prime}_y\frac{d\vec{j^{\prime}}}{dt}+
+v^{\prime}_z\frac{d\vec{k^{\prime}}}{dt}
+\right]=$$</p>
+<p>$$=\vec{a^{\prime}}+
+\left[v_x^{\prime}[\omega\times\vec{i^{\prime}}]+v_y^{\prime}[\omega\times\vec{j^{\prime}}]+v_z^{\prime}[\omega\times\vec{k^{\prime}}]\right]\Rightarrow$$</p>
+<p>$$\vec{a}=\vec{a^{\prime}}+\left[\omega\times\vec{v^{\prime}}\right]+
+\frac{d[\omega\times\vec{r^{\prime}}]}{dt}=$$</p>
+<p>$$=\vec{a^{\prime}}+\left[\omega\times\vec{v^{\prime}}\right]+
+\left[\vec{\beta}\times\vec{r^{\prime}}\right]+
+\left[\omega\times\frac{d\vec{r^{\prime}}}{dt}\right]
+$$</p>
+<p>Причем</p>
+<p>$$\left[\omega\times\frac{d\vec{r^{\prime}}}{dt}\right]=
+\left[\omega\times\left(\vec{v^{\prime}}+\left[\omega\times\vec{r^{\prime}}\right]\right)\right]=$$</p>
+<p>$$=\left[\omega\times\vec{v^{\prime}}\right]+
+\left[\omega\times\left[\omega\times\vec{r^{\prime}}\right]\right]$$</p>
+<p>Заметим, что $\left[\omega\times\vec{r^{\prime}}\right]=\left[\omega\times\vec{r^{\prime}}_{\perp\omega}\right],$
+где
+$\vec{r^{\prime}}=\vec{r^{\prime}}_{\perp\omega}+\vec{r^{\prime}}_{\parallel\omega}$.</p>
+<p>Тогда по формуле $[a[bc]]=b(ac)-c(ab):$</p>
+<p>$$\left[\omega\times\frac{d\vec{r^{\prime}}}{dt}\right]=\left[\omega\times\vec{v^{\prime}}\right]+
+\omega(\omega,\vec{r^{\prime}}_{\perp\omega})-
+\omega^2\vec{r^{\prime}}_\perp=$$</p>
+<p>$$=\left[\omega\times\vec{v^{\prime}}\right]-
+\omega^2\vec{r^{\prime}}_\perp.$$</p>
+<p>Тогда</p>
+<p>$$\vec{a}=\vec{a^{\prime}}+2\left[\omega\times\vec{v^{\prime}}\right]+
+\left[\vec{\beta}\times\vec{r^{\prime}}\right]-
+\omega^2\vec{r^{\prime}}_\perp
+$$</p>
+<p>Перепишем в виде</p>
+<p>$$m\vec{a^{\prime}}=-m\vec{a_0}+
+2m\left[\vec{v^{\prime}}\times\omega\right]-
+\left[\vec{\beta}\times\vec{r^{\prime}}\right]+
+\omega^2\vec{r^{\prime}}_\perp
+$$</p>
+<p>Где можно выделить поступательную, центробежную и переносную силы инерции.</p>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

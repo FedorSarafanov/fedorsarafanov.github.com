@@ -6,7 +6,8 @@
 {{ define "main" }}
 <!-- list template -->
 <div>
-{{ $paginatorr := .Paginate (where .Data.Pages "Type" "ne" "notpost") }}
+ {{ $paginatorr := .Paginate (where .Data.Pages "Type" "ne" "notpost") }}
+ <!-- $paginator := .Paginate (where .Pages "Type" "posts") 5}} -->
   <!-- <h1>{{ .Title }}</h1> -->
   {{ .Content }}
 <!-- )) -> .GroupByDate "2006 Jan"  -->

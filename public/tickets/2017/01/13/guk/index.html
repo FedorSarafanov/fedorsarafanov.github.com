@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Продольные и поперечные деформации. Закон Гука &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="По определению, нормальное напряжение
+$$\sigma_n=\frac{F_n}{S}$$
+При малых деформациях верен закон Гука:
+$$\sigma_n=E\varepsilon$$
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 13, 2017</time>
+  
+  <h1>Продольные и поперечные деформации. Закон Гука</h1>
+</header>
+
+<article>
+  
+<p>По определению, нормальное напряжение</p>
+<p>$$\sigma_n=\frac{F_n}{S}$$</p>
+<p>При малых деформациях верен закон Гука:</p>
+<p>$$\sigma_n=E\varepsilon$$</p>
+<p>где $\varepsilon$ - относительная деформация:</p>
+<p>$$\varepsilon=\frac{\Delta l}{l}$$</p>
+<p>а $E$ - модуль Юнга, имеющий размерность $[\sigma_n]$, характеризующий свойства материала.</p>
+<p>Выведем классическое &ldquo;школьное&rdquo; представление закона Гука:</p>
+<p>$$\frac{F_n}{S}=E\frac{\Delta l}{l}$$</p>
+<p>$$F_n=\frac{ES}{l}\Delta l$$</p>
+<p>Можно ввести обозначение $k=\frac{ES}{l}.$ Тогда получаем известную формулу:</p>
+<p>$$F_\text{упр}=-k\Delta l$$</p>
+<h2 id="-">Поперечная деформация</h2>
+<p>Из жизненного опыта известно, что при растяжении и сжатии материала изменяется не только его продольные размеры, но и поперечные. Введем поперечную деформацию</p>
+<p>$$\varepsilon_\perp=\frac{\Delta l_\perp}{l_\perp}$$</p>
+<p>Рассмотрим начальный и конечный объемы прямоугольного бруска.</p>
+<p>$$V_0=S_0\cdot l_0=l_{\perp0}^2\cdot l$$</p>
+<p>$$V=S\cdot l=l_\perp^2\cdot l$$</p>
+<p>Из определения относительной деформации можно вывести</p>
+<p>$$l=l_0(1+\varepsilon)$$</p>
+<p>$$l_\perp=l_{\perp0}(1+\varepsilon_\perp)$$</p>
+<p>Тогда</p>
+<p>$$V=l_{\perp0}^2l_0(1+\varepsilon_\perp)^2(1+\varepsilon)$$</p>
+<p>$$V=V_0(1+\varepsilon_\perp)^2(1+\varepsilon)$$</p>
+<p>Раскроем скобки:</p>
+<p>$$V=V_0(1+2\varepsilon_\perp+\varepsilon^2_\perp
++\varepsilon+2\varepsilon_\perp\varepsilon+\varepsilon^2_\perp\varepsilon)$$</p>
+<p>Так как $\varepsilon_\perp,\varepsilon &laquo; 1,$</p>
+<p>$$V=V_0(1+2\varepsilon_\perp
++\varepsilon)$$</p>
+<p>Тогда</p>
+<p>$$\Delta V = V-V_0=V_0\cdot(\varepsilon+2\varepsilon_\perp)=
+V_0\cdot\varepsilon(1-2\mu)$$</p>
+<p>где $\mu=-\frac{\varepsilon_\perp}{\varepsilon}$ - коэффициент Пуассона. Из формулы видно, что коэффициент имеет смысл при $0\leq\mu\leq\frac{1}2.$</p>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

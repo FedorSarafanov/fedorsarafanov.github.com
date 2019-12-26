@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Исходники иллюстрации &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="pre.tex\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}% \xdef\darkness{0}	% \xdef\op{0.1}% \xdef\SIZE{10}% \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);	% \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);% \foreach \i in {0,1,...,\SIZE} { % \draw[opacity=\op] (0,\i) node [left] {\i}; % \draw[opacity=\op] (\i,0) node [below] {\i}; % }\begin{scope}[xshift=-3cm]\draw [thick] (0,0) node [left] {$E_1$} -- &#43;&#43;(2,0);\draw [thick] (0,2.5) node [left] {$E_2$} -- &#43;&#43;(2,0);\draw[fill=black] (1,2.5) circle (5pt);\end{scope}\begin{scope}[xshift=0cm]\draw [thick] (0,0) node [left] {$E_1$} -- &#43;&#43;(2,0);\draw [thick] (0,2.|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 1, 2019</time>
+  
+  <h1>Исходники иллюстрации</h1>
+</header>
+
+<article>
+  
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->pre.tex<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>
+	<span style="color:#228b22">% \xdef\darkness{0}
+</span><span style="color:#228b22"></span>	<span style="color:#228b22">% \xdef\op{0.1}
+</span><span style="color:#228b22"></span>
+	<span style="color:#228b22">% \xdef\SIZE{10}
+</span><span style="color:#228b22"></span>
+	<span style="color:#228b22">% \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);
+</span><span style="color:#228b22"></span>	<span style="color:#228b22">% \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);
+</span><span style="color:#228b22"></span>
+	<span style="color:#228b22">% \foreach \i in {0,1,...,\SIZE} {
+</span><span style="color:#228b22"></span> <span style="color:#228b22">%    	\draw[opacity=\op] (0,\i) node [left] {\i};
+</span><span style="color:#228b22"></span> <span style="color:#228b22">%    	\draw[opacity=\op] (\i,0) node [below] {\i};
+</span><span style="color:#228b22"></span> <span style="color:#228b22">%    }
+</span><span style="color:#228b22"></span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[xshift=-3cm]
+	<span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(2,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,2.5) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(2,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (1,2.5) circle (5pt);
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[xshift=0cm]
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(2,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,2.5) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(2,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[thick,-&gt;]</span> (1,2.5) -- (1,5pt);
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[dashed, fill=white]</span> (1,2.5) circle (5pt);
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (1,0) circle (5pt);
+	<span style="color:#8b008b;font-weight:bold">\draw</span> [decorate, magenta, decoration=<span style="color:#658b00">{</span>snake<span style="color:#658b00">}</span>, -&gt;] (1,1.25) --
+    node [below,sloped]<span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">h</span><span style="color:#00688b">\nu</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> ++(1,0); 
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[xshift=3cm]
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(2,0);
+    <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,2.5) node [left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">E</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> -- ++(2,0);
+    <span style="color:#228b22">% \draw[thick,-&gt;] (1,2.5) -- (1,5pt);
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[dashed, fill=white] (1,2.5) circle (5pt);
+</span><span style="color:#228b22"></span>
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[fill=black]</span> (1,0) circle (5pt);
+	<span style="color:#8b008b;font-weight:bold">\draw</span> [decorate, magenta, decoration=<span style="color:#658b00">{</span>snake<span style="color:#658b00">}</span>, -&gt;] (1,1.25) --
+    node [below,sloped]<span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">h</span><span style="color:#00688b">\nu</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> ++(1,0); 
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+
+	<span style="color:#8b008b;font-weight:bold">\node</span> [align=center] () at (-3+1,-1) <span style="color:#658b00">{</span>Возбужденное <span style="color:#8b008b;font-weight:bold">\\</span> состояние атома<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\node</span> [align=center] () at (3+1,-1) <span style="color:#658b00">{</span>Основное <span style="color:#8b008b;font-weight:bold">\\</span> состояние атома<span style="color:#658b00">}</span>;
+
+	<span style="color:#8b008b;font-weight:bold">\node</span> [align=center] () at (-3+1,2.5+1) <span style="color:#658b00">{</span>До эмиссии<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\node</span> [align=center] () at (0+1,2.5+1) <span style="color:#658b00">{</span>Эмиссия<span style="color:#658b00">}</span>;
+	<span style="color:#8b008b;font-weight:bold">\node</span> [align=center] () at (3+1,2.5+1) <span style="color:#658b00">{</span>После эмиссии<span style="color:#658b00">}</span>;
+
+
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span>
+</code></pre></div>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

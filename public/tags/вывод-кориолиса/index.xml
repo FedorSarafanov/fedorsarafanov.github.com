@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>вывод кориолиса on Блог Федора Сарафанова</title>
+    <link>https://fedorsarafanov.github.io/tags/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BE%D1%80%D0%B8%D0%BE%D0%BB%D0%B8%D1%81%D0%B0/</link>
+    <description>Recent content in вывод кориолиса on Блог Федора Сарафанова</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-Ru</language>
+    <lastBuildDate>Sat, 14 Jan 2017 14:35:05 +0300</lastBuildDate>
+    
+	<atom:link href="https://fedorsarafanov.github.io/tags/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BE%D1%80%D0%B8%D0%BE%D0%BB%D0%B8%D1%81%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Вывод ускорения Кориолиса</title>
+      <link>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</link>
+      <pubDate>Sat, 14 Jan 2017 14:35:05 +0300</pubDate>
+      
+      <guid>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</guid>
+      <description>&lt;p&gt;Сначала докажем &lt;strong&gt;лемму&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d\vec{R}}{dt}=[\omega\times\vec{R}]
+$$&lt;/p&gt;
+&lt;p&gt;Для доказательства перейдем к покоординатному описанию:&lt;/p&gt;
+&lt;p&gt;$$\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\newline
+\vec{r,}^{\prime}=x^{\prime}\vec{i^{\prime}}+y^{\prime}\vec{j^{\prime}}+z^{\prime}\vec{k^{\prime}}$$&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

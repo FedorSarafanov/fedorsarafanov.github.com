@@ -1,27 +1,58 @@
 ---
 <!-- layout: post -->
+home: "true"
 title: "Лабораторные"
 date: 2017-01-22T22:16:12+03:00
+markup: mmark
 ---
 
 Здесь размещены сданные лабораторные работы с разных курсов, выполненные на радиофизическом факультете ННГУ. 
 
+## 4 курс
+1. [Исследование отражательного клистрона](https://github.com/FedorSarafanov/ReflexKlystron/raw/master/refklystron.pdf)
+1. [Полупроводниковый диод](https://github.com/FedorSarafanov/ResearchDiode/raw/master/diode.pdf)
+1. [Полевой транзистор](https://github.com/FedorSarafanov/ResearchFET/raw/master/fet.pdf)
+1. [Определение КНД рупорной антенны](https://github.com/FedorSarafanov/RupAntenna/raw/master/rupantenna.pdf)
+1. [ЭПР-спектроскопия](https://github.com/FedorSarafanov/EprSpectroscopy/raw/master/epr.pdf)
+1. [Синтез цифрового фильтра на MSP430](https://github.com/FedorSarafanov/LabMSP430/raw/master/digital.pdf)
+1. [Колебания механических систем с распределенными параметрами](https://github.com/FedorSarafanov/LabMSS/raw/master/osci.pdf)
+1. [Оценивание параметров случайного процесса](https://github.com/FedorSarafanov/StohProc/raw/master/lab.pdf)
 
-## 1 курс
-Общая физика:
 
-1. [№110 - Гироскоп](/lab_pdf/1/110-giroskop.pdf)
-1. [№13 - Маятник Обербека](/lab_pdf/1/13-mayatnik_oberbeka.pdf)
-1. [№16 - Вязкость воздуха](/lab_pdf/1/16-vyazkostj_vozduha.pdf)
-1. [№17 - Изучение осцилографа](/lab_pdf/1/17-izuchenie_oscilografa.pdf)
-1. [№22 - Определение коэффициента внутреннего трения жидкости](/lab_pdf/1/22-opredelenie_koefficienta_vnutrennego_treniya_zhidkosti.pdf)
-1. [№27 - Определение отношения заряда электрона к его массе](/lab_pdf/1/27-opredelenie_otnosheniya_zaryada_elektrona_k_ego_masse.pdf)
+## 3 курс
+<!-- Общая физика: -->
+<!--  -->
+1. [Эффект Зеемана](/lab_pdf/3/2-effekt_zeemana.pdf)
+1. [Опыт Франка-Герца](/lab_pdf/3/5-opyt_franka-gerca.pdf)
+<!-- Теория колебаний: -->
+1. [Многозвенные LC-фильтры](/lab_pdf/3/1-mnogozvennye_LC-filjtry.pdf)
+1. [Фазовая плоскость лампового генератора](/lab_pdf/3/2-fazovaya_ploskostj_lampovogo_generatora.pdf)
+<!--  -->
+<!-- Радиоэлектроника: -->
+<!--  -->
+1. [Апериодический усилитель](/lab_pdf/3/5-aperiodicheskiy_usilitelj.pdf)
+1. [Исследование нелинейных преобразований сигналов](/lab_pdf/3/6-issledovanie_nelineynyh_preobrazovaniy_signalov.pdf)
+1. [Частотный модем (только модулятор)](/lab_pdf/3/fmodem.pdf)
+<!--  -->
+<!-- Электродинамика: -->
+<!--  -->
+1. [Исследование отражательного клистрона (Понур К.А.)](https://github.com/KirillPonur/klystron/raw/Kirill/klystron.pdf)
+1. [Исследование матриц рассеяния волноводных узлов](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
+1. [Электромагнитное экранирование](https://github.com/FedorSarafanov/em_shielding/raw/master/emshielding.pdf)
+1. [Определение коэффициента направленного действия рупорной антенны (Шиков А.П.)](https://github.com/BigBigGamer/antennas_directional_factor/raw/master/dir_factor_lab.pdf)
+<!--  -->
+<!-- Квантовая механика: -->
+<!--  -->
+1. [Запрещенная зона](/lab_pdf/qm/bandgap.pdf) [[git1]](https://github.com/FedorSarafanov/BandGap) [[git2]](https://github.com/BigBigGamer/Band-Gap/) [[git3]](https://github.com/KirillPonur/Zone)
+1. [Время жизни и диффузионная длина](/lab_pdf/qm/lifetime.pdf) [[git]](https://github.com/FedorSarafanov/CarrierLifeTime) [[git2]](https://github.com/BigBigGamer/CarrierLifeTime) [[git3]](https://github.com/KirillPonur/CarrierLifeTime)
+1. [Эффект Холла](/lab_pdf/qm/hall.pdf) [[git1]](https://github.com/FedorSarafanov/quant-hall-effect)  [[git2]](https://github.com/BigBigGamer/quant-hall-effect)
+[[git3]](https://github.com/KirillPonur/quant-hall-effect)
 
-<!-- more -->
+
 
 ## 2 курс
-Общая физика:
-
+<!-- Общая физика: -->
+<!--  -->
 1. [№204 - Эффект Холла](/lab_pdf/2/204-effekt_holla.pdf)
 1. [№210 - Исследование линейных двухполюсников и четырехполюсников](/lab_pdf/2/210-issledovanie_lineynyh_dvuhpolyusnikov_i_chetyrehpolyusnikov.pdf)
 1. [№216 - Изучение интерференции в схеме с бипризмой Френеля](/lab_pdf/2/216-izuchenie_interferencii_v_sheme_s_biprizmoy_frenelya.pdf)
@@ -32,37 +63,18 @@ date: 2017-01-22T22:16:12+03:00
 1. [№312 - Изучение явлений двулучепреломления и поляризации](/lab_pdf/2/312-izuchenie_yavleniy_dvulucheprelomleniya_i_polyarizacii.pdf)
 1. [№320 - Дифракция Фраунгофера](/lab_pdf/2/320-difrakciya_fraungofera.pdf)
 
-## 3 курс
-Общая физика:
 
-1. [№2 - Эффект Зеемана](/lab_pdf/3/2-effekt_zeemana.pdf)
-1. [№5 - Опыт Франка-Герца](/lab_pdf/3/5-opyt_franka-gerca.pdf)
+## 1 курс
+<!-- Общая физика: -->
+<!--  -->
+1. [№110 - Гироскоп](/lab_pdf/1/110-giroskop.pdf)
+1. [№13 - Маятник Обербека](/lab_pdf/1/13-mayatnik_oberbeka.pdf)
+1. [№16 - Вязкость воздуха](/lab_pdf/1/16-vyazkostj_vozduha.pdf)
+1. [№17 - Изучение осцилографа](/lab_pdf/1/17-izuchenie_oscilografa.pdf)
+1. [№22 - Определение коэффициента внутреннего трения жидкости](/lab_pdf/1/22-opredelenie_koefficienta_vnutrennego_treniya_zhidkosti.pdf)
+1. [№27 - Определение отношения заряда электрона к его массе](/lab_pdf/1/27-opredelenie_otnosheniya_zaryada_elektrona_k_ego_masse.pdf)
 
-Теория колебаний:
-
-1. [№1 - Многозвенные LC-фильтры](/lab_pdf/3/1-mnogozvennye_LC-filjtry.pdf)
-1. [№2 - Фазовая плоскость лампового генератора](/lab_pdf/3/2-fazovaya_ploskostj_lampovogo_generatora.pdf)
-
-Радиоэлектроника:
-
-1. [№5 - Апериодический усилитель](/lab_pdf/3/5-aperiodicheskiy_usilitelj.pdf)
-1. [№6 - Исследование нелинейных преобразований сигналов](/lab_pdf/3/6-issledovanie_nelineynyh_preobrazovaniy_signalov.pdf)
-1. [№7 - Частотный модем (только модулятор)](/lab_pdf/3/fmodem.pdf)
-
-Электродинамика:
-
-1. [№1 - Исследование отражательного клистрона (Понур К.А.)](https://github.com/KirillPonur/klystron/raw/Kirill/klystron.pdf)
-1. [№3 - Исследование матриц рассеяния волноводных узлов](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
-1. [№4 - Электромагнитное экранирование](https://github.com/FedorSarafanov/em_shielding/raw/master/emshielding.pdf)
-1. [№7 - Определение коэффициента направленного действия рупорной антенны (Шиков А.П.)](https://github.com/BigBigGamer/antennas_directional_factor/raw/master/dir_factor_lab.pdf)
-
-Квантовая механика:
-
-1. [Запрещенная зона](/lab_pdf/qm/bandgap.pdf) [[git1]](https://github.com/FedorSarafanov/BandGap) [[git2]](https://github.com/BigBigGamer/Band-Gap/) [[git3]](https://github.com/KirillPonur/Zone)
-1. [Время жизни и диффузионная длина](/lab_pdf/qm/lifetime.pdf) [[git]](https://github.com/FedorSarafanov/CarrierLifeTime) [[git2]](https://github.com/BigBigGamer/CarrierLifeTime) [[git3]](https://github.com/KirillPonur/CarrierLifeTime)
-1. [Эффект Холла](/lab_pdf/qm/hall.pdf) [[git1]](https://github.com/FedorSarafanov/quant-hall-effect)  [[git2]](https://github.com/BigBigGamer/quant-hall-effect)
-[[git3]](https://github.com/KirillPonur/quant-hall-effect)
-
+<!-- more -->
 
 
 
@@ -74,3 +86,4 @@ date: 2017-01-22T22:16:12+03:00
 1. [Изучение резонатора земля-ионосфера (резонанс Шумана)](/lab_pdf/une/une_izuchenie_rezonatora_zemlya-ionosfera_(rezonans_shumana).pdf)
 1. [Исследование нелинейных свойств сверхпроводников](/lab_pdf/une/une_issledovanie_nelineynyh_svoystv_sverhprovodnikov.pdf)
 1. [Исследование диэлектриков в резонаторе Фабри-Перро](/lab_pdf/une/une_issledovanie_dielektrikov_v_rezonatore_fabri-perro.pdf)
+1. [Измерение плотности плазмы на  стенде КРОТ](/lab_pdf/une/une_plasma.pdf) 

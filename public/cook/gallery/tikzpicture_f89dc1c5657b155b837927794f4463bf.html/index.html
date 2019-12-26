@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Исходники иллюстрации &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="pre.tex\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[axis/.style={densely dashed,black!60,font=\small},force/.style={&amp;gt;=latex,draw=blue,fill=blue},% m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm},m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm},interface/.style={draw=gray!60,postaction={draw=gray!60,decorate,decoration={border,angle=-135,amplitude=0.3cm,segment length=2mm}}},plane/.style={draw=black!30, very thick, fill=blue!5},string/.style={draw=black, thick},pulley/.style={thick},]\matrix[column sep=0.5cm] {\begin{scope}[]\xdef\r{1.5cm}\xdef\rp{3pt}\node [shape=circle,draw] (c) at (0,0) [minimum size=\r*2] {};\draw [axis, -&amp;gt;] (0,0) -- (60:\r&#43;2cm) node[anchor=south] {$&#43;y$}; \draw (0,0) -- (60:\r) circle (\rp) node[below, pos=1.3] {$z$};\draw [thick] (60:\r) &#43;(-135:\rp)--&#43;(45:\rp);\draw [thick] (60:\r) &#43;(135:\rp)--&#43;(-45:\rp);\draw [axis, -&amp;gt;] ($(60:\r)!|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 1, 2019</time>
+  
+  <h1>Исходники иллюстрации</h1>
+</header>
+
+<article>
+  
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->pre.tex<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+    axis/.style=<span style="color:#658b00">{</span>densely dashed,black!60,font=<span style="color:#8b008b;font-weight:bold">\small</span><span style="color:#658b00">}</span>,
+    force/.style=<span style="color:#658b00">{</span>&gt;=latex,draw=blue,fill=blue<span style="color:#658b00">}</span>,
+    <span style="color:#228b22">% m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
+</span><span style="color:#228b22"></span>    m/.style=<span style="color:#658b00">{</span>draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm<span style="color:#658b00">}</span>,
+    m/.style=<span style="color:#658b00">{</span>draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm<span style="color:#658b00">}</span>,
+    interface/.style=<span style="color:#658b00">{</span>draw=gray!60,
+        postaction=<span style="color:#658b00">{</span>draw=gray!60,decorate,decoration=<span style="color:#658b00">{</span>border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm<span style="color:#658b00">}</span><span style="color:#658b00">}</span><span style="color:#658b00">}</span>,
+    plane/.style=<span style="color:#658b00">{</span>draw=black!30, very thick, fill=blue!5<span style="color:#658b00">}</span>,
+    string/.style=<span style="color:#658b00">{</span>draw=black, thick<span style="color:#658b00">}</span>,
+    pulley/.style=<span style="color:#658b00">{</span>thick<span style="color:#658b00">}</span>,
+]
+
+<span style="color:#8b008b;font-weight:bold">\matrix</span><span style="color:#658b00">[column sep=0.5cm]</span> <span style="color:#658b00">{</span>
+    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[]
+        <span style="color:#8b008b;font-weight:bold">\xdef</span><span style="color:#8b008b;font-weight:bold">\r</span><span style="color:#658b00">{</span>1.5cm<span style="color:#658b00">}</span>
+        <span style="color:#8b008b;font-weight:bold">\xdef</span><span style="color:#8b008b;font-weight:bold">\rp</span><span style="color:#658b00">{</span>3pt<span style="color:#658b00">}</span>
+        <span style="color:#8b008b;font-weight:bold">\node</span> [shape=circle,draw] (c) at (0,0) [minimum size=<span style="color:#8b008b;font-weight:bold">\r</span><span style="color:#8b008b;font-weight:bold">*</span>2] <span style="color:#658b00">{</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;] (0,0) -- (60:<span style="color:#8b008b;font-weight:bold">\r</span>+2cm) node[anchor=south] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>; 
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) -- (60:<span style="color:#8b008b;font-weight:bold">\r</span>) circle (<span style="color:#8b008b;font-weight:bold">\rp</span>) node[below, pos=1.3] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">z</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (60:<span style="color:#8b008b;font-weight:bold">\r</span>) +(-135:<span style="color:#8b008b;font-weight:bold">\rp</span>)--+(45:<span style="color:#8b008b;font-weight:bold">\rp</span>);
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (60:<span style="color:#8b008b;font-weight:bold">\r</span>) +(135:<span style="color:#8b008b;font-weight:bold">\rp</span>)--+(-45:<span style="color:#8b008b;font-weight:bold">\rp</span>);
+
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;]  (<span style="color:#cd5555">$</span>(<span style="color:#b452cd">60</span><span style="color:#658b00">:</span><span style="color:#00688b">\r</span>)!<span style="color:#b452cd">2</span><span style="color:#658b00">cm</span>!<span style="color:#b452cd">90</span><span style="color:#658b00">:</span>(<span style="color:#b452cd">0</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span>)<span style="color:#cd5555">$</span>) --(<span style="color:#cd5555">$</span>(<span style="color:#b452cd">60</span><span style="color:#658b00">:</span><span style="color:#00688b">\r</span>)!<span style="color:#b452cd">2</span><span style="color:#658b00">cm</span>!<span style="color:#b452cd">270</span><span style="color:#658b00">:</span>(<span style="color:#b452cd">0</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span>)<span style="color:#cd5555">$</span>)  node[anchor=south] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;]  (0,-<span style="color:#8b008b;font-weight:bold">\r</span>) -- (0,2*<span style="color:#8b008b;font-weight:bold">\r</span>)  node[anchor=south] <span style="color:#658b00">{</span>ось<span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [axis, -&gt;]  (-<span style="color:#8b008b;font-weight:bold">\r</span>,0) -- (1.5*<span style="color:#8b008b;font-weight:bold">\r</span>,0)  node[below] <span style="color:#658b00">{</span>экватор<span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [force, -&gt;] (0,<span style="color:#8b008b;font-weight:bold">\r</span>) -- (0,<span style="color:#8b008b;font-weight:bold">\r</span>+2em) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#00688b">\omega</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#658b00">{</span>[axis,&lt;-] 
+            <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[solid,shorten &gt;=0.5pt]</span> (<span style="color:#8b008b;font-weight:bold">\iangle</span>:<span style="color:#8b008b;font-weight:bold">\arcr</span>) arc(<span style="color:#8b008b;font-weight:bold">\iangle</span>:0:<span style="color:#8b008b;font-weight:bold">\arcr</span>);
+            <span style="color:#8b008b;font-weight:bold">\node</span> at (0.5*<span style="color:#8b008b;font-weight:bold">\iangle</span>:1.4*<span style="color:#8b008b;font-weight:bold">\arcr</span>) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\phi</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+<span style="color:#658b00">&amp;</span>
+    <span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[rotate=<span style="color:#8b008b;font-weight:bold">\iangle</span>]
+
+        <span style="color:#658b00">{</span>[axis,-&gt;]
+            <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) -- (0,2) node[anchor=south] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+            <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) -- ++(2.2,0) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+            <span style="color:#228b22">% Indicate angle. The code is a bit awkward.
+</span><span style="color:#228b22"></span>
+            <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[solid,shorten &gt;=0.5pt, ]</span> (90:<span style="color:#8b008b;font-weight:bold">\arcr</span>)
+                arc(90:90-<span style="color:#8b008b;font-weight:bold">\iangle</span>:<span style="color:#8b008b;font-weight:bold">\arcr</span>);
+            <span style="color:#8b008b;font-weight:bold">\node</span> at (120-<span style="color:#8b008b;font-weight:bold">\iangle</span>:0.7cm) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\phi</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+        <span style="color:#658b00">}</span>
+
+
+
+        <span style="color:#228b22">% Forces
+</span><span style="color:#228b22"></span>        <span style="color:#658b00">{</span>[force,-&gt;]
+            <span style="color:#228b22">% Assuming that Mg = 1. The normal force will therefore be cos(alpha)
+</span><span style="color:#228b22"></span>
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [opacity=1] (0,0) -- (0,2em) node[anchor=north east] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#00688b">\omega</span><span style="color:#658b00">_</span><span style="color:#00688b">\perp</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+            <span style="color:#228b22">% \draw (m.center) -- ++(0,{cos(\iangle)}) node[above right] {$\vec{N}$};
+</span><span style="color:#228b22"></span>            <span style="color:#228b22">% \draw (m.south) -- ++(-1,0) node[below, pos=1] {$\vec{f}_R$};
+</span><span style="color:#228b22"></span>            <span style="color:#228b22">% \draw (m.east) -- ++(1,0) node[above] {$T$};
+</span><span style="color:#228b22"></span>        <span style="color:#658b00">}</span>
+
+        <span style="color:#658b00">{</span>[force]
+            <span style="color:#8b008b;font-weight:bold">\draw</span> (5em,0) circle (<span style="color:#8b008b;font-weight:bold">\rp</span>);
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (5em,0)  +(-135:<span style="color:#8b008b;font-weight:bold">\rp</span>)--+(45:<span style="color:#8b008b;font-weight:bold">\rp</span>);
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (5em,0)  +(135:<span style="color:#8b008b;font-weight:bold">\rp</span>)--+(-45:<span style="color:#8b008b;font-weight:bold">\rp</span>);
+            <span style="color:#8b008b;font-weight:bold">\node</span> [right] at (5em,0) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">F</span><span style="color:#658b00">}</span><span style="color:#658b00">^</span><span style="color:#00688b">\text</span><span style="color:#658b00">{</span><span style="color:#658b00">кор</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#00688b">\text</span><span style="color:#658b00">{</span><span style="color:#658b00">in</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [-&gt;] (0,0) -- (5em,0) node [below, pos=0.89, xshift=0.5em] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">v</span><span style="color:#658b00">_</span><span style="color:#b452cd">0</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>; 
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [-&gt;] (0,0) -- (3.3em,0) node [below, pos=0.7, xshift=0.5em] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#00688b">\omega</span><span style="color:#658b00">_</span><span style="color:#00688b">\parallel</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>; 
+        <span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [force,-&gt;, opacity=0.4](0,0) -- (0, 3.6em) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#00688b">\omega</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+
+        <span style="color:#658b00">{</span>[black!60]
+            <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) circle (<span style="color:#8b008b;font-weight:bold">\rp</span>) node[below, pos=1.3] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">z</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) +(-135:<span style="color:#8b008b;font-weight:bold">\rp</span>)--+(45:<span style="color:#8b008b;font-weight:bold">\rp</span>);
+            <span style="color:#8b008b;font-weight:bold">\draw</span> [thick] (0,0) +(135:<span style="color:#8b008b;font-weight:bold">\rp</span>)--+(-45:<span style="color:#8b008b;font-weight:bold">\rp</span>);s
+        <span style="color:#658b00">}</span>
+    <span style="color:#228b22">% \draw[force,double equal sign distance=2pt,-&gt;] (m.center) -- ++(1,0) node[below, pos=1.5] {$\FIN$};
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% Draw gravity force. The code is put outside the rotated
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% scope for simplicity. No need to do any angle calculations. 
+</span><span style="color:#228b22"></span>    <span style="color:#228b22">% \draw[force,-&gt;] (m.center) -- ++(0,-1) node[below] {$m\vec{g}$};
+</span><span style="color:#228b22"></span><span style="color:#658b00">&amp;</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[]   
+    <span style="color:#658b00">{</span>[axis,-&gt;]
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) -- (0,2) node[anchor=south] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (-1,0) -- ++(2.2,0) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">z</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+                <span style="color:#228b22">% Indicate angle. The code is a bit awkward.
+</span><span style="color:#228b22"></span>
+                <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[solid,shorten &gt;=0.5pt, ]</span> (45:<span style="color:#8b008b;font-weight:bold">\arcr</span>)
+                    arc(45:90:<span style="color:#8b008b;font-weight:bold">\arcr</span>);
+                <span style="color:#8b008b;font-weight:bold">\node</span> at (67:0.7cm) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\alpha</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> [-] (0,0) --(45:2);
+
+    <span style="color:#658b00">}</span>
+    <span style="color:#658b00">{</span>[force,-&gt;]
+        <span style="color:#8b008b;font-weight:bold">\draw</span>  (0,0) --(45:4em) node [right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">v</span><span style="color:#658b00">_</span><span style="color:#b452cd">0</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#658b00">}</span>
+ <span style="color:#8b008b;font-weight:bold">\draw</span> (0,0) .. controls (2,2) and (0,3) .. (0,0);  
+  <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+
+<span style="color:#228b22">% \node[draw=none,text width=3cm, line width=0mm] at (0,0.5) {
+</span><span style="color:#228b22"></span><span style="color:#228b22">% Возьмем НИСО, связанную с бруском. 
+</span><span style="color:#228b22"></span><span style="color:#228b22">% \begin{gather}
+</span><span style="color:#228b22"></span><span style="color:#228b22">%     \nonumber \FIN=-m\vec{a}_0\\
+</span><span style="color:#228b22"></span><span style="color:#228b22">%     \nonumber \vec{N}=-\vec{P}\\
+</span><span style="color:#228b22"></span><span style="color:#228b22">%     \nonumber N_y={}mg\cos\alpha-ma_{0x}\sin\alpha\\
+</span><span style="color:#228b22"></span><span style="color:#228b22">%     \nonumber f_{Rx}=\\
+</span><span style="color:#228b22"></span><span style="color:#228b22">%     \nonumber = -\mu{}m(g\cos\alpha-a_{0x}\sin\alpha)
+</span><span style="color:#228b22"></span><span style="color:#228b22">% \end{gather}
+</span><span style="color:#228b22"></span><span style="color:#228b22">% };
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">\\</span>
+<span style="color:#658b00">}</span>;
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span>
+</code></pre></div>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

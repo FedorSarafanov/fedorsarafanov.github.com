@@ -9,7 +9,7 @@ markup: mmark
 
 Если вы сомневаетесь в необходимости использования `pgfplots` или `tikz`, посмотрите на простые графики, созданные с помощью этих пакетов:
 
-![Графики на PgfPlots](https://cdn.sharelatex.com/learn-scripts/images/3/3e/Pgfplots3.png)
+![Графики на PgfPlots](/img/pgf.png) 
 <!--more-->
 
 Много небольших примеров применения можно посмотреть в галерее `pgfplots` [^gallery].

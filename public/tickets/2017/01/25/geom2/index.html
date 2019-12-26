@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Аналитическая геометрия. Прямая и плоскость &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="Прямая и плоскость. Краткий обзор определений, формул.
+|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 25, 2017</time>
+  
+  <h1>Аналитическая геометрия. Прямая и плоскость</h1>
+</header>
+
+<article>
+  
+<p>Прямая и плоскость. Краткий обзор определений, формул.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="---------------">Уравнение прямой на плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме</h2>
+<p>В прямоугольных декартовых системах координат нормальное уравнение прямой записывается как $(\vec{r},\vec{n})=D$ или $A(x-x_0)+B(y-y_0)=0$. Соответственно данный вектор &ndash; вектор нормали $\vec{n}$.</p>
+<h2 id="---------------1">Уравнение прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме</h2>
+<!-- raw HTML omitted -->
+<p>Векторно: $\vec{r}=\vec{r}_0+\alpha\vec{a},$ где $\vec{a}$ &ndash; направляющий вектор прямой.</p>
+<p>Легко перейти к координатному виду. Пусть $\vec{r}(x,y)$, $\vec{r_0}(x_0,y_0)$, $\vec{a}(a_1,a_2)$.</p>
+<p>Тогда</p>
+<p>$$
+\begin{cases}
+x-x_0=\alpha a_1 \cr
+y-y_0=\alpha a_2
+\end{cases}
+$$</p>
+<p>Избавившись от параметра, получим каноническое уравнение прямой на плоскости:</p>
+<p>$$
+\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}
+$$</p>
+<p>Перемножив крест-накрест, можем переписать в виде</p>
+<p>$$
+\begin{gathered}
+a_2x-a_1y+(a_1y_0-a_2x_0) \cr
+Ax+By+C=0
+\end{gathered}
+$$</p>
+<p>где $A=a_2$, $B=-a_1$, $C=a_1y_0-a_2x_0$.</p>
+<p>Данный вектор $\vec{a} (-B, A)$</p>
+<h2 id="--------">Уравнение прямой на плоскости, проходящей через две данные точки</h2>
+<!-- raw HTML omitted -->
+<p>Легко вывести из предыдущего, взяв в качестве направляющего вектора вектор между двумя известными точками примой.</p>
+<p>$$
+\frac{x-x_0}{x_1-x_0}=\frac{y-y_0}{y_1-y_0}
+$$</p>
+<h2 id="----------------">Параметрические уравнения прямой на плоскости, проходящей через данную точку параллельно данному вектору, в векторной и координатной форме</h2>
+<p>Векторно: $\vec{r}=\vec{r}_0+\alpha\vec{a}$, где $\vec{a}$ &ndash; направляющий вектор прямой.</p>
+<p>Координатно:</p>
+<p>$$
+\begin{cases}
+x-x_0=\alpha a_1 \cr
+y-y_0=\alpha a_2
+\end{cases}
+$$</p>
+<h2 id="----">Нормальное уравнение прямой на плоскости</h2>
+<p>Уравнение вида $$\cos\alpha\cdot x + \cos\beta\cdot y = p $$ называется нормальным уравнением прямой.</p>
+<ul>
+<li>$\alpha$ &ndash; угол между $\vec{n}$ и положительным направлением оси $x$,</li>
+<li>$\beta$ &ndash; угол между $\vec{n}$ и положительным направлением оси $y$,</li>
+<li>$p$ &ndash; расстояние от начала координат до прямой.</li>
+</ul>
+<h2 id="----1">Параметрические уравнения прямой в пространстве</h2>
+<p>Аналогично прямой в плоскости прямую можно описать уравнением</p>
+<p>$$
+\vec{r}=\vec{r}_0+\alpha\vec{a}
+$$</p>
+<p>и записать его в параметрическом виде:</p>
+<p>$$
+\begin{cases}
+x=x_0+\alpha a_1 \cr
+y=y_0+\alpha a_2 \cr
+z=z_0+\alpha a_3
+\end{cases}
+$$</p>
+<h2 id="-------------">Уравнение плоскости, проходящей через данную точку перпендикулярно данному вектору, в векторной и координатной форме</h2>
+<p>$$
+A(x-x_0)+B(y-y_0)+C(z-z_0)=0
+$$</p>
+<p>где данный вектор - вектор нормали $\vec{n}(A,B,C)$, данная точка $M$ &ndash; $(x_0,y_0,z_0)$</p>
+<p>Иначе говоря,</p>
+<p>$$
+(\vec{r}-\vec{r}_0,\vec{n})=0 \Longrightarrow (\vec{r},\vec{n})=D
+$$</p>
+<h1 id="--------------">Уравнение плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме</h1>
+<p>Вектора $\vec{M_0M}=\vec{r}-\vec{r}_0$, $\vec{a}$ и $\vec{b}$ должны быть компланарны, т.е. их смешанное произведение равно нулю:</p>
+<p>$$
+(\vec{r}-\vec{r}_0,\vec{a},\vec{b})=0
+$$</p>
+<p>или координатно</p>
+<p>$$\begin{vmatrix}x-x_0 &amp; y-y_0 &amp; z-z_0\cr a_1 &amp; a_2 &amp; a_3 \cr b_1 &amp; b_2 &amp; b_3\end{vmatrix}=0$$</p>
+<h1 id="------">Уравнение плоскости, проходящей через три данные точки</h1>
+<p>Пусть точки $A(a_1,a_2,a_3)$, $B(b_1,b_2,b_3)$, $C(c_1,c_2,c_3)$. Тогда можно свести к предыдущему случаю, взяв два вектора $\vec{AB}$ и $\vec{AC}$, и точку $A$:</p>
+<p>$$
+\begin{vmatrix}
+x-a_1 &amp; y-a_2 &amp; z-a_3 \cr
+b_1-a_1 &amp; b_2-a_2 &amp; b_3-a_3 \cr
+c_1-a_1 &amp; c_2-a_2 &amp; c_3-a_3 \cr
+\end{vmatrix}=0
+$$</p>
+<h1 id="---------------2">Параметрические уравнения плоскости, проходящей через данную точку параллельно двум данным векторам, в векторной и координатной форме</h1>
+<p>$$
+\vec{r}=\vec{r}_0+\alpha_1\vec{a}+\alpha_2\vec{b}
+$$</p>
+<p>и</p>
+<p>$$
+\begin{cases}
+x=x_0+\alpha_1 a_1 +\alpha_2 b_1 \cr
+y=y_0+\alpha_1 a_2 +\alpha_2 b_2 \cr
+z=z_0+\alpha_1 a_3 +\alpha_2 b_3
+\end{cases}
+$$</p>
+<h1 id="--">Нормальное уравнение плоскости</h1>
+<p>Уравнение вида $$\cos\alpha\cdot x + \cos\beta\cdot y + \cos\gamma\cdot z = p $$ называется нормальным уравнением плоскости.</p>
+<ul>
+<li>$\alpha$ &ndash; угол между $\vec{n}$ и положительным направлением оси $x$,</li>
+<li>$\beta$ &ndash; угол между $\vec{n}$ и положительным направлением оси $y$,</li>
+<li>$\gamma$ &ndash; угол между $\vec{n}$ и положительным направлением оси $z$,</li>
+<li>$p$ &ndash; расстояние от начала координат до плоскости.</li>
+</ul>
+<h1 id="----2">Каноническое уравнение прямой в пространстве</h1>
+<p>Записывается как</p>
+<p>$$
+\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}=\frac{z-z_0}{a_3}
+$$</p>
+<p>где $\vec{a}(a_1,a_2,a_3)$ &ndash; направляющий вектор этой прямой.</p>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>

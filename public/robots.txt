@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /node_modules
+Disallow: /old-site
+Disallow: /src
+Disallow: /*.json
+Disallow: /audio
+Disallow: /sog
+sitemap: http://fedorsarafanov.github.io/sitemap.xml
+host: http://fedorsarafanov.github.io
+

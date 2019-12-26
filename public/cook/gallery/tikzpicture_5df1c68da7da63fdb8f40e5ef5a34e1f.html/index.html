@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="yandex-verification" content="09e309df3b8ffe74" />
+  	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      Исходники иллюстрации &ndash; Блог Федора Сарафанова
+</title>
+
+    
+
+    
+    <meta name="description" property="og:description" content="pre.tex\documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[force/.style={&amp;gt;=latex,draw=blue,fill=blue},% axis/.style={densely dashed,gray,font=\small}, axis/.style={densely dashed,black!60,font=\small},M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm},plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt},% base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt}, string/.style={draw=black, thick},pulley/.style={thick},interface/.style={draw=gray!60,% The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path. % The postaction option is therefore used to ensure that the % border decoration is drawn *after* the original path.|">
+     
+
+    <meta name="apple-mobile-web-app-title" content="Блог Федора Сарафанова">
+
+    
+    
+    <link rel="stylesheet" href="/css/star.min.css">
+
+  
+  
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+	
+	
+
+	
+
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	        renderMathInElement(document.body, 
+				{delimiters: [
+				  {left: "$$", right: "$$", display: true},
+				  {left: "\\(", right: "\\)", display: false},
+				  {left: "$", right: "$", display: false}, 
+				  {left: "\\[", right: "\\]", display: true},
+				  
+				]}
+	        );
+	    });
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body> 
+<div id="wrapper">
+	<div id="gomenu">
+		<a id="gomenu_href" href="/">Блог Федора Сарафанова</a>
+		<a id="gomenu_button" href="#aside"><i class="demo-icon icon-menu">&#xf0c9;</i></a>
+	</div>
+	<div id="aside"> 
+		<aside>
+			<div id="title">  
+				<a href="/"><span id="phy">Physics&nbsp;<span id="and">&</span><span id="other">&nbsp;other</span></span></a>
+			</div>
+			<ul id="nav">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/problems/">Задачи</a></li>
+				<li><a href="/lections/">Лекции</a></li>
+				<li><a href="/lab/">Лабораторные</a></li>
+				<li><a href="/cook/">pdf в jpg</a></li>
+				<li><a href="/tickets/">Билеты</a></li>
+       			<li><a href="/python_lab/">Численные методы</a></li>
+				<li><a href="/python/">Python</a></li>
+				<li><a href="/matlab/">Matlab</a></li>
+				<li><a href="/tikz/">TikZ</a></li>
+				<li><a href="/pgfplots/">PGFPlots</a></li>
+				<li><a href="/gallery/">Галерея графиков</a></li>
+				<li><a href="/buy/">Заказ графиков/иллюстраций</a></li>
+				<li><a href="/convertlatextoword/">Заказ верстки на LaTeX</a></li>
+				<li><a href="/struct/">Экзамены и зачеты</a></li>
+				<li><a href="/2017/01/01/about.html">О блоге</a></li>
+			</ul>
+			<footer>
+			Материалы сайта <a href="https://github.com/FedorSarafanov/fedorsarafanov.github.com">(см. исходники)</a> предоставлены по лицензии <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike</a>. 
+			Сайт создан генератором <a href="http://gohugo.io/">Hugo</a>, тема сайта создана на базе темы <a href="https://github.com/qqhann/hugo-primer">Hugo-Primer</a>. 
+			&copy; <a href="https://github.com/FedorSarafanov">Ф.Г. Сарафанов</a>, 2015-2019
+
+			</footer>
+		</aside>
+	</div>
+	<main>
+		<section>
+        
+
+
+
+<header>
+  <time class="datetime">January 1, 2019</time>
+  
+  <h1>Исходники иллюстрации</h1>
+</header>
+
+<article>
+  
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->pre.tex<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#8b008b;font-weight:bold">\documentclass</span><span style="color:#658b00">[tikz]</span><span style="color:#658b00">{</span>standalone<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\input</span><span style="color:#658b00">{</span>pre.tex<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span>[
+    force/.style=<span style="color:#658b00">{</span>&gt;=latex,draw=blue,fill=blue<span style="color:#658b00">}</span>,
+    <span style="color:#228b22">% axis/.style={densely dashed,gray,font=\small},
+</span><span style="color:#228b22"></span>    axis/.style=<span style="color:#658b00">{</span>densely dashed,black!60,font=<span style="color:#8b008b;font-weight:bold">\small</span><span style="color:#658b00">}</span>,
+    M/.style=<span style="color:#658b00">{</span>rectangle,draw,fill=lightgray,minimum size=0.5cm,thin<span style="color:#658b00">}</span>,
+    m2/.style=<span style="color:#658b00">{</span>draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm<span style="color:#658b00">}</span>,
+    m1/.style=<span style="color:#658b00">{</span>draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm<span style="color:#658b00">}</span>,
+    plane/.style=<span style="color:#658b00">{</span>draw=black!30, very thick, fill=blue!5, line width=1pt<span style="color:#658b00">}</span>,
+    <span style="color:#228b22">% base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},
+</span><span style="color:#228b22"></span>    string/.style=<span style="color:#658b00">{</span>draw=black, thick<span style="color:#658b00">}</span>,
+    pulley/.style=<span style="color:#658b00">{</span>thick<span style="color:#658b00">}</span>,
+    interface/.style=<span style="color:#658b00">{</span>draw=gray!60,
+        <span style="color:#228b22">% The border decoration is a path replacing decorator. 
+</span><span style="color:#228b22"></span>        <span style="color:#228b22">% For the interface style we want to draw the original path.
+</span><span style="color:#228b22"></span>        <span style="color:#228b22">% The postaction option is therefore used to ensure that the
+</span><span style="color:#228b22"></span>        <span style="color:#228b22">% border decoration is drawn *after* the original path.
+</span><span style="color:#228b22"></span>        postaction=<span style="color:#658b00">{</span>draw=gray!60,decorate,decoration=<span style="color:#658b00">{</span>border,angle=-135,
+                    amplitude=0.3cm,segment length=2mm<span style="color:#658b00">}</span><span style="color:#658b00">}</span><span style="color:#658b00">}</span>,
+]
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\height</span><span style="color:#658b00">{</span>1.5cm<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\width</span><span style="color:#658b00">{</span>3cm<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\Ti</span><span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\vec</span><span style="color:#658b00">{</span>T<span style="color:#658b00">}</span><span style="color:#658b00">_</span>1<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\Tii</span><span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\vec</span><span style="color:#658b00">{</span>T<span style="color:#658b00">}</span><span style="color:#658b00">_</span>2<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\FINii</span><span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\vec</span><span style="color:#658b00">{</span>F<span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#658b00">{</span>in<span style="color:#8b008b;font-weight:bold">\,</span>2<span style="color:#658b00">}</span><span style="color:#658b00">^</span><span style="color:#8b008b;font-weight:bold">\text</span><span style="color:#658b00">{</span>пост<span style="color:#658b00">}</span><span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\FINi</span><span style="color:#658b00">{</span><span style="color:#8b008b;font-weight:bold">\vec</span><span style="color:#658b00">{</span>F<span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#658b00">{</span>in<span style="color:#8b008b;font-weight:bold">\,</span>1<span style="color:#658b00">}</span><span style="color:#658b00">^</span><span style="color:#8b008b;font-weight:bold">\text</span><span style="color:#658b00">{</span>пост<span style="color:#658b00">}</span><span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\def</span><span style="color:#8b008b;font-weight:bold">\radius</span><span style="color:#658b00">{</span>0.35cm<span style="color:#658b00">}</span>    
+<span style="color:#8b008b;font-weight:bold">\matrix</span><span style="color:#658b00">[column sep=1cm, row sep=0cm]</span> <span style="color:#658b00">{</span>
+
+<span style="color:#228b22">% \draw[use as bounding box] (0,0) rectangle (1,1);
+</span><span style="color:#228b22"></span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span><span style="color:#228b22">%
+</span><span style="color:#228b22"></span>            [scale=1.2, transform shape]
+    <span style="color:#8b008b;font-weight:bold">\coordinate</span> (base left) at (-<span style="color:#8b008b;font-weight:bold">\width</span>/2,-<span style="color:#8b008b;font-weight:bold">\height</span>/2);
+    <span style="color:#8b008b;font-weight:bold">\coordinate</span> (top left) at (-<span style="color:#8b008b;font-weight:bold">\width</span>/2,<span style="color:#8b008b;font-weight:bold">\height</span>/2);
+    <span style="color:#8b008b;font-weight:bold">\coordinate</span> (top right) at (<span style="color:#8b008b;font-weight:bold">\width</span>/2,<span style="color:#8b008b;font-weight:bold">\height</span>/2);
+    <span style="color:#8b008b;font-weight:bold">\coordinate</span> (base right) at (<span style="color:#8b008b;font-weight:bold">\width</span>/2,-<span style="color:#8b008b;font-weight:bold">\height</span>/2);
+    <span style="color:#8b008b;font-weight:bold">\coordinate</span> (top mid) at (<span style="color:#cd5555">$</span>(<span style="color:#658b00">top left</span>)!<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span>!(<span style="color:#658b00">top right</span>)<span style="color:#cd5555">$</span>);
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis,-&gt;]</span> (base left)  -- (<span style="color:#cd5555">$</span>(<span style="color:#658b00">base right</span>)+(<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">3</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span>)<span style="color:#cd5555">$</span>) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[axis,-&gt;]</span> (base left)  -- (<span style="color:#cd5555">$</span>(<span style="color:#658b00">top left</span>)+(<span style="color:#b452cd">0</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">3</span>)<span style="color:#cd5555">$</span>) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[plane]</span>  (base left) -- (base right) --  (top right)  -- (top left) -- cycle;
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[interface]</span>  (<span style="color:#cd5555">$</span>(<span style="color:#658b00">base left</span>)-(<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">3</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span>)<span style="color:#cd5555">$</span>) -- (<span style="color:#cd5555">$</span>(<span style="color:#658b00">base right</span>)+(<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">3</span><span style="color:#658b00">,</span><span style="color:#b452cd">0</span>)<span style="color:#cd5555">$</span>);
+
+    <span style="color:#8b008b;font-weight:bold">\path</span> (top mid) node[m1, yshift=0.35cm] (m1) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\path</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">base left</span>)!<span style="color:#b452cd">0</span><span style="color:#658b00">.</span><span style="color:#b452cd">5</span>!(<span style="color:#658b00">top right</span>)<span style="color:#cd5555">$</span>) node[yshift=0cm] (A) <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">A</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[-&gt;,&gt;=open triangle 60]</span> (0,2) -- node[above,pos=0.5] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">a</span><span style="color:#658b00">_</span><span style="color:#b452cd">0</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span> (1,2);
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[pulley]</span> (<span style="color:#cd5555">$</span>(<span style="color:#658b00">top right</span>)-(<span style="color:#b452cd">0</span><span style="color:#658b00">,</span><span style="color:#00688b">\radius</span>)<span style="color:#cd5555">$</span>) arc (-90:180:<span style="color:#8b008b;font-weight:bold">\radius</span>) coordinate (pulley);
+    <span style="color:#8b008b;font-weight:bold">\filldraw</span><span style="color:#658b00">[fill=black]</span> (top right) circle(0.05cm);
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[string]</span> (m1.east) -- ++(1.15,0) arc (90:0:<span style="color:#8b008b;font-weight:bold">\radius</span>)
+                  -- ++(0,-1) node[m2] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;       
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span> 
+<span style="color:#658b00">&amp;</span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[scale=1.2, transform shape]
+    
+   <span style="color:#8b008b;font-weight:bold">\node</span><span style="color:#658b00">[m1,transform shape]</span> (m1) <span style="color:#658b00">{</span><span style="color:#658b00">}</span>;
+
+    <span style="color:#658b00">{</span>[axis,-&gt;]
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0,-1) -- (0,2) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (m1.south) -- ++(2,0) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#658b00">}</span>
+
+    <span style="color:#228b22">% Forces
+</span><span style="color:#228b22"></span>    <span style="color:#658b00">{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (m1.south) -- ++(0,1.5) node[above right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">N</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span>(m1.south) -- ++(-1,0) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">f</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#658b00">{</span><span style="color:#658b00">R</span><span style="color:#658b00">_</span><span style="color:#658b00">{</span><span style="color:#b452cd">1</span><span style="color:#658b00">A</span><span style="color:#658b00">}</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (m1.east) -- ++(1,0) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">T</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,double equal sign distance=2pt,-&gt;]</span> (m1.west) -- ++(-1,0) node[above] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\FINi</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#658b00">}</span>
+
+    <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (m1.center) -- ++(0,-1) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#658b00">_</span><span style="color:#b452cd">1</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">g</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+ <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+<span style="color:#8b008b;font-weight:bold">\\</span>
+<span style="color:#8b008b;font-weight:bold">\node</span><span style="color:#658b00">[draw=none,text width=5cm, line width=0mm]</span> at (0,0.5) <span style="color:#658b00">{</span>
+Возьмем НИСО, связанную с бруском <span style="color:#cd5555">$</span><span style="color:#658b00">A</span><span style="color:#cd5555">$</span>. 
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>gather<span style="color:#658b00">}</span>
+    <span style="color:#8b008b;font-weight:bold">\nonumber</span> <span style="color:#8b008b;font-weight:bold">\text</span><span style="color:#658b00">{</span>Нить, блок идеальные. Тогда:<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\\</span>
+    T<span style="color:#658b00">_</span>1=T<span style="color:#658b00">_</span>2<span style="color:#8b008b;font-weight:bold">\\</span>
+    <span style="color:#8b008b;font-weight:bold">\nonumber</span> <span style="color:#8b008b;font-weight:bold">\text</span><span style="color:#658b00">{</span>Cилы инерции:<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\\</span>
+    <span style="color:#8b008b;font-weight:bold">\FINi</span>=-m<span style="color:#658b00">_</span>1<span style="color:#8b008b;font-weight:bold">\vec</span><span style="color:#658b00">{</span>a<span style="color:#658b00">}</span><span style="color:#658b00">_</span>0<span style="color:#8b008b;font-weight:bold">\\</span>
+    <span style="color:#8b008b;font-weight:bold">\FINii</span>=-m<span style="color:#658b00">_</span>2<span style="color:#8b008b;font-weight:bold">\vec</span><span style="color:#658b00">{</span>a<span style="color:#658b00">}</span><span style="color:#658b00">_</span>0
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>gather<span style="color:#658b00">}</span>
+
+<span style="color:#658b00">}</span>;
+<span style="color:#658b00">&amp;</span>
+<span style="color:#8b008b;font-weight:bold">\begin</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>[scale=1.2, transform shape]
+
+    <span style="color:#8b008b;font-weight:bold">\node</span><span style="color:#658b00">[m2,transform shape]</span> (m2) <span style="color:#658b00">{</span><span style="color:#658b00">}</span>;
+    <span style="color:#228b22">% Draw axes and help lines
+</span><span style="color:#228b22"></span>
+    <span style="color:#658b00">{</span>[axis,-&gt;]
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (0,-1) -- (0,2) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">y&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span> (m2.south) -- ++(2,0) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span>+<span style="color:#658b00">x&#39;</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#658b00">}</span>
+
+    <span style="color:#228b22">% Forces
+</span><span style="color:#228b22"></span>    <span style="color:#658b00">{</span>
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (m2.center) -- ++(0,1) node[above right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">T</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span>(m2.west) -- ++(0,1) node[left] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">f</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#658b00">{</span><span style="color:#658b00">R</span><span style="color:#658b00">_</span><span style="color:#658b00">{</span><span style="color:#b452cd">2</span><span style="color:#658b00">A</span><span style="color:#658b00">}</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span>(m2.west) -- ++(1.5,0) node[right] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">N</span><span style="color:#658b00">}</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,double equal sign distance=2pt,-&gt;]</span> (m2.west) -- ++(-1,0) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#00688b">\FINii</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+        <span style="color:#8b008b;font-weight:bold">\draw</span><span style="color:#658b00">[force,-&gt;]</span> (m2.center) -- ++(0,-1) node[below] <span style="color:#658b00">{</span><span style="color:#cd5555">$</span><span style="color:#658b00">m</span><span style="color:#658b00">_</span><span style="color:#b452cd">2</span><span style="color:#00688b">\vec</span><span style="color:#658b00">{</span><span style="color:#658b00">g</span><span style="color:#658b00">}</span><span style="color:#cd5555">$</span><span style="color:#658b00">}</span>;
+    <span style="color:#658b00">}</span>
+ <span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>scope<span style="color:#658b00">}</span>
+ <span style="color:#8b008b;font-weight:bold">\\</span>
+ <span style="color:#228b22">%
+</span><span style="color:#228b22"></span><span style="color:#658b00">}</span>;
+
+<span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>tikzpicture<span style="color:#658b00">}</span><span style="color:#8b008b;font-weight:bold">\end</span><span style="color:#658b00">{</span>document<span style="color:#658b00">}</span>
+</code></pre></div>
+</article>
+
+
+
+
+      </section>
+	</main>
+</div>
+
+
+ <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42140204 = new Ya.Metrika({ id:42140204, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42140204" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+</body>
+</html>
