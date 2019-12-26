@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Its on Блог Федора Сарафанова</title>
-    <link>http://localhost:1313/it/</link>
+    <link>https://fedorsarafanov.github.io:1313/it/</link>
     <description>Recent content in Its on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     <lastBuildDate>Thu, 05 Jan 2017 14:35:05 +0300</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fedorsarafanov.github.io:1313/it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Создание загрузочной флешки с Windows из под (Arch)Linux</title>
-      <link>http://localhost:1313/it/windows-flash/</link>
+      <link>https://fedorsarafanov.github.io:1313/it/windows-flash/</link>
       <pubDate>Thu, 05 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>http://localhost:1313/it/windows-flash/</guid>
+      <guid>https://fedorsarafanov.github.io:1313/it/windows-flash/</guid>
       <description>&lt;p&gt;Может понадобиться записать флешку с Windows, когда в наличии только Linux.&lt;/p&gt;
 
 &lt;p&gt;Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть &lt;code&gt;ms-sys&lt;/code&gt;.&lt;/p&gt;</description>
@@ -24,19 +24,19 @@
     
     <item>
       <title>Настройка истории bash</title>
-      <link>http://localhost:1313/it/bash-history/</link>
+      <link>https://fedorsarafanov.github.io:1313/it/bash-history/</link>
       <pubDate>Wed, 04 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>http://localhost:1313/it/bash-history/</guid>
+      <guid>https://fedorsarafanov.github.io:1313/it/bash-history/</guid>
       <description>&lt;p&gt;Можно облегчить себе пользование терминалом, нехитрым образом настроив bash и используя некоторые удобные команды.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Смена времени модификации / создания файла в Linux</title>
-      <link>http://localhost:1313/it/date-modification/</link>
+      <link>https://fedorsarafanov.github.io:1313/it/date-modification/</link>
       <pubDate>Mon, 02 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>http://localhost:1313/it/date-modification/</guid>
+      <guid>https://fedorsarafanov.github.io:1313/it/date-modification/</guid>
       <description>touch -a -m -t 201701011212.00 fileName.ext
 где параметры:
 -a = accessed (доступ)
