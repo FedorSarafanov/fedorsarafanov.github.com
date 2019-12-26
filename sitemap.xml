@@ -3,949 +3,949 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://fedorsarafanov.github.io/struct/</loc>
-    <lastmod>2019-05-28T12:46:56+03:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2019-12-26T12:46:56+03:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/pgfplots/pgfplots_quick_guide/</loc>
+    <loc>http://localhost:1313/struct/</loc>
+    <lastmod>2019-12-26T12:46:56+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/pgfplots/pgfplots_quick_guide/</loc>
     <lastmod>2019-01-09T14:38:27+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</loc>
+    <loc>http://localhost:1313/pgfplots/</loc>
+    <lastmod>2019-01-09T14:38:27+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tickets/</loc>
     <lastmod>2019-01-04T15:56:12+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</loc>
+    <loc>http://localhost:1313/tickets/2019/01/04/tickets-ed/</loc>
+    <lastmod>2019-01-04T15:56:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/gallery_source/</loc>
+    <lastmod>2019-01-01T13:04:49+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_21b80a720b32318c1ec3e3e6b03a0c6b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_21b80a720b32318c1ec3e3e6b03a0c6b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_385c9677cc30090dce73e92cf15e686f.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_385c9677cc30090dce73e92cf15e686f.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_39c5cae5929171140a0f0fbc3e77174b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_39c5cae5929171140a0f0fbc3e77174b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_3a23b921ddeab91acb9591b4870971b5.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_3a23b921ddeab91acb9591b4870971b5.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_40dd93965962da070055f1882509ad36.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_40dd93965962da070055f1882509ad36.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_43119a55c1cd34c3826b740911dc24b2.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_43119a55c1cd34c3826b740911dc24b2.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_47488f6e1662d53d1fd0b56a0fdb8c80.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_47488f6e1662d53d1fd0b56a0fdb8c80.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_5771b4e0619c1e603ad266f65caf7801.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_5771b4e0619c1e603ad266f65caf7801.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_5845947e600c2cf7d80a864445869b34.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_5845947e600c2cf7d80a864445869b34.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_59874de63f42d70a120443b2a14e724c.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_59874de63f42d70a120443b2a14e724c.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_6898e20ace83e782b0455523ca561627.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_6898e20ace83e782b0455523ca561627.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_74135c845602d360a6f6e3ded169806b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_74135c845602d360a6f6e3ded169806b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_8dde484bb03e2b7622644f84c742d3b2.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_8dde484bb03e2b7622644f84c742d3b2.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_aadcbb54750e6fbda6d7878c76dcc685.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_aadcbb54750e6fbda6d7878c76dcc685.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_b056f5f8189d1462a8af9e047de19e03.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_b056f5f8189d1462a8af9e047de19e03.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpict_f1c1447f755eeda702fd6871d88acfbf.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpict_f1c1447f755eeda702fd6871d88acfbf.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_00701825e5518a065b93a26333f2a2bd.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_00701825e5518a065b93a26333f2a2bd.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_01ac14d940c4cf18d44265c36b2f97ef.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_01ac14d940c4cf18d44265c36b2f97ef.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0a0b178b8956ef1836947b9b06291113.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_0a0b178b8956ef1836947b9b06291113.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0b13be4e8715db378383b39398a49b32.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_0b13be4e8715db378383b39398a49b32.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_178a4d167043eaad72aacc324d22e369.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_178a4d167043eaad72aacc324d22e369.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1a7e4c198761d25cdac23f57a9873178.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_1a7e4c198761d25cdac23f57a9873178.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1d7bb75988e6bd8a0f6bcfa816562687.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_1d7bb75988e6bd8a0f6bcfa816562687.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_29fa2e370310ffb9f24de2b795353964.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_29fa2e370310ffb9f24de2b795353964.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_2b6a37bee94251366d712224564f1a6b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_2b6a37bee94251366d712224564f1a6b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_2e554fdf03672826b0156a1b26d593c6.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_2e554fdf03672826b0156a1b26d593c6.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_36edc493fc4cb9426153e484772495c0.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_36edc493fc4cb9426153e484772495c0.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_379d36fa016363eb94f25e55aba1b7bb.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_379d36fa016363eb94f25e55aba1b7bb.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_39c906cdc803579398465d9c6a364c96.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_39c906cdc803579398465d9c6a364c96.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3d9746d60402a478c68b1bde07c10f5d.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_3d9746d60402a478c68b1bde07c10f5d.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3da8b9b870b963f0b12178d358336f5f.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_3da8b9b870b963f0b12178d358336f5f.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3ea0359e2c6f1d59021ae960331e4d11.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_3ea0359e2c6f1d59021ae960331e4d11.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_43ea12194f3caf9950ad08f0143f07f2.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_43ea12194f3caf9950ad08f0143f07f2.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_44a19a9e8e1460d796385c679c85fbb1.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_44a19a9e8e1460d796385c679c85fbb1.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_47aff02a08362232a2531b440aa23ffe.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_47aff02a08362232a2531b440aa23ffe.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_4a31524ebc6ae863032ea2318873f097.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_4a31524ebc6ae863032ea2318873f097.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_4b703b20258cec421b6e242821ca7ca7.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_4b703b20258cec421b6e242821ca7ca7.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5bea1efc98f128b6f80820999ca30a6c.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_5bea1efc98f128b6f80820999ca30a6c.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5d3f74626f94f3e93a3f20296241b14a.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_5d3f74626f94f3e93a3f20296241b14a.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5df1c68da7da63fdb8f40e5ef5a34e1f.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_5df1c68da7da63fdb8f40e5ef5a34e1f.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_61335de9237b7d60a6bb94aa8f380276.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_61335de9237b7d60a6bb94aa8f380276.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_64cde4d9fc6007a37177f7b25b78d010.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_64cde4d9fc6007a37177f7b25b78d010.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_6d8df87b606ebf5e503454e378a76395.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_6d8df87b606ebf5e503454e378a76395.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_6db2df06990962d3386aa77a474dba63.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_6db2df06990962d3386aa77a474dba63.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_70edc45308a125aef04abc79f496e53b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_70edc45308a125aef04abc79f496e53b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_71023d8580c4531be9666eaaa37148a9.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_71023d8580c4531be9666eaaa37148a9.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_74bcdd4ddb7b853839ee34f3fdd760a4.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_74bcdd4ddb7b853839ee34f3fdd760a4.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_81a7f1aa0af6513259e7b7314fdf73ce.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_81a7f1aa0af6513259e7b7314fdf73ce.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_81bc83708b6b611ad41d0f71c03ec67f.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_81bc83708b6b611ad41d0f71c03ec67f.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8894c955d6a9463132706939a3b56633.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_8894c955d6a9463132706939a3b56633.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_88af2314982f609eabfecd73c6b34716.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_88af2314982f609eabfecd73c6b34716.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8b660f8b9295a0eb0b6f8688f6a70698.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_8b660f8b9295a0eb0b6f8688f6a70698.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8e5bf23930348a179b322a890a918e06.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_8e5bf23930348a179b322a890a918e06.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_918a5448683c165636b63f8867ff8f65.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_918a5448683c165636b63f8867ff8f65.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_92327b1f04223a30169a950b366a13f9.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_92327b1f04223a30169a950b366a13f9.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_940ed8e774c45eca600dd25c720d838b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_940ed8e774c45eca600dd25c720d838b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9a0faa435046cf2cd34f1fb2b38a7150.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_9a0faa435046cf2cd34f1fb2b38a7150.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9b2ac3c28b83ee02979e696f8a4571fe.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_9b2ac3c28b83ee02979e696f8a4571fe.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_aba0f4aaa1dd49cffc5f8a107b360566.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_aba0f4aaa1dd49cffc5f8a107b360566.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_ae151cd0b76c6bd3b7180e73c82bc44b.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_ae151cd0b76c6bd3b7180e73c82bc44b.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b3114ba35c49632050d199ecc46ef3cb.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_b3114ba35c49632050d199ecc46ef3cb.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b5e2b09a9ecfd474ae02294aeb747ca3.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_b5e2b09a9ecfd474ae02294aeb747ca3.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b7cedf5d17b5eadbac9a51dfbdec1ba1.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_b7cedf5d17b5eadbac9a51dfbdec1ba1.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_be01e717192dd180508e50d58e8eccde.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_be01e717192dd180508e50d58e8eccde.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_be2643764f5c5334f9a9600eb4b4cbab.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_be2643764f5c5334f9a9600eb4b4cbab.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c5d6e40173f24e9058f14be8a1b2df6c.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_c5d6e40173f24e9058f14be8a1b2df6c.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_dd72534a48b01b766e8695f208caf969.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_dd72534a48b01b766e8695f208caf969.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_df83a36a9dcab0104dcec27c200de676.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_df83a36a9dcab0104dcec27c200de676.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_eaa49c074578c440c8fc883c74e85f0a.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_eaa49c074578c440c8fc883c74e85f0a.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f4600d60209647353b8686f49125a1b2.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_f4600d60209647353b8686f49125a1b2.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f89dc1c5657b155b837927794f4463bf.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_f89dc1c5657b155b837927794f4463bf.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f8c219177d69e94ec2bc115d953c5d8c.html/</loc>
+    <loc>http://localhost:1313/cook/gallery/tikzpicture_f8c219177d69e94ec2bc115d953c5d8c.html/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/pre/</loc>
+    <loc>http://localhost:1313/pre/</loc>
     <lastmod>2019-01-01T13:04:49+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/cook/</loc>
+    <loc>http://localhost:1313/cook/</loc>
     <lastmod>2018-12-31T21:29:45+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/matlab/2018-12-27-matlab-solvedu-in-simulink/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/matlab/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/simulink/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/matlab/</loc>
     <lastmod>2018-12-27T15:32:11+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2018/12/27/tickets-quantum-course3sem1/</loc>
+    <loc>http://localhost:1313/tags/%D0%BE%D0%B4%D1%83/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/matlab/2018-12-27-matlab-solvedu-in-simulink/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B4%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D1%83-%D0%BC%D0%B0%D1%82%D0%BB%D0%B0%D0%B1/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D1%83-%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D0%B8%D0%BD%D0%BA/</loc>
+    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tickets/2018/12/27/tickets-quantum-course3sem1/</loc>
     <lastmod>2018-12-27T00:04:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/buy/</loc>
+    <loc>http://localhost:1313/buy/</loc>
     <lastmod>2018-12-23T12:46:12+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/convertlatextoword/</loc>
+    <loc>http://localhost:1313/convertlatextoword/</loc>
     <lastmod>2018-12-23T12:46:12+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/gallery/</loc>
+    <loc>http://localhost:1313/tags/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%B8-%D0%B2%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85-%D0%B8-%D0%B8%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%BD%D1%8B%D1%85-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B2-latexe/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7-%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D0%BD%D0%B0-latex/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D1%83-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B0%D1%86%D0%B8%D1%8F-word-%D0%B2-latex/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D0%B9-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D1%83-%D0%BD%D0%B0-latex/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D1%83-%D0%BD%D0%B0-pgfplots/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D1%83-%D0%BD%D0%B0-tikz/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D1%8B%D1%85-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-%D0%BA%D0%BD%D0%B8%D0%B3-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D1%8B%D1%85-%D0%B8%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B9/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D0%BD%D0%B0-latex-%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE-%D1%81%D1%82%D0%B8%D0%BB%D0%B5%D0%B2%D1%8B%D0%BC-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%D0%BC-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%B0/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D1%86%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D1%89%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%B8%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%BC-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B5-latex/</loc>
+    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/gallery/</loc>
     <lastmod>2018-12-23T12:31:12+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tikz/2017-12-27-mwe-tikz/</loc>
+    <loc>http://localhost:1313/tags/latex/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mwe/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/texlive/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/tikz/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tikz/</loc>
     <lastmod>2017-12-27T15:28:53+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/lection/2017/02/26/lection-mech-1/</loc>
+    <loc>http://localhost:1313/tikz/2017-12-27-mwe-tikz/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B8-%D0%BD%D0%B0-latex/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-latex/</loc>
+    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/lections/</loc>
     <lastmod>2017-02-26T18:18:42+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/28/geom3/</loc>
+    <loc>http://localhost:1313/lection/2017/02/26/lection-mech-1/</loc>
+    <lastmod>2017-02-26T18:18:42+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tickets/2017/01/28/geom3/</loc>
     <lastmod>2017-01-28T13:19:30+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</loc>
+    <loc>http://localhost:1313/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F/</loc>
+    <lastmod>2017-01-28T13:19:30+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tickets/2017/01/25/geom/</loc>
     <lastmod>2017-01-25T10:38:02+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/25/geom2/</loc>
+    <loc>http://localhost:1313/tickets/2017/01/25/geom2/</loc>
     <lastmod>2017-01-25T10:38:02+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/lab/</loc>
+    <loc>http://localhost:1313/tags/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/</loc>
+    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</loc>
+    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</loc>
+    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BF%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F/</loc>
+    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%BD%D0%B0-%D0%BF%D0%BB%D0%BE%D1%81%D0%BA%D0%BE%D1%81%D1%82%D0%B8/</loc>
+    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/lab/</loc>
     <lastmod>2017-01-22T22:16:12+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/python_lab/</loc>
+    <loc>http://localhost:1313/python_lab/</loc>
     <lastmod>2017-01-22T22:16:12+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</loc>
+    <loc>http://localhost:1313/tickets/2017/01/14/kor/</loc>
     <lastmod>2017-01-14T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/13/guk/</loc>
+    <loc>http://localhost:1313/tags/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BE%D1%80%D0%B8%D0%BE%D0%BB%D0%B8%D1%81%D0%B0/</loc>
+    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%B8%D0%BB%D0%B0/</loc>
+    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D1%81%D0%B8%D0%BB%D0%B0-%D0%B8%D0%BD%D0%B5%D1%80%D1%86%D0%B8%D0%B8/</loc>
+    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0/</loc>
+    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tickets/2017/01/13/guk/</loc>
     <lastmod>2017-01-13T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/13/holl/</loc>
+    <loc>http://localhost:1313/tickets/2017/01/13/holl/</loc>
     <lastmod>2017-01-13T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/tickets/2017/01/08/kepler/</loc>
+    <loc>http://localhost:1313/tickets/2017/01/08/kepler/</loc>
     <lastmod>2017-01-08T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/it/windows-flash/</loc>
+    <loc>http://localhost:1313/it/</loc>
+    <lastmod>2017-01-05T14:35:05+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/it/windows-flash/</loc>
     <lastmod>2017-01-05T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/it/bash-history/</loc>
+    <loc>http://localhost:1313/it/bash-history/</loc>
     <lastmod>2017-01-04T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/it/date-modification/</loc>
+    <loc>http://localhost:1313/it/date-modification/</loc>
     <lastmod>2017-01-02T14:35:05+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/problems/</loc>
+    <loc>http://localhost:1313/problems/</loc>
     <lastmod>2017-01-01T22:16:31+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/problems/2017-02-23-1-104/</loc>
+    <loc>http://localhost:1313/problems/2017-02-23-1-104/</loc>
     <lastmod>2017-01-01T20:46:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-108/</loc>
+    <loc>http://localhost:1313/problems/2017-02-23-irodov-1-108/</loc>
     <lastmod>2017-01-01T20:46:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-160/</loc>
+    <loc>http://localhost:1313/problems/2017-02-23-irodov-1-160/</loc>
     <lastmod>2017-01-01T20:46:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-163/</loc>
+    <loc>http://localhost:1313/problems/2017-02-23-irodov-1-163/</loc>
     <lastmod>2017-01-01T20:46:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-19/</loc>
+    <loc>http://localhost:1313/problems/2017-02-23-irodov-1-19/</loc>
     <lastmod>2017-01-01T20:46:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/2017/01/01/about.html/</loc>
-    <lastmod>2017-01-01T14:35:05+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2017-01-01T14:35:05+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/categories/</loc>
+    <loc>http://localhost:1313/2017/01/01/about.html/</loc>
+    <lastmod>2017-01-01T14:35:05+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/gallery_source/</loc>
-    <lastmod>2019-01-01T13:04:49+03:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/latex/</loc>
   </url>
   
   <url>
-    <loc>https://fedorsarafanov.github.io/it/</loc>
-    <lastmod>2017-01-05T14:35:05+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/latex/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/matlab/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/mwe/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/simulink/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/texlive/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/tikz/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F/</loc>
-    <lastmod>2017-01-28T13:19:30+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tickets/</loc>
-    <lastmod>2019-01-04T15:56:12+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/</loc>
-    <lastmod>2019-05-28T12:46:56+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/</loc>
-    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BE%D1%80%D0%B8%D0%BE%D0%BB%D0%B8%D1%81%D0%B0/</loc>
-    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B3%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%B8%D0%BB%D0%B0/</loc>
-    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B8-%D0%BD%D0%B0-latex/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B4%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7-%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D0%BD%D0%B0-latex/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D1%83-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B0%D1%86%D0%B8%D1%8F-word-%D0%B2-latex/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D0%B9-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/lections/</loc>
-    <lastmod>2017-02-26T18:18:42+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</loc>
-    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</loc>
-    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/latex/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/matlab/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tikz/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%B8-%D0%B2%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85-%D0%B8-%D0%B8%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%BD%D1%8B%D1%85-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B2-latexe/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D1%83-%D0%BD%D0%B0-latex/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D1%83-%D0%BD%D0%B0-pgfplots/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BD%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D1%83-%D0%BD%D0%B0-tikz/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BE%D0%B4%D1%83/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D1%8B%D1%85-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D1%85-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-%D0%BA%D0%BD%D0%B8%D0%B3-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D1%8B%D1%85-%D0%B8%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B9/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D0%BD%D0%B0-latex-%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE-%D1%81%D1%82%D0%B8%D0%BB%D0%B5%D0%B2%D1%8B%D0%BC-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%D0%BC-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%B0/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BF%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F/</loc>
-    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/pgfplots/</loc>
-    <lastmod>2019-01-09T14:38:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/python/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%BD%D0%B0-%D0%BF%D0%BB%D0%BE%D1%81%D0%BA%D0%BE%D1%81%D1%82%D0%B8/</loc>
-    <lastmod>2017-01-25T10:38:02+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D1%83-%D0%BC%D0%B0%D1%82%D0%BB%D0%B0%D0%B1/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D1%83-%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D0%B8%D0%BD%D0%BA/</loc>
-    <lastmod>2018-12-27T15:32:11+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-latex/</loc>
-    <lastmod>2017-12-27T15:28:53+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D1%81%D0%B8%D0%BB%D0%B0-%D0%B8%D0%BD%D0%B5%D1%80%D1%86%D0%B8%D0%B8/</loc>
-    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D1%86%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D1%89%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%B8%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%BC-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B5-latex/</loc>
-    <lastmod>2018-12-23T12:46:12+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://fedorsarafanov.github.io/tags/%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0/</loc>
-    <lastmod>2017-01-14T14:35:05+03:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/python/</loc>
   </url>
   
 </urlset>

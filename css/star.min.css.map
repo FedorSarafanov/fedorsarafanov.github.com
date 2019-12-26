@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "star.min.css",
-	"sourceRoot": "D:/fedorsarafanov.github.com",
+	"sourceRoot": "/home/osabio/D/fedorsarafanov.github.com",
 	"sources": [
 		"themes/sfg/assets/sass/main.scss",
 		"themes/sfg/assets/sass/media.scss",

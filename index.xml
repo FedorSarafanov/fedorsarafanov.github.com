@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Блог Федора Сарафанова</title>
-    <link>https://fedorsarafanov.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
-    <lastBuildDate>Tue, 28 May 2019 12:46:56 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 12:46:56 +0300</lastBuildDate>
     
-	<atom:link href="https://fedorsarafanov.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Экзаменационные и зачетные материалы</title>
-      <link>https://fedorsarafanov.github.io/struct/</link>
-      <pubDate>Tue, 28 May 2019 12:46:56 +0300</pubDate>
+      <link>http://localhost:1313/struct/</link>
+      <pubDate>Thu, 26 Dec 2019 12:46:56 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/struct/</guid>
+      <guid>http://localhost:1313/struct/</guid>
       <description>&lt;p&gt;Здесь размещены полезные материалы для подготовки к экзаменам и зачетам: лекции, книги, расписанные экзаменационные задачи, экзаменационные билеты с различных дисциплин 1-3 курсов радиофизического факультета ННГУ.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Pgfplots: краткое руководство</title>
-      <link>https://fedorsarafanov.github.io/pgfplots/pgfplots_quick_guide/</link>
+      <link>http://localhost:1313/pgfplots/pgfplots_quick_guide/</link>
       <pubDate>Wed, 09 Jan 2019 14:38:27 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/pgfplots/pgfplots_quick_guide/</guid>
+      <guid>http://localhost:1313/pgfplots/pgfplots_quick_guide/</guid>
       <description>&lt;h3 id=&#34;о-пакете&#34;&gt;О пакете&lt;/h3&gt;
 
 &lt;p&gt;Пакет &lt;code&gt;pgfplots&lt;/code&gt; представляет собой мощный инструмент, предназначенный для создания научных графиков. Он создан на базе &lt;code&gt;tikz&lt;/code&gt;, не менее прекрасного пакета, который позволяет создавать векторную графику прямо на латехе.&lt;/p&gt;
 
 &lt;p&gt;Если вы сомневаетесь в необходимости использования &lt;code&gt;pgfplots&lt;/code&gt; или &lt;code&gt;tikz&lt;/code&gt;, посмотрите на простые графики, созданные с помощью этих пакетов:&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://cdn.sharelatex.com/learn-scripts/images/3/3e/Pgfplots3.png&#34; alt=&#34;Графики на PgfPlots&#34;&gt;&lt;/figure&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/pgf.png&#34; alt=&#34;Графики на PgfPlots&#34;&gt;&lt;/figure&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Теоретический минимум по электродинамике</title>
-      <link>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</link>
+      <link>http://localhost:1313/tickets/2019/01/04/tickets-ed/</link>
       <pubDate>Fri, 04 Jan 2019 15:56:12 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2019/01/04/tickets-ed/</guid>
+      <guid>http://localhost:1313/tickets/2019/01/04/tickets-ed/</guid>
       <description>&lt;!-- aliases:
    - /tickets/2018/12/27/tickets-quantum-course3sem1.html --&gt;
 
@@ -57,1011 +57,1011 @@ $\gdef\n{\vec{n}}$
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_1886b2fa440b3104e1ed2dc4808e4d24.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-2,0) rectangle (2,-0.25); \draw[thick] (-2,0) -- (2,0); \contourlength{1mm}; \draw (0,1) circle (1); \draw[fill=magenta] (0,0) circle (2pt) node[above, yshift=3pt] {\contour{white}{$B$}}; \lineann[-1]{90}{1}{$R$} \draw[fill=magenta] (-2,1) circle (2pt); \draw[-&amp;gt;] (-2,1) -- ++ (0.5,0) node[right] {$\vec{v}_0$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_21b80a720b32318c1ec3e3e6b03a0c6b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_21b80a720b32318c1ec3e3e6b03a0c6b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_21b80a720b32318c1ec3e3e6b03a0c6b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_21b80a720b32318c1ec3e3e6b03a0c6b.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-2,0) rectangle ++ (3,-0.5); \draw[interface, pattern color=magenta, pattern=north west lines] (1,0) rectangle ++ (6,-0.5); \draw[] (-2,0) -- ++(5,0); % \draw[interface] (3,-0.5) rectangle ++ (0.5,5);  % \draw[] (3,0) -- ++(0,4.5);  \draw[] (1,2) coordinate (o) circle (2) node[magenta, scale=1.5] {$\bigotimes$} node[above, yshift=0.8em] {$+z$}; % \draw (o) pic[&amp;lt;-, magenta,]{carc=100:180:1cm};  \coordinate (1) at (3,2); \coordinate (2) at (1,0); \draw[force, thick, -&amp;gt;] (2) -- ++ (-1.5,0) node[above] {$\vec{f}\,\,\,$}; \draw[force, thick, -&amp;gt;] (o) -- ++ (0,-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_385c9677cc30090dce73e92cf15e686f.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_385c9677cc30090dce73e92cf15e686f.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_385c9677cc30090dce73e92cf15e686f.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_385c9677cc30090dce73e92cf15e686f.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \matrix[column sep=2cm] { \draw[interface] (-0.5,1) rectangle (-0.1,1.5) (0.1,1.5) rectangle (0.5,1); \draw[interface] (-0.5,-1) rectangle (-0.1,-1.5) (0.1,-1.5) rectangle (0.5,-1); \draw[axis,magenta] (0,-1.5) -- (0,1.5); \draw[magenta,-&amp;gt;] (0,1.75) -- ++(0,0.5) node[above] {$\vec\omega$}; \draw[magenta,-&amp;gt;] (0.5,1.75) -- ++ (0,0.5) node[above] {$\vec{N}$} ; \draw[fill=magenta, magenta] (-0.5,-0.15) rectangle (0.5,0.15); \fill[magenta] (0,-1.25) coordinate (1) circle (2pt) node[below, yshift=-0.5em] {$O$}; \fill[magenta] (0,1.25) coordinate (2) circle (2pt); \draw[-&amp;gt;, thick, blue] (1) -- node[caption] {$\vec{l}$} (2); \draw[-&amp;gt;, thick, magenta] (2)++(-1,0) -- node[caption] {$\vec{M}$} ++(-2,0); \draw[fill=white, draw=blue] (0,1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_39c5cae5929171140a0f0fbc3e77174b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_39c5cae5929171140a0f0fbc3e77174b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_39c5cae5929171140a0f0fbc3e77174b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_39c5cae5929171140a0f0fbc3e77174b.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[magenta, fill=magenta!10] (0,0) circle (2cm); \draw[magenta, fill=magenta!0] (-1,0) circle (1cm); \draw (0,0) node[blue]{$\times$}; \draw (-1,0) node[blue]{$\times$}; \draw (1/6,0) node[magenta]{$\times$}; \begin{scope}[yshift=0cm, xshift=0cm] \lineann[3cm]{0}{2}{$R$}; \end{scope} \draw[axis] (-3,0) -- (3,0) node [right] {$+x$}; % \draw[magenta, fill=magenta!1] (0,0) circle (2cm);  % \draw[magenta, fill=magenta!10] (-1,1.5) -- ++(0, 0.1) -- ++ (2,0) coordinate (I) -- ++ (0,-0.1) coordinate (II) -- cycle;  % \draw[axis] (-3,-1) -- ++(0,5);  % \draw[axis,-&amp;gt;] (0,-1) -- ++(0,5) node[above] {$+x$};  % \hlLabel{-3}{0}{$0$};  % \hlLabel{-3}{3}{$h$};  % \draw[blue,&amp;lt;-] (2,1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_3a23b921ddeab91acb9591b4870971b5.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_3a23b921ddeab91acb9591b4870971b5.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_3a23b921ddeab91acb9591b4870971b5.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_3a23b921ddeab91acb9591b4870971b5.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \matrix[column sep=2cm] { \draw[interface] (-0.5,1) rectangle (-0.1,1.5) (0.1,1.5) rectangle (0.5,1); \draw[interface] (-0.5,-1) rectangle (-0.1,-1.5) (0.1,-1.5) rectangle (0.5,-1); \draw[axis,magenta] (0,-1.5) -- (0,1.5); \draw[magenta,-&amp;gt;] (0,1.75) -- ++(0,0.5) node[above] {$\vec\omega$}; \draw[magenta,-&amp;gt;] (0.5,1.75) -- ++ (0,0.5) node[above] {$\vec{N}$} ; \draw[fill=magenta, magenta] (-1,-0.15) rectangle (1,0.15); \fill[magenta] (0,-1.25) coordinate (1) circle (2pt) node[below, yshift=-0.5em] {$O$}; \fill[magenta] (0,1.25) coordinate (2) circle (2pt); \draw[-&amp;gt;, thick, blue] (1) -- node[caption] {$\vec{l}$} (2); \draw[-&amp;gt;, thick, blue] (2) -- node[caption] {$\vec{F}$} ++(-2,0); \draw (1,1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_40dd93965962da070055f1882509ad36.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_40dd93965962da070055f1882509ad36.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_40dd93965962da070055f1882509ad36.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_40dd93965962da070055f1882509ad36.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-2,0) rectangle ++ (4,0.5); \draw[] (-2,0) -- ++(4,0); \draw[line width=5pt, black!30] (0,0) -- (0,-1); \draw[thick] (0,-1) circle (2pt) node[left, xshift=-0.5em] {$O$} -- ++ (-60:4); \draw[axis,-&amp;gt;] (0,-1) -- ++ (-60:5) node[below] {$+x$}; \draw[line width=5pt] (0,-1) ++ (-60:1.9) coordinate (1) ++ (-60:-0.1) -- ++ (-60:0.2); \draw[axis] (0,-1) -- ++ (-90:4) node[below] {$$}; \draw[axis,-&amp;gt;](0,-1)++(-60:4)--++(30:2)node[right]{$+\tau$}; \draw[force,-&amp;gt;](1)--++(120:1)node [right, xshift=0.25em]{$d\vec{T}$}; \draw[inforce,-&amp;gt;](1)--++(1,0)node [right]{$d\vec{F}_{in}$}; \draw[force,-&amp;gt;](1)--++(0,-1)node [below]{$dm\vec{g}$}; \contourlength{1mm}; \draw(2,-1)node[magenta]{$\bigotimes$} node[right, xshift=.5em, magenta]{$\vec{M}_{g}$}; \draw(3.5,-1)node[magenta]{$\bigodot$} node[right, xshift=.5em, magenta]{$\vec{M}_{in}$}; \draw[force,-&amp;gt;,magenta](0,-5)--++(0,1)node[above]{\contour{white}{$\vec{\omega}$}}; \draw[force,-&amp;gt;,magenta](-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_43119a55c1cd34c3826b740911dc24b2.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_43119a55c1cd34c3826b740911dc24b2.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_43119a55c1cd34c3826b740911dc24b2.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_43119a55c1cd34c3826b740911dc24b2.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.5] \lineann[1]{0}{1}{$a$} \lineann[2]{0}{1.57}{$x$} \begin{scope}[xshift=1.5cm] \lineannn[-1]{0}{0.15}{$dx$} \end{scope} \begin{scope}[xshift=1cm] \lineann[1]{0}{2}{$r$} \end{scope} \begin{scope}[xshift=1.57cm] \lineann[2]{0}{1.43}{$R$} \end{scope} \draw (0,-0.15) rectangle ++(2,0.3); \draw[fill=magenta] (1.5,-0.15) rectangle ++(0.15,0.3); % \draw (1.15,-0.1) node[below] {$dq$};  % \draw (-4,0) circle (0cm);  \vbLabel{0}{-0.1}{0}; \draw[axis,-&amp;gt;] (0,0) -- ++(4,0) node[right] {$+x$}; \draw[fill=magenta] (3,0) coordinate (Y) circle (2pt); \draw[force,-&amp;gt;] (Y) -- ++ (0.5,0) node[below] {$d\vec{E}$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_47488f6e1662d53d1fd0b56a0fdb8c80.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_47488f6e1662d53d1fd0b56a0fdb8c80.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_47488f6e1662d53d1fd0b56a0fdb8c80.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_47488f6e1662d53d1fd0b56a0fdb8c80.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[line width=2pt] (-0.1,-1,0.2) -- ++(0,1,0); \begin{scope}[canvas is yz plane at x=-0.2] \draw (0,0) rectangle (3,3); \end{scope} \begin{scope}[canvas is yz plane at x=0] \draw[fill=white] (0,0) rectangle (3,3); \draw[transform shape, fill=magenta] (1.5,2) circle (2pt); \end{scope} \begin{scope}[canvas is xz plane at y=3] \draw[fill=white] (0,0) rectangle (-.2,3); \lineann[2]{90}{3}{$a$} \end{scope} \begin{scope}[canvas is xz plane at y=1.5] \lineann[-1.2]{90}{2}{$\frac{2}{3}a$} \draw[force,-&amp;gt;] (3,2) -- ++ (-1,0) node [left] {$\vec{v}$}; \end{scope} \begin{scope}[canvas is xy plane at z=3] \draw[fill=white] (0,0) rectangle (-.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_5771b4e0619c1e603ad266f65caf7801.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_5771b4e0619c1e603ad266f65caf7801.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_5771b4e0619c1e603ad266f65caf7801.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_5771b4e0619c1e603ad266f65caf7801.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw (0,0) circle (1cm); \draw (-4,0) circle (0cm); \draw[axis,-&amp;gt;] (0,0) -- ++(0,1.5) node[above] {$+y$}; \draw[axis,-&amp;gt;] (0,0) -- ++(1.5,0) node[right] {$+x$}; \draw[axis] (0,0) -- ++ (45:1) coordinate (X); \draw[force,-&amp;gt;] (0,0) -- ++ (135+90:0.4) node[below] {$d\vec{E}$}; \draw[fill=magenta] (X) circle (2pt) node [right, xshift=0.5em] %  {$dq(\phi)=dl\cdot\lambda_0\cos\phi$}; \draw[fill=magenta] (0,0) circle (2pt);% node [left] {$P$};  \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_5845947e600c2cf7d80a864445869b34.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_5845947e600c2cf7d80a864445869b34.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_5845947e600c2cf7d80a864445869b34.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_5845947e600c2cf7d80a864445869b34.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \matrix[column sep=2cm] { % \draw[interface] (-0.5,1) rectangle (-0.1,1.5) (0.1,1.5) rectangle (0.5,1);  % \draw[interface] (-0.5,-1) rectangle (-0.1,-1.5) (0.1,-1.5) rectangle (0.5,-1);  % \draw[axis,magenta] (0,-1.5) -- (0,1.5);  % \draw[magenta,-&amp;gt;]  % (0,1.75) -- ++(0,0.5)  % node[above] {$\vec\omega$};  % \draw[magenta,-&amp;gt;] (0.5,1.75) -- ++ (0,0.5)  % node[above] {$\vec{N}$}  % ;  % \draw[fill=magenta, magenta] (-0.5,-0.15) rectangle (0.5,0.15);  % \fill[magenta] (0,-1.25) coordinate (1) circle (2pt) node[below, yshift=-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_59874de63f42d70a120443b2a14e724c.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_59874de63f42d70a120443b2a14e724c.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_59874de63f42d70a120443b2a14e724c.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_59874de63f42d70a120443b2a14e724c.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \fill[magenta] (2,0)++(0,-0.5) rectangle ++ (0.25,-1.5); \fill[magenta] (2.75,0)++(0,-1.5) rectangle ++ (0.25,-0.5); \fill[magenta] (2,0)++(0,-2) rectangle ++ (1,0.25); \draw[black!30, decoration={random steps, amplitude=1.5mm}, decorate] (0,0) -- ++(0,2); \draw[black!30, decoration={random steps, amplitude=1.5mm}, decorate] (4,0) -- ++(0,2); \draw (0,2) -- ++(4,0); \draw (0,0) -- ++(2,0) -- ++ (0,-2) -- ++ (1,0) -- ++ (0,2) -- ++ (1,0); \draw (2.25,0) -- ++ (0,-1.75) -- ++ (0.5,0) -- ++ (0,2.75) -- ++(-0.5,0) coordinate (c); \draw (c) ++ (0,0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_6898e20ace83e782b0455523ca561627.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_6898e20ace83e782b0455523ca561627.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_6898e20ace83e782b0455523ca561627.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_6898e20ace83e782b0455523ca561627.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \clip (-6,-1) rectangle (6,4.25); \draw (0,0) circle (2cm); \fill[magenta] (0,0) circle (2pt) coordinate (c); \fill[magenta] (0,3) circle (2pt) coordinate (o); \draw (0,3) circle (1cm); \draw[axis] (0,0) circle (3cm); \draw[axis] (0,0) -- (0,5); \draw (0,0) ++(150:3) coordinate (oo) circle(1cm); \draw[axis,-&amp;lt;] (0,0) -- ++(150:5)node[left] {$-n$}; \draw[axis] (0,0) -- (0,5); \draw[axis] (oo) -- ++(0,3.5); \draw[axis] (oo) -- ++(0,-3.5) coordinate (phi); \draw[force,-&amp;gt;] (0,0) ++(150:2) -- ++ (150:1.5)node[above] {$\vec{N}$}; \draw[force,-&amp;gt;] (0,0) ++(150:3) -- ++ (240:1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_74135c845602d360a6f6e3ded169806b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_74135c845602d360a6f6e3ded169806b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_74135c845602d360a6f6e3ded169806b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_74135c845602d360a6f6e3ded169806b.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \fill[magenta] (0,0) circle (2pt) node[above, yshift=0.5em] {$O$}; \draw (0,0)++(-0.2,0.2) rectangle ++ (0.4,-3); \lineann[2]{90}{-2.8}{$L, m$} \draw (0,0) -- ++(-40:2) coordinate (g); \fill[magenta] (g) circle (5pt) node [right, xshift=0.5em] {$m$}; \lineann[2]{-40}{2}{$l$} \draw (2,-2) node[blue] {$\bigotimes$} node[right, xshift=.5em] {$\vec{N}$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_8dde484bb03e2b7622644f84c742d3b2.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_8dde484bb03e2b7622644f84c742d3b2.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_8dde484bb03e2b7622644f84c742d3b2.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_8dde484bb03e2b7622644f84c742d3b2.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-2,0) rectangle ++ (5,-0.5); \draw[] (-2,0) -- ++(5,0); \draw[interface] (3,-0.5) rectangle ++ (0.5,5); \draw[] (3,0) -- ++(0,4.5); \draw[] (1,2) coordinate (o) circle (2) node[magenta, scale=1.5] {$\bigotimes$}; \draw (o) pic[&amp;lt;-, magenta,]{carc=100:180:1cm}; \coordinate (1) at (3,2); \coordinate (2) at (1,0); \draw[force, thick, -&amp;gt;] (1) -- ++ (0,1.5) node[left] {$\vec{f}_1$}; \draw[force, thick, -&amp;gt;] (2) -- ++ (1.5,0) node[above] {$\vec{f}_2$}; \draw[force, thick, -&amp;gt;] (o) -- ++ (0,-0.65) node[left] {$m\vec{g}$}; \draw[force, thick, -&amp;gt;] (2) -- ++ (0,0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_a080d120cb4001731aa3edce487d3ebb.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \contourlength{0.5mm}; % \draw[very thick] (0,-1.5) -- (0,1.5);  % \draw[magenta] (0,0) node[] {\contour{white}{$\bigodot$}} node[right, xshift=.5em] {$O$};  % \draw[magenta] (0,1) node[] {\contour{white}{$\times$}};  % % \draw[interface] (-2,0) rectangle (2,-0.25);  % % \draw[thick] (-2,0) -- (2,0);  % % \draw (0,1) circle (1);  % % \draw[fill=magenta] (0,0) circle (2pt) node[above, yshift=3pt] {\contour{white}{$B$}};  % \lineann[1.5]{90}{1}{$x$}  % \begin{scope}[yshift=-1.5cm]  % \lineann[1]{90}{3}{$l$}  % \end{scope}  \draw[fill=magenta] (0,0) circle (5pt) node[above, yshift=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_a92d24ec3cdeb58bf5b268895b375a1a.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-3,2) coordinate (lb) rectangle ++ (6,0.5); \draw[thick] (lb) -- ++(6,0); \draw[magenta, fill=magenta!10] (0,0) circle (2cm); \draw[magenta, fill=magenta] (0,2) circle (2pt); % \draw (0,-2.5) node[blue]{$\bigotimes$} node[right] {$\vec{v}$};  \draw[axis] (-3,0) -- (3,0) node [right] {$+x$}; \draw (0,0) node[magenta, scale=1.35]{$\times$}; \begin{scope}[yshift=-2cm, xshift=0cm] \lineann[4cm]{90}{4}{$l$}; \end{scope} \begin{scope}[yshift=0cm, xshift=0cm] \lineann[3.25cm]{-90}{2}{$R$}; \end{scope} \draw[magenta, fill=magenta!100] (1,0) -- ++(0, 1.73) coordinate (o) -- ++ (-0.1,0) coordinate (I) -- ++ (0,-1.73) coordinate (II) -- cycle; \draw[axis,-&amp;gt;] (4,-1) -- ++(0,3.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_aadcbb54750e6fbda6d7878c76dcc685.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_aadcbb54750e6fbda6d7878c76dcc685.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_aadcbb54750e6fbda6d7878c76dcc685.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_aadcbb54750e6fbda6d7878c76dcc685.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[fill=black!30] (0,0) rectangle (4,2); \draw[fill=white] (0.25,0.25) rectangle (3.75,1.75); \draw[pattern=north west lines, pattern color = blue] (1.9,0.25) rectangle ++(0.25,1.5); \draw (1,1) node {$1$}; \draw (3,1) node {$2$}; \draw[force,-&amp;gt;] (2.15,1) -- ++ (0.5,0); \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_b056f5f8189d1462a8af9e047de19e03.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_b056f5f8189d1462a8af9e047de19e03.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_b056f5f8189d1462a8af9e047de19e03.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_b056f5f8189d1462a8af9e047de19e03.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \contourlength{0.5mm}; \draw[very thick] (0,-1.5) -- (0,1.5); \draw[magenta] (0,0) node[] {\contour{white}{$\bigodot$}} node[right, xshift=.5em] {$O$}; \draw[magenta] (0,1) node[] {\contour{white}{$\times$}}; % \draw[interface] (-2,0) rectangle (2,-0.25);  % \draw[thick] (-2,0) -- (2,0);  % \draw (0,1) circle (1);  % \draw[fill=magenta] (0,0) circle (2pt) node[above, yshift=3pt] {\contour{white}{$B$}};  \lineann[1.5]{90}{1}{$x$} \begin{scope}[yshift=-1.5cm] \lineann[1]{90}{3}{$l$} \end{scope} \draw[fill=magenta] (2,1) circle (2pt); \draw[-&amp;gt;] (2,1) -- ++ (-0.5,0) node[left] {$\vec{v}$}; \draw (-2.5,0) node[blue] {$\bigotimes$} node[right, xshift=.5em] {$\vec{g}$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_b26d1c5772c3d9deaf12c0a78b9d29d0.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface, draw] (-2,-0.5) rectangle ++ (4,0.5); \draw (-0.5,0) rectangle ++ (1,2); \draw[-&amp;gt;] (0,0) -- (0,1.5); \foreach \i in {80,84,...,100}{ \draw (0,0) ++ (\i:1.6) -- ++ (\i:0.1); } \draw (2.8,0.6) circle (0.6); \draw (2.8,0.6) circle (0.3); \draw (3.1,0.6) coordinate (b) -- ++(0,-1.5) coordinate (1); \fill[gray, draw=none] (1) rectangle ++ (-0.25,-0.5); \fill[gray, draw=none] (1) rectangle ++ (0.25,-0.5); \draw (-1.25,0) -- ++ (0,0.5); \draw[fill=white] (-1.8,0.5) rectangle ++ (1.1,0.2); \draw[fill=gray] (-1.4,0.7) rectangle ++ (0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_c1f77bd3799a9fb615ca406b5f5cdffe.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-2,3) rectangle (2,3.5); \draw[thick] (-2,3) -- ++(4,0); % \clip (-6,-1) rectangle (6,4.25);  \draw (0,0) circle (2cm); \draw (0,0) circle (1cm); \draw (-1,0) coordinate (1) -- ++(0,3) coordinate (2); \draw (-2,0) coordinate (3) -- ++(0,-3) coordinate (4); \fill[magenta] (4) rectangle ++(-0.25,-1); \fill[magenta] (4) rectangle ++(0.25,-1); \draw[force,-&amp;gt;] (1) -- ++(0,1) node[left] {$\vec{T}$}; \draw[force,-&amp;gt;] (2) -- ++(0,-1) node[left] {$\vec{T&amp;#39;}$}; \draw[force,-&amp;gt;] (3) -- ++(0,-1) node[left] {$\vec{f}$}; \draw[force,-&amp;gt;] (4) -- ++(0,1) node[left] {$\vec{f&amp;#39;}$}; \draw[] (0,0) coordinate (o) node[magenta, scale=1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_ccea85df9d855199909e36fbf62e1b09.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \fill[magenta!10, draw=none] (0,0) rectangle ++(2,3); \fill[magenta!10, draw=none] (0.8,0) rectangle ++(0.4,-0.5); \draw (0,3.2)--(0,0)--(2,0)--(2,3.2); \draw[magenta!10] (0.8,0) -- ++(0.4,0); \draw[magenta] (1,0.3) circle (2pt) node[above, yshift=0.5em] {$A$}; \draw[magenta] (1,-0.3) circle (2pt) node[below, yshift=-0.5em] {$B$}; \draw[magenta,-&amp;gt;] (1.4,0.3) -- ++(0,-0.5) node[below] {$\vec{v}$}; \draw[magenta,-&amp;gt;] (0.6,-0.3) -- ++(0,-1) node[below] {$\vec{v}_2$}; % Draw line annotation % Input: % #1 Line offset (optional) % #2 Line angle % #3 Line length % #5 Line label % Example:  \lineann[0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpict_f1c1447f755eeda702fd6871d88acfbf.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpict_f1c1447f755eeda702fd6871d88acfbf.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpict_f1c1447f755eeda702fd6871d88acfbf.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpict_f1c1447f755eeda702fd6871d88acfbf.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-1,0) rectangle ++(4,-0.25); \draw[thick] (-1,0) -- ++(4,0); \fill[magenta!10, draw=none] (0,0) rectangle ++(2,2.75); \draw (0,3.2)--(0,0)--(2,0)--(2,3.2); \draw[white] (2,0.5) -- ++(0,0.4); \draw[white] (0,1.5) -- ++(0,0.4); % Draw line annotation % Input: % #1 Line offset (optional) % #2 Line angle % #3 Line length % #5 Line label % Example: \begin{scope}[yshift=0.7cm] \lineann[-2]{90}{1}{$\Deltah$} \end{scope} \fill[magenta!10] (-0.4,1.5) rectangle ++(-0.4,0.4); \fill[magenta!10] (2.8,0.5) rectangle ++(-0.4,0.4); \draw[force,-&amp;gt;] (-0.6,1.7) -- ++ (-1,0) node[left] {$\vec{v}_1$}; \draw[force,-&amp;gt;] (2.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_00701825e5518a065b93a26333f2a2bd.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_00701825e5518a065b93a26333f2a2bd.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_00701825e5518a065b93a26333f2a2bd.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_00701825e5518a065b93a26333f2a2bd.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[fill=magenta!5] plot[domain=0:350, smooth cycle] (\x:3.3+rnd*0.51); \draw[acceleration,-&amp;gt;] (4,0.5) -- node[right]{$\vec{g}$} ++(0,-1); \draw[] (4,-2) node[magenta]{$\bigodot$} node[above, yshift=0.5em] {$\vec{M}$}; \draw (0,2) node [transform shape, scale=1.5] {$\bigotimes$} node[left, xshift=-0.7em] {$O$} coordinate (o); \draw[axis, black!30] (o) -- ++(0,-5) coordinate (o&amp;#39;); \draw[axis, black!30] (o) -- ++(45:-5) coordinate (c&amp;#39;); \draw[-&amp;gt;, thick, blue] (o) -- node[left, yshift=0.4em]{$\vec{l}$} ++(45:-2) node[black, scale=1.5]{$\times$} node[left, xshift=-0.5em] {$C$} coordinate (c); \draw pic[&amp;#34;$\phi$&amp;#34;, draw=orange, &amp;lt;-&amp;gt;, angle eccentricity=1.2, angle radius=1cm] {angle=c&amp;#39;--o--o&amp;#39;}; % \draw (3,0) node [transform shape, scale=2,opacity=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_018e1a6c5cff8a5e04efee49583181db.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=2] \xdef\r{2} \draw (0,3) ellipse (2 and 0.4); \draw (0,0) -- ({\r},3) (0,0) -- (-\r,3); \draw[axis] (-2,3) -- (2,3); \draw[axis, rotate=-10] (0,0) ++(-0.7,1.02) arc (-110:-220:1.05cm and 0.7cm); \draw[axis, -&amp;gt;] (0,0) -- ++(0,3.45) node[above,black] {$+z$}; \def\h{1.11} \def\hh{2.29} \draw[axis] (0,\hh) -- ++(-3,0); \draw[axis] (0,\h) -- ++(-2,0) node[left] {$W_p=0$}; \draw[axis] (0,0) -- ++(-3,0); \draw[axis,&amp;lt;-&amp;gt;] (-2,0) -- node[left, black] {$h_1$} ++(0,\h); \draw[axis,&amp;lt;-&amp;gt;] (-3,0) -- node[left, black] {$h_2$} ++(0,\hh); \draw[fill=black] (-0.49,\h) coordinate (I) circle (1pt); \draw[fill=black] (-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_01ac14d940c4cf18d44265c36b2f97ef.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_01ac14d940c4cf18d44265c36b2f97ef.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_01ac14d940c4cf18d44265c36b2f97ef.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_01ac14d940c4cf18d44265c36b2f97ef.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0a0b178b8956ef1836947b9b06291113.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_0a0b178b8956ef1836947b9b06291113.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0a0b178b8956ef1836947b9b06291113.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_0a0b178b8956ef1836947b9b06291113.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=0.75] \coordinate (0) at (0,0); \coordinate (I) at (-10,0); \coordinate (A) at (2.179,4.5); \coordinate (II) at (5,0); \draw[fill=magenta] (I) circle(2pt) (II) circle(2pt) (A) circle(2pt) (0) circle(2pt); \draw[force,-{Latex[length=3mm,width=2mm]}] (I) -- node[midway,fill=white!20, opacity=0.9] {$\vec{p}_{1-\text{нов}}$} (A); \draw[force,-{Latex[length=3mm,width=2mm]}] (I) -- node[midway,fill=white!20, opacity=0.9] {$m_1\vec{v}_c$} (0); \draw[force,-{Latex[length=3mm,width=2mm]}] (0) -- node[midway,fill=white!20, opacity=0.9] {$m_2\vec{v}_c$} (II); \draw[force,-{Latex[length=3mm,width=2mm]}] (0) -- % node[midway,fill=white!20, opacity=0.9]  % {$$}  (A); \draw[force,-{Latex[length=3mm,width=2mm]}] (A) -- node[midway,fill=white!20, opacity=0.9] {$\vec{p}_{1-\text{нов}}^{\,*},\vec{p}_{2-\text{нов}}^{\,*}$} (0); \draw[force,-{Latex[length=3mm,width=2mm]}] (A) -- node[midway,fill=white!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0b13be4e8715db378383b39398a49b32.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_0b13be4e8715db378383b39398a49b32.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0b13be4e8715db378383b39398a49b32.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_0b13be4e8715db378383b39398a49b32.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \coordinate (A) at (0,0) ; \coordinate (B) at (3,-3) ; \draw[dashed] (A) node [above] {$m_i$} -- (B) node [below] {$m_j$}; \draw[fill=black] (A) circle (2pt) (B) circle (2pt); \draw[-&amp;gt;, &amp;gt;=latex,blue] (A) -- node[midway,fill=white!20, opacity=0.9] {$\vec{F}_{ji}$} ++(-45:1.5); \draw[-&amp;gt;, &amp;gt;=latex,blue] (B) -- node[midway,fill=white!20, opacity=0.9] {$\vec{F}_{ij}$} ++(135:1.5); \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_0d269b0dd6b9cf10e223903bfa3f6c6a.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \begin{scope}[scale=1] \draw (0.5,0) circle (0.28); \draw (2.5,0) circle (0.28); \draw[fill=white] (0,0) rectangle (3,0.3); \draw[line width=2pt] (2.5,0.3) -- ++(0,2) -- ++(-1,0) ++(0,1pt) coordinate (o); \draw[fill=black] (o) -- ++(-90:1.5cm) coordinate (b) circle (2pt); \draw[axis] (o) -- ++ (0,-3); \draw[interface] (-1,-0.3) rectangle ++(5,-0.3); \draw[thick] (-1,-0.3) -- ++(5,0); \draw[force,-&amp;gt;] (b) -- ++(0,-1) node[below, yshift=-1.2em] {$m\vec{g}$}; \draw[force,-&amp;gt;] (b) -- ++(0,1) node[left] {$\vec{T}$}; \draw[acceleration,-&amp;gt;] (-1,2.25) -- node[left] {$\vec{g}$} ++(0,-1); \end{scope} \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_178a4d167043eaad72aacc324d22e369.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_178a4d167043eaad72aacc324d22e369.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_178a4d167043eaad72aacc324d22e369.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_178a4d167043eaad72aacc324d22e369.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, % interface/.style={draw=gray!60,  % % The border decoration is a path replacing decorator.  % % For the interface style we want to draw the original path.  % % The postaction option is therefore used to ensure that the  % % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_19a31db1cc47b0ccf09e943da85b684f.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[black!50] (0,0) circle (2cm); \draw[black,fill=black] (0,0) circle (1pt); \draw[magenta!70, dashed] (0,0) (180:2.5) -- (0:2.5); \draw[magenta!70, dashed] (0,0) (90:2.5) -- (-90:2.5); \draw[blue, -&amp;gt;, &amp;gt;=latex] (0,0) (90:2.5) -- node[left] {$\vec\omega$} (90:3); \contourlength{1.5mm}; \draw[magenta!70, dashed] (-90:1) node[rotate=90] {\contour{white}{Ось $z$}}; \draw[-&amp;gt;, &amp;gt;=latex] (0,0) -- node[midway,fill=white!20, opacity=0.9] {$\vec{r}$} (45:2) coordinate (A); \draw[-&amp;gt;, &amp;gt;=latex] (0,1.414) -- node[midway,fill=white!20, opacity=0.9] {$\vec{r}_\perp$} (A); \draw[-&amp;gt;, &amp;gt;=latex] (0,0) -- node[midway,fill=white!20, opacity=0.9] {$\vec{r}_\parallel$} (0,1.414); \draw[magenta,-&amp;gt;, &amp;gt;=latex] (A) -- ++(45:0.7) node[right, above] {$\vec{e}_r$}; \draw[magenta,-&amp;gt;, &amp;gt;=latex] (A) -- ++(135:0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1a7e4c198761d25cdac23f57a9873178.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_1a7e4c198761d25cdac23f57a9873178.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1a7e4c198761d25cdac23f57a9873178.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_1a7e4c198761d25cdac23f57a9873178.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, axis/.style={densely dashed,gray,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m/.style={rectangle,draw=black,fill=lightgray,minimum size=0.3cm,thin}, plane/.style={draw=black,fill=blue!10}, string/.style={draw=black, thick}, pulley/.style={thick}, ] \matrix[column sep=1cm] { %% Sketch  \draw[plane] (0,-1) coordinate (base) -- coordinate[pos=0.5] (mid) ++(\iangle:3) coordinate (top) |- (base) -- cycle; \path (mid) node[M,rotate=\iangle,yshift=0.25cm] (M) {}; \draw[pulley] (top) -- ++(\iangle:0.25) circle (0.25cm) ++ (90-\iangle:0.5) coordinate (pulley); \draw[string] (M.east) -- ++(\iangle:1.5cm) arc (90+\iangle:0:0.25) -- ++(0,-1) node[m] {}; \draw[-&amp;gt;] (base)++(\arcr,0) arc (0:\iangle:\arcr); \path (base)++(\iangle*0.5:\arcr+5pt) node {$\alpha$}; %%  &amp;amp; %% Free body diagram of M  \begin{scope}[rotate=\iangle] \node[M,transform shape] (M) {}; % Draw axes and help lines  {[axis,-&amp;gt;] \draw (0,-1) -- (0,2) node[right] {$+y$}; \draw (M) -- ++(2,0) node[right] {$+x$}; % Indicate angle.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1d7bb75988e6bd8a0f6bcfa816562687.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_1d7bb75988e6bd8a0f6bcfa816562687.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1d7bb75988e6bd8a0f6bcfa816562687.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_1d7bb75988e6bd8a0f6bcfa816562687.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, % interface/.style={draw=gray!60,  % % The border decoration is a path replacing decorator.  % % For the interface style we want to draw the original path.  % % The postaction option is therefore used to ensure that the  % % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_1e9ce1c564f91a4855080ecfdfbdd1fd.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ axis/.style={densely dashed,black!60,font=\small}, force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},  m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, plane/.style={draw=black!30, very thick, fill=blue!5}, string/.style={draw=black, thick}, pulley/.style={thick}, ] \matrix[column sep=0.5cm] { \begin{scope}[] \xdef\r{3cm} \xdef\rp{5pt} \draw[thick] (0,0) circle(\r); \foreach \i in {0,40,...,360}{ \draw[thick] (0,0) -- (\i:\r); } \draw[fill=black!40] (\r,0) circle (4pt) node [above right] {$m$}; \draw[force, very thick, -&amp;gt;] (\r,0) -- (\r/2,0) node[above] {$\vec{v_0}$}; \draw [axis, -&amp;gt;] (0,0) -- (1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_220a2065d4238d0cf79d0108dea11cb4.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\op{0.1} \xdef\SIZE{10} % \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \foreach \i in {0,1,...,\SIZE} {  % \draw[opacity=\op] (0,\i) node [left] {\i};  % \draw[opacity=\op] (\i,0) node [below] {\i};  % }  % \begin{scope}[xshift=-3cm] % \draw [thick] (0,0) node [left] {$E_1$} -- ++(2,0); % \draw [thick] (0,2.5) node [left] {$E_2$} -- ++(2,0); % \draw[fill=black] (1,2.5) circle (5pt); % \draw [decorate, magenta, decoration={snake}, -&amp;gt;] (0,1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_26245c32f2e768c8ccfbabd80f32ed26.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\R{10cm} \path (0,0) coordinate (1) pic{carc=-30:-150:\R} coordinate (2); \foreach \angle in {-30,-40,...,-90}{ \pgfmathsetmacro\ANGLE{90+\angle} \draw (0,0) ++ (\angle:\R) -- ++ (\angle:0.4) node[below, scale=1.75, rotate={\angle+90}] {\pgfmathprintnumber[fixed, precision=0]{\ANGLE}}; } \foreach \angle in {-90,-100,...,-150}{ \pgfmathsetmacro\ANGLE{-(90+\angle)} \draw (0,0) ++ (\angle:\R) -- ++ (\angle:0.4) node[below, scale=1.75, rotate={\angle+90}] {\pgfmathprintnumber[fixed, precision=0]{\ANGLE}}; } \foreach \angle in {-35,-45,...,-145}{ \draw (0,0) ++ (\angle:\R) -- ++ (\angle:0.2); } % \draw[blue] (0,0) circle (1cm);  % \foreach \angle in {0,10,...,358}{  % \draw (0,0) -- ++ (\angle:1cm);  % }  % \fill[black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_283e9fa567b473e264a2d0129817abe9.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 }, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_28fd5a2ae2138fac1713bc85df36cfb5.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[font=\large] \matrix[column sep=2cm] { \draw[&amp;lt;-&amp;gt;, axis] (1.5,2.5) -- node[above, black] { $L$} ++(3.5,0); \draw[&amp;lt;-&amp;gt;, axis] (0,2.5) -- node[above, black] { $l$} ++(1.5,0); \draw[axis] (0,0) -- ++(0,2.5) (1.5,0) -- ++(0,2.5) (5,0) -- ++(0,2.5); \draw[axis, fill=magenta!10] (1.5,0) rectangle (5,2); \draw[] (0,0) rectangle (5,2); \coordinate (C) at (3.25,1); \path (0,0) -- coordinate (mid) (5,0); \path (1.5,0) -- coordinate (F) ++ (0,2); \draw[acceleration, -&amp;gt;] (mid) ++ (-0.5,-0.5) -- node[below] {$\vec{a}_1$} ++(1,0); \draw[force, -&amp;gt;] (F) -- node[above] {$\vec{N}_1$} ++(0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_29fa2e370310ffb9f24de2b795353964.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_29fa2e370310ffb9f24de2b795353964.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_29fa2e370310ffb9f24de2b795353964.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_29fa2e370310ffb9f24de2b795353964.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \def\rr{0.4} \def\D{4.3} \draw[interface] (0,0) rectangle (3,0); \draw[interface] (0,-0.25) rectangle (3,0); \draw[thick] (0,0) -- (3,0); \draw[axis] (0,\D*\rr) --(3,\D*\rr); \draw[axis] (3,\D*\rr) ++ (\D*\rr,-\D*\rr) arc (0:90:\D*\rr); \draw[axis, -&amp;gt;] ($(3,0)+(\D*\rr,0)$) -- ++(0,-7) node[below] {$x$}; %Верхний блок (с)  \draw[fill=white] (3,0) coordinate (0) circle (\rr); \path (0) -- +(0,\rr) coordinate (Cl) + (\rr,0) coordinate (Cr); \draw[fill=black] (0) circle (2pt); \draw[black!70] (Cr) -- ++ (0,-2) coordinate (B); \draw[black!70] (Cl) -- ++ (-2,0) coordinate (m0); %Груз m_0  \draw[fill=black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_2b6a37bee94251366d712224564f1a6b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_2b6a37bee94251366d712224564f1a6b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_2b6a37bee94251366d712224564f1a6b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_2b6a37bee94251366d712224564f1a6b.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 } ] \draw[axis,-&amp;gt;] (-1,0.5) node[left]{$W_\text{п}=0$} -- ++ (7,0) node[right]{$+x$}; % \draw[interface] (-0.25,-0.25) rectangle ++(-0.25,0.7);  \draw[interface] (-0.5,-0) rectangle ++(6,-0.25); \draw[thick] (-0.5, -0) -- ++(6,0); \draw[fill=magenta!10] (0,0) -- (0,0.5) -- (2,0.5) arc (-90:0:1cm) -- (3.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_2e554fdf03672826b0156a1b26d593c6.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_2e554fdf03672826b0156a1b26d593c6.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_2e554fdf03672826b0156a1b26d593c6.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_2e554fdf03672826b0156a1b26d593c6.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}%[rotate=15]  \draw[axis] (4,-2) -- (6,-2); \draw[axis] (4,3) -- (6,3); \draw[axis] (0,0) -- (6,0); \draw[axis] (0,5) -- (6,5); \draw[pattern=north east lines, pattern color=magenta!60] (3,5) ellipse (1cm and 0.4cm); \contourlength{1mm}; \draw[pattern=north east lines, pattern color=magenta!60] (3,0) ellipse (1cm and 0.4cm); \draw[pattern=north east lines, pattern color=magenta!20, draw=magenta!30] (3,3) ellipse (1cm and 0.4cm); \draw[pattern=north east lines, pattern color=magenta!20, draw=magenta!30] (3,-2) ellipse (1cm and 0.4cm); \draw[magenta] (2,5) -- (2,0); \draw[magenta] (4,5) -- (4,0); \draw[magenta!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_36edc493fc4cb9426153e484772495c0.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_36edc493fc4cb9426153e484772495c0.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_36edc493fc4cb9426153e484772495c0.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_36edc493fc4cb9426153e484772495c0.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_379d36fa016363eb94f25e55aba1b7bb.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_379d36fa016363eb94f25e55aba1b7bb.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_379d36fa016363eb94f25e55aba1b7bb.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_379d36fa016363eb94f25e55aba1b7bb.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, % interface/.style={draw=gray!60,  % % The border decoration is a path replacing decorator.  % % For the interface style we want to draw the original path.  % % The postaction option is therefore used to ensure that the  % % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_39c906cdc803579398465d9c6a364c96.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_39c906cdc803579398465d9c6a364c96.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_39c906cdc803579398465d9c6a364c96.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_39c906cdc803579398465d9c6a364c96.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \draw (0,0) node[left]{$\phi_0$} circle (1cm)  % circle (2cm);  % \draw[fill=black] (0,0) circle (2pt);  % \draw[axis,-&amp;gt;] (0,0) -- (3,0) node[right] {$+r$};  % %  % \lineann[4]{90}{2}{$R_2$};  % \lineann[3]{90}{1}{$R_1$};  \fill[magenta!10] (0,0) circle (2); \fill[white] (0,0) circle (1.75); \draw[black,thick] (0,0) circle (2); \foreach \i in {1.75,2}{ \draw[black!50] (0,0) circle (\i); }; \foreach \angle in {0,10,...,360}{ \draw[black,thick] (0,0) ++ (\angle:1.75) -- ++ (\angle:0.25); }; \draw[thick] (3,0) ++ (0,-2) rectangle ++(0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3d9746d60402a478c68b1bde07c10f5d.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_3d9746d60402a478c68b1bde07c10f5d.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3d9746d60402a478c68b1bde07c10f5d.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_3d9746d60402a478c68b1bde07c10f5d.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \coordinate (A) at (0,0); \coordinate (B) at (0.5,-2); \coordinate (C) at (4,0); \draw[fill=black] (C) circle (1pt) node [right] {$m_i$}; \draw[fill=black] (0,0) circle (1pt) node[left] {$O&amp;#39;$}; \draw[fill=black] (0.5,-2) circle (1pt) node[left] {$O$}; \draw[-&amp;gt;, &amp;gt;=latex] (A) -- node [above] {$\vec{r}\zi$} (C); \draw[-&amp;gt;, &amp;gt;=latex] (B) -- node [above] {$\vec{r}_i$} (C); \draw[-&amp;gt;, &amp;gt;=latex] (B) -- node [left] {$\vec{\rho}$} (A); \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3da8b9b870b963f0b12178d358336f5f.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_3da8b9b870b963f0b12178d358336f5f.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3da8b9b870b963f0b12178d358336f5f.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_3da8b9b870b963f0b12178d358336f5f.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \matrix[column sep=0.3cm] { \begin{scope}[] \xdef\r{1.5cm} \xdef\rp{3pt} \node [shape=circle,draw] (c) at (0,0) [minimum size=\r*2] {}; \draw [axis, -&amp;gt;] (0,0) -- (\iangle:\r+2cm) node[anchor=south] {$+y$}; \draw [axis, -&amp;gt;] ($(\iangle:\r)!2cm!90:(0,0)$) --($(\iangle:\r)!2cm!270:(0,0)$) node[anchor=south] {$+x$}; \draw [axis, -&amp;gt;] (0,-\r) -- (0,2*\r) node[anchor=south] {ось}; \draw [axis, -&amp;gt;] (-\r,0) -- (1.5*\r,0) node[below, xshift=1em] {экватор}; \draw [force, -&amp;gt;] (0,\r) -- (0,\r+2em) node[left] {$\vec{\omega}$}; \coordinate (o) at (\iangle:\r); \draw[force,-&amp;gt;] (o) -- ++(\iangle:0.5cm) node[above] {$\vec{v}_0$}; {[axis,&amp;lt;-] \draw[solid,shorten &amp;gt;=0.5pt] (\iangle:\arcr) arc(\iangle:0:\arcr); \node at (0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3ea0359e2c6f1d59021ae960331e4d11.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_3ea0359e2c6f1d59021ae960331e4d11.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_3ea0359e2c6f1d59021ae960331e4d11.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_3ea0359e2c6f1d59021ae960331e4d11.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} % \xdef\SIZE{10}  % \draw[step=1.0,blue,thick] (0,0) grid (\SIZE,\SIZE); % \draw[step=0.5,blue,very thin] (0,0) grid (\SIZE,\SIZE);  % \foreach \i in {0,1,...,\SIZE} { % \draw (0,\i) node [left] {\i}; % \draw (\i,0) node [below] {\i}; % }  % resonator  \draw [fill=black!\darkness] (5,0) rectangle ++(0.25,1); \coordinate (res-right-right) at (5.25,0.5); \coordinate (res-right-left) at (5,0.5); \coordinate (res-right) at (5.12,0.5); \draw [fill=black!10] (3,0) rectangle ++(-0.25,1); \coordinate (res-left-left) at (2.75,0.5); \coordinate (res-left-right) at (3,0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_43ea12194f3caf9950ad08f0143f07f2.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_43ea12194f3caf9950ad08f0143f07f2.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_43ea12194f3caf9950ad08f0143f07f2.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_43ea12194f3caf9950ad08f0143f07f2.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \begin{scope}[xscale=1, rotate=-30] \draw (0.5,0) circle (0.28); \draw[acceleration,-&amp;gt;] (1,3) -- node[above] {$\vec{b}$} ++ (1,0); \draw[axis,-&amp;gt;] (-1,2.7) -- ++ (3,0) node[right] {$+x$}; \draw[axis,&amp;lt;-] (-1,4) node[above] {$+y$} -- ++ (0,-3.55) ; \draw (2.5,0) circle (0.28); \draw[fill=white] (0,0) rectangle (3,0.3); \draw[line width=2pt] (2.5,0.3) -- ++(0,2) -- ++(-1,0) ++(0,1pt) coordinate (o); \draw[fill=black] (o) -- ++(-120:1.5cm) coordinate (b) circle (2pt); \draw[axis] (o) -- ++ (0,-3); \draw[interface, pattern = north west lines,] (-1,-0.3) rectangle ++(5,-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_44a19a9e8e1460d796385c679c85fbb1.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_44a19a9e8e1460d796385c679c85fbb1.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_44a19a9e8e1460d796385c679c85fbb1.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_44a19a9e8e1460d796385c679c85fbb1.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, % interface/.style={draw=gray!60,  % % The border decoration is a path replacing decorator.  % % For the interface style we want to draw the original path.  % % The postaction option is therefore used to ensure that the  % % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_47aff02a08362232a2531b440aa23ffe.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_47aff02a08362232a2531b440aa23ffe.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_47aff02a08362232a2531b440aa23ffe.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_47aff02a08362232a2531b440aa23ffe.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw plot[domain=0:350, smooth cycle] (\x:2+rnd*0.5); \fill[magenta] (0,0) circle (2pt) node [right] {$C(x_c,y_c,z_c)$}; \fill[blue] (0,1) rectangle ++(0.2,0.2) node[above] {$m_i$}; \draw[-&amp;gt;] (0.2,1.1) -- (1,1); \fill[magenta] (1,0.9) rectangle ++(0.2,0.2) node[above] {$dm$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_493a7292d8c2f4b063d006bc907c4acb.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.25] \xdef\a{2} \xdef\b{1} \xdef\angle{45} \pgfmathsetmacro{\e}{sqrt(1-\b^2/\a^2)}%  \pgfmathsetmacro{\p}{\b^2/\a)}%  \pgfmathsetmacro{\c}{sqrt(\a^2-\b^2)}%  % \draw[dashed, black!40] (1.311,0) -- ++(0,0.76); %  % \draw[black, thick] (1.31,-.1) node[below,xshift=0.35em] {$n_{ellipse}$} -- ++(0,0.2);  % \draw[dashed, black!40] (30:1) -- ++(-{cos(30)},0);  % \draw[thin,samples=200,domain=0:360,smooth,variable=\x,magenta] plot ({\a*sin(\x)},{\b*cos(\x)});  \draw[thin,samples=200,domain=0:360,smooth,variable=\x,magenta] plot ({\b*sin(\x)},{\b*cos(\x)}); \draw[thin,samples=200,domain=0:360,smooth, xshift=-{\c}cm,variable=\phi,magenta]%  plot ({\phi}:{\p/(1-\e*cos(\phi))}); \begin{scope}[rotate around={30:(0,0)}] \draw[black,-&amp;gt;, thick] (0,0) -- (1.5,0) node[above, xshift=1em] {$\vec{E}$}; \draw[black, thick] (1,-0.1) node[left, xshift=-0.3em, yshift=0.3em] {$n_0$} -- ++(0,0.2); \draw[black, thick] (1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_4a31524ebc6ae863032ea2318873f097.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_4a31524ebc6ae863032ea2318873f097.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_4a31524ebc6ae863032ea2318873f097.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_4a31524ebc6ae863032ea2318873f097.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\opa{0.2} \xdef\SIZE{6} \xdef\setka{0} \input{setka} \draw[ domain=0:5*pi, smooth,thick, variable=\x, samples=100, black, dashed, ] plot ({\x/pi},{sin(\x r)/2}); % \draw[  % domain=0:5*pi,  % smooth,thick,  % variable=\x,  % samples=100,  % magenta,  % % yshift=3cm  % ] plot ({\x/pi},{sin((\x) r)});  \draw[ domain=pi:5*pi, smooth,thick, variable=\x, samples=100, black, dashed, % yshift=3cm  ] plot ({\x/pi},{-sin((\x) r)/2}); \draw[magenta,very thick] (1,0)-- (5,0); \begin{scope}[xshift=0cm, yshift=0.5cm] \lineann[0.5]{0}{1}{сдвиг\\ фазы}{white} \end{scope} \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_4b703b20258cec421b6e242821ca7ca7.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_4b703b20258cec421b6e242821ca7ca7.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_4b703b20258cec421b6e242821ca7ca7.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_4b703b20258cec421b6e242821ca7ca7.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[-&amp;gt;] (0,-0.2) -- (0,6.5) node[above]{$T(l)$}; \draw[-&amp;gt;] (-0.2,0) -- (10,0) node[right]{$l$}; \draw[variable=\l, cyan,line width=1pt] plot[domain=0.03:6.5, samples=300, ] (1.5*\l,{sqrt((1+\l*\l)/\l)}); \fill[magenta] (0.246,2.5) coordinate (1) circle (2pt); \fill[magenta] (9.128,2.5) coordinate (2) circle (2pt); \draw[axis, very thin] (1) -- ++(0,-2.5) coordinate (l1); \draw[axis, very thin] (2) -- ++(0,-2.5) coordinate (l2); \fill[magenta] (0.246,2.5) circle (2pt); \fill[magenta] (9.128,2.5) circle (2pt); \draw ($(l1)+(0,5pt)$) -- ($(l1)-(0,5pt)$) node[below]{$l_1$}; \draw ($(l2)+(0,5pt)$) -- ($(l2)-(0,5pt)$) node[below]{$l_1$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5bea1efc98f128b6f80820999ca30a6c.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_5bea1efc98f128b6f80820999ca30a6c.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5bea1efc98f128b6f80820999ca30a6c.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_5bea1efc98f128b6f80820999ca30a6c.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[draw=none, use as bounding box] (-5mm,-5mm) rectangle (5mm,5mm); \def\iangle{-10}; \def\rule{35mm}; % \draw[axis, opacity=0.5] (-20mm,0) -- (20mm,0);  \coordinate (0) at (0,0); % \draw[axis, line width = 0.3pt, -&amp;gt;] (-10mm, -12.5mm) -- ++(20mm, -0mm) node[right, scale=0.8]{$y$};  % \draw[axis, line width = 0.3pt, -&amp;gt;, color=black!30] (0, -12.5mm) -- ++ (0, -30mm) node[below, scale=0.8, black]{$x$};  \draw[interface] (-30mm,-50mm) rectangle ++(60mm,-2mm); \draw[thin, black!50] (-30mm,-50mm) -- ++(60mm,0); \foreach \x in {0,90,...,270} { \draw[line width=8mm/10, color=black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5d3f74626f94f3e93a3f20296241b14a.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_5d3f74626f94f3e93a3f20296241b14a.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5d3f74626f94f3e93a3f20296241b14a.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_5d3f74626f94f3e93a3f20296241b14a.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \begin{scope}[scale=1, rotate=30] \draw (0.5,0) circle (0.28); \draw[acceleration,-&amp;gt;] (1,3) -- node[above] {$\vec{b}$} ++ (1,0); \draw[axis,-&amp;gt;] (-1,3) -- ++ (5,0) node[right] {$+x$}; \draw[axis,&amp;lt;-] (-1,4) node[above] {$+y$} -- ++ (0,-3.55) ; \draw (2.5,0) circle (0.28); \draw[fill=white] (0,0) rectangle (3,0.3); \draw[line width=2pt] (2.5,0.3) -- ++(0,2) -- ++(-1,0) ++(0,1pt) coordinate (o); \draw[fill=black] (o) -- ++(-150:1.5cm) coordinate (b) circle (2pt); \draw[axis] (o) -- ++ (0,-3); \draw[interface, pattern = north west lines,] (-1,-0.3) rectangle ++(5,-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5df1c68da7da63fdb8f40e5ef5a34e1f.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_5df1c68da7da63fdb8f40e5ef5a34e1f.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_5df1c68da7da63fdb8f40e5ef5a34e1f.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_5df1c68da7da63fdb8f40e5ef5a34e1f.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_61335de9237b7d60a6bb94aa8f380276.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_61335de9237b7d60a6bb94aa8f380276.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_61335de9237b7d60a6bb94aa8f380276.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_61335de9237b7d60a6bb94aa8f380276.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ axis/.style={densely dashed,black!60,font=\small}, force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},  m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, plane/.style={draw=black!30, very thick, fill=blue!5}, string/.style={draw=black, thick}, pulley/.style={thick}, ] \matrix[column sep=0.5cm] { \begin{scope}[] \xdef\r{1.5cm} \xdef\rp{3pt} \node [shape=circle,draw] (c) at (0,0) [minimum size=\r*2] {}; \draw [axis, -&amp;gt;] (0,0) -- (60:\r+2cm) node[anchor=south] {$+y$}; \draw (0,0) -- (60:\r) circle (\rp) node[below, pos=1.3] {$z$}; \draw [thick] (60:\r) +(-135:\rp)--+(45:\rp); \draw [thick] (60:\r) +(135:\rp)--+(-45:\rp); \draw [axis, -&amp;gt;] ($(60:\r)!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_64cde4d9fc6007a37177f7b25b78d010.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_64cde4d9fc6007a37177f7b25b78d010.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_64cde4d9fc6007a37177f7b25b78d010.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_64cde4d9fc6007a37177f7b25b78d010.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\opa{0.2} \xdef\SIZE{6} \xdef\setka{0} \ifx\setka\undefined {} \else \if\setka1 \draw[step=1.0,blue,thick, opacity=\opa] (0,0) grid (\SIZE,\SIZE); \draw[step=0.5,blue,very thin, opacity=\opa] (0,0) grid (\SIZE,\SIZE); \foreach \i in {0,1,...,\SIZE} { \draw (0,\i) node [left, opacity=\opa] {\i}; \draw (\i,0) node [below, opacity=\opa] {\i}; } \else {} \fi \fi % \coordinate (rot) at (3,3);  % \begin{scope}[rotate around={-25:(rot)}, every node/.style={rotate=-25}]  % \node [draw, shape=rectangle, fill=white, minimum width=0.25cm, minimum height=2cm, anchor=center] at (0,3) (res1) {};  % \node [draw, shape=rectangle, fill=white, minimum width=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_68e60be1ac4a0b641b9a101dd3f6c02e.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[scale=1.25] \draw[black,-&amp;gt;, thick] (0,0) -- (1,1) node[above, xshift=1em] {$\vec{E}$}; \draw[dashed, black!50] (1,0) -- (1,1); \draw[dashed, black!50] (0,1) -- (1,1); \draw[black,-&amp;gt;, thin] (0,0) -- (1.5,0) node [right] {$E_x$}; \draw[black,-&amp;gt;, thin] (0,0) -- (0,1.5) node [above] {$E_y$}; \draw[black,-,thick] (0,0) -- ++(1,0); \draw[black,-,thick] (0,0) -- ++(0,1); \draw[black,thick] (1,-.1) node[below] {${E}_1$} -- ++(0,0.2); \draw[black, thick] (-.1,1) node[left] {${E}_2$} -- ++(0.2,0); \begin{scope}[xshift=2.5cm] \draw[-&amp;gt;] (0,0) -- (4,0) node[right] {$z$}; \draw[-&amp;gt;] (0,0) -- (0,1.5) node[above] {$E_y$}; \draw[smooth, thick, variable=\x, samples at={0,0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_6d8df87b606ebf5e503454e378a76395.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_6d8df87b606ebf5e503454e378a76395.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_6d8df87b606ebf5e503454e378a76395.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_6d8df87b606ebf5e503454e378a76395.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \xdef\darkness{0}  % \xdef\op{0.1}  % \xdef\SIZE{10}  % \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \foreach \i in {0,1,...,\SIZE} {  % \draw[opacity=\op] (0,\i) node [left] {\i};  % \draw[opacity=\op] (\i,0) node [below] {\i};  % }  \begin{scope}[xshift=-3cm] \draw [thick] (0,0) node [left] {$E_1$} -- ++(2,0); \draw [thick] (0,2.5) node [left] {$E_2$} -- ++(2,0); \draw[fill=black] (1,2.5) circle (5pt); \end{scope} \begin{scope}[xshift=0cm] \draw [thick] (0,0) node [left] {$E_1$} -- ++(2,0); \draw [thick] (0,2.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_6db2df06990962d3386aa77a474dba63.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_6db2df06990962d3386aa77a474dba63.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_6db2df06990962d3386aa77a474dba63.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_6db2df06990962d3386aa77a474dba63.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 }, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_70edc45308a125aef04abc79f496e53b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_70edc45308a125aef04abc79f496e53b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_70edc45308a125aef04abc79f496e53b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_70edc45308a125aef04abc79f496e53b.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_71023d8580c4531be9666eaaa37148a9.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_71023d8580c4531be9666eaaa37148a9.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_71023d8580c4531be9666eaaa37148a9.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_71023d8580c4531be9666eaaa37148a9.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \draw[fill=black] (-4,-2) coordinate (I) circle (1pt);  % \draw[fill=black] (0,0) coordinate (II) circle (1pt);  % \draw[fill=black] (4,-2) coordinate (III) circle (0pt);  \draw[interface] (0,0) rectangle (12,-0.5); \draw[thick] (0,0) -- (12,-0); \draw[axis,-&amp;gt;] (2.05,0.25) -- ++(0,3) node[above] {$+y$}; \draw[axis,-&amp;gt;] (2.05,0.25) -- ++(3,0) node[right] {$+x$}; \draw[force,-&amp;gt;] (2.05,0.5) -- ++(-1,0) node[left] {$\vec{v}^\text{ п}$}; \contourlength{1mm}; \begin{scope}[rotate=-45] \draw[] (1,1.5) rectangle ++(0.3,3); \draw[fill=magenta] (1,3) rectangle ++ (0.3,0.4); \draw[force,-&amp;gt;] (1.15,3.4) -- ++(0,2) node[right] {$\vec{v&amp;#39;}_0$}; \node[below] at (1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_74bcdd4ddb7b853839ee34f3fdd760a4.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_74bcdd4ddb7b853839ee34f3fdd760a4.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_74bcdd4ddb7b853839ee34f3fdd760a4.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_74bcdd4ddb7b853839ee34f3fdd760a4.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!70 } ] \begin{scope}[xscale=-1] \node[] (b) at (-0.35,0) {}; \node[] (d) at (7,0) {}; % \node[above, yshift=1em] at (b) {$m_1$};  \node[] (c) at (4,0) {}; \node[above, yshift=1em] at (c) {$M$}; \node[above, yshift=1em] at (d) {$m$}; % \draw[interface] (0,2.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_7a1f21f9db98e36bfccffc4a41d6cd47.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ media/.style={font={\footnotesize\sffamily}}, wave/.style={ decorate,decoration={snake,post length=1.4mm,amplitude=2mm, segment length=1mm},thick}, interface/.style={ postaction={draw,decorate,decoration={border,angle=-45,amplitude=0.3cm,segment length=1.3mm}}, }, ] % \begin{scope}[xshift=0cm]  % \draw (0,0.5) rectangle node[above, yshift=1em] {1} ++(1,0.5);  % \end{scope}b  % \begin{scope}[xshift=-0.5cm]  % \draw (0,0.5) rectangle node[above, yshift=1em] {1} ++(0.5,0.5);  % \end{scope}  % \begin{scope}[xshift=0.5cm]  % \draw (0,0.5) rectangle node[above, yshift=1em] {2} ++(0.5,0.5);  % \end{scope}  % \draw[magenta, line width=1pt] (0,0.75) -- ++ (0.5,0);  \draw[magenta, line width=1pt] (1,0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_81a7f1aa0af6513259e7b7314fdf73ce.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_81a7f1aa0af6513259e7b7314fdf73ce.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_81a7f1aa0af6513259e7b7314fdf73ce.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_81a7f1aa0af6513259e7b7314fdf73ce.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_81bc83708b6b611ad41d0f71c03ec67f.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_81bc83708b6b611ad41d0f71c03ec67f.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_81bc83708b6b611ad41d0f71c03ec67f.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_81bc83708b6b611ad41d0f71c03ec67f.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \def\iangle{-10}; \def\rule{35mm}; \draw[axis, opacity=0.5] (-30mm,0) -- (30mm,0); \coordinate (0) at (0,0); \begin{scope} \node[fill=black!10, opacity=0.1] (rect) at (0) [draw,thick,minimum width=15mm,minimum height=25mm] {}; \draw[fill=black, opacity=0.1] ({-15mm/2+2mm},{25mm/2-2mm}) circle (4mm/10); \draw[fill=black, opacity=0.1] ({15mm/2-2mm},{25mm/2-2mm}) circle (4mm/10); \draw[fill=black, opacity=0.1] ({0},{-25mm/2+3mm}) circle (4mm/10); \draw[color=black!10,fill=black!2] ({-2mm},{-25mm/2+0mm}) rectangle ({2mm},{-25mm/2-\rule}); \draw[color=black!2,fill=black!2] ({-1.9mm},{-25mm/2+1mm}) rectangle ({1.9mm},{-15mm}); \foreach \y in {0,1,...,35} { \draw[color=black!20] (-0.5mm,-\y mm - 25mm/2) -- (0.5mm,-\y mm - 25mm/2) node[right, color=black!40, scale=0.2] {$\y$}; } \draw[color=black!10,fill=black!2, path fading=north, bottom color=white, top color=black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8894c955d6a9463132706939a3b56633.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_8894c955d6a9463132706939a3b56633.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8894c955d6a9463132706939a3b56633.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_8894c955d6a9463132706939a3b56633.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, axis/.style={densely dashed,gray,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m/.style={rectangle,draw=black,fill=lightgray,minimum size=0.3cm,thin}, plane/.style={draw=black,fill=blue!10}, string/.style={draw=black, thick}, pulley/.style={thick}, acceleration/.style={&amp;gt;=open triangle 60,draw=blue,fill=blue}, inforce/.style={force,double equal sign distance=2pt}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, ] \draw[draw=none, pattern=horizontal lines, pattern color=black!6] (0,-2) rectangle (3,2); \draw[thin] (0,-2) -- (0,2); \draw[force, &amp;lt;-] (0,1.7) -- node[below] {$\vec{F}$} (3,1.7); \draw[thin] (3,-2) -- (3,2); \draw[axis,&amp;lt;-&amp;gt;] (0,2.1) -- node[above, black] {$l$} (3,2.1); \draw (0,1) .. controls (1,0.8) and (2,0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_88af2314982f609eabfecd73c6b34716.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_88af2314982f609eabfecd73c6b34716.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_88af2314982f609eabfecd73c6b34716.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_88af2314982f609eabfecd73c6b34716.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_8a3f2c65deb369fcd4d42de6ebc877aa.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, % interface/.style={draw=gray!60,  % % The border decoration is a path replacing decorator.  % % For the interface style we want to draw the original path.  % % The postaction option is therefore used to ensure that the  % % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8b660f8b9295a0eb0b6f8688f6a70698.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_8b660f8b9295a0eb0b6f8688f6a70698.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8b660f8b9295a0eb0b6f8688f6a70698.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_8b660f8b9295a0eb0b6f8688f6a70698.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \coordinate (A) at (0,0); \coordinate (0) at (0,-3); \coordinate (B) at (3,-3); \coordinate (A&amp;#39;) at (0,0);%(1,-1);  \coordinate (B&amp;#39;) at (3,-3);%(2,-2);  \draw %  (A&amp;#39;) node [above right] {$m_1$}%  % (A&amp;#39;) node [below left] {$x_1$}%  % (B&amp;#39;) node [below left] {$x_2$}%  (B&amp;#39;) node [above right] {$m_2$}; \draw[axis,-&amp;gt;] (A) -- (B);% node[above right] {$+x$};  \draw[fill=black] (A&amp;#39;) circle (2pt) (B&amp;#39;) circle (2pt) (0) circle (2pt) node[below] {$O$}; \draw[-&amp;gt;, &amp;gt;=latex,blue] (A) -- node[midway,fill=white!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8e5bf23930348a179b322a890a918e06.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_8e5bf23930348a179b322a890a918e06.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_8e5bf23930348a179b322a890a918e06.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_8e5bf23930348a179b322a890a918e06.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[math3d] % \draw (0,0) node[transform shape, rotate=90, scale=2, blue] {$S$};  \draw[pattern=north east lines, pattern color=blue] (0,0) rectangle (90pt,50pt); \draw[fill=white] (10pt,2pt) rectangle (80pt,50pt); \begin{scope} \lineann[1]{90}{50pt}{H=50 mm} \end{scope} \begin{scope}[xshift=90pt, yshift=2pt] \lineann[-1]{90}{48pt}{h=48 mm} \end{scope} \begin{scope}[xshift=0pt, yshift=-10pt] \lineann[0]{0}{90pt}{2R=90 mm} \end{scope} \begin{scope}[xshift=10pt, yshift=50pt] \lineann[0.5]{0}{70pt}{2r=70 mm} \end{scope} % Draw line annotation % Input: % #1 Line offset (optional) % #2 Line angle % #3 Line length % #5 Line label % Example: % \lineann[1]{30}{2}{$L_1$}  \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_918a5448683c165636b63f8867ff8f65.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_918a5448683c165636b63f8867ff8f65.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_918a5448683c165636b63f8867ff8f65.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_918a5448683c165636b63f8867ff8f65.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 }, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_91f8653dd3b3b317c120923b7bf51f2a.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ x={(1cm*2,0cm)}, y={(0,1cm*2)}, z={(0,-0.2cm*2)}, rotate=90+180, ] %Ось координат  \draw[dashed] (0,-2, 0) -- (0,2,0); %Луч  \draw[color=orange, thick] (0,0,0) -- (xyz spherical cs:radius=8,longitude=-45,latitude=-85) coordinate (*); \draw[color=black, thick,-&amp;gt;] (xyz spherical cs:radius=8,longitude=-45,latitude=-85) -- (xyz spherical cs:radius=6,longitude=-45,latitude=-85) node [above] {$\vec{k}$}; \begin{scope}[ canvas is xz plane at y=0 ] \draw[axis] (0,0) circle (1); \draw[vec line] (0,0) -- (180:1) coordinate (A); \draw[vec] (*) -- ++(180:0.5) coordinate (np); \end{scope} \begin{scope}[ canvas is xy plane at z=0] \draw (0,0) ellipse (1 and 1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_92327b1f04223a30169a950b366a13f9.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_92327b1f04223a30169a950b366a13f9.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_92327b1f04223a30169a950b366a13f9.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_92327b1f04223a30169a950b366a13f9.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, acceleration/.style={&amp;gt;=open triangle 60,draw=blue,fill=blue}, inforce/.style={force,double equal sign distance=2pt}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, plank/.style={ fill=black!60, draw=black, minimum width=3cm, inner ysep=0.1cm, outer sep=0pt, yshift=0.75cm, pattern = north east lines, pattern color=gray!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_940ed8e774c45eca600dd25c720d838b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_940ed8e774c45eca600dd25c720d838b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_940ed8e774c45eca600dd25c720d838b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_940ed8e774c45eca600dd25c720d838b.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!70 } ] \matrix[column sep=2cm] { \begin{scope}[rotate=14] \draw[force,-&amp;gt;] (0,0) coordinate (a) -- node[midway,fill=white!20, opacity=0.9] {$2\vec{v}_c$} (4,0); \draw[force,-&amp;gt;] (0,0) -- node[midway,fill=white!20, opacity=0.9] {$\vec{p}_1$} (1,2) coordinate (b); \draw[force,-&amp;gt;] (1,2) -- node[midway,fill=white!20, opacity=0.9] {$\vec{p}_2$} (4,0) coordinate (c); \draw pic[&amp;#34;$\Theta_1$&amp;#34;,draw=magenta,-&amp;gt;,angle eccentricity=1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9a0faa435046cf2cd34f1fb2b38a7150.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_9a0faa435046cf2cd34f1fb2b38a7150.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9a0faa435046cf2cd34f1fb2b38a7150.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_9a0faa435046cf2cd34f1fb2b38a7150.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \foreach \x in {0,0.25,...,4} { \draw[black!20,latex-] (\x,0) -- ++ (0,4); } \draw[draw=none] (4,0) -- node[right]{$\vec{E}$} ++ (0,4); \draw (0,0) -- node[below] {Катод} ++(4,0); \draw (0,4) -- node[above] {Анод} ++(4,0); \draw[dashed,-&amp;gt;] (-1,0) -- ++(0,4) node[above] {$+x$}; \draw (-1.1,0)--node [below] {$0$}(-0.9,0); \draw[-latex] (2,2) -- ++ (0,1) node [above, fill=white] {$\vec{F}_L$}; \draw[fill=magenta] (2,2) circle (4pt); \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_9aaad8a23cff26a8b6be9b6c61d7bdce.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw (0.2,0.2) -- ++(3,0) -- ++(0,3) -- ++ (-3,0) --cycle; \draw[fill=white] (0,0) -- ++(3,0) -- ++(0,3) -- ++ (-3,0) --cycle; \draw[fill=white] (0,3) -- ++(0.2,0.2) -- ++(3,0) -- ++ (-0.2,-0.2) --cycle; \draw[fill=white] (3,0) -- ++(0.2,0.2) -- ++(0,3) -- ++ (-0.2,-0.2) --cycle; \draw[force,-&amp;gt;] (1.5,1.5) -- ++(0,0.7) node[above] {$\vec{F}_\text{L}$};% {$\vec{F}_\text{л}$}; \draw[force,-&amp;gt;] (1.5,1.5) -- ++(0,-0.7) node[below] {$\vec{F}_\text{K}$};% {$\vec{F}_\text{л}$}; \draw[force,-&amp;gt;] (1.5,1.5) node[black,scale=1.5, fill=white] {$\oplus$} -- ++(0.7,0) node[right] {$\vec{v}$}; \foreach \i in {0.2,0.5,...,3.4} { \node[above, yshift=3pt] at (\i,3) {$+$}; } \foreach \i in {0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9b2ac3c28b83ee02979e696f8a4571fe.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_9b2ac3c28b83ee02979e696f8a4571fe.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9b2ac3c28b83ee02979e696f8a4571fe.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_9b2ac3c28b83ee02979e696f8a4571fe.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, acceleration/.style={&amp;gt;=open triangle 60,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_9e2045409fc7306003a5fa5aeb9d2eee.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!70 } ] \draw[force,-&amp;gt;] (0,0) coordinate (a) -- node[midway,fill=white!20, opacity=0.9] {$(m_1+m_2)\vec{v}_c$} (4,0); \draw[force,-&amp;gt;] (0,0) -- node[midway,fill=white!20, opacity=0.9] {$\pIn$} (2,2) coordinate (b); \draw[force,-&amp;gt;] (b) -- node[midway,fill=white!20, opacity=0.9] {$\pIIn$} (4,0) coordinate (c); \draw pic[&amp;#34;$\Phi$&amp;#34;,draw=magenta,-&amp;gt;,angle eccentricity=1.5,angle radius=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_aba0f4aaa1dd49cffc5f8a107b360566.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_aba0f4aaa1dd49cffc5f8a107b360566.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_aba0f4aaa1dd49cffc5f8a107b360566.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_aba0f4aaa1dd49cffc5f8a107b360566.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[x={(0.866cm,-0.5cm)}, y={(0.866cm,0.5cm)}, z={(0cm,1cm)}, scale=1.0, %Option for nice arrows  &amp;gt;=stealth, %  inner sep=0pt, outer sep=2pt,%  axis/.style={thick,-&amp;gt;, dashed}, wave/.style={thick,color=#1,smooth}, polaroid/.style={fill=black!60!white, opacity=0.3}, ] % Colors  \colorlet{darkgreen}{green!50!black} \colorlet{lightgreen}{green!80!black} \colorlet{darkred}{red!50!black} \colorlet{lightred}{red!80!black} % Frame  \coordinate (O) at (0, 0, 0); % \draw[axis] (O) -- +(0, 2.5, 0) node [right] {+y};  % \draw[axis] (O) -- +(0, 0, 2) node [above] {+z};  \begin{scope}[canvas is yz plane at x = -6, every node/.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_ae151cd0b76c6bd3b7180e73c82bc44b.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_ae151cd0b76c6bd3b7180e73c82bc44b.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_ae151cd0b76c6bd3b7180e73c82bc44b.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_ae151cd0b76c6bd3b7180e73c82bc44b.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \def\angle{50} % \draw (0,2) coordinate (o) circle (2);  % \draw (o) circle (0.5);  % \draw (0,0) -- (5,6);  \draw[interface] (-6,6.25) rectangle (6,6); \draw[thick] (-6,6) --(6,6); \coordinate (cc) at (-6,0); \draw[fill=white] (cc) circle (2pt); \draw[axis, -&amp;gt;] (cc) -- ++ (\angle:7) node[above,black] {$+n$}; \draw[axis, -&amp;gt;] (0,0) -- + (0,7) node[above,black] {$+x$}; \draw[black, dotted] (0,0) coordinate (0) arc (0:90:6); \draw[fill,black] (0) ++ (0,4) coordinate (m1) circle (3pt); \draw[fill,gray] (0) circle (3pt); \draw[fill,black] (cc) ++ (\angle:6) coordinate (m2) circle (3pt); \draw[force,-&amp;gt;] (m1) -- ++ (0,1) node[right] {$\vec{v}$}; \draw[force,-&amp;gt;] (m1) -- ++ (0,-1) node[right] {$\vec{f}_R$}; \draw[force,-&amp;gt;] (m2) -- ++ (90+\angle:1) node[above] {$\vec{v}$}; \draw[force,-&amp;gt;] (m2) -- ++ (180+\angle:1) node[below] {$\vec{f}_R$}; \draw[axis, -&amp;gt;] (m2) -- ++ (\angle+90:3.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_af04e9bb9583be38fd9aad1a24c90c75.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \def\angle{50} % \draw (0,2) coordinate (o) circle (2);  % \draw (o) circle (0.5);  % \draw (0,0) -- (5,6);  \draw[interface] (0,6.25) rectangle (6,6); \draw[thick] (0,6) --(2.85,6) (3.15,6) --(6,6); \draw[interface] (0,6.25) rectangle (6,6); \draw [interface, draw=black] (2.85,6) rectangle (3.15,4); \def\rr{0.8} % \draw[axis] (1.2,-3.15) --(1.20,4);  \draw[axis, -&amp;gt;] (0,4) -- ++(0,-4) node[below] {$x$}; % \draw[axis] (3,4) ++ (1.8,0) arc (0:180:1.8);  \draw[fill=white] (3,4) circle (\rr); \path (3,4) -- +(-\rr,0) coordinate (Cl) + (\rr,0) coordinate (Cr); \draw[fill=black] (3,4) circle (3pt); \draw[black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b3114ba35c49632050d199ecc46ef3cb.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_b3114ba35c49632050d199ecc46ef3cb.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b3114ba35c49632050d199ecc46ef3cb.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_b3114ba35c49632050d199ecc46ef3cb.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin}, m2/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, m1/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum width=0.7cm,minimum height=0.7cm}, plane/.style={draw=black!30, very thick, fill=blue!5, line width=1pt}, % base/.style={draw=black!70, very thick, fill=blue!4, line width=2pt},  string/.style={draw=black, thick}, pulley/.style={thick}, % interface/.style={draw=gray!60,  % % The border decoration is a path replacing decorator.  % % For the interface style we want to draw the original path.  % % The postaction option is therefore used to ensure that the  % % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b5e2b09a9ecfd474ae02294aeb747ca3.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_b5e2b09a9ecfd474ae02294aeb747ca3.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b5e2b09a9ecfd474ae02294aeb747ca3.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_b5e2b09a9ecfd474ae02294aeb747ca3.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \xdef\darkness{0}  % \xdef\op{0.1}  % \xdef\SIZE{10}  % \draw[step=1.0,blue,thick,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \draw[step=0.5,blue,very thin,opacity=\op] (0,0) grid (\SIZE,\SIZE);  % \foreach \i in {0,1,...,\SIZE} {  % \draw[opacity=\op] (0,\i) node [left] {\i};  % \draw[opacity=\op] (\i,0) node [below] {\i};  % }  \draw [fill=white] (0,0) rectangle node[above, rotate=90, yshift=-0.8em] {Глухое зеркало} ++(0.5,3); \draw [fill=white] (5,0) rectangle node[above, rotate=90, yshift=-1.5em, align=center] {Полупрозрачное \\ зеркало} ++(1,3); \draw [fill=black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_b790dfab507bb1badf1a8fbe53e082f6.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\opa{0.2} \xdef\SIZE{6} \xdef\setka{0} \input{setka} \draw[fill=gray!25, draw=none] (2,1) rectangle (3,6); \draw[fill=gray!50, draw=none] (3,1) rectangle (4.5,6); \draw[fill=gray!25, draw=none, xshift=2.5cm] (2,1) rectangle (3,6); \draw [interface] (5.5,1) rectangle ++(0.5,5); \def\iangle{20} \def\angle{35} \draw[light,dashed, yshift=0.26cm,-&amp;gt;-=0.5] (1,5) -- (2,4); \draw[light,dashed, yshift=0.20cm,-&amp;gt;-=0.5] (2,4) -- ++ (-1,-1) ; \begin{scope}[yshift=-2.1cm] \draw[light,dashed, yshift=0.26cm,-&amp;gt;-=0.5] (1,5) -- (2,4); \draw[light,dashed, yshift=0.20cm,-&amp;gt;-=0.5] (2,4) -- ++ (-1,-1) ; \end{scope} \begin{scope}[yshift=-2.83cm] \draw[light,dashed, yshift=0.26cm,-&amp;gt;-=0.5] (1,5) -- (2,4); \draw[light,dashed, yshift=0.20cm,-&amp;gt;-=0.5] (2,4) -- ++ (-1,-1) ; \end{scope} \draw[light, yshift=1cm,-&amp;gt;-=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b7cedf5d17b5eadbac9a51dfbdec1ba1.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_b7cedf5d17b5eadbac9a51dfbdec1ba1.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_b7cedf5d17b5eadbac9a51dfbdec1ba1.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_b7cedf5d17b5eadbac9a51dfbdec1ba1.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \begin{scope}[scale=1] \draw (0.5,0) circle (0.28); \draw[acceleration,-&amp;gt;] (1,3) -- node[above] {$\vec{a}$} ++ (1,0); \draw[axis,-&amp;gt;] (-1,3) -- ++ (5,0) node[right] {$+x$}; \draw[axis,-&amp;gt;] (-1,3) -- ++ (0,-2.55) node[below] {$+y$}; \draw (2.5,0) circle (0.28); \draw[fill=white] (0,0) rectangle (3,0.3); \draw[line width=2pt] (2.5,0.3) -- ++(0,2) -- ++(-1,0) ++(0,1pt) coordinate (o); \draw[fill=black] (o) -- ++(-120:1.5cm) coordinate (b) circle (2pt); \draw[axis] (o) -- ++ (0,-3); \draw[interface] (-1,-0.3) rectangle ++(5,-0.3); \draw[thick] (-1,-0.3) -- ++(5,0); \draw[force,-&amp;gt;] (b) -- ++(0,-1) node[below, yshift=-1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_be01e717192dd180508e50d58e8eccde.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_be01e717192dd180508e50d58e8eccde.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_be01e717192dd180508e50d58e8eccde.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_be01e717192dd180508e50d58e8eccde.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\opa{0.2} \xdef\SIZE{6} \xdef\setka{0} \input{setka} \draw[ domain=0:5*pi, smooth,thick, variable=\x, samples=100, black, dashed, ] plot ({\x/pi},{sin(\x r)/2}); \draw[ domain=0:5*pi, smooth,thick, variable=\x, samples=100, magenta, % yshift=3cm  ] plot ({\x/pi},{sin(\x r)}); \begin{scope}[xshift=0.5cm, yshift=1cm] \lineann[0.5]{0}{2}{$\lambda$}{white} \end{scope} \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_be2643764f5c5334f9a9600eb4b4cbab.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_be2643764f5c5334f9a9600eb4b4cbab.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_be2643764f5c5334f9a9600eb4b4cbab.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_be2643764f5c5334f9a9600eb4b4cbab.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ axis/.style={densely dashed,black!60,font=\small}, force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},  m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, plane/.style={draw=black!30, very thick, fill=blue!5}, string/.style={draw=black, thick}, pulley/.style={thick}, ] \matrix[column sep=0.5cm] { \begin{scope}[] \draw[-&amp;gt;,&amp;gt;=open triangle 60] (1,1.5) -- node[above,pos=0.5] {$\vec{a_0}$} (0,1.5); %% Sketch  \draw[plane] (0,-1) coordinate (base) -- coordinate[pos=0.5] (mid) ++(\iangle:3) coordinate (top) |- coordinate (d) (base) -- cycle; \path (mid) node[m,rotate=\iangle,yshift=0.25cm] (m) {}; % \draw[pulley] (top) -- ++(\iangle:0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_c17855bbe947135a730a6ad741a5ec11.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \begin{scope}[opacity=0.4]  % \node[cargo] (I) at (2,0) {} node[above of=I, yshift=-1.3em] {};  % \draw[draw=black!80,decoration={aspect=0.3, segment length=1mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.5, yshift=1em] {} (I);  % \draw[] (4,-1.1) -- ++(0,0.2) node[below, yshift=-5pt, black] {$l$};  % \end{scope}  \draw[interface,fill=white!40, draw=black] (0,0.1) rectangle ++(5,-0.2); \draw[interface,fill=magenta!30, draw=black] (3,0.1) rectangle ++(0.5,-0.2); % \node[cargo] (b) at (4,0) {} node[above of=b, yshift=-1.3em] {$m$};  % \draw[draw=black!80,decoration={aspect=0.3, segment length=1.5mm, amplitude=2mm,coil},decorate] (0,0) -- node[above, black, pos=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c5d6e40173f24e9058f14be8a1b2df6c.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_c5d6e40173f24e9058f14be8a1b2df6c.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c5d6e40173f24e9058f14be8a1b2df6c.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_c5d6e40173f24e9058f14be8a1b2df6c.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\op{0.1} % \xdef\SIZE{10}  % \draw[step=1.0,blue,thick,opacity=\op] (-4,0) grid (\SIZE,\SIZE);  % \draw[step=0.5,blue,very thin,opacity=\op] (-4,0) grid (\SIZE,\SIZE);  % \foreach \i in {0,1,...,\SIZE} {  % \draw[opacity=\op] (-4,\i) node [left] {\i};  % % \draw[opacity=\op] (\i,0) node [below] {\i};  % }  % \foreach \i in {-4,-3,...,\SIZE} {  % % \draw[opacity=\op] (-4,\i) node [left] {\i};  % \draw[opacity=\op] (\i,0) node [below] {\i};  % }  % Camera  \draw [fill=white] (-3,2) rectangle ++(1.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_c6a864040f033990bf88136fe344b737.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue, very thick}, axis/.style={densely dashed,black!60,font=\small}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, ] \def\w{40mm} \def\h{90mm} \draw[interface] (-10mm,0) -- (\w+10mm,0); \draw (0,\h) -- (0,0) -- (\w,0) -- (\w,\h); \foreach \c in {0,10,...,70}{ \draw (10 mm, 80 mm - \c mm) node[left, xshift=-10mm] {\c}; \draw (0.3,80 mm - \c mm) -- (0.7,80 mm - \c mm); } \foreach \d in {10,11,...,80}{ \draw (0.4,\d mm) -- (0.6,\d mm); } \draw [axis, -&amp;gt;] (\w+10mm,\h-10mm) --(\w+10mm,10mm) node [below] {$+x$}; \coordinate (C) at (\w/2, 60mm); \draw [fill=black!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_c9dabb90d2362df2ae44debebd90ea21.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \draw[interface] (-1,0.7) rectangle (1,1); \draw[thick] (-1,0.7) -- (1,0.7); \draw (0,0.7) -- (0,0); \draw[axis,-&amp;gt;] (0,0.7) -- ++(0,-4) node[below] {$+x$}; \draw (0,0) circle (0.5); \draw[fill=black] (0,0) circle (1pt); \draw (-0.5,0) -- ++ (0,-1); \draw (0.5,0) -- ++ (0,-1); \draw[fill=white] (0.5,0) ++ (0,-1) node[draw,minimum width=0.5cm,minimum height=0.5cm, fill=white] {$M$}; \draw[fill=white] (-0.5,0) ++ (0,-2) node[draw,minimum width=2cm,minimum height=0.5cm, fill=white, rotate=90] {$M-m$}; \draw[fill=white] (-0.5,0) ++ (-0.5,-2) node[draw,minimum width=1cm,minimum height=0.5cm, fill=white, rotate=90] {$m$}; \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_ceb4e6247e97f630361f24bd8d40d5bb.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} % \draw[thick] (0,0) ++ (0,-2) node[below, blue] {$+q$} rectangle ++(0.1,4) ;  % \draw[thick] (8,0) ++ (0,-2) node[below, red] {$-q$} rectangle ++(-0.1,4);  % \draw[-&amp;gt;] (-1,0) -- node[above, xshift=-0.6em] {$r$} ++(50:2);  \draw[dashed, blue,-&amp;gt;] (-5,0) -- (5,0) node[thick,right] {$+x$}; % % \draw[draw=none] (0,4) (0,-4);  % \fill[red] (0,0) circle (4pt) node[above,red] {$q$};  % \fill[blue] (4,0) circle (4pt) node[above,blue] {$q&amp;#39;$};  % % \draw[magenta] (4+0.48*4,0) node[red] {$\times$};  % % \draw[magenta] (-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_dd72534a48b01b766e8695f208caf969.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_dd72534a48b01b766e8695f208caf969.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_dd72534a48b01b766e8695f208caf969.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_dd72534a48b01b766e8695f208caf969.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 }, interface1/.style={draw=gray!60, % The border decoration is a path replacing decorator.  % For the interface style we want to draw the original path.  % The postaction option is therefore used to ensure that the  % border decoration is drawn *after* the original path.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_df83a36a9dcab0104dcec27c200de676.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_df83a36a9dcab0104dcec27c200de676.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_df83a36a9dcab0104dcec27c200de676.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_df83a36a9dcab0104dcec27c200de676.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \xdef\darkness{0} \xdef\opa{0.2} \xdef\SIZE{6} \xdef\setka{0} \input{setka} \coordinate (rot) at (3,3); \begin{scope}[rotate around={-25:(rot)}, every node/.style={rotate=-25}] \node [draw, shape=rectangle, fill=white, minimum width=0.25cm, minimum height=2cm, anchor=center] at (0,3) (res1) {}; \node [draw, shape=rectangle, fill=white, minimum width=0.25cm, minimum height=2cm, anchor=center] at (5,3) (res2) {}; \coordinate (envplace) at ($(res1.east)!0.2!(res2.west)$); \coordinate (polplace) at ($(res1.east)!0.5!(res2.west)$); \coordinate (pokplace) at ($(res1.east)!0.8!(res2.west)$); \draw[line width=1pt,magenta] (res1.east) -- (res2.west) ; \node [draw, shape=rectangle, fill=magenta!65, opacity=0.5, minimum width=0.4cm, minimum height=0.4cm, anchor=center] at (envplace) (env) {}; \end{scope} \draw[line width=1pt,magenta, dashed] (3,3) -- ++(25:2) node[right, black, , align=center] {дифрагированный \\ пучок}; \draw[fill=white, opacity=0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_eaa49c074578c440c8fc883c74e85f0a.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_eaa49c074578c440c8fc883c74e85f0a.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_eaa49c074578c440c8fc883c74e85f0a.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_eaa49c074578c440c8fc883c74e85f0a.html/</guid>
       <description> pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \foreach \x in {0,0.25,...,4} { \draw[black!20,latex-] (\x,0) -- ++ (0,4); } \draw[draw=none] (4,0) -- node[right]{$\vec{E}$} ++ (0,4); \draw (0,0) -- node[below] {Катод} ++(4,0); \draw (0,4) -- node[above] {Анод} ++(4,0); \draw[dashed,-&amp;gt;] (-1,0) -- ++(0,5) node[above] {$+x$}; \lineann[2]{90}{4}{$l$}; \draw (-1.1,0)--node [below] {$0$}(-0.9,0); \draw[-latex] (2,2) -- ++ (0,1) node [above, fill=white] {$\vec{F}_L$}; \draw[fill=magenta] (2,2) circle (4pt); \end{tikzpicture}\end{document}</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f4600d60209647353b8686f49125a1b2.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_f4600d60209647353b8686f49125a1b2.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f4600d60209647353b8686f49125a1b2.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_f4600d60209647353b8686f49125a1b2.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture} \begin{scope}[scale=1, rotate=-30] \draw (0.5,0) circle (0.28); % \draw[acceleration,-&amp;gt;] (1,3) -- node[above] {$\vec{a}$} ++ (1,0);  \draw[axis,-&amp;gt;] (-1,3) -- ++ (3,0) node[right] {$+x$}; \draw[axis,-&amp;gt;] (-1,3) -- ++ (0,-2.55) node[below] {$+y$}; \draw (2.5,0) circle (0.28); \draw[fill=white] (0,0) rectangle (3,0.3); \draw[line width=2pt] (2.5,0.3) -- ++(0,2) -- ++(-1,0) ++(0,1pt) coordinate (o); \draw[fill=black] (o) -- ++(-90:1.5cm) coordinate (b) circle (2pt); \draw[axis] (o) -- ++ (0,-3); % \draw[interface] (-1,-0.3) rectangle ++(5,-0.3);  \draw[interface] (-1,-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f89dc1c5657b155b837927794f4463bf.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_f89dc1c5657b155b837927794f4463bf.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f89dc1c5657b155b837927794f4463bf.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_f89dc1c5657b155b837927794f4463bf.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ axis/.style={densely dashed,black!60,font=\small}, force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % m/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},  m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, m/.style={draw=black!30, rectangle,draw,thin, fill=blue!2, minimum size=0.5cm}, interface/.style={draw=gray!60, postaction={draw=gray!60,decorate,decoration={border,angle=-135, amplitude=0.3cm,segment length=2mm}}}, plane/.style={draw=black!30, very thick, fill=blue!5}, string/.style={draw=black, thick}, pulley/.style={thick}, ] \matrix[column sep=0.5cm] { \begin{scope}[] \xdef\r{1.5cm} \xdef\rp{3pt} \node [shape=circle,draw] (c) at (0,0) [minimum size=\r*2] {}; \draw [axis, -&amp;gt;] (0,0) -- (60:\r+2cm) node[anchor=south] {$+y$}; \draw (0,0) -- (60:\r) circle (\rp) node[below, pos=1.3] {$z$}; \draw [thick] (60:\r) +(-135:\rp)--+(45:\rp); \draw [thick] (60:\r) +(135:\rp)--+(-45:\rp); \draw [axis, -&amp;gt;] ($(60:\r)!</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f8c219177d69e94ec2bc115d953c5d8c.html/</link>
+      <link>http://localhost:1313/cook/gallery/tikzpicture_f8c219177d69e94ec2bc115d953c5d8c.html/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/cook/gallery/tikzpicture_f8c219177d69e94ec2bc115d953c5d8c.html/</guid>
+      <guid>http://localhost:1313/cook/gallery/tikzpicture_f8c219177d69e94ec2bc115d953c5d8c.html/</guid>
       <description>pre.tex
 \documentclass[tikz]{standalone}\input{pre.tex}\begin{document}\begin{tikzpicture}[ force/.style={&amp;gt;=latex,draw=blue,fill=blue}, % axis/.style={densely dashed,gray,font=\small},  axis/.style={densely dashed,black!60,font=\small}, interface/.style={ pattern = north east lines, draw = none, pattern color=gray!60, }, cargo/.style={ rectangle, fill=magenta!40, draw=black!50, inner sep=2.5mm, }, spring/.style={ decoration={ aspect=0.3, segment length=.8mm, amplitude=2mm, coil}, decorate, draw=magenta!25 } ] \begin{scope}[yshift=0cm] \node[cargo] (b) at (0,0) {}; \node[above, yshift=1em] at (b) {$m_1$}; \node[cargo] (c) at (2.25,0) {}; \node[above, yshift=1em] at (c) {$m_2$}; % \draw[interface] (0,2.5) rectangle ++(-0.25,-5);  \draw[spring, decoration={segment length=1mm}] (b) -- node[above, yshift=1em, xshift=-0.</description>
     </item>
     
     <item>
       <title>Исходники иллюстрации</title>
-      <link>https://fedorsarafanov.github.io/pre/</link>
+      <link>http://localhost:1313/pre/</link>
       <pubDate>Tue, 01 Jan 2019 13:04:49 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/pre/</guid>
+      <guid>http://localhost:1313/pre/</guid>
       <description>Скачать .tex файл
 \usepackage{cmap} \usepackage[T2A]{fontenc} \usepackage[utf8x]{inputenc} \usepackage[mode=buildnew]{standalone} \usepackage { amssymb, % misccorr,  amsfonts, amsmath, amsthm, wrapfig, makecell, multirow, indentfirst, ulem, graphicx, subcaption, float, tikz, caption, tikz-3dplot, csvsimple, color, booktabs, pgfplots, pgfplotstable, fancyhdr, } \usepackage[outline]{contour} \usepackage[europeanresistors,americaninductors]{circuitikz} \tikzset{ pics/carc/.style args={#1:#2:#3}{ code={ \draw[pic actions] (#1:#3) arc(#1:#2:#3); } } } \linespread{1.3} \frenchspacing \usetikzlibrary { decorations.pathreplacing, decorations.pathmorphing, patterns, calc, scopes, arrows, fadings, through, shapes.misc, arrows.meta, 3d, quotes, angles, babel } \tikzset{ force/.style= { &amp;gt;=latex, draw=blue, fill=blue, }, %  axis/.</description>
     </item>
     
     <item>
       <title>Решение ДУ в Simulink</title>
-      <link>https://fedorsarafanov.github.io/matlab/2018-12-27-matlab-solvedu-in-simulink/</link>
+      <link>http://localhost:1313/matlab/2018-12-27-matlab-solvedu-in-simulink/</link>
       <pubDate>Thu, 27 Dec 2018 15:32:11 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/matlab/2018-12-27-matlab-solvedu-in-simulink/</guid>
-      <description>&lt;p&gt;В данном документе Matlab/Simulink (&lt;a href=&#34;https://fedorsarafanov.github.io/img/matlab/simulink_2009a_model.mdl&#34;&gt;скачать&lt;/a&gt;) приведено решение дифференциального уравнения 3-го порядка:&lt;/p&gt;
+      <guid>http://localhost:1313/matlab/2018-12-27-matlab-solvedu-in-simulink/</guid>
+      <description>&lt;p&gt;В данном документе Matlab/Simulink (&lt;a href=&#34;http://localhost:1313/img/matlab/simulink_2009a_model.mdl&#34;&gt;скачать&lt;/a&gt;) приведено решение дифференциального уравнения 3-го порядка:&lt;/p&gt;
 
 &lt;p&gt;$$
 y^{\prime\prime\prime}\cdot y^{\prime\prime}=\sqrt{1+(y^{\prime\prime})^2}
@@ -1072,22 +1072,22 @@ $$&lt;/p&gt;
     
     <item>
       <title>Билеты по квантовой механике. Зачет</title>
-      <link>https://fedorsarafanov.github.io/tickets/2018/12/27/tickets-quantum-course3sem1/</link>
+      <link>http://localhost:1313/tickets/2018/12/27/tickets-quantum-course3sem1/</link>
       <pubDate>Thu, 27 Dec 2018 00:04:28 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2018/12/27/tickets-quantum-course3sem1/</guid>
-      <description>&lt;p&gt;На 3-м курсе активными студентами радиофака к зачету по квантмеху (&lt;a href=&#34;https://fedorsarafanov.github.io/img/quantum_1/source-4.doc&#34;&gt;содержание семестра&lt;/a&gt;, &lt;a href=&#34;https://fedorsarafanov.github.io/img/quantum_1/source-5.doc&#34;&gt;билеты&lt;/a&gt;) у Курина В.В. были набраны контрольные билеты. К сожалению, за точность всех приведенных билетов ручаться нельзя, о возможных ошибках можно написать в &lt;a href=&#34;https://github.com/KirillPonur/quantum/issues&#34;&gt;issues к репозиторию на гитхабе&lt;/a&gt;. Оглавление &lt;a href=&#34;https://github.com/KirillPonur/quantum/raw/master/quantum.pdf&#34;&gt;pdf-документа с билетами&lt;/a&gt; кликабельное (щелкните чтобы перейти к нужному билету), красным цветом выделены вопросы, которые не были набраны.&lt;/p&gt;
+      <guid>http://localhost:1313/tickets/2018/12/27/tickets-quantum-course3sem1/</guid>
+      <description>&lt;p&gt;На 3-м курсе активными студентами радиофака к зачету по квантмеху (&lt;a href=&#34;http://localhost:1313/img/quantum_1/source-4.doc&#34;&gt;содержание семестра&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/img/quantum_1/source-5.doc&#34;&gt;билеты&lt;/a&gt;) у Курина В.В. были набраны контрольные билеты. К сожалению, за точность всех приведенных билетов ручаться нельзя, о возможных ошибках можно написать в &lt;a href=&#34;https://github.com/KirillPonur/quantum/issues&#34;&gt;issues к репозиторию на гитхабе&lt;/a&gt;. Оглавление &lt;a href=&#34;https://github.com/KirillPonur/quantum/raw/master/quantum.pdf&#34;&gt;pdf-документа с билетами&lt;/a&gt; кликабельное (щелкните чтобы перейти к нужному билету), красным цветом выделены вопросы, которые не были набраны.&lt;/p&gt;
 
 &lt;p&gt;Прочитать документ можно и здесь, на сайте, но ссылки в содержании будут некликабельны.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Заказ научных графиков, иллюстраций, оцифровки данных с графиков</title>
-      <link>https://fedorsarafanov.github.io/buy/</link>
+      <link>http://localhost:1313/buy/</link>
       <pubDate>Sun, 23 Dec 2018 12:46:12 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/buy/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://vk.com/krasnuyi&#34;&gt;Здесь&lt;/a&gt; вы можете заказать создание иллюстрации (по вашему эскизу), научных графиков, оцифровки данных с графиков. Примеры готовых иллюстраций можно посмотреть &lt;a href=&#34;https://fedorsarafanov.github.io/cook/gallery.html&#34;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
+      <guid>http://localhost:1313/buy/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://vk.com/krasnuyi&#34;&gt;Здесь&lt;/a&gt; вы можете заказать создание иллюстрации (по вашему эскизу), научных графиков, оцифровки данных с графиков. Примеры готовых иллюстраций можно посмотреть &lt;a href=&#34;http://localhost:1313/cook/gallery.html&#34;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Связаться с автором для заказа: &lt;a href=&#34;https://vk.com/krasnuyi&#34;&gt;вконтакте&lt;/a&gt;, &lt;a href=&#34;mailto://sfg180@yandex.ru&#34;&gt;sfg180@yandex.ru&lt;/a&gt;&lt;/p&gt;
 
@@ -1098,10 +1098,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Квалифицированный набор и верстка в издательском пакете LaTeX</title>
-      <link>https://fedorsarafanov.github.io/convertlatextoword/</link>
+      <link>http://localhost:1313/convertlatextoword/</link>
       <pubDate>Sun, 23 Dec 2018 12:46:12 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/convertlatextoword/</guid>
+      <guid>http://localhost:1313/convertlatextoword/</guid>
       <description>Здесь вы можете заказать вёрстку статьи в LaTeX (по имеющимся черновикам) или оцифровку распечатанной статьи, а также конвертацию статьи из Microdoft Office Word (.doc, .docx) в LaTeX.
 Если имеются готовые стилевые файлы LaTeX-а, например, предоставляемые журналом, возможно оформление по ним.
 Связаться с автором для заказа: вконтакте, sfg180@yandex.ru
@@ -1111,10 +1111,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Галерея графиков</title>
-      <link>https://fedorsarafanov.github.io/gallery/</link>
+      <link>http://localhost:1313/gallery/</link>
       <pubDate>Sun, 23 Dec 2018 12:31:12 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/gallery/</guid>
+      <guid>http://localhost:1313/gallery/</guid>
       <description>&lt;p&gt;Здесь размещены нарисованные мною для разных задач, лабораторных и презентаций иллюстрации.&lt;/p&gt;
 
 &lt;p&gt;Картинки нарисованы с помощью пакета PGF/TikZ на языке LaTeX; они полностью адаптируются к стилю латеховского документа, в которые я их вставляю, а компилируются в векторный (.pdf) формат.&lt;/p&gt;
@@ -1126,19 +1126,19 @@ $$&lt;/p&gt;
     
     <item>
       <title>Минимальный рабочий пример (MWE) tikz-standalone</title>
-      <link>https://fedorsarafanov.github.io/tikz/2017-12-27-mwe-tikz/</link>
+      <link>http://localhost:1313/tikz/2017-12-27-mwe-tikz/</link>
       <pubDate>Wed, 27 Dec 2017 15:28:53 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tikz/2017-12-27-mwe-tikz/</guid>
+      <guid>http://localhost:1313/tikz/2017-12-27-mwe-tikz/</guid>
       <description>&lt;p&gt;Здесь приведен код электрической схемы (пакет latex-а circuitikz), созданный в стиле документа standalone (документ компилируется в своем собственном размере, и потом может быть подключен через includegraphics):&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Лекции по механике. Динамика системы материальных точек</title>
-      <link>https://fedorsarafanov.github.io/lection/2017/02/26/lection-mech-1/</link>
+      <link>http://localhost:1313/lection/2017/02/26/lection-mech-1/</link>
       <pubDate>Sun, 26 Feb 2017 18:18:42 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/lection/2017/02/26/lection-mech-1/</guid>
+      <guid>http://localhost:1313/lection/2017/02/26/lection-mech-1/</guid>
       <description>&lt;p&gt;В данном документе мною собраны лекции по динамике системы материальных точек, прочитанные Евгенией Зиновьевной Грибовой на первом курсе радиофизического факультета ННГУ.&lt;/p&gt;
 
 &lt;p&gt;Лекции набраны с частичным сокращением материала (убраны примеры в лекциях).&lt;/p&gt;
@@ -1149,44 +1149,44 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Материал практичнее читать в &lt;code&gt;.pdf&lt;/code&gt; формате, но можно и прямо здесь (см. ниже)&lt;/p&gt;
 
-&lt;p&gt;Документ в формате A5 (тетрадный лист) -- удобнее читать на смартфонах, планшетах, электронных книгах (&lt;a href=&#34;https://fedorsarafanov.github.io/img/lection_part1/lection1-a5.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Документ в формате A5 (тетрадный лист) -- удобнее читать на смартфонах, планшетах, электронных книгах (&lt;a href=&#34;http://localhost:1313/img/lection_part1/lection1-a5.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;Документ в формате A4 -- удобнее для распечатывания (&lt;a href=&#34;https://fedorsarafanov.github.io/img/lection_part1/lection1-a4.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;</description>
+&lt;p&gt;Документ в формате A4 -- удобнее для распечатывания (&lt;a href=&#34;http://localhost:1313/img/lection_part1/lection1-a4.pdf&#34;&gt;ссылка&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Аналитическая геометрия. Кривые второго порядка</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/28/geom3/</link>
+      <link>http://localhost:1313/tickets/2017/01/28/geom3/</link>
       <pubDate>Sat, 28 Jan 2017 13:19:30 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/28/geom3/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/28/geom3/</guid>
       <description>&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема &amp;quot;кривые и поверхности второго порядка&amp;quot;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Аналитическая геометрия. Вектора</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</link>
+      <link>http://localhost:1313/tickets/2017/01/25/geom/</link>
       <pubDate>Wed, 25 Jan 2017 10:38:02 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/25/geom/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/25/geom/</guid>
       <description>&lt;p&gt;Краткий обзор определений по теоретическому минимуму. Тема &amp;quot;вектора&amp;quot;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Аналитическая геометрия. Прямая и плоскость</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/25/geom2/</link>
+      <link>http://localhost:1313/tickets/2017/01/25/geom2/</link>
       <pubDate>Wed, 25 Jan 2017 10:38:02 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/25/geom2/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/25/geom2/</guid>
       <description>&lt;p&gt;Прямая и плоскость. Краткий обзор определений, формул.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Лабораторные</title>
-      <link>https://fedorsarafanov.github.io/lab/</link>
+      <link>http://localhost:1313/lab/</link>
       <pubDate>Sun, 22 Jan 2017 22:16:12 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/lab/</guid>
+      <guid>http://localhost:1313/lab/</guid>
       <description>Здесь размещены сданные лабораторные работы с разных курсов, выполненные на радиофизическом факультете ННГУ.
 1 курс Общая физика:
  №110 - Гироскоп №13 - Маятник Обербека №16 - Вязкость воздуха №17 - Изучение осцилографа №22 - Определение коэффициента внутреннего трения жидкости №27 - Определение отношения заряда электрона к его массе  2 курс Общая физика:
@@ -1195,10 +1195,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Вывод ускорения Кориолиса</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</link>
+      <link>http://localhost:1313/tickets/2017/01/14/kor/</link>
       <pubDate>Sat, 14 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/14/kor/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/14/kor/</guid>
       <description>&lt;p&gt;Сначала докажем &lt;strong&gt;лемму&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;p&gt;$$
@@ -1213,10 +1213,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Продольные и поперечные деформации. Закон Гука</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/13/guk/</link>
+      <link>http://localhost:1313/tickets/2017/01/13/guk/</link>
       <pubDate>Fri, 13 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/13/guk/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/13/guk/</guid>
       <description>&lt;p&gt;По определению, нормальное напряжение&lt;/p&gt;
 
 &lt;p&gt;$$\sigma_n=\frac{F_n}{S}$$&lt;/p&gt;
@@ -1228,10 +1228,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Эффект Холла</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/13/holl/</link>
+      <link>http://localhost:1313/tickets/2017/01/13/holl/</link>
       <pubDate>Fri, 13 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/13/holl/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/13/holl/</guid>
       <description>&lt;p&gt;При помещении проводника с постоянным током в магнитное поле в проводнике возникает поперечная разность потенциалов, называемая &amp;quot;холловским напряжением&amp;quot;.&lt;/p&gt;
 
 &lt;p align=&#34;center&#34;&gt;&lt;br&gt;&lt;img align=&#34;center&#34; src=&#34;https://tex.s2cms.ru/svg/%5Cusetikzlibrary%7Bscopes%7D%0A%5Cusetikzlibrary%7Bdecorations.pathreplacing%2C%25%0A%20%20%20%20%20decorations.pathmorphing%2C%25%0A%20%20%20%20patterns%2C%25%0A%20%20%20%20calc%2C%25%0A%20%20%20%20scopes%2C%25%0A%20%20%20%20arrows%2C%25%0A%20%20%20%20arrows.meta%2C%25%0A%20%20%20%20arrows.spaced%2C%25%0A%7D%0A%5Ctikzset%7Bforce%2F.style%3D%7B%3E%3Dlatex%2Cdraw%3Dblue%2Cfill%3Dblue%7D%2C%20axis%2F.style%3D%7Bdensely%20dashed%2Cgray%2Cfont%3D%5Csmall%7D%2C%20acceleration%2F.style%3D%7B%3E%3Dopen%20triangle%2060%2Cdraw%3Dblue%2Cfill%3Dblue%7D%2C%20inforce%2F.style%3D%7Bforce%2Cdouble%20equal%20sign%20distance%3D2pt%7D%2C%20interface%2F.style%3D%7Bpattern%20%3D%20north%20east%20lines%2C%20draw%20%20%20%20%3D%20none%2C%20pattern%20color%3Dgray!60%2C%20%7D%2C%20cross%2F.style%3D%7Bcross%20out%2C%20draw%3Dblack%2C%20minimum%20size%3D2*(%231-%5Cpgflinewidth)%2C%20inner%20sep%3D0pt%2C%20outer%20sep%3D0pt%7D%2C%20%20%20%20cargo%2F.style%3D%7Brectangle%2C%20fill%3Dblack!70%2C%20inner%20sep%3D2.5mm%2C%20%7D%2Cangular%2F.style%3D%7B-%7BLatex%5Blength%3D3mm%2C%20line%20width%3D0.4pt%2Copen%2Cmagenta%2C%20fill%3Dwhite%5D%7D%2C%20draw%3Dmagenta%7D%2C%7D%0A%5Cbegin%7Btikzpicture%7D%0A%5Cdraw%20(0.2%2C0.2)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-3%2C0)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(0%2C0)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-3%2C0)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(0%2C3)%20--%20%2B%2B(0.2%2C0.2)%20--%20%2B%2B(3%2C0)%20--%20%2B%2B%20(-0.2%2C-0.2)%20--cycle%3B%0A%5Cdraw%5Bfill%3Dwhite%5D%20(3%2C0)%20--%20%2B%2B(0.2%2C0.2)%20--%20%2B%2B(0%2C3)%20--%20%2B%2B%20(-0.2%2C-0.2)%20--cycle%3B%0A%5Cdraw%5Bforce%2C%20-%3E%5D%20(1.5%2C1.5)%20%20--%20%2B%2B(0%2C0.7)%20node%5Babove%5D%20%7B%24%5Cvec%7BF%7D_%5Ctext%7B%D0%BB%7D%24%7D%3B%0A%5Cdraw%5Bforce%2C%20-%3E%5D%20(1.5%2C1.5)%20node%5Bblack%2Cscale%3D1.5%2C%20fill%3Dwhite%5D%20%7B%24%5Ccircleddash%24%7D%20--%20%2B%2B(0.7%2C0)%20node%5Bright%5D%20%7B%24%5Cvec%7Bv%7D%24%7D%3B%0A%5Cforeach%20%5Ci%20in%20%7B0.2%2C0.5%2C...%2C3.4%7D%20%7B%0A%5Cnode%5Babove%2C%20yshift%3D3pt%5D%20at%20(%5Ci%2C3)%20%7B%24%2B%24%7D%3B%0A%7D%0A%5Cforeach%20%5Ci%20in%20%7B0.2%2C0.5%2C...%2C3%7D%20%7B%0A%5Cnode%5Bbelow%2C%20yshift%3D-0pt%5D%20at%20(%5Ci%2C0)%20%7B%24-%24%7D%3B%0A%7D%0A%25%0A%5Cdraw%5Bangular%2C%20%3C-%5D%20(3.5%2C1)%20--%20node%5Bright%2Cmagenta%5D%20%7B%24%5Cvec%7BE%7D_2%24%7D%20%2B%2B%20(0%2C1)%3B%0A%5Cdraw%5Bangular%2C%20-%3E%5D%20(0%2C4)%20--%20node%5Babove%2Cmagenta%5D%20%7B%24%5Cvec%7BE%7D_1%24%7D%20%2B%2B%20(3.2%2C0)%3B%0A%25%0A%5Cdraw%5Baxis%2C%20%3C-%3E%5D%20(-0.4%2C0)%20--%20node%5Bleft%2Cblack%5D%20%7B%24d%24%7D%20%2B%2B%20(0%2C3)%3B%0A%25%0A%5Cdraw%5Bangular%2C%20-%3E%5D%20(0.2%2C1.5)%20--%20node%5Babove%2Cmagenta%5D%20%7B%24%5Cvec%7Bj%7D%24%7D%20%2B%2B(0.7%2C0)%20%3B%0A%25%0A%5Cdraw%20(0.5%2C0.5)%20node%20%7B%24%5Cbigotimes%24%7D%3B%0A%5Cdraw%20(0.6%2C0.55)%20node%5Bright%5D%20%7B%24%5Cvec%7BB%7D%24%7D%3B%0A%5Cend%7Btikzpicture%7D&#34;/&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
@@ -1239,10 +1239,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Задача Кеплера</title>
-      <link>https://fedorsarafanov.github.io/tickets/2017/01/08/kepler/</link>
+      <link>http://localhost:1313/tickets/2017/01/08/kepler/</link>
       <pubDate>Sun, 08 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/tickets/2017/01/08/kepler/</guid>
+      <guid>http://localhost:1313/tickets/2017/01/08/kepler/</guid>
       <description>&lt;p&gt;Задача Кеплера - фундаментальная задача механики, наряду с задачей о простом гармоническом осцилляторе.&lt;/p&gt;
 
 &lt;p&gt;В классической механике, задача Кеплера — это частный случай задачи двух тел, в которой два тела взаимодействуют посредством центральной силы F, изменяющейся по величине обратно пропорционально квадрату расстояния r между ними:&lt;/p&gt;
@@ -1252,10 +1252,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Создание загрузочной флешки с Windows из под (Arch)Linux</title>
-      <link>https://fedorsarafanov.github.io/it/windows-flash/</link>
+      <link>http://localhost:1313/it/windows-flash/</link>
       <pubDate>Thu, 05 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/it/windows-flash/</guid>
+      <guid>http://localhost:1313/it/windows-flash/</guid>
       <description>&lt;p&gt;Может понадобиться записать флешку с Windows, когда в наличии только Linux.&lt;/p&gt;
 
 &lt;p&gt;Приведенный способ наиболее легко применяется в системах ArchLinux и Manjaro, так как в их AUR репозиториях есть &lt;code&gt;ms-sys&lt;/code&gt;.&lt;/p&gt;</description>
@@ -1263,19 +1263,19 @@ $$&lt;/p&gt;
     
     <item>
       <title>Настройка истории bash</title>
-      <link>https://fedorsarafanov.github.io/it/bash-history/</link>
+      <link>http://localhost:1313/it/bash-history/</link>
       <pubDate>Wed, 04 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/it/bash-history/</guid>
+      <guid>http://localhost:1313/it/bash-history/</guid>
       <description>&lt;p&gt;Можно облегчить себе пользование терминалом, нехитрым образом настроив bash и используя некоторые удобные команды.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Смена времени модификации / создания файла в Linux</title>
-      <link>https://fedorsarafanov.github.io/it/date-modification/</link>
+      <link>http://localhost:1313/it/date-modification/</link>
       <pubDate>Mon, 02 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/it/date-modification/</guid>
+      <guid>http://localhost:1313/it/date-modification/</guid>
       <description>touch -a -m -t 201701011212.00 fileName.ext
 где параметры:
 -a = accessed (доступ)
@@ -1286,10 +1286,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Иродов - решение задачи №1.104(1.111)</title>
-      <link>https://fedorsarafanov.github.io/problems/2017-02-23-1-104/</link>
+      <link>http://localhost:1313/problems/2017-02-23-1-104/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-1-104/</guid>
+      <guid>http://localhost:1313/problems/2017-02-23-1-104/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Винтовку навели на вертикальную черту мишени, находящейся точно в северном направлении, и выстрелили. Пренебрегая сопротивлением воздуха, найти, на сколько сантиметров и в какую сторону пуля, попав в мишень, отклонится от черты. Выстрел произведен в горизонтальном направлении на широте $\phi=60^\circ$, скорость пули $v=900$ м/с и расстояние до мишени $1$ км.&lt;/p&gt;
 
@@ -1298,10 +1298,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Иродов - решение задачи №1.108(1.112)</title>
-      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-108/</link>
+      <link>http://localhost:1313/problems/2017-02-23-irodov-1-108/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-108/</guid>
+      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-108/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Горизонтальный диск вращают с постоянной угловой скоростью $\omega=6$ рад/с вокруг вертикальной оси, проходящей через его центр. По одному из диаметров диска движется небольшое тело массы m = $0.5$ кг с постоянной относительно диска скоростью $v&#39;=50$ см/с. Найти силу, с которой диск действует на это тело в момент, когда оно находится на расстоянии $r=30$ см от оси вращения.&lt;/p&gt;
 
@@ -1310,10 +1310,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Иродов - решение задачи №1.160(1.136)</title>
-      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-160/</link>
+      <link>http://localhost:1313/problems/2017-02-23-irodov-1-160/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-160/</guid>
+      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-160/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Небольшое тело $A$ начинает скользить с высоты $h$ по наклонному желобу, переходящему в полуокружность радиуса $h/2$. Пренебрегая трением, найти скорость тела в наивысшей точке его траектории (после отрыва от желоба).&lt;/p&gt;
 
@@ -1322,10 +1322,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Иродов - решение задачи №1.163(1.142)</title>
-      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-163/</link>
+      <link>http://localhost:1313/problems/2017-02-23-irodov-1-163/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-163/</guid>
+      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-163/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 Гладкий легкий горизонтальный стержень $AB$ может вращаться вокруг вертикальной оси, проходящей через его конец $A$. На стержне находится небольшая муфточка массы $m$, соединенная невесомой пружинкой длины $l_0$ с концом $A$. Жесткость пружинки равна $k$. Какую работу надо совершить, чтобы эту систему медленно раскрутить до угловой скорости $\omega$?&lt;/p&gt;
 
@@ -1334,10 +1334,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Иродов - решение задачи №1.19</title>
-      <link>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-19/</link>
+      <link>http://localhost:1313/problems/2017-02-23-irodov-1-19/</link>
       <pubDate>Sun, 01 Jan 2017 20:46:56 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/problems/2017-02-23-irodov-1-19/</guid>
+      <guid>http://localhost:1313/problems/2017-02-23-irodov-1-19/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Условие задачи.&lt;/strong&gt;
 За промежуток времени $\tau=10$ с точка прошла половину окружности радиуса $R=160$ см. Вычислить за это время:
 а) среднюю скорость $\langle v \rangle$;
@@ -1349,10 +1349,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>О блоге и авторе</title>
-      <link>https://fedorsarafanov.github.io/2017/01/01/about.html/</link>
+      <link>http://localhost:1313/2017/01/01/about.html/</link>
       <pubDate>Sun, 01 Jan 2017 14:35:05 +0300</pubDate>
       
-      <guid>https://fedorsarafanov.github.io/2017/01/01/about.html/</guid>
+      <guid>http://localhost:1313/2017/01/01/about.html/</guid>
       <description>&lt;p&gt;Добро пожаловать, дорогой читатель!
 Этот блог создан для нескольких целей.&lt;/p&gt;
 

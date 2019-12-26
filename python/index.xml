@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Полезное - python on Блог Федора Сарафанова</title>
-    <link>https://fedorsarafanov.github.io/python/</link>
+    <link>http://localhost:1313/python/</link>
     <description>Recent content in Полезное - python on Блог Федора Сарафанова</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-Ru</language>
     
-	<atom:link href="https://fedorsarafanov.github.io/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/python/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
