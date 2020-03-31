@@ -9,14 +9,17 @@ markup: mmark
 Здесь размещены сданные лабораторные работы с разных курсов, выполненные на радиофизическом факультете ННГУ. 
 
 ## 4 курс
-1. [Исследование отражательного клистрона](https://github.com/FedorSarafanov/ReflexKlystron/raw/master/refklystron.pdf)
-1. [Полупроводниковый диод](https://github.com/FedorSarafanov/ResearchDiode/raw/master/diode.pdf)
-1. [Полевой транзистор](https://github.com/FedorSarafanov/ResearchFET/raw/master/fet.pdf)
-1. [Определение КНД рупорной антенны](https://github.com/FedorSarafanov/RupAntenna/raw/master/rupantenna.pdf)
-1. [ЭПР-спектроскопия](https://github.com/FedorSarafanov/EprSpectroscopy/raw/master/epr.pdf)
-1. [Синтез цифрового фильтра на MSP430](https://github.com/FedorSarafanov/LabMSP430/raw/master/digital.pdf)
-1. [Колебания механических систем с распределенными параметрами](https://github.com/FedorSarafanov/LabMSS/raw/master/osci.pdf)
-1. [Оценивание параметров случайного процесса](https://github.com/FedorSarafanov/StohProc/raw/master/lab.pdf)
+1. [Исследование отражательного клистрона](/lab_pdf/2020/refklystron.pdf) [[git]](https://github.com/FedorSarafanov/ReflexKlystron)
+1. [Определение КНД рупорной антенны](/lab_pdf/2020/rupantenna.pdf) [[git]](https://github.com/FedorSarafanov/RupAntenna)
+1. [Полупроводниковый диод](/lab_pdf/2020/diode.pdf) [[git]](https://github.com/FedorSarafanov/ResearchDiode)
+1. [Полевой транзистор](/lab_pdf/2020/fet.pdf) [[git]](https://github.com/FedorSarafanov/ResearchFET)
+1. [ЭПР-спектроскопия](/lab_pdf/2020/epr.pdf) [[git]](https://github.com/FedorSarafanov/EprSpectroscopy)
+1. [Синтез цифрового фильтра на MSP430](/lab_pdf/2020/digital.pdf) [[git]](https://github.com/FedorSarafanov/LabMSP430)
+1. [Колебания механических систем с распределенными параметрами](/lab_pdf/2020/osci.pdf) [[git]](https://github.com/FedorSarafanov/LabMSS)
+1. [Оценивание параметров случайного процесса](/lab_pdf/2020/lab.pdf) [[git]](https://github.com/FedorSarafanov/StohProc)
+1. [Тлеющий разряд](/lab_pdf/2020/gdcharge.pdf) [[git]](https://github.com/FedorSarafanov/GlowDischarge)
+1. [Вакуумный диод](/lab_pdf/2020/vdiode.pdf) [[git]](https://github.com/FedorSarafanov/VacuumDiode)
+1. [Вакуумный триод](/lab_pdf/2020/vtriode.pdf) [[git]](https://github.com/FedorSarafanov/VacuumTriode)
 
 
 ## 3 курс
@@ -36,10 +39,10 @@ markup: mmark
 <!--  -->
 <!-- Электродинамика: -->
 <!--  -->
-1. [Исследование отражательного клистрона (Понур К.А.)](https://github.com/KirillPonur/klystron/raw/Kirill/klystron.pdf)
-1. [Исследование матриц рассеяния волноводных узлов](https://github.com/FedorSarafanov/six_poles/raw/master/six_poles.pdf)
-1. [Электромагнитное экранирование](https://github.com/FedorSarafanov/em_shielding/raw/master/emshielding.pdf)
-1. [Определение коэффициента направленного действия рупорной антенны (Шиков А.П.)](https://github.com/BigBigGamer/antennas_directional_factor/raw/master/dir_factor_lab.pdf)
+1. [Исследование отражательного клистрона (Понур К.А.)](/lab_pdf/2019/klystron.pdf) [[git]](https://github.com/KirillPonur/klystron)
+1. [Исследование матриц рассеяния волноводных узлов](/lab_pdf/2019/six_poles.pdf) [[git]](https://github.com/FedorSarafanov/six_poles)
+1. [Электромагнитное экранирование](/lab_pdf/2019/emshielding.pdf) [[git]](https://github.com/FedorSarafanov/em_shielding)
+1. [Коэффициент направленного действия рупорной антенны (Шиков А.П.)](/lab_pdf/2019/dir_factor_lab.pdf) [[git]](https://github.com/BigBigGamer/antennas_directional_factor)
 <!--  -->
 <!-- Квантовая механика: -->
 <!--  -->
@@ -87,3 +90,6 @@ markup: mmark
 1. [Исследование нелинейных свойств сверхпроводников](/lab_pdf/une/une_issledovanie_nelineynyh_svoystv_sverhprovodnikov.pdf)
 1. [Исследование диэлектриков в резонаторе Фабри-Перро](/lab_pdf/une/une_issledovanie_dielektrikov_v_rezonatore_fabri-perro.pdf)
 1. [Измерение плотности плазмы на  стенде КРОТ](/lab_pdf/une/une_plasma.pdf) 
+1. [Оценка длительности фемтосекундных лазерных импульсов](/lab_pdf/une/une_fl.pdf) 
+1. [Низкочастотные процессы в твердотельном лазере](/lab_pdf/une/une_tl.pdf) 
+1. [Измерение параметров волн в кольцевом ветровом лотке](/lab_pdf/une/une_waves.pdf) 
