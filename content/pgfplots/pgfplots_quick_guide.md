@@ -156,7 +156,7 @@ $('.button').click( function(obj){
 
 Дочерний документ (например, это файл `img/ris1.tex`):
 ```latex
-\documentclass{standalone}`
+\documentclass{standalone}
 
 \usepackage[utf8]{inputenc}
 \usepackage{pgfplots}
