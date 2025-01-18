@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SFG Image Tool</title>
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* min-height: 100vh; */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.15rem;
+            text-align: center;
+            font-size: 0.5rem;
+        }
+
+        .toolbar {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #bdc3c7;
+        }
+
+
+
+        #imageInput {
+            margin: 0.5rem;
+        }
+
+        .workspace {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 2rem;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        .container {
+            position: relative;
+            /* width: 45%; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .container canvas {
+            max-width: 100%;
+            max-height: calc(100vh - 300px); /* Adjust based on header/toolbar/footer height */
+            height: auto;
+            width: auto;
+        }
+
+        .selection {
+            position: absolute;
+            box-sizing: border-box;
+            border: 2px solid red;
+            pointer-events: none;
+        }
+
+        .overlay {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .resize-handle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border: 1px solid red;
+            pointer-events: all;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .move-handle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 0, 0, 0.5);
+            border-radius: 50%;
+            pointer-events: all;
+            cursor: move;
+            z-index: 2;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: auto; /* Push footer to bottom */
+        }
+
+        .footer.collapsed .license-text {
+            display: none;
+        }
+
+        .footer-header {
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-header::after {
+            content: ' ▲';
+        }
+
+        .footer.collapsed .footer-header::after {
+            content: ' ▼';
+        }
+
+        .license-text {
+            font-size: 0.7rem;
+            margin-top: 1rem;
+            text-align: left;
+            padding: 0 1rem;
+        }
+
+        .license-text a {
+            color: #3498db;
+        }
+
+        .custom-file-input {
+            display: inline-block;
+            position: relative;
+        }
+
+        .custom-file-input input[type="file"] {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .custom-file-label {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .custom-file-label:hover {
+            background-color: #2980b9;
+        }
+
+        .toolbar button {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .toolbar button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SFG Image Preparation Tool for Waveshare E-Ink Photo Painter (c) Fedor Sarafanov</h1>
+    </div>
+    
+    <div class="toolbar">
+        <div class="custom-file-input">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="custom-file-label">Open Image</label>
+        </div>
+        <button style="display: none;" id="rotateBtn">Switch selection Portrait/Landscape</button>
+        <button style="display: none;" id="maximizeBtn">Max Selection (keep center)</button>
+        <button id="maxPortraitBtn">Selection Portrait</button>
+        <button id="maxLandscapeBtn">Selection Landscape</button>
+        <button id="rotateImageBtn">Rotate Source Image</button>
+        <button style="background-color: #38b1d2;" id="ambientMarginsBtn">Ambient Margins</button>
+        <button style="background-color: #d2384d;" id="downloadBtn">Download BMP (Dither)</button>
+    </div>
+
+    <div class="workspace">
+        <div class="container">
+            <img id="sourceImage" style="display: none;">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="container">
+            <canvas id="previewCanvas"></canvas>
+        </div>
+    </div>
+
+    <div class="footer collapsed">
+        <h3 class="footer-header">License Information</h3>
+        <div class="license-text">
+            <p>MIT License</p>
+            <p>Copyright (c) 2025 Fedor Sarafanov</p>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:</p>
+            <p>The above copyright notice, this permission notice, and a link to 
+            <a href="https://github.com/fedorsarafanov" target="_blank">https://github.com/fedorsarafanov</a> 
+            shall be included in all copies or substantial portions of the Software.</p>
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.</p>
+        </div>
+    </div>
+
+    <script>
+        // Constants
+        const LANDSCAPE_RATIO = 8 / 4.8;
+        const PORTRAIT_RATIO = 4.8 / 8;
+
+        // Preview size constants
+        const PREVIEW_LANDSCAPE_WIDTH = 800;
+        const PREVIEW_LANDSCAPE_HEIGHT = 480;
+        const PREVIEW_PORTRAIT_WIDTH = 480;
+        const PREVIEW_PORTRAIT_HEIGHT = 800;
+
+        // DOM elements
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const imageInput = document.getElementById('imageInput');
+        const sourceImage = document.getElementById('sourceImage');
+        const rotateBtn = document.getElementById('rotateBtn');
+        const maximizeBtn = document.getElementById('maximizeBtn');
+        const maxPortraitBtn = document.getElementById('maxPortraitBtn');
+        const maxLandscapeBtn = document.getElementById('maxLandscapeBtn');
+        const rotateImageBtn = document.getElementById('rotateImageBtn');
+        const previewCanvas = document.getElementById('previewCanvas');
+        const previewCtx = previewCanvas.getContext('2d');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        // State
+        let isDragging = false;
+        let isResizing = false;
+        let currentHandle = null;
+        let startX, startY;
+        let selectionDiv = null;
+        let moveHandle = null;
+        let resizeHandles = [];
+        let overlays = [];
+        let isLandscape = true;
+
+        // State for storing current selection in canvas coordinates
+        let currentSelection = {
+            x: 0,
+            y: 0,
+            width: 0,
+            height: 0
+        };
+
+        // Helper functions
+        function getCurrentRatio() {
+            return isLandscape ? LANDSCAPE_RATIO : PORTRAIT_RATIO;
+        }
+
+        function createOverlays() {
+            overlays = Array.from({ length: 4 }, () => {
+                const overlay = document.createElement('div');
+                overlay.className = 'overlay';
+                canvas.parentElement.appendChild(overlay);
+                return overlay;
+            });
+        }
+
+        function createSelectionElements() {
+            // Создаем область выделения
+            selectionDiv = document.createElement('div');
+            selectionDiv.className = 'selection';
+            canvas.parentElement.appendChild(selectionDiv);
+
+            // Создаем центральный хендл
+            moveHandle = document.createElement('div');
+            moveHandle.className = 'move-handle';
+            canvas.parentElement.appendChild(moveHandle);
+
+            // Создаем угловые хендлы
+            resizeHandles = ['nw', 'ne', 'se', 'sw'].map(pos => {
+                const handle = document.createElement('div');
+                handle.className = 'resize-handle';
+                handle.dataset.position = pos;
+                canvas.parentElement.appendChild(handle);
+                return handle;
+            });
+
+            // Устанавливаем фиксированные размеры для preview
+            updatePreviewCanvasSize();
+        }
+
+        function updateHandles(x, y, width, height) {
+            // Обновляем позицию центрального хендла
+            moveHandle.style.left = (x + width/2 - 10) + 'px';
+            moveHandle.style.top = (y + height/2 - 10) + 'px';
+
+            // Обновляем позиции угловых хендлов
+            const handlePositions = {
+                'nw': [x - 5, y - 5],
+                'ne': [x + width - 5, y - 5],
+                'se': [x + width - 5, y + height - 5],
+                'sw': [x - 5, y + height - 5]
+            };
+
+            resizeHandles.forEach(handle => {
+                const pos = handlePositions[handle.dataset.position];
+                handle.style.left = pos[0] + 'px';
+                handle.style.top = pos[1] + 'px';
+            });
+        }
+
+        function updateOverlays(x, y, width, height) {
+            const scale = getScale();
+            const rect = canvas.getBoundingClientRect();
+            
+            // Конвертируем размеры канваса в клиентские координаты
+            const clientWidth = canvas.width / scale.x;
+            const clientHeight = canvas.height / scale.y;
+
+            // Верхняя область
+            overlays[0].style.left = '0px';
+            overlays[0].style.top = '0px';
+            overlays[0].style.width = clientWidth + 'px';
+            overlays[0].style.height = y + 'px';
+
+            // Левая область
+            overlays[1].style.left = '0px';
+            overlays[1].style.top = y + 'px';
+            overlays[1].style.width = x + 'px';
+            overlays[1].style.height = height + 'px';
+
+            // Правая область
+            overlays[2].style.left = (x + width) + 'px';
+            overlays[2].style.top = y + 'px';
+            overlays[2].style.width = (clientWidth - x - width) + 'px';
+            overlays[2].style.height = height + 'px';
+
+            // Нижняя область
+            overlays[3].style.left = '0px';
+            overlays[3].style.top = (y + height) + 'px';
+            overlays[3].style.width = clientWidth + 'px';
+            overlays[3].style.height = (clientHeight - y - height) + 'px';
+        }
+
+        function updateSelection(x, y, width, height) {
+            const scale = getScale();
+            const rect = canvas.getBoundingClientRect();
+
+            // Сохраняем текущее выделение в координатах канваса
+            currentSelection = {
+                x: x * scale.x,
+                y: y * scale.y,
+                width: width * scale.x,
+                height: height * scale.y
+            };
+
+            // Обновляем DOM элементы в клиентских координатах
+            selectionDiv.style.left = x + 'px';
+            selectionDiv.style.top = y + 'px';
+            selectionDiv.style.width = width + 'px';
+            selectionDiv.style.height = height + 'px';
+            
+            updateHandles(x, y, width, height);
+            updateOverlays(x, y, width, height);
+            updatePreview(x, y, width, height);
+        }
+
+        function calculateInitialSelection() {
+            const ratio = getCurrentRatio();
+            
+            // Используем реальные размеры канваса для вычислений
+            const imageWidth = canvas.width;
+            const imageHeight = canvas.height;
+            
+            let width, height;
+            if (true) {
+                if (imageWidth / imageHeight > ratio) {
+                    height = imageHeight;
+                    width = height * ratio;
+                } else {
+                    width = imageWidth;
+                    height = width / ratio;
+                }
+            }
+
+            const x = (imageWidth - width) / 2;
+            const y = (imageHeight - height) / 2;
+
+            // Конвертируем в клиентские координаты перед возвратом
+            const scale = getScale();
+            return {
+                x: x / scale.x,
+                y: y / scale.y,
+                width: width / scale.x,
+                height: height / scale.y
+            };
+        }
+
+        // Event handlers
+        imageInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    sourceImage.onload = function() {
+                        canvas.width = sourceImage.width;
+                        canvas.height = sourceImage.height;
+                        ctx.drawImage(sourceImage, 0, 0);
+                        
+                        if (!selectionDiv) {
+                            createSelectionElements();
+                            createOverlays();
+                        }
+                        
+                        const selection = calculateInitialSelection();
+                        console.log(selection, isLandscape);
+                        updateSelection(selection.x, selection.y, selection.width, selection.height);
+                    };
+                    sourceImage.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Добавим функции для конвертации координат
+        function getScale() {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: canvas.width / rect.width,
+                y: canvas.height / rect.height
+            };
+        }
+
+        function clientToCanvas(clientX, clientY) {
+            const rect = canvas.getBoundingClientRect();
+            const scale = getScale();
+            return {
+                x: (clientX - rect.left) * scale.x,
+                y: (clientY - rect.top) * scale.y
+            };
+        }
+
+        function canvasToClient(canvasX, canvasY) {
+            const rect = canvas.getBoundingClientRect();
+            const scale = getScale();
+            return {
+                x: canvasX / scale.x + rect.left,
+                y: canvasY / scale.y + rect.top
+            };
+        }
+
+        // Обновим обработчик mousedown
+        canvas.parentElement.addEventListener('mousedown', function(e) {
+            const coords = clientToCanvas(e.clientX, e.clientY);
+            const x = coords.x;
+            const y = coords.y;
+
+            if (e.target.classList.contains('resize-handle')) {
+                isResizing = true;
+                currentHandle = e.target;
+                oppositeCorner = {
+                    x: parseFloat(selectionDiv.style.left) * getScale().x + 
+                       (currentHandle.dataset.position.includes('e') ? 0 : parseFloat(selectionDiv.style.width) * getScale().x),
+                    y: parseFloat(selectionDiv.style.top) * getScale().y + 
+                       (currentHandle.dataset.position.includes('s') ? 0 : parseFloat(selectionDiv.style.height) * getScale().y)
+                };
+            } else if (e.target.classList.contains('move-handle')) {
+                isDragging = true;
+                startX = x - parseFloat(selectionDiv.style.left) * getScale().x;
+                startY = y - parseFloat(selectionDiv.style.top) * getScale().y;
+            }
+        });
+
+        // Обновим обработчик mousemove
+        canvas.parentElement.addEventListener('mousemove', function(e) {
+            const coords = clientToCanvas(e.clientX, e.clientY);
+            const x = coords.x;
+            const y = coords.y;
+            const scale = getScale();
+            const rect = canvas.getBoundingClientRect();
+
+            if (!isResizing && !isDragging && (x < 0 || y < 0 || x > canvas.width || y > canvas.height)) {
+                return;
+            }
+
+            const boundedX = Math.max(0, Math.min(x, canvas.width));
+            const boundedY = Math.max(0, Math.min(y, canvas.height));
+
+            if (isResizing && currentHandle) {
+                const ratio = getCurrentRatio();
+                let newWidth, newHeight, newX, newY;
+                const currentPos = currentHandle.dataset.position;
+
+                if (currentPos.includes('e')) {
+                    newWidth = boundedX - oppositeCorner.x;
+                    newX = oppositeCorner.x;
+                } else {
+                    newWidth = oppositeCorner.x - boundedX;
+                    newX = boundedX;
+                }
+
+                newHeight = newWidth / ratio;
+
+                if (currentPos.includes('n')) {
+                    newY = oppositeCorner.y - newHeight;
+                } else {
+                    newY = oppositeCorner.y;
+                }
+
+                // Проверяем границы с учетом масштаба
+                if (newX < 0) {
+                    newX = 0;
+                    newWidth = oppositeCorner.x;
+                    newHeight = newWidth / ratio;
+                }
+                if (newY < 0) {
+                    newY = 0;
+                    newHeight = oppositeCorner.y;
+                    newWidth = newHeight * ratio;
+                }
+                if (newX + newWidth > canvas.width) {
+                    newWidth = canvas.width - newX;
+                    newHeight = newWidth / ratio;
+                }
+                if (newY + newHeight > canvas.height) {
+                    newHeight = canvas.height - newY;
+                    newWidth = newHeight * ratio;
+                }
+
+                if (newWidth > 0 && newHeight > 0) {
+                    // Конвертируем обратно в клиентские координаты для отображения
+                    const clientCoords = canvasToClient(newX, newY);
+                    updateSelection(
+                        clientCoords.x - rect.left,
+                        clientCoords.y - rect.top,
+                        newWidth / scale.x,
+                        newHeight / scale.y
+                    );
+                }
+            } else if (isDragging) {
+                let newX = boundedX - startX;
+                let newY = boundedY - startY;
+                const width = parseFloat(selectionDiv.style.width) * scale.x;
+                const height = parseFloat(selectionDiv.style.height) * scale.y;
+
+                if (newX < 0) newX = 0;
+                if (newY < 0) newY = 0;
+                if (newX + width > canvas.width) newX = canvas.width - width;
+                if (newY + height > canvas.height) newY = canvas.height - height;
+
+                // Конвертируем обратно в клиентские координаты
+                const clientCoords = canvasToClient(newX, newY);
+                updateSelection(
+                    clientCoords.x - rect.left,
+                    clientCoords.y - rect.top,
+                    width / scale.x,
+                    height / scale.y
+                );
+            }
+        });
+
+        canvas.parentElement.addEventListener('mouseup', function() {
+            isResizing = false;
+            isDragging = false;
+            currentHandle = null;
+        });
+
+        canvas.parentElement.addEventListener('mouseleave', function() {
+            isResizing = false;
+            isDragging = false;
+            currentHandle = null;
+        });
+
+        function rotateSelection() {
+            if (!selectionDiv) return;
+
+            const scale = getScale();
+            
+            // Switch orientation
+            isLandscape = !isLandscape;
+            
+            // Get canvas dimensions
+            const canvasWidth = canvas.width;
+            const canvasHeight = canvas.height;
+            
+            // Calculate new dimensions based on canvas size and ratio
+            let newWidth, newHeight;
+            const ratio = getCurrentRatio(); // Will be LANDSCAPE_RATIO or PORTRAIT_RATIO
+            
+            if (canvasWidth / canvasHeight > ratio) {
+                // Canvas is wider than needed
+                newHeight = canvasHeight;
+                newWidth = newHeight * ratio;
+            } else {
+                // Canvas is taller than needed
+                newWidth = canvasWidth;
+                newHeight = newWidth / ratio;
+            }
+            
+            // Calculate center position
+            const newX = (canvasWidth - newWidth) / 2;
+            const newY = (canvasHeight - newHeight) / 2;
+            
+            // Update preview canvas size before updating selection
+            updatePreviewCanvasSize();
+            
+            // Convert to client coordinates and update
+            updateSelection(
+                newX / scale.x,
+                newY / scale.y,
+                newWidth / scale.x,
+                newHeight / scale.y
+            );
+            
+            // Trigger resize event
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        rotateBtn.addEventListener('click', rotateSelection);
+
+        function maximizeSelection() {
+            if (!selectionDiv) return;
+
+            // Сохраняем текущий центр
+            const currentX = parseFloat(selectionDiv.style.left);
+            const currentY = parseFloat(selectionDiv.style.top);
+            const currentWidth = parseFloat(selectionDiv.style.width);
+            const currentHeight = parseFloat(selectionDiv.style.height);
+            const centerX = currentX + currentWidth / 2;
+            const centerY = currentY + currentHeight / 2;
+
+            const ratio = getCurrentRatio();
+            let newWidth, newHeight;
+
+            // Рассчитываем максимально возможные размеры от текущего центра
+            const maxLeftSpace = centerX;
+            const maxRightSpace = canvas.width - centerX;
+            const maxTopSpace = centerY;
+            const maxBottomSpace = canvas.height - centerY;
+
+            if (true) {
+                // Для ландшафтной ориентации
+                // Проверяем ограничения по горизонтали
+                const maxWidthByCenter = Math.min(maxLeftSpace, maxRightSpace) * 2;
+                // Проверяем ограничения по вертикали
+                const maxHeightByCenter = Math.min(maxTopSpace, maxBottomSpace) * 2;
+                
+                // Определяем максимальные размеры с учетом ratio
+                if (maxWidthByCenter / maxHeightByCenter > ratio) {
+                    // Ограничение по высоте
+                    newHeight = maxHeightByCenter;
+                    newWidth = newHeight * ratio;
+                } else {
+                    // Ограничение по ширине
+                    newWidth = maxWidthByCenter;
+                    newHeight = newWidth / ratio;
+                }
+            }
+
+            // Вычисляем новые координаты от центра
+            const newX = centerX - newWidth / 2;
+            const newY = centerY - newHeight / 2;
+
+            updateSelection(newX, newY, newWidth, newHeight);
+        }
+
+        maximizeBtn.addEventListener('click', maximizeSelection);
+
+        function setMaxOrientation(targetLandscape) {
+            if (!selectionDiv) return;
+            
+            isLandscape = targetLandscape;
+            updatePreviewCanvasSize();
+            
+            const selection = calculateInitialSelection();
+            updateSelection(selection.x, selection.y, selection.width, selection.height);
+        }
+
+        maxPortraitBtn.addEventListener('click', () => setMaxOrientation(false));
+        maxLandscapeBtn.addEventListener('click', () => setMaxOrientation(true));
+
+        function rotateImage() {
+            if (!sourceImage.src) return;
+
+            // Create temporary canvas for rotation
+            const tempCanvas = document.createElement('canvas');
+            const tempCtx = tempCanvas.getContext('2d');
+
+            // Swap width and height
+            tempCanvas.width = canvas.height;
+            tempCanvas.height = canvas.width;
+
+            // Rotate image
+            tempCtx.translate(tempCanvas.width, 0);
+            tempCtx.rotate(Math.PI / 2);
+            tempCtx.drawImage(canvas, 0, 0);
+
+            // Update main canvas dimensions
+            canvas.width = tempCanvas.width;
+            canvas.height = tempCanvas.height;
+
+            // Copy rotated image back
+            ctx.drawImage(tempCanvas, 0, 0);
+
+            // Remove old selection elements
+            if (selectionDiv) {
+                selectionDiv.remove();
+                moveHandle.remove();
+                resizeHandles.forEach(handle => handle.remove());
+                overlays.forEach(overlay => overlay.remove());
+            }
+
+            // Create new selection elements
+            createSelectionElements();
+            createOverlays();
+
+            // Calculate and set new selection
+            const selection = calculateInitialSelection();
+            updateSelection(selection.x, selection.y, selection.width, selection.height);
+            
+            // Trigger resize event
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        rotateImageBtn.addEventListener('click', rotateImage);
+
+        // Color palette (RGB)
+        const PALETTE = [
+            [0, 0, 0],        // Black
+            [255, 255, 255],  // White
+            [0, 255, 0],      // Green
+            [0, 0, 255],      // Blue
+            [255, 0, 0],      // Red
+            [255, 255, 0],    // Yellow
+            [255, 128, 0]     // Orange
+        ];
+
+        // Find closest color from palette
+        function findClosestColor(r, g, b) {
+            let minDistance = Infinity;
+            let closestColor = PALETTE[0];
+            
+            for (const color of PALETTE) {
+                const dr = r - color[0];
+                const dg = g - color[1];
+                const db = b - color[2];
+                const distance = dr * dr + dg * dg + db * db;
+                
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestColor = color;
+                }
+            }
+            
+            return closestColor;
+        }
+
+        // Apply Floyd-Steinberg dithering
+        function applyDithering(imageData) {
+            const width = imageData.width;
+            const height = imageData.height;
+            const data = imageData.data;
+            
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    const i = (y * width + x) * 4;
+                    
+                    const oldR = data[i];
+                    const oldG = data[i + 1];
+                    const oldB = data[i + 2];
+                    
+                    const newColor = findClosestColor(oldR, oldG, oldB);
+                    data[i] = newColor[0];
+                    data[i + 1] = newColor[1];
+                    data[i + 2] = newColor[2];
+                    
+                    const errR = oldR - newColor[0];
+                    const errG = oldG - newColor[1];
+                    const errB = oldB - newColor[2];
+                    
+                    if (x + 1 < width) {
+                        data[i + 4] += errR * 7/16;
+                        data[i + 5] += errG * 7/16;
+                        data[i + 6] += errB * 7/16;
+                    }
+                    if (y + 1 < height) {
+                        if (x > 0) {
+                            data[i + width * 4 - 4] += errR * 3/16;
+                            data[i + width * 4 - 3] += errG * 3/16;
+                            data[i + width * 4 - 2] += errB * 3/16;
+                        }
+                        data[i + width * 4] += errR * 5/16;
+                        data[i + width * 4 + 1] += errG * 5/16;
+                        data[i + width * 4 + 2] += errB * 5/16;
+                        if (x + 1 < width) {
+                            data[i + width * 4 + 4] += errR * 1/16;
+                            data[i + width * 4 + 5] += errG * 1/16;
+                            data[i + width * 4 + 6] += errB * 1/16;
+                        }
+                    }
+                }
+            }
+            
+            return imageData;
+        }
+
+        // Обновляем функцию updatePreview
+        function updatePreview(x, y, width, height) {
+            const scale = getScale();
+            
+            // Конвертируем клиентские координаты в координаты канваса
+            const canvasX = x * scale.x;
+            const canvasY = y * scale.y;
+            const canvasWidth = width * scale.x;
+            const canvasHeight = height * scale.y;
+
+            // Очищаем preview canvas
+            previewCtx.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
+
+            // Копируем выделенную область в preview canvas с учетом масштаба
+            previewCtx.drawImage(
+                canvas,
+                canvasX, canvasY, canvasWidth, canvasHeight,  // Источник (выделенная область)
+                0, 0, previewCanvas.width, previewCanvas.height  // Назначение (весь preview canvas)
+            );
+
+            // Получаем данные изображения
+            const imageData = previewCtx.getImageData(0, 0, previewCanvas.width, previewCanvas.height);
+            
+            // Применяем дизеринг
+            const ditheredImageData = applyDithering(imageData);
+            
+            // Отображаем результат
+            previewCtx.putImageData(ditheredImageData, 0, 0);
+        }
+
+        function updatePreviewCanvasSize() {
+            if (isLandscape) {
+                previewCanvas.width = PREVIEW_LANDSCAPE_WIDTH;
+                previewCanvas.height = PREVIEW_LANDSCAPE_HEIGHT;
+            } else {
+                previewCanvas.width = PREVIEW_PORTRAIT_WIDTH;
+                previewCanvas.height = PREVIEW_PORTRAIT_HEIGHT;
+            }
+        }
+
+        // Функция для создания BMP файла
+        function canvasToBMP(canvas) {
+            const width = canvas.width;
+            const height = canvas.height;
+            const imageData = canvas.getContext('2d').getImageData(0, 0, width, height);
+            const data = imageData.data;
+            
+            // BMP Header
+            const fileSize = 54 + 3 * width * height;
+            const buffer = new ArrayBuffer(fileSize);
+            const view = new DataView(buffer);
+            
+            // BMP Signature
+            view.setUint8(0, 0x42); // B
+            view.setUint8(1, 0x4D); // M
+            
+            // File Size
+            view.setUint32(2, fileSize, true);
+            
+            // Reserved
+            view.setUint32(6, 0, true);
+            
+            // Data Offset
+            view.setUint32(10, 54, true);
+            
+            // Header Size
+            view.setUint32(14, 40, true);
+            
+            // Width and Height
+            view.setInt32(18, width, true);
+            view.setInt32(22, -height, true); // Отрицательная высота для правильной ориентации
+            
+            // Planes
+            view.setUint16(26, 1, true);
+            
+            // Bits per Pixel
+            view.setUint16(28, 24, true);
+            
+            // Compression (none)
+            view.setUint32(30, 0, true);
+            
+            // Image Size (can be 0 for uncompressed)
+            view.setUint32(34, 0, true);
+            
+            // X Pixels per Meter
+            view.setInt32(38, 0, true);
+            
+            // Y Pixels per Meter
+            view.setInt32(42, 0, true);
+            
+            // Total Colors
+            view.setUint32(46, 0, true);
+            
+            // Important Colors
+            view.setUint32(50, 0, true);
+            
+            // Pixel Data
+            let pos = 54;
+            const padding = (4 - ((width * 3) % 4)) % 4;
+            
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    const i = (y * width + x) * 4;
+                    view.setUint8(pos++, data[i + 2]); // B
+                    view.setUint8(pos++, data[i + 1]); // G
+                    view.setUint8(pos++, data[i]); // R
+                }
+                // Add padding
+                for (let p = 0; p < padding; p++) {
+                    view.setUint8(pos++, 0);
+                }
+            }
+            
+            return buffer;
+        }
+
+        function downloadBMP() {
+            if (!previewCanvas) return;
+
+            const bmpData = canvasToBMP(previewCanvas);
+            const blob = new Blob([bmpData], { type: 'image/bmp' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'preview.bmp';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        downloadBtn.addEventListener('click', downloadBMP);
+
+        // Обновляем обработчик resize
+        window.addEventListener('resize', function() {
+            if (selectionDiv) {
+                const scale = getScale();
+                const rect = canvas.getBoundingClientRect();
+                
+                // Конвертируем сохраненные координаты канваса обратно в клиентские
+                const clientX = currentSelection.x / scale.x;
+                const clientY = currentSelection.y / scale.y;
+                const clientWidth = currentSelection.width / scale.x;
+                const clientHeight = currentSelection.height / scale.y;
+                
+                // Обновляем выделение с пересчитанными размерами
+                selectionDiv.style.left = clientX + 'px';
+                selectionDiv.style.top = clientY + 'px';
+                selectionDiv.style.width = clientWidth + 'px';
+                selectionDiv.style.height = clientHeight + 'px';
+                
+                updateHandles(clientX, clientY, clientWidth, clientHeight);
+                updateOverlays(clientX, clientY, clientWidth, clientHeight);
+                updatePreview(clientX, clientY, clientWidth, clientHeight);
+            }
+        });
+
+        document.querySelector('.footer-header').addEventListener('click', function() {
+            this.parentElement.classList.toggle('collapsed');
+        });
+
+        function createAmbientMargins() {
+            if (!canvas.width || !canvas.height) return;
+
+            const margin = 0.05; // 5% margin instead of 10%
+            const oldWidth = canvas.width;
+            const oldHeight = canvas.height;
+            const newWidth = Math.floor(oldWidth * (1 + 2 * margin));
+            const newHeight = Math.floor(oldHeight * (1 + 2 * margin));
+            const marginX = Math.floor((newWidth - oldWidth) / 2);
+            const marginY = Math.floor((newHeight - oldHeight) / 2);
+
+            // Create temporary canvas for the blurred version
+            const blurCanvas = document.createElement('canvas');
+            blurCanvas.width = newWidth;
+            blurCanvas.height = newHeight;
+            const blurCtx = blurCanvas.getContext('2d', { willReadFrequently: true });
+
+            // Draw original image in the center of blur canvas
+            blurCtx.drawImage(canvas, marginX, marginY);
+
+            // Create extended edges by drawing stretched versions of the image edges
+            blurCtx.drawImage(canvas, 0, 0, 1, oldHeight, 0, marginY, marginX, oldHeight); // left
+            blurCtx.drawImage(canvas, oldWidth-1, 0, 1, oldHeight, newWidth-marginX, marginY, marginX, oldHeight); // right
+            blurCtx.drawImage(canvas, 0, 0, oldWidth, 1, marginX, 0, oldWidth, marginY); // top
+            blurCtx.drawImage(canvas, 0, oldHeight-1, oldWidth, 1, marginX, newHeight-marginY, oldWidth, marginY); // bottom
+
+            // Apply stronger blur
+            for (let i = 0; i < 30; i++) { // Increased number of blur passes
+                blurCtx.filter = 'blur(12px)'; // Increased blur radius
+                blurCtx.globalCompositeOperation = 'source-over';
+                blurCtx.drawImage(blurCanvas, 0, 0);
+            }
+
+            // Create final canvas
+            const tempCanvas = document.createElement('canvas');
+            tempCanvas.width = newWidth;
+            tempCanvas.height = newHeight;
+            const tempCtx = tempCanvas.getContext('2d');
+
+            // Draw blurred background
+            tempCtx.drawImage(blurCanvas, 0, 0);
+            
+            // Draw original image in the center
+            tempCtx.drawImage(canvas, marginX, marginY);
+
+            // Update main canvas
+            canvas.width = newWidth;
+            canvas.height = newHeight;
+            ctx.drawImage(tempCanvas, 0, 0);
+
+            // Recalculate selection
+            if (selectionDiv) {
+                const selection = calculateInitialSelection();
+                updateSelection(selection.x, selection.y, selection.width, selection.height);
+            }
+
+            // Trigger resize event
+            window.dispatchEvent(new Event('resize'));
+        }
+
+        // Add event listener
+        document.getElementById('ambientMarginsBtn').addEventListener('click', createAmbientMargins);
+    </script>
+</body>
+</html>
